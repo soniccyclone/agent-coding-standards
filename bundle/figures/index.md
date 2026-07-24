@@ -6,13 +6,18 @@ description: All figures in the bundle, accepted and rejected. Populated by Phas
 
 # Figures
 
-92 candidates from Phase 1's nine-subdomain fan-out, post-dedup (7 figures were surfaced by more than one subdomain and appear once, tagged with all discovering subdomains). All `status: candidate` — none vetted yet. See [ledger.md](../../docs/planning/ledger.md) for the working accept/reject tracker.
+94 candidates: 92 from Phase 1's nine-subdomain fan-out (post-dedup — 7 figures
+surfaced by more than one subdomain appear once, tagged with all discovering
+subdomains), plus 2 added out-of-band via discussion (Chuck Moore, Manfred von
+Thun — the Forth/Joy concatenative lineage, sibling to Schönfinkel/Curry's
+combinatory logic). All `status: candidate` — none vetted yet. See
+[ledger.md](../../docs/planning/ledger.md) for the working accept/reject tracker.
 
 ## By subdomain
 
 **Foundations of Computation** — [church](church/index.md) (also Prog. Languages), [hilbert](hilbert/index.md), [godel](godel/index.md), [turing](turing/index.md), [kleene](kleene/index.md), [post](post/index.md), [schonfinkel](schonfinkel/index.md), [curry](curry/index.md), [peter](peter/index.md), [kolmogorov](kolmogorov/index.md), [chaitin](chaitin/index.md)
 
-**Programming Languages & Semantics** — [church](church/index.md), [mccarthy](mccarthy/index.md), [landin](landin/index.md), [strachey](strachey/index.md), [scott](scott/index.md), [milner](milner/index.md) (also Distributed), [reynolds](reynolds/index.md), [sussman](sussman/index.md), [steele](steele/index.md), [girard](girard/index.md), [backus](backus/index.md), [liskov](liskov/index.md) (also Distributed, Prog. Environments)
+**Programming Languages & Semantics** — [church](church/index.md), [mccarthy](mccarthy/index.md), [landin](landin/index.md), [strachey](strachey/index.md), [scott](scott/index.md), [milner](milner/index.md) (also Distributed), [reynolds](reynolds/index.md), [sussman](sussman/index.md), [steele](steele/index.md), [girard](girard/index.md), [backus](backus/index.md), [liskov](liskov/index.md) (also Distributed, Prog. Environments), [chuck-moore](chuck-moore/index.md), [von-thun](von-thun/index.md)
 
 **Formal Methods & Verification** — [floyd](floyd/index.md), [hoare](hoare/index.md) (also SW Eng, Distributed), [dijkstra](dijkstra/index.md) (also SW Eng, OS, Distributed), [pnueli](pnueli/index.md), [manna](manna/index.md), [clarke](clarke/index.md), [emerson](emerson/index.md), [sifakis](sifakis/index.md), [lamport](lamport/index.md) (also Distributed), [abrial](abrial/index.md), [jones](jones/index.md), [mcmillan](mcmillan/index.md)
 

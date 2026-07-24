@@ -8,11 +8,12 @@ tags: [ledger, figures, vetting, tensions]
 # Figure Ledger
 
 Live tracking doc for [technical-plan.md](technical-plan.md) Phases 1–5. Phase 1
-complete as of 2026-07-24: 92 unique candidates across 9 subdomains, post-dedup.
-All `status: candidate` in their stub files under `bundle/figures/<slug>/index.md`
-— **nothing here is vetted yet.** This table is the fast-scan index; the stub
-file is authoritative (bio, why-candidate, top-10 works with public/paywalled
-flags).
+complete as of 2026-07-24: 92 unique candidates across 9 subdomains, post-dedup,
+plus 2 added out-of-band via discussion (Chuck Moore, Manfred von Thun — same
+day). All `status: candidate` in their stub files under
+`bundle/figures/<slug>/index.md` — **nothing here is vetted yet.** This table
+is the fast-scan index; the stub file is authoritative (bio, why-candidate,
+top-10 works with public/paywalled flags).
 
 ## How to read
 - **status** — `candidate` (Phase 1, unvetted) → `accepted` / `rejected` (Phase 2).
@@ -32,7 +33,8 @@ Schönfinkel · Curry · Péter · Kolmogorov · Chaitin
 ### 2. Programming Languages & Semantics
 **Church** · McCarthy · Landin · Strachey · Scott · **Milner** (also Distributed)
 · Reynolds · Sussman · Steele · Girard · Backus · **Liskov** (also Distributed,
-Prog. Environments)
+Prog. Environments) · Chuck Moore (Forth, added 2026-07-24) · Manfred von Thun
+(Joy, added 2026-07-24)
 
 ### 3. Formal Methods & Verification
 Floyd · **Hoare** (also SW Eng, Distributed) · **Dijkstra** (also SW Eng, OS,
@@ -65,6 +67,7 @@ Kay · Ingalls · Goldberg · Dahl · Nygaard · **Liskov** · Sutherland · Ree
 
 ## Flagged for Phase 2 attention
 Pulled from the research agents' own notes — not decisions, just what to weigh:
+- **McCarthy / Chuck Moore / von Thun — a three-point spectrum on lambda-calculus fidelity**, added 2026-07-24. Forth (Moore) is independent convergent invention, zero exposure to combinatory logic. Lisp (McCarthy) is notation borrowed from Church with semantics that actually diverged (dynamic scoping broke lambda calculus's substitution semantics until Scheme fixed it decades later — McCarthy's stub corrected same day to stop overstating this as "direct translation"). Joy (von Thun) is deliberate, conscious derivation from Curry's combinatory logic. Worth vetting as a set — the contrast is more informative together than any one of them alone.
 - **Church, Turing** — already accepted/placed per project-state.md §1–2 (frozen); stubs exist for bundle consistency, not open questions.
 - **Schönfinkel + Curry** — combinatory logic is arguably *more* primitive-reduced than lambda calculus (no bound variables at all). Real test case for the primitive-count axis.
 - **Hilbert** — antecedent/motivator (posed the Entscheidungsproblem), not a computability theorist himself. Does "posed the question" count as strongly as "answered it"?
