@@ -205,8 +205,12 @@ directly — parallel per-author pull of the full public-source list.
 **Do:** for each accepted figure, enumerate every publicly accessible
 whitepaper, essay, talk, interview, or repo (arxiv, personal sites, publisher
 open-access copies, conference proceedings, public GitHub) with a direct link.
-No paywalled/DRM'd sources per §3 — if a figure's material only exists
-paywalled, flag it, don't substitute a summary of it.
+Check the Wayback Machine when an author's institutional/personal page has
+moved or gone stale — a Wayback snapshot of a self-archived PDF is exactly as
+public as the live version, and several of the strongest sources here (EWD
+archive-style personal pages) are exactly the kind of thing that outlives its
+original host. No paywalled/DRM'd sources per §3 — if a figure's material only
+exists paywalled, flag it, don't substitute a summary of it.
 **Output:** one `work` file per source under `figures/<figure>/works/`, tagged
 `subdomains: [...]` (usually one, occasionally two — tag doesn't require
 picking a single owner the way a folder would), `description` field carrying
