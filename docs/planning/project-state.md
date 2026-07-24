@@ -9,10 +9,14 @@ tags: [state, church-turing, occam, copyright, okf, canon]
 
 Read order: [primer.md](primer.md) (standing rules) → [good-programming-corpus-overview.md](good-programming-corpus-overview.md)
 (project shape, format, figure ledger) → [church-turing-primitives-debate.md](church-turing-primitives-debate.md)
-(frozen transcript, why §5's default exists) → this file (what's still moving).
+(frozen transcript, why §5's default exists) → this file (source of truth —
+decisions and why) → [technical-plan.md](technical-plan.md) (how those decisions
+become a phased, fan-out-able build pipeline).
 
-This file is the only one of the four that's expected to change shape as we argue.
-The debate transcript is history — don't edit it, don't re-derive it, cite it.
+This file is the one expected to keep changing shape as we argue. The debate
+transcript is history — don't edit it, don't re-derive it, cite it.
+Execution mechanics (phases, fan-out units, bundle directory layout) live in
+technical-plan.md now — don't duplicate pipeline detail here, link to it.
 
 ## Threads
 
