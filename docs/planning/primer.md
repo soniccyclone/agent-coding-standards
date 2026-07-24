@@ -5,6 +5,11 @@ description: Primer read before ingesting any expert corpus. Governs how the age
 tags: [epistemology, primitives, occam, church-turing]
 ---
 
+> **FROZEN as of 2026-07-23.** Historical record — the standard it states is
+> still binding, but live planning and execution now happen in
+> [technical-plan.md](technical-plan.md) and [ledger.md](ledger.md). Cite this
+> file, don't edit it.
+
 # Reasoning Standard
 
 ## 1. Minimality over frequency

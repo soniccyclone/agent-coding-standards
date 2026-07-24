@@ -7,16 +7,18 @@ tags: [state, church-turing, occam, copyright, okf, canon]
 
 # Project State
 
-Read order: [primer.md](primer.md) (standing rules) → [good-programming-corpus-overview.md](good-programming-corpus-overview.md)
-(project shape, format, figure ledger) → [church-turing-primitives-debate.md](church-turing-primitives-debate.md)
-(frozen transcript, why §5's default exists) → this file (source of truth —
-decisions and why) → [technical-plan.md](technical-plan.md) (how those decisions
-become a phased, fan-out-able build pipeline).
+> **FROZEN as of 2026-07-23.** All five open threads below resolved; this file
+> stops changing. Live work now happens in two places: **technical-plan.md**
+> (pipeline, phases, fan-out units) and **ledger.md** (candidate/figure/tension
+> status). If a future session surfaces something that genuinely reopens a
+> decision here, it gets a new dated section in technical-plan.md that cites
+> and supersedes the relevant thread below — this file doesn't get edited
+> to match. Cite it, don't extend it.
 
-This file is the one expected to keep changing shape as we argue. The debate
-transcript is history — don't edit it, don't re-derive it, cite it.
-Execution mechanics (phases, fan-out units, bundle directory layout) live in
-technical-plan.md now — don't duplicate pipeline detail here, link to it.
+Read order (historical): [primer.md](primer.md) → [good-programming-corpus-overview.md](good-programming-corpus-overview.md)
+→ [church-turing-primitives-debate.md](church-turing-primitives-debate.md) →
+this file. For current state, go straight to
+[technical-plan.md](technical-plan.md) and [ledger.md](ledger.md) instead.
 
 ## Threads
 

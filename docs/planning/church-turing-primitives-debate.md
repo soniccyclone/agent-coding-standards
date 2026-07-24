@@ -5,6 +5,10 @@ description: Full back-and-forth that produced reasoning-primer.md. Use this to 
 tags: [church-turing, primitives, occam, epistemology]
 ---
 
+> **FROZEN as of 2026-07-23.** Already a historical transcript by design; note
+> added for consistency with the other three original docs. Live planning is
+> in [technical-plan.md](technical-plan.md) and [ledger.md](ledger.md).
+
 # Source Debate for the Reasoning Primer
 
 This is the actual argument that produced `reasoning-primer.md`. If you (the

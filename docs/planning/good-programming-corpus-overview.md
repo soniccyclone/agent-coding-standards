@@ -5,6 +5,12 @@ description: Codify "good programming" by vetting CS figures against a minimalit
 tags: [okf, epistemology, canon, claude-code]
 ---
 
+> **FROZEN as of 2026-07-23.** Historical record of the project's original
+> shape. Live figure status now lives in [ledger.md](ledger.md), execution
+> mechanics in [technical-plan.md](technical-plan.md). Cite this file, don't
+> edit it — including its "Status of figures" and "Next steps" sections below,
+> both superseded.
+
 # Good Programming Corpus
 
 ## Goal

@@ -7,11 +7,13 @@ tags: [execution, okf, pipeline, fan-out]
 
 # Technical Plan
 
-Read order: [project-state.md](project-state.md) (decisions and standing rules —
-source of truth for *why*) → this file (*how* those decisions become work).
-This doc doesn't re-argue anything; every rule below just cites the
-project-state.md thread that settled it. If a phase here seems to contradict a
-thread, the thread wins and this file is wrong and needs fixing.
+project-state.md, primer.md, good-programming-corpus-overview.md, and the debate
+transcript are all **frozen as of 2026-07-23** — historical record of *why*
+the standing rules exist, cited below but not edited further. This file (*how*
+those decisions become work) and [ledger.md](ledger.md) (live figure/tension
+status) are the two docs that keep changing from here on. If a phase here
+seems to contradict a cited thread, the thread's reasoning still wins, but the
+fix is a new dated note in this file — not an edit back into project-state.md.
 
 Nothing in this file is content yet — no author names, no subdomain list, no
 source links. It's the pipeline shape so we can argue about *that* before
@@ -58,13 +60,13 @@ bundle/
 ## Planning/execution boundary
 
 Everything up to and including this line happens in `docs/planning/*.md` — the
-four argument docs (primer, overview, debate transcript, project-state) plus
-this plan. **Phase 0 is the seam.** From Phase 0 onward, work stops being
-"argue in markdown about the project" and starts being "generate real OKF
-files in the bundle." Nothing before Phase 0 produces a `figure`/`work`/
-`lesson`/`axis`/`tension` file; nothing from Phase 0 on modifies the four
-planning docs except to log status (figure ledger updates, thread edits if a
-later phase surfaces something that reopens a decision).
+four original argument docs (now frozen) plus this plan and ledger.md (still
+live). **Phase 0 is the seam.** From Phase 0 onward, work stops being "argue in
+markdown about the project" and starts being "generate real OKF files in the
+bundle." Nothing before Phase 0 produces a `figure`/`work`/`lesson`/`axis`/
+`tension` file. Status updates from Phase 0 onward (accept/reject, layer
+placement, tension tracking) go into ledger.md — the four frozen docs are
+never touched again, period.
 
 Bundle root isn't pinned down yet — assuming top-level `bundle/` at the repo
 root (sibling to `docs/`, not nested under `docs/planning/`), since an OKF
@@ -120,9 +122,8 @@ judgment, not independent agent runs.
 conversationally per §4a (not written to the file); flag any immediately
 visible tension against an already-accepted figure.
 **Output:** `figure` file created for each accepted candidate, with layer
-placement in frontmatter. Rejected candidates logged in the figure ledger
-(project-state.md → good-programming-corpus-overview.md) with reason, not
-silently dropped.
+placement in frontmatter. Every candidate's outcome — accepted or rejected,
+with reason — logged in [ledger.md](ledger.md), not silently dropped.
 **Depends on:** Phase 1 roster.
 
 ### Phase 3 — Source discovery (fan-out per accepted figure)
@@ -154,11 +155,14 @@ not skipped silently.
 (e.g. one pass per subdomain or per pair of figures with overlapping axes);
 **resolution itself is sequential and Nathan-guided**, same reasoning as Phase 2.
 **Do:** scan accumulated lessons for cross-figure contradiction; open a
-`tension` file (`status: open`) per real conflict found; Nathan walks through
-resolution per the pattern already modeled for McCarthy→Russell in
-project-state.md §2; resolution gets written into the file, `status: resolved`.
-**Output:** `tension` files, increasingly `resolved` over time. Feeds
-`resolutions/index.md` once there's enough of them (shape still TBD per §4).
+`tension` file (`status: open`) per real conflict found, and add a row to
+ledger.md's tension index; Nathan walks through resolution per the
+McCarthy→Russell pattern (cited in the frozen project-state.md §2, not
+re-derived here); resolution gets written into the bundle file, `status:
+resolved`, and the ledger row updated to match.
+**Output:** `tension` files, increasingly `resolved` over time, mirrored in
+ledger.md's index. Feeds `resolutions/index.md` once there's enough of them
+(shape still TBD).
 **Depends on:** Phase 4 (needs lessons to find contradictions between).
 
 ### Phase 6 — Lint pass
