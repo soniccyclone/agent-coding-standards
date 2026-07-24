@@ -30,28 +30,49 @@ to any calculus describing it — as "a live counter-argument, not fully defeate
 here." That's a real crack, not a formality. Worth a dedicated round before
 treating §5 as load-bearing for anything past the narrow primitive-count claim.
 
-### 2. Does the primitive-count default license rejecting Turing-style *figures*? — OPEN, mine, unargued
-This is the gap between the debate transcript and the project overview's use of
-it. The transcript defends a claim about two *formalisms* (calculus vs. machine)
-on one *specific axis* (primitive count). The overview then uses that result to
-reject Turing "as a figure to emulate" wholesale, and stages the rest of the
-imperative/systems canon (Dijkstra, Hoare, Knuth, Kernighan, Pike, Lampson) for
-vetting under the same default.
+### 2. Does the primitive-count default license rejecting Turing-style *figures*? — RESOLVED
+Not a peer-axis split (the two-axis compromise floated earlier is withdrawn).
+Resolution is a hierarchy, not a truce: lambda calculus is the pure theory of
+computation; the Turing-machine lineage is the implementation target that pure
+thought gets mapped *down onto*, not a competing first-order way of thinking
+about programming. Design thought happens in Church-style terms — composition,
+substitution, small primitive basis. The mechanism layer (cache locality,
+register allocation, concurrency, the whole Turing-lineage systems corpus) is
+real and necessary, but it's the compilation target, not the source of good
+abstractions.
 
-That's a second inferential step the transcript never makes: primitive-count
-superiority of lambda calculus over TMs doesn't by itself imply that reasoning
-about cache locality, mutation, concurrency, or hardware limits is *less
-correct* reasoning about programming. Physical hardware is a state machine —
-CLAUDE.md's own renaissance-hacker material (GC pauses, zero-copy semantics,
-cache coherency, network unreliability) is Turing-style content by nature: it's
-reasoning about mechanism because the mechanism is what's actually there. If
-the corpus's gate downranks that reasoning by default before vetting, we may be
-building a functional-purity canon and calling it a "good programming" canon.
-Not resolved. Needs its own round — either accept the conflation explicitly (own
-it, this becomes a Church-lineage canon on purpose) or split the gate into two
-axes: primitive-count (for formalism comparisons) and hardware-affinity (for
-implementation guidance), and let figures score on whichever axis their actual
-contribution sits on.
+**Core thesis (Nathan's, the project's actual spine):** thinking about
+programming in Church/Lisp-style terms produces *better abstractions*, and
+better abstractions produce two concrete, checkable outcomes — higher
+development velocity (expression stays close to thought, so there's less
+translation loss between intent and code) and a smaller primitive surface that
+formal static analysis can actually reason over, enabling optimization the
+implementation layer couldn't find on its own. Net claim: this produces more
+stable codebases, faster, than starting from Turing-style mechanism-first
+thinking. This is an instrumental/empirical claim, not just an axiomatic
+preference — which is a feature, since it means individual `lesson` files
+derived from it are checkable against real cases as the bundle grows, not just
+asserted. Primary text anchor: SICP — substitution-model-first design, procedures
+as abstractions, and the final chapters' explicit mapping of the pure evaluator
+down onto a register machine are the worked example of exactly this hierarchy.
+
+**Resolving tension (first entry for the bundle's `tension` type once McCarthy
+and Russell are formally ingested):** McCarthy → Russell. Lisp doesn't trace
+*directly* to lambda calculus, but is unambiguously in its lineage. Russell (to
+be added to the figure queue) is the case study for how to hold the hierarchy
+correctly: understanding exactly which trade-offs are required to bring the
+purity of computational thought into mechanically implemented reality, without
+mistaking the mechanical mapping for the source of the thinking. This is the
+resolution pattern thread 4's `tension` type exists to capture — apparent
+conflict (Church vs. Turing as competing philosophies) dissolved by recognizing
+they operate at different layers (design thought vs. implementation target),
+not by picking a winner.
+
+Practical consequence for vetting: Dijkstra/Hoare/Kernighan/Pike/Lampson etc.
+aren't rejected by this — they get vetted and placed at the implementation-mapping
+layer of the corpus (how pure form compiles onto real mechanism) rather than
+the design-thought layer that determines abstraction quality. Layer placement,
+not rejection, is the outcome of the gate now.
 
 ### 3. Scope and copyright of ingestion — RESOLVED (publish is the intent, not a maybe)
 Publishing is the actual goal, so the posture is built for that from the start
@@ -120,13 +141,17 @@ Authoritative copy lives in [good-programming-corpus-overview.md](good-programmi
 Don't fork a second copy here — update that section and link to it.
 
 ## Next session checklist
-- [ ] Pick up thread 2 (figure-rejection inference gap) before vetting anyone else —
-      it changes how every subsequent figure gets scored.
-- [ ] Fold thread 3's rules (public-source-only, abstract-lesson-only, no
-      copy-paste at any length) into primer.md as standing rules — they govern
-      every future ingest, shouldn't live only in this state file.
+- [ ] Fold thread 2's hierarchy resolution (design-thought layer vs.
+      implementation-mapping layer) and thread 3's rules (public-source-only,
+      abstract-lesson-only, no copy-paste at any length) into primer.md as
+      standing rules — they govern every future ingest, shouldn't live only
+      in this state file.
+- [ ] Add McCarthy and Russell to the figure queue; McCarthy→Russell is the
+      first `tension`+resolution pair once ingestion starts.
 - [ ] For each figure Nathan stages, confirm a public-source reading list exists
       before vetting — if it doesn't, that's a reason to flag the figure, not
       to reach for a paywalled work anyway.
+- [x] Thread 2 (figure-rejection inference gap) — resolved: hierarchy, not
+      rejection; Turing-lineage figures land at the implementation layer.
 - [x] Thread 4 (type taxonomy) — resolved: figure, work, lesson, axis, tension.
 - [x] Thread 5 (deliverable shape) — confirmed: full bundle, then distill.
