@@ -159,18 +159,29 @@ regardless of the applied field they're best known for.
 
 **Do:** for each subdomain, produce candidate figures and write a
 `type: figure, status: candidate` stub file per candidate — bio + why they're
-a candidate + which subdomain(s) surfaced them — so vetting in Phase 2 happens
-by reading a file, not a bare list.
+a candidate + which subdomain(s) surfaced them + their top 10 most influential
+works (title only, best-effort, not the exhaustive Phase 3 pull) — so vetting
+in Phase 2 happens by reading a file with real substance in it, not a bare
+name and a guess.
+
+Each of the ten gets a one-word accessibility flag — `public` or `paywalled` —
+even though full link-pulling is still Phase 3's job. This is deliberately
+decision-relevant at vetting time: if a candidate's most influential work is
+locked behind a paywall and the rest of their output is minor, Nathan needs
+that visible *before* accepting them, since §3 means Phase 3 will never touch
+the paywalled one regardless of how central it is to their reputation.
 
 **Dedup/merge step, after all nine fan-out tasks return:** the same person
 will get surfaced by more than one subdomain pass (McCarthy from both
 Foundations and Languages). Merge duplicate candidates into a single stub
-tagged with every subdomain that found them before Phase 2 starts — the flat
-`figures/` tree makes a duplicate a literal bug (two directories, one person),
-not something that can silently pass.
+tagged with every subdomain that found them, and merge their two top-10 lists
+into one (dedupe overlapping titles, keep it at ten) before Phase 2 starts —
+the flat `figures/` tree makes a duplicate a literal bug (two directories, one
+person), not something that can silently pass.
 
 **Output:** one `figure` stub per unique candidate, `status: candidate`,
-tagged with all discovering subdomains.
+tagged with all discovering subdomains, carrying a titles-only top-10 list
+with public/paywalled flags.
 **Depends on:** Phase 0 (scaffolding, not content).
 
 ### Phase 2 — Vetting (sequential, Nathan-in-the-loop)
