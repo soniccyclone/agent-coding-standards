@@ -31,3 +31,7 @@ Nearly his entire bibliography is self-archived on his personal site — the sin
 10. "Distributed Snapshots: Determining Global States of Distributed Systems" (1985, with Chandy) — `public` (self-archived)
 
 All 10 confirmed public.
+
+## Lessons rollup
+
+Lamport's works teach one coherent way of thinking, applied at every level from memory hardware to specification languages: state your assumptions and requirements formally before building, because in concurrency the intuitive walkthrough is worthless and the formal condition is the design. His method papers show how — correctness carved into safety and liveness, each proved by invariants over states rather than enumeration of interleavings, with system and specification written in one logic so that "implements" collapses into implication and most reasoning stays inside ordinary mathematics. His systems papers show the same reflex pointed at hidden assumptions: there is no global clock, only causal order the system can observe; no global state, only consistent states the computation could have reached; no absolute fault tolerance, only guarantees relative to an explicit failure model with a provable price; no composition of locally correct parts without a named whole-system condition; no primitive whose atomicity should be trusted rather than counted. And Paxos demonstrates the method's endpoint: derive the protocol from the invariants a proof would need, reduce all coordination to one agreed command sequence, and the algorithm arrives with its correctness argument already inside it.

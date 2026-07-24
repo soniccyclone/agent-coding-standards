@@ -18,4 +18,5 @@ tags: [work]
 **Host:** third-party-rehost — fsmwarden.com, a personal archive dedicated to Codd's collected papers — not IBM or an institution.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let invariants, not access patterns, shape the structure of data](../lessons/let-invariants-not-access-patterns-shape-structure.md)
+- Also cited on [Refine a definition until its arbitrary distinctions vanish](../lessons/refine-definitions-until-arbitrary-distinctions-vanish.md), as the before-state whose prime/non-prime scaffolding the Boyce-Codd reformulation removed

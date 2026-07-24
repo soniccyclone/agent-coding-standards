@@ -54,3 +54,15 @@ description: Chronological audit trail of bundle changes, per the Karpathy llm-w
   two still-paywalled Springer books. Corpus now at 450 works across all 95
   figures; Pnueli's access flag trimmed to the two books, non-blocking for
   Phase 4.
+- **2026-07-24** — Phase 4 pilot (dijkstra, lamport, codd). 36 `lesson` files
+  from 28 works (27 catalogued + EWD123's second transcription page), one
+  agent per figure reading full sources. Every work's `## Lessons` section
+  filled or dedup-marked; per-figure `## Lessons rollup` added to each
+  index.md. Two Phase 3 data errors caught and fixed during extraction:
+  Dijkstra's 1965 CACM work file wrongly credited it with introducing
+  semaphores/P-V (those are EWD123 §3.2 — description corrected), and Codd's
+  1970 work file URL pointed at Grinnell course discussion questions about
+  the paper rather than the paper (replaced with the verified UPenn CIS 550
+  mirror). Shared axis/subdomain files untouched per the single-writer
+  fence — backlink sweep runs after the full fan-out. Awaiting Nathan's
+  quality gate before the remaining 92 figures run.

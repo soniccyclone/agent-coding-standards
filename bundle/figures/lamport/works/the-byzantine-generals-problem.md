@@ -18,4 +18,4 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/byz.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Every reliability guarantee is relative to a failure model; state it, and know what weakening it costs](../lessons/make-the-failure-model-explicit.md)

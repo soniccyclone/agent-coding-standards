@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/paxos-simple.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Derive the algorithm from the conditions that make it correct, so the proof precedes the code](../lessons/derive-the-algorithm-from-its-invariant.md)
+- [Split every correctness claim into safety and liveness, and never let one pay for the other](../lessons/split-correctness-into-safety-and-liveness.md)
+- [Reduce every distributed coordination problem to agreeing on one sequence of commands](../lessons/reduce-coordination-to-an-agreed-command-sequence.md)

@@ -18,4 +18,5 @@ tags: [work]
 **Host:** third-party-rehost — Electronic Scholarly Publishing Project (esp.org), a third-party preservation nonprofit — no confirmed ACM/author authorization for this specific copy.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Identity must outlive every description of the thing identified](../lessons/identity-must-outlive-every-description.md)
+- Also cited on [Give inherent complexity one systematic mechanism](../lessons/give-inherent-complexity-one-systematic-mechanism.md) (three-valued logic and the null substitution principle) and [An abstraction is not defined until its operators and integrity rules are](../lessons/an-abstraction-is-structure-plus-operators-plus-integrity.md) (anatomy without physiology)

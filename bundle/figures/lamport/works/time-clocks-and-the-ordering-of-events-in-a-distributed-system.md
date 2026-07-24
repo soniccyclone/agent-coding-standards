@@ -17,4 +17,5 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/time-clocks.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Order events by what the system can observe, not by an imagined universal clock](../lessons/order-events-by-causality-not-clocks.md)
+- [Reduce every distributed coordination problem to agreeing on one sequence of commands](../lessons/reduce-coordination-to-an-agreed-command-sequence.md)

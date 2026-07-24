@@ -17,4 +17,4 @@ tags: [work]
 **Source:** https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD215.html — live page, EWD215 transcription at the E.W. Dijkstra Archive, UT Austin.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Pick control structures that keep the written program and the running process in lockstep](../lessons/shorten-the-gap-between-text-and-computation.md)

@@ -17,4 +17,4 @@ tags: [work]
 **Source:** https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD426.html — live page, EWD426 transcription at the E.W. Dijkstra Archive, UT Austin.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Design distributed rules so the legitimate states are an attractor, not a fortress](../lessons/make-the-legal-state-an-attractor.md)

@@ -17,4 +17,5 @@ tags: [work]
 **Source:** https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html — live page, EWD1036 transcription at the E.W. Dijkstra Archive, UT Austin.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Handle all computations by ignoring them: reason from the program text, not from imagined executions](../lessons/reason-about-the-program-not-its-runs.md)
+- [Confidence in a program can only come from its structure, never from sampling its behavior](../lessons/correctness-comes-from-structure-not-testing.md)

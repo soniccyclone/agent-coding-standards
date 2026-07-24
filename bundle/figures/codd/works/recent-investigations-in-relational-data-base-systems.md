@@ -21,4 +21,5 @@ tags: [work]
 This resolves item 8's `uncertain` flag to public, and separately corrects the earlier assumption that BCNF's origin traces only to an unpublished internal memo — the Boyce-Codd definition was presented in this public, citable 1974 paper. Found during the Boyce (co-author) Phase 3 pass rather than Codd's own pilot pass; backfilled here for consistency.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Refine a definition until its arbitrary distinctions vanish](../lessons/refine-definitions-until-arbitrary-distinctions-vanish.md) — the BCNF passage is the primary source
+- Also cited on [Bind programs to information, never to its arrangement](../lessons/bind-programs-to-information-not-arrangement.md) (the fourth data-exchange policy) and [State the properties of the result; let the system choose the procedure](../lessons/state-properties-let-the-system-choose-the-procedure.md) (the sublanguage survey)

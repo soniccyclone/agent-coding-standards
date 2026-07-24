@@ -18,4 +18,5 @@ tags: [work]
 **Host:** third-party-rehost — softwaregems.com.au, a database consultancy's personal archive — not ACM or an institution.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An abstraction is not defined until its operators and integrity rules are](../lessons/an-abstraction-is-structure-plus-operators-plus-integrity.md)
+- Also cited on [Bind programs to information, never to its arrangement](../lessons/bind-programs-to-information-not-arrangement.md) (the data independence objective), [Adopt the structure mathematics already owns](../lessons/adopt-the-structure-mathematics-already-owns.md) (the owner-member set dissection), [State the properties of the result; let the system choose the procedure](../lessons/state-properties-let-the-system-choose-the-procedure.md) (set processing and the optimizer argument), and [Defend a diluted term with a falsifiable test](../lessons/defend-a-diluted-term-with-a-falsifiable-test.md) (the minimal relational processing capability)

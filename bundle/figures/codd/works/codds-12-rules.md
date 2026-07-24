@@ -18,4 +18,6 @@ tags: [work]
 **Host:** third-party-rehost — Internet Archive scan of the original Computerworld issue, not an authorized republication.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Defend a diluted term with a falsifiable test](../lessons/defend-a-diluted-term-with-a-falsifiable-test.md)
+- [Give inherent complexity one systematic mechanism, not many local dodges](../lessons/give-inherent-complexity-one-systematic-mechanism.md)
+- Also cited on [Bind programs to information, never to its arrangement](../lessons/bind-programs-to-information-not-arrangement.md) (rules 8-11) and [An abstraction is not defined until its operators and integrity rules are](../lessons/an-abstraction-is-structure-plus-operators-plus-integrity.md)

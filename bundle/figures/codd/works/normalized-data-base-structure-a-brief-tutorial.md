@@ -18,4 +18,4 @@ tags: [work]
 **Host:** third-party-rehost — fsmwarden.com, a personal archive dedicated to Codd's collected papers — not IBM or an institution.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+_read — no new lesson beyond [Adopt the structure mathematics already owns](../lessons/adopt-the-structure-mathematics-already-owns.md) (the link/structure critique) and [Let invariants, not access patterns, shape the structure of data](../lessons/let-invariants-not-access-patterns-shape-structure.md) (the six normalization objectives); this work is cited on both_

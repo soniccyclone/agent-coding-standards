@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD196.html — live page, EWD196 transcription at the E.W. Dijkstra Archive, UT Austin.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Structure a system as a stack of complete machines, each one abstracting a physical resource out of existence](../lessons/build-systems-as-layers-of-complete-machines.md)
+- [Confidence in a program can only come from its structure, never from sampling its behavior](../lessons/correctness-comes-from-structure-not-testing.md)
+- [Make cooperating processes correct under every speed ratio, because timing assumptions are hidden coupling](../lessons/never-let-correctness-depend-on-timing.md)

@@ -2,7 +2,7 @@
 type: work
 title: "Solution of a Problem in Concurrent Programming Control"
 figure: dijkstra
-description: A one-page communication that answers an open question from 1962 on how a set of independent, cyclic processes can guarantee that exactly one of them is ever in its critical section at a time, using only shared memory. This is the paper that introduces what became known as the semaphore, along with the P and V operations still named for their original Dutch initials in kernels today. Its solution is deliberately symmetric and makes no assumption about relative process speeds, which is what makes it a genuine mutual-exclusion primitive rather than a scheduling trick.
+description: A one-page communication that answers an open question from 1962 on how a set of independent, cyclic processes can guarantee that exactly one of them is ever in its critical section at a time, using only shared memory. This is the first published N-process mutual-exclusion algorithm, built from nothing but ordinary shared variables — no atomic test-and-set, no semaphores (those arrive in EWD123, Cooperating Sequential Processes, §3.2). Its solution is deliberately symmetric and makes no assumption about relative process speeds, which is what makes it a genuine mutual-exclusion result rather than a scheduling trick.
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 year: 1965
 url: https://repositories.lib.utexas.edu/items/84831631-07fe-484b-a45c-3cff9f6b1f43
@@ -18,4 +18,5 @@ tags: [work]
 **Host:** institutional — Texas ScholarWorks (UT Austin's official repository) — not the EWD archive itself, but the same institution.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [In concurrency, proving nothing bad happens is half a proof: demand progress against an adversarial schedule](../lessons/safety-without-progress-is-not-correctness.md)
+- [Make cooperating processes correct under every speed ratio, because timing assumptions are hidden coupling](../lessons/never-let-correctness-depend-on-timing.md)

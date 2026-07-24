@@ -17,4 +17,5 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/proving.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Reason about concurrent programs through invariants over states, never by enumerating interleavings](../lessons/prove-concurrent-programs-with-invariants-not-interleavings.md)
+- [Split every correctness claim into safety and liveness, and never let one pay for the other](../lessons/split-correctness-into-safety-and-liveness.md)

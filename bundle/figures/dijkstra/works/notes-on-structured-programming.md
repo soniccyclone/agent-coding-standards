@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html — live page, EWD249 transcription at the E.W. Dijkstra Archive, UT Austin.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Confidence in a program can only come from its structure, never from sampling its behavior](../lessons/correctness-comes-from-structure-not-testing.md)
+- [Compose programs one decision at a time, and treat every program as a member of a family](../lessons/take-one-design-decision-at-a-time.md)
+- [Treat your own working memory as the binding resource and design down to it](../lessons/program-within-the-limits-of-your-head.md)
+- [Structure a system as a stack of complete machines, each one abstracting a physical resource out of existence](../lessons/build-systems-as-layers-of-complete-machines.md)
+- [Pick control structures that keep the written program and the running process in lockstep](../lessons/shorten-the-gap-between-text-and-computation.md)

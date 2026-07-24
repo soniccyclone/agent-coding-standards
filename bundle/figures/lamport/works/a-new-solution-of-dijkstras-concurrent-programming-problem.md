@@ -17,4 +17,4 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/bakery.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Design algorithms to survive the weakest primitives you can, and count every assumption you keep](../lessons/assume-the-least-from-your-primitives.md)

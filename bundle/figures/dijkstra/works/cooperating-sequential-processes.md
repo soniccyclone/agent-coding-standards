@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD123.html — live page, EWD123 transcription at the E.W. Dijkstra Archive, UT Austin.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Make cooperating processes correct under every speed ratio, because timing assumptions are hidden coupling](../lessons/never-let-correctness-depend-on-timing.md)
+- [In concurrency, proving nothing bad happens is half a proof: demand progress against an adversarial schedule](../lessons/safety-without-progress-is-not-correctness.md)
+- [When a simple requirement needs an intricate solution, the fault is in your primitives, so change them](../lessons/tortuous-solutions-indict-the-primitives.md)

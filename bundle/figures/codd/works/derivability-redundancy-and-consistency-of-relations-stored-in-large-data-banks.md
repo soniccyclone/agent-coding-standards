@@ -18,4 +18,5 @@ tags: [work]
 **Host:** third-party-rehost — Tech blog (technology.amis.nl) mirror of IBM Research Report RJ599, not an IBM or institutional host.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Undeclared redundancy is a latent inconsistency](../lessons/undeclared-redundancy-is-a-latent-inconsistency.md) — this report is the earliest and fullest statement of that lesson
+- Also cited on [Bind programs to information, never to its arrangement](../lessons/bind-programs-to-information-not-arrangement.md) and [Adopt the structure mathematics already owns](../lessons/adopt-the-structure-mathematics-already-owns.md); beyond those, this draft teaches nothing the polished 1970 paper does not

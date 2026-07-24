@@ -17,4 +17,5 @@ tags: [work]
 **Source:** https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html — live page, EWD472 transcription at the E.W. Dijkstra Archive, UT Austin.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Work backwards from what must be true at the end, and let the proof obligations write the code](../lessons/let-the-proof-lead-the-program.md)
+- [Leave choices the problem does not force unmade: nondeterminacy exposes the essential program](../lessons/nondeterminacy-strips-the-incidental.md)

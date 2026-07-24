@@ -18,4 +18,5 @@ tags: [work]
 **Host:** third-party-rehost — fsmwarden.com, a personal archive dedicated to Codd's collected papers — not IBM or an institution.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Prove a completeness yardstick before comparing languages](../lessons/prove-a-completeness-yardstick-before-comparing-languages.md)
+- [State the properties of the result; let the system choose the procedure](../lessons/state-properties-let-the-system-choose-the-procedure.md)

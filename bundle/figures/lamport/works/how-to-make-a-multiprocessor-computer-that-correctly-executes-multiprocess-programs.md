@@ -17,4 +17,4 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/multi.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Correct parts do not make a correct whole; name the composition condition and price it](../lessons/local-correctness-does-not-compose.md)

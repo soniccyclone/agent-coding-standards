@@ -18,4 +18,4 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/chandy.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Observation of a running system yields a state that never occurred, and that can be enough](../lessons/a-consistent-snapshot-need-not-have-happened.md)

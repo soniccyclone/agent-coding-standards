@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/lamport-actions.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Put the system and its specification in one formalism, so 'implements' becomes implication](../lessons/spec-and-implementation-in-one-logic.md)
+- [For describing and reasoning about systems, ordinary mathematics beats programming notation](../lessons/ordinary-math-beats-programming-notation-for-reasoning.md)
+- [Split every correctness claim into safety and liveness, and never let one pay for the other](../lessons/split-correctness-into-safety-and-liveness.md)

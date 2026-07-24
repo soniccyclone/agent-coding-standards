@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf — self-archived PDF on Lamport's own site, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty)_
+- [Derive the algorithm from the conditions that make it correct, so the proof precedes the code](../lessons/derive-the-algorithm-from-its-invariant.md)
+- [Reason about concurrent programs through invariants over states, never by enumerating interleavings](../lessons/prove-concurrent-programs-with-invariants-not-interleavings.md)
+- [Reduce every distributed coordination problem to agreeing on one sequence of commands](../lessons/reduce-coordination-to-an-agreed-command-sequence.md)
