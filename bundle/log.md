@@ -21,3 +21,23 @@ description: Chronological audit trail of bundle changes, per the Karpathy llm-w
   `status: accepted` and a `layer` field (design-thought / both /
   implementation-mapping). One tension flagged for Phase 5 (Dijkstra vs.
   Knuth on goto). Next: Phase 3, per-figure public-source discovery.
+- **2026-07-24** — Phase 3 (source discovery) complete. 447 `work` files
+  written across 94 of 95 figures (Pnueli is the sole zero-work-file case —
+  every one of the four works named in his "why a candidate" case, including
+  the founding "The Temporal Logic of Programs" 1977 FOCS paper, turned out
+  genuinely inaccessible through legal open channels). Scope was a
+  seminal-works verification pass against each figure's existing Phase 1/2
+  top-10 list, not an exhaustive bibliography sweep — see the 2026-07-24
+  amendment in `docs/planning/technical-plan.md`. Third-party rehosts of
+  otherwise-paywalled originals (course mirrors, preservation nonprofits,
+  fan archives) were accepted as public link-only citations per an explicit
+  scope decision, and are marked `host: third-party-rehost` in every work
+  file that uses one; `host: self-archived` and `host: institutional` cover
+  the rest. 31 of 95 figures carry a `## Phase 3 access flag` section in
+  their own `index.md` documenting works that were checked directly plus a
+  Wayback fallback and confirmed genuinely unavailable (not just
+  unchecked) — see `docs/planning/ledger.md`'s Phase 3 status section for
+  the full per-figure breakdown. Executed as a ~95-agent rolling-queue
+  fan-out (harness cap: 20 concurrent), each agent scoped to one figure's
+  own `works/` directory and forbidden from touching this log or any other
+  figure's files. Next: Phase 4, lesson extraction.

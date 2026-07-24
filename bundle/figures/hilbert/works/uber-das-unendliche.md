@@ -1,0 +1,20 @@
+---
+type: work
+title: "Uber das Unendliche"
+figure: hilbert
+description: A 1925 lecture, published 1926, in which Hilbert defends the use of infinite sets and unrestricted quantifiers in mathematics by treating infinitary reasoning as a formal instrument rather than something directly meaningful. He introduces "ideal elements", infinite constructs justified not by what they refer to but by the fact that adding them to a system provably never lets you derive a false statement about finite objects that the finitary core wouldn't already rule out. It is the clearest single statement of Hilbert's program: secure the whole of classical mathematics by proving, using only finite methods, that its formal system is free of contradiction.
+subdomains: [foundations-of-computation]
+year: 1926
+url: https://archive.org/details/sim_mathematische-annalen_1926_95
+access: public
+host: third-party-rehost
+tags: [work]
+---
+
+# Uber das Unendliche
+
+**Venue/year:** Mathematische Annalen, vol. 95 (1926), pp. 161-190. Delivered as a lecture in Munster, June 1925.
+**Source:** https://archive.org/details/sim_mathematische-annalen_1926_95 — full scan of the complete journal volume (article at pp. 161-190), hosted on the Internet Archive's serials mirror. Freely downloadable (PDF/full text/EPUB), no access restriction. Verified live.
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

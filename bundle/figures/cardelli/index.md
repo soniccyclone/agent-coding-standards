@@ -25,3 +25,17 @@ Maintains an extensive self-archived personal papers page (lucacardelli.name) �
 6. "A Language with Distributed Scope" (1995, POPL/Obliq) — `paywalled` (likely self-archived)
 7. "Structural Subtyping and the Notion of Power Type" (1989, with Canning et al.) — `paywalled`
 8. "The Functional Abstract Machine" (1983) — `uncertain`
+
+_(Note: the stub list above stopped at 8 of a nominal "top 10." Phase 3 verified all 8, corrected several bibliographic errors introduced in the low-rigor pass, and added one paper — "A Theory of Primitive Objects: Untyped and First-Order Systems" — as a public stand-in for item 4, which turned out to be inaccessible; see the access flag below and `works/` for details.)_
+
+## Phase 3 access flag
+
+**"A Theory of Objects" (Abadi & Cardelli, Springer, 1996) — the book — is not available as public full text anywhere checked.** This is the single work most central to Cardelli's "why a candidate" case (it's the full monograph treatment of the object calculus that gives OO encapsulation/subtyping/message-passing a formal semantics), so flagging rather than silently dropping it.
+
+Checked:
+- `lucacardelli.name/TheoryOfObjects.html` (the author's own book landing page, live and via curl): only front matter is linked (Preface, Prologue, Table of Contents, Concept Map, Index, Order Information, FAQ, Related Work, Errata) — no full-text PDF.
+- The page does contain an "eBook" link, but its href is a literal local Windows filesystem path (`C:\Dropbox\Luca\Research\...\A+Theory+of+Objects.pdf`) explicitly labeled `(private)` in the visible text — a stray artifact from the author's own file browser, not a working public URL.
+- Wayback Machine snapshots of `TheoryOfObjects.html` going back to 2006 show the same front-matter-only link set; no era where a full-text PDF was linked.
+- Springer's page (`springer.com/.../978-0-387-94775-4`) is the paywalled commercial listing.
+
+Mitigation: Cardelli and Abadi's "A Theory of Primitive Objects: Untyped and First-Order Systems" (Information and Computation 125(2), 1996; self-archived, `works/a-theory-of-primitive-objects-untyped-and-first-order-systems.md`) is the paper the book's core theory was expanded from, and is fully public. It's added to `works/` as the closest available substitute, but it is not the book — no work file exists for the book itself.

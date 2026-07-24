@@ -1,0 +1,20 @@
+---
+type: work
+title: "Maximum Matching and a Polyhedron with 0,1-Vertices"
+figure: edmonds
+description: Edmonds extends the matching algorithm from "Paths, Trees, and Flowers" to the weighted case, finding a maximum weight-sum matching rather than just a maximum-cardinality one. The paper's lasting contribution is showing that the convex hull of the 0/1 vectors corresponding to matchings in a graph is exactly described by a specific set of linear inequalities (the odd-set constraints), giving matching theory a clean polyhedral characterization. This laid groundwork for the broader polyhedral combinatorics program that treats "find the right linear description of a combinatorial problem's feasible region" as a route to efficient algorithms.
+subdomains: [algorithms-and-complexity]
+year: 1965
+url: https://archive.org/download/jresv69Bn1-2p125/jresv69Bn1-2p125_A1b.pdf
+access: public
+host: third-party-rehost
+tags: [work]
+---
+
+# Maximum Matching and a Polyhedron with 0,1-Vertices
+
+**Venue/year:** Journal of Research of the National Bureau of Standards, Section B, 69B, 1965, pp. 125-130.
+**Source:** https://archive.org/download/jresv69Bn1-2p125/jresv69Bn1-2p125_A1b.pdf — scanned reproduction hosted on the Internet Archive (a preservation nonprofit; third-party rehost, not the original NBS site, whose own nvlpubs.nist.gov copy no longer resolves). The underlying work is a U.S. government technical report and therefore public domain. Confirmed the archive.org details page (archive.org/details/jresv69Bn1-2p125) correctly identifies author, title, and journal metadata, and that the PDF download resolves (HTTP 200, application/pdf).
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

@@ -22,3 +22,21 @@ Self pushed the "environment you explore live" philosophy further than Smalltalk
 4. "Animorphic Self: Mixin-Based Inheritance and Efficient Implementation" (1995, OOPSLA) — `paywalled`
 5. "Debugging and the Experience of Immediacy" (1997, CACM) — `paywalled`
 6. "Programming as an Experience: The Inspiration for Self" (1998, ECOOP) — `paywalled`
+
+## Phase 3 access flag
+
+Item 4, "Animorphic Self: Mixin-Based Inheritance and Efficient Implementation" (1995,
+OOPSLA), could not be verified as an actual publication. It does not appear in DBLP's
+full list of Ungar's works, returns zero hits on Google Scholar and Semantic Scholar
+under this exact title (with or without author names), and no OOPSLA '95 paper by this
+title exists in the official Self bibliography (bibliography.selflanguage.org), which
+otherwise lists every other Ungar/Self paper checked in this pass. This looks like
+either a garbled or misattributed title from the Phase 1/2 pass rather than a real
+paywalled-but-real work — it isn't just unavailable, it doesn't appear to exist under
+this title/venue/year combination. Not central to the "why a candidate" case (that
+rests on the liveness/prototypes argument covered by items 1, 3, and 6, all now
+verified public), so this doesn't block the figure, but it's worth a second look if
+someone can identify what the stub was actually referring to (candidates checked and
+ruled out as not-a-match: Chambers & Ungar, "Making Pure Object-Oriented Languages
+Practical," OOPSLA '91 — same authors/mixins territory but about compiler performance,
+not inheritance model).

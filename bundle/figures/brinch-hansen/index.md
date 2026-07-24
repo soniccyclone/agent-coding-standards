@@ -19,13 +19,13 @@ tags: [figure, accepted]
 Personally curated a dedicated archive site (brinch-hansen.net/papers) hosting his full body of work as free PDFs — unusually strong open accessibility.
 
 ## Top 10 most influential works
-1. "The Nucleus of a Multiprogramming System" (1970, CACM, RC 4000 kernel) — `public` (brinch-hansen.net)
-2. "Structured Multiprogramming" (1972, CACM) — `public` (brinch-hansen.net)
-3. "The Programming Language Concurrent Pascal" (1975, IEEE TSE) — `public` (brinch-hansen.net)
-4. "Distributed Processes: A Concurrent Programming Concept" (1978, CACM) — `public` (brinch-hansen.net)
-5. "RC 4000 Software Multiprogramming System" (1969, Regnecentralen report) — `public` (mirrored at pascal.hansotten.com)
-6. "Operating System Principles" (1973, book) — `uncertain` (archive.org lending copy)
-7. "The Solo Operating System: Processes, Monitors, and Classes" (1976) — `uncertain`
-8. "Monitors and Concurrent Pascal: A Personal History" (1993, ACM HOPL-II) — `uncertain`
+1. "The Nucleus of a Multiprogramming System" (1970, CACM, RC 4000 kernel) — `public` (self-archived, brinch-hansen.net)
+2. "Structured Multiprogramming" (1972, CACM) — `public` (self-archived, brinch-hansen.net)
+3. "The Programming Language Concurrent Pascal" (1975, IEEE TSE) — `public` (self-archived, brinch-hansen.net)
+4. "Distributed Processes: A Concurrent Programming Concept" (1978, CACM) — `public` (self-archived, brinch-hansen.net)
+5. "RC 4000 Software Multiprogramming System" (1969, Regnecentralen report) — `public` (self-archived, brinch-hansen.net — complete version, 1969c; supersedes the pascal.hansotten.com mirror cited at Phase 1/2)
+6. "Operating System Principles" (1973, book) — `public` (third-party rehost, pascal.hansotten.com full-text PDF; the archive.org hit is only a controlled-lending copy, not freely public)
+7. "The Solo Operating System: Processes, Monitors, and Classes" (1976) — `public` (self-archived, brinch-hansen.net)
+8. "Monitors and Concurrent Pascal: A Personal History" (1993, ACM HOPL-II) — `public` (self-archived, brinch-hansen.net)
 
-Fewer than 10 — small, tightly-focused body of work.
+Fewer than 10 — small, tightly-focused body of work. All 8 confirmed public as of Phase 3 (2026-07-24); no Phase 3 access flag needed. Note: brinch-hansen.net's HTTPS certificate is currently expired — all self-archived links above use HTTP, which resolves cleanly.

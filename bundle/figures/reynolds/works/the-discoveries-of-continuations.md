@@ -1,0 +1,20 @@
+---
+type: work
+title: "The Discoveries of Continuations"
+figure: reynolds
+description: A historical survey tracing how continuations — reifying "the rest of the computation" as an explicit, passable object — were independently reinvented several times across control-flow analysis, denotational semantics, and interpreter design before anyone recognized these were all the same idea. Reynolds, himself one of the independent discoverers via his definitional-interpreters work, credits each thread and explains why the concept kept resurfacing under different names and notations.
+subdomains: [programming-languages-and-semantics]
+year: 1993
+url: https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/histcont.pdf
+access: public
+host: self-archived
+tags: [work]
+---
+
+# The Discoveries of Continuations
+
+**Venue/year:** Lisp and Symbolic Computation 6(3-4), 1993, pp. 233-247.
+**Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/histcont.pdf — live PDF (HTTP 200), self-archived by Reynolds in his own CMU FTP directory. Also mirrored on Philip Wadler's Edinburgh page and CiteSeerX, both live.
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

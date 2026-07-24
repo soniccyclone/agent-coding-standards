@@ -1,0 +1,20 @@
+---
+type: work
+title: "Hints on Programming Language Design"
+figure: hoare
+description: A keynote address distilling practical design advice from Hoare's experience building and standardizing languages, framed around the claim that a language's main job is to help programmers with design, documentation, and debugging rather than to please compiler writers or theoreticians. Argues for orthogonality, minimality, and readability as design virtues, and warns against accumulating features because they seem individually useful. A direct precursor to the harder-edged argument he'd make seven years later in "The Emperor's Old Clothes."
+subdomains: [programming-languages-and-semantics]
+year: 1973
+url: https://rebelsky.cs.grinnell.edu/Courses/CS302/2007S/Readings/hoare-design.pdf
+access: public
+host: third-party-rehost
+tags: [work]
+---
+
+# Hints on Programming Language Design
+
+**Venue/year:** Keynote address, ACM SIGACT/SIGPLAN Symposium on Principles of Programming Languages, Boston, October 1973. Published as Stanford Artificial Intelligence Laboratory Memo AIM-224 / Stanford CS Report STAN-CS-73-403.
+**Source:** https://rebelsky.cs.grinnell.edu/Courses/CS302/2007S/Readings/hoare-design.pdf — course-reading mirror hosted by Grinnell College (CS302, Spring 2007); PDF metadata confirms title "CS302 2007S : C.A.R. Hoare - Hints on Programming Language Design". The Defense Technical Information Center's official archive copy (apps.dtic.mil/sti/pdfs/AD0773391.pdf) is the institutional original but returned 403 Forbidden to automated fetches during this check.
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

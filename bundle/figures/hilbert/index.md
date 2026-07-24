@@ -23,3 +23,27 @@ Posed the Entscheidungsproblem (1928, with Ackermann) and his formalist program 
 5. "Grundlagen der Mathematik" (with Bernays, Vol. I 1934, Vol. II 1939) — `paywalled` (Springer)
 
 Fewer than 10 — only 5 works tied directly to this subdomain's relevance.
+
+## Phase 3 access flag
+Item 4, "Grundzüge der theoretischen Logik" (with Ackermann, 1928) — the work
+that formally poses the Entscheidungsproblem cited in this figure's "why a
+candidate" case above — has no publicly accessible copy anywhere checked:
+Springer paywalls the modern reprint; every scanned edition on the Internet
+Archive (1928 German original searched but not found scanned there at all;
+1967 German reprint at `archive.org/details/grundzugedertheo0027hilb`; 1950
+English translation "Principles of Mathematical Logic" at
+`archive.org/details/principlesofmath0000hilb` and
+`archive.org/details/principlesofmath0000dwac`) is marked
+`access-restricted-item: true` — controlled digital lending only, not a public
+source under this project's rules; HathiTrust's catalog record is
+Cloudflare-gated and its held volumes (1-97, 1869-1930) could not be confirmed
+full-view; no self-archived PDF turned up on any math-history or logic course
+page; Wayback Machine has no snapshot of a dead public PDF link either (a CDX
+search for `*hilbert*grundz*logik*` returned zero captures). Item 5,
+"Grundlagen der Mathematik" (with Bernays), remains paywalled as originally
+flagged — same archive.org access-restricted pattern, Springer paywall
+confirmed current — except for a genuinely partial self-archived resource
+(title pages, prefaces, and sections 1-2 only, not the full text) at
+`wirth.bplaced.net/p/hilbertbernays`, which doesn't rise to "the work is
+public" and was left out of `works/` on that basis. Both stay excluded from
+`works/`; flagging per standing procedure rather than blocking on it.

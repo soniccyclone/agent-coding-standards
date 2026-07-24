@@ -1,0 +1,21 @@
+---
+type: work
+title: "Consensus in the Presence of Partial Synchrony"
+figure: lynch
+description: Introduces partial synchrony as a middle ground between the fully synchronous and fully asynchronous system models, formalizing several variants (unknown fixed timing bounds, or bounds that only hold eventually). Shows which of these variants admit consensus protocols that tolerate faulty processes and which don't, sidestepping the FLP impossibility result by weakening the asynchrony assumption rather than the fault model. The partial-synchrony framing it introduces underlies how later protocols like Paxos and PBFT reason about liveness under realistic network conditions.
+subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
+year: 1988
+url: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+access: public
+host: institutional
+tags: [work]
+---
+
+# Consensus in the Presence of Partial Synchrony
+
+**Author(s):** with Cynthia Dwork, Larry Stockmeyer
+**Venue/year:** Journal of the ACM 35(2), April 1988
+**Source:** https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf — hosted on MIT CSAIL's Theory of Distributed Systems group publications page (university-hosted), live and directly downloadable (HTTP 200).
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

@@ -1,0 +1,21 @@
+---
+type: work
+title: "Hierarchies of Memory Limited Computations"
+figure: stearns
+description: With Juris Hartmanis and Philip M. Lewis II, extends the time-hierarchy results of the 1965 AMS paper to space, showing that Turing machines given strictly more work-tape memory (as a function of input length) can solve strictly more problems, and thereby establishing a proper hierarchy of space-bounded complexity classes. Separates the input tape from the work tape so machines can be studied at sub-linear space bounds, a distinction that later complexity theory treats as standard. Effectively builds the space-bounded analogue of the machine model the companion 1965 paper built for time.
+subdomains: [algorithms-and-complexity, foundations-of-computation]
+year: 1965
+url: http://web.archive.org/web/20220120034328/http://www.cs.albany.edu/~res/space.pdf
+access: public
+host: self-archived
+tags: [work]
+---
+
+# Hierarchies of Memory Limited Computations
+
+**Author(s):** Juris Hartmanis, Philip M. Lewis II (co-authors)
+**Venue/year:** 1965 IEEE Conference Record on Switching Circuit Theory and Logical Design (6th Annual Symposium, Ann Arbor, MI), October 1965, pp. 179-190.
+**Source:** http://web.archive.org/web/20220120034328/http://www.cs.albany.edu/~res/space.pdf — Wayback Machine capture of a PDF Stearns self-archived on his University at Albany faculty page. The live page (cs.albany.edu/~res/) now returns 404, but this snapshot — and four earlier snapshots dating back to 2012, all with an identical file digest — serve the file directly with HTTP 200.
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

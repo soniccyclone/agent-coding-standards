@@ -1,0 +1,21 @@
+---
+type: work
+title: "Fabrik: A Visual Programming Environment"
+figure: ingalls
+description: Describes Fabrik, an environment where programs are built by visually wiring together reusable computational and user-interface components rather than writing textual code, extending Smalltalk's live-object philosophy into dataflow-style visual construction. It covers the component/kit model, the wiring mechanism, and how built assemblies could themselves become new reusable components. Originally flagged as paywalled in the earlier pass; a legitimate open copy exists on worrydream.com.
+subdomains: [programming-environments-and-object-systems]
+year: 1988
+url: https://worrydream.com/refs/Ingalls_1988_-_Fabrik,_A_Visual_Programming_Environment.pdf
+access: public
+host: third-party-rehost
+tags: [work]
+---
+
+# Fabrik: A Visual Programming Environment
+
+**Author(s):** with Scott Wallace, Yu-Ying Chow, Frank Ludolph, Ken Doyle
+**Venue/year:** OOPSLA '88 / ACM SIGPLAN Notices, Vol. 23, No. 11, November 1988, pp. 176-190.
+**Source:** https://worrydream.com/refs/Ingalls_1988_-_Fabrik,_A_Visual_Programming_Environment.pdf — live PDF, rehosted on Bret Victor's worrydream.com reference archive. Verified 200 OK, application/pdf, 15 pages.
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

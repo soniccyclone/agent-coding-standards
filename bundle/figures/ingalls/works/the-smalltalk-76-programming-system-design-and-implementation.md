@@ -1,0 +1,20 @@
+---
+type: work
+title: "The Smalltalk-76 Programming System Design and Implementation"
+figure: ingalls
+description: Ingalls' account of Smalltalk-76, the version that introduced the class/metaclass hierarchy and message-based inheritance mechanics that later Smalltalk dialects (and much of mainstream object-oriented programming) inherited. It describes both the language semantics and the underlying interpreter/storage-management implementation running on Xerox PARC's Alto hardware. Originally flagged as paywalled in the earlier pass; a legitimate open copy of the original Xerox PARC technical report exists via the Internet Archive's bitsavers collection.
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+year: 1978
+url: https://ia601501.us.archive.org/25/items/bitsavers_xeroxparctalk76ProgrammingSystemDesignandImplement_1637358/The_Smalltalk-76_Programming_System_Design_and_Implementation.pdf
+access: public
+host: third-party-rehost
+tags: [work]
+---
+
+# The Smalltalk-76 Programming System Design and Implementation
+
+**Venue/year:** Conference Record of the 5th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages (POPL), 1978.
+**Source:** https://ia601501.us.archive.org/25/items/bitsavers_xeroxparctalk76ProgrammingSystemDesignandImplement_1637358/The_Smalltalk-76_Programming_System_Design_and_Implementation.pdf — scanned Xerox PARC technical report, rehosted on the Internet Archive's bitsavers preservation collection. Verified 200 OK, application/pdf, 16 pages. Also mirrored at smalltalkzoo.computerhistory.org (Computer History Museum, verified 200 OK) and worrydream.com.
+
+## Lessons
+_(empty — lesson extraction is Phase 4)_

@@ -22,5 +22,8 @@ Fewer than 10 — thin publication record relative to the language's influence:
 1. "FORTH — A Language for Interactive Computing" (1970, with Geoffrey Leach) — `public` (ultratechnology.com/4th_1970.pdf)
 2. "Forth - The Early Years" (1991) — `public` (worrydream.com/refs/Moore_1991_-_Forth,_The_Early_Years.pdf)
 3. "Chuck Moore: The Invention of Forth" (his HOPL-II submission — notably rejected by the conference for style; self-archived instead) — `public` (colorforth.github.io/HOPL.html)
-4. "The Evolution of Forth" (1993, with Rather, Colburn — the paper HOPL-II accepted in place of Moore's own submission, folding much of its content in) — `paywalled` (ACM DL)
-5. colorForth documentation and OKAD chip design notes — `public` (colorforth.github.io), though documentation rather than papers in the conventional sense
+4. "The Evolution of Forth" (1993, with Rather, Colburn — the paper HOPL-II accepted in place of Moore's own submission, folding much of its content in) — `public` (was flagged `paywalled` via ACM DL in Phase 1/2; Phase 3 found the full text, complete through the bibliography, self-hosted at forth.com/resources/forth-programming-language/)
+5. colorForth documentation and OKAD chip design notes — `public` (colorforth.github.io), though documentation rather than papers in the conventional sense — formalized as two separate work files (colorForth docs, OKAD)
+6. "Programming a Problem-Oriented-Language" (1970, Mohasco internal manuscript) — `public` (colorforth.github.io/POL.htm) — not on the original list; added in Phase 3 as arguably the founding document of Forth's design philosophy ("keep it simple," "do not speculate"), clearly public and clearly central
+
+Phase 3 note: all `uncertain`/`paywalled` flags above resolved public. Sources marked `public` above that live on colorforth.github.io are third-party preservation mirrors of Moore's original (now-defunct) colorforth.com, not his own live site — see individual work files for host classification.

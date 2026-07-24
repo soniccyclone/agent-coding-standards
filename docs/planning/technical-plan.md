@@ -1,7 +1,7 @@
 ---
 type: execution-plan
 title: Good Programming Corpus — Technical Plan
-description: Phased build pipeline for the OKF bundle. Phases 0-2 complete (95 figures, all accepted); Phase 3 (source discovery) next.
+description: Phased build pipeline for the OKF bundle. Phases 0-3 complete (95 figures, all accepted; 447 work files across 94 figures); Phase 4 (lesson extraction) next.
 tags: [execution, okf, pipeline, fan-out]
 ---
 
@@ -238,7 +238,7 @@ in this pass: Nathan confirmed non-publishing systems builders (Torvalds, and by
 reasoning Cutler, Chuck Moore) can source Phase 3 material from shipped
 code/documentation rather than papers — see ledger.md's Torvalds note.
 
-### Phase 3 — Source discovery (fan-out per accepted figure) 🔄 in progress
+### Phase 3 — Source discovery (fan-out per accepted figure) ✅ complete
 **Fan-out unit:** one accepted figure per task. This is the phase Nathan named
 directly — parallel per-author pull of the public-source list.
 
@@ -303,6 +303,17 @@ trusting Phase 1's guesses. Caught two dead links, one wrong title, several
 `uncertain`/`paywalled` flags resolved in both directions. No access flags
 needed — nothing central turned out to be unavailable in this batch. Full
 readout in [ledger.md](ledger.md).
+
+**Complete (2026-07-24).** Pilot validated the process, then the remaining
+92 figures ran as a rolling-queue fan-out (one subagent per figure, capped
+at 20 concurrent by the harness) to a fully autonomous finish. Final tally:
+447 `work` files across 94 of 95 figures — Pnueli is the sole zero-work-file
+figure, every one of its four listed works turned out genuinely
+inaccessible. 31 of 95 figures carry a `## Phase 3 access flag`. Full
+per-figure breakdown, the third-party-rehost policy, and the two
+corpus-wide sourcing caveats (pre-1980s papers under-covered by rehosts;
+Internet-Archive-lending-only books counted as paywalled) are in
+[ledger.md](ledger.md)'s Phase 3 status section.
 **Depends on:** Phase 2 (can start per-figure as soon as that figure clears
 vetting, doesn't need to wait for the whole roster).
 

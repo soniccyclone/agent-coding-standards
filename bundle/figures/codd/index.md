@@ -23,6 +23,6 @@ Originated the relational model itself — the paper that reduces data managemen
 5. "Further Normalization of the Data Base Relational Model" (1972, book chapter) — `uncertain`
 6. "Relational Completeness of Data Base Sublanguages" (1972) — `uncertain`
 7. "Extending the Database Relational Model to Capture More Meaning" (RM/T, 1979, ACM TODS) — `paywalled`
-8. "Recent Investigations in Relational Data Base Systems" (1974, IFIP) — `uncertain`
+8. "Recent Investigations in Relational Data Base Systems" (1974, IFIP) — `public` (third-party rehost, fsmwarden.com; also the paper trail behind the Boyce-Codd Normal Form name)
 9. "Normalized Data Base Structure: A Brief Tutorial" (1971) — `paywalled`
 10. *The Relational Model for Database Management: Version 2* (1990, book) — `paywalled`

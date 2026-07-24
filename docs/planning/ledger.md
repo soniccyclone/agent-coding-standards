@@ -99,41 +99,75 @@ Torvalds but as the general answer for this shape of candidate (Cutler, Chuck
 Moore fit the same pattern).
 
 ## Phase 3 status
-In progress as of 2026-07-24. Scope amended same day: source discovery
-verifies and formalizes each figure's existing Phase 1 top-10 list into
-`work` files rather than an exhaustive from-scratch bibliography sweep —
+**Complete as of 2026-07-24.** Scope amended same day it started: source
+discovery verifies and formalizes each figure's existing Phase 1 top-10 list
+into `work` files rather than an exhaustive from-scratch bibliography sweep —
 reasoning and the escape valve (go deeper per-figure if Phase 4 lessons come
 up thin) are in [technical-plan.md](technical-plan.md#phase-3--source-discovery-fan-out-per-accepted-figure-in-progress).
 
-**Pilot batch (Dijkstra, Lamport, Codd) — done.** 27 `work` files, every URL
-independently re-fetched rather than trusting the Phase 1 guess. Caught 2
-dead links and 1 wrong title (Lamport); resolved several `uncertain`/
-`paywalled` flags in both directions, including upgrading three of Codd's
-IBM Research Reports from `uncertain`/`paywalled` to `public` on finding
-legitimate copies. No Phase 3 access flags needed — nothing central turned
-out unavailable in this batch.
+**Final tally: 447 `work` files across 94 of 95 figures.** Pnueli is the sole
+zero-work-file figure — see below. Executed as a pilot (3 figures) followed
+by a ~89-figure rolling-queue fan-out, one subagent per figure, capped at 20
+concurrent by the harness (`CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS`); each
+agent scoped to its own figure's `works/` directory and forbidden from
+touching `bundle/log.md` or any other figure's files, to avoid concurrent
+writes. Every completion was spot-checked (`ls` on the new `works/` dir)
+before the orchestrating session refilled the freed slot.
 
-**Policy set during the pilot:** third-party rehosts of copyrighted material
-(fan archives, course mirrors, preservation nonprofits — not the author's own
-site, not an official open-access venue, not a Wayback snapshot of a
-self-archived original) count as citable public sources when the host looks
-legitimate, since `work` files are link-only citations, not redistribution.
-Nathan's condition: mark every such case so a batch review can find them
-later if a host turns out to be a problem. Every pilot `work` file carries a
-`host` field (`self-archived` / `institutional` / `third-party-rehost`) for
-exactly that review. Flagged third-party-rehost cases from the pilot: Codd's
-`a-relational-model-of-data-for-large-shared-data-banks.md` (Grinnell course
-mirror), `codds-12-rules.md` (Internet Archive scan), `derivability-...md`
-(technology.amis.nl blog mirror of IBM RJ599), `extending-the-database-...md`
-(esp.org), `further-normalization-...md` / `normalized-data-base-...md` /
-`relational-completeness-...md` (fsmwarden.com personal archive), and
-`relational-database-a-practical-foundation-...md` (softwaregems.com.au).
+**Pilot batch (Dijkstra, Lamport, Codd) — done first, validated the approach.**
+27 `work` files, every URL independently re-fetched rather than trusting the
+Phase 1 guess. Caught 2 dead links and 1 wrong title (Lamport); resolved
+several `uncertain`/`paywalled` flags in both directions, including
+upgrading three of Codd's IBM Research Reports from `uncertain`/`paywalled`
+to `public` on finding legitimate copies. A fourth Codd item (#8, "Recent
+Investigations in Relational Data Base Systems") was left `uncertain` in the
+pilot and got backfilled later when the Boyce pass (they share a paper —
+it's the public paper trail behind Boyce-Codd Normal Form) surfaced the same
+source; Codd's `index.md` and `works/` were updated to match once noticed.
 
-**Remaining ~90 figures:** not started. Planned as waves of ~12 concurrent
-background agents using the pilot-validated prompt template, spot-checked
-per wave before committing to the next, with `bundle/log.md` updated by the
-orchestrating session per wave (not by per-figure agents, to avoid
-concurrent writes to one file).
+**Policy set during the pilot, held for the whole run:** third-party rehosts
+of copyrighted material (fan archives, course mirrors, preservation
+nonprofits — not the author's own site, not an official open-access venue,
+not a Wayback snapshot of a self-archived original) count as citable public
+sources when the host looks legitimate, since `work` files are link-only
+citations, not redistribution. Nathan's condition: mark every such case so a
+batch review can find them later if a host turns out to be a problem. Every
+`work` file carries a `host` field (`self-archived` / `institutional` /
+`third-party-rehost`) for exactly that review — grep `host: third-party-rehost`
+across `bundle/figures/*/works/*.md` to pull the full list; it runs well
+past a hundred entries across the full run and isn't reproduced here.
+
+**31 of 95 figures carry a `## Phase 3 access flag`** in their own
+`index.md` — a work named in the figure's own "why a candidate" case that
+was checked directly plus a Wayback fallback and confirmed genuinely
+unavailable (paywalled with no legitimate open copy, or Internet
+Archive/controlled-digital-lending only), not just left unchecked. Full list:
+Abrial, Bachman, Boehm, Booch, Brooks, Cardelli, Clarke, Cox, Curry, Cutler,
+Date, Edmonds, Emerson, Gang of Four, Goldberg, Hilbert, Ingalls, Jones,
+Kleene, Lynch, Manna, Nygaard, Parnas, Péter, Pnueli, Rabin, Sifakis, Ullman,
+Ungar, Wirth, Yao. Most are non-blocking (the case survives on other public
+works); the standout is **Pnueli**, where all four listed works — including
+the founding "The Temporal Logic of Programs" (1977, FOCS), the single paper
+his "why a candidate" case rests on — turned out genuinely inaccessible
+through any legal open channel checked (publisher paywalls, Unpaywall/
+Semantic Scholar both report closed access, no self-archived copy on his own
+or Manna's site, ACM's Cloudflare gate blocked even the one `oa_status: gold`-
+tagged candidate from resolving). Zero `work` files exist for Pnueli as a
+result — Phase 4 lesson extraction for this figure has no seminal-work
+source material unless this gap is revisited later (institutional access,
+or a working route around ACM's bot-block).
+
+**Two corpus-wide caveats surfaced during the run**, worth carrying into
+Phase 4: (1) several older foundational papers (Yao's 1977/1979 papers,
+Rabin's 1980/1987 papers, Kleene's 1936 Duke Math. J. paper) predate routine
+self-archiving norms and were never picked up by course-page rehosts the way
+1980s+ papers were — coverage for those figures leans more on secondary
+material (surveys, textbooks, retrospectives) than primary papers. (2) A
+recurring pattern across ~8 figures (Abrial, Boehm, Booch, Cardelli, Clarke,
+Gang of Four, Manna, Ullman) is that the flagship work is a commercial book,
+and Internet Archive's copy is controlled-digital-lending (login + borrow
+queue + DRM) rather than a free download — that's treated as `paywalled`
+under this pass's rules, not `public`, consistently across the whole run.
 
 ## Flagged for Phase 2 attention
 Pulled from the research agents' own notes — not decisions, just what to weigh.
