@@ -1,7 +1,7 @@
 ---
 type: execution-plan
 title: Good Programming Corpus — Technical Plan
-description: Phased build pipeline for the OKF bundle. Subdomain taxonomy and directory structure locked; author/source/lesson content still empty.
+description: Phased build pipeline for the OKF bundle. Phases 0-1 complete (95 candidate figures); Phase 2 (vetting) next, blocked on Nathan.
 tags: [execution, okf, pipeline, fan-out]
 ---
 
@@ -16,8 +16,14 @@ seems to contradict a cited thread, the thread's reasoning still wins, but the
 fix is a new dated note in this file — not an edit back into project-state.md.
 The schema amendment below is the first use of that escape hatch.
 
-No author names, no source links, no lesson content yet — subdomain taxonomy
-and bundle structure are locked, everything downstream of that is still empty.
+**Status as of 2026-07-24:** Phase 0 done (bundle scaffolded). Phase 1 done —
+95 candidate figures in `bundle/figures/`, all `status: candidate`, none
+vetted. Phase 2 is next and is explicitly not autonomous — needs Nathan. No
+source links, no lesson content yet; that's Phase 3+, gated behind Phase 2.
+Tagged milestones on `main`: `author-candidates` (Phase 1 done, 92 candidates),
+`author-candidates-v2` (+Chuck Moore, von Thun — Forth/Joy lineage, 94),
+`author-candidates-v3` (+Jerome Saltzer — security/systems design principles,
+95, current HEAD).
 
 ## Schema amendments
 
@@ -128,7 +134,7 @@ diagram above and everything downstream assumes it.
 Each phase lists a **fan-out unit** — the thing that gets split into parallel
 tasks — so phases map directly onto bd/beads tickets without restructuring.
 
-### Phase 0 — Bundle scaffolding
+### Phase 0 — Bundle scaffolding ✅ complete (2026-07-24)
 **Fan-out unit:** none, one-time setup.
 **Do:** create the directory structure above; write the six `axis` files
 (expressiveness, verifiability, parallelizability, hardware-affinity,
@@ -138,7 +144,7 @@ dependency for Phase 4, so they happen before any figure work starts.
 **Output:** empty bundle skeleton + populated `axes/` and `subdomains/` (definitions only).
 **Depends on:** nothing.
 
-### Phase 1 — Author discovery (fan-out by CS subdomain)
+### Phase 1 — Author discovery (fan-out by CS subdomain) ✅ complete (2026-07-24)
 **Fan-out unit:** one CS subdomain per task.
 
 **Subdomains (fixed):**
@@ -184,7 +190,18 @@ tagged with all discovering subdomains, carrying a titles-only top-10 list
 with public/paywalled flags.
 **Depends on:** Phase 0 (scaffolding, not content).
 
-### Phase 2 — Vetting (sequential, Nathan-in-the-loop)
+**Actual result:** 92 candidates from the nine-subdomain fan-out, post-dedup
+(7 figures surfaced by more than one subdomain, tagged with all of them —
+Dijkstra by four). Plus 3 added out-of-band via direct discussion rather than
+the fan-out itself, same output shape (stub, why-candidate, top-10 with
+accessibility flags), same `status: candidate` treatment: Chuck Moore and
+Manfred von Thun (Forth/Joy concatenative lineage, a gap surfaced discussing
+Schönfinkel/Curry), and Jerome Saltzer (security/systems design principles,
+the one real gap found scoping whether cyber/crypto/ML deserved coverage —
+conclusion was no dedicated subdomains, but this one figure was missing).
+95 total. Full roster and per-subdomain breakdown in [ledger.md](ledger.md).
+
+### Phase 2 — Vetting (sequential, Nathan-in-the-loop) ⬅ next, not started
 **Fan-out unit:** one candidate figure per pass — not parallelizable the same
 way as the others, since layer placement and tension-spotting need live
 judgment, not independent agent runs.
@@ -272,7 +289,9 @@ was in service of.
 **Depends on:** Phases 3-6 substantially complete, at least for the first
 distillation pass; can re-run distillation as the bundle grows.
 
-## Open before Phase 1 can start
-Nothing blocking — Phase 0 has no content dependencies and Phase 1 can begin
-as soon as Phase 0's scaffolding (including the nine subdomain definition
-files) is in place.
+## Open before Phase 3 can start
+Phase 2 (vetting) is the blocker — sequential, Nathan-in-the-loop, not
+autonomous per its own definition above. Nothing else is waiting: Phases 0-1
+are done, Phase 3's per-figure fan-out can start incrementally on whichever
+figures clear vetting first, doesn't need the whole roster vetted before
+beginning.
