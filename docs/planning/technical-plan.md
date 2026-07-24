@@ -55,6 +55,23 @@ bundle/
   [§4a](project-state.md#4a-author-worldview-context--resolved-process-note-not-a-bundle-field).
 - Bundle first, distilled `@`-referenceable doc second, not in parallel — [§5](project-state.md#5-final-deliverable-shape--confirmed).
 
+## Planning/execution boundary
+
+Everything up to and including this line happens in `docs/planning/*.md` — the
+four argument docs (primer, overview, debate transcript, project-state) plus
+this plan. **Phase 0 is the seam.** From Phase 0 onward, work stops being
+"argue in markdown about the project" and starts being "generate real OKF
+files in the bundle." Nothing before Phase 0 produces a `figure`/`work`/
+`lesson`/`axis`/`tension` file; nothing from Phase 0 on modifies the four
+planning docs except to log status (figure ledger updates, thread edits if a
+later phase surfaces something that reopens a decision).
+
+Bundle root isn't pinned down yet — assuming top-level `bundle/` at the repo
+root (sibling to `docs/`, not nested under `docs/planning/`), since an OKF
+bundle is meant to be portable/shippable on its own rather than living inside
+the argument-docs tree. Flag if that's wrong before Phase 0 runs; the tree
+diagram above and everything downstream assumes it.
+
 ## Pipeline
 
 Each phase lists a **fan-out unit** — the thing that gets split into parallel
