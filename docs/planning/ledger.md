@@ -9,8 +9,8 @@ tags: [ledger, figures, vetting, tensions]
 
 Live tracking doc for [technical-plan.md](technical-plan.md) Phases 1–5. Phase 1
 complete as of 2026-07-24: 92 unique candidates across 9 subdomains, post-dedup,
-plus 2 added out-of-band via discussion (Chuck Moore, Manfred von Thun — same
-day). All `status: candidate` in their stub files under
+plus 3 added out-of-band via discussion (Chuck Moore, Manfred von Thun, Jerome
+Saltzer — same day). All `status: candidate` in their stub files under
 `bundle/figures/<slug>/index.md` — **nothing here is vetted yet.** This table
 is the fast-scan index; the stub file is authoritative (bio, why-candidate,
 top-10 works with public/paywalled flags).
@@ -47,11 +47,13 @@ Knuth · Cook · Karp · Tarjan · Hartmanis · Stearns · Rabin · Edmonds · S
 
 ### 5. Software Engineering & Architecture
 **Dijkstra** · **Hoare** · Parnas · Brooks · Wirth · Naur · Boehm · Lehman ·
-Royce · Booch · Gang of Four (Gamma/Helm/Johnson/Vlissides)
+Royce · Booch · Gang of Four (Gamma/Helm/Johnson/Vlissides) · **Saltzer** (also
+OS, added 2026-07-24)
 
 ### 6. Operating Systems & Systems Programming
 **Dijkstra** · **Brinch Hansen** (also Distributed) · Ritchie · Thompson ·
-Corbató · Lampson · Denning · Rashid · Cutler · Pike · Torvalds · Wilkes
+Corbató · Lampson · Denning · Rashid · Cutler · Pike · Torvalds · Wilkes ·
+**Saltzer** (also SW Eng, added 2026-07-24)
 
 ### 7. Distributed Systems & Concurrency
 **Lamport** · **Hoare** · **Dijkstra** · **Liskov** · **Milner** · **Brinch
@@ -67,6 +69,16 @@ Kay · Ingalls · Goldberg · Dahl · Nygaard · **Liskov** · Sutherland · Ree
 
 ## Flagged for Phase 2 attention
 Pulled from the research agents' own notes — not decisions, just what to weigh:
+- **Saltzer**, added 2026-07-24 from the cyber/crypto/ML scoping discussion. The
+  identified gap once Yao/Rabin (crypto's general-abstraction content, via
+  Algorithms & Complexity) and McCarthy (AI's, via Lisp not AI) turned out to
+  already be covered by figures who'd earned their spot elsewhere. Saltzer's
+  is genuinely general systems-architecture reasoning (End-to-End Arguments,
+  protection design principles), not applied crypto/security technique — the
+  conclusion from that discussion was don't add crypto or ML/AI as subdomains
+  and don't chase more figures from either, but do add this one targeted gap.
+  Overlaps Corbató (his doctoral advisor, Multics collaborator) and Lampson
+  (adjacent security-design work already in the OS subdomain).
 - **McCarthy / Chuck Moore / von Thun — a three-point spectrum on lambda-calculus fidelity**, added 2026-07-24. Forth (Moore) is independent convergent invention, zero exposure to combinatory logic. Lisp (McCarthy) is notation borrowed from Church with semantics that actually diverged (dynamic scoping broke lambda calculus's substitution semantics until Scheme fixed it decades later — McCarthy's stub corrected same day to stop overstating this as "direct translation"). Joy (von Thun) is deliberate, conscious derivation from Curry's combinatory logic. Worth vetting as a set — the contrast is more informative together than any one of them alone.
 - **Church, Turing** — already accepted/placed per project-state.md §1–2 (frozen); stubs exist for bundle consistency, not open questions.
 - **Schönfinkel + Curry** — combinatory logic is arguably *more* primitive-reduced than lambda calculus (no bound variables at all). Real test case for the primitive-count axis.

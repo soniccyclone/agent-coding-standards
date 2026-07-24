@@ -6,11 +6,13 @@ description: All figures in the bundle, accepted and rejected. Populated by Phas
 
 # Figures
 
-94 candidates: 92 from Phase 1's nine-subdomain fan-out (post-dedup — 7 figures
+95 candidates: 92 from Phase 1's nine-subdomain fan-out (post-dedup — 7 figures
 surfaced by more than one subdomain appear once, tagged with all discovering
-subdomains), plus 2 added out-of-band via discussion (Chuck Moore, Manfred von
+subdomains), plus 3 added out-of-band via discussion (Chuck Moore, Manfred von
 Thun — the Forth/Joy concatenative lineage, sibling to Schönfinkel/Curry's
-combinatory logic). All `status: candidate` — none vetted yet. See
+combinatory logic; Jerome Saltzer — security/systems design principles,
+identified gap from the cyber/crypto/ML scoping discussion). All
+`status: candidate` — none vetted yet. See
 [ledger.md](../../docs/planning/ledger.md) for the working accept/reject tracker.
 
 ## By subdomain
@@ -23,9 +25,9 @@ combinatory logic). All `status: candidate` — none vetted yet. See
 
 **Algorithms & Complexity** — [knuth](knuth/index.md), [cook](cook/index.md), [karp](karp/index.md), [tarjan](tarjan/index.md), [hartmanis](hartmanis/index.md), [stearns](stearns/index.md), [rabin](rabin/index.md), [edmonds](edmonds/index.md), [strassen](strassen/index.md), [yao](yao/index.md), [valiant](valiant/index.md)
 
-**Software Engineering & Architecture** — [dijkstra](dijkstra/index.md), [hoare](hoare/index.md), [parnas](parnas/index.md), [brooks](brooks/index.md), [wirth](wirth/index.md), [naur](naur/index.md), [boehm](boehm/index.md), [lehman](lehman/index.md), [royce](royce/index.md), [booch](booch/index.md), [gang-of-four](gang-of-four/index.md)
+**Software Engineering & Architecture** — [dijkstra](dijkstra/index.md), [hoare](hoare/index.md), [parnas](parnas/index.md), [brooks](brooks/index.md), [wirth](wirth/index.md), [naur](naur/index.md), [boehm](boehm/index.md), [lehman](lehman/index.md), [royce](royce/index.md), [booch](booch/index.md), [gang-of-four](gang-of-four/index.md), [saltzer](saltzer/index.md)
 
-**Operating Systems & Systems Programming** — [dijkstra](dijkstra/index.md), [brinch-hansen](brinch-hansen/index.md) (also Distributed), [ritchie](ritchie/index.md), [thompson](thompson/index.md), [corbato](corbato/index.md), [lampson](lampson/index.md), [denning](denning/index.md), [rashid](rashid/index.md), [cutler](cutler/index.md), [pike](pike/index.md), [torvalds](torvalds/index.md), [wilkes](wilkes/index.md)
+**Operating Systems & Systems Programming** — [dijkstra](dijkstra/index.md), [brinch-hansen](brinch-hansen/index.md) (also Distributed), [ritchie](ritchie/index.md), [thompson](thompson/index.md), [corbato](corbato/index.md), [lampson](lampson/index.md), [denning](denning/index.md), [rashid](rashid/index.md), [cutler](cutler/index.md), [pike](pike/index.md), [torvalds](torvalds/index.md), [wilkes](wilkes/index.md), [saltzer](saltzer/index.md) (also SW Eng)
 
 **Distributed Systems & Concurrency** — [lamport](lamport/index.md), [hoare](hoare/index.md), [dijkstra](dijkstra/index.md), [liskov](liskov/index.md), [milner](milner/index.md), [brinch-hansen](brinch-hansen/index.md), [lynch](lynch/index.md), [fischer](fischer/index.md), [herlihy](herlihy/index.md), [schneider](schneider/index.md), [brewer](brewer/index.md), [dolev](dolev/index.md)
 
