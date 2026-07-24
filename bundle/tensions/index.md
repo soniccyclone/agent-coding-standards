@@ -6,8 +6,7 @@ description: Full open+resolved status table for cross-figure tensions. Empty un
 
 # Tensions
 
-No tensions logged yet — Phase 5 has not run. See ledger.md for the live
-mirror of this table once entries exist.
+No tensions logged yet — the cross-figure tension-resolution pass hasn't run.
 
 | tension | figures | status |
 |---|---|---|

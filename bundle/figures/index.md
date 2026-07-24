@@ -1,19 +1,19 @@
 ---
 type: index
 title: Figures
-description: All figures in the bundle, accepted and rejected. Populated by Phase 1 (author discovery) - all status:candidate, pending Phase 2 vetting.
+description: All figures in the bundle, accepted and rejected.
 ---
 
 # Figures
 
-95 candidates: 92 from Phase 1's nine-subdomain fan-out (post-dedup — 7 figures
-surfaced by more than one subdomain appear once, tagged with all discovering
-subdomains), plus 3 added out-of-band via discussion (Chuck Moore, Manfred von
-Thun — the Forth/Joy concatenative lineage, sibling to Schönfinkel/Curry's
-combinatory logic; Jerome Saltzer — security/systems design principles,
-identified gap from the cyber/crypto/ML scoping discussion). All
-`status: candidate` — none vetted yet. See
-[ledger.md](../../docs/planning/ledger.md) for the working accept/reject tracker.
+95 figures, all `status: accepted`: 92 from the original nine-subdomain
+discovery fan-out (post-dedup — 7 figures surfaced by more than one subdomain
+appear once, tagged with all discovering subdomains), plus 3 added out-of-band
+via discussion (Chuck Moore, Manfred von Thun — the Forth/Joy concatenative
+lineage, sibling to Schönfinkel/Curry's combinatory logic; Jerome Saltzer —
+security/systems design principles, identified gap from the cyber/crypto/ML
+scoping discussion). Each figure's own stub file carries its `layer`
+placement (`design-thought` / `implementation-mapping` / `both`).
 
 ## By subdomain
 

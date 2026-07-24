@@ -1,7 +1,7 @@
 ---
 type: index
 title: Axes
-description: The six optimization axes from primer.md §2. Every lesson in this bundle scores on at least one.
+description: The six optimization axes this corpus scores lessons against — expressiveness, verifiability, parallelizability, hardware-affinity, cognitive load, primitive-count. Every lesson in this bundle scores on at least one.
 ---
 
 # Axes

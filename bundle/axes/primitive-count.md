@@ -12,10 +12,11 @@ Count the irreducible constructs a formalism or idiom needs before every other
 capability can be derived or encoded from them. Two formalisms can be
 extensionally equivalent (same computability class, same reachable behavior)
 while differing sharply in how many primitives it takes to get there —
-equivalence of *extension* is not equivalence of *structure*
-(primer.md §§2–3). Lower primitive count, under the discovery framing this
-corpus uses, sits closer to the true minimal representation of the underlying
-structure — not a stylistic preference.
+equivalence of *extension* is not equivalence of *structure*. Lower primitive
+count, under the discovery framing this corpus uses (mathematical/computational
+structures are treated as discovered, not arbitrarily authored), sits closer
+to the true minimal representation of the underlying structure — not a
+stylistic preference.
 
 ## Rollup
 No lessons scored on this axis yet.

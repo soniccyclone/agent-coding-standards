@@ -15,7 +15,7 @@ tags: [figure, accepted]
 ## Why a candidate
 Systematized the formal, mathematical analysis of algorithm cost (running time, operation counts) as its own discipline — popularized asymptotic notation and is widely credited as "the father of the analysis of algorithms."
 
-Note per thread 3 (frozen, project-state.md): TAOCP itself is paywalled/DRM'd and excluded from ingestion. Any lessons drawn from Knuth must come from his freely available papers, not the book.
+Note: TAOCP itself is paywalled/DRM'd, and this bundle only ingests public sources — excluded from ingestion. Any lessons drawn from Knuth must come from his freely available papers, not the book.
 
 ## Top 10 most influential works
 1. *The Art of Computer Programming*, Vols. 1-4A (1968-2011) — `paywalled` (commercial books — excluded from ingestion per §3)

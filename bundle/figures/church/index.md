@@ -16,7 +16,7 @@ tags: [figure, accepted, church-turing]
 - **Foundations of Computation:** Defined computability via an equational calculus built from two operations — abstraction and application — and proved the Entscheidungsproblem unsolvable, giving one of the field's minimal formalisms.
 - **Programming Languages & Semantics:** Lambda calculus is the direct mathematical ancestor of every functional evaluation model, including McCarthy's `eval`.
 
-Already accepted per project-state.md §1 (frozen) as the anchor figure for this whole project — this stub exists for bundle consistency, not as an open vetting question.
+The anchor figure for this whole project's design-thought lineage — lambda calculus is the primer-worked example of a computability formalism built from a minimal primitive basis (abstraction, application).
 
 ## Top 10 most influential works
 1. "An Unsolvable Problem of Elementary Number Theory" (1936) — `public` (widely mirrored; original AJM/JSTOR gated)

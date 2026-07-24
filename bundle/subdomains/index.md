@@ -1,7 +1,7 @@
 ---
 type: index
 title: Subdomains
-description: The nine CS subdomains from technical-plan.md Phase 1. Cross-cutting tags on works and lessons, not an ownership hierarchy — see technical-plan.md's "Bundle target structure" for why.
+description: The nine CS subdomains this corpus organizes discovery by. Cross-cutting tags on works and lessons, not an ownership hierarchy — a figure's bio, works, and lessons live in exactly one place (their own figures/<figure>/ entry), so a multi-subdomain figure is tagged with every subdomain that surfaced them rather than duplicated.
 ---
 
 # Subdomains

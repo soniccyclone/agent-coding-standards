@@ -115,8 +115,6 @@ expression just because it's a level removed from the original work.
 - Lessons are abstract (how to *think*), never technique/expression-level; zero copy-paste at any length, including in rollups — [§3](project-state.md#3-scope-and-copyright-of-ingestion--resolved-publish-is-the-intent-not-a-maybe).
 - Vetting outcome is layer placement, not reject/accept — every figure lands at
   the design-thought layer or the implementation-mapping layer (or both) — [§2](project-state.md#2-does-the-primitive-count-default-license-rejecting-turing-style-figures--resolved).
-- Worldview is a conversational note during vetting, never a bundle field —
-  [§4a](project-state.md#4a-author-worldview-context--resolved-process-note-not-a-bundle-field).
 - Bundle first, distilled `@`-referenceable doc second, not in parallel — [§5](project-state.md#5-final-deliverable-shape--confirmed).
 
 ## Planning/execution boundary
@@ -214,8 +212,7 @@ way as the others, since layer placement and tension-spotting need live
 judgment, not independent agent runs.
 **Do:** run each candidate's stub through the primer.md gate; flip `status` to
 `accepted` or `rejected` in place; if accepted, assign layer placement
-(design-thought / implementation-mapping / both, per §2); note worldview
-conversationally per §4a (not written to the file); flag any immediately
+(design-thought / implementation-mapping / both, per §2); flag any immediately
 visible tension against an already-accepted figure.
 **Output:** existing stub file updated in place, not recreated — `status` and
 layer placement set. Rejected stubs stay in the tree with their reason, same
@@ -234,10 +231,8 @@ why-candidate content. 26 design-thought, 10 both, 59 implementation-mapping;
 full breakdown and reasoning in
 [ledger.md](ledger.md#phase-2-layer-placement). One immediately-visible
 tension flagged per this phase's own duty: Dijkstra vs. Knuth on goto (both
-now accepted), added to ledger.md's tension index for Phase 5. Worldview
-notes were exchanged conversationally per §4a and aren't recorded in any
-file, per that thread's standing rule. Also resolved in this pass: Nathan
-confirmed non-publishing systems builders (Torvalds, and by the same
+now accepted), added to ledger.md's tension index for Phase 5. Also resolved
+in this pass: Nathan confirmed non-publishing systems builders (Torvalds, and by the same
 reasoning Cutler, Chuck Moore) can source Phase 3 material from shipped
 code/documentation rather than papers — see ledger.md's Torvalds note.
 
