@@ -2,9 +2,10 @@
 type: figure
 title: Niklaus Wirth
 description: 1934-2024, ETH Zurich. Stepwise refinement - rigorous top-down decomposition as deliberate design decisions. Designed Pascal, Modula-2, Oberon. Turing Award 1984.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Niklaus Wirth

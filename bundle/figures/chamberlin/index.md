@@ -2,9 +2,10 @@
 type: figure
 title: Donald D. Chamberlin
 description: b. 1944, IBM. Co-created SEQUEL/SQL with Boyce - turned Codd's relational calculus into a usable declarative interface.
-status: candidate
+status: accepted
+layer: both
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Donald D. Chamberlin

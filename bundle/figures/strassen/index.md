@@ -2,9 +2,10 @@
 type: figure
 title: Volker Strassen
 description: b. 1936, Konstanz. Proved naive O(n^3) matrix multiplication is not optimal, launching fast matrix multiplication complexity theory.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Volker Strassen

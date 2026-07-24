@@ -2,9 +2,10 @@
 type: figure
 title: Juris Hartmanis
 description: 1928-2022, Cornell. Co-authored the foundational paper defining computational complexity as a formal discipline.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Juris Hartmanis

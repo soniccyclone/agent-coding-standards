@@ -2,9 +2,10 @@
 type: figure
 title: Jean-Raymond Abrial
 description: 1938-2025. Built specification languages with mechanized refinement calculi (B, Event-B) carrying specification to provably correct implementation.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Jean-Raymond Abrial

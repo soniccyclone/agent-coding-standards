@@ -2,9 +2,10 @@
 type: figure
 title: Ivan Sutherland
 description: b. 1938, MIT/Harvard/Caltech. Sketchpad (1963) - earliest master/instance object system with interactive direct manipulation. Turing Award 1988.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Ivan Sutherland

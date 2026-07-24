@@ -2,9 +2,10 @@
 type: figure
 title: Jean-Yves Girard
 description: b. 1947, CNRS Marseille. Independently discovered System F via proof theory; invented linear logic, making resource use explicit in logical primitives.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Jean-Yves Girard

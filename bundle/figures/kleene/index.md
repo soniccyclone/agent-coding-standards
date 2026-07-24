@@ -2,9 +2,10 @@
 type: figure
 title: Stephen Cole Kleene
 description: 1909-1994, Wisconsin-Madison. Proved equivalence of general recursive functions, lambda-definability, and Turing computability - the result legitimizing the Church-Turing thesis.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Stephen Cole Kleene

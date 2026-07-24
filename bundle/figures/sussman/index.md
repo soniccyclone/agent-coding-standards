@@ -2,9 +2,10 @@
 type: figure
 title: Gerald Jay Sussman
 description: b. 1947, MIT. Co-authored the Lambda Papers with Steele - mechanically showing imperative constructs reduce to lambda calculus plus tail calls and closures.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Gerald Jay Sussman

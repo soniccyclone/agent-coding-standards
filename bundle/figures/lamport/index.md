@@ -2,9 +2,10 @@
 type: figure
 title: Leslie Lamport
 description: b. 1941, Microsoft Research. Logical clocks, Byzantine Generals, Paxos, TLA+. Turing Award 2013.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Leslie Lamport

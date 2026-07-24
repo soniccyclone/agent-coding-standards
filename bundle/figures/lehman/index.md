@@ -2,9 +2,10 @@
 type: figure
 title: M.M. (Manny) Lehman
 description: 1925-2010, IBM Research/Imperial College London. Laws of software evolution - empirical account of why large systems' complexity grows over time.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # M.M. (Manny) Lehman

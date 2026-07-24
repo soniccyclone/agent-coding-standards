@@ -2,9 +2,10 @@
 type: figure
 title: Moshe Y. Vardi
 description: b. 1954, Rice. Brought finite model theory and descriptive complexity to bear on query languages.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Moshe Y. Vardi

@@ -2,9 +2,10 @@
 type: figure
 title: Frederick P. Brooks Jr.
 description: 1931-2022, UNC Chapel Hill. Managed IBM System/360; empirical reasoning about why large-system complexity doesn't scale naively.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Frederick P. Brooks Jr.

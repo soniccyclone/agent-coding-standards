@@ -2,9 +2,10 @@
 type: figure
 title: Butler Lampson
 description: b. 1943, Xerox PARC/DEC SRC/MSR. Co-designed the Alto's OS and PARC's file/naming systems; distilled decades of OS engineering into design principles.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Butler Lampson

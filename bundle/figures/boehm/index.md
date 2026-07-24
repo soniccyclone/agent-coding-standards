@@ -2,9 +2,10 @@
 type: figure
 title: Barry Boehm
 description: 1935-2022, TRW/DARPA/USC. The spiral model - risk-driven reasoning framework grounded in empirical cost/risk data.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Barry Boehm

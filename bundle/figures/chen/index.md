@@ -2,9 +2,10 @@
 type: figure
 title: Peter Chen
 description: b. 1947. The Entity-Relationship model gave schema design a semantic vocabulary independent of storage mechanism.
-status: candidate
+status: accepted
+layer: both
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Peter Chen

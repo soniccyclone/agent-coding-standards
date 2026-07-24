@@ -2,9 +2,10 @@
 type: figure
 title: David Cutler
 description: b. 1942, DEC/Microsoft. Architected RSX-11M and VMS at DEC, then led Windows NT's kernel design.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # David Cutler

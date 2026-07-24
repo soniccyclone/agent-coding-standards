@@ -2,9 +2,10 @@
 type: figure
 title: Manfred von Thun
 description: La Trobe University, Melbourne. Created Joy - deliberately built on combinatory logic, explicitly citing Curry. The direct descendant Forth never claimed to be.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Manfred von Thun

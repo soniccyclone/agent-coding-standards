@@ -2,9 +2,10 @@
 type: figure
 title: Adele Goldberg
 description: b. 1945, Xerox PARC/ParcPlace. Co-authored the definitive Smalltalk-80 reference works; wrote on environment design as pedagogical/architectural stance.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Adele Goldberg

@@ -2,9 +2,10 @@
 type: figure
 title: Edsger W. Dijkstra
 description: 1930-2002, Eindhoven/UT Austin. Structured programming, weakest preconditions, semaphores, self-stabilization. Turing Award 1972.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture, operating-systems-and-systems-programming, distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Edsger W. Dijkstra

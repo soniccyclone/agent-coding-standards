@@ -2,9 +2,10 @@
 type: figure
 title: John Backus
 description: 1924-2007, IBM. Co-invented BNF; later argued for function-level programming built from a small algebra of combining forms rather than von Neumann assignment.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # John Backus

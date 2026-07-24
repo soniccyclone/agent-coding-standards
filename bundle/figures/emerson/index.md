@@ -2,9 +2,10 @@
 type: figure
 title: E. Allen Emerson
 description: b. 1954, UT Austin. Co-invented model checking alongside Clarke; developed branching-time (CTL) temporal-logic theory. Turing Award 2007 (shared).
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # E. Allen Emerson

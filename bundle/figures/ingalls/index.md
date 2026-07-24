@@ -2,9 +2,10 @@
 type: figure
 title: Dan Ingalls
 description: b. 1944, Xerox PARC/Squeak/Lively Kernel. Chief architect/implementer of Smalltalk - made "live, explorable environment" a working reality.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Dan Ingalls

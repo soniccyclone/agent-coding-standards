@@ -2,9 +2,10 @@
 type: figure
 title: C.J. Date
 description: b. 1941, independent. The field's most rigorous popularizer and codifier of relational theory for fifty years.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # C.J. Date

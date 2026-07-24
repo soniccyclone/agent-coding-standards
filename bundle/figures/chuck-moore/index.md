@@ -2,9 +2,10 @@
 type: figure
 title: Charles H. "Chuck" Moore
 description: b. 1938, NRAO/FORTH Inc. Invented Forth (1968) - independently converged on point-free, stack-based composition with zero exposure to combinatory logic.
-status: candidate
+status: accepted
+layer: both
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Charles H. "Chuck" Moore

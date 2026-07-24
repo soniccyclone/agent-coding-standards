@@ -2,9 +2,10 @@
 type: figure
 title: Alonzo Church
 description: 1903-1995, Princeton. Invented lambda calculus - two primitives (abstraction, application) from which computability is derived.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
-tags: [figure, candidate, church-turing]
+tags: [figure, accepted, church-turing]
 ---
 
 # Alonzo Church

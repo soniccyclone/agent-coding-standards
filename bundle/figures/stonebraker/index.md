@@ -2,9 +2,10 @@
 type: figure
 title: Michael Stonebraker
 description: b. 1943, Berkeley/MIT. Operationalized the relational model at system scale (Ingres, Postgres). Turing Award 2014.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Michael Stonebraker

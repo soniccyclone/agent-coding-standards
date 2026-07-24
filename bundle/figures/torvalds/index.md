@@ -2,9 +2,10 @@
 type: figure
 title: Linus Torvalds
 description: b. 1969. Created and maintains the Linux kernel; created Git.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Linus Torvalds

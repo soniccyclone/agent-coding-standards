@@ -2,9 +2,10 @@
 type: figure
 title: Ronald Fagin
 description: b. 1945, IBM Research. Formalized dependency theory beyond Codd's original normal forms (4NF, DK/NF).
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Ronald Fagin

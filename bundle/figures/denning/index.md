@@ -2,9 +2,10 @@
 type: figure
 title: Peter J. Denning
 description: b. 1942, Princeton/Purdue/GMU/NPS. Invented the working-set model, the theoretical basis for virtual-memory page replacement.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Peter J. Denning

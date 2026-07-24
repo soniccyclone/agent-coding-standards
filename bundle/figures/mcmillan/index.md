@@ -2,9 +2,10 @@
 type: figure
 title: Kenneth L. McMillan
 description: b. ~1962, CMU/Cadence/MSR/UT Austin. Invented symbolic model checking, solving the state-explosion problem.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Kenneth L. McMillan

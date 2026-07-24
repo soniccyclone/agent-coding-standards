@@ -2,9 +2,10 @@
 type: figure
 title: Cliff B. Jones
 description: b. 1944, Newcastle. Developed VDM specification/refinement formalism, then rely/guarantee reasoning for concurrency.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Cliff B. Jones

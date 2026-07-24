@@ -2,9 +2,10 @@
 type: figure
 title: Amir Pnueli
 description: 1941-2009, Weizmann/NYU. Introduced temporal logic as the specification language for concurrent/reactive properties. Turing Award 1996.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Amir Pnueli

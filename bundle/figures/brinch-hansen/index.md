@@ -2,9 +2,10 @@
 type: figure
 title: Per Brinch Hansen
 description: 1938-2007, Regnecentralen/Caltech/USC/Syracuse. RC 4000 kernel/policy separation; Concurrent Pascal monitors.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Per Brinch Hansen

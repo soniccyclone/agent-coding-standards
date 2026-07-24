@@ -2,9 +2,10 @@
 type: figure
 title: Rózsa Péter
 description: 1905-1977, Eötvös Loránd University, Budapest. Wrote the first systematic treatment of recursive function theory, clarifying primitive-recursion vs. general-recursion.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Rózsa Péter

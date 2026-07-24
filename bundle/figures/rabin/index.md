@@ -2,9 +2,10 @@
 type: figure
 title: Michael O. Rabin
 description: 1931-2026, Hebrew University/Harvard. Co-founded nondeterminism theory; pioneered randomized algorithms with provable probabilistic bounds.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Michael O. Rabin

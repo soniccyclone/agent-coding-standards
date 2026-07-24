@@ -2,9 +2,10 @@
 type: figure
 title: Joseph Sifakis
 description: b. 1946, Verimag/CNRS Grenoble. Independently co-invented model checking in Europe (with Queille), building the CESAR tool. Turing Award 2007 (shared).
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Joseph Sifakis

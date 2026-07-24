@@ -2,9 +2,10 @@
 type: figure
 title: Maurice Wilkes
 description: 1913-2010, Cambridge. Built EDSAC; invented memory cache; built CAP, the first working hardware capability-based system.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Maurice Wilkes

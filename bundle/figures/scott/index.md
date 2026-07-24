@@ -2,9 +2,10 @@
 type: figure
 title: Dana Scott
 description: b. 1932, Oxford/CMU. Invented domain theory - rigorous mathematical foundation for denotational semantics; Turing Award 1976.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Dana Scott

@@ -2,9 +2,10 @@
 type: figure
 title: Richard Rashid
 description: b. 1949, CMU. Led the Mach microkernel project - its IPC/VM architecture underlies NeXTSTEP and macOS/iOS's XNU kernel.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Richard Rashid

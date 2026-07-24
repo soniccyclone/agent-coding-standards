@@ -2,9 +2,10 @@
 type: figure
 title: Stephen A. Cook
 description: b. 1939, Toronto. Proved the Cook-Levin theorem establishing NP-completeness, founding the formal theory of computational intractability.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Stephen A. Cook

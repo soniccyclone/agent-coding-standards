@@ -10,17 +10,23 @@ tags: [ledger, figures, vetting, tensions]
 Live tracking doc for [technical-plan.md](technical-plan.md) Phases 1–5. Phase 1
 complete as of 2026-07-24: 92 unique candidates across 9 subdomains, post-dedup,
 plus 3 added out-of-band via discussion (Chuck Moore, Manfred von Thun, Jerome
-Saltzer — same day). All `status: candidate` in their stub files under
-`bundle/figures/<slug>/index.md` — **nothing here is vetted yet.** This table
-is the fast-scan index; the stub file is authoritative (bio, why-candidate,
-top-10 works with public/paywalled flags).
+Saltzer — same day). **Phase 2 (vetting) complete as of 2026-07-24: all 95
+accepted** — Nathan reviewed the full candidate roster and approved every one,
+no rejections. Layer placement assigned per figure below and in each stub's
+`layer` field. Stub file (`bundle/figures/<slug>/index.md`) remains
+authoritative for bio/why-candidate/top-10; this table is the fast-scan index.
 
 ## How to read
 - **status** — `candidate` (Phase 1, unvetted) → `accepted` / `rejected` (Phase 2).
+  All 95 landed on `accepted`; see stub files for the authoritative field.
 - **layer** — `design-thought` / `implementation-mapping` / `both`, assigned at
   Phase 2 per the hierarchy resolution (frozen reasoning in the old
-  project-state.md — cited, not re-argued here).
-- Rejections get a one-line reason. Not silently dropped.
+  project-state.md — cited, not re-argued here). Worked example from that
+  resolution: Dijkstra, Hoare, Kernighan, Pike, Lampson land at
+  implementation-mapping *despite* their formal rigor, because their subject
+  is the imperative/mechanical/systems world, not Church/Lisp-style
+  composition — layer tracks subject-matter lineage, not rigor level.
+- Rejections get a one-line reason. Not silently dropped. (None this pass.)
 - Names in **bold** were surfaced by more than one subdomain search and appear
   once in the bundle, tagged with every discovering subdomain.
 
@@ -67,8 +73,37 @@ Codd · Bachman · Chamberlin · Boyce · Date · Fagin · Ullman · Abiteboul �
 Kay · Ingalls · Goldberg · Dahl · Nygaard · **Liskov** · Sutherland · Reenskaug
 · Ungar · Cardelli · Cox
 
+## Phase 2 layer placement
+Accepted 2026-07-24, all 95. Design-thought (26) — the Church/Lisp lineage:
+Abiteboul, Backus, Cardelli, Chaitin, Church, Codd, Curry, Date, Fagin, Girard,
+Gödel, Hilbert, Kleene, Kolmogorov, Landin, McCarthy, Péter, Post, Schönfinkel,
+Scott, Steele, Strachey, Sussman, Ullman, Vardi, von Thun.
+
+Both (10) — substantial work squarely in each lineage: Boyce, Chamberlin,
+Chen, Chuck Moore, Dahl, Kay, Liskov, Milner, Nygaard, Reynolds.
+
+Implementation-mapping (59) — everyone else: the full Foundations-subdomain
+exception is Turing; all of Formal Methods & Verification, Algorithms &
+Complexity, Software Engineering & Architecture, and Operating Systems &
+Systems Programming land here in full (see the worked-example note above —
+rigor doesn't move a figure into design-thought, subject matter does); plus
+Bachman, Stonebraker (Databases) and Cox, Goldberg, Ingalls, Reenskaug,
+Sutherland, Ungar (Programming Environments) and Brewer, Dolev, Fischer,
+Herlihy, Lynch, Schneider (Distributed, non-overlapping names only).
+
+**Torvalds note:** Nathan confirmed 2026-07-24 that a non-publishing
+systems-builder's shipped code/documentation is an acceptable substitute for
+papers as Phase 3 source material — this was flagged as an open question in
+Phase 1 (see Cutler/Torvalds note below) and is now resolved yes, not just for
+Torvalds but as the general answer for this shape of candidate (Cutler, Chuck
+Moore fit the same pattern).
+
 ## Flagged for Phase 2 attention
-Pulled from the research agents' own notes — not decisions, just what to weigh:
+Pulled from the research agents' own notes — not decisions, just what to weigh.
+Superseded by the accept-all outcome above; kept for the historical record of
+what got weighed and the vet-together groupings (Clarke/Emerson/Sifakis,
+Hartmanis/Stearns, Dahl/Nygaard, McCarthy/Moore/von Thun) since those pairings
+informed the layer-placement reasoning even though every member was accepted:
 - **Saltzer**, added 2026-07-24 from the cyber/crypto/ML scoping discussion. The
   identified gap once Yao/Rabin (crypto's general-abstraction content, via
   Algorithms & Complexity) and McCarthy (AI's, via Lisp not AI) turned out to
@@ -102,3 +137,12 @@ duplicate of the content.
 | tension | figures | status | bundle file |
 |---|---|---|---|
 | McCarthy → Russell | McCarthy, Russell (Russell not yet in figure set — add to queue) | open | not yet created |
+| goto considered harmful, or not | Dijkstra, Knuth | open | not yet created |
+
+Second row newly flagged at Phase 2 close (2026-07-24), now that both figures
+are accepted — pre-cited as an expected case in project-state.md thread 4.
+Dijkstra's "Go To Statement Considered Harmful" vs. Knuth's "Structured
+Programming with go to Statements" (1974), which argues goto has legitimate
+uses the pure-structured-programming line overstates. Full resolution is
+Phase 5's job; flagging here per Phase 2's "note any immediately visible
+tension" duty.

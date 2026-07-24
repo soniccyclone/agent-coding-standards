@@ -2,9 +2,10 @@
 type: figure
 title: Luca Cardelli
 description: b. 1954, Bell Labs/DEC/MSR. Formal object calculi - mathematical grounding for encapsulation, message passing, subtyping.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Luca Cardelli

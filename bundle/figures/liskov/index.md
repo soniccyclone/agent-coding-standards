@@ -2,9 +2,10 @@
 type: figure
 title: Barbara Liskov
 description: b. 1939, MIT. CLU abstract data types, Liskov Substitution Principle, and PBFT - the first practical Byzantine consensus protocol. Turing Award 2008.
-status: candidate
+status: accepted
+layer: both
 subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency, programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Barbara Liskov

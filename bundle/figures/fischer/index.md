@@ -2,9 +2,10 @@
 type: figure
 title: Michael J. Fischer
 description: b. 1942, Yale. Co-author of the FLP theorem - deterministic consensus cannot be guaranteed in a fully asynchronous system with even one faulty process.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Michael J. Fischer

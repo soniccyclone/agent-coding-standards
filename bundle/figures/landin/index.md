@@ -2,9 +2,10 @@
 type: figure
 title: Peter Landin
 description: 1930-2009, UNIVAC/Queen Mary. Showed ALGOL-style languages reduce to lambda calculus, founding the practice of reducing surface syntax to a small semantic core.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Peter Landin

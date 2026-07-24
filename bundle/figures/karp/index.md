@@ -2,9 +2,10 @@
 type: figure
 title: Richard M. Karp
 description: b. 1935, Berkeley. Extended Cook's NP-completeness result to 21 concrete combinatorial problems.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Richard M. Karp

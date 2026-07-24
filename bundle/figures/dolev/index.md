@@ -2,9 +2,10 @@
 type: figure
 title: Danny Dolev
 description: Hebrew University of Jerusalem. Core contributor to formal Byzantine agreement theory - minimal synchrony conditions, early-stopping protocols.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Danny Dolev

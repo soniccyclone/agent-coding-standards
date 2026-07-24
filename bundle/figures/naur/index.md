@@ -2,9 +2,10 @@
 type: figure
 title: Peter Naur
 description: 1928-2016, University of Copenhagen. "Programming as Theory Building" - a program's structure lives as shared theory in programmers' minds. Turing Award 2005.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Peter Naur

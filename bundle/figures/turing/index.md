@@ -2,9 +2,10 @@
 type: figure
 title: Alan Turing
 description: 1912-1954, Cambridge/Bletchley/Manchester. Defined computability via an idealized machine - the mechanism-first lineage retained alongside Church's.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [foundations-of-computation]
-tags: [figure, candidate, church-turing]
+tags: [figure, accepted, church-turing]
 ---
 
 # Alan Turing

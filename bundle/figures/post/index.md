@@ -2,9 +2,10 @@
 type: figure
 title: Emil Post
 description: 1897-1954, City College of New York. Independently defined computability via string rewriting - an even more minimal primitive than lambda calculus or Turing machines.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Emil Post

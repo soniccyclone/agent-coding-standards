@@ -2,9 +2,10 @@
 type: figure
 title: John C. Reynolds
 description: 1935-2013, Syracuse/CMU. Independently discovered System F; showed a language's meaning can be given as an interpreter written in a simpler one.
-status: candidate
+status: accepted
+layer: both
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # John C. Reynolds

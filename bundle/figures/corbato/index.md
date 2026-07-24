@@ -2,9 +2,10 @@
 type: figure
 title: Fernando Corbató
 description: 1926-2019, MIT. Led CTSS (first general-purpose time-sharing system) and Multics, which directly inspired Unix.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Fernando Corbató

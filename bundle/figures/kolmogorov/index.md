@@ -2,9 +2,10 @@
 type: figure
 title: Andrey Kolmogorov
 description: 1903-1987, Moscow State University. Defined algorithmic/descriptive complexity as shortest-program length - reducing information content to a computability-theoretic primitive.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Andrey Kolmogorov

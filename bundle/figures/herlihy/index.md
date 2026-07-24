@@ -2,9 +2,10 @@
 type: figure
 title: Maurice Herlihy
 description: b. 1954, Brown. Formalized linearizability and proved the wait-free hierarchy - the sharpest known formal tool for classifying synchronization primitives. Turing Award 2023.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Maurice Herlihy

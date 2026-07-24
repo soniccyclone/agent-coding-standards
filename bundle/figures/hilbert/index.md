@@ -2,9 +2,10 @@
 type: figure
 title: David Hilbert
 description: 1862-1943, Göttingen. Architect of the formalist program; posed the Entscheidungsproblem that forced Church and Turing to define computability rigorously.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # David Hilbert

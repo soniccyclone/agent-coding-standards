@@ -2,9 +2,10 @@
 type: figure
 title: John McCarthy
 description: 1927-2011, Stanford. Borrowed Church's lambda notation for Lisp, though early Lisp's dynamic scoping diverged from the calculus's semantics until Scheme's fix decades later.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # John McCarthy

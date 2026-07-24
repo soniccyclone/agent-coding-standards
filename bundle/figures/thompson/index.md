@@ -2,9 +2,10 @@
 type: figure
 title: Ken Thompson
 description: b. 1943, Bell Labs. Wrote the first Unix kernel; articulated the toolchain trust model underlying modern build/compiler security reasoning.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Ken Thompson

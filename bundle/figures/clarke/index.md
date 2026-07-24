@@ -2,9 +2,10 @@
 type: figure
 title: Edmund M. Clarke
 description: 1945-2020, CMU. Co-invented model checking - algorithmic, automatic verification of finite-state systems. Turing Award 2007 (shared).
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Edmund M. Clarke

@@ -2,9 +2,10 @@
 type: figure
 title: David Parnas
 description: b. 1941, CMU/Maryland/McMaster. Rigorous treatment of coupling and information hiding as decomposition criteria.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # David Parnas

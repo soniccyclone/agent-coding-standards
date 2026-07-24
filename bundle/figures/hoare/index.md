@@ -2,9 +2,10 @@
 type: figure
 title: C.A.R. Hoare
 description: b. 1934, Oxford/MSR. Hoare logic, CSP process algebra. Turing Award 1980.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture, distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # C.A.R. (Tony) Hoare

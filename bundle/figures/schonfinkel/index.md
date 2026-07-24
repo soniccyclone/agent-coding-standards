@@ -2,9 +2,10 @@
 type: figure
 title: Moses Schönfinkel
 description: 1888-1942, Göttingen (Hilbert circle). Originated combinatory logic - reduced function application to two primitive combinators, no bound variables at all.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Moses Schönfinkel

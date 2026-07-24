@@ -2,9 +2,10 @@
 type: figure
 title: Brad Cox
 description: 1944-2021, ITT/Stepstone/GMU. Created Objective-C to graft Smalltalk's message-passing model onto systems programming; wrote on "Software-ICs."
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Brad Cox

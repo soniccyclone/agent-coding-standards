@@ -2,9 +2,10 @@
 type: figure
 title: Alan Kay
 description: b. 1940, Xerox PARC/Apple/HP/VPRI. Coined "object-oriented programming," led the Smalltalk team, articulated objects/messages as a design philosophy.
-status: candidate
+status: accepted
+layer: both
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Alan Kay

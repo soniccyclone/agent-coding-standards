@@ -2,9 +2,10 @@
 type: figure
 title: Robert E. Tarjan
 description: b. 1948, Princeton. Formalized depth-first search with provable linear-time bounds; foundational amortized-analysis work.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Robert E. Tarjan

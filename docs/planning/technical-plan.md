@@ -1,7 +1,7 @@
 ---
 type: execution-plan
 title: Good Programming Corpus — Technical Plan
-description: Phased build pipeline for the OKF bundle. Phases 0-1 complete (95 candidate figures); Phase 2 (vetting) next, blocked on Nathan.
+description: Phased build pipeline for the OKF bundle. Phases 0-2 complete (95 figures, all accepted); Phase 3 (source discovery) next.
 tags: [execution, okf, pipeline, fan-out]
 ---
 
@@ -17,13 +17,20 @@ fix is a new dated note in this file — not an edit back into project-state.md.
 The schema amendment below is the first use of that escape hatch.
 
 **Status as of 2026-07-24:** Phase 0 done (bundle scaffolded). Phase 1 done —
-95 candidate figures in `bundle/figures/`, all `status: candidate`, none
-vetted. Phase 2 is next and is explicitly not autonomous — needs Nathan. No
-source links, no lesson content yet; that's Phase 3+, gated behind Phase 2.
+95 candidate figures in `bundle/figures/`. Phase 2 done same day — Nathan
+reviewed and approved the full roster, all 95 `status: accepted`, no
+rejections; layer placement (`design-thought` / `implementation-mapping` /
+`both`) assigned per figure per the project-state.md §2 hierarchy, logged in
+[ledger.md](ledger.md#phase-2-layer-placement). Torvalds-shaped candidates
+(non-publishing systems builders, shipped code instead of papers) confirmed
+acceptable as Phase 3 source material — see ledger.md's Torvalds note. Phase 3
+(source discovery) is next, can start incrementally per-figure. No source
+links, no lesson content yet.
 Tagged milestones on `main`: `author-candidates` (Phase 1 done, 92 candidates),
 `author-candidates-v2` (+Chuck Moore, von Thun — Forth/Joy lineage, 94),
 `author-candidates-v3` (+Jerome Saltzer — security/systems design principles,
-95, current HEAD).
+95), `figures-accepted-v1` (Phase 2 done, all 95 accepted + layer-placed,
+current HEAD).
 
 ## Schema amendments
 
@@ -201,7 +208,7 @@ the one real gap found scoping whether cyber/crypto/ML deserved coverage —
 conclusion was no dedicated subdomains, but this one figure was missing).
 95 total. Full roster and per-subdomain breakdown in [ledger.md](ledger.md).
 
-### Phase 2 — Vetting (sequential, Nathan-in-the-loop) ⬅ next, not started
+### Phase 2 — Vetting (sequential, Nathan-in-the-loop) ✅ complete (2026-07-24)
 **Fan-out unit:** one candidate figure per pass — not parallelizable the same
 way as the others, since layer placement and tension-spotting need live
 judgment, not independent agent runs.
@@ -215,6 +222,24 @@ layer placement set. Rejected stubs stay in the tree with their reason, same
 "not silently dropped" principle as ledger.md. Every outcome also logged in
 [ledger.md](ledger.md).
 **Depends on:** Phase 1 roster (post-dedup).
+
+**Actual result:** Nathan reviewed the full 95-figure roster directly and
+approved all of it — zero rejections. Layer placement then followed
+mechanically from the accept-all outcome, applying §2's hierarchy resolution
+(and its own worked example: Dijkstra/Hoare/Kernighan/Pike/Lampson land
+implementation-mapping despite formal rigor, because layer tracks
+subject-matter lineage — Church/Lisp composition vs. Turing-lineage
+mechanism — not rigor level) figure by figure against each stub's own
+why-candidate content. 26 design-thought, 10 both, 59 implementation-mapping;
+full breakdown and reasoning in
+[ledger.md](ledger.md#phase-2-layer-placement). One immediately-visible
+tension flagged per this phase's own duty: Dijkstra vs. Knuth on goto (both
+now accepted), added to ledger.md's tension index for Phase 5. Worldview
+notes were exchanged conversationally per §4a and aren't recorded in any
+file, per that thread's standing rule. Also resolved in this pass: Nathan
+confirmed non-publishing systems builders (Torvalds, and by the same
+reasoning Cutler, Chuck Moore) can source Phase 3 material from shipped
+code/documentation rather than papers — see ledger.md's Torvalds note.
 
 ### Phase 3 — Source discovery (fan-out per accepted figure)
 **Fan-out unit:** one accepted figure per task. This is the phase Nathan named
@@ -290,8 +315,8 @@ was in service of.
 distillation pass; can re-run distillation as the bundle grows.
 
 ## Open before Phase 3 can start
-Phase 2 (vetting) is the blocker — sequential, Nathan-in-the-loop, not
-autonomous per its own definition above. Nothing else is waiting: Phases 0-1
-are done, Phase 3's per-figure fan-out can start incrementally on whichever
-figures clear vetting first, doesn't need the whole roster vetted before
-beginning.
+Nothing — Phase 2 closed 2026-07-24, all 95 figures accepted and
+layer-placed. Phase 3's per-figure fan-out is unblocked for the whole roster
+at once, though it can still run incrementally rather than as one giant
+batch. Not started autonomously alongside this Phase 2 close — it's a
+separate, large fan-out task and Nathan hasn't kicked it off yet.

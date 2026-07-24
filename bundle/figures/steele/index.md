@@ -2,9 +2,10 @@
 type: figure
 title: Guy L. Steele Jr.
 description: b. 1954, MIT/Sun/Oracle. Co-created Scheme with Sussman; standardized Common Lisp; sustained case study in minimal-core language design.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Guy L. Steele Jr.

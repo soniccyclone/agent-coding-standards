@@ -2,9 +2,10 @@
 type: figure
 title: Nancy Lynch
 description: b. 1948, MIT. Co-author of the FLP impossibility proof; author of Distributed Algorithms, the field's standard formal-methods textbook.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Nancy Lynch

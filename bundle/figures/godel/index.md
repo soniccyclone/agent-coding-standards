@@ -2,9 +2,10 @@
 type: figure
 title: Kurt Gödel
 description: 1906-1978, IAS Princeton. Defined general recursiveness as a founding model of computability; incompleteness proofs bound what any finite primitive-set can capture.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Kurt Gödel

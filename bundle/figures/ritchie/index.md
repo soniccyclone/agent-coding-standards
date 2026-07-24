@@ -2,9 +2,10 @@
 type: figure
 title: Dennis Ritchie
 description: 1941-2011, Bell Labs. Co-created Unix with Thompson; created C, the substrate nearly every subsequent OS kernel is written in.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Dennis Ritchie

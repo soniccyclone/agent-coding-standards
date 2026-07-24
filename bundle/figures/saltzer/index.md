@@ -2,9 +2,10 @@
 type: figure
 title: Jerome H. "Jerry" Saltzer
 description: b. 1939, MIT. End-to-End Arguments in System Design - one of the most cited general-architecture papers in CS, about where functionality belongs in a layered system.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Jerome H. "Jerry" Saltzer

@@ -2,9 +2,10 @@
 type: figure
 title: Robert W. Floyd
 description: 1936-2001, Stanford. Originated assertion-based flowchart proof - the direct ancestor of Hoare logic. Turing Award 1978.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Robert W. Floyd

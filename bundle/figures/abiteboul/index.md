@@ -2,9 +2,10 @@
 type: figure
 title: Serge Abiteboul
 description: b. 1953, INRIA/Collège de France. Wrote the standard rigorous logical treatment of the relational model, freely available.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Serge Abiteboul

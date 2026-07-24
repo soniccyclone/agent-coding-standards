@@ -2,9 +2,10 @@
 type: figure
 title: Richard E. Stearns
 description: b. 1936, GE Research/SUNY Albany. Co-author of the founding paper of computational complexity theory.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Richard E. Stearns

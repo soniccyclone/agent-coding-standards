@@ -2,9 +2,10 @@
 type: figure
 title: Donald E. Knuth
 description: b. 1938, Stanford. Systematized the formal, mathematical analysis of algorithm cost as its own discipline. Creator of TeX/METAFONT.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Donald E. Knuth

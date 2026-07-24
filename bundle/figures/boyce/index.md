@@ -2,9 +2,10 @@
 type: figure
 title: Raymond F. Boyce
 description: 1946-1974, IBM San Jose. Co-created SQL's ancestor with Chamberlin; co-namesake of Boyce-Codd Normal Form. Died at 27.
-status: candidate
+status: accepted
+layer: both
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Raymond F. Boyce

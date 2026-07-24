@@ -2,9 +2,10 @@
 type: figure
 title: Andrew Chi-Chih Yao
 description: b. 1946, Tsinghua. Founded communication complexity; proved the Yao min-max principle.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Andrew Chi-Chih Yao

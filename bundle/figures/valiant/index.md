@@ -2,9 +2,10 @@
 type: figure
 title: Leslie Valiant
 description: b. 1949, Harvard. Defined #P for counting problems; formalized learning as a computational-complexity question (PAC learning).
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Leslie Valiant

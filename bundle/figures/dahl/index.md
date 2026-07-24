@@ -2,9 +2,10 @@
 type: figure
 title: Ole-Johan Dahl
 description: 1931-2002, Norwegian Computing Center/Oslo. Co-created Simula with Nygaard - the literal origin of encapsulation-as-design-primitive. Turing Award 2001.
-status: candidate
+status: accepted
+layer: both
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Ole-Johan Dahl

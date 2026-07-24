@@ -2,9 +2,10 @@
 type: figure
 title: Fred B. Schneider
 description: Cornell. Formalized state-machine-replication theory unifying how fault-tolerant services should be built.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Fred B. Schneider

@@ -2,9 +2,10 @@
 type: figure
 title: Christopher Strachey
 description: 1916-1975, Oxford PRG. Co-founded denotational semantics - mathematical meaning for language constructs independent of any machine.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [programming-languages-and-semantics]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Christopher Strachey

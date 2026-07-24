@@ -2,9 +2,10 @@
 type: figure
 title: Grady Booch
 description: b. 1955, Rational Software/IBM. Codified widely-used notations for describing large-system structure; co-created UML.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Grady Booch

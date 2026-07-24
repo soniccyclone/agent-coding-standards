@@ -2,9 +2,10 @@
 type: figure
 title: Gregory Chaitin
 description: b. 1947, IBM Research/Auckland/Rio/Buenos Aires. Founded algorithmic information theory - randomness and provability limits defined via program-size complexity.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Gregory Chaitin

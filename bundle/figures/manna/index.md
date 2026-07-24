@@ -2,9 +2,10 @@
 type: figure
 title: Zohar Manna
 description: b. ~1940, Stanford. Co-developed the systematic deductive methodology for applying temporal logic to reactive-system correctness with Pnueli.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [formal-methods-and-verification]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Zohar Manna

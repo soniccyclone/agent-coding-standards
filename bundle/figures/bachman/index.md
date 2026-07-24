@@ -2,9 +2,10 @@
 type: figure
 title: Charles W. Bachman
 description: 1924-2017, GE/Honeywell. Designed IDS and led CODASYL's network data model - the navigational alternative Codd's algebra displaced. Turing Award 1973.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Charles W. Bachman

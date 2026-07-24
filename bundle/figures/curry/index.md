@@ -2,9 +2,10 @@
 type: figure
 title: Haskell Curry
 description: 1900-1982, Penn State. Systematized combinatory logic independently of Schönfinkel - the clearest fewer-primitives rival to lambda calculus.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [foundations-of-computation]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Haskell Curry

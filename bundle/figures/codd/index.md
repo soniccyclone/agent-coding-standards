@@ -2,9 +2,10 @@
 type: figure
 title: Edgar F. Codd
 description: 1923-2003, IBM San Jose. Originated the relational model - a small set of algebraic operators over relations. The archetype of the primitive-count standard.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Edgar F. Codd

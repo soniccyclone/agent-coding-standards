@@ -2,9 +2,10 @@
 type: figure
 title: David Ungar
 description: PhD Berkeley 1985, Stanford/Sun/IBM. Designed Self (prototypes, no classes) with Randall Smith - liveness itself as the design goal.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # David Ungar

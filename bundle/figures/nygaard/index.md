@@ -2,9 +2,10 @@
 type: figure
 title: Kristen Nygaard
 description: 1926-2002, Norwegian Computing Center/Oslo. Co-created Simula with Dahl, designed to model interacting entities. Turing Award 2001.
-status: candidate
+status: accepted
+layer: both
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Kristen Nygaard

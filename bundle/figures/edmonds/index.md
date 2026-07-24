@@ -2,9 +2,10 @@
 type: figure
 title: Jack Edmonds
 description: b. 1934, Waterloo/NBS. First to formally articulate polynomial time as the tractability boundary; gave the first polynomial-time matching algorithm.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [algorithms-and-complexity]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Jack Edmonds

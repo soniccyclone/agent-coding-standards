@@ -2,9 +2,10 @@
 type: figure
 title: Eric A. Brewer
 description: Berkeley/Google. Articulated the CAP conjecture - the informal statement of the trade-off Gilbert and Lynch later formalized into a proof.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Eric A. Brewer

@@ -2,9 +2,10 @@
 type: figure
 title: "Gang of Four (Gamma, Helm, Johnson, Vlissides)"
 description: Authors of Design Patterns (1994) - catalogued recurring compositional structures grounded in real system observation.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides ("Gang of Four")

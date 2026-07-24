@@ -2,9 +2,10 @@
 type: figure
 title: Robin Milner
 description: 1934-2010, Edinburgh/Cambridge. Designed ML with sound polymorphic type inference; founded process calculus (CCS, pi-calculus). Turing Award 1991.
-status: candidate
+status: accepted
+layer: both
 subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Robin Milner

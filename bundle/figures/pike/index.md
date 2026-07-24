@@ -2,9 +2,10 @@
 type: figure
 title: Rob Pike
 description: b. 1956, Bell Labs/Google. Co-designed Plan 9's per-process namespace model; co-created UTF-8 and Go.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [operating-systems-and-systems-programming]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Rob Pike

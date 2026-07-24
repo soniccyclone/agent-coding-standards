@@ -2,9 +2,10 @@
 type: figure
 title: Winston W. Royce
 description: 1929-1995, Lockheed. Author of the widely (mis)cited origin of the "waterfall model" - a paper that actually argues against naive sequential process.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [software-engineering-and-architecture]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Winston W. Royce

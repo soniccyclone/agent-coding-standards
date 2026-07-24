@@ -2,9 +2,10 @@
 type: figure
 title: Jeffrey D. Ullman
 description: b. 1942, Stanford. Turned relational and Datalog theory into the standard graduate curriculum. Turing Award 2020.
-status: candidate
+status: accepted
+layer: design-thought
 subdomains: [databases-and-data-management]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Jeffrey D. Ullman

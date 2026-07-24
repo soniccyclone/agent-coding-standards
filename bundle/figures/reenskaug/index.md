@@ -2,9 +2,10 @@
 type: figure
 title: Trygve Reenskaug
 description: b. 1930, University of Oslo. Invented Model-View-Controller while at PARC; decades-long re-argument (via DCI) of what MVC was supposed to mean.
-status: candidate
+status: accepted
+layer: implementation-mapping
 subdomains: [programming-environments-and-object-systems]
-tags: [figure, candidate]
+tags: [figure, accepted]
 ---
 
 # Trygve Reenskaug
