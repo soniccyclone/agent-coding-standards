@@ -1,7 +1,7 @@
 ---
 type: execution-plan
 title: Good Programming Corpus — Technical Plan
-description: Phased build pipeline for the OKF bundle. Phases 0-3 complete (95 figures, all accepted; 447 work files across 94 figures); Phase 4 (lesson extraction) next.
+description: Phased build pipeline for the OKF bundle. Phases 0-3 complete (95 figures, all accepted; 450 work files across all 95 figures); Phase 4 (lesson extraction) next.
 tags: [execution, okf, pipeline, fan-out]
 ---
 
@@ -307,9 +307,10 @@ readout in [ledger.md](ledger.md).
 **Complete (2026-07-24).** Pilot validated the process, then the remaining
 92 figures ran as a rolling-queue fan-out (one subagent per figure, capped
 at 20 concurrent by the harness) to a fully autonomous finish. Final tally:
-447 `work` files across 94 of 95 figures — Pnueli is the sole zero-work-file
-figure, every one of its four listed works turned out genuinely
-inaccessible. 31 of 95 figures carry a `## Phase 3 access flag`. Full
+450 `work` files across all 95 figures — the main run left Pnueli at zero
+(all four listed works inaccessible), and a same-week follow-up pass closed
+that gap via NYU's preserved copy of his self-archived homepage (see
+ledger.md). 31 of 95 figures carry a `## Phase 3 access flag`. Full
 per-figure breakdown, the third-party-rehost policy, and the two
 corpus-wide sourcing caveats (pre-1980s papers under-covered by rehosts;
 Internet-Archive-lending-only books counted as paywalled) are in

@@ -105,8 +105,9 @@ into `work` files rather than an exhaustive from-scratch bibliography sweep —
 reasoning and the escape valve (go deeper per-figure if Phase 4 lessons come
 up thin) are in [technical-plan.md](technical-plan.md#phase-3--source-discovery-fan-out-per-accepted-figure-in-progress).
 
-**Final tally: 447 `work` files across 94 of 95 figures.** Pnueli is the sole
-zero-work-file figure — see below. Executed as a pilot (3 figures) followed
+**Final tally: 450 `work` files across all 95 figures** (447 from the main
+run; Pnueli's 3 backfilled by the follow-up pass below, which cleared the
+sole zero-work-file gap). Executed as a pilot (3 figures) followed
 by a ~89-figure rolling-queue fan-out, one subagent per figure, capped at 20
 concurrent by the harness (`CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS`); each
 agent scoped to its own figure's `works/` directory and forbidden from
@@ -146,16 +147,22 @@ Abrial, Bachman, Boehm, Booch, Brooks, Cardelli, Clarke, Cox, Curry, Cutler,
 Date, Edmonds, Emerson, Gang of Four, Goldberg, Hilbert, Ingalls, Jones,
 Kleene, Lynch, Manna, Nygaard, Parnas, Péter, Pnueli, Rabin, Sifakis, Ullman,
 Ungar, Wirth, Yao. Most are non-blocking (the case survives on other public
-works); the standout is **Pnueli**, where all four listed works — including
-the founding "The Temporal Logic of Programs" (1977, FOCS), the single paper
-his "why a candidate" case rests on — turned out genuinely inaccessible
-through any legal open channel checked (publisher paywalls, Unpaywall/
-Semantic Scholar both report closed access, no self-archived copy on his own
-or Manna's site, ACM's Cloudflare gate blocked even the one `oa_status: gold`-
-tagged candidate from resolving). Zero `work` files exist for Pnueli as a
-result — Phase 4 lesson extraction for this figure has no seminal-work
-source material unless this gap is revisited later (institutional access,
-or a working route around ACM's bot-block).
+works); the standout was **Pnueli**, where the main run found all four listed
+works — including the founding "The Temporal Logic of Programs" (1977, FOCS),
+the single paper his "why a candidate" case rests on — inaccessible, leaving
+him the sole zero-work-file figure. A follow-up pass (2026-07-24) cleared it:
+NYU Courant preserves Pnueli's complete homepage (`cs.nyu.edu/home/people/
+in_memoriam/pnueli/`) including his self-archived files — the main run had
+only checked a 2005 Wayback snapshot of the Weizmann copy of his
+bibliography, which predates his Dec-2005 upload of the 1977 paper's scan.
+Recovered: the 1977 FOCS paper (self-archived scan, render-verified), "On
+the Synthesis of a Reactive Module" (1989 POPL — ACM open backfile; gold per
+both Unpaywall and Semantic Scholar, though ACM's bot-check still blocks
+automated end-to-end verification, the only such caveat in the corpus), plus
+the 81-page Manna-Pnueli "Anchored Version of the Temporal Framework" survey
+(LNCS 354, 1989, self-archived) as the public stand-in for the two
+still-paywalled Springer books. Pnueli's access flag now covers only those
+two books, non-blocking. Details in the figure's `index.md` and work files.
 
 **Two corpus-wide caveats surfaced during the run**, worth carrying into
 Phase 4: (1) several older foundational papers (Yao's 1977/1979 papers,

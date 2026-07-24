@@ -41,3 +41,16 @@ description: Chronological audit trail of bundle changes, per the Karpathy llm-w
   fan-out (harness cap: 20 concurrent), each agent scoped to one figure's
   own `works/` directory and forbidden from touching this log or any other
   figure's files. Next: Phase 4, lesson extraction.
+- **2026-07-24** — Pnueli source gap closed. Follow-up pass on the sole
+  zero-work-file figure found NYU Courant's preserved copy of Pnueli's
+  complete homepage (`cs.nyu.edu/home/people/in_memoriam/pnueli/`), with
+  self-archived files the main run's Wayback-of-Weizmann check predated.
+  3 `work` files added: "The Temporal Logic of Programs" (1977 FOCS,
+  self-archived scan, render-verified), "On the Synthesis of a Reactive
+  Module" (1989 POPL, ACM open backfile — gold per Unpaywall and Semantic
+  Scholar; ACM bot-check still blocks automated fetch, sole such caveat in
+  the corpus), and Manna-Pnueli's "The Anchored Version of the Temporal
+  Framework" (LNCS 354, 1989, self-archived) as the public stand-in for the
+  two still-paywalled Springer books. Corpus now at 450 works across all 95
+  figures; Pnueli's access flag trimmed to the two books, non-blocking for
+  Phase 4.
