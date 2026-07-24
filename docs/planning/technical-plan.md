@@ -88,10 +88,25 @@ dependency for Phase 4, so it happens before any figure work starts.
 
 ### Phase 1 — Author discovery (fan-out by CS subdomain)
 **Fan-out unit:** one CS subdomain per task.
+
+**Subdomains (fixed):**
+1. Foundations of Computation — logic, computability, formal systems.
+2. Programming Languages & Semantics — language design, type systems.
+3. Formal Methods & Verification — correctness, not just expressiveness.
+4. Algorithms & Complexity — analysis, complexity theory.
+5. Software Engineering & Architecture — large-system structuring, methodology.
+6. Operating Systems & Systems Programming — the implementation-mapping layer's home turf.
+7. Distributed Systems & Concurrency — consensus, network unreliability.
+8. Databases & Data Management — relational/declarative data thinking.
+9. Programming Environments & Object Systems — live environments, object-orientation as a distinct lineage.
+
+Deliberately high-level-only — no business/applied domains (no AI/ML, crypto/security,
+web, mobile, etc. as their own buckets). Figures whose real contribution is
+programming-abstraction quality land under one of the nine above regardless of
+the applied field they're best known for.
+
 **Do:** for each subdomain, produce a candidate author list (name, rough
-era/lineage, why they're a candidate). Subdomain taxonomy itself is a Phase 1
-output, not a precondition — first task under this phase is drafting that
-list.
+era/lineage, why they're a candidate).
 **Output:** candidate roster, unvetted. No `figure` files yet — candidates
 aren't figures until Phase 2 accepts them.
 **Depends on:** Phase 0 (scaffolding, not content).
