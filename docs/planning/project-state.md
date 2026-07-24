@@ -130,6 +130,16 @@ Doc-level types already in use (`reasoning-primer`, `project-overview`,
 `discussion-log`, `project-state`) are a separate vocabulary for
 `docs/planning/` and don't leak into the bundle's.
 
+### 4a. Author worldview context — RESOLVED, process note (not a bundle field)
+When we walk the figure list, each figure gets a worldview/belief-system note
+(with a confidence flag when the record's thin or disputed) appended in
+conversation for Nathan's own reading context — not written into any OKF
+`figure` file, not a schema field, not used to disqualify or weight anyone.
+Explicitly not the religious-vetting-axis proposal raised and dropped earlier
+in this thread — that's still off the table for the bundle itself. This note
+exists purely so Nathan can hold a figure's stated worldview in mind while
+reading findings; it has no effect on what gets ingested or how a lesson scores.
+
 ### 5. Final deliverable shape — CONFIRMED
 Two artifacts. Build the full OKF bundle first — one file per figure/work/lesson,
 browsable, cited, this is the wiki per the Karpathy ingest/query/lint pattern.
