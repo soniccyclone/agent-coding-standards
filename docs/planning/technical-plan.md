@@ -24,8 +24,10 @@ rejections; layer placement (`design-thought` / `implementation-mapping` /
 [ledger.md](ledger.md#phase-2-layer-placement). Torvalds-shaped candidates
 (non-publishing systems builders, shipped code instead of papers) confirmed
 acceptable as Phase 3 source material — see ledger.md's Torvalds note. Phase 3
-(source discovery) is next, can start incrementally per-figure. No source
-links, no lesson content yet.
+(source discovery) is in progress — pilot batch (Dijkstra, Lamport, Codd, 27
+`work` files) validated the process same day; scope amended to seminal-works
+verification rather than exhaustive bibliography enumeration (see Phase 3's
+own section for the reasoning); remaining ~90 figures not yet started.
 Tagged milestones on `main`: `author-candidates` (Phase 1 done, 92 candidates),
 `author-candidates-v2` (+Chuck Moore, von Thun — Forth/Joy lineage, 94),
 `author-candidates-v3` (+Jerome Saltzer — security/systems design principles,
@@ -236,23 +238,71 @@ in this pass: Nathan confirmed non-publishing systems builders (Torvalds, and by
 reasoning Cutler, Chuck Moore) can source Phase 3 material from shipped
 code/documentation rather than papers — see ledger.md's Torvalds note.
 
-### Phase 3 — Source discovery (fan-out per accepted figure)
+### Phase 3 — Source discovery (fan-out per accepted figure) 🔄 in progress
 **Fan-out unit:** one accepted figure per task. This is the phase Nathan named
-directly — parallel per-author pull of the full public-source list.
-**Do:** for each accepted figure, enumerate every publicly accessible
-whitepaper, essay, talk, interview, or repo (arxiv, personal sites, publisher
-open-access copies, conference proceedings, public GitHub) with a direct link.
-Check the Wayback Machine when an author's institutional/personal page has
-moved or gone stale — a Wayback snapshot of a self-archived PDF is exactly as
-public as the live version, and several of the strongest sources here (EWD
-archive-style personal pages) are exactly the kind of thing that outlives its
-original host. No paywalled/DRM'd sources per §3 — if a figure's material only
-exists paywalled, flag it, don't substitute a summary of it.
-**Output:** one `work` file per source under `figures/<figure>/works/`, tagged
-`subdomains: [...]` (usually one, occasionally two — tag doesn't require
-picking a single owner the way a folder would), `description` field carrying
-a 3-sentence summary. Link-only otherwise — no lesson extraction yet, that's
-Phase 4 and a separate file.
+directly — parallel per-author pull of the public-source list.
+
+**2026-07-24 amendment — seminal works, not an exhaustive bibliography.**
+Supersedes the original "enumerate every publicly accessible whitepaper,
+essay, talk, interview, or repo" scope below. Lessons are abstract "how to
+think about programming" extractions, and those concentrate in the works that
+made a figure canonical — Dijkstra's structured-programming argument is fully
+present in EWD215/EWD249, not diluted across the other ~1,300 EWDs. A true
+enumerate-everything pass would multiply cost 10-20x for prolific figures
+(Dijkstra, Hoare, Date) for diminishing lesson-extraction return. Verify and
+formalize each figure's existing Phase 1 top-10 list into `work` files
+(resolving `uncertain` flags for real, correcting `paywalled` flags where a
+legitimate public copy exists) rather than launching a fresh from-scratch
+bibliography search. Going beyond the top-10 is fine when a clearly-central,
+clearly-public work turns up during that verification pass — the boundary is
+"don't go looking for more," not "refuse more if it's sitting right there."
+**The escape valve:** if a figure's lessons come up thin in Phase 4, that's
+the signal to go back and pull more sources for *that specific figure* —
+not a reason to over-fetch for all 95 up front.
+
+**Do:** for each accepted figure, verify and formalize the top-10 list from
+its Phase 1 stub into individually-checked `work` files. Actually fetch each
+URL rather than trusting the old flag — resolve `uncertain` to public or
+paywalled based on what's really there, and double check `paywalled` in case
+a legitimate self-archived or institutional copy exists that the Phase 1 pass
+missed. Check the Wayback Machine when an author's institutional/personal
+page has moved or gone stale — a Wayback snapshot of a self-archived PDF is
+exactly as public as the live version, and several of the strongest sources
+here (EWD archive-style personal pages) are exactly the kind of thing that
+outlives its original host. No paywalled/DRM'd sources per §3 — if a figure's
+material only exists paywalled, flag it, don't substitute a summary of it.
+Third-party rehosts of copyrighted (non-self-archived) material — fan
+archives, course mirrors, preservation nonprofits — count as public sources
+when the host looks legitimate, since these are link-only citations and the
+bundle isn't redistributing anything; mark every such case with `host:
+third-party-rehost` in the work file's frontmatter so a batch review can find
+them later if a host turns out to be a problem.
+
+**Flag-don't-halt:** if a work that's clearly central to a figure's "why a
+candidate" case turns out to have genuinely no public copy anywhere (checked
+directly, checked Wayback, confirmed), don't stop and ask mid-run — add a
+`## Phase 3 access flag` note directly to that figure's own `index.md`
+explaining what's missing and why it matters, then keep going with the rest
+of the roster. Nathan reviews all flags in one batch after the run, not
+per-figure.
+
+**Output:** one `work` file per confirmed-public source under
+`figures/<figure>/works/`, frontmatter carrying `type: work`, `figure`,
+`description` (~3 sentences, own words, never copy/paste or close paraphrase
+of the source), `subdomains: [...]` (the one or two that fit *this* work,
+not necessarily the figure's full list), `year`, `url`, `access: public`,
+and `host` (`self-archived` / `institutional` / `third-party-rehost`). Body
+carries author/venue/source details and an empty `## Lessons` placeholder —
+lesson extraction is Phase 4, a separate file. Per-figure agents never touch
+`bundle/log.md` — the orchestrating session logs each wave itself, since
+concurrent writes from a parallel batch would clobber a shared file.
+
+**Pilot (2026-07-24):** ran Dijkstra, Lamport, Codd first to validate the
+process — 27 `work` files, all independently link-verified rather than
+trusting Phase 1's guesses. Caught two dead links, one wrong title, several
+`uncertain`/`paywalled` flags resolved in both directions. No access flags
+needed — nothing central turned out to be unavailable in this batch. Full
+readout in [ledger.md](ledger.md).
 **Depends on:** Phase 2 (can start per-figure as soon as that figure clears
 vetting, doesn't need to wait for the whole roster).
 

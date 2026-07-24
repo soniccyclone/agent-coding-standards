@@ -98,6 +98,43 @@ Phase 1 (see Cutler/Torvalds note below) and is now resolved yes, not just for
 Torvalds but as the general answer for this shape of candidate (Cutler, Chuck
 Moore fit the same pattern).
 
+## Phase 3 status
+In progress as of 2026-07-24. Scope amended same day: source discovery
+verifies and formalizes each figure's existing Phase 1 top-10 list into
+`work` files rather than an exhaustive from-scratch bibliography sweep —
+reasoning and the escape valve (go deeper per-figure if Phase 4 lessons come
+up thin) are in [technical-plan.md](technical-plan.md#phase-3--source-discovery-fan-out-per-accepted-figure-in-progress).
+
+**Pilot batch (Dijkstra, Lamport, Codd) — done.** 27 `work` files, every URL
+independently re-fetched rather than trusting the Phase 1 guess. Caught 2
+dead links and 1 wrong title (Lamport); resolved several `uncertain`/
+`paywalled` flags in both directions, including upgrading three of Codd's
+IBM Research Reports from `uncertain`/`paywalled` to `public` on finding
+legitimate copies. No Phase 3 access flags needed — nothing central turned
+out unavailable in this batch.
+
+**Policy set during the pilot:** third-party rehosts of copyrighted material
+(fan archives, course mirrors, preservation nonprofits — not the author's own
+site, not an official open-access venue, not a Wayback snapshot of a
+self-archived original) count as citable public sources when the host looks
+legitimate, since `work` files are link-only citations, not redistribution.
+Nathan's condition: mark every such case so a batch review can find them
+later if a host turns out to be a problem. Every pilot `work` file carries a
+`host` field (`self-archived` / `institutional` / `third-party-rehost`) for
+exactly that review. Flagged third-party-rehost cases from the pilot: Codd's
+`a-relational-model-of-data-for-large-shared-data-banks.md` (Grinnell course
+mirror), `codds-12-rules.md` (Internet Archive scan), `derivability-...md`
+(technology.amis.nl blog mirror of IBM RJ599), `extending-the-database-...md`
+(esp.org), `further-normalization-...md` / `normalized-data-base-...md` /
+`relational-completeness-...md` (fsmwarden.com personal archive), and
+`relational-database-a-practical-foundation-...md` (softwaregems.com.au).
+
+**Remaining ~90 figures:** not started. Planned as waves of ~12 concurrent
+background agents using the pilot-validated prompt template, spot-checked
+per wave before committing to the next, with `bundle/log.md` updated by the
+orchestrating session per wave (not by per-figure agents, to avoid
+concurrent writes to one file).
+
 ## Flagged for Phase 2 attention
 Pulled from the research agents' own notes — not decisions, just what to weigh.
 Superseded by the accept-all outcome above; kept for the historical record of
