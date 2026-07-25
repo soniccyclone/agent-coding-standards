@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://web.archive.org/web/20000819134754/http://www.cs.auckland.ac.nz:80/CDMTCS/chaitin/aam.pdf — Wayback Machine snapshot (Aug 2000) of Chaitin's self-archived copy at the University of Auckland CDMTCS site (filename `aam.pdf` matches this paper's venue, Advances in Applied Mathematics — the only Chaitin paper in that journal per his own publication list); the live CDMTCS page is now dead, so this is a Wayback fallback of a self-archived original. Publisher version (Elsevier/ScienceDirect) is paywalled.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Deduction moves information around; it never manufactures any](../lessons/deduction-transports-information-it-does-not-create-it.md)
+- [How much the answers can tell you is a property of the question you asked](../lessons/the-question-fixes-how-much-the-answers-can-tell-you.md)
+- [Assumptions are purchases; make them deliberately and stay willing to retract](../lessons/buy-assumptions-deliberately-and-be-willing-to-retract.md)

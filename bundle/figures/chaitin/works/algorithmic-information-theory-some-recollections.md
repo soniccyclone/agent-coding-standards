@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://arxiv.org/abs/math/0701164 — arXiv, self-archived by Chaitin, live and resolving.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When every consequence needs a correction term, the definition is wrong](../lessons/awkward-consequences-indict-the-definition.md)
+- [Nothing will ever certify that your version is the smallest one](../lessons/there-is-no-certificate-of-minimality.md)
+- [Restate an impossibility as a size limit and it turns into an instrument](../lessons/restate-an-impossibility-as-a-size-limit.md)

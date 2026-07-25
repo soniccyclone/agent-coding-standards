@@ -17,4 +17,9 @@ tags: [work]
 **Source:** https://arxiv.org/abs/math/0404335 — arXiv, self-archived by Chaitin, live and resolving.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A description only explains what it is smaller than](../lessons/a-description-only-explains-what-it-is-smaller-than.md)
+- [A part that declares its own extent can be composed; one that does not must be framed by its caller](../lessons/make-every-part-declare-where-it-ends.md)
+- [Insist on running the construction, and the constants you were hiding become numbers](../lessons/run-the-construction-and-the-constants-become-numbers.md)
+- [Confidence in a large system's correctness is an empirical result, and that follows from the theory](../lessons/treat-correctness-of-a-large-system-as-an-empirical-claim.md)
+- [When your understanding of the problem compresses, rewrite the artifact to match](../lessons/rewrite-when-your-understanding-compresses.md)
+- [Assumptions are purchases; make them deliberately and stay willing to retract](../lessons/buy-assumptions-deliberately-and-be-willing-to-retract.md)

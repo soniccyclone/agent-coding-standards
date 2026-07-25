@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://web.archive.org/web/20131215223616/http://www.cs.auckland.ac.nz:80/CDMTCS/chaitin/acm75.pdf — Wayback Machine snapshot (Dec 2013) of Chaitin's self-archived copy at the University of Auckland CDMTCS site; the live CDMTCS page is now dead (404), so this is a Wayback fallback of a self-archived original. JACM paywalls the publisher version.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When every consequence needs a correction term, the definition is wrong](../lessons/awkward-consequences-indict-the-definition.md)
+- [A part that declares its own extent can be composed; one that does not must be framed by its caller](../lessons/make-every-part-declare-where-it-ends.md)
+- [Enforce an invariant by removing the operation that could break it, not by forbidding its use](../lessons/remove-the-operation-instead-of-forbidding-its-use.md)
+- [Assume the thing in front of you has no compact form until you find one](../lessons/assume-there-is-no-compact-form-until-you-find-one.md)
+- [Maximum compression and legibility pull against each other](../lessons/maximum-compression-reads-like-noise.md)
