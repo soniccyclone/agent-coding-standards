@@ -17,4 +17,10 @@ tags: [work]
 **Source:** https://www.cs.unc.edu/techreports/86-020.pdf — UNC Department of Computer Science technical reports archive, institutional host, verified live (200 OK, application/pdf).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+
+- [Split difficulty into the part that belongs to the problem and the part your tools impose, then bound any proposed improvement by the fraction it can reach](../lessons/bound-any-improvement-by-the-work-it-can-actually-touch.md)
+- [When the complexity is the subject, simplifying models lose the subject; expect no unifying law behind requirements written by many minds](../lessons/complexity-that-is-the-subject-cannot-be-abstracted-away.md)
+- [Proof relocates the difficulty rather than removing it: agreeing with a specification is worth little until the specification is the hard part you have debugged](../lessons/proof-relocates-the-difficulty-into-the-specification.md)
+- [Software has no native geometry, so every diagram is one projection among many and no single picture will ever carry the design](../lessons/software-has-no-native-geometry.md)
+- [Nobody can state what they want before using something, so make the system exist immediately and keep it alive while it acquires function](../lessons/keep-the-system-running-from-the-first-day.md)
+- [Method raises the floor of design and never the ceiling; the gap between competent and excellent design is not procedural](../lessons/method-raises-the-floor-of-design-not-the-ceiling.md)

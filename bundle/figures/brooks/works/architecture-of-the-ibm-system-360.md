@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/Arch/Architecture-of-the-IBM-System-360.pdf — course-reading mirror hosted on a UMass Amherst faculty page (CMPSCI 691ST), verified live (200 OK, application/pdf). The original IBM Journal of Research and Development issue is paywalled via IEEE Xplore/ACM; this is a third-party rehost linked here rather than redistributed.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+
+- [Commit to what a thing does and refuse to commit to how, because the visible contract must outlive every mechanism that satisfies it](../lessons/commit-to-the-interface-and-leave-the-mechanism-free.md)
+- [State what you do not guarantee as carefully as what you do, and make the mechanism reject it, or the running implementation becomes the specification](../lessons/specify-the-undefined-and-trap-it-in-the-mechanism.md)
+- [The parts of a system improve at different speeds, so put the seams where the rates diverge and keep spare room in every vocabulary you fix](../lessons/design-where-the-rates-of-change-differ.md)
+- [A design is only good relative to alternatives costing the same, and the metric that decides belongs at the level of the user's result, not the component's](../lessons/compare-only-against-equal-cost-alternatives.md)

@@ -18,4 +18,8 @@ tags: [work]
 **Host:** third-party-rehost — academic mirror on a university faculty site, not an authorized republication; the original is behind ACM's paywall at dl.acm.org.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Rival formalisms usually disagree about level, not about truth](../lessons/rival-formalisms-usually-disagree-about-level.md)
+- [A representation that discards its own meaning cannot police itself](../lessons/a-representation-that-forgets-its-meaning-cannot-be-checked.md)
+- [Structure derived from what things are outlives structure derived by repair](../lessons/derive-structure-from-meaning-not-by-repair.md)
+- [Never let one mark carry both a claim about the world and a route through the machine](../lessons/keep-what-is-true-separate-from-how-it-is-reached.md)
+- [Some things have no identity of their own, and saying so early makes the rules fall out](../lessons/some-things-have-no-identity-of-their-own.md)

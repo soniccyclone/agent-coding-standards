@@ -45,3 +45,30 @@ and `faultless-systems-yes-we-can.md` (2009 IEEE Computer, the refinement/
 correct-by-construction argument in essay form). If Phase 4 lesson extraction
 comes up thin on B-Method/Event-B specifics because of this gap, that's the
 reason why.
+
+## Lessons
+Abrial's consistent instinct is to move the object of thought upward, away from
+the artifact that runs. In 1974 that meant refusing to let storage mechanics
+shape the description of data — dropping below the n-ary relation to a smaller
+primitive, insisting that a system's ignorance be represented as deliberately
+as its knowledge, demanding that asking a question never reveal whether the
+answer was stored or derived, treating declared order as a claim whose absence
+*is* parallelism, and making hypothesis a first-class scope so that reasoning
+about a change costs no more machinery than recording one. Three decades later
+the same instinct produces the position that correctness is a property of a
+whole system rather than a program, that the right place to start is a
+description you deliberately cannot execute, and that the descent to running
+code splits into two axes — adding problem content, and adding
+implementability — which must never be travelled at once. His sharpest
+contribution to how a practitioner should behave is a set of honest limits on
+what any of this buys: a proof establishes internal consistency and can never
+establish that you wanted this system, so intent needs its own separable
+reference document and its own validation channel outside the proof loop;
+every guarantee has an edge defined by the assumptions in its model, and what
+lies beyond it must be covered by a mechanism with a different blind spot;
+difficulty in proving is a measurement of your own design rather than a verdict
+on the prover. Running through all of it is a refusal to invent apparatus that
+already exists — borrow mathematics rather than minting a notation, hang
+behavior on a few named primitive operations rather than building parallel
+subsystems — paired with a willingness, unusual in advocacy writing, to state
+in the same paper the cost his own best idea imposes.

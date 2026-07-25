@@ -18,4 +18,7 @@ tags: [work]
 **Host:** third-party-rehost — Computer History Museum preservation archive, not IFIP/UNESCO's own (paywalled or defunct) proceedings distribution.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [How precise a specification must be is set by how many independent implementers must agree](../lessons/precision-is-owed-to-the-number-of-independent-implementers.md)
+- [When a set is too large to enumerate, define it by the rules that form its members](../lessons/describe-infinite-sets-by-their-formation-rules.md)
+- [Define the abstract language once and treat every concrete surface as a replaceable projection of it](../lessons/define-the-language-not-its-typography.md)
+- [Formalizing what is well formed is far easier than formalizing what it means, and the attempt is itself a design test](../lessons/syntax-yields-to-formalism-long-before-meaning-does.md)

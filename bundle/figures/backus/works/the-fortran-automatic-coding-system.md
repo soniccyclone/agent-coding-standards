@@ -19,4 +19,8 @@ tags: [work]
 **Host:** third-party-rehost — Computer History Museum preservation archive, not IBM's or ACM's own distribution.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Give up the expectation that output resembles input, and whole-program optimization becomes available](../lessons/give-up-local-correspondence-to-optimize-the-whole.md)
+- [When the right static decision depends on unknowable dynamics, estimate the dynamics instead of assuming them away](../lessons/estimate-the-dynamics-you-cannot-prove.md)
+- [Raising the level of notation relocates error rather than removing it, so make the new level's errors mechanically visible](../lessons/raising-the-notation-relocates-error-it-does-not-remove-it.md)
+- [Solve the problem against an unlimited resource, then treat scarcity as a separate stage](../lessons/solve-against-an-idealized-resource-then-map-scarcity-separately.md)
+- [An abstraction is rented against whatever overhead the current hardware still hides](../lessons/abstraction-is-rented-against-the-overhead-the-hardware-hides.md)

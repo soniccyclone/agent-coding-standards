@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "State the permissive rule you wish held, then spend real effort building the small program that breaks it"
+figure: cardelli
+works: [a-theory-of-primitive-objects-untyped-and-first-order-systems, a-semantics-of-multiple-inheritance, basic-polymorphic-typechecking]
+axes: [verifiability]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# State the permissive rule you wish held, then spend real effort building the small program that breaks it
+
+**Lesson:** Restrictions in a mature system usually look arbitrary, and the temptation to relax one is strongest exactly where the restriction is least explained. The productive procedure is to write down the liberal rule you would prefer, adopt it provisionally, and then try hard to construct the smallest program that exploits it into nonsense. Three of these constructions recur here and all three are tiny. Let refinements of a component's type ride along with refinements of the whole, and a handful of lines suffices to store a value that one sibling considered impossible and then have another sibling consume it, ending in a function applied outside its domain. Let a component be lifted out and used as a standalone operation, and four lines suffice to detach it from an object rich enough to satisfy it and apply it to one that is not. Generalize a parameter's type in the plausible way, and one application of an ordinary arithmetic function shows that the generalization was a lie.
+
+What makes this more than a testing tactic is what the counterexample tells you afterwards. Each of these failures points at a specific dependency that the liberal rule had ignored: components can consult the whole, so their types are entangled with it and cannot move independently; a component's meaning is conditioned on the context that supplied it, so removing it from that context removes a premise; a type variable may be re-instantiated per use only when you know what the thing is, not when you merely know a hypothesis about it. The counterexample is a diagnostic instrument, and the fixed restriction is legible afterwards in a way it never was before.
+
+There is a matching positive move. Having found that the general capability is unsound, look for the scoped version that keeps the use case and the premise together. Extracting a component as a free-standing value cannot be permitted; reusing the old component's result while the surrounding replacement keeps its context bound is fine, and delivers the inheritance-style reuse that motivated the request in the first place. So the sequence is: propose, break, diagnose, and then re-offer the capability in the narrowest form that preserves the property the counterexample violated.
+
+**Source:** [A Theory of Primitive Objects: Untyped and First-Order Systems](../works/a-theory-of-primitive-objects-untyped-and-first-order-systems.md) — the section contrasting objects with records, which adopts a covariant rule and a component-extraction rule in turn, derives a contradiction from each, and then introduces the scoped reuse operation that survives. Also [A Semantics of Multiple Inheritance](../works/a-semantics-of-multiple-inheritance.md) — the typechecking anomalies section, where an assignment through a widened reference produces a run-time failure and forces updatable positions to be treated differently. Also [Basic Polymorphic Typechecking](../works/basic-polymorphic-typechecking.md) — the pair of examples showing that a tempting typing for heterogeneous uses of a parameter is unsound, demonstrated by instantiating it with an ordinary numeric function.

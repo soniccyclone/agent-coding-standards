@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Commit to what a thing does and refuse to commit to how, because the visible contract must outlive every mechanism that satisfies it"
+figure: brooks
+works: [architecture-of-the-ibm-system-360, mythical-man-month]
+axes: [hardware-affinity, cognitive-load, primitive-count]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Commit to what a thing does and refuse to commit to how, because the visible contract must outlive every mechanism that satisfies it
+
+**Lesson:** The structure a user reasons about and the structure an engineer builds are two different objects, and treating them as one is what makes systems die young. Before this was ordinary practice, registers, counters, and storage were single things that both parties argued about at once; recognising them as paired but separate — an entity in the contract, an entity in the machinery — is what makes it possible to promise something durable at all. The contract names the operations, the data shapes, and the states that any conforming realisation must exhibit. The machinery is whatever gets that done at a given price. Once the two are held apart, one contract can be honoured by realisations built from wildly unlike parts across an enormous span of cost and speed, and, less obviously, one piece of machinery can be made to honour several unrelated contracts at different moments.
+
+What makes this hard is that the mechanism's own dimensions are constantly trying to leak upward. Every realisation has a data path of some width, a store of some capacity, a cycle of some length, and each of those numbers is a tempting thing to expose because exposing it is free at the moment and buys a little efficiency. But every such number that reaches the contract fixes the mechanism forever. A design that quietly assumes the width of the path, or the presence of fast registers, or the relative cost of two operations, has silently promised the machinery and not the behaviour, and the next realisation at a different point on the cost curve cannot honour it. So the discipline is inverted from the intuitive one: the interesting work is not deciding what to specify but enumerating what must remain unspecified, and enumerating it deliberately rather than by omission.
+
+The programmer who holds this asks of every element in an interface which side of the line it belongs on, and treats the answer as load-bearing rather than as documentation hygiene. The payoff is not tidiness. It is that work built against the contract keeps running while everything underneath is replaced, which converts a stream of one-off products into a family, and converts the cost of an implementation from a sunk cost into an investment. The constraint also improves the mechanism: builders handed a firm external contract stop relitigating the contract and spend their invention on the part nobody has solved, and the tension of having to satisfy the same promise at two very different price points exposes assumptions that a single realisation would never have surfaced.
+
+**Source:** [Architecture of the IBM System/360](../works/architecture-of-the-ibm-system-360.md) — the introduction's footnote fixing the sense of the word for the programmer-visible structure, the intermodel-compatibility section's account of the logical/physical duality and what a strict compatibility promise actually requires, and the design-decisions passages where large and small realisations of the same contract prefer opposite mechanisms; also [The Mythical Man-Month](../works/mythical-man-month.md), whose chapter on coherence of concepts states the same separation with the clock analogy.

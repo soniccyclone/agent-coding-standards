@@ -17,4 +17,8 @@ tags: [work]
 **Source:** http://lucacardelli.name/Papers/BasicTypechecking.pdf — self-archived on Cardelli's own site (verified 200, application/pdf). Note: the Phase 1/2 stub credited this "with Wegner" — the author's own bibliography lists it as solo-authored by Cardelli; corrected here.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Write down what must be decided before deciding how to decide it, and let the algorithm be answerable to that statement](../lessons/state-the-judgment-before-writing-the-checker.md)
+- [There is a most general truth about what your code accepts, and declarations can only narrow it](../lessons/the-most-general-type-exists-before-you-declare-anything.md)
+- [When two design goals genuinely fight, look for the construct that serves both instead of splitting the difference](../lessons/two-goals-in-tension-need-a-third-construct.md)
+- [State the permissive rule you wish held, then spend real effort building the small program that breaks it](../lessons/attack-the-rule-you-want-to-be-true.md)
+- [Treat guaranteed termination of your own tooling as a budget you may knowingly overspend](../lessons/spend-decidability-deliberately.md)

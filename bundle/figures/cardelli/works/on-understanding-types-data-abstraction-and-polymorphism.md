@@ -18,4 +18,10 @@ tags: [work]
 **Source:** http://lucacardelli.name/Papers/OnUnderstanding.pdf — self-archived on Cardelli's own site (verified 200, application/pdf). Note: the site's HTTPS is misconfigured (TLS handshake resets), so the plain HTTP URL is the one that actually resolves.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Reduce a whole design vocabulary to a handful of binding forms, then measure the vocabulary by what derives from them](../lessons/derive-the-vocabulary-from-a-few-binding-forms.md)
+- [Decide what your descriptions denote, and the relations between them stop being matters of taste](../lessons/fix-what-your-types-denote-and-the-relations-follow.md)
+- [A classification earns its keep only when its cases differ in what an implementation must do](../lessons/keep-only-the-distinctions-that-change-behavior.md)
+- [Treat guaranteed termination of your own tooling as a budget you may knowingly overspend](../lessons/spend-decidability-deliberately.md)
+- [When two design goals genuinely fight, look for the construct that serves both instead of splitting the difference](../lessons/two-goals-in-tension-need-a-third-construct.md)
+- [Separate the guarantee you require from the moment you establish it, and pick the moment per boundary](../lessons/when-you-check-is-not-what-you-guarantee.md)
+- [Minimality is owed by the layer you reason in, speed by the layer you run on, and neither should be asked of the other](../lessons/each-layer-owes-a-different-virtue.md)

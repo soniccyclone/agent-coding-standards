@@ -18,4 +18,11 @@ tags: [work]
 **Host:** third-party-rehost — Computer History Museum preservation archive, not ACM's paywalled DL copy.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An abstraction is rented against whatever overhead the current hardware still hides](../lessons/abstraction-is-rented-against-the-overhead-the-hardware-hides.md)
+- [Solve the problem against an unlimited resource, then treat scarcity as a separate stage](../lessons/solve-against-an-idealized-resource-then-map-scarcity-separately.md)
+- [Cut the feature that is hard to specify, awkward to implement, and barely more powerful than its simpler form](../lessons/cut-the-feature-that-loses-on-all-three-counts.md)
+- [Give up the expectation that output resembles input, and whole-program optimization becomes available](../lessons/give-up-local-correspondence-to-optimize-the-whole.md)
+- [When the right static decision depends on unknowable dynamics, estimate the dynamics instead of assuming them away](../lessons/estimate-the-dynamics-you-cannot-prove.md)
+- [Raising the level of notation relocates error rather than removing it, so make the new level's errors mechanically visible](../lessons/raising-the-notation-relocates-error-it-does-not-remove-it.md)
+- [Audit the machine model a language commits you to before comparing its features](../lessons/audit-the-machine-model-a-language-commits-you-to-before-its-features.md)
+- [Growth without added power is evidence that the framework cannot be extended from inside it](../lessons/growth-without-power-means-the-framework-cannot-extend-itself.md)

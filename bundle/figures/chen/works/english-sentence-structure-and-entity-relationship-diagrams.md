@@ -18,4 +18,6 @@ tags: [work]
 **Host:** self-archived — author's own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The language people already use to describe a domain carries its structure](../lessons/domain-language-already-carries-the-modeling-primitives.md)
+- [Every element of a model should trace to something someone actually said](../lessons/every-element-of-a-model-should-trace-to-a-stated-requirement.md)
+- [Rival formalisms usually disagree about level, not about truth](../lessons/rival-formalisms-usually-disagree-about-level.md)

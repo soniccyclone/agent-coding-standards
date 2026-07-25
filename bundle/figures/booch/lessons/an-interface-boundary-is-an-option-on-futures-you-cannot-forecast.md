@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A boundary enforced as an interface is an option on recombinations you cannot forecast"
+figure: booch
+works: [the-future-of-software-engineering, the-promise-the-limits-and-the-beauty-of-software]
+axes: [parallelizability, primitive-count]
+subdomains: [software-engineering-and-architecture, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# A boundary enforced as an interface is an option on recombinations you cannot forecast
+
+**Lesson:** The usual defense of decomposition is comprehension: smaller pieces are easier to hold in mind. The stronger and less obvious argument is optionality. When every internal capability is reachable only through a declared interface, the system stops being one program and becomes a set of parts that can be recombined, and the valuable recombinations are almost never the ones anyone had in mind when the boundaries were drawn. A monolith of the same code contains the same capabilities but offers none of them, because there is no seam at which a capability can be lifted out and pointed at a different purpose. The boundary is what converts latent capability into available capability, and that conversion happens before anyone knows what it will be used for.
+
+The canonical demonstration is a retailer that, under a mandate nobody on the engineering side wanted, forced every internal function behind a service interface. What followed was not the efficiency the mandate was presumably about. Once the parts were separable, some of them turned out to be a general merchandising platform with the proprietary bits removed, and further down the stack the sheer infrastructural machinery turned out to be a product in its own right, sold to everyone. Neither outcome was in the original decision's justification, and neither was reachable without it. Note also what the argument does not claim: the interface style barely matters, since that is an implementation detail, and the discipline is entirely in the enforcement of the boundary rather than in the protocol crossing it.
+
+This gives a defensible reason to hold a boundary that has only one consumer today, which ordinarily looks like speculative overbuilding. The reason is not anticipated reuse of a specific kind, which usually is speculation; it is that enforced boundaries are the only mechanism by which unanticipated reuse becomes possible at all, and their cost is paid once while their payoff arrives repeatedly and unpredictably. It also reframes what to build for: the target is not the simplest thing that satisfies your own requirement but the simplest thing others could build on, which is a different and slightly larger artifact. A programmer who thinks this way is stingy about the number of distinct parts and strict about the interfaces between the ones that exist, on the grounds that a small basis of genuinely separable capabilities spans far more futures than a large pile of entangled ones.
+
+**Source:** [The Future of Software Engineering](../works/the-future-of-software-engineering.md) — the retailer whose blanket everything-is-a-service mandate led, through two successive recognitions by engineers looking at the resulting parts, to a merchandising platform and then to a public infrastructure business, together with the surrounding argument that the interesting separation of concerns has migrated upward from operating systems to platform interfaces. Also [The Promise, the Limits, and the Beauty of Software](../works/the-promise-the-limits-and-the-beauty-of-software.md) — the discussion of building for simplicity and reuse beyond one's own needs, and of componentization opening a market for parts of a system that were previously written from scratch each time.

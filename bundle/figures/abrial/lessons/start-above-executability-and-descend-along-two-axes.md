@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Begin at a level of description you cannot run, then descend along two axes that are never mixed"
+figure: abrial
+works: [formal-methods-in-industry-achievements-problems-future, faultless-systems-yes-we-can, data-semantics]
+axes: [verifiability, cognitive-load, hardware-affinity, expressiveness]
+subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Begin at a level of description you cannot run, then descend along two axes that are never mixed
+
+**Lesson:** Deliberately choose an initial description in which execution is not merely inconvenient but impossible: nondeterministic transitions over sets, relations, and functions, with quantified invariants that no runtime could evaluate. Giving up executability is not a sacrifice, it is the point. It removes the option of establishing confidence by running the thing, which forces the only alternative — reasoning — to be available from the first line onward, and it removes the pressure to make early decisions for the benefit of a machine that is not yet in the picture. A description you cannot debug is a description you must understand.
+
+Descending from there to something a processor can execute involves two kinds of change that feel similar and must be kept rigorously apart. One adds problem content: new variables, stronger guards, more transitions, each step drawing another requirement out of the specification and into the model, each step obliged to preserve what earlier steps established. The other adds nothing about the problem and only makes the existing content mechanizable: abstract sets become indexable structures, nondeterministic choices become determinate control flow, and a linking predicate ties the concrete state back to the abstract one it stands for. Mixing them is the standard disaster, because a change of representation smuggled in alongside a change of meaning leaves you unable to say which of the two broke a proof. Held apart, the first axis is where all the thinking about *what* lives, and implementability is forbidden as a consideration; the second is where all the thinking about *how* lives, and new requirements are forbidden.
+
+The consequence is that the notion of source code dissolves. What the engineers maintain is not a program plus a compiler but a stack of many layers, most of them abstract, whose lowest member is translated to a conventional language mechanically and never edited by hand. In industrial rail projects run this way, the generated code was untouched, unit and integration testing of modules was dropped entirely as a weaker instrument than the proofs, and roughly two thirds of the representation-mapping layer was produced by tooling. The economics invert with the practice: the early phases become the expensive ones and the late phases become cheap, which is exactly the shape managers resist because it front-loads visible cost against invisible savings.
+
+**Source:** [Formal Methods in Industry: Achievements, Problems, Future](../works/formal-methods-in-industry-achievements-problems-future.md) — the three-phase account of abstract model, concrete model, and generated code, with the observation that the developers work where execution is no longer possible, plus the later sections on tool-assisted data refinement and the redistribution of project cost. Also [Faultless Systems: Yes We Can!](../works/faultless-systems-yes-we-can.md) — the paired treatment of the two refinement directions and the linking invariant between them. Also [Data Semantics](../works/data-semantics.md) — its implementation section already frames the descent this way, pinning the abstract model to a physical realization at a small fixed set of interpretation points.

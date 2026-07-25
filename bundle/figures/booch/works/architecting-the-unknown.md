@@ -17,4 +17,12 @@ tags: [work]
 **Source:** https://www.youtube.com/watch?v=RJ3v5cSNcB8 — live video on the SEI/CMU official YouTube channel ("Software Engineering Institute | Carnegie Mellon University"); freely watchable, no login required. Also linked from Booch's own site, handbookofsoftwarearchitecture.com/presentations/.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Architecture is the small set of decisions whose reversal is expensive, and which decisions those are keeps moving](../lessons/architecture-is-the-decisions-you-cannot-afford-to-reverse.md)
+- [The executable is the only ground truth, and it is also the worst place to learn what the system means](../lessons/the-executable-is-ground-truth-the-model-is-the-instrument.md)
+- [Design rationale decays far faster than the code it explains, so treat intent as a perishable asset](../lessons/rationale-decays-faster-than-code.md)
+- [Design is the resolution of forces that keep moving, so method is a calibration and never a doctrine](../lessons/method-is-a-calibration-against-forces-that-move.md)
+- [Complex systems are only ever grown from simpler ones that worked, and the growth needs deliberate plateaus](../lessons/complexity-is-only-ever-grown-through-things-that-worked.md)
+- [Ask first whether the problem has precedent, then either copy shamelessly or attack its irreducible core on day one](../lessons/spend-your-first-day-on-the-irreducible-kernel.md)
+- [The organization is part of the structure, so restructuring the system means restructuring the people](../lessons/the-team-is-part-of-the-architecture.md)
+- [Interventions have a mandatory order: a project without a release rhythm cannot be reasoned about yet](../lessons/cadence-before-structure-there-is-an-order-to-interventions.md)
+- [The transferable skill is abstraction, not notation, and most code is now written by people who were taught neither](../lessons/teach-the-abstraction-not-the-notation.md)

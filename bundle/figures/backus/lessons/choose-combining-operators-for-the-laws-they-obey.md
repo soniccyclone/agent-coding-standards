@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Choose your combining operators for the laws they obey, so reasoning can happen in the program's own language"
+figure: backus
+works: [can-programming-be-liberated-from-the-von-neumann-style]
+axes: [verifiability, primitive-count, expressiveness]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Choose your combining operators for the laws they obey, so reasoning can happen in the program's own language
+
+**Lesson:** Most control constructs are selected for convenience: someone needed a way to do a thing, and a construct appeared. There is a second criterion available, usually ignored, which is what algebraic identities the construct participates in. If the ways of assembling programs are also the operations of an algebra whose variables are programs, then each candidate operator can be judged twice — once by what it lets you write, once by the strength of the equations relating it to the others. Selecting for both at once is a real constraint that eliminates many otherwise attractive constructs, and the payoff is that whole classes of program transformation and equivalence become derivable rather than argued case by case.
+
+The reason to want this is a difference in where reasoning takes place. The conventional arrangement puts proofs in a separate logical system that talks about programs from the outside: the program is the subject matter, the reasoning happens in another language, and the translation between them is the practitioner's burden. That burden is why proof stays the specialty of people who study proof. When the transformation rules are equations between program expressions, the manipulation is carried out on the program text itself, in the same notation the programmer already writes, by the same mechanical rearrangement used to solve a school algebra problem. Termination and case analysis stop being separate theories and start falling out of the manipulation: expanding a recursive definition into an enumeration of its cases exhibits both when the program is defined and what it does in each case. The theoretical apparatus that guarantees these manipulations are sound still exists, but it can be pushed underneath, so that using it requires knowing a couple of conclusions rather than a field.
+
+There is a companion discipline that makes this work: refusing unlimited means of inventing new ways to combine programs. A system that lets you conjure a fresh combining device whenever it suits the occasion guarantees that no combining device is ever well understood, because none of them recurs often enough to accumulate known properties. Deliberately fixing a small vocabulary is the same trade structured programming made with control flow, one level up, and for the same reason: uniform methods of understanding behavior only exist for constructs that appear again and again. A programmer who accepts this looks at a proposed abstraction and asks not only whether it expresses the intent, but what algebraic identities it satisfies and what it destroys — and treats an operator that obeys no useful laws as a liability even when it is convenient.
+
+**Source:** [Can Programming Be Liberated from the von Neumann Style?](../works/can-programming-be-liberated-from-the-von-neumann-style.md) — the introduction to the functional systems, where combining forms are justified by their algebraic properties and unrestricted formation of new ones is rejected, followed by the algebra-of-programs sections on laws, expansion, and termination, and their framing as a proof discipline for ordinary programmers.

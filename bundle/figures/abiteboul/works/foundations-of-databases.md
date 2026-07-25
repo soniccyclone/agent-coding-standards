@@ -19,4 +19,8 @@ tags: [work]
 **Host:** institutional — hosted on webdam.inria.fr, an INRIA (Abiteboul's home institute) project domain, not a personal homepage or a third-party mirror.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An abstraction is real only when an invariance law forbids reaching past it](../lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
+- [Every detail you refuse to expose is expressive power you have spent](../lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
+- [The class of computations is the real object; notations and semantics are viewpoints on it](../lessons/the-computation-class-is-the-object-syntaxes-are-viewpoints.md)
+- [Restrict the language until the guarantee you need is a theorem about the language](../lessons/restrict-the-language-until-the-guarantee-is-a-theorem.md)
+- [Two systems become comparable only after you declare what counts as observable](../lessons/comparison-requires-declaring-what-counts-as-observable.md)

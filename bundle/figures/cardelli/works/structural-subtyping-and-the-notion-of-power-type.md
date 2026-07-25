@@ -17,4 +17,9 @@ tags: [work]
 **Source:** http://lucacardelli.name/Papers/StructuralSubtyping.pdf — self-archived on Cardelli's own site (verified 200, application/pdf). Note: the Phase 1/2 stub dated this 1989 and credited "with Canning et al." — the author's own bibliography dates it 1988 and lists Cardelli as sole author; corrected here.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let shape decide compatibility, and seal by hiding whatever invariant the shape fails to express](../lessons/let-shape-decide-compatibility-not-names.md)
+- [Make a relaxation orthogonal: every way of building a thing owes an answer in every relation you care about](../lessons/every-constructor-owes-a-rule-in-every-relation.md)
+- [Treat guaranteed termination of your own tooling as a budget you may knowingly overspend](../lessons/spend-decidability-deliberately.md)
+- [Collapsing two levels to save concepts also destroys the questions those levels let you answer](../lessons/collapsing-two-levels-forfeits-the-decisions-above-them.md)
+- [Decide what your descriptions denote, and the relations between them stop being matters of taste](../lessons/fix-what-your-types-denote-and-the-relations-follow.md)
+- [Write down what must be decided before deciding how to decide it, and let the algorithm be answerable to that statement](../lessons/state-the-judgment-before-writing-the-checker.md)

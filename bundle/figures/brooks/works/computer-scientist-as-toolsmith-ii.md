@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://www.cs.unc.edu/~brooks/Toolsmith-CACM.pdf — self-archived on Frederick Brooks's own UNC Computer Science faculty page, linked directly from his publications list; verified live (200 OK, application/pdf).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+
+- [Building is a different activity from discovering, so novelty earns nothing; what you make is tested only by what someone else accomplishes with it](../lessons/novelty-is-not-a-virtue-in-something-built-to-be-used.md)
+- [Take a problem from someone who owns it, on their terms, because a borrowed problem refuses the simplifications you would grant yourself](../lessons/borrow-a-real-problem-from-someone-who-owns-it.md)
+- [The long-run goal you adopt decides what you are able to build, so aim at coupling a mind to a machine rather than at replacing the mind](../lessons/aim-at-amplifying-the-mind-not-replacing-it.md)
+- [When the complexity is the subject, simplifying models lose the subject; expect no unifying law behind requirements written by many minds](../lessons/complexity-that-is-the-subject-cannot-be-abstracted-away.md)

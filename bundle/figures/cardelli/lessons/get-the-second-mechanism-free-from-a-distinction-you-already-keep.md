@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Before adding a mechanism, check whether a distinction the system already maintains can carry the new job"
+figure: cardelli
+works: [a-language-with-distributed-scope, a-semantics-of-multiple-inheritance]
+axes: [primitive-count, verifiability, parallelizability]
+subdomains: [distributed-systems-and-concurrency, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Before adding a mechanism, check whether a distinction the system already maintains can carry the new job
+
+**Lesson:** New requirements arrive looking like requests for new subsystems. Access control wants a permissions model, concurrency safety wants a locking layer, privacy wants a visibility keyword. Each of those is a second mechanism to specify, implement, and keep consistent with the first. The cheaper and sturdier move is to look at the distinctions the design already maintains for other reasons and ask whether one of them already sorts the cases the new requirement cares about. Reachability is a good example. A system with strict scoping already knows, for every piece of code, precisely which things it can name; that is the same question as which things it is allowed to touch. Foreign code accepted for execution can then reach only what it brought with it or was handed, and resources become unavailable by being outside the code's naming context rather than by being guarded. No permission checks, no policy language, and the enforcement is the same enforcement the language was already doing.
+
+The pattern repeats with concurrency. The obvious lock discipline, one lock per object acquired on entry, deadlocks the moment a routine calls a sibling through the whole, which is a normal thing to write, so ordinary programs break for no reason a user can see. Making locks re-entrant fixes that case and overshoots, admitting unexpected re-entry from foreign code that can violate the very invariants the lock was protecting, while also being defined relative to a notion of thread identity that may not extend across machines. What works is keying the discipline on a distinction the design already needed, namely whether an operation is being performed by the whole upon itself or by someone else upon it. Operations from outside acquire; operations from within do not, because the outside operation that led here already did. The same distinction had been introduced to decide which operations to reject from outside, so protection and serialization become two readings of one predicate.
+
+The test for whether this is legitimate rather than clever is whether the reused distinction really does sort the new cases, or merely correlates with them. When it genuinely coincides, you get one thing to explain, one thing to implement, and no possibility of the two mechanisms disagreeing. When it only correlates, forcing the reuse produces surprising behaviour at the edges, and the cases where they diverge are exactly where the security or concurrency argument fails.
+
+**Source:** [A Language with Distributed Scope](../works/a-language-with-distributed-scope.md) — the discussion of how scoping supplies network security guarantees for foreign agents through what they can name, and the serialization section, which rejects both plain and re-entrant per-object locks and derives its discipline from the same internal-versus-external distinction used for protection. Also [A Semantics of Multiple Inheritance](../works/a-semantics-of-multiple-inheritance.md) — the inheritance idioms section, where privacy of state is obtained from lexical scoping rather than a visibility mechanism.

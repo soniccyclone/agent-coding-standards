@@ -19,4 +19,8 @@ tags: [work]
 **Host:** institutional — HAL / INRIA repository entry inria-00075656.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [How you schedule the steps is part of what the program means](../lessons/how-you-schedule-the-rules-is-part-of-what-they-mean.md)
+- [Declarative and procedural is not a dichotomy; ask instead where the control lives](../lessons/declarative-is-a-question-of-where-control-lives.md)
+- [The power to mint a fresh value is a frontier, not a convenience](../lessons/the-power-to-mint-fresh-values-is-a-frontier.md)
+- [Equal expressive power is never a licence to substitute one notation for another](../lessons/equal-expressive-power-is-not-a-licence-to-substitute.md)
+- [An abstraction is real only when an invariance law forbids reaching past it](../lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)

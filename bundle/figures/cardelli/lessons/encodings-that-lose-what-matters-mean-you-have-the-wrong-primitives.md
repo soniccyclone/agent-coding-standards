@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When every encoding of a concept drops the property you care about, the concept is a primitive"
+figure: cardelli
+works: [a-theory-of-primitive-objects-untyped-and-first-order-systems, an-imperative-object-calculus]
+axes: [primitive-count, expressiveness, verifiability]
+subdomains: [foundations-of-computation, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# When every encoding of a concept drops the property you care about, the concept is a primitive
+
+**Lesson:** A common instinct on meeting an unfamiliar construct is to explain it away by translating it into machinery you already trust. That instinct has a failure mode that is easy to miss: a translation can be perfectly faithful with respect to one set of properties and silently destroy another. Four separate ways of building objects out of functions and records are examined here, and each one succeeds on part of the job while breaking somewhere else. Interpret self as an ordinary parameter and the behaviour is right but the substitutability you wanted is gone, because every component now mentions the whole in a position that forbids refinement. Tie the knot with recursion instead and substitutability returns while replacement stops working, since the components can no longer notice that one of them changed. Delay the knot and replacement works but invocation no longer matches. Split the state away from the behaviour and most of it works, at the price of a rewriting discipline no one can perform by hand. Untyped, all four are equivalent to the intended semantics; the disagreements appear only once you demand that types and substitutability survive too.
+
+The conclusion to draw is methodological rather than technical. Adequacy of a translation is always relative to a stated list of properties that must be preserved, so the first move is to write that list down, and the second is to test candidate encodings against every item on it rather than against behaviour alone. When several honest attempts each lose a different item, that is evidence about the structure of the problem, not about the ingenuity of the encoder: the concept has its own laws, and forcing it through an existing basis costs more than admitting it. The remedy is to give the concept its own operations and its own rules, then re-derive the familiar machinery inside it if you can, which reverses the direction of the dependency and settles which notion is actually more basic.
+
+A programmer who takes this seriously stops treating a favourite abstraction as the universal substrate. Instead of asking how to represent the new thing in terms of the old, the question becomes what the new thing's operations are, which equations they satisfy, and which of the old things fall out as special cases. The result is usually smaller than the encoding it replaces, because all the scaffolding that existed only to simulate the missing notion disappears, and it is easier to reason about, because the rules are stated about the thing itself instead of about its image under a translation.
+
+**Source:** [A Theory of Primitive Objects: Untyped and First-Order Systems](../works/a-theory-of-primitive-objects-untyped-and-first-order-systems.md) — the survey of derived semantics in the opening section, where each candidate reduction is measured against both the intended operational behaviour and the intended subtyping, followed by the decision to axiomatize directly. Also [An Imperative Object Calculus](../works/an-imperative-object-calculus.md) — the introduction takes the same stance for self types in a stateful setting, taking as primitive what resisted reduction elsewhere.

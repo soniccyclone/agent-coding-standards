@@ -18,4 +18,8 @@ tags: [work]
 **Host:** third-party-rehost — Internet Archive preservation copy, not ACM's paywalled DL or an author site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Audit the machine model a language commits you to before comparing its features](../lessons/audit-the-machine-model-a-language-commits-you-to-before-its-features.md)
+- [Growth without added power is evidence that the framework cannot be extended from inside it](../lessons/growth-without-power-means-the-framework-cannot-extend-itself.md)
+- [Choose your combining operators for the laws they obey, so reasoning can happen in the program's own language](../lessons/choose-combining-operators-for-the-laws-they-obey.md)
+- [Say what the result is over whole values, and name nothing you do not have to](../lessons/operate-on-whole-values-and-name-nothing.md)
+- [The width of a system's interface to its state bounds the changes anyone can imagine making](../lessons/the-interface-to-state-bounds-what-changes-are-thinkable.md)

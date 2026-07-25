@@ -17,4 +17,9 @@ tags: [work]
 **Source:** http://lucacardelli.name/Papers/Obliq.pdf — self-archived on Cardelli's own site (verified 200, application/pdf).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Choose the one invariant that must survive the boundary, and let the rest of the design be forced by it](../lessons/carry-one-invariant-across-the-boundary-and-derive-the-rest.md)
+- [When code moves, move its environment with it, because the worst failure is the one that succeeds with the wrong meaning](../lessons/ship-the-environment-not-the-text.md)
+- [Before adding a mechanism, check whether a distinction the system already maintains can carry the new job](../lessons/get-the-second-mechanism-free-from-a-distinction-you-already-keep.md)
+- [Fix what is not allowed to move, then build motion out of ordinary operations instead of a migration feature](../lessons/decide-what-must-not-move-then-program-the-motion.md)
+- [Derive the organizing construct from what you already have, and its preconditions become visible instead of built in](../lessons/derive-the-organizing-construct-instead-of-building-it-in.md)
+- [Separate the guarantee you require from the moment you establish it, and pick the moment per boundary](../lessons/when-you-check-is-not-what-you-guarantee.md)

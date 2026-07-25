@@ -19,4 +19,7 @@ tags: [work]
 **Host:** institutional — webdam.inria.fr, an INRIA project domain.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When the producers are autonomous, let the data carry its own structure](../lessons/when-producers-are-autonomous-let-the-data-carry-its-own-structure.md)
+- [Between parties you do not control, state relationships as containments and define truth as what follows](../lessons/state-relationships-as-containments-not-equalities.md)
+- [Restrict the language until the guarantee you need is a theorem about the language](../lessons/restrict-the-language-until-the-guarantee-is-a-theorem.md)
+- [Two systems become comparable only after you declare what counts as observable](../lessons/comparison-requires-declaring-what-counts-as-observable.md)

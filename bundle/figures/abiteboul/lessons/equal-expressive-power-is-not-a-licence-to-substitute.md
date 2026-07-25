@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Equal expressive power is never a licence to substitute one notation for another"
+figure: abiteboul
+works: [datalog-extensions-for-database-queries-and-updates, comparing-workflow-specification-languages]
+axes: [cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture, databases-and-data-management]
+tags: [lesson]
+---
+# Equal expressive power is never a licence to substitute one notation for another
+
+**Lesson:** Proofs that language A can simulate language B are the standard currency of expressiveness results, and they are routinely misread as saying that B is unnecessary. Both of these works prove such results and both then refuse the inference, in almost the same words. In the rule-language setting, a language whose only control comes from iterating to a stable point can reproduce the effect of explicit sequencing and looping, and the authors argue directly from that result to the recommendation that users be given explicit sequencing anyway, because the alternative is programs that encode intricate control through weak implicit means and whose behavior no reader can recover. In the process-specification setting, a core model whose only control comes from constraints on well-formed states turns out to be able to reproduce guarded actions, state machines, and constraints on history, and the authors immediately observe that specifications written in those richer paradigms are far easier to read than the equivalents built from hidden auxiliary machinery.
+
+The reason this keeps happening is that a simulation argument is only obliged to preserve behavior. It has no obligation to preserve the correspondence between a piece of the text and a piece of the intent, and that correspondence is what maintenance runs on. When a phase boundary is encoded as a pattern of marker facts and offset copies of relations, or a state machine is encoded as invariants plus concealed functions, the encoded artifact computes the right thing and communicates nothing. Any later change requires reconstructing the intent from the encoding first. So expressive equivalence tells you where the ceiling is, and says nothing about where you should be standing.
+
+The behavior this should produce is twofold. When you catch yourself arguing that a construct is redundant because the existing primitives can express it, notice that you have made an argument about capability and none about cost, and go get the cost. When you find yourself building the encoding, treat that as evidence for adding the construct rather than as cleverness to be admired. Both works reach the same recommendation from opposite directions: mix the paradigms, keep the small implicit core because it makes the semantics tractable, and expose the explicit constructs because they make the programs legible. The corollary is a good review question for any layer that claims to be minimal: what do its users have to encode, and does the encoding still say what it means?
+
+**Source:** [Datalog Extensions for Database Queries and Updates](../works/datalog-extensions-for-database-queries-and-updates.md) — the passage in the concluding section arguing the practical significance of the simulation results, which recommends a hybrid of explicit control and rule-based pieces and gives layered negation as the worked case where the encoded version is much harder to follow. The parallel argument appears in [Comparing Workflow Specification Languages](../works/comparing-workflow-specification-languages.md), in the introduction and conclusion around the result that static constraints alone suffice to simulate the three richer specification paradigms.

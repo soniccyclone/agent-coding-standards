@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Complex systems are only ever grown from simpler ones that worked, and the growth needs deliberate plateaus"
+figure: booch
+works: [architecting-the-unknown, the-future-of-software-engineering, building-the-enchanted-land]
+axes: [cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture]
+tags: [lesson]
+---
+# Complex systems are only ever grown from simpler ones that worked, and the growth needs deliberate plateaus
+
+**Lesson:** A working complex system is never assembled from a complete design; it descends from a smaller system that already worked. This holds for natural systems, for organizations, and for software, and it holds for the same reason in each case: intermediate configurations that are themselves stable are what make further elaboration survivable. If no step along the way stands on its own, every increment is a bet on the entire remaining design being right, and the state space of things that can be wrong grows faster than anyone's ability to inspect it. This is why an ambitious system specified fully in advance and built once tends to fail, and why the same ambition reached through a sequence of running, coherent, smaller versions tends to succeed.
+
+The half that is usually skipped is that the intermediate configurations must actually be occupied, not merely passed through. Advance happens in bursts separated by consolidation, and the consolidation is where the next burst becomes conceivable: it is the interval in which a group can look at what it has, discard what it accumulated under pressure, simplify, and only then see the problem beyond the one it just solved. A field's history of visible breakthroughs is really a history of such intervals, each new capability arriving shortly after the previous one had been digested into something reliable enough to build on without thinking about. Teams that never stop do not get those intervals. Their release cadence looks admirable and their code accretes, because there is never a moment in which anyone has standing to say this should be smaller rather than larger.
+
+So the practice has two requirements that pull against each other and must both be met. Ship continuously enough that every increment is evidenced by something that runs, and stop often enough that simplification actually happens. Organizations that treat refactoring as an explicit, funded fraction of capacity are buying the second requirement outright, which is why that unglamorous budget line correlates with systems that stay changeable for decades. A programmer who believes this stops asking whether the design is finished and starts asking whether the current version is a place the system could stand for a while, and whether the last consolidation was recent enough to have paid for the next expansion.
+
+**Source:** [Architecting the Unknown](../works/architecting-the-unknown.md) — the long analogy tracing capability in representational art and in computer-generated imagery as a series of plateaus, each one a consolidation that made the next advance thinkable, and the discussion of an organization whose relentless cadence left no room to consolidate and produced duplication instead. Also [The Future of Software Engineering](../works/the-future-of-software-engineering.md), which grounds the pattern in Simon's account of how complexity manifests across natural and artificial systems and links it to frequent release, and [Building the Enchanted Land](../works/building-the-enchanted-land.md), which invokes Gall's observation that working systems are grown rather than constructed.

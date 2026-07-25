@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "The class of computations is the real object; notations and semantics are viewpoints on it"
+figure: abiteboul
+works: [foundations-of-databases]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, databases-and-data-management, foundations-of-computation]
+tags: [lesson]
+---
+# The class of computations is the real object; notations and semantics are viewpoints on it
+
+**Lesson:** This book is organized around a repeated finding: notations that grew from unrelated intuitions keep landing on exactly the same set of expressible computations. An operator algebra, a first-order logic with variables ranging over data, a rule-based deduction system, and a diagrammatic pattern language all pin down the same simple query class. Add looping and assignment to the algebra, add a fixpoint constructor to the logic, add recursion with negation to the rules, and again the three arrive at one class. When four constructions built from different primitives converge, the sensible conclusion is that the class was there to be found, and each notation is one way of looking at it. Which one you write in is a question about your current task, not about capability.
+
+The same lesson operates one level down, on a single program rather than a language. A set of recursive rules can be read three ways: as a logical statement of what must hold about the answer plus a demand that the answer be the smallest thing satisfying it; as a system for producing evidence, where a fact is present because a derivation ends at it; or as an equation whose solution you obtain by iterating an operator until nothing changes. The three agree. That agreement is what makes such rules pleasant to live with, because each reading answers a different question well. When arguing that the output is correct, the minimal-model reading is the one that talks about the specification. When asking why a particular surprising fact appeared, the derivation reading gives you a trace with no extra tooling. When asking what it will cost, the iteration reading gives you a bound. Even the same modest layout choices recur: whether tuples are keyed by name or by position, whether an instance is a set of records or a set of ground assertions, are shifts of viewpoint that a routine correspondence lets you cross whenever one side is more convenient.
+
+The working consequence is to stop arguing about representation before the underlying object is nailed down, and to establish translations rather than picking a winner. Prove the correspondence once and then move across it freely, choosing the shape that makes the current question easy. The failure mode this guards against is the opposite habit: a team fixes a single canonical form early, and every question thereafter gets asked in a form that is awkward for it, which produces contorted code whose only purpose is to reach an answer that would have been obvious from another angle.
+
+**Source:** [Foundations of Databases](../works/foundations-of-databases.md) — the opening of the chapter on simple conjunctive queries, which presents five equivalent formulations and observes that their similarity thins out as the languages are extended; the chapter introducing recursion, which lays out the model-theoretic, proof-theoretic, and fixpoint readings and notes their agreement; the chapter combining recursion with negation, which establishes the equivalence of the algebraic, logical, and deductive versions; and the discussion of named against positional and conventional against logic-programming perspectives in the chapter defining the relational model.

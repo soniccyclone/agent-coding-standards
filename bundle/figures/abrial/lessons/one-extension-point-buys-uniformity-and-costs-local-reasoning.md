@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Hanging behavior on the primitive operations unifies concerns that would otherwise be subsystems, and quietly destroys the ability to read a program locally"
+figure: abrial
+works: [data-semantics]
+axes: [primitive-count, expressiveness, cognitive-load, verifiability]
+subdomains: [programming-environments-and-object-systems, databases-and-data-management]
+tags: [lesson]
+---
+# Hanging behavior on the primitive operations unifies concerns that would otherwise be subsystems, and quietly destroys the ability to read a program locally
+
+**Lesson:** Once the basic operations of a model are few and named — creating an object, destroying it, asserting a link, retracting one, classifying, testing, retrieving — you can attach a program to any of them and thereby extend what the operation means. The economy is remarkable. Integrity constraints stop being a separate checking engine and become programs on the update operation that refuse the change and report failure. Derived values stop being a separate view layer and become programs on the retrieval operation. Access control stops being a separate security subsystem and becomes the same kind of program, consulting who is asking. Mathematical properties of relations — reflexivity, transitivity, and the rest — cease to be documentation and become executable content hung on the same handful of hooks. Three or four apparatuses that would each get their own architecture in a conventional system collapse into one mechanism, and failure becomes a uniform first-class outcome that any operation may produce.
+
+Abrial then does something rarer than proposing the mechanism, which is to catch it hurting. Discussing concurrent use, he examines a statement that merely asserts a link and observes that whether it also modifies some further collection is not determinable by reading it, because an extension attached elsewhere may impose that effect — and the extension may have been written after the statement was. The consequence is stark: a whole class of interference error cannot be found by inspecting the program text and will only surface at run time. He also finds that the general, implicitly-derived protection rules cover collections but cannot cover the invariants that matter, since the correct locking discipline for a given object is part of that object's meaning and cannot be inferred by any uniform mechanism. Explicit locking has to be reintroduced, brings nested-lock deadlock with it, and the least bad remedy he can offer is coarse and, in his own assessment, intellectually unsatisfying.
+
+The generalizable thought is that extension points and local reasoning trade against each other, and the trade is usually made without being noticed. The more places a program's effects can be augmented from a distance, the less any fragment of it means on its own — the same bargain later struck by inheritance hierarchies, aspect weaving, database triggers, and dependency injection. What is worth imitating here is not a verdict either way but the willingness to state the cost of your own best idea in the same paper that proposes it. If you build a mechanism that lets effects be added remotely, you owe your users an account of which properties they can no longer establish by reading.
+
+**Source:** [Data Semantics](../works/data-semantics.md) — the section extending the basic semantics by associating programs with each of the built-in operators, its use for constraints, derived values, mathematical relation properties and privacy, and the later concurrency discussion where the same mechanism is shown to hide effects from the reader and to leave object-level invariants uncovered by any implicit rule.

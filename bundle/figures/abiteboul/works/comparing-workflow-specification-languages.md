@@ -19,4 +19,7 @@ tags: [work]
 **Host:** institutional — webdam.inria.fr, an INRIA project domain.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Two systems become comparable only after you declare what counts as observable](../lessons/comparison-requires-declaring-what-counts-as-observable.md)
+- [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
+- [Your validity rules are control flow whether you intended them to be or not](../lessons/your-integrity-constraints-are-control-flow.md)
+- [Equal expressive power is never a licence to substitute one notation for another](../lessons/equal-expressive-power-is-not-a-licence-to-substitute.md)

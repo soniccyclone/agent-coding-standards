@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Every guarantee has an edge; state where it is and cover the outside with a mechanism of a different kind"
+figure: abrial
+works: [faultless-systems-yes-we-can, formal-methods-in-industry-achievements-problems-future]
+axes: [verifiability, hardware-affinity]
+subdomains: [formal-methods-and-verification, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Every guarantee has an edge; state where it is and cover the outside with a mechanism of a different kind
+
+**Lesson:** Absolute correctness is not on offer, and pretending otherwise is the failure mode of people who have just discovered proof. What a proof delivers is correctness relative to a model, and where that model describes physical reality it is an approximation — of the equipment, of the sensors, of the phenomena, of the people. If the approximation is poor, a fully proved system can fail in the field with every obligation discharged and no error anywhere in the reasoning. The honest formulation is relative faultlessness: these particular failure modes cannot occur, under these particular stated assumptions about the environment. Which means the assumptions are not scaffolding to be discarded once the proof lands. They are part of what you deliver, as precisely stated as the properties themselves, because they define the boundary outside which the guarantee simply does not apply.
+
+Having drawn that boundary, cover what lies beyond it with an instrument of a different nature, since another proof over the same model would only re-establish the same interior. Two examples from Abrial's practice show the pattern. Generated software for driverless trains was executed on a processor that redundantly encodes every datum and continuously checks the encoding, halting the system on disagreement, because charged particles and electrical noise in a tunnel corrupt memory in ways no source-level argument addresses; the proof establishes that the software satisfies its requirements, and the hardware mechanism establishes that what runs is what was proved. Separately, a tool that automated much of the representation-mapping work was not itself verified. Its *output* was proved instead, exactly as if a human had produced it, which sidesteps the vastly harder problem of certifying the generator and keeps the assurance argument independent of the tool's own defects.
+
+The habit this cultivates is a reflex to ask, of any assurance claim, what mechanism supplies it and what class of fault that mechanism structurally cannot see. Type checking cannot see wrong requirements. Requirements proofs cannot see bit flips. A verified compiler cannot see a miscompiled dependency it did not build. Naming the blind spot is what tells you which second mechanism you owe, and stacking two mechanisms with genuinely different blind spots is worth far more than doubling the strength of either one. Validate artifacts rather than the machinery that produced them, wherever the artifact is the cheaper thing to check.
+
+**Source:** [Faultless Systems: Yes We Can!](../works/faultless-systems-yes-we-can.md) — the passage insisting that faultlessness can only be relative to a constructed model of the environment, and the accompanying claim that making the assumptions explicit is what gives the result meaning. Also [Formal Methods in Industry: Achievements, Problems, Future](../works/formal-methods-in-industry-achievements-problems-future.md) — the treatment of the redundantly-coded processor as complementary to the software proofs, and the decision to prove the refinement tool's results rather than the tool.

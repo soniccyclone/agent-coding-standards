@@ -58,3 +58,28 @@ extract lessons from) and Presentations (four embedded, freely-watchable YouTube
 Those four keynotes are captured as individual `work` files in `works/` since they're the
 only substantive public Booch-authored material this pass turned up; the handbook page
 itself isn't citable as a standalone work because it has no content of its own to cite.
+
+## Lessons
+Booch's contribution to how one thinks about programming is diagnostic rather than formal:
+he supplies tests for locating things. Structure is identified by the cost of reversing a
+decision rather than by diagram hierarchy, which is why a system of tens of millions of
+lines usually reduces to a few dozen abstractions, and why that reducible set has to be
+re-found periodically instead of inherited from the original design. What blocks a project
+is located on a stack running from physical law through missing algorithms, arrangement,
+team structure, economics, and finally what should be permitted at all; effort spent at the
+wrong level is wasted however skilled. Whether a project can be advised at all is located
+by its release cadence, since without one no claim about the system can be checked, so
+structural advice has to wait. Around those tests sit convictions he repeats in every talk:
+design is the settlement of incommensurable forces that keep moving, so methodology is a
+calibration against risk, scale, and team composition rather than a doctrine; complex
+systems only ever descend from simpler ones that worked, and the consolidation intervals
+between growth spurts must be deliberately occupied or nothing ever gets simpler; a running
+artifact is the only ground truth while being the worst available explanation of itself, so
+notation earns its keep by improving decisions and by nothing else; design rationale is
+perishable in a way code is not, which makes recovered intent a real engineering
+deliverable; a deployed system's observed behavior, defects included, has become its
+specification; enforced interface boundaries are options on recombinations nobody
+forecast; the arrangement of people is part of the artifact's structure and cannot be left
+out of a restructuring; and the open problems worth attacking are establishing properties
+of assemblies whose parts are known to fail, and architecting around learned components
+whose behavior depends on what they were taught and in what order.

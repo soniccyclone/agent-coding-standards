@@ -26,3 +26,27 @@ The spiral model is a risk-driven reasoning framework for iterative system struc
 
 ## Phase 3 access flag
 The "empirical cost/risk data" half of the why-candidate case is not represented in the public work set. Both books that actually contain Boehm's cost-estimation models — *Software Engineering Economics* (1981, defines original COCOMO) and *Software Cost Estimation with COCOMO II* (2000) — are genuinely unavailable: no author-hosted or institutional copy exists, the Internet Archive scan of the 1981 book is controlled-digital-lending (login/waitlist, no free download), and journal/ACM mirrors of related COCOMO material 403. What's public and linked in `works/` is the spiral model paper (the risk-driven process framework itself) plus two survey/retrospective papers (1976, 2006) — solid on the "risk-driven reasoning" side, silent on the "empirical cost/risk data" side. Worth knowing before leaning on this figure's cost-estimation angle in Phase 4 lesson extraction.
+
+## Lessons
+Boehm's contribution to how a programmer thinks is the habit of treating
+uncertainty as the quantity that organizes everything else. What you build
+next is chosen by which unknown is most expensive to keep, how much precision
+an artifact deserves is set by what being wrong there would cost, and the
+project itself is a claim under test whose refutation is a legitimate result
+rather than a disgrace. Around that core sit four lessons about honesty
+regarding limits: measured evidence that a mistake's price is set by when it
+surfaces and not by its intrinsic size; the observation that most of what a
+system costs is spent changing it, so the criterion you optimize silently
+chooses the artifact's shape; the recognition that verification always
+establishes agreement with something that can itself be wrong; and an audit
+habit that asks whether one's tools actually reach the region where the
+failures accumulate, since theory tends to grow where theory is easy to make.
+Two further lessons come from his willingness to read his own field
+skeptically. Long-running methodological fights signal a missing variable
+rather than a winner, so the productive move is to find the dimension along
+which each camp is right and replace the catalogue of hostile methods with one
+framework plus a diagnosis. And every practice is a fit to conditions —
+machine time against human time, cost of change, whether the target is even
+specifiable in advance, whether the parts are yours to see inside — which
+means inherited rules must be re-derived rather than obeyed, because the
+conditions move and the rules do not announce their expiry.

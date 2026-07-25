@@ -18,4 +18,7 @@ tags: [work]
 **Source:** http://lucacardelli.name/Papers/PrimObj1stOrder.pdf — self-archived on Cardelli's own site (verified 200, application/pdf). Added beyond the original top-10 list as a public stand-in for the inaccessible *A Theory of Objects* book — it's the paper that book's core theory is built from.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When every encoding of a concept drops the property you care about, the concept is a primitive](../lessons/encodings-that-lose-what-matters-mean-you-have-the-wrong-primitives.md)
+- [A part that can consult the whole is no longer a part you may vary independently](../lessons/a-part-that-can-see-the-whole-cannot-vary-freely.md)
+- [State the permissive rule you wish held, then spend real effort building the small program that breaks it](../lessons/attack-the-rule-you-want-to-be-true.md)
+- [Find which feature of a paradigm is definitional by comparing the systems that claim it, then study that one alone](../lessons/isolate-the-feature-that-is-actually-definitional.md)
