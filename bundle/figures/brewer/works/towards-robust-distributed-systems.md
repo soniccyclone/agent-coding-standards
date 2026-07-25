@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://people.eecs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf — live PDF, hosted directly on Eric Brewer's own UC Berkeley EECS homepage (self-archived, not a third-party mirror). Verified by direct fetch and text extraction: title slide reads "Towards Robust Distributed Systems / Dr. Eric A. Brewer / Professor, UC Berkeley / Co-Founder & Chief Scientist, Inktomi / PODC Keynote, July 19, 2000."
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Name the guarantee you are forfeiting before the failure names it for you](../lessons/name-the-guarantee-you-forfeit.md)
+- [A boundary that hides where it really is will fail where you cannot see](../lessons/boundaries-must-tell-the-truth.md)
+- [Widen correctness from a bit to a dial, then engineer the dial](../lessons/correctness-is-a-continuous-quantity.md)

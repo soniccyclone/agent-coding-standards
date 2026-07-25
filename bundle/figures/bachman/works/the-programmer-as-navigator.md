@@ -18,4 +18,7 @@ tags: [work]
 **Host:** third-party-rehost — MIT CSAIL course-reading mirror, not Bachman's own site or an ACM-hosted open copy.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Put the persistent data at the center and treat programs as visitors passing through it](../lessons/data-as-the-fixed-center.md)
+- [The cost of reaching data is a designed artifact, not an inherited accident](../lessons/access-cost-as-designed-artifact.md)
+- [Sharing durable mutable state is a different problem from sharing the machine](../lessons/sharing-durable-state-is-the-hard-problem.md)
+- [Give an identifier exactly one job: a key that also means something can never change](../lessons/identity-carries-no-meaning.md) (jointly with the oral history)

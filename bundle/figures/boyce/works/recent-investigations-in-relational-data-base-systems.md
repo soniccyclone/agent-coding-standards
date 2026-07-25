@@ -22,4 +22,5 @@ tags: [work]
 The figure stub described BCNF's origin as "an unpublished IBM internal memo with Codd, 1974, later formalized in secondary literature." That's superseded by this find: the Boyce-Codd definition was presented in this public, citable 1974 paper, not left in an internal memo. No `## Phase 3 access flag` is needed — nothing here turned out to be unavailable.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Of two equivalent definitions, the one needing fewer auxiliary concepts is the right one](../lessons/prefer-the-definition-with-fewer-concepts.md)
+- [Component-wise invariants don't certify the composition](../lessons/local-normal-forms-dont-certify-the-whole.md)

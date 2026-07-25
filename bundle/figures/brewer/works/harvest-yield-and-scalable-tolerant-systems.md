@@ -18,4 +18,6 @@ tags: [work]
 **Source:** https://radlab.cs.berkeley.edu/people/fox/static/pubs/pdf/c18.pdf — live PDF, hosted on co-author Armando Fox's own publications archive at UC Berkeley's RAD Lab (self-archived by an author, not a third party). Verified by direct fetch and text extraction: byline "Armando Fox, Stanford University" / "Eric A. Brewer, University of California at Berkeley," and body text stating the "Strong CAP Principle: Strong Consistency, High Availability, Partition-resilience: Pick at most 2."
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Widen correctness from a bit to a dial, then engineer the dial](../lessons/correctness-is-a-continuous-quantity.md)
+- [Robustness comes from mechanisms that cannot interact](../lessons/compose-orthogonally-to-shrink-interaction-space.md)
+- [Name the guarantee you are forfeiting before the failure names it for you](../lessons/name-the-guarantee-you-forfeit.md)

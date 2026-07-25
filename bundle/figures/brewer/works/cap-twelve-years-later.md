@@ -17,4 +17,4 @@ tags: [work]
 **Source:** https://sites.cs.ucsb.edu/~rich/class/cs293b-cloud/papers/brewer-cap.pdf — live PDF, mirrored on a UC Santa Barbara graduate course reading list (cs293b, "The Cloud"). Not the author's own site or IEEE Xplore (paywalled there), but a legitimate university course mirror; verified by direct fetch and text extraction matching the published title, byline "Eric Brewer, University of California, Berkeley," and IEEE Computer Society copyright line on page 23.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Treat the rare failure as a mode with an entry, a discipline, and an exit](../lessons/manage-the-partition-as-an-event.md)

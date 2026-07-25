@@ -73,3 +73,25 @@ load-bearing items on the list - remain inaccessible anywhere public that
 could be found. Flagging per standing procedure rather than blocking; Phase
 4 lesson extraction for Bachman will have a thinner public-primary-source
 base than the other pilot figures as a result.
+
+## Lessons rollup
+
+Bachman teaches mechanism-first data thinking from the side that lost the
+relational argument but kept several truths the winner still depends on. His
+core reorientation: the persistent shared database, not the executing
+program, is the fixed center of the model, and the physical cost of moving
+through it is something you design (declared paths, clustering, anticipated
+traversals), not something you inherit. From building the first production
+DBMS he draws the observation that sharing durable mutable state is a
+categorically harder problem than sharing the machine, one whose visibility
+to programmers and tolerance for abort-and-retry are deliberate design
+choices scored by completed work, not conflict avoidance. Around that core
+sit three architect's habits: when the nth program repeats the first,
+express the variation as declarative data and generate; when unlike
+representations must interoperate, map each once to a canonical semantic
+center instead of writing pairwise bridges (the three-schema approach,
+reappearing as OSI's presentation layer); and keep identity meaning-free,
+since a key that also describes something can never change. His two-token
+data structure diagrams distill the same minimalism into notation: few
+primitives with sharp semantics, held constant across hardware, software,
+and protocols, so structural comparison becomes something you see.

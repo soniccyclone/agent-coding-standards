@@ -18,4 +18,7 @@ tags: [work]
 **Host:** institutional — ETHW is IEEE's official history archive, jointly run by the IEEE History Center; not a third-party mirror.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When the nth program is the first program again, express the difference as data](../lessons/variation-as-data.md)
+- [Bridge heterogeneous representations through one semantic center, never pairwise](../lessons/canonical-middle.md)
+- [A notation of two primitives, held constant across domains, turns comparison into perception](../lessons/two-token-notation.md)
+- [Give an identifier exactly one job: a key that also means something can never change](../lessons/identity-carries-no-meaning.md) (jointly with the Turing lecture)

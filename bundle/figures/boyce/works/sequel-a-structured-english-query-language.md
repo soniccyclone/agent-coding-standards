@@ -19,4 +19,6 @@ tags: [work]
 **Host:** self-archived — Donald D. Chamberlin (co-author) posted this copy on his own IBM research page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Match the notation to the user's mental model, not to the underlying formalism](../lessons/notation-should-match-the-users-mental-model.md)
+- [Build the language from one template and a uniform nesting rule](../lessons/one-template-plus-uniform-nesting.md)
+- [State the set you want, not the walk that finds it](../lessons/state-the-set-not-the-walk.md)
