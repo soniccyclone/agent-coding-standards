@@ -17,4 +17,9 @@ tags: [work]
 **Source:** https://www.cs.umd.edu/class/spring2003/cmsc838p/Process/waterfall.pdf — full scanned reprint (title page, all figures, and copyright/reprint notice visible), mirrored on a University of Maryland CS course page. Course-mirror rehost of a copyrighted IEEE reprint, not an official IEEE or TRW archive, so tagged third-party-rehost; content verified against the scan directly (title, author, venue, and all ten figures confirmed present).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Separate what you can compute from what you can only observe](../lessons/separate-what-you-can-compute-from-what-you-can-only-observe.md)
+- [Judge a structure by how far a mistake has to travel back](../lessons/judge-a-process-by-how-far-a-mistake-travels-back.md)
+- [Allocate the scarce resource before detailed work spends it for you](../lessons/allocate-the-scarce-resource-before-detail-spends-it.md)
+- [Until the design is externalized, there is no design](../lessons/until-it-is-written-there-is-no-design.md)
+- [Match the detector to the defect class, cheapest first, because trivial errors hide serious ones](../lessons/cheap-defects-hide-expensive-ones.md)
+- [The compressed form is the one people will act on, so the constraint has to live inside it](../lessons/the-compressed-form-is-the-one-that-gets-used.md)

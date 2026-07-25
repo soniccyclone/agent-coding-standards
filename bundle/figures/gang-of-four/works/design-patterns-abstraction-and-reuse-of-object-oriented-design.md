@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://cseweb.ucsd.edu/~wgg/CSE210/ecoop93-patterns.pdf — course-reading mirror hosted on a UC San Diego faculty page (CSE 210), verified live (200 OK, application/pdf, 10 pages, title stream confirmed as "Design Patterns: Abstraction and Reuse..."). The original Springer LNCS version is paywalled; this is a third-party rehost, linked here rather than redistributed.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Design skill lives in remembered structures, so it can be extracted and handed over](../lessons/design-experience-is-a-transferable-artifact.md)
+- [Ask which aspect of the design must be free to move, and let that answer shape the structure](../lessons/name-the-axis-of-change-before-the-objects.md)
+- [The useful entities in a program are often its verbs, not the nouns of its problem domain](../lessons/promote-the-varying-decision-into-a-thing.md)
+- [Whether a thing can be shared is decided entirely by whether it remembers its context](../lessons/context-dependence-is-what-forbids-sharing.md)
+- [Indirection is a debt, and only demonstrated recurrence pays it off](../lessons/abstraction-is-earned-by-recurrence.md)
