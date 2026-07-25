@@ -17,4 +17,5 @@ tags: [work]
 **Source:** https://colorforth.github.io/vlsi.html — live page (HTTP 200), part of a community preservation mirror of Moore's original colorforth.com site; link-only citation.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Knowing exactly how something will be used is worth more than a general solution written by someone who did not](../lessons/code-written-for-this-use-beats-general-code-you-inherit.md)
+- [When the notation and the mechanism are designed together, the translation between them stops existing](../lessons/design-the-notation-and-the-machine-as-one-artifact.md)

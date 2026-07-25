@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A vocabulary earned one real problem at a time ends up smaller than one designed in advance"
+figure: chuck-moore
+works: [forth-the-early-years, the-invention-of-forth, the-evolution-of-forth]
+axes: [primitive-count, expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A vocabulary earned one real problem at a time ends up smaller than one designed in advance
+
+**Lesson:** A design produced up front has to guess which capabilities matter, and the usual result is a large set in which many members are never load-bearing. A design accreted across a decade of unrelated jobs cannot make that mistake, because every construct in it was added at the moment a specific piece of work demanded it and survived only because subsequent work kept demanding it. The record of such a process is legible after the fact: free-form input tolerant of position appeared when column-aligned input kept causing failed runs, a value stack appeared when equations needed evaluating without naming intermediates, terminal handling appeared when terminals did, named definitions and a lookup structure appeared when procedures needed names, a second stack for return information appeared when definitions needed to nest. Each addition is traceable to a problem rather than to a theory, and the total remains small enough for one person to implement.
+
+The mechanism behind this is that carrying a tool across changing contexts is a continuous filter. Moving between employers, machines, and application domains, and reimplementing the same tool in whichever language was locally available, subjects every construct to repeated tests of whether it is worth the trouble of porting. Anything speculative gets dropped on one of the moves. What accumulates is not a coherent plan but a residue of things that kept proving useful, and residue of that kind is a better predictor of future usefulness than any forecast. Notably, the same process produced independent arrivals at ideas that were being formalized elsewhere at the same time, reached from need rather than from the literature, which is some evidence that the pressure of real work points toward structures that are actually there.
+
+Two commitments make accretion work rather than merely producing drift. The tool has to be yours, carried and reimplemented rather than abandoned when the environment changes, or the filtering never happens. And each addition has to be made in response to a problem currently on the desk, not in anticipation of one. A programmer who works this way is unhurried about naming or standardizing what they are building, expects the shape to arrive late, and is willing to have no coherent story about the design until well after it exists.
+
+**Source:** [Forth - The Early Years](../works/forth-the-early-years.md) / [Chuck Moore: The Invention of Forth](../works/the-invention-of-forth.md) — the whole account is organized this way, with a table dating each capability to the institution where the need for it arose, and with the narrative of carrying and recoding the same program across employers and languages; the introduction's remark that the result is a distinctive combination of unoriginal ingredients states the accretive claim directly. Also [The Evolution of Forth](../works/the-evolution-of-forth.md) — the early-development section, which traces the same sequence and records that the author, on later being shown contemporary work on program structure, regarded the principles as simply what sensible practice already looked like.

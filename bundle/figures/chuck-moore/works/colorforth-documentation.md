@@ -17,4 +17,9 @@ tags: [work]
 **Source:** https://colorforth.github.io/cf.htm — live page (HTTP 200), part of a community preservation mirror of Moore's original colorforth.com site; link-only citation. See also the companion primer at https://colorforth.github.io/primer.htm.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The price of combining two pieces of code determines how well a system will be factored](../lessons/cheap-composition-makes-factoring-the-default.md)
+- [When the notation and the mechanism are designed together, the translation between them stops existing](../lessons/design-the-notation-and-the-machine-as-one-artifact.md)
+- [Count the layers standing between you and the machine, because each one silently sets your limits](../lessons/every-intervening-layer-is-a-tax-you-cannot-audit.md)
+- [Change what the input looks like and the machinery that interprets it can be thrown away](../lessons/fix-the-representation-to-delete-the-tool.md)
+- [Latency between writing something and watching it run governs quality more than any methodology does](../lessons/shrink-the-loop-until-every-piece-is-testable-by-typing-it.md)
+- [Complexity has no natural opponent, so the programmer has to be one on purpose](../lessons/supply-your-own-counter-pressure-against-complexity.md)

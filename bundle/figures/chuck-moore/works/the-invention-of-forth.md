@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://colorforth.github.io/HOPL.html — live page (HTTP 200), part of a community preservation mirror of Moore's original colorforth.com site; link-only citation.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When the notation and the mechanism are designed together, the translation between them stops existing](../lessons/design-the-notation-and-the-machine-as-one-artifact.md)
+- [Count the layers standing between you and the machine, because each one silently sets your limits](../lessons/every-intervening-layer-is-a-tax-you-cannot-audit.md)
+- [Notation that suits human habit is a purchasable layer; build in the machine's order first](../lessons/familiar-syntax-is-a-luxury-layer-not-a-foundation.md)
+- [A vocabulary earned one real problem at a time ends up smaller than one designed in advance](../lessons/let-the-language-accrete-from-problems-you-actually-solved.md)
+- [Latency between writing something and watching it run governs quality more than any methodology does](../lessons/shrink-the-loop-until-every-piece-is-testable-by-typing-it.md)

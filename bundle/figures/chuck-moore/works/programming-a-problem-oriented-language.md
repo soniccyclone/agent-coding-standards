@@ -17,4 +17,13 @@ tags: [work]
 **Source:** https://colorforth.github.io/POL.htm — live page (HTTP 200), part of a community preservation mirror of Moore's original colorforth.com site; link-only citation.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Reserve nothing: a system whose own words can be replaced puts no ceiling on its users](../lessons/an-environment-that-protects-its-own-vocabulary-caps-its-users.md)
+- [The price of combining two pieces of code determines how well a system will be factored](../lessons/cheap-composition-makes-factoring-the-default.md)
+- [Accept a restriction that makes the bookkeeping vanish rather than a generality that makes it permanent](../lessons/choose-the-restricted-regime-whose-bookkeeping-disappears.md)
+- [Knowing exactly how something will be used is worth more than a general solution written by someone who did not](../lessons/code-written-for-this-use-beats-general-code-you-inherit.md)
+- [Notation that suits human habit is a purchasable layer; build in the machine's order first](../lessons/familiar-syntax-is-a-luxury-layer-not-a-foundation.md)
+- [Provision for an imagined future is a certain cost against an improbable benefit](../lessons/hooks-for-imagined-futures-cost-now-and-pay-never.md)
+- [A present, competent human is a system component; designing as if there were none inflates everything else](../lessons/leave-the-person-at-the-keyboard-inside-the-system.md)
+- [Latency between writing something and watching it run governs quality more than any methodology does](../lessons/shrink-the-loop-until-every-piece-is-testable-by-typing-it.md)
+- [Complexity has no natural opponent, so the programmer has to be one on purpose](../lessons/supply-your-own-counter-pressure-against-complexity.md)
+- [Raise a vocabulary up to the problem instead of encoding the problem down into a language](../lessons/the-deliverable-is-a-vocabulary.md)

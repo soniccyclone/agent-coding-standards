@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A present, competent human is a system component; designing as if there were none inflates everything else"
+figure: chuck-moore
+works: [programming-a-problem-oriented-language, forth-a-language-for-interactive-computing, the-evolution-of-forth]
+axes: [primitive-count, cognitive-load]
+subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# A present, competent human is a system component; designing as if there were none inflates everything else
+
+**Lesson:** Programs written for unattended operation must decide in advance what to do about every contingency, and the machinery for doing so is enormous: status values threaded back through every level of call, tests at each boundary, decisions taken by code far from where the anomaly arose. Once you accept that a capable person is watching, all of that becomes optional. The system's response to anything it cannot interpret is to say what it could not interpret, return itself to a known state, and wait. No indicator is set, no partial result is propagated, and no intermediate caller has to consider the possibility of failure, because the pending work is simply abandoned rather than unwound.
+
+The saving is structural, not just a matter of fewer lines. Error paths are where most of a system's incidental coupling lives, since each one links a place that detects something to a place that decides about it. Removing them lets each operation be written as if it will succeed, which is what makes the individual operations small enough to understand. And the person is genuinely better placed to decide than the code would be, because they know what they were trying to accomplish and the code does not. This holds only within a limit worth stating plainly: never present someone with a situation they have no means to act on. An anomaly deep in the machine, reported to someone who cannot influence it, is worse than useless, and deciding which conditions actually belong in front of a person is part of the design work rather than an excuse to skip it.
+
+The stance generalizes past error handling into a claim about what a tool owes its user. A system can work alongside someone on their problem without attempting to solve it for them, and doing so means declining to install protections between them and the machine. The obligation shifts accordingly: the user is responsible for the integrity of what they submit and for the state they leave things in. What that buys is the absence of an entire class of guardrails, each of which would otherwise become permanent structure, and each of which would also become a wall to be worked around by anyone whose intentions the designer failed to anticipate.
+
+**Source:** [Programming a Problem-Oriented-Language](../works/programming-a-problem-oriented-language.md) — the control-loop section's treatment of errors, which argues from the image of someone at a keyboard, explains what clearing the return path avoids in terms of flags and cascading returns, and cautions against posing problems the user cannot act on. Also [FORTH — A Language for Interactive Computing](../works/forth-a-language-for-interactive-computing.md) — the restrictions listed near the end, where the system declines to provide automatic error facilities and assigns responsibility for source and data to the user. Also [The Evolution of Forth](../works/the-evolution-of-forth.md) — the philosophy section, which frames the design as intended to empower rather than constrain and treats barriers erected to protect programmers from themselves as obstacles to be removed.

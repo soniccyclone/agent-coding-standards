@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Notation that suits human habit is a purchasable layer; build in the machine's order first"
+figure: chuck-moore
+works: [programming-a-problem-oriented-language, forth-the-early-years, the-invention-of-forth]
+axes: [expressiveness, primitive-count, cognitive-load]
+subdomains: [programming-languages-and-semantics]
+tags: [lesson]
+---
+# Notation that suits human habit is a purchasable layer; build in the machine's order first
+
+**Lesson:** Writing operands before the operator requires no deferral: every operation finds what it needs already available the moment it is reached, so evaluation is a single forward pass with no pending state. Writing the operator between its operands requires the opposite: at the moment the operator appears only half of what it needs exists, so it must be held aside, and holding it aside requires a precedence scheme to decide when it may finally proceed, plus grouping marks to override the scheme. Both notations express the same computations. One of them costs a mechanism and the other does not, and the mechanism buys nothing except conformity to what people are used to.
+
+That conformity is not worthless, and the honest framing is that it is a purchase rather than a requirement. People are accustomed to the infix arrangement and register its absence as a deficiency, so there is a real reason to provide it. The instructive part is where it belongs in the order of work: as a layer added over a working system, built from the same kind of definitions as everything else, rather than as an assumption baked into the foundation. Attach a rank to a definition, hold it aside when encountered, and release it when something of equal or lower rank arrives, and the deferral machinery becomes a handful of ordinary definitions instead of a compiler's internals. Once it is expressible that way it generalizes past arithmetic to conditional forms, to phrasings that read like ordinary sentences, and to units of measurement, which is more reach than the built-in version of the idea ever has.
+
+The discipline this teaches is to keep the surface separable from the mechanism, and to sequence the work so the mechanism is right before the surface is comfortable. A convenience layer built last can be shaped to whatever the application turned out to need; a convenience assumed first constrains everything under it and cannot be removed. It is also worth being clear that such a layer adds no capability whatever, only permission to state instructions in an order the machine finds unnatural. A programmer holding this view is slow to accept a foundational construct whose justification is that people expect it, and quick to ask whether the same expectation could be met by something built on top and thrown away if it disappoints.
+
+**Source:** [Programming a Problem-Oriented-Language](../works/programming-a-problem-oriented-language.md) — the operations chapter, which notes that conventional algebraic notation offers no advantage over stack order and is harder to implement, and the later chapter on ranked definitions, which builds deferral out of ordinary dictionary entries, extends it to conditional and unit-bearing phrases, and advises getting the application working before appending a control language of this sort. Also [Forth - The Early Years](../works/forth-the-early-years.md) / [Chuck Moore: The Invention of Forth](../works/the-invention-of-forth.md) — the account of the conditional form being flipped out of its Algol arrangement into postfix so that the interpreter never meets an undefined name, with a distinct terminator supplied to remove the ambiguity that the original notation left.

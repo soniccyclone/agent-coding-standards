@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Reserve nothing: a system whose own words can be replaced puts no ceiling on its users"
+figure: chuck-moore
+works: [forth-a-language-for-interactive-computing, programming-a-problem-oriented-language, the-evolution-of-forth]
+axes: [expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Reserve nothing: a system whose own words can be replaced puts no ceiling on its users
+
+**Lesson:** Most languages designate part of their vocabulary as untouchable, and by doing so they fix an upper bound on what can be expressed in them. The alternative is a name resolution rule with no privileged names at all: definitions accumulate in order, lookup proceeds from newest to oldest, and the most recent meaning wins. Nothing is protected, so any part of the system's own vocabulary can be replaced when a problem calls for a different meaning. What the designer supplies becomes a starting convenience rather than a constraint, chosen for usefulness but never imposed. The considered claim is stronger than it first sounds: not only are there no reserved words, there are no reserved concepts.
+
+Redefinition of this kind would be chaos if resolution ignored context, and the refinement that makes it safe is worth extracting on its own. Names appearing inside a definition are resolved as of the point where that definition was written, not as of the moment it runs. So a redefinition takes effect for everything written afterward while everything written earlier keeps the meaning it was composed against. Two useful properties fall out. Something must exist before it can be referred to, which turns forward references into an immediate diagnostic instead of a deferred surprise. And the only real restriction on redefining a name is that the older meaning can no longer be reached by that name directly, which is almost never what anyone wanted anyway. The effect is that resolution tracks intent closely enough that the mechanism recedes from attention.
+
+The same ordering discipline that makes redefinition safe is what makes storage reclamation trivial and what keeps lookup cheap, since a structure that only grows at one end and is searched from that end needs no ordering by name and no global index. A programmer who thinks this way is suspicious of any environment that reserves capability to itself, and reads such reservation as a statement about how much the designers expect of their users. The corresponding obligation is to make the resolution rule simple enough that a person can predict it without thinking, since an unpredictable rule for which meaning applies is far worse than a fixed vocabulary.
+
+**Source:** [FORTH — A Language for Interactive Computing](../works/forth-a-language-for-interactive-computing.md) — the dictionary-search section, which sets out the newest-to-oldest rule, the resolution of names inside a definition as of that definition's position, the resulting diagnostic value of defining before use, and the conclusion that neither words nor concepts are reserved. Also [Programming a Problem-Oriented-Language](../works/programming-a-problem-oriented-language.md) — the search-strategies discussion, which treats backwards search as non-negotiable precisely because it is what permits redefinition. Also [The Evolution of Forth](../works/the-evolution-of-forth.md) — the sections describing an extensible dictionary occupying nearly all of memory, per-user private vocabularies layered over a shared one, and the availability of the system's own compiling tools for building new control constructs.

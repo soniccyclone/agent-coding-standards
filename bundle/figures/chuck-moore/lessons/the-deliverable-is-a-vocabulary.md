@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Raise a vocabulary up to the problem instead of encoding the problem down into a language"
+figure: chuck-moore
+works: [programming-a-problem-oriented-language, forth-a-language-for-interactive-computing, the-evolution-of-forth]
+axes: [expressiveness, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Raise a vocabulary up to the problem instead of encoding the problem down into a language
+
+**Lesson:** Every program that accepts control information already implements a language, whether or not anyone designed it. A digit in a fixed input position that selects which processing path to take is a language with one word and a terrible grammar; the fact that nobody called it one is why it is bad. Once this is admitted, the work shifts. Instead of translating a problem into whatever constructs a general-purpose language happens to provide, you build up a set of named operations that correspond to the actual objects and actions of the domain, and then state the problem in those terms. The program's job stops being to perform the application and becomes to make the application's vocabulary usable.
+
+The reason this pays is that the domain's own terms compose in ways that the domain's practitioners already understand. Give a data-processing task words for its record fields and words for selecting, ordering, and reporting, and a person can assemble requests nobody wrote code for, in whatever combination the moment requires, without a single new line being compiled. The individual words stay simple precisely because they do not attempt to anticipate their own combinations; the power appears at composition time rather than being designed in. This is also where the compactness comes from: small examples show no advantage, but as the application grows, the vocabulary keeps absorbing repeated structure, and the gap against a conventional implementation widens.
+
+Two warnings come with the technique. The transition is a real change of role and it does not reverse: once you are building the language rather than the application, your attention moves from the problem to the machinery of expression, and it is easy to become absorbed in the elegance of the vocabulary while the original problem sits unsolved. And the shift is only justified by complexity that warrants it; a task with a single fixed behavior gains nothing from a language and pays for one. The judgment call is whether the application is intricate or general enough that describing it will keep changing, because a description that keeps changing is exactly what a tailored vocabulary is for.
+
+**Source:** [Programming a Problem-Oriented-Language](../works/programming-a-problem-oriented-language.md) — the introduction's argument that crude application languages already exist unrecognized, the noun-and-verb treatment of dictionary entries, the worked record-selection example, and the chapter on growing programs, which marks the transition from controlling an application to providing the means of describing it. Also [FORTH — A Language for Interactive Computing](../works/forth-a-language-for-interactive-computing.md) — the closing sections, which present the system as supplying tools for users to construct their own language and attribute the observed compactness to tailoring definitions per application. Also [The Evolution of Forth](../works/the-evolution-of-forth.md) — the design-principles discussion of words as domain nouns and verbs, and the account of programming as adding application-oriented words at rising levels until the requirement is met.

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Knowing exactly how something will be used is worth more than a general solution written by someone who did not"
+figure: chuck-moore
+works: [programming-a-problem-oriented-language, the-evolution-of-forth, okad-chip-design-notes]
+axes: [primitive-count, hardware-affinity, cognitive-load]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Knowing exactly how something will be used is worth more than a general solution written by someone who did not
+
+**Lesson:** A general-purpose component must handle every case its author could foresee, and it pays for that coverage in size, in interface complexity, and in obligations imposed on callers. A component written against one known set of demands can drop nearly all of it. The ratio is not marginal: knowledge of the calling context routinely reduces the work by an order of magnitude, because most of a general component's mass consists of provisions for situations the present caller will never be in. This inverts the usual instinct. Reaching for the shared implementation is normally treated as prudence, but when you know the use precisely and the shared version does not, the shared version is the more expensive choice.
+
+The claim is bounded, not universal. Some routines are genuinely subtle, have been refined by people with real expertise, and are worth taking as they are. The distinction worth drawing is between components whose difficulty is intrinsic and components that are merely tedious and got written once by someone who had no particular stake in doing it well. Interfaces to the outside world, storage access, and the arithmetic a specific application actually needs fall mostly in the second category, and these are exactly the places where inherited generality does the most damage, because they sit on the paths that determine how the whole system feels to use.
+
+There is a second, less comfortable consequence. If your own code is small and specific, then rewriting it is cheaper than adapting it, and re-deriving a solution while holding a sharper understanding of the problem usually beats reusing an older solution built on a duller one. Treating code as an asset to be preserved leads to accumulating adaptations around decisions nobody would make again. Treating it as a record of current understanding leads to discarding and redoing, which sounds wasteful and turns out not to be when the artifact is small enough that redoing it takes hours. The same reasoning extends past application code to tooling: a specialized tool of a few hundred lines, written by the person who knows precisely which capabilities the work requires, can stand in for an entire commercial toolchain, because almost everything the commercial toolchain contains is provision for other people's problems.
+
+**Source:** [Programming a Problem-Oriented-Language](../works/programming-a-problem-oriented-language.md) — the corollary urging programmers to write their own routines, with the argument that tens of instructions serve where hundreds are needed for the general case, and the accompanying case that input handling in particular should never be delegated. Also [The Evolution of Forth](../works/the-evolution-of-forth.md) — the philosophy section documenting the practice carried out across eighteen processors, including the habit of reading vendor routines for ideas while never adopting them and of rewriting past work rather than reusing it. Also [OKAD VLSI Design Tools](../works/okad-chip-design-notes.md) — the framing of a complete chip design toolchain implemented in a few hundred lines of the author's own language.
