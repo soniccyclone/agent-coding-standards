@@ -17,4 +17,9 @@ tags: [work]
 **Source:** http://larch-www.lcs.mit.edu:8001/~corbato/turing91/ — self-archived by Corbató on his own MIT LCS homepage, transcribed with original figures. Confirmed live (HTTP 200) with full lecture text. The CACM original (cacm.acm.org/magazines/1991/9/9445-on-building-systems-that-will-fail) and the ACM Digital Library copy both return HTTP 403 to unauthenticated requests — treated as paywalled; citing the self-archived copy instead.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Every Decision Rests on an Unwritten Precondition](../lessons/every-decision-rests-on-an-unwritten-precondition.md)
+- [Narrow What Can Be Said to Narrow What Can Go Wrong](../lessons/narrow-what-can-be-said-to-narrow-what-can-go-wrong.md)
+- [Efficiency Is Usually Paid For in Redundancy You Were Not Tracking](../lessons/efficiency-is-usually-paid-for-in-redundancy.md)
+- [Assume It Will Be Opened Again While Running](../lessons/assume-it-will-be-opened-again-while-running.md)
+- [Design the Region Past Saturation](../lessons/design-the-region-past-saturation.md)
+- [The Machine Should Wait for the Person](../lessons/the-machine-should-wait-for-the-person.md)

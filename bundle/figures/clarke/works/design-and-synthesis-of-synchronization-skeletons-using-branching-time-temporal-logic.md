@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~emc/papers/Conference%20Papers/Design%20and%20synthesis%20of%20synchronization%20skeletons%20using%20branching%20time%20temporal%20logic.pdf — self-archived scan on Clarke's own CMU faculty page, live and directly downloadable (HTTP 200). Filename and folder match the citation exactly as reference [8] in Clarke/Emerson/Sifakis's own 2009 Turing Award writeup.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Ask whether one machine satisfies the claim, not whether the claim is provable](../lessons/ask-whether-one-machine-satisfies-the-claim.md)
+- [Model only the part of the program the claim can see](../lessons/model-only-what-the-claim-can-see.md)
+- [Buy expressiveness only where you are willing to pay the checking bill](../lessons/buy-expressiveness-only-where-you-pay-the-checking-bill.md)
+- [State a property as the equation it solves, and the algorithm falls out](../lessons/state-a-property-as-the-equation-it-solves.md)
+- [A specification tight enough to check is tight enough to build from](../lessons/a-spec-tight-enough-to-check-is-tight-enough-to-build-from.md)

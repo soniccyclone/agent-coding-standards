@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An abstraction is only exact where it respects the operations it abstracts over"
+figure: clarke
+works: [model-checking-survey-clarke-grumberg-long, counterexample-guided-abstraction-refinement]
+axes: [verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# An abstraction is only exact where it respects the operations it abstracts over
+
+**Lesson:** Replacing a data domain by a handful of summary values — a number by its sign, an integer by its residue, a colour by whether it means stop or go — is a choice with an algebraic consequence you can check rather than a matter of taste. The condition is congruence: the induced equivalence on values must be respected by every primitive operation the program performs, so that operands agreeing on their summaries produce results agreeing on theirs. Where the condition holds, the abstract model is not merely a sound over-approximation but equivalent to the concrete one for the properties expressible at the abstract level, and you can believe both its positive and negative answers. Where it fails, you keep soundness in one direction and lose exactness, and you should know which case you are in.
+
+The second half of the lesson is about order of operations, and it is the more commonly violated. Abstraction and composition do not commute. Abstracting each component and then composing the abstractions is cheap, because it can be done before the composite is ever built, but it admits behaviours that abstracting the composite would not: the classic small example is a traffic light and a car where merging two of the light's states with one of the car's, component by component, makes a state reachable that is unreachable in the real composite, breaking a property that genuinely holds. Composing first and abstracting after is precise and expensive. Neither is wrong; picking without knowing the difference is. The same tension recurs as the choice between abstraction functions defined per variable, which are cheap but cannot express relationships among variables, and functions defined over clusters of interacting variables, which can express a comparison between two of them and keep the resulting space smaller.
+
+A programmer's version of this: whenever you summarize data — a coarse status enum standing for a rich error, a bucketed metric, a hash, a cache key, a mock — check whether the operations you then apply to the summary agree with the operations on the real thing. If they do, the summary is a genuine change of representation and you can reason in it freely. If they do not, you are computing in a domain where equal-looking inputs can diverge, and the discrepancies will appear as phantom behaviours or missed cases. And when you are aggregating and combining, notice that aggregating before combining is not the same as combining before aggregating, which is where a great many wrong dashboards, caches, and analyses come from.
+
+**Source:** [Model Checking](../works/model-checking-survey-clarke-grumberg-long.md) — the abstraction section, which derives the abstract transition relation by pushing the abstraction operation inward to the primitive relations for tractability, proves the result only approximates the ideal abstraction, and then gives the congruence condition under which the approximation becomes exact. The CEGAR paper's traffic-light example shows abstraction-before-composition adding spurious behaviour, and its variable-cluster construction shows why per-variable abstraction functions are too weak.

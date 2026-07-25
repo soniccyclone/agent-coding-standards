@@ -18,4 +18,9 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~emc/papers/Papers%20In%20Refereed%20Journals/Automatic%20verification%20of%20finite-state%20concurrent%20systems%20using%20temporal%20logic%20specifications.pdf — self-archived scan on Clarke's own CMU faculty page, live and directly downloadable (HTTP 200), resolving the paywalled flag from the prior pass. Filename and folder match reference [9] in Clarke/Emerson/Sifakis's own 2009 Turing Award writeup exactly.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Buy expressiveness only where you are willing to pay the checking bill](../lessons/buy-expressiveness-only-where-you-pay-the-checking-bill.md)
+- [Interleaving is what costs; independence is what refunds](../lessons/interleaving-costs-independence-refunds.md)
+- [Ask whether one machine satisfies the claim, not whether the claim is provable](../lessons/ask-whether-one-machine-satisfies-the-claim.md)
+- [Model only the part of the program the claim can see](../lessons/model-only-what-the-claim-can-see.md)
+- [State a property as the equation it solves, and the algorithm falls out](../lessons/state-a-property-as-the-equation-it-solves.md)
+- [A verifier that can only say yes is half a verifier](../lessons/a-verifier-that-only-says-yes-is-half-a-verifier.md)

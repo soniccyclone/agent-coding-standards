@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~emc/papers/Books%20and%20Edited%20Volumes/Model%20Checking.pdf — self-archived on Clarke's own CMU faculty page, live and directly downloadable (HTTP 200); full text confirmed readable (title page, authors, table of contents, and body all verified directly).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Compose so that adding context can only take behaviour away](../lessons/compose-so-context-only-removes-behavior.md)
+- [An abstraction is only exact where it respects the operations it abstracts over](../lessons/an-abstraction-must-respect-the-operations.md)
+- [State a property as the equation it solves, and the algorithm falls out](../lessons/state-a-property-as-the-equation-it-solves.md)
+- [When scale defeats you, attack the representation before the algorithm](../lessons/attack-the-representation-before-the-algorithm.md)
+- [Engineer your information loss so the errors all point one way](../lessons/make-your-information-loss-fail-one-way.md)

@@ -18,4 +18,11 @@ tags: [work]
 **Source:** https://multicians.org/f7y.html — hosted on multicians.org, the Multics history/preservation site run by former project members; third-party rehost. Page footer states "© Copyright 1972, AFIPS PRESS. Posted with permission." Confirmed live (HTTP 200) with full paper text.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A System You Have Not Built Cannot Be Reasoned About](../lessons/a-system-you-have-not-built-cannot-be-reasoned-about.md)
+- [Complexity Lives in the Decomposition](../lessons/complexity-lives-in-the-decomposition.md)
+- [Assume It Will Be Opened Again While Running](../lessons/assume-it-will-be-opened-again-while-running.md)
+- [A Name Where an Address Would Go](../lessons/a-name-where-an-address-would-go.md)
+- [Build the Frame Along the Axis Change Arrives On](../lessons/build-the-frame-along-the-axis-change-arrives-on.md)
+- [Build the System Out of What You Hand the User](../lessons/build-the-system-out-of-what-you-hand-the-user.md)
+- [Authority That Routes Through the Center Is a Bottleneck](../lessons/authority-that-routes-through-the-center-is-a-bottleneck.md)
+- [Narrow What Can Be Said to Narrow What Can Go Wrong](../lessons/narrow-what-can-be-said-to-narrow-what-can-go-wrong.md)

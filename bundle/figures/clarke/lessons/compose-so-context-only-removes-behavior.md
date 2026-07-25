@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Compose so that adding context can only take behaviour away"
+figure: clarke
+works: [model-checking-survey-clarke-grumberg-long, model-checking-algorithmic-verification-and-debugging]
+axes: [verifiability, parallelizability, cognitive-load]
+subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Compose so that adding context can only take behaviour away
+
+**Lesson:** Reasoning about a component in isolation is only useful if the conclusion survives assembly, and normally it does not: a component embedded in a system can do things the component alone could not, so a property proved of the part says nothing about the whole. The fix is to arrange composition so the implication runs the right way. Define parallel composition as joint transitions over agreeing states, and the composite is related to each component by a preorder in which the composite has *fewer* behaviours. Since the universal fragment of the logic is preserved downward along that preorder, anything proved of one component in isolation holds of every system containing it. Composition can only constrain, never enrich, and so component-level proofs are inherited rather than invalidated.
+
+That handles the easy half. The hard half is that most component properties are not unconditional; they hold only if the environment behaves. The assume-guarantee arrangement makes the assumption explicit — the component guarantees a property provided its surroundings supply a stated behaviour — and then discharges the assumption by proving the rest of the system supplies it unconditionally, yielding an unconditional property of the whole. The apparent circularity of each part assuming things about the other is broken by making the assumption itself into a model: build a canonical structure from the assumption formula such that a component satisfies the formula exactly when it sits below that structure in the preorder. Then "verify the component against its assumption" and "verify the component composed with its environment" become the same mechanical check, and an ordinary model checker suffices.
+
+The honest caveat matters as much as the technique. Sifakis's assessment is that this has not met expectations, because synthesizing the assumptions can cost as much as verifying the system whole, and that a fully general theory of compositional verification will be intractable and of theoretical interest only. His proposal is to stop seeking generality: build compositional rules for specific property classes and specific interaction architectures, since deadlock-freedom in a ring is a different and much easier question than arbitrary safety in an arbitrary topology. Specialized rules can then be inverted into construction rules, giving designs correct by shape rather than correct by later inspection.
+
+A programmer who works this way asks what the interface of a component promises unconditionally versus what it assumes of callers, writes the assumption down as a checkable object rather than a comment, and prefers architectures whose coordination shape makes a global property follow from local ones. It also warns against expecting modular reasoning to be free: modularity buys tractable reasoning only when the interfaces carry the assumptions, and a decomposition with implicit environmental expectations gives you the illusion of local reasoning with none of the benefit.
+
+**Source:** [Model Checking](../works/model-checking-survey-clarke-grumberg-long.md) — the compositional reasoning section, which defines parallel composition, proves that a composite precedes its components in the simulation preorder, and constructs the tableau of a formula so that satisfaction becomes a preorder check, discharging assume-guarantee obligations with an ordinary checker. Sifakis's part of the Turing lecture supplies the counterweight: the case against general compositionality and for rules specialized to property classes and architectures, aimed at correctness by construction.

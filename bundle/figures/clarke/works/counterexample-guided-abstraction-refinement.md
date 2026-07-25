@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~emc/papers/Papers%20In%20Refereed%20Journals/Counterexample-guided%20abstraction%20refinement.pdf — self-archived scan (the extended JACM version) on Clarke's own CMU faculty page, live and directly downloadable (HTTP 200), resolving the uncertain flag from the prior pass. Also independently mirrored on a Stanford course reading page (web.stanford.edu/class/cs357/cegar.pdf), corroborating the text.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let the false answer locate the imprecision](../lessons/let-the-lie-locate-the-imprecision.md)
+- [Engineer your information loss so the errors all point one way](../lessons/make-your-information-loss-fail-one-way.md)
+- [Guarantee the loop, guess the step](../lessons/guarantee-the-loop-guess-the-step.md)
+- [An abstraction is only exact where it respects the operations it abstracts over](../lessons/an-abstraction-must-respect-the-operations.md)
+- [A verifier that can only say yes is half a verifier](../lessons/a-verifier-that-only-says-yes-is-half-a-verifier.md)
