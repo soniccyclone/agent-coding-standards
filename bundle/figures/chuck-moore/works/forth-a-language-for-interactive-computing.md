@@ -2,7 +2,7 @@
 type: work
 title: "FORTH — A Language for Interactive Computing"
 figure: chuck-moore
-description: An internal Mohasco Industries report documenting the first fleshed-out version of Forth, written just as Moore was carrying the system from NRAO telescope control into commercial use. It lays out the dictionary, stack mechanics, and threaded-code interpreter that later Forth systems all inherit, aimed at programmers who need to interact with a running program rather than submit batch jobs. Reads as an internal spec more than a polished paper — terse, implementation-first, no surrounding literature review.
+description: An internal Mohasco Industries report documenting the first fleshed-out version of Forth, written just as Moore was carrying the system from NRAO telescope control into commercial use. It lays out the dictionary, stack mechanics, and text-interpreting definitions that later Forth systems build on — definitions here store the source character string in the parameter field and the scanner re-interprets that text; indirect-threaded code comes later, at NRAO in 1971 — aimed at programmers who need to interact with a running program rather than submit batch jobs. Reads as an internal spec more than a polished paper — terse, implementation-first, no surrounding literature review.
 subdomains: [programming-languages-and-semantics]
 year: 1970
 url: https://www.ultratechnology.com/4th_1970.pdf

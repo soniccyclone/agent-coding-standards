@@ -2,7 +2,7 @@
 type: work
 title: "A View of 20th and 21st Century Software Engineering"
 figure: boehm
-description: A retrospective keynote-style paper that sorts several decades of software engineering folklore into "helpful and hard to overdo," "helpful up to a point," and "primarily situation-dependent" practices, using project outcome data rather than opinion to sort them. Boehm uses this to argue against one-size-fits-all methodology debates (plan-driven versus agile chief among them) in favor of risk- and context-based tailoring. Functions as a late-career synthesis of the empirical case behind his own process work, including the spiral model and COCOMO.
+description: A retrospective keynote reading five decades of software engineering as a thesis/antithesis/synthesis cycle — each decade's dominant practice provoking the reaction that corrects it, from 1950s hardware-engineering discipline through 1960s craft, 1970s formality and waterfall, 1980s productivity and reuse, 1990s concurrency, to 2000s agility and value. Closes each decade with the principles that outlived it and the practice that aged out, then projects the pattern forward through globalization, systems of systems, and computational plenty. Boehm's argument throughout is for risk- and value-based tailoring — agile and plan-driven each have a home ground — rather than one-size-fits-all methodology.
 subdomains: [software-engineering-and-architecture]
 year: 2006
 url: https://www.irisa.fr/lande/lande/icse-proceedings/icse/p12.pdf

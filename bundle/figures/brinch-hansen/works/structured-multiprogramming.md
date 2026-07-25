@@ -2,7 +2,7 @@
 type: work
 title: "Structured Multiprogramming"
 figure: brinch-hansen
-description: Argues that concurrent programs should be built from disciplined structuring elements rather than ad hoc shared variables and low-level signaling, in the same spirit as the structured-programming case against goto for sequential code. Brinch Hansen lays out design principles for organizing cooperating processes around shared data protected by well-defined procedures, work that fed directly into the monitor concept he formalized a few years later. It's a bridge paper between the sequential structured-programming movement and structured concurrent programming.
+description: Argues that concurrent programs should be built from disciplined structuring elements rather than ad hoc shared variables and low-level signaling — setting cobegin/coend against unstructured fork/join, and conditional critical regions against bare semaphores, on the grounds that associating shared data with the operations permitted on it lets a compiler catch a large class of time-dependent errors. Brinch Hansen lays out design principles for organizing cooperating processes around shared data protected by well-defined procedures, work that fed directly into the monitor concept he formalized a few years later. It's a bridge paper between the sequential structured-programming movement and structured concurrent programming.
 subdomains: [distributed-systems-and-concurrency, software-engineering-and-architecture]
 year: 1972
 url: http://www.brinch-hansen.net/papers/1972a.pdf

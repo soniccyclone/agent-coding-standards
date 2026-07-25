@@ -13,7 +13,7 @@ tags: [work]
 
 # The Nucleus of a Multiprogramming System
 
-**Venue/year:** Communications of the ACM 13(4), April 1970, pp. 238-241.
+**Venue/year:** Communications of the ACM 13(4), April 1970, pp. 238-242 (per the copyright footnote on the PDF itself; some of Brinch Hansen's own later reference lists cite 238-250).
 **Source:** http://www.brinch-hansen.net/papers/1970a.pdf — author's self-archived papers site (brinch-hansen.net/papers), verified resolving 2026-07-24. Note: the site's HTTPS certificate is currently expired; the HTTP URL above resolves cleanly.
 
 ## Lessons

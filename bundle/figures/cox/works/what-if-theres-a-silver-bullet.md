@@ -2,7 +2,7 @@
 type: work
 title: "What if there's a Silver Bullet... And the Competition Gets it First?"
 figure: cox
-description: A follow-up to Cox's software-industrial-revolution argument, framed as a response to Fred Brooks's "No Silver Bullet." Cox contends the silver bullet is real but is a cultural and economic shift (a marketplace for reusable, off-the-shelf software components) rather than a technical invention, and warns that whoever builds that marketplace first gains a durable competitive advantage. It restates and extends the "Software-IC" component-marketplace thesis using the Kuhnian framing of paradigm shift.
+description: A follow-up to Cox's software-industrial-revolution argument, framed as a response to Fred Brooks's "No Silver Bullet." Cox contends the silver bullet is real but is a cultural and economic shift (a marketplace for reusable, off-the-shelf software components) rather than a technical invention. Frames the change in Copernican terms — crisis, epicycle-patching, then a reorientation of the field's center from producer to consumer — and argues that incumbent practitioners end up bystanders to their own field's transformation while consumers drive it with money. It restates and extends the "Software-IC" component-marketplace thesis using the Kuhnian framing of paradigm shift.
 subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
 year: 1992
 url: https://web.archive.org/web/20161225164137/http://www.virtualschool.edu/cox/pub/92ByteWhatIfSilverBullet/index.html

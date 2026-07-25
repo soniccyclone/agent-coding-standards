@@ -2,7 +2,7 @@
 type: work
 title: "Multics: The First Seven Years"
 figure: corbato
-description: A retrospective from the 1972 Spring Joint Computer Conference reviewing Multics' goals, history, and status after seven years of development across Bell Labs, GE, and MIT's Project MAC. Candidly assesses where the system met its original ambitions and where it fell short, covering both the user-visible design and the organizational realities of building it as a multi-institution collaboration. Reads as an early, unusually honest post-mortem on a large systems project rather than a triumphant status report.
+description: A retrospective from the 1972 Spring Joint Computer Conference reviewing Multics' goals, history, and status after seven years of development across Bell Labs, GE, and MIT's Project MAC. Claims substantial progress toward all nine of the original goals with none importantly compromised, so its candour lies elsewhere: in the unanticipated design-iteration phase nobody scheduled, the three recurring causes of redesign, and reported crash statistics of one to two per day at MIT during active development. Reads as an unusually specific status report on a large systems project — honest about process and reliability rather than about missed goals.
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1972
 url: https://multicians.org/f7y.html

@@ -2,7 +2,7 @@
 type: work
 title: "Formal Methods in Industry: Achievements, Problems, Future"
 figure: abrial
-description: Abrial's invited ICSE 2006 talk surveying decades of applying formal specification and proof (Z, B, and by extension the emerging Event-B) to real industrial software and hardware projects. Weighs the concrete cases where formal methods worked against the practical and organizational barriers that kept them from being adopted more broadly. Argues for what the field needs to change to make rigorous, provably correct development normal practice rather than a niche.
+description: Abrial's invited ICSE 2006 talk surveying decades of applying formal specification and proof to real industrial projects, narrowed explicitly to the B method — the two Siemens driverless-rail developments (Paris Metro line 14 and the Roissy Airport shuttle) are its central cases, with Event-B present only as a forward reference. Weighs the concrete cases where formal methods worked against the practical and organizational barriers that kept them from being adopted more broadly. Argues for what the field needs to change to make rigorous, provably correct development normal practice rather than a niche.
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 2006
 url: https://math.pku.edu.cn/teachers/jrabrial/FM-IndApp.pdf

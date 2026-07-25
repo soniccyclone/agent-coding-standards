@@ -40,11 +40,17 @@ commercial monographs, not papers. Phase 3 instead formalized three shorter,
 legitimately public Abrial works that carry the same argument in miniature:
 `data-semantics.md` (1974, the relational/predicate style of thinking that
 the B-Method later formalizes), `formal-methods-in-industry-achievements-problems-future.md`
-(2006 ICSE invited talk, surveys real industrial deployment of Z/B/Event-B),
+(2006 ICSE invited talk, surveys real industrial deployment of the B method),
 and `faultless-systems-yes-we-can.md` (2009 IEEE Computer, the refinement/
-correct-by-construction argument in essay form). If Phase 4 lesson extraction
-comes up thin on B-Method/Event-B specifics because of this gap, that's the
-reason why.
+correct-by-construction argument in essay form). **Phase 4 outcome (2026-07-25): the gap did not bite.** This flag originally
+warned that lesson extraction might come up thin on B-Method/Event-B
+specifics. It didn't — the 2006 talk and the 2009 essay together carry the
+two-axis refinement calculus, the proof-obligation and automation-ratio
+discipline, the relative-faultlessness scoping, and the abstract-model-to-
+generated-code pipeline, while Data Semantics supplies the primitive-basis and
+state-modelling ancestry. 13 lessons extracted, 8 of them scored on
+verifiability or hardware-affinity. The two books remain unavailable and the
+sourcing note above still stands; it is simply not blocking.
 
 ## Lessons
 Abrial's consistent instinct is to move the object of thought upward, away from

@@ -13,7 +13,7 @@ tags: [work]
 
 # An Invitation to Algorithmic Information Theory
 
-**Venue/year:** Invited lecture, University of Auckland CS Colloquium / DMTCS'96 (Combinatorics, Complexity, Logic), April 24, 1996; edited transcript published in the DMTCS'96 proceedings (Springer-Verlag, 1996).
+**Venue/year:** Invited lecture, Computer Science Colloquium, University of New Mexico, 24 April 1996; edited transcript published in the DMTCS'96 proceedings (Combinatorics, Complexity, Logic; Springer-Verlag, 1996). Phase 4 correction: this file previously located the lecture at the University of Auckland — Auckland is where the copy is *hosted* (Cristian Calude's page), not where it was given; the transcript's own header names New Mexico.
 **Source:** https://www.cs.auckland.ac.nz/~cristian/ait_invitation.html — live page, hosted on Cristian Calude's University of Auckland CS page (Calude co-edited the DMTCS'96 proceedings this transcript appeared in).
 
 ## Lessons

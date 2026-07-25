@@ -18,7 +18,7 @@ The Entity-Relationship model gave schema design a semantic vocabulary independe
 ## Top 10 most influential works
 Influence concentrated almost entirely in one paper:
 1. "The Entity-Relationship Model — Toward a Unified View of Data" (1976, ACM TODS) — `public` (scanned/mirrored copies circulate widely)
-2. "English Sentence Structure and Entity-Relationship Diagrams" (1983) — `paywalled`
+2. "English Sentence Structure and Entity-Relationship Diagrams" (1983) — `public` (self-archived on Chen's LSU faculty page; Phase 3 resolved this, the marker here was stale)
 
 ## Lessons
 

@@ -2,7 +2,7 @@
 type: work
 title: "Introduction and Overview of the Multics System"
 figure: corbato
-description: The kickoff paper for Multics, presented as part of a six-paper session at the 1965 Fall Joint Computer Conference. Lays out the project's nine design goals — remote terminal access, continuous "computer utility" operation, support for varied configurations, and more — before the other papers in the session get into subsystem detail. Establishes the vocabulary and ambition Multics would be judged against for the next decade.
+description: The kickoff paper for Multics, presented as part of a six-paper session at the 1965 Fall Joint Computer Conference. Argues the design objectives for a continuously operating "computer utility" in prose — an evolutionary framework able to absorb change, pooled interchangeable units, the rationale for segmentation and paging, file-system privacy and backup, decentralized administration — before the other papers in the session get into subsystem detail. (The enumerated nine-goal list often attributed to this paper is in the 1972 retrospective, not here.) Establishes the vocabulary and ambition Multics would be judged against for the next decade.
 subdomains: [operating-systems-and-systems-programming]
 year: 1965
 url: https://multicians.org/fjcc1.html
