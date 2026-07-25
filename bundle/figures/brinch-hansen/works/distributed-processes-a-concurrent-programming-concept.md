@@ -17,4 +17,7 @@ tags: [work]
 **Source:** http://www.brinch-hansen.net/papers/1978a.pdf — author's self-archived papers site (brinch-hansen.net/papers), verified resolving 2026-07-24. Note: the site's HTTPS certificate is currently expired; the HTTP URL above resolves cleanly.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Count your special-case rules: a pile of ad hoc restrictions means the underlying concept has not been found yet](../lessons/count-your-special-case-rules.md)
+- [Dependency among components is a graph, not a tree, so state it in the source and forbid the cycles](../lessons/dependency-is-a-graph-not-a-tree.md)
+- [Look for the concept that erases a boundary, because whatever sits on either side then becomes substitutable](../lessons/erase-the-boundary-to-gain-substitutability.md)
+- [Trade generality for tractability on purpose, and keep a ledger of what the trade cost you](../lessons/trade-generality-for-tractability-on-purpose.md)

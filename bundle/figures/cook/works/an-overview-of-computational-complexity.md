@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~odonnell/15455-s17/cook-history.pdf — scanned PDF mirrored as course reading for CMU's "Great Ideas in Theoretical Computer Science" (15-455), taught by Ryan O'Donnell (verified HTTP 200). The ACM Digital Library record is paywalled with no free preview.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Choose the model for what it lets you prove, and treat every arbitrary detail in a specification as a place no theorem can live](../lessons/pick-the-model-that-admits-proofs-not-just-programs.md)
+- [Price each primitive operation at what the physical machine would really pay](../lessons/charge-for-the-work-the-machine-actually-does.md)
+- [Before grinding harder, check whether your technique could ever reach the conclusion](../lessons/audit-whether-your-technique-can-reach-the-conclusion.md)
+- [When you cannot measure a problem's cost, measure the cheap translations between problems instead](../lessons/compare-difficulty-by-translation-not-measurement.md)
+- [An abstraction is only worth reasoning in if its lowering preserves cost](../lessons/an-abstraction-worth-reasoning-in-preserves-its-cost.md)

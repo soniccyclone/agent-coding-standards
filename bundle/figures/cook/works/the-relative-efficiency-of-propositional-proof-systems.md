@@ -18,4 +18,6 @@ tags: [work]
 **Source:** http://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf — PDF self-archived on Cook's University of Toronto homepage (verified HTTP 200). Note: Cook's homepage lists a correction to Corollary 4.7 ("if P ≠ NP" should read "if coNP ≠ NP").
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Abstract a family of artifacts down to the property that makes them useful, then let cheap translation sort out which design choices were ever real](../lessons/define-the-family-by-its-checkable-property.md)
+- [The ability to name an intermediate result is not convenience, it is the difference between linear and exponential size](../lessons/the-power-to-name-is-the-power-to-compress.md)
+- [Define a hard task by the cheap test that recognizes a good answer](../lessons/the-recognizer-is-the-real-specification.md)

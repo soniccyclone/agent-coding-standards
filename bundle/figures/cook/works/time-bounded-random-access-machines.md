@@ -18,4 +18,6 @@ tags: [work]
 **Source:** http://www.cs.toronto.edu/~sacook/homepage/rams.pdf — scanned PDF self-archived on Cook's University of Toronto homepage (verified HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Price each primitive operation at what the physical machine would really pay](../lessons/charge-for-the-work-the-machine-actually-does.md)
+- [An abstraction is only worth reasoning in if its lowering preserves cost, and a concept is only objective if every reasonable translation preserves it](../lessons/an-abstraction-worth-reasoning-in-preserves-its-cost.md)
+- [Choose the model for what it lets you prove, and treat every arbitrary detail in a specification as a place no theorem can live](../lessons/pick-the-model-that-admits-proofs-not-just-programs.md)

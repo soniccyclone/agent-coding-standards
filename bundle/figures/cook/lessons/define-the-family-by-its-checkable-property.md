@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Abstract a family of artifacts down to the property that makes them useful, then let cheap translation sort out which design choices were ever real"
+figure: cook
+works: [the-relative-efficiency-of-propositional-proof-systems, feasibly-constructive-proofs-and-the-propositional-calculus]
+axes: [primitive-count, cognitive-load, expressiveness]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Abstract a family of artifacts down to the property that makes them useful, then let cheap translation sort out which design choices were ever real
+
+**Lesson:** Ask what a proof system is and the natural answer enumerates machinery: a vocabulary, axiom schemes, inference rules, a notion of line, restrictions on discharge. Discard all of it. What remains is a cheap function from candidate evidence to the claim that evidence establishes, whose range is everything true. Two requirements only: verifying that a candidate supports a claim must be cheap, and nothing true may be out of reach. Every conventional system fits, and so do objects nobody would call a system, which is the point — the definition is chosen to be as permissive as the question tolerates, so a negative result proved against it is maximally strong.
+
+Radical abstraction of this kind pays off twice. First, it makes the interesting question well posed: does any member of the family bound its evidence size by a polynomial in the claim size? That question can now be asked of the whole family at once and connected to a structural question about complexity classes, which would have been impossible while the definition was entangled with axioms and connectives. Second, it lets you order the family by cheap translation and collect it into equivalence classes, so that the unanswered absolute question has a single answer per class. Failing to answer a question globally is far less damaging when you have partitioned the space it lives in.
+
+The classification then earns its keep by separating the design choices that matter from the ones that never did. All the standard rule-based systems turn out to translate into one another cheaply, and so do the natural-deduction and sequent-style presentations, and so do systems built on different logical vocabularies. Those differences, which consume enormous attention in ordinary presentation, are invisible at this resolution. What is not invisible is the ability to name intermediate structure, which moves a system into a different class. Getting an equivalence relation right is how you learn which of your knobs are load-bearing, and a knob that changes nothing under the equivalence you care about is a knob you can stop arguing about.
+
+The trap to watch for is that the permissive definition may not capture everything you meant. Simulability between systems can also be strengthened to require that the translation's correctness be provable within a feasible theory, and the strengthened relation is the one that characterizes something sharper. The abstraction is a dial, not a destination: loosen it to make impossibility results strong, tighten it to make characterizations precise, and know which one you are currently holding.
+
+**Source:** [The Relative Efficiency of Propositional Proof Systems](../works/the-relative-efficiency-of-propositional-proof-systems.md) — the definitional section, which reduces a proof system to a cheaply computable surjection, defines simulation between systems and shows it to be a preorder, ties polynomial boundedness to closure of a complexity class under complement, and then proves the standard presentations mutually intersimulable. Also [Feasibly Constructive Proofs and the Propositional Calculus](../works/feasibly-constructive-proofs-and-the-propositional-calculus.md) — the section that sharpens simulation by demanding the translation be provably sound inside the feasible theory, and characterizes the systems whose soundness is feasibly establishable.

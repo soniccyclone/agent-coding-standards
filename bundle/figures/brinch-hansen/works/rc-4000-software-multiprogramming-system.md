@@ -18,4 +18,7 @@ tags: [work]
 **Source:** http://www.brinch-hansen.net/papers/1969c.pdf — author's self-archived papers site (brinch-hansen.net/papers), verified resolving 2026-07-24. Note: the site's HTTPS certificate is currently expired; the HTTP URL above resolves cleanly. (The Phase 1/2 stub cited a third-party mirror at pascal.hansotten.com; the author's own copy is used here as the higher-tier source.)
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Assume every participant is broken or hostile, and make whoever opens an interaction carry its risk](../lessons/assume-every-participant-may-be-broken.md)
+- [Build a base with no strategy in it, and make every policy an ordinary program above it](../lessons/build-a-base-with-no-strategy-in-it.md)
+- [Design the machine you wish you had been given, then hold the layer above it to explaining itself without ever mentioning it](../lessons/design-the-machine-under-the-language.md)
+- [Look for the concept that erases a boundary, because whatever sits on either side then becomes substitutable](../lessons/erase-the-boundary-to-gain-substitutability.md)

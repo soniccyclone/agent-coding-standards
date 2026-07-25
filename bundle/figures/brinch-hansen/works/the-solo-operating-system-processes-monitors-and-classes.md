@@ -17,4 +17,9 @@ tags: [work]
 **Source:** http://www.brinch-hansen.net/papers/1976c.pdf — author's self-archived papers site (brinch-hansen.net/papers), verified resolving 2026-07-24. Note: the site's HTTPS certificate is currently expired; the HTTP URL above resolves cleanly.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Dependency among components is a graph, not a tree, so state it in the source and forbid the cycles](../lessons/dependency-is-a-graph-not-a-tree.md)
+- [Design the machine you wish you had been given, then hold the layer above it to explaining itself without ever mentioning it](../lessons/design-the-machine-under-the-language.md)
+- [Grow a system as a chain of subsystems that each already work, and arrange things so new code cannot break old code](../lessons/grow-through-subsystems-that-already-work.md)
+- [If writing a module is hard, the real work has not been done — choosing the modules is the design](../lessons/the-work-is-choosing-the-modules.md)
+- [Put the permitted operations next to the data they touch, and give up language power until the compiler can enforce it](../lessons/put-the-operations-where-the-data-lives.md)
+- [Settle design arguments by building whole systems, not with exercises or with objections nobody has tested](../lessons/settle-design-arguments-by-building-systems.md)

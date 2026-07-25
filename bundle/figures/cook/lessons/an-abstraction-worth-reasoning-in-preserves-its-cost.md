@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "An abstraction is only worth reasoning in if its lowering preserves cost, and a concept is only objective if every reasonable translation preserves it"
+figure: cook
+works: [time-bounded-random-access-machines, an-overview-of-computational-complexity, the-p-versus-np-problem]
+axes: [hardware-affinity, cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, algorithms-and-complexity]
+tags: [lesson]
+---
+# An abstraction is only worth reasoning in if its lowering preserves cost, and a concept is only objective if every reasonable translation preserves it
+
+**Lesson:** Two separate ideas about translation reinforce each other here, and both are about what survives compilation. The first is local: if you want to reason about the cost of a program written in a high-level notation, the implementation of that notation must be built so the cost of the lowered program is readable off the source, up to a constant. This is a design constraint on the compiler, not a hope about it. It rules out implementation strategies whose overhead depends on data in ways the source does not show, and it is what earns the right to write proofs about the readable form instead of the executable one. Achieving it requires deliberate work — the storage layout that makes an unbounded number of arrays addressable with a fixed amount of program, for instance, is chosen precisely so that indexing costs what inspection of the source suggests it costs.
+
+The second idea is global: a cost concept deserves to be treated as a property of problems rather than of machines exactly when every reasonable machine translates into every other with overhead too small to change the concept. Register machines and tape machines simulate one another with polynomial slack; a fixed-program machine and a stored-program one differ by a constant; the leading random-access variants disagree by a logarithmic factor at worst. None of that slack crosses a polynomial boundary, which is why polynomial-time is a robust notion and why nobody has to settle the otherwise unanswerable question of what a step really is. Robustness under translation is what turns a definition made for convenience into a discovery about the subject.
+
+Both halves carry the same warning, which is that the guarantee is exactly as strong as the invariance you established and no stronger. A concept stable up to polynomial factors tells you nothing about constants, so a claim at finer resolution demands a finer invariance argument. And when a genuinely different mechanism appears whose translation slack exceeds the tolerance — a machine that reorganizes its own storage in one step, a device exploiting quantum superposition — the concept's robustness does not extend to it, and the honest move is to say so and mark the boundary rather than assume the old classification still applies.
+
+A programmer holding both halves does two things differently. They demand cost transparency from every abstraction layer they intend to reason above, treating unpredictable lowering as a defect rather than an inconvenience. And before trusting any performance concept as portable, they ask what class of translations it is invariant under, because that class is the exact scope of the concept's authority.
+
+**Source:** [Time-Bounded Random Access Machines](../works/time-bounded-random-access-machines.md) — the mutual-simulation results relating the register model to tape machines and to a stored-program variant, together with the section introducing an algorithmic notation whose implementation is required to make object-program timing determinable from the source up to a constant. Also [An Overview of Computational Complexity](../works/an-overview-of-computational-complexity.md) — the treatment of competing machine models and the argument that their bounded disagreement is what makes the polynomial-time class machine-independent. Also [The P versus NP Problem](../works/the-p-versus-np-problem.md) — the opening remarks on robustness of the class across models, and the later note that a quantum device would sit outside the tolerance.

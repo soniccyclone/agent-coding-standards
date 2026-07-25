@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Systems code earns no exemption from the disciplines you would demand of any other program"
+figure: brinch-hansen
+works: [operating-system-principles, the-programming-language-concurrent-pascal, monitors-and-concurrent-pascal-a-personal-history]
+axes: [expressiveness, hardware-affinity, verifiability]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Systems code earns no exemption from the disciplines you would demand of any other program
+
+**Lesson:** Every field has a subdomain that claims to be different, where the ordinary rules are said not to apply because the work is closer to the machine or more performance-critical or more privileged. In programming that claim was made for operating systems, and it was wrong in a way worth studying, because the claim's failure mode was not merely inefficiency but a decade of large unreliable systems. The thesis to hold instead is deflationary: this kind of program is not special. Its difficulties are the difficulties of any large program, its structure should be argued about in the same terms as a compiler's or a business application's, and the principles that emerge from studying it — how contended resources get shared, how independent activities are coordinated, how a large construction stays comprehensible — generalize outward rather than staying put.
+
+The claim's practical edge is a refusal. If the domain is not special, then the traditional privilege of the systems programmer, the freedom to manipulate addresses and treat storage as untyped, is not a requirement of the domain but a habit, and languages that preserve it under the label of being implementation-oriented are conceding what should be contested. Refusing that privilege makes a specific bet: that a designer of this kind of software does not, in most cases, need to control registers, addresses, and interrupts directly, and can leave them to a translator and its runtime. Making the bet and winning it was the substantive result — not the particular coordination construct chosen, but the demonstration that a nontrivial operating system could be written entirely in a language that forbids machine-level access, with no assembly language in the program and no reliance on hardware protection between its concurrent parts.
+
+The lesson for a programmer facing any allegedly-exceptional domain is to demand the argument rather than grant the exemption, and to notice that exemptions are usually asserted rather than demonstrated. It is also worth being honest about the limits established, since the same retrospective is: the demonstration held for small and dedicated systems, and the restrictions that bought its tractability made larger general-purpose systems impractical to build the same way. Refusing an exemption does not mean claiming to have solved everything the exemption was invoked for.
+
+**Source:** [Operating System Principles](../works/operating-system-principles.md) — the preface, which states as the book's main theme that operating systems are not radically different from other large programs, argues their principles belong in the core of the discipline, and rejects languages that preserve free address manipulation. Also [The Programming Language Concurrent Pascal](../works/the-programming-language-concurrent-pascal.md) — the argument for excluding machine-level features and the claim that processes can then run without memory protection. Also [Monitors and Concurrent Pascal: A Personal History](../works/monitors-and-concurrent-pascal-a-personal-history.md) — the retrospective on what was actually achieved, and the acknowledgement of where the approach stopped scaling.

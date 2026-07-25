@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://www2.karlin.mff.cuni.cz/~krajicek/cookpv.pdf — scanned PDF hosted on proof-complexity researcher Jan Krajíček's faculty page at Charles University (verified HTTP 200); the ACM Digital Library record (dl.acm.org/doi/10.1145/800116.803756) is paywalled with no free preview.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A construction with no bound on its cost is not usable knowledge, so put the budget inside the definition](../lessons/a-method-without-a-resource-bound-is-not-a-method.md)
+- [Build the cost guarantee into the formation rules, so a well-formed definition cannot escape its budget](../lessons/make-the-cost-class-an-invariant-of-well-formedness.md)
+- [Abstract a family of artifacts down to the property that makes them useful](../lessons/define-the-family-by-its-checkable-property.md)

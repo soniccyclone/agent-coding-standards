@@ -17,4 +17,5 @@ tags: [work]
 **Source:** http://www.brinch-hansen.net/papers/1972a.pdf — author's self-archived papers site (brinch-hansen.net/papers), verified resolving 2026-07-24. Note: the site's HTTPS certificate is currently expired; the HTTP URL above resolves cleanly.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Design concurrent code for reproducible behavior, because the errors that matter are the ones testing can never reach](../lessons/design-for-reproducibility-because-testing-cannot-reach.md)
+- [Put the permitted operations next to the data they touch, and give up language power until the compiler can enforce it](../lessons/put-the-operations-where-the-data-lives.md)

@@ -17,4 +17,7 @@ tags: [work]
 **Source:** http://www.cs.toronto.edu/~sacook/homepage/1971.pdf — scanned PDF self-archived on Cook's University of Toronto homepage (verified HTTP 200); a retyped version by Tim Rohls is also linked from the same page at http://4mhz.de/cook.html.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When you cannot measure a problem's cost, measure the cheap translations between problems instead](../lessons/compare-difficulty-by-translation-not-measurement.md)
+- [A whole execution can be reified as one static constraint object, and then attacked with tools that cannot touch running programs](../lessons/turn-a-computation-into-a-static-object-you-can-solve.md)
+- [Performance on examples cannot rank competing implementations — define a cost measure parameterized on the dimension that actually drives the work](../lessons/benchmarks-cannot-rank-implementations-a-cost-measure-can.md)
+- [Before grinding harder, check whether your technique could ever reach the conclusion](../lessons/audit-whether-your-technique-can-reach-the-conclusion.md)

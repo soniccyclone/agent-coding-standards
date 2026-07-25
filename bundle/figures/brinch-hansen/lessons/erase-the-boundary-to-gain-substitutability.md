@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Look for the concept that erases a boundary, because whatever sits on either side then becomes substitutable"
+figure: brinch-hansen
+works: [the-nucleus-of-a-multiprogramming-system, rc-4000-software-multiprogramming-system, the-programming-language-concurrent-pascal, distributed-processes-a-concurrent-programming-concept]
+axes: [primitive-count, expressiveness, hardware-affinity]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Look for the concept that erases a boundary, because whatever sits on either side then becomes substitutable
+
+**Lesson:** Most systems inherit their boundaries from their materials. Running code and moving data through a device feel like different kinds of activity, so they get different vocabularies, different call conventions, and different error handling, and every program that touches both must be written twice in its own head. The productive move is to find a concept general enough that the distinction stops being expressible. Treat a device transfer as an entity that is addressed, waited on, and answered exactly the way a running program is, and the difference between the two collapses to a matter of how much computation each is capable of. Reference them by name rather than by location or device number, and the physical arrangement stops leaking into anything that uses them.
+
+The payoff is substitutability, and it is worth more than the notational tidiness that first attracts you to it. Once a device and a program are the same kind of thing under the same name, a program can stand in for a device whenever the access rules or the response behavior need to get smarter, and nothing that calls it needs to change or even to know. The same reasoning applies from the other direction: a peripheral can be understood as a synchronizing module that happens to be built out of hardware, which means the language needs no separate vocabulary for interrupts at all. Later, when the machine model changes to one with no shared store, the same unification pays again — one construct that can act as a private data holder, as a shared arbitrator, and as an autonomous activity means the network case needs no new concepts, only a restriction on how arguments travel.
+
+A programmer who works this way spends real effort hunting for the boundary that is an artifact rather than a fact, and treats a proliferation of parallel vocabularies as evidence the hunt is not finished. The discipline has a cost worth naming: the unified concept is usually slightly worse than a bespoke one at each individual job, and the design has to be judged on what the erased boundary permits rather than on any single case.
+
+**Source:** [The Nucleus of a Multiprogramming System](../works/the-nucleus-of-a-multiprogramming-system.md) — the sections on external processes, where input/output is deliberately given the same naming and message discipline as program execution, and the remark that either can replace the other. Also [RC 4000 Software Multiprogramming System](../works/rc-4000-software-multiprogramming-system.md) — the basic-concepts chapter that separates devices, documents, and processes so documents can be named independently of the hardware carrying them. Also [The Programming Language Concurrent Pascal](../works/the-programming-language-concurrent-pascal.md) — the treatment of peripherals as synchronizing modules realized in hardware. Also [Distributed Processes: A Concurrent Programming Concept](../works/distributed-processes-a-concurrent-programming-concept.md) — the closing tally of familiar constructs that turn out to be special cases of one concept.

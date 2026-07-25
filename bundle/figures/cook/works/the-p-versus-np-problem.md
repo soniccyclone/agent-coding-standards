@@ -17,4 +17,9 @@ tags: [work]
 **Source:** https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf — official PDF hosted on the Clay Mathematics Institute's own site (verified HTTP 200); Cook also self-archived a PostScript copy at http://www.cs.toronto.edu/~sacook/homepage/PvsNP.ps.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Define a hard task by the cheap test that recognizes a good answer, because the whole difficulty lives between recognizing and producing](../lessons/the-recognizer-is-the-real-specification.md)
+- [A construction with no bound on its cost is not usable knowledge, so put the budget inside the definition](../lessons/a-method-without-a-resource-bound-is-not-a-method.md)
+- [Before grinding harder, check whether your technique could ever reach the conclusion](../lessons/audit-whether-your-technique-can-reach-the-conclusion.md)
+- [When you cannot measure a problem's cost, measure the cheap translations between problems instead](../lessons/compare-difficulty-by-translation-not-measurement.md)
+- [A whole execution can be reified as one static constraint object](../lessons/turn-a-computation-into-a-static-object-you-can-solve.md)
+- [An abstraction is only worth reasoning in if its lowering preserves cost](../lessons/an-abstraction-worth-reasoning-in-preserves-its-cost.md)
