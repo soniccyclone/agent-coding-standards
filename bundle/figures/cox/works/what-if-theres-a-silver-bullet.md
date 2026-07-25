@@ -20,4 +20,9 @@ tags: [work]
 **Source:** https://web.archive.org/web/20161225164137/http://www.virtualschool.edu/cox/pub/92ByteWhatIfSilverBullet/index.html — Wayback Machine snapshot of Cox's own site (virtualschool.edu), self-archived by the author (byline "by Brad Cox," bio identifies him as Stepstone CTO, consistent with the period). Live site is now offline; snapshot confirmed via direct fetch and curl.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+Read in full; the argument is largely the same skeleton as "Planning the Software
+Industrial Revolution" with a Copernican rather than Kuhnian framing, so it produced
+no lesson of its own. It co-supports:
+- [Standardize the artifact, and let the method that produces it stay free](../lessons/standardize-the-artifact-not-the-method.md)
+- [Deciding when a connection is checked decides who is allowed to make it](../lessons/binding-time-belongs-to-the-consumer-not-the-producer.md)
+- [Design vocabulary is scale-relative: fix the integration level before arguing about the word](../lessons/fix-the-scale-before-arguing-about-the-word.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A record of how something was built is not a description of what it does"
+figure: cox
+works: [planning-the-software-industrial-revolution]
+axes: [cognitive-load, verifiability]
+subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A record of how something was built is not a description of what it does
+
+**Lesson:** The most common way to publish a component is to publish its ancestry. A class diagram, a type hierarchy, a module dependency graph: all of these record the path by which the thing came into existence, and all of them get handed to consumers as if they explained the thing's behavior. This work shows why that substitution actively misinforms rather than merely underinforms. Derivation is a labour-saving device for the producer — it lets a new piece start out already working by borrowing from pieces that already work — and the choices that drive it are the producer's private concerns: a performance trick, a convenient place to hang shared storage, an accident of which code existed first. None of that is what a consumer needs to know, and worse, it reads as a claim about kinship that the behavior does not support.
+
+The illustration in the work is exact. A synchronization primitive whose useful surface is two operations turns up in a hierarchy descended from a queue, because reusing the queue's storage happened to be fast. Nothing about that lineage is false, and every part of it is misleading: it advertises a large inherited surface the consumer must be warned away from, it says nothing about the only thing that matters (what the primitive does when contended), and it places two components with byte-for-byte identical observable behavior far apart in the picture while placing behaviorally unrelated ones adjacent. A consumer trying to find a suitable part in a library organized this way is browsing an index of implementation accidents. The failure compounds when the producer needs to change something, because with only one hierarchy in hand there is no way to say which parts of the old promise are still being kept.
+
+The fix is structural, not editorial: the producer's construction record and the consumer's contract are two different artifacts about the same boundary, and each needs its own hierarchy. Organizing tools by inheritance is fine on the production side and belongs there. What the consumer side needs is a separate arrangement built out of stated behavioral requirements, in which two competing implementations of the same promise sit in the same place and are distinguished only by the properties a buyer would actually trade off, like time against space. A programmer who accepts this stops treating a type hierarchy as documentation. They publish the promise separately from the lineage, they suspect any interface whose shape can be explained only by its implementation history, and they treat "this class extends that one" as a fact about the past with no standing to constrain what a caller may assume. The corollary is a shift in who holds power over the boundary, away from whoever controls the code and toward whoever controls the specification, which is exactly why the change is culturally difficult.
+
+**Source:** [Planning the Software Industrial Revolution](../works/planning-the-software-industrial-revolution.md) — the passage contrasting an implementation hierarchy for a semaphore class against the facts a consumer needs, followed by the proposal that a separate consumer-facing specification hierarchy be maintained alongside it, and the observation about library browsing organized around the wrong one of the two.

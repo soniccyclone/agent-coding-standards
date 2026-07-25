@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Parts only appear at the granularity your incentives can reach"
+figure: cox
+works: [superdistribution, planning-the-software-industrial-revolution]
+axes: [cognitive-load]
+subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Parts only appear at the granularity your incentives can reach
+
+**Lesson:** Architectures that depend on parts someone else supplies have a precondition most designs never state: something has to make supplying those parts worth doing, at the size the architecture assumes. This work locates the precondition precisely by asking the questions a would-be supplier of small components actually asks — where components come from, why anyone would bother producing one, why anyone would do the unglamorous work of documenting and testing a thing for a stranger's benefit. If the accounting only reaches whole applications, then whole applications are what get produced and maintained, and every finer-grained piece stays trapped inside the team that wrote it, no matter how much rhetoric about reuse surrounds it. The plan for a layered marketplace of small parts is not blocked by a missing language feature. It is blocked by a missing way for value to flow down through the layers.
+
+This is the sharp edge of the component argument and the reason its author kept working on the economics after the technology was in hand. A layered architecture's whole benefit is that each level can solve its own problem without holding the levels below it in mind, and that benefit is entirely contingent on the lower levels existing as maintained, documented, trustworthy artifacts. Someone has to be repaid for that maintenance, and repaid recursively, so that a supplier of something used only through three intermediate layers still receives something proportional to its use. Absent that path, the architecture degrades to a diagram: the boundaries are drawn, nothing durable arrives to sit behind them, and every team ends up reconstructing the substrate and carrying its full complexity themselves — which is the cost the layering was supposed to remove.
+
+The same reasoning generalizes past money and past software markets, and this is where it becomes useful inside a single organization. Substitute credit, headcount, on-call ownership, or promotion criteria for revenue and the mechanics are identical. A company whose recognition attaches only to shipped user-facing features will get shipped user-facing features and a substrate nobody owns, however many internal-platform initiatives it announces. A programmer who thinks this way, before committing to an architecture built on shared parts, identifies who maintains each part and what they get for it, and treats an unanswerable version of that question as a prediction that the part will not exist or will rot. It also reframes who drives adoption: the people best served by a change are the ones who will fund it, and the incumbent practitioners whose craft the change devalues are the least likely source of momentum, so read the incentives of the consumers rather than the preferences of the specialists.
+
+**Source:** [Superdistribution?](../works/superdistribution.md) — the passage naming the unasked questions of a potential supplier of fine-grained reusable components, and the account of payments distributed recursively down a producer-consumer hierarchy in proportion to use. The gap this fills is named in the conclusions of [Planning the Software Industrial Revolution](../works/planning-the-software-industrial-revolution.md), which lists ease of duplication as the one obstacle with no easy technical answer and warns that it stands ready to undo progress on all the others.

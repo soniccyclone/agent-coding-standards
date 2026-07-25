@@ -61,3 +61,33 @@ snapshots — the live site is dead) plus his own 1998 publications list. Findin
   (IEEE Software Managers Column, Jan 1996/97) — were located but not filed separately, to
   avoid stacking near-duplicate coverage of one book's thesis beyond what a seminal-works pass
   calls for.
+
+## Lessons
+
+Cox's thinking pushes on a place most of the corpus leaves alone: the conditions
+under which a part built by one person becomes usable by someone they will never
+meet. His reframe is that software standardizes the wrong half of the pair —
+fixing languages, methods, and rituals while leaving the artifacts unspecified,
+where every mature engineering field fixes the artifact and lets production
+methods vary. From that follow four sharper moves. Binding time is treated not as
+a correctness preference but as a decision about reach: resolving a connection
+when a piece is compiled requires its author to know all future users, so the
+choice of early or late coupling belongs to the joint's position in a
+producer-consumer stack rather than to the language designer, and a language
+offering one discipline has answered the question for every level at once.
+Specification is treated as measurement rather than derivation, an instrument you
+run against an unknown candidate to decide conformance within a tolerance, which
+survives reimplementation in a way that correct-by-construction generation cannot
+— and which forces the separation of a producer's construction record from a
+consumer's contract, since a derivation lineage misinforms about behavior rather
+than merely underinforming. The vocabulary of composition he treats as
+scale-relative, resolving definitional fights by naming an integration level
+first, with the sharp end of that ladder being the distinction between a unit
+that borrows its caller's thread and one that owns its own. Underneath all of it
+runs a discipline for getting unstuck: name the genuinely good property you have
+promoted to non-negotiable and price what holding it costs, since stuck
+engineering cultures are held by their virtues rather than their ignorance. His
+later work supplies the precondition the rest depends on — mechanisms must be
+founded on events the substrate can actually observe and enforced strictly below
+every party they bind, and parts at a given granularity only come into existence
+when something repays the people who maintain them at that granularity.

@@ -20,4 +20,5 @@ tags: [work]
 **Source:** https://web.archive.org/web/20130522103632/http://www.virtualschool.edu/cox/pub/94WiredSuperdistribution/index.html — Wayback Machine snapshot of Cox's own site (virtualschool.edu), self-archived by the author. Live site is now offline; snapshot confirmed via direct fetch and curl. This essay is Cox's own public-facing distillation of the same thesis as his 1996 Addison-Wesley book "Superdistribution: Objects as Property on the Electronic Frontier," which is not available anywhere free of charge (confirmed — see Phase 3 access flag in figures/cox/index.md); Cox's site itself only links to Amazon/IBM InfoMarkets for the book.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Build the mechanism on the event the machine can actually observe](../lessons/build-the-mechanism-on-what-the-machine-can-actually-observe.md)
+- [Parts only appear at the granularity your incentives can reach](../lessons/reuse-only-appears-at-the-granularity-the-incentives-reach.md)
