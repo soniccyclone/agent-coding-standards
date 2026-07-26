@@ -64,3 +64,41 @@ Net: the "no papers" framing in the Phase 1 stub holds. What exists instead is o
 institutional oral history and one archived internal strategy document he personally
 wrote — genuinely thin, but genuinely public and citable, which is the bar this pass
 sets.
+
+## Lessons
+
+Cutler's thinking is organized around a single question: which decisions have to be
+made before the first line exists, because nothing downstream can recover them. Four
+belong to that class. What must keep working is inherited rather than chosen, so a
+project starts by writing down its immovable obligations — and each one is housed as a
+client of one mechanism set rather than smeared through the core as special cases,
+because the installed base is the dominant cost term and survives every rewrite that
+claims to escape it. Which facts about the machine the design may assume gets decided
+and confined to a layer built to be swapped, so a change of processor is a substitution
+priced in weeks instead of an archaeology project. Whether the system is concurrent is
+settled at the outset, because the defects that survive a competent bug hunt are almost
+entirely synchronization, and retrofitting locks onto invariants written for one thread
+of control is invisible work with no test that proves it finished. And whether the
+requirement is throughput or reproducibility gets answered honestly, since determinism
+comes from removing the sharing, not from scheduling it better. Underneath all four sits
+a view of correctness as something authored, not inspected in: reasoning through a
+routine's paths before running it, effort weighted by how much of the system sits above
+you, defects treated as interrupts rather than queue entries, and cross-cutting limits
+converted into per-owner allocations that force the hardware's real constraints into the
+design conversation while the structure can still change.
+
+Two further habits come from watching decisions and specifications fail from the
+outside. A specification is a promise binding implementations nobody has built yet, so
+its silences — memory visibility, cache agreement, exception resumption — are where a
+supposedly compatible family quietly diverges; the same instinct treats ambient mode
+state as a serialization point and an itemized list of what an abstraction demands from
+the layer beneath it as the only way an argument about foundations can compete with an
+argument about availability. And stability of a target is itself an engineering
+resource: an organization that reopens its foundational choices on a cadence has no
+schedule, only restarts. His counterweight against his own conviction is worth noting —
+the case for a recommendation is made by stating the strongest version of the opposing
+argument and the unflattering weaknesses of the preferred path, and by treating a
+decision reached and held as the deliverable rather than winning. He is equally willing
+to turn that skepticism on minimality itself: a small design wins because it is cheap to
+get right under scarcity, and when the binding constraint moves, whoever spends the
+surplus on outcomes collects the advantage instead.

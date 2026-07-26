@@ -19,4 +19,14 @@ tags: [work]
 **Host:** institutional — Computer History Museum, an official oral-history archive.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Correctness is bought at the point of authorship, and its price scales with depth](../lessons/defects-are-cheapest-at-their-origin.md)
+- [Turn a global limit into per-owner budgets before anyone writes code](../lessons/turn-a-global-limit-into-per-owner-budgets.md)
+- [The fastest route to a working model of a system is being forced to explain its failures](../lessons/learn-a-system-by-hunting-why-it-fails.md)
+- [Minimality is a means, and treating it as the goal loses to whoever spends their budget on outcomes instead](../lessons/minimality-is-not-the-objective-function.md)
+- [When predictability is the requirement, remove the sharing instead of scheduling it better](../lessons/partition-instead-of-scheduling-when-predictability-is-the-product.md)
+- [Scoping a system means enumerating what cannot change, then isolating the obligation](../lessons/compatibility-is-inherited-not-chosen.md)
+- [Compatibility with what already runs is the mass of a system, and the only way to carry it is at a boundary you design on purpose](../lessons/compatibility-is-the-mass-of-a-system.md)
+- [Portability comes from naming the seam where the machine shows through, not from hiding the machine](../lessons/name-the-seam-where-the-machine-shows-through.md)
+- [As a system's defects thin out, the survivors are almost all synchronization, so design for concurrency at the start or not at all](../lessons/synchronization-is-where-the-residual-bugs-live.md)
+- [A decision repeatedly revisited costs more than a mediocre one held, because stability of the target is itself an engineering resource](../lessons/re-deciding-costs-more-than-deciding-wrong.md)
+- [An interface is a promise about every future implementation, so whatever it leaves unsaid is where incompatibility will grow](../lessons/an-architecture-is-a-promise-across-implementations.md)

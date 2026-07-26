@@ -18,4 +18,11 @@ tags: [work]
 **Host:** third-party-rehost — bitsavers.org is a long-running, well-established computing-history preservation archive, not DEC's or Cutler's own site, but a legitimate host for scanned original internal documents.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An interface is a promise about every future implementation, so whatever it leaves unsaid is where incompatibility will grow](../lessons/an-architecture-is-a-promise-across-implementations.md)
+- [Enumerate the mechanisms your abstraction silently requires from the layer beneath it, then price their absence as recurring](../lessons/inventory-what-your-abstraction-demands-from-below.md)
+- [Any behavior you put in shared implicit state serializes every operation that reads it; encode it in the operation instead](../lessons/implicit-mode-state-serializes-what-touches-it.md)
+- [A technical recommendation earns its authority by containing the strongest available argument against itself](../lessons/state-the-case-against-your-own-recommendation.md)
+- [A decision repeatedly revisited costs more than a mediocre one held, because stability of the target is itself an engineering resource](../lessons/re-deciding-costs-more-than-deciding-wrong.md)
+- [As a system's defects thin out, the survivors are almost all synchronization, so design for concurrency at the start or not at all](../lessons/synchronization-is-where-the-residual-bugs-live.md)
+- [Compatibility with what already runs is the mass of a system, and the only way to carry it is at a boundary you design on purpose](../lessons/compatibility-is-the-mass-of-a-system.md)
+- [Portability comes from naming the seam where the machine shows through, not from hiding the machine](../lessons/name-the-seam-where-the-machine-shows-through.md)
