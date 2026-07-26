@@ -51,3 +51,33 @@ in particular is one of his most-cited results. No work file was created for
 any of the three; they remain excluded pending a future pass (e.g. a
 library-access check, or contacting a rights holder) if that legacy needs
 fuller documentation later.
+
+## Lessons
+
+Edmonds's contribution to how programmers think is the insistence that cost is
+a mathematical property of a problem, statable as a proposition and provable or
+refutable before any code exists — which forces two disciplines his papers then
+carry out in detail: choose a cost measure that cannot be gamed and that counts
+the input by what it takes to write down, precision included, and never let a
+performance claim rest on a step whose resolution the specification left free.
+Around that spine sits a repertoire of design moves that all share one shape,
+replacing enforcement with structure. Where a recurring configuration defeats a
+uniform search, he collapses it into an opaque element and works where it cannot
+arise, paying for the move with correspondence theorems rather than with special
+cases. Where a discreteness condition must otherwise be policed, he hunts for a
+continuous description whose corners are exactly the discrete objects, so the
+condition becomes geometry and the existing machinery for continuous
+optimization applies. Where a method might merely assert its answer, he arranges
+for the stuck state to hand over an independently checkable witness of
+optimality, maintained alongside the answer throughout rather than reconstructed
+afterwards. His work also models an unusual rigour about what transfers between
+similar-looking problems: a shortcut's validity belongs to a structural property,
+not to family resemblance, and an invariance that holds for one formulation can
+fail for its near neighbour for reasons visible only in the proof. Two further
+habits round it out — separating the choices a run makes arbitrarily from the
+object the input actually determines, which is where both parallel freedom and a
+usable test oracle come from; and reshaping data to keep a component inside its
+cheap regime, licensed by working out what the component's answers are invariant
+under. Read together, the lessons describe a way of working in which efficiency
+is never a matter of making operations faster but of finding the representation
+in which the expensive thing has nothing left to do.

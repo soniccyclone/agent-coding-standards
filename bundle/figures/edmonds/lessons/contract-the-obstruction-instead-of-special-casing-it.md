@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When one shape of input defeats your method, collapse that shape into a single opaque object and work in the world where it cannot occur"
+figure: edmonds
+works: [paths-trees-and-flowers, maximum-matching-and-a-polyhedron-with-0-1-vertices, optimum-branchings]
+axes: [cognitive-load, verifiability]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification]
+tags: [lesson]
+---
+# When one shape of input defeats your method, collapse that shape into a single opaque object and work in the world where it cannot occur
+
+**Lesson:** A search that works beautifully on well-behaved inputs and breaks on one recurring configuration invites the obvious repair: detect the configuration and add a branch for it. Edmonds does the opposite. The awkward configuration — an odd cycle in the undirected matching problem, a directed cycle in the branching problem — gets fused into one new anonymous element, and the search continues in a smaller structure where the configuration is no longer expressible. Nothing in the search logic learns about the special case, because in the reduced world there is no special case to learn about. The uniform method that was almost right becomes exactly right, on a different object.
+
+What makes this legitimate rather than wishful is a pair of correspondence theorems, and they are where the real work sits. You have to show that an optimal solution in the collapsed structure induces an optimal solution in the original, and that improving the collapsed one improves the original by exactly as much, so that progress in the reduced world is progress full stop. Establish those and the collapse is not a heuristic but a change of representation with a proof attached. Get them wrong and you have a fast method that answers a different question. The direction of the implication also matters: one paper's careful separation of the two halves of the correspondence, and its observation that the harder half depends on the collapsed cycle still hanging off a live path, is exactly the kind of detail that decides whether the trick survives repeated application.
+
+Two practical habits follow. First, expand lazily: once something is collapsed, leave it collapsed as long as the reduced structure keeps answering questions, and pay the cost of unfolding only when the method is actually forced to look inside. Successive collapses then nest, and the nesting is a partial order you can track rather than a stack you must unwind in lockstep. Second, when you are tempted instead to write the code that traces carefully through the interior of the collapsed thing, notice that you are choosing to reintroduce the complexity you just abstracted away; the papers acknowledge that this alternative exists and is respectable, and also that it is much harder than it appears. The general form of the lesson is that quotienting a structure is a design move on par with adding a case, and usually the better one, because a case multiplies the paths through your code while a quotient removes them.
+
+**Source:** [Paths, Trees, and Flowers](../works/paths-trees-and-flowers.md) — the tree-growing section where odd cycles are fused into single vertices, the theorems relating optima before and after the fusion, and the refinement section arguing for deferring expansion. Also [Maximum Matching and a Polyhedron with 0,1-Vertices](../works/maximum-matching-and-a-polyhedron-with-0-1-vertices.md), where the same device carries numerical weights across the collapse, and [Optimum Branchings](../works/optimum-branchings.md), whose instruction pair shrinks a cycle with adjusted weights and later reverses the shrinkage to recover the answer.

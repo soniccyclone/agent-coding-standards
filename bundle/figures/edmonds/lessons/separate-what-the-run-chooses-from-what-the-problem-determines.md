@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Find out which of your method's choices are incidental and which fix the answer, because the incidental ones are freedom you have already paid for"
+figure: edmonds
+works: [paths-trees-and-flowers, optimum-branchings]
+axes: [parallelizability, verifiability]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification]
+tags: [lesson]
+---
+# Find out which of your method's choices are incidental and which fix the answer, because the incidental ones are freedom you have already paid for
+
+**Lesson:** A procedure with many arbitrary choices in it looks fragile: which starting point, which of several equally good elements, which order to process things in, and the answer is not even unique. Edmonds takes that apparent fragility and turns it into a theorem. Running the matching method leaves behind a derived structure, and although essentially every decision along the way was arbitrary — the order the trees were grown in, which cycles were collapsed, which of many equally valid elements were used, and indeed which optimal solution came out — the derived structure is determined by the input alone. He then re-derives the classification of vertices in terms of the input, with no reference to any run. The arbitrary choices were arbitrary; the object underneath them was not.
+
+Knowing which is which changes what you are allowed to do. Where the order of operations is provably immaterial except for a genuine containment relation, order stops being a sequence and becomes a partial order, and the implementation is free to pick any linearization, batch independent work, or represent the containment structure directly and give no preference to any particular ordering at all. The same paper takes the step this licenses: rather than growing one tree at a time from one unmatched vertex, grow the whole family at once, since the theorems about the single case carry over unchanged. That is a parallel decomposition obtained not by adding coordination but by proving that coordination was never needed. The companion paper makes the analogous observation about reusing the shared front half of a computation for every choice of a distinguished root, with only the final phase differing.
+
+For testing and for debugging this distinction is the difference between a usable oracle and none. If the output is non-unique, comparing runs is meaningless; if some canonical derived object is unique, that object is what you assert on, and a difference between two runs localizes immediately to the incidental part. The general practice is to ask, for every decision point in a design, whether the decision is visible in the result. Decisions that are not visible are latitude to be exploited — reordered, parallelized, or removed. Decisions that are visible must be traced back to something in the problem statement that justifies them, or they are bugs waiting to be discovered by a user who made the other choice.
+
+**Source:** [Paths, Trees, and Flowers](../works/paths-trees-and-flowers.md) — the invariance section, which enumerates everything about a run that is arbitrary and then proves the derived graph is determined by the input, together with the earlier observation that the order of collapses is immaterial up to nesting and the remark that the whole forest can be grown at once. Also [Optimum Branchings](../works/optimum-branchings.md), whose closing discussion notes that computations for different distinguished roots are identical apart from the reconstruction phase, and that the collapse structure may be represented so no particular ordering is privileged.

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Look for a description of your feasible set in a language that already has machinery, so the hard condition dissolves instead of being enforced"
+figure: edmonds
+works: [maximum-matching-and-a-polyhedron-with-0-1-vertices, paths-trees-and-flowers]
+axes: [expressiveness, verifiability]
+subdomains: [algorithms-and-complexity, foundations-of-computation]
+tags: [lesson]
+---
+# Look for a description of your feasible set in a language that already has machinery, so the hard condition dissolves instead of being enforced
+
+**Lesson:** The awkward part of a combinatorial problem is usually a condition the solver must actively police: values must be whole, selections must be disjoint, a slot holds one thing or nothing. Edmonds's move is to hunt for a description in which that condition is a consequence rather than a rule. Replace "each variable is zero or one" with a system of inequalities over continuous variables, chosen so that the corner points of the region they carve out are exactly the discrete objects you cared about. Now the discreteness is not enforced anywhere; it is a fact about the geometry. Anything that maximizes a linear objective over that region lands on a discrete object automatically, and the whole apparatus built for continuous optimization — duality most of all — becomes available for a problem that had no continuous content at all.
+
+The reason to reach for this deliberately, rather than treating it as a lucky coincidence, is that the well-understood special cases only look easy because someone already found their good description. Where a problem's constraint matrix has the classical structure, the continuous and discrete optima coincide for free, and the classical duality theorem for the bipartite case is exactly that phenomenon. When the problem is generalized and that structure is lost, the gap between the continuous and the discrete relaxation is precisely the difficulty, and closing it means discovering the additional family of inequalities that the discrete objects satisfy and the spurious continuous points do not. Naming the obstruction that way is what tells you where to look: the extra constraints in the matching case are exactly the ones violated by the configurations that also break the algorithm.
+
+Edmonds also flags the trap in this style of reasoning, and it is worth carrying as part of the lesson. Wanting a clean geometric description is what suggested the generalized duality theorem, and the theorem in turn suggests the geometric description, but succeeding at the first does not establish the second; the polyhedral claim needed a separate proof in a separate paper. An analogy that guided you to a true statement is not evidence for the next statement it suggests. A programmer who thinks this way spends real effort searching for the representation in which invariants hold by construction, and then still proves the representation right rather than trusting the aesthetic that produced it.
+
+**Source:** [Maximum Matching and a Polyhedron with 0,1-Vertices](../works/maximum-matching-and-a-polyhedron-with-0-1-vertices.md) — the sections setting up the inequality system, arguing that the discreteness condition can be dropped in favour of it for optimization purposes, and proving that the discrete objects are exactly the corner points. Also [Paths, Trees, and Flowers](../works/paths-trees-and-flowers.md), whose duality section identifies the loss of the classical structure as the genuine difficulty in the general case, proposes the extra inequality family, and explicitly declines to assume the geometric claim follows.
