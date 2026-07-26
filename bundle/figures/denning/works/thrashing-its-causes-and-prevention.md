@@ -17,4 +17,9 @@ tags: [work]
 **Source:** https://www.denninginstitute.com/pjd/PUBS/thrashing-1968.pdf — live PDF (verified 2026-07-24, HTTP 200), self-archived on Denning's own institute site. Solo-authored by Denning (Princeton) — the stub's "with Kahn" attribution is a Phase 1 error, most likely confused with Denning & Kevin C. Kahn's unrelated 1975/76 paper "An L=S Criterion for Optimal Multiprogramming"; confirmed against two independent copies (this one and a UWaterloo course mirror) both crediting Denning alone.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Differentiate before you tune: a large hardware ratio can leave no safe operating margin at all](../lessons/sensitivity-before-tuning.md)
+- [Allocate per unit of work so each one's performance depends only on itself](../lessons/per-unit-isolation-over-global-policy.md)
+- [Idle capacity in one resource is usually a symptom of scarcity in another](../lessons/idle-capacity-names-the-real-shortage.md)
+- [When a technique "doesn't work," suspect the relation between its parts before condemning any one part](../lessons/failure-lives-in-the-relation.md)
+- [Two resources that constrain each other need one allocator, not two good ones](../lessons/coupled-resources-single-decision.md)
+- [Find out which variable the outcome actually obeys before improving the one you find interesting](../lessons/measure-which-variable-the-outcome-obeys.md)

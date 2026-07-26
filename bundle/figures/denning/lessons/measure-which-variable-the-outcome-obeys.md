@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Find out which variable the outcome actually obeys before improving the one you find interesting"
+figure: denning
+works: [virtual-memory, thrashing-its-causes-and-prevention, the-working-set-model-for-program-behavior]
+axes: [hardware-affinity, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Find out which variable the outcome actually obeys before improving the one you find interesting
+
+**Lesson:** A decade of published effort went into comparing replacement rules, and when Denning gathers the measurements into one picture the comparison collapses. Plot miss rate against resource size for every defensible rule and the curves fall inside a narrow band; even the unimplementable rule that gets to see the future sits just below the band rather than somewhere else entirely. Meanwhile, sliding along the size axis moves the miss rate across the whole range. His summary is that the choice of rule matters and the choice of size is critical, and the two words are doing real work: one dimension of the design carried nearly all the outcome while the other carried the arguments.
+
+The generalizable move is to establish the sensitivity of the outcome to each variable *before* choosing which variable to work on, because interest and leverage are uncorrelated. Policy is where the intellectual freedom lives, so that is where attention goes by default, but the achievable spread across all reasonable policies is bounded above by whatever the ideal policy achieves — and if the ideal is only slightly better than the obvious, then the entire policy dimension is worth only that slight difference, no matter how much cleverness is poured into it. A parameter with no upper bound on its effect beats a design decision with a small one. The same reasoning kills the opposite error too: assuming the workload is featureless. If access were uniformly spread, the miss rate would be pinned by pure arithmetic and no rule could beat any other; the reason rules differ at all is that real reference patterns are lopsided, and that lopsidedness is the resource the good rules are exploiting.
+
+This is why the same terse sentence appears in all three works, and why Denning keeps returning to it while defending the mechanism against its critics: the automatic scheme is not a substitute for having enough of the resource. Both 1968 papers say so almost identically — the measured disappointments were real, the diagnosis that the mechanism was at fault was not, and the remedy was to supply the memory the resident work actually needed. That is an unglamorous conclusion, which is precisely why it took a survey with the curves side by side to make it stick.
+
+What this changes in practice: when a team is debating eviction policy, retry strategy, or scheduling heuristics, first bound how much the outcome can move across the whole space of sane choices, then compare that bound against what moving the sizing knob does. Very often the debate is worth a few percent and the knob is worth a factor. Spend the effort where the sensitivity is, and prefer the cheap boring lever even when the expensive interesting one is more fun to build — and remember that the cleverer rule also costs every future maintainer the effort of understanding it, a cost the few percent may not cover.
+
+**Source:** [Virtual Memory](../works/virtual-memory.md) — the fault-probability comparison in the replacement-algorithm discussion, where the curves for all reasonable rules are shown occupying a narrow band against the unrealizable optimum, with the explicit conclusion about rule versus size, and the accompanying rejection of the uniform-reference assumption. [The Working Set Model for Program Behavior](../works/the-working-set-model-for-program-behavior.md) and [Thrashing: Its Causes and Prevention](../works/thrashing-its-causes-and-prevention.md) — the near-identical closing insistence in both that paging does not substitute for a sufficient supply of real memory.

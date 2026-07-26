@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://www.denninginstitute.com/pjd/PUBS/WSModel_1968.pdf — live PDF (verified 2026-07-24, HTTP 200), self-archived on Denning's own institute site (denninginstitute.com/pjd/PUBS/, the publications directory of his personal site).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Give the hand-waved quantity a one-parameter definition, then make its consequences derivable](../lessons/define-then-derive.md)
+- [Knowing what will be needed is not permission to fetch it early](../lessons/speculation-defeated-by-its-own-trigger.md)
+- [When composition destroys foreknowledge, build an observer instead of a predictor](../lessons/observing-beats-preplanning.md)
+- [Two resources that constrain each other need one allocator, not two good ones](../lessons/coupled-resources-single-decision.md)
+- [Find out which variable the outcome actually obeys before improving the one you find interesting](../lessons/measure-which-variable-the-outcome-obeys.md)
