@@ -18,4 +18,6 @@ tags: [work]
 **Source:** https://www.cs.huji.ac.il/~dolev/pubs/p77-dolev.pdf — self-archived PDF on Dolev's own HUJI publications page, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An omnibus assumption hides several independent dials; separate them before believing anything proved about it](../lessons/split-omnibus-assumptions-into-independent-dials.md)
+- [Mine your proofs for a rule of thumb you can guess with before proving anything](../lessons/turn-your-proofs-into-a-rule-you-can-guess-with.md)
+- [What a participant cannot tell apart is the whole argument](../lessons/what-participants-cannot-distinguish-bounds-every-protocol.md)

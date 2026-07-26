@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Optimal is always optimal-within-a-class; state the class, because that is where the next gain lives"
+figure: dolev
+works: [reaching-approximate-agreement-in-the-presence-of-faults, early-stopping-in-byzantine-agreement]
+axes: [verifiability, primitive-count]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Optimal is always optimal-within-a-class; state the class, because that is where the next gain lives
+
+**Lesson:** "We proved this is the best possible" is never a claim about all possible solutions. It is a claim about the best member of some family the prover had in mind, and the family is usually characterized by structural habits the prover did not notice they were assuming: that every cycle consists of publishing your value and then combining what arrives, that the combining step behaves conservatively when the inputs are lopsided, that the participants are deterministic. Prove a matching lower bound over that family and you have genuinely closed it. You have said nothing about a construction that steps outside it. The intellectually honest form of an optimality result therefore includes the restriction as a first-class part of the statement, along with the admission that whether the restriction can be lifted is unknown.
+
+Doing this converts a closed result into a map of where progress remains available. Once the class is written down, each of its defining properties becomes a candidate to attack, and the attacks are specific rather than vague: can the conservatism requirement on the combining step be dropped, does a construction not built from publish-then-combine cycles converge faster, does allowing randomness change the picture. The same discipline shows up on the tolerance side, where the parameter chosen for one variant is admitted to be non-optimal with a pointer to where a better but slower construction would come from, and on the round-count side, where the honest report is that the bound is attained only in part of the parameter space and remains open elsewhere, including under mechanisms not yet tried.
+
+The reason this matters beyond mathematics is that stated-class optimality and unqualified optimality have opposite effects on a team. The unqualified version stops inquiry: the number is proved, stop thinking. The qualified version tells the next person exactly which assumption to break and roughly what breaking it might be worth. In engineering the class restrictions are usually invisible architectural commitments — that work is batched per round, that every node runs identical logic, that decisions are made from the current snapshot rather than history — and they are exactly the commitments that a performance investigation should be examining, and exactly the ones that "we already proved this optimal" prevents anybody from examining.
+
+So when reporting a bound, name the shape you assumed and put the restriction in the claim, not in a footnote. And when receiving someone else's optimality claim, the first question is what family it quantifies over, because the answer tells you whether you are looking at a wall or at a door somebody drew a wall on.
+
+**Source:** [Reaching Approximate Agreement in the Presence of Faults](../works/reaching-approximate-agreement-in-the-presence-of-faults.md) — the closing summary, which restricts the convergence-rate lower bounds to algorithms of the publish-and-combine shape and to combining functions with the conservative property, then poses the removal of each restriction as an open question alongside the admission that the tolerance parameter for one of the two settings is not optimal. [Early Stopping in Byzantine Agreement](../works/early-stopping-in-byzantine-agreement.md) — the open-problems section, which reports that the stopping-time bounds are attained only for part of the parameter range, and leaves open whether other mechanisms or restricted failure models change that.

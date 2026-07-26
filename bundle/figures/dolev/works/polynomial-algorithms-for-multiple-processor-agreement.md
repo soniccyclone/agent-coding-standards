@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://www.cs.huji.ac.il/~dolev/pubs/p401-dolev.pdf — self-archived PDF on Dolev's own HUJI publications page, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A tight bound on one resource says nothing about the resource that decides feasibility](../lessons/count-the-resource-the-machine-actually-spends.md)
+- [A mechanism you depend on is a bundle of properties; name them and you may not need the mechanism](../lessons/name-the-properties-a-mechanism-buys-then-rebuild-them.md)
+- [What a participant cannot tell apart is the whole argument](../lessons/what-participants-cannot-distinguish-bounds-every-protocol.md)
+- [You will never learn who failed; scope correctness to a budget instead](../lessons/correctness-holds-inside-a-fault-budget.md)
+- [Let the failure budget do the filtering, so no step ever needs to know which inputs were lies](../lessons/build-operators-safe-against-any-budgeted-adversary.md)
