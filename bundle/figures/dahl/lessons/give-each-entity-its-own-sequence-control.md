@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Give every entity its own place in its own text, so a life spread over time still reads as one story"
+figure: dahl
+works: [simula-an-algol-based-simulation-language, simula-67-common-base-language]
+axes: [cognitive-load, expressiveness, parallelizability]
+subdomains: [distributed-systems-and-concurrency, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Give every entity its own place in its own text, so a life spread over time still reads as one story
+
+**Lesson:** When something in a system acts at widely separated moments, there are two ways to write it down. Either you scatter its behavior across handlers, each triggered by an occasion and each having to reconstruct from stored fields where the entity had got to, or you give the entity a single body of text read from top to bottom, plus a remembered position in that text where it will resume. The second way is what a private sequence control gives you. The entity's code then narrates its whole life in order: incubate, become contagious, try each day for treatment, recover, leave. Nothing in the text has to mention that other entities ran in between, and no explicit state variable has to encode "which stage am I in," because the resumption point *is* that variable, maintained by the language rather than by the programmer.
+
+The cognitive-load argument is the whole point, and it is sharper than a preference for readability. Hand-encoded stage variables are a duplicate representation of control flow: one copy in the branching structure of the handler, one copy in the field, and every bug in this class comes from the two copies disagreeing. Folding position-in-text into the entity removes the duplicate outright. It also removes the temptation to flatten a naturally nested activity into a state machine, since a suspension can occur deep inside a subroutine or an inner block and the remembered position carries the whole nesting with it, not merely a line number.
+
+Doing this requires separating two things that a stack-based language welds together: where a name means something, and when a body runs. Simula splits them explicitly. An instance is *local to* whatever text declares it, which fixes name resolution for good, and independently it is attached, detached, or finished, which describes its relation to whoever is currently running. A detached entity keeps its own position in its own text while its non-local names continue to resolve exactly where they were declared. Once those two axes are separate, an entity can be suspended without being homeless, and control can move between peers instead of only up and down a call chain. The relationship between such entities is symmetric, unlike the caller/callee asymmetry of procedures, which is what makes a mutual protocol between two of them expressible rather than something one of them has to drive.
+
+A programmer who has absorbed this stops accepting callback-shaped code as the natural consequence of interleaved execution, and treats it instead as a symptom of a missing per-entity control point. The practical test to apply to a design: can I read one entity's file and see its entire lifetime in order? If the answer requires cross-referencing a dispatch table against a status enum, the language or the design has taken the entity's sequence control away, and the cost will be paid on every future change to that lifetime.
+
+**Source:** [SIMULA - an ALGOL-Based Simulation Language](../works/simula-an-algol-based-simulation-language.md) — the sequence-control section, which introduces the reactivation point as the mechanism letting actions at distant times be strung into one coherent sequence, and argues each process may be thought of as owning a local control that stands in for the main one while it is inactive. Also [SIMULA 67 Common Base Language](../works/simula-67-common-base-language.md), whose sequencing chapter formalizes the split by giving attachment state and textual locality as independent properties of a block instance.
