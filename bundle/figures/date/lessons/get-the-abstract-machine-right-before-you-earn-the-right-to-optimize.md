@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Get the abstract machine right before you earn the right to optimize"
+figure: date
+works: [databases-types-and-the-relational-model-the-third-manifesto, an-introduction-to-database-systems]
+axes: [cognitive-load, hardware-affinity]
+subdomains: [databases-and-data-management, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Get the abstract machine right before you earn the right to optimize
+
+**Lesson:** Date separates two artifacts that are routinely designed as one. There is the abstract machine a user reasons against, consisting of the kinds of thing that exist, the operators over them, and the rules constraining legal states; and there is the physical realization of that machine on real storage. His claim is that these must be specified in different languages, by different documents, and that the second must be invisible in the first. The payoff is stated as a proportionality rather than a benefit: the degree to which a system delivers independence from physical change is exactly the degree to which it kept implementation concerns out of its model. Every implementation concept admitted into the model, however small, spends some of that independence permanently.
+
+What makes the rule useful rather than pious is that Date treats it as a test he can run on concrete proposals, and it keeps failing them. A construct that lets a client observe or depend on storage order fails. A construct that reveals whether something is stored or derived fails, since which relations a system chooses to materialize is an engineering decision that should be revisable overnight without touching a line of application code. A pointer-valued field fails, because addresses exist only because variables occupy storage. He also runs the test in the other direction and finds that the failure is often the system's, not the model's: implementations that store data in a layout closely mirroring the user's logical picture push their users toward mangling that picture for performance, so the model gets blamed for costs the mapping layer should have absorbed. The honest conclusion is that a weak mapping layer is a missing capability in the product, not evidence against the abstraction.
+
+Refusing to talk about implementation is not the same as being indifferent to it. Date is explicit that a model whose implementability has not been thought through is worthless, and he argues that a cleaner model is typically easier to implement well than an accreted one, because the implementer inherits invariants they can exploit instead of edge cases they must preserve. What he refuses is letting implementation convenience vote on the model's contents while the model is still being decided. Debugging and explain-style facilities that deliberately expose the machinery are fine, and are simply not part of the abstract machine.
+
+The working habit this produces is ordering. Settle what the user can say and what must always be true before settling how anything is stored, and when a performance problem arrives, look first for a richer mapping between the two layers rather than for a leak from the lower one into the upper. A programmer who believes this reads any proposal phrased as "expose X so callers can go faster" as a request to spend a durable property for a temporary gain, and asks what mapping work would buy the same speed without the exposure.
+
+**Source:** [Databases, Types, and the Relational Model: The Third Manifesto](../works/databases-types-and-the-relational-model-the-third-manifesto.md) — the model-versus-implementation distinction opening the book, its restatement as the proscription against internal-level constructs, and the deliberate refusal to say which relation variables are physically stored. Also [An Introduction to Database Systems](../works/an-introduction-to-database-systems.md), where the informal look at relational systems insists tables are the logical structure only, and the surrounding discussion of storage mappings argues that products which map one logical table to one stored file are the reason the promised independence goes undelivered.

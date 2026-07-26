@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A difference in logic is never a difference in taste"
+figure: date
+works: [databases-types-and-the-relational-model-the-third-manifesto, an-introduction-to-database-systems]
+axes: [cognitive-load, verifiability]
+subdomains: [databases-and-data-management, programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# A difference in logic is never a difference in taste
+
+**Lesson:** Date's organizing conviction is that once a system is a formal system, any distinction that is logical in character is load-bearing, and collapsing two logically distinct things into one word is not a shortcut but a defect that will be paid for later. He works this out as a discipline: before arguing about a design, enumerate the distinctions the argument depends on and give each one its own name. A value and a variable are different in kind. A value and an occurrence of that value somewhere in memory are different again, and the bit pattern that encodes the occurrence is a third thing. A type and a variable are different. A thing and a picture of that thing are different, so a table drawn on a page is not the relation it depicts. None of these look urgent in isolation; every one of them is a place where a widely repeated confusion in the literature and in shipped products can be traced back to a missing word.
+
+The inverse claim is what gives the discipline its bite: differences that are not logical are small. Syntax matters for humans and should be chosen well, but a syntactic preference never settles a design question and must never be allowed to override a logical one. This gives a triage rule for arguments. If the dispute is over spelling, decide it quickly on human-factors grounds and move on. If the dispute is over whether two things are the same thing, stop and settle it, because everything built on top will inherit the answer. Date's practice of coining deliberately awkward vocabulary follows from this: he introduces a separate term for a relation variable precisely because the field's habit of saying "relation" for both the variable and its current value had been quietly wrecking discussions of update and of integrity for decades, since constraints and updates apply to the variable and never to the value.
+
+The same argument explains his hostility to inherited fuzzy words. A word that means an occurrence in one sentence, a type in the next, and a stored layout in the third cannot appear in a proof or a specification, so a formal treatment has to displace it with terms whose referents are pinned down, even at the cost of sounding pedantic to practitioners who are comfortable with the fog. Precision here is not fastidiousness; it is what makes the rest of the reasoning checkable by someone other than the author.
+
+A programmer who has absorbed this treats every ambiguous term in a design document as an open bug and refuses to review the document until the term is split or defined. When two features seem to duplicate each other, the first question is whether they differ logically or only in surface form, because the two answers demand opposite responses: unify the second, keep the first apart forever. And when a long-running argument refuses to converge, the diagnosis to reach for first is that the parties are using one word for two things.
+
+**Source:** [Databases, Types, and the Relational Model: The Third Manifesto](../works/databases-types-and-the-relational-model-the-third-manifesto.md) — the guiding-principles section of the opening chapter and the sequence of crucial distinctions that follows it, which sets up model against implementation, value against variable, and value against appearance before any technical content begins. Also [An Introduction to Database Systems](../works/an-introduction-to-database-systems.md), where the same insistence drives the early chapter's explanation of why the relational vocabulary deliberately replaced the field's familiar but overloaded words, and its introduction of a distinct term for a relation-valued variable.

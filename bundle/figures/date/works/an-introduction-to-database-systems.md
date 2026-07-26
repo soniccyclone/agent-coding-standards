@@ -18,4 +18,13 @@ tags: [work]
 **Host:** third-party-rehost — MBIT (an engineering college) course-materials upload, not Date's own site or Addison-Wesley/Pearson.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A difference in logic is never a difference in taste](../lessons/a-difference-in-logic-is-never-a-difference-in-taste.md)
+- [Get the abstract machine right before you earn the right to optimize](../lessons/get-the-abstract-machine-right-before-you-earn-the-right-to-optimize.md)
+- [Publish a representation you are not obliged to store](../lessons/publish-a-representation-you-are-not-obliged-to-store.md)
+- [Data is a body of claims, not a pile of records](../lessons/data-is-a-body-of-claims-not-a-pile-of-records.md)
+- [One way to say it means one set of operators](../lessons/one-way-to-say-it-means-one-set-of-operators.md)
+- [An address is not an identity](../lessons/an-address-is-not-an-identity.md)
+- [Grow along an orthogonal axis, not by enlarging the core](../lessons/grow-along-an-orthogonal-axis-not-by-enlarging-the-core.md)
+- [Build one expression language and spend it everywhere](../lessons/build-one-expression-language-and-spend-it-everywhere.md)
+- [Choose the grain of your operators and you choose who owns performance](../lessons/choose-the-grain-of-your-operators-and-you-choose-who-owns-performance.md)
+- [Learn the theory, then judge the product against it](../lessons/learn-the-theory-and-judge-the-product-against-it.md)

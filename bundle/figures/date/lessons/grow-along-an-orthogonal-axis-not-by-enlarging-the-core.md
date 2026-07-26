@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Grow along an orthogonal axis, not by enlarging the core"
+figure: date
+works: [databases-types-and-the-relational-model-the-third-manifesto, an-introduction-to-database-systems]
+axes: [primitive-count, expressiveness]
+subdomains: [databases-and-data-management, programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Grow along an orthogonal axis, not by enlarging the core
+
+**Lesson:** The problem Date and Darwen set themselves was a genuine capability gap: systems needed to hold images, documents, geometry, recordings, routes, and everything else that the era's products could not. The standard responses were to extend the core model, to correct it, or to replace it. Their answer was that the gap lay on an axis the core model had always left open. The core says that fields have types; it never says which types, nor what properties those types must have. Type theory and the relational model are therefore independent, and the entire demand for richer data is a demand for richer types, satisfiable without touching a single relational rule. What had been sold as a new hybrid model turns out to be the old model actually implemented, and a document format that a later wave of enthusiasts proposed as a successor is on this reading just another type.
+
+The generalizable move is the diagnostic that precedes it. Confronted with pressure to extend a formalism, ask which dimension the missing capability actually lives on, and whether the formalism is already silent on that dimension. Silence is capacity. A core that declines to enumerate its types has left a growth axis open by construction, and filling it costs nothing in primitives, breaks no existing reasoning, and needs no migration. Extending the core, by contrast, invalidates everything previously proven about it. Date's own layering follows the same discipline: rules that come from the relational model are kept separate from rules that come from elsewhere but are compatible with it, and the inheritance model is a conditional attachment rather than a mandatory part, so a system may decline it entirely without ceasing to conform.
+
+He also insists on a test that keeps this honest, because proposals are rarely labeled accurately. Does the proposed feature reduce, in general, to a combination of operators that already exist? If so it is shorthand, and shorthand is cheap and welcome. If no general reduction exists, then whatever its advocates call it, it is an extension, and it must be argued for on those terms. His analysis of a proposal for nesting collections inside fields lands exactly there: any single instance of the proposed operator can be simulated, but the general form requires unbounded recursion through the nesting and therefore is not shorthand at all. The advocates were right that they were extending the model; what they were wrong about was that this was free.
+
+A programmer holding this position responds to a feature request by first locating the axis it belongs to and checking whether the existing design is already agnostic there, filling the gap with a new value or type rather than a new construct wherever possible. And before accepting any addition described as convenience, they demand the reduction: exhibit it in general, or admit that the core is being changed.
+
+**Source:** [Databases, Types, and the Relational Model: The Third Manifesto](../works/databases-types-and-the-relational-model-the-third-manifesto.md) — the opening chapter's argument that the desirable object-flavored features are orthogonal to the relational model and that no extension, correction, or subsumption is needed, together with the types chapter's treatment of documents and other complex values as ordinary types, and the separation of relational from other-orthogonal rules that structures the whole proposal. Also [An Introduction to Database Systems](../works/an-introduction-to-database-systems.md), whose discussion of nested-relation proposals draws the line between an operator that is shorthand for existing ones and one that genuinely extends the model.

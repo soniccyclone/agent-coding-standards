@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "An address is not an identity"
+figure: date
+works: [databases-types-and-the-relational-model-the-third-manifesto, an-introduction-to-database-systems]
+axes: [verifiability, cognitive-load]
+subdomains: [databases-and-data-management, programming-languages-and-semantics, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# An address is not an identity
+
+**Lesson:** Date's argument against putting references into stored data is not a preference for one linking style over another; it is a derivation. An address exists because something occupies storage, so addresses designate variables, never values. A data model built entirely from values and from variables of exactly one kind therefore has no legitimate place for an address-valued field: admitting one smuggles in a second, undeclared species of variable, addressable at a granularity the model never defined, and every rule the model states about what may be updated and what must hold silently ceases to be exhaustive. The construct is not merely inelegant, it puts the system outside the theory that was supposed to justify its behavior.
+
+He is careful to distinguish this from naming, and the distinction is the useful part. A name is a symbol attached to a thing and visible to whoever uses it; an address locates the thing and, whatever indirection intervenes, can always be reasoned about as though it were a machine address. Names are admissible in data, and are unavoidable in a catalog that has to describe the system's own contents. What makes them safe is that a name refers symbolically and can be resolved through the ordinary machinery, whereas a reference invites traversal, and traversal reintroduces exactly the hand-navigated, loop-and-follow style that value-based access was adopted to escape. Even so he stays conservative, declining to supply a general resolution operator, on the grounds that a type whose values name variables resembles a pointer type closely enough to be worth keeping on a short leash.
+
+The rationalization he expects to encounter is performance: following a reference beats computing a match. His answer is that this compares a model-level construct to an implementation-level cost, which is a category confusion, and the choice of how to satisfy a value-based match is precisely the sort of decision that should be left below the interface where it can be changed. Physical structures may certainly be linked; making the linkage visible to clients is the error. The uniformity principle carries the rest of the argument: if information is carried in one way only, in visible values, then reasoning about it needs one vocabulary, whereas a mixture of values and references needs two and interoperates badly with itself.
+
+A programmer who works this way builds identity out of properties that mean something in the domain and refuses to expose handles whose meaning is only "where this currently lives," reserving those for the inside of a component. When someone proposes a reference field to make a lookup cheaper, the response is to treat it as a request to relocate an optimization upward across the interface, and to ask what the layer below could do instead.
+
+**Source:** [Databases, Types, and the Relational Model: The Third Manifesto](../works/databases-types-and-the-relational-model-the-third-manifesto.md) — the second of the orthogonal proscriptions, which derives the ban on address-valued fields from the fact that only variables have addresses and the model admits only one kind of variable, then separates names from pointers and works through what a resolution facility would and would not cost. Also [An Introduction to Database Systems](../works/an-introduction-to-database-systems.md), whose informal treatment of the relational model states the same requirement as a positive principle about information being carried in exactly one visible form, illustrated by a connection between two tables being represented by a shared value rather than a link.

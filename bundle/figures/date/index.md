@@ -50,3 +50,32 @@ Two items resolved to genuinely public sources, both now `work` files:
   (`self-archived`), alongside the original 1995 SIGMOD Record manifesto paper and several other
   free Third Manifesto-related essays and papers (not pulled in here — this pass stayed close to
   the existing top-10 rather than sweeping that whole page).
+
+## Lessons
+Date's contribution is a method for holding a design accountable to a theory, and every lesson here
+is some form of that. He treats any distinction that is logical in character as load-bearing and any
+that is merely syntactic as cheap, which makes vocabulary an engineering tool rather than a
+courtesy: value against variable, type against variable, model against physical realization. From
+that last split he derives independence from change as a proportionality rather than a benefit — a
+system keeps exactly as much of it as it kept implementation concepts out of its abstract machine —
+and he pairs it with the less obvious complement that hiding everything is also a failure, since a
+type reachable only through operators someone anticipated cannot answer an unanticipated question;
+what must be published is a complete logical representation, possibly several, none of them a
+commitment about storage. His reading of stored data as a body of asserted, exhaustive claims turns
+several perennial design arguments into decidable ones, and supplies the economy at the centre of
+his thinking: things you can name plus assertions about them are both necessary and jointly
+sufficient, so every additional way of representing the same information multiplies the operator
+surface without extending reach. The same accounting powers his refusals — positional access,
+absent values, address-valued fields, and the conflation of a variable with a type each fail either
+the interpretability test or the operator-count test — and it powers his one positive strategy for
+growth: find the axis the core is already silent on and fill it, demanding of every proposed feature
+a general reduction to existing operators or an admission that the core is being changed. Two
+practical corollaries recur. Closure over a data type buys a single expression language that serves
+retrieval, update scope, constraints, derived views, locking, and authorization at once, and is
+rewritable because it is algebraic; and the grain of an operator set decides who owns the access
+path, since a request phrased over whole collections carries no traversal plan for the caller to
+freeze. Underneath all of it is a stance about where authority lives. Principles outlast products,
+so the practitioner's leverage comes from learning the small durable model and using it to audit
+whatever tool is in front of them; and the same relocation applies reflexively, which is why Date
+regards his own earlier text as corrigible and attaches his opinions to arguments that can overturn
+them.
