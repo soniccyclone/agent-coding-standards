@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Pick the abstraction from the property you intend to check, then own the claim that it is faithful"
+figure: emerson
+works: [design-and-synthesis-of-synchronization-skeletons-using-branching-time-temporal-logic, using-branching-time-temporal-logic-to-synthesize-synchronization-skeletons, model-checking-algorithmic-verification-and-debugging]
+axes: [verifiability, cognitive-load, hardware-affinity]
+subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Pick the abstraction from the property you intend to check, then own the claim that it is faithful
+
+**Lesson:** Abstraction is usually taught as a way to organize code, so it gets chosen by module boundaries or by taste. A better selection rule is to let the property you want to establish dictate what survives. If the question is whether two processes can be inside their critical regions simultaneously, then whatever a critical region computes internally is irrelevant, and it should collapse to a single node. Once that collapse happens, an unbounded program becomes a small finite graph and the property becomes decidable. The abstraction is not a convenience laid over the program; it is the thing that makes the question answerable at all, and the property being asked is what tells you where to cut.
+
+The discipline that keeps this honest is naming what the collapse presumes. Squeezing a region of arbitrary sequential computation into one node is only legitimate under stated conditions: that the region always finishes, and that it touches no variable involved in coordination. Written down, those become obligations on any real implementation that claims to be an instance of the abstract skeleton. Left unwritten, they become the place where a verified design and a broken system quietly diverge. Every abstraction is a conditional statement about reality, and the antecedent is the part that fails silently.
+
+This is why the maturity of the field eventually turned on the relation between artifact and model rather than on checking algorithms. Verification always establishes a property of the model; transferring it to the running system requires a semantics-preserving connection between the two, and the difficulty of that connection explains why the technique landed in digital hardware long before software. A circuit description is already a finite logical object, so extracting a faithful model is nearly mechanical. Software requires first pinning down the semantics of a real programming language, and mixed hardware-and-software systems remain hard precisely because nobody knows how to compose models across execution models, interaction mechanisms, and timing granularity without losing faithfulness.
+
+A programmer who takes this on asks two questions of every simplified model, whether it is a state machine, a type, or a test double: which property is this shaped to answer, and what must be true of the real thing for the answer to carry over? The second question is the one that gets skipped, and it is where confident, verified nonsense comes from.
+
+**Source:** [Design and Synthesis of Synchronization Skeletons Using Branching Time Temporal Logic](../works/design-and-synthesis-of-synchronization-skeletons-using-branching-time-temporal-logic.md) — the model of parallel computation, where code regions are deliberately left uninterpreted so that only inter-region transitions remain. [Using Branching Time Temporal Logic to Synthesize Synchronization Skeletons](../works/using-branching-time-temporal-logic-to-synthesize-synchronization-skeletons.md) — the same section in the journal treatment, which states outright the two assumptions about sequential regions that license eliminating them. [Model Checking: Algorithmic Verification and Debugging](../works/model-checking-algorithmic-verification-and-debugging.md) — Sifakis's discussion of building executable models, faithfulness as a checkable semantic relation, and why hardware yielded to the method earlier than software.

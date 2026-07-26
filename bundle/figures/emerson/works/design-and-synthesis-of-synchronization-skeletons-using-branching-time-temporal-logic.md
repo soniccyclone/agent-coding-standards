@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~emc/papers/Conference%20Papers/Design%20and%20synthesis%20of%20synchronization%20skeletons%20using%20branching%20time%20temporal%20logic.pdf — self-archived PDF on co-author Edmund Clarke's own CMU faculty page, live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When the state space is finite, stop constructing proofs and start deciding truth](../lessons/check-the-model-instead-of-constructing-the-proof.md)
+- [Pick the abstraction from the property you intend to check, then own the claim that it is faithful](../lessons/the-abstraction-you-check-is-a-claim-about-the-real-artifact.md)
+- [Extra expressive power in a specification notation is billed at checking time, so buy the weakest one that says what you mean](../lessons/every-gain-in-what-a-notation-can-say-is-charged-at-checking-time.md)
+- [A recursive definition has two solutions, and which one you meant is the difference between an obligation and a constraint](../lessons/two-kinds-of-recurrence.md)
+- [Treat global behavior as primary and each component as a projection of it; shared state is the price of projecting](../lessons/local-processes-are-projections-of-a-global-behavior.md)

@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Extra expressive power in a specification notation is billed at checking time, so buy the weakest one that says what you mean"
+figure: emerson
+works: [design-and-synthesis-of-synchronization-skeletons-using-branching-time-temporal-logic, model-checking-algorithmic-verification-and-debugging]
+axes: [expressiveness, verifiability, primitive-count]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics, algorithms-and-complexity]
+tags: [lesson]
+---
+# Extra expressive power in a specification notation is billed at checking time, so buy the weakest one that says what you mean
+
+**Lesson:** When a notation cannot quite say what you want, the reflex is to extend it. That reflex treats expressive power as free, and it is not. The temporal logic used here admits a checking procedure whose cost is a low-order polynomial in the size of the system and the size of the property. Relax one structural restriction, allowing a path quantifier to range over an arbitrary combination of linear-time claims rather than a fixed small pattern, and the checking problem becomes NP-hard. The same finite graph, the same intuitive kind of question, and the tractability is gone. The boundary between cheap and intractable does not sit where intuition puts it, and it is a property of the notation, not of the system being checked.
+
+That makes the design of a specification language an exercise in restriction rather than accumulation. The right question is not what would be nice to be able to express, but which small set of constructs covers the properties you actually need, because everything admitted beyond that set is paid for on every future check. The reason a handful of temporal modalities is enough is that they compose: a small basis of operators combines into an effectively unbounded vocabulary of assertions, which is what lets a low primitive count coexist with real coverage.
+
+This is a pricing rule, not a minimality rule, and the two get confused. Nothing here says pick the poorest notation available; a notation that cannot state your property is worth nothing at any speed, and that constraint is prior (see the companion lesson on reach as a gate). What the pricing rule says is that once several candidates all clear the bar of saying what you mean, the extra reach carried by the richer ones is not a free option held in reserve. It is a standing charge levied on every check you will ever run, including the checks against properties that never needed the extra reach. So the sequence is: eliminate every notation that cannot express the properties you need, then take the weakest survivor rather than the most capable one.
+
+The wider habit is to distrust any claim that added power is free because it is optional. Optional-at-use-time is not optional-at-cost-time. A query language that admits recursion, a type system that admits arbitrary computation at the type level, a configuration format that admits general evaluation — each pays for its ceiling on every input, because the checker, the optimizer, or the reasoner must be built for the worst case the grammar permits. Whenever a feature request would widen a notation, the question to ask is what the analysis of that notation currently guarantees, and whether the widening keeps it.
+
+**Source:** [Design and Synthesis of Synchronization Skeletons Using Branching Time Temporal Logic](../works/design-and-synthesis-of-synchronization-skeletons-using-branching-time-temporal-logic.md) — the model-checking section's complexity bound followed immediately by the hardness result showing that a modest extension to the logic makes checking NP-hard, via a reduction from directed Hamiltonian path. [Model Checking: Algorithmic Verification and Debugging](../works/model-checking-algorithmic-verification-and-debugging.md) — Emerson's efficiency discussion, where the trade-off of expressive power against efficiency is stated as a general expectation about temporal logics, not just about the one extension the earlier paper priced.

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Treat global behavior as primary and each component as a projection of it; shared state is the price of projecting"
+figure: emerson
+works: [using-branching-time-temporal-logic-to-synthesize-synchronization-skeletons, design-and-synthesis-of-synchronization-skeletons-using-branching-time-temporal-logic]
+axes: [parallelizability, cognitive-load, verifiability]
+subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Treat global behavior as primary and each component as a projection of it; shared state is the price of projecting
+
+**Lesson:** Concurrent systems are normally built from the bottom: write each process, add locks and flags where they seem to be needed, then reason about the combined behavior if anyone reasons about it at all. The inverted construction here starts from the behavior of the whole and derives the parts. Given a consistent specification, a model of it is a graph of global states with labelled transitions, and that graph *is* the intended system behavior. Each individual process is then obtained by projection: keep only that process's own regions, draw a transition wherever some global transition moved it between regions, and take as the guard on that transition the disjunction of the other participants' conditions under which such a global move existed. Guards are not invented; they are read off.
+
+The consequence worth internalizing concerns shared state. Projection loses information. Two distinct global states can flatten onto the same tuple of local regions, at which point no participant can tell them apart, and behavior that depended on the distinction becomes impossible to reproduce. The repair is to add an auxiliary variable whose only job is to restore the distinction that projection destroyed, set on entry to each of the colliding states. That reframes coordination variables entirely. A turn flag or a shared counter is not a design decision to be argued about on grounds of taste; it is a measured deficit, the exact amount of extra visible state that local views need in order to reconstruct a global behavior they cannot otherwise distinguish. If the projection loses nothing, no auxiliary state is needed at all, and the requirements alone determined that.
+
+Two working habits follow. First, when specifying a concurrent system, describe the joint behavior you want before describing any participant, because guards derived from a joint behavior are correct by construction while guards invented per-process require a global argument afterward. Second, when you find yourself reaching for another shared variable, ask which pair of global situations your components currently cannot distinguish. That question has a definite answer, and the answer tells you the minimum state to add rather than leaving you to guess.
+
+**Source:** [Using Branching Time Temporal Logic to Synthesize Synchronization Skeletons](../works/using-branching-time-temporal-logic-to-synthesize-synchronization-skeletons.md) — the factoring-out section and the mutual exclusion walkthrough, where the model is read as a global flowgraph, per-process skeletons are extracted by projection with guards drawn from the other process's state, and a turn variable is introduced solely because two global states carried identical propositional labels. [Design and Synthesis of Synchronization Skeletons Using Branching Time Temporal Logic](../works/design-and-synthesis-of-synchronization-skeletons-using-branching-time-temporal-logic.md) — the earlier statement of the same extraction procedure, including the general rule for introducing auxiliary labels when a label occurs at more than one node.
