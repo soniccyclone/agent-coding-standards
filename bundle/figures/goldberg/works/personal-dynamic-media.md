@@ -18,4 +18,6 @@ tags: [work]
 **Source:** https://www.newmediareader.com/book_samples/nmr-26-kay.pdf — reprint hosted as a sample chapter on the official companion site for "The New Media Reader" (Wardrip-Fruin & Montfort, eds., MIT Press, 2003), which anthologized the original piece; verified live PDF, third-party rehost rather than an author's own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When you cannot know what will be built, build the substrate and hand the specification job to whoever has the problem](../lessons/design-the-substrate-not-the-feature-list.md)
+- [Treat response time and bandwidth as properties of what can be thought, not as performance numbers to tune later](../lessons/latency-and-bandwidth-are-semantic-properties.md)
+- [Look for the one description scheme that makes unrelated activities turn out to be the same activity](../lessons/one-vocabulary-across-domains-exposes-shared-structure.md)

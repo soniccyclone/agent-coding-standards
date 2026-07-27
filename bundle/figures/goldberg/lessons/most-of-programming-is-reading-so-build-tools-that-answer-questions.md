@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Most of programming is finding out what already exists, so treat structural questions as first-class queries the system must answer"
+figure: goldberg
+works: [smalltalk-80-the-interactive-programming-environment]
+axes: [cognitive-load, verifiability]
+subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Most of programming is finding out what already exists, so treat structural questions as first-class queries the system must answer
+
+**Lesson:** This book makes an empirical claim about what programming in a mature system actually consists of: overwhelmingly, small extensions and adjustments to code that is already there. The typical act is to search for something that already behaves nearly the way you need, then specialize or adapt it. If that is true — and it is stated as observed practice, not aspiration — then the dominant cost in programming is not writing but locating and understanding, and a system's most valuable feature is its answerability. This reframes tool design. The interesting tools are not editors; they are the ones that answer questions about structure, and the questions are always about relations rather than about files.
+
+The specific set of questions this environment answers is worth internalizing as a checklist, because each one corresponds to a relation that is invisible in source text: who sends this request, who implements it, what does this piece of code send onward, and who touches this variable or constant. Each query yields a working, editable collection of the places that satisfy it — not a list of file positions but the actual code, modifiable in place. Notice which direction these run. A source file tells you what a piece of code *calls*; it cannot tell you what calls *it*, or who else answers the same request, and those are precisely the questions you need answered before changing anything. The book also pairs two different kinds of evidence explicitly: an operation's comment tells you what its author intended, while its senders show you what it is actually used for, and it recommends reading both. Intent and practice diverge, and the environment lets you see the divergence rather than trusting the more convenient one.
+
+There is a deeper point behind this, visible in a detail: when the stored program text is unavailable, the system reconstructs readable definitions from the compiled form instead of going silent — losing the commentary and the local names, but keeping the structure. That is a statement about where the authoritative description of the system lives. It is not in a directory of text that may be lost or stale; the system is its own reference, and everything a tool needs to answer a structural question can be recovered from the objects that are actually running.
+
+A programmer who takes this seriously invests in navigability as a first-order feature rather than an afterthought, and judges a codebase by which questions it can answer mechanically. Practically, before writing anything new, the first move becomes a query for existing near-solutions; and before changing anything, a query for everyone who depends on it. The related discipline the book urges is to specialize rather than modify what you did not write, for two reasons it names — a change concentrated in one new piece is trackable, and it survives the next release of everything underneath it.
+
+**Source:** [Smalltalk-80: The Interactive Programming Environment](../works/smalltalk-80-the-interactive-programming-environment.md) — the chapters on finding information about messages and methods, which define the senders, implementors, and sent-messages queries and the editable result sets they produce and recommend reading an operation's comment alongside its actual senders; the note on decompiling definitions when stored sources are inaccessible; and Appendix 2, which reports that most work in the system consists of small extensions to existing code and argues for subclassing over modifying system classes.

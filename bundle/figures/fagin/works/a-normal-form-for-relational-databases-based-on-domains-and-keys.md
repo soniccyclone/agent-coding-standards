@@ -17,4 +17,5 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2021-08-06) of Fagin's self-archived PDF, formerly at researcher.watson.ibm.com/researcher/files/us-fagin/tods81.pdf. HTTP 200 verified via curl; PDF content confirmed by direct read (title page, abstract, and body match the published paper).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Define goodness in terms of the constraints your mechanism already enforces for free](../lessons/define-goodness-in-terms-of-what-the-mechanism-already-enforces.md)
+- [A criterion with no theory of legal moves can be satisfied by relocating the difficulty](../lessons/a-criterion-with-no-theory-of-legal-moves-can-be-satisfied-by-relocating-the-difficulty.md)

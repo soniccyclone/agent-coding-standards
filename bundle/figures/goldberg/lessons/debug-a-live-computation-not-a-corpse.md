@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Debug a computation that is still alive: make the halted state an object you can question, edit, and resume"
+figure: goldberg
+works: [smalltalk-80-the-interactive-programming-environment, smalltalk-80-the-language-and-its-implementation]
+axes: [cognitive-load, verifiability]
+subdomains: [programming-environments-and-object-systems, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Debug a computation that is still alive: make the halted state an object you can question, edit, and resume
+
+**Lesson:** There are two possible responses to a failure. One terminates the computation and hands you a report — a message, perhaps a printed trace — from which you reconstruct what was happening. The other suspends the computation and hands you the computation itself, still intact, with everything it knew still reachable. This environment does the second, and the difference is larger than convenience. In the first model you debug a description of an event that is over; every question you did not think to ask before it died requires reproducing it. In the second the event is still in progress, so questions can be asked in any order, including ones that only occur to you after seeing an answer.
+
+What that makes possible is a specific set of moves this book walks through. The chain of requests that are still unfinished is a list you can select from, and choosing an entry shows the code that is mid-execution with the exact point of suspension marked. For any entry you can examine the receiver's internals and the local values that were in scope *at that frame* — not globally, but in that particular activation. You can evaluate new expressions in that frame's context, which means hypotheses can be tested against the real state rather than a reconstruction of it. You can correct the offending definition and continue. You can advance the computation one step at a time and watch state change. And you can plant a deliberate suspension in code to get a hold of a computation at a chosen moment rather than only at failures. Each of these is a direct consequence of the halted computation being an ordinary object rather than a runtime privilege.
+
+The companion volume supplies the mechanism, and the mechanism is the part worth stealing: failure is delivered as an ordinary request *to the failing object*, saying it did not understand what was asked. Because the report travels the same channel as everything else, it can be intercepted, refined, or specialized by any kind of object, and the whole family of failure conditions — an unfilled obligation, a prohibited inherited operation, a machine-level operation declining — arrives the same way. There is no separate error subsystem with its own rules, and therefore nothing to learn about failure beyond what you already know about ordinary behavior.
+
+A programmer who has worked this way stops accepting the reconstruct-from-a-log workflow as normal, and asks of any system: at the moment something goes wrong, what is still alive and what can I ask it. The design consequences are concrete — keep enough state addressable at failure time to answer unanticipated questions, deliver failures through the system's ordinary mechanisms so they can be specialized, and treat "fix and continue" as a capability worth designing for rather than a curiosity.
+
+**Source:** [Smalltalk-80: The Interactive Programming Environment](../works/smalltalk-80-the-interactive-programming-environment.md) — Part Four's chapters on interrupt notification, examining and debugging execution state (the stack of unfinished requests, per-frame inspection of receiver and locals, and evaluation inside an interrupted frame), deliberate breakpoints, and single-stepping. Also [Smalltalk-80: The Language and Its Implementation](../works/smalltalk-80-the-language-and-its-implementation.md) — the programming-interface chapter's account of a suspended process presented as either a brief notice or a full debugger, and the kernel-protocol treatment of failure as a request sent to the object that failed.

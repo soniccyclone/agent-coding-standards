@@ -18,4 +18,8 @@ tags: [work]
 **Source:** https://cs.brown.edu/courses/cs161/papers/stm.pdf — live PDF, hosted on Brown University's own CS course-materials site (institutional, same institution as the author, not a personal page).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Separate the part that must be correct from the part that must be tuned, and let only the tuned part be replaceable](../lessons/separate-the-mechanism-that-is-correct-from-the-policy-that-makes-progress.md)
+- [Guarantees are not a ladder to climb: decompose one into its clauses and keep only the clause that is load-bearing](../lessons/decompose-a-guarantee-and-keep-only-the-clause-you-need.md)
+- [When the machine's atomic unit is narrower than your invariant, restructure the data until the invariant fits behind one reference](../lessons/group-an-invariant-behind-one-reference-when-the-atomic-unit-is-too-narrow.md)
+- [Shrink what you hold before getting clever about arbitrating collisions](../lessons/shrink-the-window-before-arbitrating-the-collisions.md)
+- _also read as a second source for_ [If your code may be run speculatively, it must be defined on states that could never legally occur](../lessons/speculative-execution-demands-code-that-is-total-over-nonsense.md) _and_ [Let the system own correctness and the programmer own cost: write sequential code, mechanize the concurrency](../lessons/write-sequential-code-and-let-the-system-own-concurrency.md)

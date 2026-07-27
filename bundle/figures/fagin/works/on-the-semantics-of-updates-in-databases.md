@@ -18,4 +18,9 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2021-08-06) of Fagin's self-archived PDF, formerly at researcher.watson.ibm.com/researcher/files/us-fagin/pods83.pdf. HTTP 200 verified via curl; PDF content confirmed by direct read (title page and full 14-page text match).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Treat a change request as a claim about the world, not as a prescribed new state](../lessons/treat-a-change-request-as-a-claim-not-as-a-prescribed-state.md)
+- [Several equally good answers is a fact to record, not an error to raise](../lessons/several-equally-good-answers-is-a-fact-to-record-not-an-error-to-raise.md)
+- [What you stored and what merely follows from it are not interchangeable](../lessons/what-you-stored-versus-what-merely-follows-is-a-semantic-distinction.md)
+- [Expose the tie-breaker as declarative data the domain owner controls](../lessons/expose-the-tie-breaker-as-declarative-data-not-engine-policy.md)
+- [Turn a relation between two structures into a property of one bigger structure](../lessons/turn-a-relation-between-two-structures-into-a-property-of-one.md)
+- [The shape of your proof is feedback on your definitions](../lessons/the-shape-of-your-proof-is-feedback-on-your-definitions.md)

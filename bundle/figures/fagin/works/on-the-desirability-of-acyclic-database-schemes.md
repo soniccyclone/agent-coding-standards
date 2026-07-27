@@ -18,4 +18,6 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2021-08-06) of Fagin's self-archived PDF, formerly at researcher.watson.ibm.com/researcher/files/us-fagin/jacm83a.pdf. HTTP 200 verified via curl; PDF content confirmed by direct read.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When unrelated wishes turn out to be one condition, keep every form of it](../lessons/keep-every-equivalent-form-of-a-condition-because-each-does-a-different-job.md)
+- [Design into the shape where local checks certify global properties](../lessons/design-into-the-shape-where-local-checks-certify-global-properties.md)
+- [The static shape of a model decides which execution costs are even possible](../lessons/the-static-shape-of-a-model-decides-what-execution-costs-are-possible.md)

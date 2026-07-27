@@ -17,4 +17,9 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2021-08-06) of Fagin's self-archived PDF, formerly hosted at researcher.watson.ibm.com/researcher/files/us-fagin/tods77.pdf — the live domain is now dead, so the Wayback capture is used; the snapshot's byte-for-byte content matches an independently found third-party course mirror, confirming integrity. HTTP 200 verified via curl.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An arbitrary distinction in your constraint vocabulary is a defect in the vocabulary](../lessons/an-arbitrary-distinction-in-your-vocabulary-is-a-defect-in-the-vocabulary.md)
+- [State a constraint so that it coincides exactly with the operation it licenses](../lessons/state-the-constraint-so-it-coincides-with-the-operation-it-licenses.md)
+- [Split a structure only where a constraint forces it, never as far as it will go](../lessons/split-a-structure-only-where-a-constraint-forces-it.md)
+- [When the goodness test passes a bad design, widen the vocabulary rather than the rulebook](../lessons/when-the-goodness-test-passes-a-bad-design-widen-the-vocabulary.md)
+- [Check how a property behaves under the operations you plan to apply to it](../lessons/a-property-of-the-whole-need-not-be-a-property-of-the-part.md)
+- [An equivalence extends no further than its proof, so attack the obvious next step](../lessons/an-equivalence-extends-no-further-than-its-proof.md)

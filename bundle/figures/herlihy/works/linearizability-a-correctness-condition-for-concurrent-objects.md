@@ -18,4 +18,7 @@ tags: [work]
 **Source:** http://www.cs.cmu.edu/~wing/publications/HerlihyWing90.pdf — live PDF, self-archived on Jeannette Wing's own CMU CS publications page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Convert the concurrent question into a sequential one, and let the data type's meaning pay for the concurrency](../lessons/reduce-concurrent-correctness-to-a-sequential-question.md)
+- [Insist that a correctness property hold object by object, or you have bought a global scheduler without noticing](../lessons/insist-the-correctness-property-be-local.md)
+- [A pure safety condition can quietly forbid progress; audit what your consistency contract makes impossible](../lessons/a-safety-condition-can-silently-cost-you-liveness.md)
+- [While operations are in flight, an object's meaning is a set of possible values, not a value](../lessons/in-flight-state-is-a-set-of-possibilities-not-a-value.md)

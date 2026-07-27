@@ -17,4 +17,7 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2021-08-06) of Fagin's self-archived PDF, formerly at researcher.watson.ibm.com/researcher/files/us-fagin/ibmj77.pdf. HTTP 200 verified via curl; PDF content confirmed by direct read (title page, abstract, and full text match).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Prove the reduction, then inherit the other field's machinery outright](../lessons/prove-the-reduction-then-inherit-the-other-fields-machinery.md)
+- [Find the smallest structure that can witness a failure, and reason only there](../lessons/find-the-smallest-structure-that-can-witness-a-failure.md)
+- [The shape of your proof is feedback on your definitions](../lessons/the-shape-of-your-proof-is-feedback-on-your-definitions.md)
+- [An equivalence extends no further than its proof, so attack the obvious next step](../lessons/an-equivalence-extends-no-further-than-its-proof.md)

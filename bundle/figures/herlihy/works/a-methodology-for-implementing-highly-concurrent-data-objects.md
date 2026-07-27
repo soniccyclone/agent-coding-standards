@@ -17,4 +17,7 @@ tags: [work]
 **Source:** https://cs.brown.edu/people/mph/Herlihy93/herlihy93methodology.pdf — live PDF, self-archived on Maurice Herlihy's own Brown CS page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let the system own correctness and the programmer own cost: write sequential code, mechanize the concurrency](../lessons/write-sequential-code-and-let-the-system-own-concurrency.md)
+- [If your code may be run speculatively, it must be defined on states that could never legally occur](../lessons/speculative-execution-demands-code-that-is-total-over-nonsense.md)
+- [A guarantee that is sound in the step-counting model can be the wrong engineering choice; go measure](../lessons/asymptotically-adequate-is-not-practically-adequate.md)
+- [Once two primitives are both powerful enough, choose between them by what they can detect](../lessons/above-the-power-threshold-choose-primitives-by-what-they-detect.md)

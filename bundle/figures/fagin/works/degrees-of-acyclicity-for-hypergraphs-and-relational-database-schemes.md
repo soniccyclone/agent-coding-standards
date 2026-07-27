@@ -17,4 +17,6 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2022-01-20) of Fagin's self-archived PDF, formerly at researcher.watson.ibm.com/researcher/files/us-fagin/jacm83b.pdf. HTTP 200 verified via curl; PDF content confirmed by direct read.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A property lifted into a richer setting can split, and the split is the information](../lessons/a-property-lifted-to-a-richer-setting-can-split-into-a-hierarchy.md)
+- [One name serving two concepts is a structural defect, not a style complaint](../lessons/one-name-for-two-concepts-is-a-structural-defect-not-a-style-issue.md)
+- ["A good option exists" and "you cannot go wrong" are different guarantees, and only the second licenses delegation](../lessons/a-good-option-exists-versus-you-cannot-go-wrong.md)

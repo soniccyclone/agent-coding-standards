@@ -50,3 +50,34 @@ exists to fall back to, since none was ever found). Flagging per standing
 procedure rather than blocking — reviewed in batch later. If either
 surfaces later (e.g. a paper copy gets scanned to an institutional archive),
 promote to a `work` file at that point.
+
+## Lessons
+Goldberg's through-line is that a system's expressive substrate and the
+environment you inhabit while working on it are one design problem, and that
+the right response to not knowing what will be built is to invest in the
+substrate and hand specification to whoever has the problem — a stance whose
+success criterion is what users make that the designers never imagined, and
+whose implied unit of design is vocabulary, since fixing what may be asked of
+a thing is language design at every scale from one class to a whole framework.
+Uniformity is the price paid for that: one mechanism for everything with no
+privileged tier for arithmetic, control, type definitions, or running
+computations, on the explicit bet that the resulting cost is an implementation
+cost that technique will retire while structural exceptions never amortize —
+and where the machine must be reached, the escape hatch is built to stay
+inside the model, invisible in the semantics and visible only in the
+specification. She pairs this with unusually disciplined engineering habits:
+promise and mechanism written as separate documents, deliberate incompleteness
+declared as runnable behavior rather than commentary, a family's whole meaning
+derived from a handful of operations with specializations licensed for speed
+alone, concepts reified the moment they start living only in explanations, and
+a specification complete enough that a stranger can rebuild the machine while
+being told plainly that only behavior — never code shape — is being fixed.
+Her distinct contribution is to extend all of that to the act of programming
+itself: response time and channel quality treated as properties of what can be
+thought rather than numbers to tune, the environment treated as material you
+reshape from within rather than a pipeline you feed, structural relations
+turned into first-class queries because most work is finding out what already
+exists, failures delivered as ordinary requests so a halted computation stays
+alive to be questioned and resumed, history kept as re-executable actions in
+whichever representations the questions demand, and performance settled by a
+measuring instrument made of the same material as the thing measured.

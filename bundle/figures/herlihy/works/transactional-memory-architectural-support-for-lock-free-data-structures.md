@@ -18,4 +18,7 @@ tags: [work]
 **Source:** https://cs.brown.edu/people/mph/HerlihyM93/herlihy93transactional.pdf — live PDF, self-archived on Maurice Herlihy's own Brown CS page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Before adding a mechanism, ask whether the machine already computes the predicate you need](../lessons/the-machine-may-already-be-computing-the-predicate-you-need.md)
+- [Pessimistic protocols make you declare a footprint you do not yet know, and the concurrency you lose is the state-dependent kind](../lessons/pessimistic-protocols-make-you-declare-a-footprint-you-cannot-yet-know.md)
+- [A mechanism with a physical limit is only usable if the limit is part of its published contract](../lessons/a-bounded-mechanism-must-publish-its-bound.md)
+- [The bookkeeping a mechanism needs is a cost of the mechanism, not of the problem](../lessons/auxiliary-state-is-a-cost-of-the-mechanism-not-the-problem.md)

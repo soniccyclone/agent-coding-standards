@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Treat the development environment as material you reshape from inside, not a pipeline you pass code through"
+figure: goldberg
+works: [smalltalk-80-the-interactive-programming-environment]
+axes: [cognitive-load, expressiveness]
+subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Treat the development environment as material you reshape from inside, not a pipeline you pass code through
+
+**Lesson:** The conventional arrangement puts a programmer outside the system being built, feeding it through stages: edit, then compile, then link, then load, then run, then start over. Each stage is a different context with a different set of things you can do, and the running program is somewhere else, unreachable. This book documents an environment built on the opposite premise — that there is one context, always live, in which examining, changing, compiling, and running are all things you do to the system you are currently inside. New text is compiled and connected into a system that never stopped running; errors in it are reported into the same text where they occurred, for immediate correction; and testing it is a matter of writing an expression next to it and asking for it to be evaluated. The absence of separate modes is stated as a design property, not a convenience.
+
+The consequence that matters is not speed of iteration but what becomes thinkable. When the system's own tools are made of the same material as your program, extending the environment stops being a separate discipline requiring a plug-in interface and special privileges, and becomes ordinary work. This book demonstrates that directly by having the reader build new navigation tools for the system, and it is explicit that this activity spans what would normally be two categories: the same construction serves as a development tool in one case and as an end-user application in another — a viewer over class protocols, a viewer over schedules, mail, a book's contents, a budget. The tools you use to program and the program you are writing turn out to be the same kind of thing, which means the boundary between "the environment" and "my application" was never real, only enforced.
+
+That yields an attitude toward system code the book states without hedging: nothing is protected from you, so if some behavior of the environment is wrong for your work, change it. Conventional environments protect their internals, and the effect of that protection is to teach users to accept whatever the environment does. The honest accounting comes with it: this openness means you can break the system, so save your state before touching things you do not understand — and the ability to protect parts of a system from *its* end users is offered as a separate, deliberate act rather than a default. The corollary is a social one, also stated: an improvement you make to the environment is worth packaging so others can load it, since good extensions propagate into the shared system when they are shareable.
+
+A programmer who believes this stops treating friction in the toolchain as a fact of nature. The behavioral test is what you do the third time an environment does something wrong: reach for a workaround, or open the thing and fix it. And when building for others, the question becomes whether the extension mechanism you offer is as powerful as the one you used yourself — because anything less recreates the fence this whole approach removes.
+
+**Source:** [Smalltalk-80: The Interactive Programming Environment](../works/smalltalk-80-the-interactive-programming-environment.md) — the preface, which sets out compiling and linking into a running system with no mode switching between editing, compiling, filing, and executing; the chapter of worked examples that constructs new browsers both as development tools and as domain applications; and Appendix 2's field advice against being at the mercy of the system, noting that system and user code are treated alike and that shareable extensions get absorbed into later releases.

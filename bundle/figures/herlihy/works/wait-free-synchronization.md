@@ -17,4 +17,7 @@ tags: [work]
 **Source:** https://cs.brown.edu/people/mph/Herlihy91/p124-herlihy.pdf — live PDF, self-archived on Maurice Herlihy's own Brown CS page (server redirects the older `~mph` path to `people/mph`; both resolve).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A field only matures when it can prove things impossible, not merely exhibit things that work](../lessons/build-a-way-to-prove-things-impossible-not-only-possible.md)
+- [Measure a synchronization primitive by how much agreement it can manufacture, not by how much it can compute](../lessons/measure-a-primitive-by-the-agreement-it-can-manufacture.md)
+- [Make progress a guarantee the shared object owes each caller, not a favor its callers do each other](../lessons/make-progress-a-guarantee-the-object-owes-each-caller.md)
+- [Look for the one primitive that closes an entire design space instead of solving instances of it](../lessons/find-the-primitive-that-closes-the-whole-space.md)
