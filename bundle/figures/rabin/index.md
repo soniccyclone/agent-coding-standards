@@ -56,3 +56,30 @@ and #6 "Randomized Byzantine Generals" (1983, FOCS) — Semantic Scholar
 `openAccessPdf.status: CLOSED`, Unpaywall `closed`, no self-archived or
 rehosted copy found. Both were `paywalled`/`uncertain` in the Phase 1 pass;
 that resolves to genuinely unavailable, not just unchecked.
+
+## Lessons
+
+Rabin's two available works teach one continuous habit of mind: decide in
+advance which claims you intend to be able to establish, then choose the
+weakest, smallest construct that lets you establish them, even when that
+construct is less general or less tidy than the obvious alternative. In the
+automata work this shows up as deliberate self-limitation — bound the state
+space and infinite verification obligations collapse into finite searches;
+characterize a task by the distinctions its own inputs force rather than by
+any machine that handles it, and impossibility proofs plus the minimal
+implementation fall out together; add a capability and audit what you just
+lost, since composability of specifications breaks before decidability does.
+It also supplies the separation between a convenient branching description
+and the single-path device a mechanical translation derives from it, which is
+the general licence to write in the form that reasons well and generate the
+form that runs well. In the cryptography work the same reflex points at
+guarantees: build on the operation whose inversion is already interchangeable
+with a known-hard problem so that "secure" becomes derivable rather than
+merely unrefuted; state the guarantee with a quantifier that survives an
+opponent choosing inputs, since a small easy minority is all anyone needs;
+and use randomness twice over, once to replace intricate construction with a
+cheap guess-and-check loop carrying a proven per-attempt probability, and
+once to strip an adversary of the ability to aim a privileged operation. The
+through-line is that analyzability is a design input, not a property
+discovered afterward — and that paying for it in generality, elegance, or
+interface neatness is usually the cheapest currency available.

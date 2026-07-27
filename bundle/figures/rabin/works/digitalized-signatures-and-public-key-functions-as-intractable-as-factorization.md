@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://www.bitsavers.org/pdf/mit/lcs/tr/MIT-LCS-TR-0212.pdf — hosted on bitsavers.org, a long-running computer history preservation archive, live and directly downloadable (HTTP 200, valid PDF, ~523KB). MIT's own DSpace repository also lists this report (handle 1721.1/149499) but its bitstream endpoint returns a JS-rendered interstitial rather than a directly fetchable file, so the bitsavers copy is used as the citable public link.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Build on the operation that already is the hard problem, and pay for it in interface tidiness](../lessons/build-on-the-operation-that-is-the-hard-problem.md)
+- [Match the quantifier in your guarantee to whoever gets to pick the input](../lessons/match-the-quantifier-to-whoever-picks-the-input.md)
+- [When checking is cheap, guess and retry instead of constructing](../lessons/when-checking-is-cheap-guess-and-retry.md)
+- [Take the choice of input away from whoever benefits from choosing it](../lessons/randomize-the-inputs-an-adversary-would-otherwise-choose.md)
