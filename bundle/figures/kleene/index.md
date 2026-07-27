@@ -48,3 +48,30 @@ only, `access-restricted-item: true`), not a free download. Same situation
 for "Mathematical Logic" (1967) on Internet Archive
 (`archive.org/details/mathematicallogi0000klee`). Both remain excluded as
 `paywalled`.
+
+## Lessons
+
+Kleene's habit of mind is to fix the boundary of a capability by finding the
+smallest structure that reaches it, and then to take seriously everything that
+boundary implies. The recurring method is to trust a definition only after
+several formulations arrived at by different routes are proved to carve out the
+same objects, and to let the hard direction of a proof choose the primitives
+rather than picking them by taste; when that is done properly the basis comes
+out startlingly small, one unbounded search bolted onto a totally predictable
+core, or three combining operations over fixed-window descriptions. Adequacy
+then brings costs a designer must accept rather than engineer away: a notation
+general enough for everything must admit texts nobody can certify, a class
+closed under search must permit functions with no value, and something able to
+run arbitrary programs must be allowed to hang. Against that he sets a
+discipline of deliberate weakening, restricting rewriting until determinism is
+visible instead of proved, reflecting a language into its own data so questions
+about programs become arithmetic, and classifying every tool by the logical
+shape of guarantee it can emit so its ceiling is known before it is built.
+Bounded mechanisms get the same treatment from the resource side, where finitely
+many configurations force history into a fixed classification and reveal a
+barrier well below uncomputability. Throughout he insists on marking what the
+formalism does not cover: the seam between a model and the intent it stands for,
+the state a component is in before it has observed anything, the contexts in
+which a convenient notion of sameness stops licensing substitution, and the
+distance between a basis proved complete and a basis anyone would enjoy writing
+in.

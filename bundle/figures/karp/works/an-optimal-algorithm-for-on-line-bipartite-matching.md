@@ -21,4 +21,10 @@ tags: [work]
 **Source:** https://people.eecs.berkeley.edu/~vazirani/pubs/online.pdf — self-archived by co-author Umesh Vazirani on his UC Berkeley faculty page. HTTP 200, application/pdf. Verified by decompressing the PDF's text streams directly: extracted text opens "An Optimal Algorithm for On-line Bipartite Matching Richard M. Karp University of California at Berkeley & International Computer Science Institute Umesh V. Vazirani ... Vijay V. Vazirani Cornell University", confirming this is the actual paper. The ACM Digital Library version (dl.acm.org/doi/10.1145/100216.100262) is paywalled; this resolves the figure stub's `uncertain` flag with a legitimate author self-archive.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Where you inject randomness matters more than how much: one hidden commitment held consistently beats a fresh coin flip per decision](../lessons/commit-to-one-random-choice-instead-of-re-rolling-each-decision.md)
+- [When decisions are irrevocable and the future is unknown, redefine quality as a ratio to an oracle, then prove the ceiling so you know when to stop trying](../lessons/judge-irrevocable-decisions-against-an-oracle-and-prove-the-ceiling.md)
+- [Prove you dominate a deliberately crippled version of yourself, then study the crippled version instead](../lessons/analyze-a-crippled-version-you-can-prove-you-dominate.md)
+- [If the uncertainty sits where you cannot reason about it, look for a symmetry that lets you move it somewhere you can](../lessons/find-the-symmetry-that-relocates-the-uncertainty.md)
+
+Also contributes to (extracted primarily from *Combinatorics, Complexity, and Randomness*):
+- [Make your own behavior unpredictable instead of assuming the inputs will be kind](../lessons/be-unpredictable-instead-of-assuming-the-world-is-kind.md)

@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://gdz.sub.uni-goettingen.de/id/PPN235181684_0112?tify=%7B%22view%22:%22info%22,%22pages%22:%5B731%5D%7D — Göttingen Digitization Center (GDZ), Göttingen State and University Library's public digitized run of Mathematische Annalen; resolves to the volume 112 viewer opened at the article's starting page, no paywall or login. A direct whole-volume PDF is also served from the same host (gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0112/PPN235181684_0112.pdf).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Exactly one capability separates the always-terminating from the fully general: search with no bound on how long it runs](../lessons/one-unbounded-search-separates-the-bounded-from-the-general.md)
+- [A notation general enough to express all computation must admit texts you cannot certify are meaningful — that is a proof of adequacy, not a defect](../lessons/a-truly-general-notation-must-admit-programs-you-cannot-certify.md)
+- [Put a language's texts inside its own data domain and make each step a total function, and questions about programs become ordinary computation](../lessons/make-the-step-a-total-function-so-meta-questions-become-ordinary-computation.md)
+- [An abstraction earns trust by surviving being restated in forms that look nothing alike](../lessons/an-abstraction-earns-trust-by-surviving-reformulation.md)
+- [Listing a set and deciding membership in it are different powers, and the bridge between them is output order](../lessons/a-generator-becomes-a-decision-procedure-exactly-when-it-emits-in-order.md)

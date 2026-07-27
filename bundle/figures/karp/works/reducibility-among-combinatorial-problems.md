@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://www.cs.umd.edu/~gasarch/BLOGPAPERS/Karp.pdf — scanned copy mirrored on William Gasarch's (University of Maryland CS faculty) paper archive page; third-party rehost. HTTP 200, application/pdf, ~1.9MB (page-scan images, no OCR text layer). The original Plenum/Springer book chapter (link.springer.com/chapter/10.1007/978-1-4684-2001-2_9) and the Cambridge Core reprint are both paywalled; Karp's own archived Berkeley publications page (web.archive.org snapshot of eecs.berkeley.edu/~karp/publications.html) lists the citation only, with no self-hosted full text.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Solve a new problem by translating it into one whose difficulty you already know](../lessons/translate-the-new-problem-into-one-you-already-understand.md)
+- [Ask how hard the answer is to check before asking how hard it is to find](../lessons/separate-the-cost-of-checking-from-the-cost-of-finding.md)
+- [Trust only the distinctions that survive a change of machine and a change of representation](../lessons/trust-only-classifications-that-survive-a-change-of-machine.md)
+- [Route many problems through one universal format instead of building translators between every pair](../lessons/route-everything-through-one-universal-format.md)

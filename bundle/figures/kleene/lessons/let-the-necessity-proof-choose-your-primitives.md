@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Let the impossibility half of the argument choose your primitives, and never mistake completeness for convenience"
+figure: kleene
+works: [representation-of-events-in-nerve-nets-and-finite-automata]
+axes: [primitive-count, expressiveness, verifiability]
+subdomains: [foundations-of-computation, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Let the impossibility half of the argument choose your primitives, and never mistake completeness for convenience
+
+**Lesson:** There are two ways to arrive at the small set of combining operations a description language is built from. The comfortable way is to sit down and pick the operations that feel natural, then discover afterward how much they can and cannot say. The other way — the one worth imitating — is to first prove what a machine's behaviour is *forced* to look like, and read the operator set off that proof. Here the three combinators fall out of the harder direction of the argument: analysing how a bounded machine can travel from one configuration to another, you find that every such history decomposes into alternatives, into a piece followed by a piece, and into some piece repeated an unbounded number of times, and nothing else is ever needed. Only then is the easier direction attempted, showing that anything written with those three can actually be built. Kleene says outright that this was the order of discovery, not a tidied-up presentation.
+
+Choosing primitives this way changes what the resulting basis means. A basis assembled from taste is a guess whose adequacy is an open question forever; a basis extracted from the necessity argument comes with adequacy already established, because the argument that produced it was exactly an argument that nothing else is required. That is why the set is three operations and not five or fifteen: additional operations were considered and shown to be expressible, so they were left out of the definition and handled separately as conveniences. The minimality is a consequence of the proof strategy rather than an aesthetic goal that happened to work out.
+
+The sharper half of the lesson is what Kleene refuses to claim. Having proved the three operations complete — every behaviour a bounded machine can exhibit is describable with them — he explicitly declines to assert they are a good way to *write* descriptions, notes that some other selection might turn out more practical, and lists as an open problem whether things people actually want to say translate into the notation readably at all. He even concedes that his own construction routinely produces monstrous descriptions of behaviours that have short ones. Completeness is a theorem about reach; usability is an empirical question about the fit between a notation and the things its users are trying to express, and no amount of the first supplies the second.
+
+A programmer who internalizes this stops conflating two arguments that usually get made in one breath. When defending a small core — an instruction set, a set of combinators, an algebra of query operators — "you can express everything with these" and "these are pleasant to express things in" are separate claims requiring separate evidence, and the first is much easier to establish. It also suggests a real design procedure: before fixing a vocabulary, try to prove a limitation on the mechanism the vocabulary describes, because the shape of that limitation proof tends to hand you the vocabulary, pre-justified, along with the confidence that you have not left anything out.
+
+**Source:** [Representation of Events in Nerve Nets and Finite Automata](../works/representation-of-events-in-nerve-nets-and-finite-automata.md) — the closing discussion of Part I, where Kleene answers "why these three operations?" by pointing to the Part II converse as his actual reason and then separately catalogues the unresolved practical questions about the notation; the Part II proof is where the decomposition of machine histories generates the operators.

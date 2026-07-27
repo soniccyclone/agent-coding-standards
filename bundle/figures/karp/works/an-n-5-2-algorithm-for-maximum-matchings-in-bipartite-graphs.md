@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://www.cs.princeton.edu/courses/archive/fall09/cos521/Handouts/Hopcroft.pdf — full-text scan hosted on a Princeton course handout archive (COS 521); third-party rehost. HTTP 200, application/pdf. Verified by decompressing the PDF's text streams directly: the extracted text opens "SIAM J. COMPUT. Vol. 2, No. 4, December 1973 ... JOHN E. HOPCROFT AND RICHARD M. KARP", confirming this is the actual paper text, not a summary. The SIAM Journal on Computing version (epubs.siam.org) is paywalled.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Stop optimizing the single step; find the batch of non-interfering steps and bound how many batches there are](../lessons/batch-non-interfering-improvements-into-phases.md)
+- [Derive the reasoning in the general setting and let only the implementation depend on your special case](../lessons/derive-in-the-general-setting-specialize-only-at-the-implementation.md)
+- [Know whether your local check certifies a global property, because that decides if hill climbing is a proof or a guess](../lessons/when-no-local-improvement-exists-means-globally-optimal.md)
+- [Design the search so every step permanently retires part of the input, and the cost bound becomes a census instead of a trace](../lessons/make-each-step-retire-input-permanently.md)

@@ -20,4 +20,9 @@ tags: [work]
 **Source:** https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM704.pdf — RAND's own self-hosted PDF of the report (RAND publication page: https://www.rand.org/pubs/research_memoranda/RM704.html). Confirmed to resolve directly (200, application/pdf) with a standard browser Accept/Referer header; a July 2026 Wayback Machine snapshot of the same URL corroborates continued public availability.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let the impossibility half of the argument choose your primitives, and never mistake completeness for convenience](../lessons/let-the-necessity-proof-choose-your-primitives.md)
+- [A bounded machine cannot store its history, only a fixed finite classification of it — so design the digest, do not scale the record](../lessons/bounded-memory-forces-history-into-a-fixed-finite-classification.md)
+- [A component correct in steady state can be wrong before it has observed anything, and which specifications are startup-safe is decidable in advance](../lessons/startup-state-belongs-in-the-specification.md)
+- [Before you rewrite freely, check that your notion of sameness survives every context your operators can put a term in](../lessons/sameness-must-survive-every-context-your-operators-create.md)
+- [Canonical form buys you the proof, not the artifact — and the compiled shape follows the shape you wrote](../lessons/canonical-forms-buy-proofs-not-artifacts.md)
+- [Choose which dimension to idealize as unbounded by asking which choice keeps the phenomenon you are studying alive](../lessons/idealize-the-dimension-that-keeps-the-phenomenon-alive.md)

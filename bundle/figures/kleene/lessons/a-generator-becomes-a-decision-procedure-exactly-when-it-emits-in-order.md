@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Listing a set and deciding membership in it are different powers, and the bridge between them is output order"
+figure: kleene
+works: [general-recursive-functions-of-natural-numbers, recursive-predicates-and-quantifiers]
+axes: [verifiability]
+subdomains: [foundations-of-computation, algorithms-and-complexity]
+tags: [lesson]
+---
+# Listing a set and deciding membership in it are different powers, and the bridge between them is output order
+
+**Lesson:** Anything defined as the smallest collection containing some starting elements and closed under some operations comes with a listing for free. Iterate the operations over everything produced so far, in a fixed dovetailed order, and every member eventually appears; duplicates are harmless and can be removed mechanically afterward. This is why inductive definitions feel so cheap to work with: the definition is already a program that streams the set out. Deciding whether a given thing is *in* the set is a different capability entirely, and the gap between the two is not a matter of efficiency. Watching an unordered stream for your candidate never terminates when the candidate is absent — you are always one element from being wrong.
+
+The precise thing that closes the gap is monotonicity of output. If a listing of an infinite set emits its members in strictly increasing order, membership becomes decidable: run until the stream passes the candidate, and the answer is settled. That single structural property converts a generator into a decision procedure. The converse holds too, so for infinite sets, being decidable and being listable in increasing order without repetition are the same property viewed from two sides. Being listable in *some* order is strictly weaker, and no amount of post-processing recovers the difference, because you would need to know when to stop waiting — which is the very thing you lack.
+
+The practical instruction is to interrogate every generator you write with one question: can it emit in a well-founded order? Not "is it fast" and not "does it avoid duplicates" — duplicates you can always squeeze out — but whether there is an order along which output monotonically advances, so that a consumer can conclude *absence* and not only *presence*. Search procedures, constraint enumerators, work queues, and streaming query plans all live or die on this. And it explains why so many properties are naturally stated as one existential quantifier over a decidable test: that shape is exactly the shape of "run a generator and hope," which is why it yields confirmation but never refutation. A programmer who keeps the two capabilities separate in their head stops writing code that quietly assumes a search will come back.
+
+**Source:** [General Recursive Functions of Natural Numbers](../works/general-recursive-functions-of-natural-numbers.md) — the §1 enumeration lemmas that mechanically produce a listing for any inductively closed collection, and the later theorems establishing that an infinite collection is decidable exactly when it can be listed in increasing order without repetition, alongside the §2 examples of collections definable by a single existential quantifier over a decidable relation that are undecidable or not even listable. Also [Recursive Predicates and Quantifiers](../works/recursive-predicates-and-quantifiers.md) — the theorem that a property is decidable exactly when it can be stated both as a one-sided search for confirmation and as a one-sided search for refutation, which is the same bridge in its most directly usable form: run both searches together and whichever returns settles it.
