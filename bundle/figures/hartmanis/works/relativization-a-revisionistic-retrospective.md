@@ -19,4 +19,6 @@ tags: [work]
 **Host:** self-archived — a co-author's personal academic homepage.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A barrier to your technique is not a property of the problem](../lessons/a-barrier-to-your-technique-is-not-a-property-of-the-problem.md)
+- [Two representations that are provably equivalent can diverge the moment you extend the system](../lessons/equivalent-representations-diverge-when-you-extend-the-system.md)
+- [Small local steps are what give you leverage over a computation, so never abstract them away](../lessons/locality-of-small-steps-is-the-leverage.md)

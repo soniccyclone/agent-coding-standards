@@ -19,4 +19,7 @@ tags: [work]
 **Host:** institutional — American Mathematical Society, publisher of record.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The interesting structure begins after you already know a thing is computable](../lessons/the-interesting-structure-begins-after-computability.md)
+- [Anything a bounded re-encoding can buy you was never part of the structure](../lessons/what-a-bounded-re-encoding-buys-is-not-structure.md)
+- [A measure robust enough to mean something is too robust to be decidable](../lessons/a-measure-robust-enough-to-mean-something-is-too-robust-to-decide.md)
+- [To prove something cannot be done, count the distinctions the machine must carry](../lessons/count-the-distinctions-a-machine-must-carry.md)

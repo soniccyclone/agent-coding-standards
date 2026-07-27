@@ -18,4 +18,7 @@ tags: [work]
 **Host:** institutional — Cornell University eCommons repository, sole author of record Juris Hartmanis.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Whether a constant factor is noise is a fact about your machine model, not about computation](../lessons/whether-a-constant-factor-is-noise-depends-on-the-machine.md)
+- [Bound the size of the answer and you have bounded every algorithm at once](../lessons/bound-the-answer-before-bounding-the-algorithm.md)
+- [Code that writes code buys a constant — unless it can manufacture primitives you did not have](../lessons/self-modification-buys-a-constant-unless-it-manufactures-primitives.md)
+- [Judge a hardware feature by what it costs to fake it, and distinguish faster lookup from faster construction](../lessons/ask-what-it-costs-to-fake-the-feature.md)
