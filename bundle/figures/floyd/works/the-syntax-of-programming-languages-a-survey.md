@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://archive.org/details/DTIC_AD0626820 — verified resolving (HTTP 200). This is a Defense Technical Information Center report, "Information System Theory Project, Volume II: Collected Research Papers" (Applied Data Research Inc., 1965), self-archived on the Internet Archive by the U.S. government-documents collection. It reprints Floyd's January 1964 preprint of this paper (technical note CA-64-2-R, "to be published in the August, 1964 issue of IEEE Transactions on Electronic Computers") alongside several other Floyd papers from the same period. Full text is searchable within the archive.org viewer; the Floyd preprint begins at the OCR text heading "THE SYNTAX OF PROGRAMMING LANGUAGES - A SURVEY".
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A definition that lets you certify an artifact does not tell you how to build one or how to take one apart](../lessons/a-definition-that-certifies-does-not-construct.md)
+- [Prefer a formalism that covers the regular bulk and quarantines the exceptions over one stretched to cover everything](../lessons/a-formalism-that-covers-the-bulk-and-quarantines-the-rest.md)
+- [The properties that make a notation readable are the same ones that make it cheap to process, so design for the tractable case instead of the general one](../lessons/what-makes-a-notation-readable-makes-it-cheap-to-process.md)
+- [A definition that only says what is legal is half a specification, because most of what arrives will be illegal](../lessons/a-definition-of-the-legal-is-half-a-specification.md)
+- [Write the program for the machine you wish you had, and make the gap down to the real one mechanical](../lessons/write-for-the-machine-you-wish-you-had-then-translate.md)
