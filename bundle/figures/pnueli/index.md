@@ -56,3 +56,38 @@ the ACM link would close the loop; details in the work file.
 Net effect: Phase 4 lesson extraction for `pnueli` is unblocked — the
 founding 1977 paper, the synthesis paper, and the framework survey are all
 sourced.
+
+## Lessons
+
+Pnueli's body of thought starts from one relocation and follows its
+consequences relentlessly: for software that is not supposed to stop, the thing
+correctness is a property *of* is the unfolding execution rather than a final
+answer, and once you accept that, almost everything else about how you specify
+and reason has to be rebuilt. The rebuild is governed by restraint rather than
+by power. Take the least temporal machinery the property genuinely needs
+instead of arming yourself with a clock; find the single execution model that
+sequential and concurrent programs are both instances of, and discover that
+only two shapes of property are needed over it; stratify the reasoning so the
+part about time never mentions your data and neither part mentions your
+program. Notation is judged not by what it can express but by which correct
+statement it makes shortest, which is why deliberately redundant vocabulary can
+earn its keep and why boilerplate around the ordinary case indicts the frame
+rather than the writer. Every convenient abstraction is treated as carrying a
+ledger: interleaving discards real parallelism, so it must pay that back as
+fairness assumptions calibrated to the exact strength needed and no more.
+Verification is held to a human standard as well as a formal one — a method
+should let the argument that actually convinced the programmer be written down
+rigorously — and its limits are stated honestly, since discharging every
+obligation proves agreement between two formal objects and nothing about
+intent. The synthesis work then pushes the same instincts past checking into
+construction, and turns up the sharpest ideas in the set: consistency of a
+requirement is worthless where the other side of the interface is not yours to
+assign, so read every requirement as a game against whatever you do not
+control; a specification that fails to fix what is knowable at each moment will
+happily admit implementations that require foresight; the formalism a
+requirement is natural to state in need not be the one its buildability is
+decided in, and identifying what kind of object would witness the claim comes
+before choosing any machinery. Throughout, hardness is treated as something to
+be located rather than lamented — bound the state space and a proof obligation
+becomes a search, and bill an unavoidable blowup to the input dimension that
+stays small in the instances you actually get.

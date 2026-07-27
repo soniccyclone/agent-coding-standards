@@ -28,4 +28,7 @@ a browser gets the paper; a bot doesn't. One manual click would close the
 loop for good.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Treat whatever you do not control as an adversary, not a partner](../lessons/treat-what-you-do-not-control-as-an-adversary.md)
+- [A specification must fix what the implementation is allowed to know, and when](../lessons/a-specification-must-fix-what-is-knowable-when.md)
+- [The formalism a requirement is natural to state in need not be the one it is settled in](../lessons/state-it-in-one-formalism-decide-it-in-another.md)
+- [Bill the unavoidable blowup to the input dimension that stays small in practice](../lessons/bill-the-blowup-to-the-dimension-that-stays-small.md)

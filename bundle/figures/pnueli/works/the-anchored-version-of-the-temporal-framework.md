@@ -18,4 +18,7 @@ tags: [work]
 **Source:** https://cs.nyu.edu/home/people/in_memoriam/pnueli/anchored.ps.gz — live URL, gzipped PostScript (81 pages), self-archived by Pnueli on his own homepage bibliography, preserved by NYU Courant. Title page and abstract verified by rendering the PostScript.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A specification can be provably satisfied and still be the wrong specification](../lessons/a-spec-can-be-consistent-and-still-incomplete.md)
+- [An abstraction that discards something must pay it back as an explicit, calibrated assumption](../lessons/pay-back-what-your-abstraction-discards.md)
+- [Judge a notation by what it makes easy to say correctly, not by what it can say](../lessons/judge-a-notation-by-what-it-makes-easy-to-say-correctly.md)
+- [Stratify a reasoning system so its general part knows nothing about your program](../lessons/stratify-reasoning-so-the-general-part-knows-nothing-about-your-program.md)

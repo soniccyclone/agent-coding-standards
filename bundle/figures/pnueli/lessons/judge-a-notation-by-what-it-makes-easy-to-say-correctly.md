@@ -1,0 +1,19 @@
+---
+type: lesson
+title: "Judge a notation by what it makes easy to say correctly, not by what it can say"
+figure: pnueli
+works: [the-anchored-version-of-the-temporal-framework]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+
+# Judge a notation by what it makes easy to say correctly, not by what it can say
+
+**Lesson:** Expressive power is the wrong sole criterion for a notation, and a formalism can prove it in both directions. Adding vocabulary that provably adds no power at all can still be the right call: operators for referring backwards in a run buy nothing a forward-only language could not already state, yet they let a whole family of requirements — every occurrence of this was preceded by that — be written the way people mean them, instead of as a forward-facing contortion. Two further payoffs arrive that pure power accounting never predicts. The redundant vocabulary yields a clean syntactic normal form, which is what makes a classification of properties possible at all, and through the classification, a matching of each property to its proof strategy. And it exposes a symmetry that was there all along: nothing happens without a cause is the mirror of no cause fails to have its effect, and seeing the pair makes both easier to get right. The price should be measured rather than feared; here the decision procedure cost nothing extra and the completeness proof carried over.
+
+The same criterion cuts the other way when a formalism's defaults are wrong. If a claim's reference point floats — if asserting something means asserting it at every moment of a run rather than at the run's beginning — then the ordinary things people want to say need ceremony to say, while the unusual things become suspiciously easy to say by accident. Stating that some event is preceded by another requires an extra guard pinning attention to the start; the set of runs a program denotes has to be closed under dropping prefixes, which is not what anyone means by the runs of a program, purely so one inference rule stays sound; and a basic rule of ordinary logical reasoning stops holding. Repointing the whole framework at the initial state makes the common case the default, makes the unusual case explicit, and lets the definition of a program's meaning be the natural one. That the two conventions are interconvertible is precisely the point: the choice is not about power, so it must be made on which one makes the intended statement the shortest correct one.
+
+The transferable habit: when evaluating a language, an API, or a specification style, stop asking only what it can express and start asking which statements it makes short, which it makes ugly, which structural facts it puts in view, and which errors it makes easy to commit. Boilerplate needed to say the ordinary thing is diagnostic — the frame is wrong, not the writer. Unnatural definitions adopted so that a rule stays valid are diagnostic too. And redundancy in a vocabulary should be priced, not banned: if a derivable construct measurably improves how people say and check things, the derivability is an argument for keeping the core small, not an argument for withholding the construct.
+
+**Source:** [The Anchored Version of the Temporal Framework](../works/the-anchored-version-of-the-temporal-framework.md) — the introduction's account of adding past-directed operators, which explicitly notes they do not increase expressive power and then lists the utility gained plus the modest measured cost; and the following subsection's catalogue of dissatisfactions with position-independent validity (the generalization rule breaking the deduction theorem, the forced suffix-closure of the model set, the extra guard needed for precedence properties) that motivates anchoring validity at the run's first state.
