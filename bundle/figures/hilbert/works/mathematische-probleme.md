@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://mathcs.clarku.edu/~djoyce/hilbert/problems.html — Mary Winston Newson's 1902 English translation (Bulletin of the American Mathematical Society 8, pp. 437-479, public domain), hosted on David Joyce's Clark University Math/CS page. Third-party academic rehost of a public-domain translation; verified live (HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Ask for the procedure that settles every instance, not the answer to the instance in front of you](../lessons/ask-for-the-decider-not-the-answer.md)
+- [When something resists being built, go prove it cannot be built under the assumptions you made](../lessons/an-impossibility-proof-is-a-result.md)
+- [Precision is not the tax you pay for correctness; it is what makes the work smaller](../lessons/rigor-shrinks-the-work.md)
+- [A specification is real only if it is consistent; check that before you try to satisfy it](../lessons/a-contradictory-specification-describes-nothing.md)
+- [Being stuck usually means you are at the wrong altitude, not that you lack cleverness](../lessons/stuck-means-you-are-at-the-wrong-altitude.md)

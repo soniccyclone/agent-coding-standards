@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://archive.org/details/foundations-of-geometry-david-hilbert-1862-1943-translated-by-edgar-jerome-towns — E. J. Townsend's English translation ("Foundations of Geometry," 1902, based on the 2nd German edition), full scan hosted on the Internet Archive. Marked NOT_IN_COPYRIGHT; PDF/full-text/EPUB all freely downloadable, no lending restriction. Verified live.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [To find out whether an assumption is load-bearing, build the world where it fails](../lessons/build-the-world-where-the-assumption-fails.md)
+- [For every result, know the smallest set of assumptions it actually consumes](../lessons/account-for-what-each-result-consumes.md)
+- [Look for the local, checkable law that is equivalent to the global structural question](../lessons/a-local-law-can-decide-a-global-structural-question.md)
+- [Build the calculus out of the domain's own objects, then read your assumptions off its algebraic laws](../lessons/build-the-calculus-out-of-the-domains-own-objects.md)
+- [Characterize what a set of tools can build by the closure of values it generates, not by trying harder](../lessons/characterize-a-toolset-by-the-closure-it-generates.md)

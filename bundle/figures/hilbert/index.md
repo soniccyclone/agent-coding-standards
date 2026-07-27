@@ -47,3 +47,30 @@ confirmed current — except for a genuinely partial self-archived resource
 `wirth.bplaced.net/p/hilbertbernays`, which doesn't rise to "the work is
 public" and was left out of `works/` on that basis. Both stay excluded from
 `works/`; flagging per standing procedure rather than blocking on it.
+
+## Lessons rollup
+Hilbert teaches that the way to get control of a subject is to fix, exactly and
+in the open, what it rests on — and that once you have done so, questions that
+looked philosophical become technical. His primitives are introduced as
+unspecified things whose only content is the relations declared about them,
+which is what makes a specification a real object: an inconsistent one
+describes nothing, and consistency is both the definition of existence and the
+sole price of admission for any convenient fiction you adjoin to keep the laws
+simple. From that base come the working habits: account for which assumptions
+each result actually consumes rather than resting on the whole pile; test
+whether an assumption is load-bearing by constructing the functioning world in
+which it fails; hunt for the local checkable law equivalent to a global
+structural property, and for the algebra, built from the domain's own objects,
+whose identities are a readout of your assumptions; characterize what a fixed
+toolset can reach by the closure it generates instead of by trying harder. His
+demands on problems are the same discipline turned outward — ask for the
+procedure that decides a whole family, not the answer to one instance; treat
+"this cannot be done under these premises" as a theorem to go prove; and when
+stuck, change altitude rather than effort, defaulting downward to the simpler
+unsolved question. Two of his moves are directly the ancestry of programming
+practice: making the derivation itself a finite inspectable object so that
+global claims about a system become checks over data, and insisting that
+reasoning conducted in an idealization is only as good as the finite argument
+that licenses it, because the bounded claim and the unbounded one are different
+kinds of claim and nothing you actually run is infinite. Rigor, in his telling,
+is not the tax for all this; it is what makes the work smaller.

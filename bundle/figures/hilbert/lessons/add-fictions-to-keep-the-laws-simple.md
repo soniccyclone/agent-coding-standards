@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Add fictional elements to keep the laws simple, and pay for them with a conservativity argument"
+figure: hilbert
+works: [uber-das-unendliche]
+axes: [expressiveness, primitive-count, verifiability]
+subdomains: [programming-languages-and-semantics, foundations-of-computation, formal-methods-and-verification]
+tags: [lesson]
+---
+# Add fictional elements to keep the laws simple, and pay for them with a conservativity argument
+
+**Lesson:** When the laws governing a domain are cluttered with exceptions, the productive move is often not to fix the laws but to enlarge the domain with objects that do not exist, chosen so that the exceptions disappear. Hilbert assembles a series of precedents for this and treats them as one method. In plane geometry, lines either meet in a point or are parallel; admit ideal points at infinity and the clean statement that any two lines meet in exactly one point holds without qualification, and the duality between points and lines falls out. Admit imaginary quantities and the statements about how many roots an equation has become simple. Bundle infinitely many numbers into an ideal divisor and unique factorization is restored in domains where no actual common divisor exists. His proposal is the same move one level up: adjoin statements that make no finitary sense — unbounded quantifications, negations of universal claims — so that the ordinary rules of logic hold across the board again.
+
+The crucial part is the price. There is exactly one condition on the method, and it is not negotiable: the extension is admissible only if adding the fictions produces no contradiction in the old, narrower domain — only if every relation among the original objects that survives elimination of the ideal ones was already valid there. This is a stronger demand than internal consistency of the enlarged system; it says the fiction may not license any new conclusion about the real objects. And because the demand is precise, it is checkable: he reduces it to showing that one specific formula can never come out as the end of a derivation. Hilbert adds a second, softer test that is worth keeping: beyond freedom from contradiction, the only meaningful question about an idealization is whether it is accompanied by corresponding success, and the real proof of a theory is what it settles that it was not built to settle.
+
+Programmers deploy fictions constantly and rarely pay the price consciously. Unbounded integers over machine words, infinite lazy streams, a total function standing in for a partial one, a single-threaded story about a concurrent system, a transaction that pretends nothing else is happening, an address space larger than the memory: each is an ideal element admitted so that the laws you reason with stay simple. The discipline this lesson demands is to state what the old, real domain is — the observable behaviors, the actual finite machine — and to argue that the convenient fiction never yields a conclusion about that domain which is false there. When that argument exists, the fiction is free and you should use it aggressively. When nobody has made it, the abstraction is not a simplification but an unbounded liability, and the bugs it produces will look like violations of laws you thought were universal.
+
+**Source:** [Über das Unendliche](../works/uber-das-unendliche.md) — the exposition of the method of ideal elements through points at infinity, imaginary quantities, and number-theoretic ideals; its extension to ideal statements adjoined to the finitary ones; and the section stating freedom from contradiction as the single necessary condition for such an extension.

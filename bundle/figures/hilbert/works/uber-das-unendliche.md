@@ -17,4 +17,7 @@ tags: [work]
 **Source:** https://archive.org/details/sim_mathematische-annalen_1926_95 — full scan of the complete journal volume (article at pp. 161-190), hosted on the Internet Archive's serials mirror. Freely downloadable (PDF/full text/EPUB), no access restriction. Verified live.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Add fictional elements to keep the laws simple, and pay for them with a conservativity argument](../lessons/add-fictions-to-keep-the-laws-simple.md)
+- [Turn the reasoning itself into an inspectable object, and questions about the system become questions about data](../lessons/make-the-derivation-itself-an-object-of-computation.md)
+- [A bounded claim and an unbounded one are different kinds of claim, even when the unbounded one looks weaker](../lessons/a-bounded-claim-and-an-unbounded-one-are-different-kinds.md)
+- [Nothing you actually run is infinite; every guarantee has to be cashed out against the finite mechanism](../lessons/cash-out-the-idealization-against-the-finite-machine.md)
