@@ -6,6 +6,9 @@ description: Jones's first book-length treatment of VDM, showing how a program c
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 1980
 url: http://homepages.cs.ncl.ac.uk/cliff.jones/publications/Books/SDRA.pdf
+survey_pages: 400
+survey_text_layer: none
+survey_fetch_mb: 89
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: Argues that the clearest way to give a language semantics is to wri
 subdomains: [programming-languages-and-semantics]
 year: 1972
 url: https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/papers-we-love.pdf
+survey_pages: 45
+survey_text_layer: partial
+survey_fetch_mb: 4
 access: public
 host: third-party-rehost
 tags: [work]

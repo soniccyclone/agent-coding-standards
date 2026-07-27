@@ -6,6 +6,9 @@ description: One of Péter's earliest papers on recursive function theory, showi
 subdomains: [foundations-of-computation]
 year: 1934
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0110/LOG_0036.pdf
+survey_pages: 22
+survey_text_layer: partial
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

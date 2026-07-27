@@ -6,6 +6,9 @@ description: Describes the first head-mounted, head-tracked stereoscopic display
 subdomains: [programming-environments-and-object-systems]
 year: 1968
 url: https://web.stanford.edu/class/ee267/notes/sutherland_hmd.pdf
+survey_pages: 8
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

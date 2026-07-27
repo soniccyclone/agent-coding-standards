@@ -6,6 +6,9 @@ description: The full account, co-written with Roger Needham, of the CAP machine
 subdomains: [operating-systems-and-systems-programming]
 year: 1979
 url: https://www.cl.cam.ac.uk/events/50+5/assets/pdf/cap.pdf
+survey_pages: 177
+survey_text_layer: full
+survey_fetch_mb: 7
 access: public
 host: institutional
 tags: [work]

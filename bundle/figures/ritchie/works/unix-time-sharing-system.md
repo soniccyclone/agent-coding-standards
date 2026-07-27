@@ -6,6 +6,9 @@ description: The paper that introduced Unix to a wide technical audience, writte
 subdomains: [operating-systems-and-systems-programming]
 year: 1974
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cacm.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: A retrospective on the CAL time-sharing system built for the CDC 64
 subdomains: [operating-systems-and-systems-programming]
 year: 1976
 url: https://bwlampson.site/15-ReflectionsOnOS/Acrobat.pdf
+survey_pages: 29
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

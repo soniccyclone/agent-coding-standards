@@ -6,6 +6,9 @@ description: Turing's Princeton PhD thesis, working out how to escape Godel's in
 subdomains: [foundations-of-computation]
 year: 1938
 url: https://people.math.ethz.ch/~halorenz/4students/Literatur/TuringOrdinalLogic.pdf
+survey_pages: 77
+survey_text_layer: full
+survey_fetch_mb: 4
 access: public
 host: third-party-rehost
 tags: [work]

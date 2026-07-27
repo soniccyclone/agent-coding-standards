@@ -6,6 +6,9 @@ description: Schönfinkel shows that quantified predicate logic can be built fro
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1924
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0092/LOG_0026.pdf
+survey_pages: 13
+survey_text_layer: partial
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

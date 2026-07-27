@@ -6,6 +6,9 @@ description: Lays out the three kinds of abstraction CLU was built to support â€
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1977
 url: https://csg.csail.mit.edu/pubs/memos/Memo-144/Memo-144.pdf
+survey_pages: 1
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

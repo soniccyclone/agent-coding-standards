@@ -6,6 +6,9 @@ description: Stearns's 1993 ACM Turing Award lecture (Hartmanis, his co-recipien
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1994
 url: http://web.archive.org/web/20120313180620/http://www.cs.albany.edu/~res/turing.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

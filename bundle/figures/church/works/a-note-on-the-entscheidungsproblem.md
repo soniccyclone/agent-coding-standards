@@ -6,6 +6,9 @@ description: A short companion note to Church's main 1936 paper, stating the uns
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://courses.fit.cvut.cz/MI-VYC/church-a-note-on-the-entscheidungsproblem.pdf
+survey_pages: 3
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: An internal Xerox PARC technical note walking through a planning-sy
 subdomains: [programming-environments-and-object-systems]
 year: 1979
 url: https://folk.universitetetioslo.no/trygver/1979/mvc-1/1979-05-MVC.pdf
+survey_pages: 11
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

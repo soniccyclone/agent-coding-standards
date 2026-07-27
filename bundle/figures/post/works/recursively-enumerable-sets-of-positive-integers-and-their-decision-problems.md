@@ -6,6 +6,9 @@ description: A wide-ranging survey, written for a general mathematical audience,
 subdomains: [foundations-of-computation]
 year: 1944
 url: https://www.ams.org/journals/bull/1944-50-05/S0002-9904-1944-08111-1/S0002-9904-1944-08111-1.pdf
+survey_pages: 33
+survey_text_layer: full
+survey_fetch_mb: 3
 access: public
 host: institutional
 tags: [work]

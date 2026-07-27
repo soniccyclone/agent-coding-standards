@@ -6,6 +6,9 @@ description: The formal definition of Simula 67 — the language report that spe
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1968
 url: https://softwarepreservation.computerhistory.org/ALGOL/manual/Simula-CommonBaseLanguage.pdf
+survey_pages: 151
+survey_text_layer: full
+survey_fetch_mb: 3
 access: public
 host: third-party-rehost
 tags: [work]

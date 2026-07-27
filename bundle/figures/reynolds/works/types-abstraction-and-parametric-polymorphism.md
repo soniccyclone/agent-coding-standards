@@ -6,6 +6,9 @@ description: Formalizes what it means for a polymorphic function to behave "the 
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1983
 url: https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/typesabpara.pdf
+survey_pages: 11
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

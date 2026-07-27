@@ -6,6 +6,9 @@ description: Describes sam, Pike's earlier multi-file editor for bitmap displays
 subdomains: [programming-environments-and-object-systems]
 year: 1987
 url: https://research.swtch.com/sam.pdf
+survey_pages: 30
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

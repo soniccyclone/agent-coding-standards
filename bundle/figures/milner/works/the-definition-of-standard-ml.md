@@ -6,6 +6,9 @@ description: The complete formal specification of Standard ML — syntax, static
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1997
 url: https://smlfamily.github.io/sml97-defn.pdf
+survey_pages: 136
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: The full book-length treatment of CSP, developing a process algebra
 subdomains: [distributed-systems-and-concurrency]
 year: 1985 (revised through 2015)
 url: http://web.archive.org/web/20250104082500/http://www.usingcsp.com/cspbook.pdf
+survey_pages: 260
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: Critiques the standard design-review meeting, where a presenter wal
 subdomains: [software-engineering-and-architecture]
 year: 1985
 url: https://archive.org/download/DTIC_ADA163188/DTIC_ADA163188.pdf
+survey_pages: 17
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

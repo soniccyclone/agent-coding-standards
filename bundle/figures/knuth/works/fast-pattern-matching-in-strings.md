@@ -6,6 +6,9 @@ description: Introduces what became known as the Knuth-Morris-Pratt algorithm, w
 subdomains: [algorithms-and-complexity]
 year: 1977
 url: https://www.cs.jhu.edu/~misha/Spring23/Knuth77.pdf
+survey_pages: 28
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: A short polemic arguing that software had grown bloated not because
 subdomains: [software-engineering-and-architecture]
 year: 1995
 url: https://people.inf.ethz.ch/wirth/Articles/LeanSoftware.pdf
+survey_pages: 5
+survey_text_layer: none
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: The textbook for MIT's introductory computer science course (6.001)
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1985
 url: https://web.mit.edu/6.001/6.037/sicp.pdf
+survey_pages: 883
+survey_text_layer: full
+survey_fetch_mb: 7
 access: public
 host: institutional
 tags: [work]

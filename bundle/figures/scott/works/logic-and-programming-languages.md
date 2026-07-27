@@ -6,6 +6,9 @@ description: Scott's 1976 ACM Turing Award lecture, delivered the year after Mic
 subdomains: [programming-languages-and-semantics]
 year: 1977
 url: https://www.arabou.edu.kw/faculties/computer/Documents/ReadingList/ITC/a1976-scott.pdf
+survey_pages: 8
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

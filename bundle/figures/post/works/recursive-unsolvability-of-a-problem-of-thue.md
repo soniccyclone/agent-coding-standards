@@ -6,6 +6,9 @@ description: Proves that the word problem for semigroups (given a finite set of 
 subdomains: [foundations-of-computation]
 year: 1947
 url: https://www.wolframscience.com/prizes/tm23/images/Post2.pdf
+survey_pages: 12
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

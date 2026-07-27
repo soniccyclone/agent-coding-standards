@@ -6,6 +6,9 @@ description: With Vazirani, Valiant shows that merely telling whether a Boolean 
 subdomains: [algorithms-and-complexity]
 year: 1986
 url: https://www.cs.princeton.edu/courses/archive/fall05/cos528/handouts/NP_is_as.pdf
+survey_pages: 10
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

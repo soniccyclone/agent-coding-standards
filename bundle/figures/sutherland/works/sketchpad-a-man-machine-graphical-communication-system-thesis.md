@@ -6,6 +6,9 @@ description: Sutherland's 1963 MIT PhD dissertation describing Sketchpad, a real
 subdomains: [programming-environments-and-object-systems]
 year: 1963
 url: https://www.cl.cam.ac.uk/techreports/UCAM-CL-TR-574.pdf
+survey_pages: 149
+survey_text_layer: full
+survey_fetch_mb: 3
 access: public
 host: institutional
 tags: [work]

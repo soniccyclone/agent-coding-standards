@@ -6,6 +6,9 @@ description: A book-length treatment of OOram, Reenskaug's role-modeling method 
 subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
 year: 1996
 url: https://folk.universitetetioslo.no/trygver/1996/book/WorkingWithObjects.pdf
+survey_pages: 497
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

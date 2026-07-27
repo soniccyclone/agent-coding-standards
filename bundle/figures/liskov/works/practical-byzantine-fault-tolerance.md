@@ -6,6 +6,9 @@ description: Presents PBFT, the first Byzantine-fault-tolerant replication proto
 subdomains: [distributed-systems-and-concurrency]
 year: 1999
 url: http://web.archive.org/web/20251211170759/http://pmg.csail.mit.edu/papers/osdi99.pdf
+survey_pages: 14
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

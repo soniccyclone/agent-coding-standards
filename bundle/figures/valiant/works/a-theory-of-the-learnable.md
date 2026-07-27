@@ -6,6 +6,9 @@ description: Valiant reframes machine learning as a question in computational co
 subdomains: [algorithms-and-complexity]
 year: 1984
 url: https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf
+survey_pages: 9
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

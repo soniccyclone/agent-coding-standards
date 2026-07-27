@@ -6,6 +6,9 @@ description: A high-level walkthrough of the actual mechanics inside the Unix ke
 subdomains: [operating-systems-and-systems-programming]
 year: 1978
 url: https://users.soe.ucsc.edu/~sbrandt/221/Papers/History/thompson-bstj78.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

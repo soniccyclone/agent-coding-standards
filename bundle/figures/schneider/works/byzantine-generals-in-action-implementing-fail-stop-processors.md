@@ -6,6 +6,9 @@ description: Shows how to approximate an idealized "fail-stop processor" — one
 subdomains: [distributed-systems-and-concurrency]
 year: 1984
 url: https://www.cs.cornell.edu/fbs/publications/ByzGensInAction.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

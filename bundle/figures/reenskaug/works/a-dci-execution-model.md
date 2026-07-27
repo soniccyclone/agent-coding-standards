@@ -6,6 +6,9 @@ description: A technical account of how DCI's Context/Role/RoleMethod structure 
 subdomains: [programming-environments-and-object-systems]
 year: 2012
 url: https://folk.universitetetioslo.no/trygver/2012/DCIExecutionModel-2.1.pdf
+survey_pages: 11
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

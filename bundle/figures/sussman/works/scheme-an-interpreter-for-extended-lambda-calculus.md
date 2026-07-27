@@ -6,6 +6,9 @@ description: The founding document of Scheme, written up as an AI Memo rather th
 subdomains: [programming-languages-and-semantics]
 year: 1975
 url: https://web.archive.org/web/20260405051522/https://dspace.mit.edu/bitstream/handle/1721.1/5794/AIM-349.pdf
+survey_pages: 43
+survey_text_layer: none
+survey_fetch_mb: 2
 access: public
 host: institutional
 tags: [work]

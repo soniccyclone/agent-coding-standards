@@ -6,6 +6,9 @@ description: A textbook that teaches programming with specification and proof as
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 1981
 url: https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf
+survey_pages: 449
+survey_text_layer: full
+survey_fetch_mb: 33
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: Develops a general technique for synchronizing processes in a distr
 subdomains: [distributed-systems-and-concurrency, programming-languages-and-semantics]
 year: 1982
 url: https://www.cs.cornell.edu/fbs/publications/synchDistProg.pdf
+survey_pages: 24
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

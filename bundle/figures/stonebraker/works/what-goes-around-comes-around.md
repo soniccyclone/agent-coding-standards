@@ -6,6 +6,9 @@ description: A survey tracing 35 years of database data-model proposals across n
 subdomains: [databases-and-data-management]
 year: 2005
 url: https://people.cs.umass.edu/~yanlei/courses/CS691LL-f06/papers/SH05.pdf
+survey_pages: 40
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

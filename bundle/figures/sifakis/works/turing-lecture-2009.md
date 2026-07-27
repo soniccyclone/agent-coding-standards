@@ -6,6 +6,9 @@ description: The joint Turing Award lecture paper, co-written with Edmund Clarke
 subdomains: [formal-methods-and-verification]
 year: 2009
 url: https://www-verimag.imag.fr/~sifakis/TuringAwardPaper-Apr14.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

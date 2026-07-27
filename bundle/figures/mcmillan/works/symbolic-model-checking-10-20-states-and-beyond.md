@@ -6,6 +6,9 @@ description: The paper that introduced symbolic model checking to the field, wri
 subdomains: [formal-methods-and-verification]
 year: 1990
 url: https://mcmil.net/pubs/LICS90.pdf
+survey_pages: 33
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

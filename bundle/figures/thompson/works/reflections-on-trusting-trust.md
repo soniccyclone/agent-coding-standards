@@ -6,6 +6,9 @@ description: Thompson's Turing Award lecture, demonstrating that a compiler can 
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1984
 url: https://www.cl.cam.ac.uk/teaching/2324/R209/Reflections-Trusting-Trust.pdf
+survey_pages: 7
+survey_text_layer: partial
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

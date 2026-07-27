@@ -6,6 +6,9 @@ description: Co-authored with Paul Bernays, this paper isolates special cases of
 subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1928
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0099/LOG_0022.pdf
+survey_pages: 32
+survey_text_layer: partial
+survey_fetch_mb: 2
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,9 @@ description: A wartime Bletchley Park treatise laying out Turing's general frame
 subdomains: [algorithms-and-complexity]
 year: circa 1941-42
 url: https://arxiv.org/pdf/1505.04714
+survey_pages: 33
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

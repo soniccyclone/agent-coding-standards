@@ -6,6 +6,9 @@ description: Formalizes Floyd's inductive-assertion method into a deductive proo
 subdomains: [formal-methods-and-verification]
 year: 1969
 url: http://www.cs.cmu.edu/~crary/819-f09/Hoare69.pdf
+survey_pages: 6
+survey_text_layer: none
+survey_fetch_mb: 2
 access: public
 host: third-party-rehost
 tags: [work]

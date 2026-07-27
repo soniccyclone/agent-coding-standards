@@ -6,6 +6,9 @@ description: Edmonds and Karp show that choosing augmenting paths by shortest le
 subdomains: [algorithms-and-complexity]
 year: 1972
 url: https://web.eecs.umich.edu/~pettie/matching/Edmonds-Karp-network-flow.pdf
+survey_pages: 17
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: Presents a formal type system for a simple imperative language in w
 subdomains: [programming-languages-and-semantics]
 year: 1978
 url: https://homepages.inf.ed.ac.uk/wadler/papers/papers-we-love/milner-type-polymorphism.pdf
+survey_pages: 28
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

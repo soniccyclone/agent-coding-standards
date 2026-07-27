@@ -6,6 +6,9 @@ description: Treats extensibility and the ability to strip a system down to a sm
 subdomains: [software-engineering-and-architecture]
 year: 1979
 url: https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/1c68d0f98909a126ec5eb6a0ff358ec7_parnas_ease.pdf
+survey_pages: 14
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,9 @@ description: A 2003 retrospective talk recounting MVC's 1978-79 origins at PARC 
 subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
 year: 2003
 url: https://folk.universitetetioslo.no/trygver/2003/javazone-jaoo/MVC_pattern.pdf
+survey_pages: 16
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

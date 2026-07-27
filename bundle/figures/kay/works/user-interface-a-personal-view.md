@@ -6,6 +6,9 @@ description: A chapter in Brenda Laurel's edited collection "The Art of Human-Co
 subdomains: [programming-environments-and-object-systems]
 year: 1990
 url: https://tinlizzie.org/VPRIPapers/hc_user_interface.pdf
+survey_pages: 14
+survey_text_layer: none
+survey_fetch_mb: 3
 access: public
 host: self-archived
 tags: [work]

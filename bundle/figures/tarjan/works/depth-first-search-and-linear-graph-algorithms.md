@@ -6,6 +6,9 @@ description: Formalizes depth-first search as a rigorous algorithmic technique r
 subdomains: [algorithms-and-complexity]
 year: 1972
 url: https://sites.cs.ucsb.edu/~gilbert/cs240a/old/cs240aSpr2011/slides/TarjanDFS.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 4
 access: public
 host: third-party-rehost
 tags: [work]

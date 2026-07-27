@@ -6,6 +6,9 @@ description: Hoare's 1980 Turing Award lecture, a self-critical retrospective on
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1980 (lecture); 1981 (CACM publication)
 url: https://worrydream.com/refs/Hoare_1981_-_The_Emperors_Old_Clothes.pdf
+survey_pages: 13
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

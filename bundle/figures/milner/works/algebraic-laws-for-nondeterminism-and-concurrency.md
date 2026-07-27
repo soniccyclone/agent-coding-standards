@@ -6,6 +6,9 @@ description: Works out a complete axiomatic theory of observational equivalence 
 subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification]
 year: 1985
 url: https://www.scss.tcd.ie/matthew.hennessy/pubs/old/HMjacm85.pdf
+survey_pages: 25
+survey_text_layer: full
+survey_fetch_mb: 3
 access: public
 host: self-archived
 tags: [work]

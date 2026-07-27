@@ -6,6 +6,9 @@ description: A tutorial-style distillation of Lamport's Paxos algorithm, framing
 subdomains: [distributed-systems-and-concurrency]
 year: 1996
 url: https://bwlampson.site/58-Consensus/Acrobat.pdf
+survey_pages: 17
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

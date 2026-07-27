@@ -6,6 +6,9 @@ description: Describes how Multics implements access control in practice — acc
 subdomains: [operating-systems-and-systems-programming]
 year: 1974
 url: https://web.mit.edu/Saltzer/www/publications/protmult.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

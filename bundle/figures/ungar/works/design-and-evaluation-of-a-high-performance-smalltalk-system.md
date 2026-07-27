@@ -6,6 +6,9 @@ description: Ungar's Berkeley PhD dissertation, showing that a reduced-instructi
 subdomains: [programming-environments-and-object-systems, operating-systems-and-systems-programming]
 year: 1986
 url: https://archive.org/download/DTIC_ADA173022/DTIC_ADA173022.pdf
+survey_pages: 245
+survey_text_layer: full
+survey_fetch_mb: 13
 access: public
 host: institutional
 tags: [work]

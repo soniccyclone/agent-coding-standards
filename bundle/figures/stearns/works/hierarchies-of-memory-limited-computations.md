@@ -6,6 +6,9 @@ description: With Juris Hartmanis and Philip M. Lewis II, extends the time-hiera
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1965
 url: http://web.archive.org/web/20220120034328/http://www.cs.albany.edu/~res/space.pdf
+survey_pages: 12
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

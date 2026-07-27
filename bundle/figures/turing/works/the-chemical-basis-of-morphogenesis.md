@@ -6,6 +6,9 @@ description: Proposes that a system of diffusing, reacting chemical substances (
 subdomains: [foundations-of-computation]
 year: 1952
 url: https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf
+survey_pages: 37
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

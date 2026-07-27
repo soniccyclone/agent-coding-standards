@@ -6,6 +6,9 @@ description: Introduces Mach, a multiprocessor-capable kernel built around a sma
 subdomains: [operating-systems-and-systems-programming]
 year: 1986
 url: https://raw.githubusercontent.com/tpn/pdfs/master/Mach%20-%20A%20New%20Kernel%20Foundation%20for%20UNIX%20Developers%20(mach_usenix86).pdf
+survey_pages: 16
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: third-party-rehost
 tags: [work]

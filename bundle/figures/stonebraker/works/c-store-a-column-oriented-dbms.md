@@ -6,6 +6,9 @@ description: Proposes a relational database engine built around column-wise rath
 subdomains: [databases-and-data-management]
 year: 2005
 url: https://www.vldb.org/archives/website/2005/program/paper/thu/p553-stonebraker.pdf
+survey_pages: 12
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

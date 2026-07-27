@@ -6,6 +6,9 @@ description: With Harry B. Hunt III, introduces the generalized satisfiability p
 subdomains: [algorithms-and-complexity]
 year: 1996
 url: http://web.archive.org/web/20120313180518/http://www.cs.albany.edu/~res/gsp.pdf
+survey_pages: 40
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

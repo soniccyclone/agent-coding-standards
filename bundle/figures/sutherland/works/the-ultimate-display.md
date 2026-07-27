@@ -6,6 +6,9 @@ description: A short, visionary 1965 paper arguing that a computer display shoul
 subdomains: [programming-environments-and-object-systems]
 year: 1965
 url: https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf
+survey_pages: 2
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

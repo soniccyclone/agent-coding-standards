@@ -6,6 +6,9 @@ description: The journal version of McMillan's thesis work, showing symbolic mod
 subdomains: [formal-methods-and-verification]
 year: 1994
 url: https://mcmil.net/pubs/TCAD94.pdf
+survey_pages: 24
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: self-archived
 tags: [work]

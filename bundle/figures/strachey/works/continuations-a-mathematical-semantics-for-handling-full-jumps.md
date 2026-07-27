@@ -6,6 +6,9 @@ description: Extends denotational semantics to cover unrestricted control transf
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1974
 url: https://www.cs.ox.ac.uk/files/3233/PRG11.pdf
+survey_pages: 31
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

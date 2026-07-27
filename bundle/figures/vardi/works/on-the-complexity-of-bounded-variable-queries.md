@@ -6,6 +6,9 @@ description: Studies what happens to relational-calculus queries once you cap ho
 subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 1995
 url: http://www.cs.rice.edu/~vardi/papers/pods95.pdf
+survey_pages: 11
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: With Adele Goldberg, this paper documents the working Smalltalk env
 subdomains: [programming-environments-and-object-systems]
 year: 1977
 url: https://worrydream.com/refs/Kay_1977_-_Personal_Dynamic_Media.pdf
+survey_pages: 11
+survey_text_layer: full
+survey_fetch_mb: 16
 access: public
 host: third-party-rehost
 tags: [work]

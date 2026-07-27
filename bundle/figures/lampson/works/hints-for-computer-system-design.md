@@ -6,6 +6,9 @@ description: A collection of design maxims Lampson distilled from hands-on work 
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1983
 url: https://bwlampson.site/33-Hints/Acrobat.pdf
+survey_pages: 27
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

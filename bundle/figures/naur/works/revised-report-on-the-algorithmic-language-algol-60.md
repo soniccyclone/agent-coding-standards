@@ -6,6 +6,9 @@ description: The standards document defining ALGOL 60 as refined after three yea
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1963
 url: https://softwarepreservation.computerhistory.org/ALGOL/report/Algol60_revised_report_CACM.pdf
+survey_pages: 17
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

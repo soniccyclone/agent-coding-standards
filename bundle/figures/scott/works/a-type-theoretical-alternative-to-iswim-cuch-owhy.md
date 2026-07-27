@@ -6,6 +6,9 @@ description: A privately circulated 1969 manuscript, not published until 1993, i
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1969/1993
 url: https://www.cs.cmu.edu/~kw/scans/scott93tcs.pdf
+survey_pages: 30
+survey_text_layer: none
+survey_fetch_mb: 2
 access: public
 host: third-party-rehost
 tags: [work]

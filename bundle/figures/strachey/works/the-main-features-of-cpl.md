@@ -6,6 +6,9 @@ description: An informal introduction to CPL (Combined Programming Language), a 
 subdomains: [programming-languages-and-semantics]
 year: 1963
 url: http://web.archive.org/web/20250401021940/http://www.math.bas.bg/~bantchev/place/cpl/features.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

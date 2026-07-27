@@ -6,6 +6,9 @@ description: Introduces the I/O automaton, a state-machine model for a single co
 subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification]
 year: 1989
 url: http://groups.csail.mit.edu/tds/papers/Lynch/CWI89.pdf
+survey_pages: 30
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

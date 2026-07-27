@@ -6,6 +6,9 @@ description: A two-page note proposing that a small, fast core memory sit in fro
 subdomains: [operating-systems-and-systems-programming]
 year: 1965
 url: https://www.cs.auckland.ac.nz/courses/compsci703s1c/resources/Wilkes.pdf
+survey_pages: 2
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: Argues that the 1970s-era RDBMS architecture — disk-oriented buff
 subdomains: [databases-and-data-management, distributed-systems-and-concurrency]
 year: 2007
 url: https://www.vldb.org/conf/2007/papers/industrial/p1150-stonebraker.pdf
+survey_pages: 11
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: institutional
 tags: [work]

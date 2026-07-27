@@ -6,6 +6,9 @@ description: The original technical definition of C as implemented for the PDP-1
 subdomains: [programming-languages-and-semantics]
 year: 1975
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cman.pdf
+survey_pages: 31
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

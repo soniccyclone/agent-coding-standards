@@ -6,6 +6,9 @@ description: A full workstation environment — operating system, compiler, and 
 subdomains: [operating-systems-and-systems-programming, programming-environments-and-object-systems]
 year: 1992
 url: https://people.inf.ethz.ch/wirth/ProjectOberon1992.pdf
+survey_pages: 441
+survey_text_layer: full
+survey_fetch_mb: 4
 access: public
 host: self-archived
 tags: [work]

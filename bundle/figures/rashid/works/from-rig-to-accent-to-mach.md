@@ -6,6 +6,9 @@ description: Rashid's own retrospective tracing three successive kernels he work
 subdomains: [operating-systems-and-systems-programming]
 year: 1986
 url: https://www.seltzer.com/margo/teaching/CS508.19/papers/rashid86.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

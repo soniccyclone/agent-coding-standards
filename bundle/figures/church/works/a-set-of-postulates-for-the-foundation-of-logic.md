@@ -6,6 +6,9 @@ description: The second of a two-part paper (the first appeared in Annals of Mat
 subdomains: [foundations-of-computation]
 year: 1933
 url: https://www.cis.upenn.edu/~cis5110/Church-SetPostulatesFoundation-1933.pdf
+survey_pages: 27
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

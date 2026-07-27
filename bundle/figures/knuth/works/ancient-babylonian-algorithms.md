@@ -6,6 +6,9 @@ description: A close reading of cuneiform mathematical tablets (roughly 1800-160
 subdomains: [algorithms-and-complexity]
 year: 1972
 url: https://teaching.csse.uwa.edu.au/units/CITS1001/extension/ancient-babylonian-algorithms.pdf
+survey_pages: 7
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

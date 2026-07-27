@@ -6,6 +6,9 @@ description: The full system overview of Plan 9, the distributed successor to Un
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1995
 url: https://www.usenix.org/legacy/publications/compsystems/1995/sum_pike.pdf
+survey_pages: 34
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

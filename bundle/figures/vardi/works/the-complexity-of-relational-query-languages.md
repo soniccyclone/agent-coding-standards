@@ -6,6 +6,9 @@ description: Shows that how hard a relational query is to answer depends heavily
 subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 1982
 url: http://www.cs.rice.edu/~vardi/papers/stoc82.pdf
+survey_pages: 10
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: Develops proof techniques — including finite-model-theory tools s
 subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 1990
 url: http://www.cs.rice.edu/~vardi/papers/pods90rj.pdf
+survey_pages: 43
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

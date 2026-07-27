@@ -6,6 +6,9 @@ description: Kay's conference paper making the case for a "Dynabook" — a porta
 subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
 year: 1972
 url: https://tinlizzie.org/VPRIPapers/hc_pers_comp_for_children.pdf
+survey_pages: 12
+survey_text_layer: full
+survey_fetch_mb: 3
 access: public
 host: self-archived
 tags: [work]

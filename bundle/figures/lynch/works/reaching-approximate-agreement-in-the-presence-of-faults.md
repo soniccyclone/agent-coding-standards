@@ -6,6 +6,9 @@ description: Studies a variant of Byzantine agreement where processes start with
 subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
 year: 1986
 url: https://groups.csail.mit.edu/tds/papers/Lynch/jacm86.pdf
+survey_pages: 18
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

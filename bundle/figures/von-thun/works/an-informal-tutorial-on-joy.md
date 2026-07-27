@@ -6,6 +6,9 @@ description: The working introduction to Joy for programmers rather than logicia
 subdomains: [programming-languages-and-semantics]
 year: 2001
 url: https://www.complang.tuwien.ac.at/anton/euroforth/ef01/thun01.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

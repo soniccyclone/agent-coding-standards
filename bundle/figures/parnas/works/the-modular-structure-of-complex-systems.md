@@ -6,6 +6,9 @@ description: Extends the 1972 decomposition criteria to genuinely large systems,
 subdomains: [software-engineering-and-architecture]
 year: 1985
 url: https://cse.msu.edu/~cse870/Input/SS2002/MiniProject/Sources/parnas84-mod-structure.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: An invited lecture summing up Nygaard's system-development research
 subdomains: [software-engineering-and-architecture]
 year: 1986
 url: http://web.archive.org/web/20060924071352/http://heim.ifi.uio.no/~kristen/PDF_MAPPE/F_PDF_MAPPE/F_IFIP_86.pdf
+survey_pages: 25
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

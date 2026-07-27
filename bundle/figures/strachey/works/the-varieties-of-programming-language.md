@@ -6,6 +6,9 @@ description: A comparative survey of the "domains" of values a language can mani
 subdomains: [programming-languages-and-semantics]
 year: 1973
 url: https://www.cs.ox.ac.uk/files/3232/PRG10.pdf
+survey_pages: 24
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

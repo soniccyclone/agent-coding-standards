@@ -6,6 +6,9 @@ description: Founds the formal theory of nondeterminism by introducing the nonde
 subdomains: [foundations-of-computation, algorithms-and-complexity]
 year: 1959
 url: https://www.cse.chalmers.se/~coquand/AUTOMATA/rs.pdf
+survey_pages: 12
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

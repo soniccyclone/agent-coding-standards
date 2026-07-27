@@ -6,6 +6,9 @@ description: Introduces the "asymptotic spectrum" of tensors, a duality-theoreti
 subdomains: [algorithms-and-complexity]
 year: 1988
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0384/LOG_0008.pdf
+survey_pages: 52
+survey_text_layer: partial
+survey_fetch_mb: 3
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,9 @@ description: Extends Hoare logic with a "separating conjunction" that lets a pro
 subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
 year: 2002
 url: https://www.cs.cmu.edu/~jcr/seplogic.pdf
+survey_pages: 20
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

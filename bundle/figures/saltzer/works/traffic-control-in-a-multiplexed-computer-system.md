@@ -6,6 +6,9 @@ description: Saltzer's doctoral dissertation, advised by Corbató, proposing a s
 subdomains: [operating-systems-and-systems-programming]
 year: 1966
 url: https://web.mit.edu/Saltzer/www/publications/TRs+TMs/Multics/TR-030.pdf
+survey_pages: 92
+survey_text_layer: full
+survey_fetch_mb: 4
 access: public
 host: self-archived
 tags: [work]

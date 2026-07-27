@@ -6,6 +6,9 @@ description: Proposes a programming model where computation is a network of smal
 subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency]
 year: 2009
 url: https://groups.csail.mit.edu/mac/users/gjs/6.945/readings/art.pdf
+survey_pages: 50
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

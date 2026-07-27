@@ -6,6 +6,9 @@ description: Develops Brinch Hansen's monitor concept into a full structuring me
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1974
 url: http://web.archive.org/web/20220619233139/https://lya.fciencias.unam.mx/jloa/Articulos/CARHoareMonitors.pdf
+survey_pages: 17
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

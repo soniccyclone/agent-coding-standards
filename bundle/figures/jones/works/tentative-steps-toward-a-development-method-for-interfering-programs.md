@@ -6,6 +6,9 @@ description: The founding rely/guarantee paper. Extends Jones's VDM-style develo
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1983
 url: https://ilyasergey.net/CS6213/_static/05-owicki/rg.pdf
+survey_pages: 24
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

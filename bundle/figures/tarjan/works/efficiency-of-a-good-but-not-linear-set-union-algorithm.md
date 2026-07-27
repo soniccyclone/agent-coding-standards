@@ -6,6 +6,9 @@ description: Analyzes the union-find data structure under union-by-weight and pa
 subdomains: [algorithms-and-complexity]
 year: 1974
 url: https://www2.eecs.berkeley.edu/Pubs/TechRpts/1974/Archive/ERL-m-434.pdf
+survey_pages: 27
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

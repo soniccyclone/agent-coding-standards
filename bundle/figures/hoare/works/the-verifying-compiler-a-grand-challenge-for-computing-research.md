@@ -6,6 +6,9 @@ description: Proposes a decades-long research program to build a compiler that c
 subdomains: [formal-methods-and-verification]
 year: 2003
 url: https://www.csl.sri.com/users/shankar/GC04/hoare-compiler.pdf
+survey_pages: 7
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: Extends Péter's analysis of recursion schemes to "multiple recursi
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0113/LOG_0035.pdf
+survey_pages: 40
+survey_text_layer: partial
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

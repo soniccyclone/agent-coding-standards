@@ -6,6 +6,9 @@ description: The mature, textbook-form statement of VDM, refined from the 1980 b
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 1990
 url: http://homepages.cs.ncl.ac.uk/cliff.jones/publications/Books/Jones1990.pdf
+survey_pages: 345
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

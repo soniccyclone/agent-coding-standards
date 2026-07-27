@@ -6,6 +6,9 @@ description: Develops a theory of bilinear complexity measured relative to a cho
 subdomains: [algorithms-and-complexity]
 year: 1987
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0375_0376/LOG_0024.pdf
+survey_pages: 39
+survey_text_layer: partial
+survey_fetch_mb: 4
 access: public
 host: institutional
 tags: [work]

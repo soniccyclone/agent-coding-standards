@@ -6,6 +6,9 @@ description: Argues that software "ages" in two distinct ways — lack of change
 subdomains: [software-engineering-and-architecture]
 year: 1994
 url: https://www.cs.drexel.edu/~yc349/CS451/RequiredReadings/SoftwareAging.pdf
+survey_pages: 9
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

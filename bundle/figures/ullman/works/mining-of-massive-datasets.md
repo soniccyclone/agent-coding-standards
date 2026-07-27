@@ -6,6 +6,9 @@ description: A textbook, built out of Stanford's CS246/CS345A courses, covering 
 subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 2020
 url: http://infolab.stanford.edu/~ullman/mmds/book0n.pdf
+survey_pages: 603
+survey_text_layer: full
+survey_fetch_mb: 3
 access: public
 host: self-archived
 tags: [work]

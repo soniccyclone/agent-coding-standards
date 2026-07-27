@@ -6,6 +6,9 @@ description: Makes the case that the general-purpose relational engine, tuned to
 subdomains: [databases-and-data-management, software-engineering-and-architecture]
 year: 2005
 url: https://cs.brown.edu/people/ugur/fits_all.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

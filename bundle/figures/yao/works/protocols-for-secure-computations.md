@@ -6,6 +6,9 @@ description: Introduces the general problem of secure multi-party computation th
 subdomains: [algorithms-and-complexity, distributed-systems-and-concurrency]
 year: 1982
 url: https://cdn.sanity.io/files/r000fwn3/production/0e0427aedfed65c8dd688c094b181feacf4eaab4.pdf
+survey_pages: 5
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

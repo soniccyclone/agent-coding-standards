@@ -6,6 +6,9 @@ description: A textbook built on the thesis that a program is inseparable from t
 subdomains: [algorithms-and-complexity]
 year: 1976 (Oberon revision: 2004)
 url: https://people.inf.ethz.ch/wirth/AD.pdf
+survey_pages: 212
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: The founding CESAR paper, presenting a tool for verifying networks 
 subdomains: [formal-methods-and-verification]
 year: 1982
 url: https://web.archive.org/web/20251109074827/http://www-verimag.imag.fr/~sifakis/RECH/queille_sifakis.pdf
+survey_pages: 15
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

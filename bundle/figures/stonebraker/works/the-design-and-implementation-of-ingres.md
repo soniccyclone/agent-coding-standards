@@ -6,6 +6,9 @@ description: Describes the operational 1976 INGRES system — one of the first w
 subdomains: [databases-and-data-management, operating-systems-and-systems-programming]
 year: 1976
 url: https://www2.eecs.berkeley.edu/Pubs/TechRpts/1976/Archive/ERL-m-577.pdf
+survey_pages: 36
+survey_text_layer: full
+survey_fetch_mb: 6
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,9 @@ description: A historical survey tracing how continuations — reifying "the res
 subdomains: [programming-languages-and-semantics]
 year: 1993
 url: https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/histcont.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

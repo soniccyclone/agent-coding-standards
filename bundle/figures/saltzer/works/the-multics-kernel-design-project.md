@@ -6,6 +6,9 @@ description: Reports on an effort to restructure the Multics supervisor into a s
 subdomains: [operating-systems-and-systems-programming]
 year: 1977
 url: https://web.mit.edu/Saltzer/www/publications/rfc/csr-rfc-140.pdf
+survey_pages: 41
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

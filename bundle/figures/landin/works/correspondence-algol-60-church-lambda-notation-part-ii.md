@@ -6,6 +6,9 @@ description: The second half of the ALGOL-60-to-lambda-calculus translation, ext
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1965
 url: https://web.archive.org/web/20250316005026/https://dl.acm.org/doi/pdf/10.1145/363791.363804
+survey_pages: 8
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

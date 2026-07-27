@@ -6,6 +6,9 @@ description: Introduces the splay tree, a binary search tree with no explicit ba
 subdomains: [algorithms-and-complexity]
 year: 1985
 url: https://www.cs.cmu.edu/~sleator/papers/self-adjusting.pdf
+survey_pages: 35
+survey_text_layer: full
+survey_fetch_mb: 5
 access: public
 host: self-archived
 tags: [work]

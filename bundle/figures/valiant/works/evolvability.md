@@ -6,6 +6,9 @@ description: Valiant models Darwinian evolution as a restricted, resource-bounde
 subdomains: [algorithms-and-complexity]
 year: 2009
 url: https://people.seas.harvard.edu/~valiant/evolvability-2008.pdf
+survey_pages: 19
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

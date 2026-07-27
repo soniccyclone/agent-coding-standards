@@ -6,6 +6,9 @@ description: With Juris Hartmanis, introduces time and space as formal cost meas
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1965
 url: https://www.ams.org/journals/tran/1965-117-00/S0002-9947-1965-0170805-7/S0002-9947-1965-0170805-7.pdf
+survey_pages: 22
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

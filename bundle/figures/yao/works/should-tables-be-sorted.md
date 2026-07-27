@@ -6,6 +6,9 @@ description: Studies the lower bound on the number of probes needed to answer me
 subdomains: [algorithms-and-complexity, databases-and-data-management]
 year: 1981
 url: https://www.cs.umd.edu/users/gasarch/COURSES/858/S13/tables.pdf
+survey_pages: 14
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: Makes the case for writing programs primarily as documents addresse
 subdomains: [software-engineering-and-architecture]
 year: 1984
 url: http://www.literateprogramming.com/knuthweb.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: Valiant proves that computing the permanent of a 0/1 matrix — a f
 subdomains: [algorithms-and-complexity]
 year: 1979
 url: https://www.math.cmu.edu/~af1p/Teaching/MCC17/Papers/permanent.pdf
+survey_pages: 13
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

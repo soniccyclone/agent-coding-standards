@@ -6,6 +6,9 @@ description: Proves that in an asynchronous message-passing system, no determini
 subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
 year: 1985
 url: http://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
+survey_pages: 9
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

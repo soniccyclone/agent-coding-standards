@@ -6,6 +6,9 @@ description: Wirth's 1984 Turing Award lecture, tracing a single throughline fro
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1985
 url: https://people.inf.ethz.ch/wirth/Articles/TuringAward.pdf
+survey_pages: 6
+survey_text_layer: none
+survey_fetch_mb: 2
 access: public
 host: self-archived
 tags: [work]

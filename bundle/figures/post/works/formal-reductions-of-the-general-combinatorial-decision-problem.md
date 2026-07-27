@@ -6,6 +6,9 @@ description: Develops Post's "canonical system" formalism — production rules t
 subdomains: [foundations-of-computation]
 year: 1943
 url: http://web.archive.org/web/20241021183321/http://lib.ysu.am/articles_art/63062f3ed126193beb426becc0fbbe33.pdf
+survey_pages: 20
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

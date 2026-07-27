@@ -6,6 +6,9 @@ description: Presents the link-cut tree, a structure for maintaining a forest of
 subdomains: [algorithms-and-complexity]
 year: 1983
 url: https://www.cs.cmu.edu/~sleator/papers/dynamic-trees.pdf
+survey_pages: 30
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

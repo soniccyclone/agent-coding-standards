@@ -6,6 +6,9 @@ description: A retrospective on the System R project's three phases (roughly 197
 subdomains: [databases-and-data-management]
 year: 1981
 url: https://www.cs.cmu.edu/~natassa/courses/15-721/papers/p632-chamberlin.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

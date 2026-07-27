@@ -6,6 +6,9 @@ description: A Viewpoints Research Institute technical report to the National Sc
 subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
 year: 2007
 url: https://tinlizzie.org/VPRIPapers/tr2007008_steps.pdf
+survey_pages: 50
+survey_text_layer: full
+survey_fetch_mb: 4
 access: public
 host: self-archived
 tags: [work]

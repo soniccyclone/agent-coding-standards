@@ -6,6 +6,9 @@ description: Uses amortized analysis to compare online heuristics for two classi
 subdomains: [algorithms-and-complexity, operating-systems-and-systems-programming]
 year: 1985
 url: https://www.cs.cmu.edu/afs/cs/user/sleator/www/papers/amortized-efficiency.pdf
+survey_pages: 7
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

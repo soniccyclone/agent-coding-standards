@@ -6,6 +6,9 @@ description: Steele's 1998 OOPSLA keynote arguing that a well-designed language 
 subdomains: [programming-languages-and-semantics]
 year: 1998
 url: https://homepages.inf.ed.ac.uk/wadler/gj/Documents/steele-oopsla98.pdf
+survey_pages: 14
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

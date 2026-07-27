@@ -6,6 +6,9 @@ description: Landin specifies an abstract machine — the SECD machine, named fo
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1964
 url: https://www.cs.cmu.edu/afs/cs/user/crary/www/819-f09/Landin64.pdf
+survey_pages: 13
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

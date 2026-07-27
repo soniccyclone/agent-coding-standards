@@ -47,6 +47,27 @@ definition and a backlink list — for exactly the same reason `axis` already
 is one. Same many-to-many relationship to figure-owned content, same fix.
 `type: subdomain`, one file per subdomain, same shape as `axis`.
 
+**2026-07-27 — `survey_*` fields added to the `work` frontmatter.** Three
+optional, mechanically-generated fields recording what it costs to actually
+read a source: `survey_pages` (PDF page count), `survey_text_layer`
+(`none` / `partial` / `full` — whether text can be extracted, derived from
+characters recovered per page over the first ten pages), and
+`survey_fetch_mb`. A failed fetch records `survey_fetch: FAILED` instead.
+
+Reason: Phase 4 lost several agent-days to sources whose cost was invisible
+until an agent was already hours into one. The decisive variable turned out not
+to be page count alone but page count *times* extractability — a 400-page PDF
+with a text layer is one cheap `pdftotext` call, while a 30-page image-only
+scan forces OCR or page-by-page visual reads, which is what kept timing agents
+out. Because the answer is a fixed property of the artifact rather than of any
+one pass, it belongs on the work file, where Phase 5/6 and any future re-read
+get it for free instead of rediscovering it.
+
+These are derived, not authored: they can be regenerated from the URLs at any
+time (`scratchpad/survey-works.sh`), and unlike `description` or `access` they
+carry no editorial judgment. Nothing downstream should treat them as
+load-bearing for citation — they are routing hints.
+
 ## Bundle target structure
 
 ```

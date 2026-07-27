@@ -6,6 +6,9 @@ description: Companion piece to the decomposition paper, working out what a modu
 subdomains: [software-engineering-and-architecture]
 year: 1972
 url: http://www.laputan.org/pub/papers/p330-parnas.pdf
+survey_pages: 7
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

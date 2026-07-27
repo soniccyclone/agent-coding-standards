@@ -6,6 +6,9 @@ description: Introduces continuous lattices as a class of topological spaces wit
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1972
 url: https://raw.githubusercontent.com/CMU-HoTT/scott/main/pdfs/1972-continuous-lattices.pdf
+survey_pages: 40
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

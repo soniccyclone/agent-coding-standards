@@ -6,6 +6,9 @@ description: Shows how to multiply two 2x2 matrices using seven scalar multiplic
 subdomains: [algorithms-and-complexity]
 year: 1969
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN362160546_0013/LOG_0038.pdf
+survey_pages: 4
+survey_text_layer: partial
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

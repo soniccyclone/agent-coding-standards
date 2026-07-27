@@ -6,6 +6,9 @@ description: Lays out a theory of authentication built around "principals" and a
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 year: 1992
 url: https://bwlampson.site/45-AuthenticationTheoryAndPractice/Acrobat.pdf
+survey_pages: 46
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

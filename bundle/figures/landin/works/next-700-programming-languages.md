@@ -6,6 +6,9 @@ description: Landin argues that the ALGOL-family languages of the day are best u
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1966
 url: https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf
+survey_pages: 10
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

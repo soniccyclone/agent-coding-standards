@@ -6,6 +6,9 @@ description: Independently arrives at what Girard had already found in a differe
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1974
 url: https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/theotypestr.pdf
+survey_pages: 18
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: Develops a general theory of abstraction for verifying concurrent s
 subdomains: [formal-methods-and-verification]
 year: 1995
 url: http://www-verimag.imag.fr/~graf/PAPERS/LGBBS94.pdf
+survey_pages: 36
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,9 @@ description: Jones's Oxford DPhil thesis (under Hoare), the original source of t
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1981
 url: http://www.cs.ox.ac.uk/files/9025/PRG-25.pdf
+survey_pages: 265
+survey_text_layer: none
+survey_fetch_mb: 10
 access: public
 host: institutional
 tags: [work]

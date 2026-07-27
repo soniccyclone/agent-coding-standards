@@ -6,6 +6,9 @@ description: Discussion remarks from the 1951 Manchester conference arguing that
 subdomains: [operating-systems-and-systems-programming]
 year: 1951
 url: https://www.cs.princeton.edu/courses/archive/fall10/cos375/BestWay.pdf
+survey_pages: 4
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: A reflective essay in which Wirth generalizes from his own experien
 subdomains: [programming-languages-and-semantics]
 year: 1974
 url: https://people.csail.mit.edu/feser/pld-s23/Wirth_Design.pdf
+survey_pages: 8
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

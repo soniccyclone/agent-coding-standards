@@ -6,6 +6,9 @@ description: A keynote address distilling practical design advice from Hoare's e
 subdomains: [programming-languages-and-semantics]
 year: 1973
 url: https://rebelsky.cs.grinnell.edu/Courses/CS302/2007S/Readings/hoare-design.pdf
+survey_pages: 5
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

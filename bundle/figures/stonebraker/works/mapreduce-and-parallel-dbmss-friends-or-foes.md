@@ -6,6 +6,9 @@ description: A response to the early-2010s claim that MapReduce would make paral
 subdomains: [databases-and-data-management, distributed-systems-and-concurrency]
 year: 2010
 url: https://cs.stanford.edu/people/chrismre/cs345/rl/PDBMSvsMR.pdf
+survey_pages: 8
+survey_text_layer: full
+survey_fetch_mb: 3
 access: public
 host: third-party-rehost
 tags: [work]

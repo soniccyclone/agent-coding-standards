@@ -6,6 +6,9 @@ description: Walks through the design of a program (a numeric puzzle solver) as 
 subdomains: [software-engineering-and-architecture]
 year: 1971
 url: https://people.inf.ethz.ch/wirth/Articles/StepwiseRefinement.pdf
+survey_pages: 7
+survey_text_layer: none
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

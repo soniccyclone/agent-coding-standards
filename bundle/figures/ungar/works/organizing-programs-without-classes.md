@@ -6,6 +6,9 @@ description: Argues that everything classes are normally used for in an object-o
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1991
 url: https://bibliography.selflanguage.org/_static/organizing-programs.pdf
+survey_pages: 20
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

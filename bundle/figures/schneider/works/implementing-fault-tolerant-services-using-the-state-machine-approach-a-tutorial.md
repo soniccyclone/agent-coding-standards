@@ -6,6 +6,9 @@ description: Lays out the state-machine-replication method as a general recipe f
 subdomains: [distributed-systems-and-concurrency]
 year: 1990
 url: https://www.cs.cornell.edu/fbs/publications/SMSurvey.pdf
+survey_pages: 21
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: self-archived
 tags: [work]

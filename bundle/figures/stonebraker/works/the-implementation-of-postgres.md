@@ -6,6 +6,9 @@ description: A retrospective on Postgres's first several years, written by its l
 subdomains: [databases-and-data-management, programming-environments-and-object-systems]
 year: 1990
 url: https://dsf.berkeley.edu/papers/ERL-M90-34.pdf
+survey_pages: 36
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

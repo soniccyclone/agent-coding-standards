@@ -6,6 +6,9 @@ description: Kolmogorov's short monograph puts probability theory on a rigorous 
 subdomains: [foundations-of-computation]
 year: 1933
 url: https://www.york.ac.uk/depts/maths/histstat/kolmogorov_foundations.pdf
+survey_pages: 47
+survey_text_layer: none
+survey_fetch_mb: 3
 access: public
 host: institutional
 tags: [work]

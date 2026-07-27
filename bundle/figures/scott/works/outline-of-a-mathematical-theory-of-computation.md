@@ -6,6 +6,9 @@ description: Scott's first public statement of what became domain theory, propos
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1970
 url: https://www.cs.ox.ac.uk/files/3222/PRG02.pdf
+survey_pages: 30
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

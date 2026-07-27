@@ -6,6 +6,9 @@ description: The founding Self paper, laying out prototypes, slots, and behavior
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1987
 url: https://bibliography.selflanguage.org/_static/self-power.pdf
+survey_pages: 20
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

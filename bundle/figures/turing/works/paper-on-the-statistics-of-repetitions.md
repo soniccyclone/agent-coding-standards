@@ -6,6 +6,9 @@ description: A wartime cryptanalysis memo developed at Bletchley Park working ou
 subdomains: [algorithms-and-complexity]
 year: circa 1941-42
 url: https://arxiv.org/pdf/1505.04715
+survey_pages: 4
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

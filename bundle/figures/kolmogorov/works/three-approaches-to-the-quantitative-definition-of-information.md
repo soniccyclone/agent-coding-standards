@@ -6,6 +6,9 @@ description: Surveys combinatorial and probabilistic ways of measuring "how much
 subdomains: [foundations-of-computation]
 year: 1965
 url: http://alexander.shen.free.fr/library/Kolmogorov65_Three-Approaches-to-Information.pdf
+survey_pages: 7
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

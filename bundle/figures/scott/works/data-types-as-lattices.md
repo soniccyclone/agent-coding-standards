@@ -6,6 +6,9 @@ description: The mature, definitive treatment of domain theory, reworking the 19
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1976
 url: https://www.cs.ox.ac.uk/files/3287/PRG05.pdf
+survey_pages: 68
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: institutional
 tags: [work]

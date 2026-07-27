@@ -6,6 +6,9 @@ description: Defines computability by describing an idealized machine that reads
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://www.cs.ox.ac.uk/activities/ieg/e-library/sources/tp2-ie.pdf
+survey_pages: 38
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

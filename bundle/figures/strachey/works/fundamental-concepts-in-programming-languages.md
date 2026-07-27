@@ -6,6 +6,9 @@ description: Lecture notes attempting a systematic vocabulary for describing wha
 subdomains: [programming-languages-and-semantics]
 year: 1967
 url: https://reed.cs.depaul.edu/jriely/447/assets/articles/strachey-fundamental-concepts-in-programming-languages.pdf
+survey_pages: 39
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

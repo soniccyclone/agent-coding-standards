@@ -6,6 +6,9 @@ description: Proposes replicating data across sites using causal rather than tot
 subdomains: [distributed-systems-and-concurrency, databases-and-data-management]
 year: 1992
 url: https://www.cs.princeton.edu/courses/archive/spr24/cos418/papers/lazy.pdf
+survey_pages: 32
+survey_text_layer: full
+survey_fetch_mb: 2
 access: public
 host: third-party-rehost
 tags: [work]

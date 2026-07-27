@@ -6,6 +6,9 @@ description: A candid self-assessment of Unix roughly seven years after it becam
 subdomains: [operating-systems-and-systems-programming]
 year: 1978
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/retro.pdf
+survey_pages: 13
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

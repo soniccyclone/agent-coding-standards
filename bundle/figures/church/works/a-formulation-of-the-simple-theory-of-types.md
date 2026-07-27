@@ -6,6 +6,9 @@ description: Church grafts Russell and Ramsey's simple theory of types onto the 
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1940
 url: https://www.classes.cs.uchicago.edu/archive/2007/spring/32001-1/papers/church-1940.pdf
+survey_pages: 14
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

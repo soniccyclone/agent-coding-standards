@@ -6,6 +6,9 @@ description: Addresses the double-dispatch problem — how to pick the right met
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1986
 url: https://algoritmos-iii.github.io/assets/bibliografia/simple-technique-for-handling-multiple-polymorphism.pdf
+survey_pages: 3
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

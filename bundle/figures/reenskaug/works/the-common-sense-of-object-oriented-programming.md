@@ -6,6 +6,9 @@ description: Reenskaug's own solo formulation of DCI, arguing that class-based O
 subdomains: [programming-environments-and-object-systems]
 year: 2009
 url: https://folk.universitetetioslo.no/trygver/2009/commonsense.pdf
+survey_pages: 74
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

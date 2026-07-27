@@ -6,6 +6,9 @@ description: Describes Fabrik, an environment where programs are built by visual
 subdomains: [programming-environments-and-object-systems]
 year: 1988
 url: https://worrydream.com/refs/Ingalls_1988_-_Fabrik,_A_Visual_Programming_Environment.pdf
+survey_pages: 15
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

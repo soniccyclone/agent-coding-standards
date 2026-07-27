@@ -6,6 +6,9 @@ description: The Xerox PARC technical note that first uses "controller" in place
 subdomains: [programming-environments-and-object-systems]
 year: 1979
 url: https://folk.universitetetioslo.no/trygver/1979/mvc-2/1979-12-MVC.pdf
+survey_pages: 2
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

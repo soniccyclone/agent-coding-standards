@@ -6,6 +6,9 @@ description: A retrospective making the "liveness as design goal" argument expli
 subdomains: [programming-environments-and-object-systems]
 year: 1995
 url: https://bibliography.selflanguage.org/_static/programming-as-experience.pdf
+survey_pages: 28
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

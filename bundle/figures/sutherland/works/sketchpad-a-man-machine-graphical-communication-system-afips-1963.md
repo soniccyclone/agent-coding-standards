@@ -6,6 +6,9 @@ description: The condensed conference version of Sutherland's Sketchpad disserta
 subdomains: [programming-environments-and-object-systems]
 year: 1963
 url: https://papers.cumincad.org/data/works/att/5680.content.pdf
+survey_pages: 18
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: A polemic talk arguing that academic systems research had, by 2000,
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 2000
 url: http://www.herpolhode.com/rob/utah2000.pdf
+survey_pages: 23
+survey_text_layer: partial
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

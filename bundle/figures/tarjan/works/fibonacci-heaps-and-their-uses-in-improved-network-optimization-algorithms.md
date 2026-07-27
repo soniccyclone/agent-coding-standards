@@ -6,6 +6,9 @@ description: Develops the Fibonacci heap, a priority-queue structure built from 
 subdomains: [algorithms-and-complexity]
 year: 1987
 url: https://www.cs.princeton.edu/courses/archive/fall03/cs528/handouts/fibonacci%20heaps.pdf
+survey_pages: 20
+survey_text_layer: none
+survey_fetch_mb: 2
 access: public
 host: third-party-rehost
 tags: [work]

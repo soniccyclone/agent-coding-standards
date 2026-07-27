@@ -6,6 +6,9 @@ description: Tackles the view-update problem — when a user requests a change t
 subdomains: [databases-and-data-management]
 year: 1983
 url: http://www.cs.rice.edu/~vardi/papers/pods83.pdf
+survey_pages: 15
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

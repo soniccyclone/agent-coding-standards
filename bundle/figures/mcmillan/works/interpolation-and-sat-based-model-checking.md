@@ -6,6 +6,9 @@ description: McMillan shows how to do unbounded symbolic model checking using on
 subdomains: [formal-methods-and-verification]
 year: 2003
 url: https://mcmil.net/pubs/CAV03.pdf
+survey_pages: 13
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]

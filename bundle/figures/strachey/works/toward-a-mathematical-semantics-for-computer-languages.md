@@ -6,6 +6,9 @@ description: The founding paper of denotational semantics, written with Dana Sco
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1971
 url: https://www.cs.ox.ac.uk/files/3228/PRG06.pdf
+survey_pages: 49
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

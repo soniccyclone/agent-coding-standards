@@ -6,6 +6,9 @@ description: The formal definition of Pascal, describing a small language of str
 subdomains: [programming-languages-and-semantics]
 year: 1971
 url: https://oberoncore.ru/_media/library/wirth_the_programming_language_pascal.pdf
+survey_pages: 28
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: Ingalls' own statement of the goals driving Smalltalk's design — 
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1981
 url: https://worrydream.com/refs/Ingalls_1981_-_Design_Principles_Behind_Smalltalk.pdf
+survey_pages: 8
+survey_text_layer: none
+survey_fetch_mb: 5
 access: public
 host: third-party-rehost
 tags: [work]

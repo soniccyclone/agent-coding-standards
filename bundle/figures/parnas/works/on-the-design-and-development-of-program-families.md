@@ -6,6 +6,9 @@ description: Argues that related programs sharing extensive common structure sho
 subdomains: [software-engineering-and-architecture]
 year: 1976
 url: http://web.archive.org/web/20240706051829/https://courses.cs.washington.edu/courses/cse590p/07au/parnas.pdf
+survey_pages: 9
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

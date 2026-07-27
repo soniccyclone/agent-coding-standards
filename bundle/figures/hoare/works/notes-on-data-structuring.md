@@ -6,6 +6,9 @@ description: A long expository chapter working through how to reason formally ab
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1972
 url: https://www.cs.cornell.edu/courses/cs4860/2018fa/lectures/Notes-on-Data-Structuring_Hoare.pdf
+survey_pages: 92
+survey_text_layer: full
+survey_fetch_mb: 4
 access: public
 host: third-party-rehost
 tags: [work]

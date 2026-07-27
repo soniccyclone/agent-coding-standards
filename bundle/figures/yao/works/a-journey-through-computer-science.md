@@ -6,6 +6,9 @@ description: Yao's 2021 Kyoto Prize commemorative lecture, a retrospective cover
 subdomains: [algorithms-and-complexity]
 year: 2021
 url: https://www.kyotoprize.org/wp-content/uploads/2022/10/2021_yao_en.pdf
+survey_pages: 8
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]

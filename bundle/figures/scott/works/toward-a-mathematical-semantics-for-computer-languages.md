@@ -6,6 +6,9 @@ description: The founding paper of denotational semantics, written jointly with 
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1971
 url: https://www.cs.cmu.edu/~crary/819-f09/Scott71.pdf
+survey_pages: 28
+survey_text_layer: none
+survey_fetch_mb: 8
 access: public
 host: third-party-rehost
 tags: [work]

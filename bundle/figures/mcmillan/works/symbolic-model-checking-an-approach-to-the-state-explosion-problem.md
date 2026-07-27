@@ -6,6 +6,9 @@ description: McMillan's 1992 CMU PhD thesis, the founding document of symbolic m
 subdomains: [formal-methods-and-verification]
 year: 1992
 url: https://mcmil.net/pubs/thesis.pdf
+survey_pages: 214
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: self-archived
 tags: [work]

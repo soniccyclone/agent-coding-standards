@@ -6,6 +6,9 @@ description: Mechanically translates the familiar imperative control constructs 
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1976
 url: https://web.archive.org/web/20251213194956/https://dspace.mit.edu/bitstream/handle/1721.1/5790/AIM-353.pdf
+survey_pages: 40
+survey_text_layer: none
+survey_fetch_mb: 2
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,9 @@ description: Ingalls' account of Smalltalk-76, the version that introduced the c
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1978
 url: https://ia601501.us.archive.org/25/items/bitsavers_xeroxparctalk76ProgrammingSystemDesignandImplement_1637358/The_Smalltalk-76_Programming_System_Design_and_Implementation.pdf
+survey_pages: 16
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

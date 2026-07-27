@@ -6,6 +6,9 @@ description: Building directly on Cook's 1971 theorem about Boolean satisfiabili
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1972
 url: https://www.cs.umd.edu/~gasarch/BLOGPAPERS/Karp.pdf
+survey_pages: 23
+survey_text_layer: partial
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

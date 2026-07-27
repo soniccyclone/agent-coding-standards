@@ -6,6 +6,9 @@ description: Introduces a public-key encryption and signature scheme (now known 
 subdomains: [algorithms-and-complexity]
 year: 1979
 url: https://www.bitsavers.org/pdf/mit/lcs/tr/MIT-LCS-TR-0212.pdf
+survey_pages: 20
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: Argues that the real product of programming is not the code itself 
 subdomains: [software-engineering-and-architecture]
 year: 1985
 url: https://pages.cs.wisc.edu/~remzi/Naur.pdf
+survey_pages: 14
+survey_text_layer: none
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

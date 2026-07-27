@@ -6,6 +6,9 @@ description: Joy's public debut paper, introducing the language to a Forth audie
 subdomains: [programming-languages-and-semantics]
 year: 2001
 url: https://www.complang.tuwien.ac.at/anton/euroforth/ef01/thomas01a.pdf
+survey_pages: 9
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

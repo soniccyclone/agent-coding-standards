@@ -6,6 +6,9 @@ description: Gives a linear-time algorithm for deciding whether an arbitrary gra
 subdomains: [algorithms-and-complexity]
 year: 1974
 url: https://web.archive.org/web/20221226115810/https://ecommons.cornell.edu/bitstream/handle/1813/6011/73-165.pdf
+survey_pages: 57
+survey_text_layer: none
+survey_fetch_mb: 2
 access: public
 host: institutional
 tags: [work]

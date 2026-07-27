@@ -6,6 +6,9 @@ description: Explains Plan 9's central organizing idea — that every resource, 
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1993
 url: https://9p.io/sys/doc/names.pdf
+survey_pages: 7
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: institutional
 tags: [work]

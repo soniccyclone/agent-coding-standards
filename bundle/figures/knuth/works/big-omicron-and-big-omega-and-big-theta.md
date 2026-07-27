@@ -6,6 +6,9 @@ description: A short SIGACT News piece arguing that computer science had been sl
 subdomains: [algorithms-and-complexity]
 year: 1976
 url: http://web.archive.org/web/20160304055300/http://www.phil.uu.nl/datastructuren/07-08/knuth_big_omicron.pdf
+survey_pages: 7
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

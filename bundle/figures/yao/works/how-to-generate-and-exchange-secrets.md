@@ -6,6 +6,9 @@ description: The paper that introduces what's now called Yao's garbled circuits 
 subdomains: [algorithms-and-complexity, distributed-systems-and-concurrency]
 year: 1986
 url: https://mit6875.github.io/FA23HANDOUTS/yao-garbled-circuits.pdf
+survey_pages: 6
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

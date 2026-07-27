@@ -6,6 +6,9 @@ description: A short, unusually frank memo stating that Unix "was not developed 
 subdomains: [operating-systems-and-systems-programming]
 year: 1979
 url: https://www.tom-yam.or.jp/2238/ref/secur.pdf
+survey_pages: 3
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: third-party-rehost
 tags: [work]

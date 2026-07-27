@@ -6,6 +6,9 @@ description: The original CACM paper introducing CSP, proposing that input and o
 subdomains: [distributed-systems-and-concurrency]
 year: 1978
 url: http://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf
+survey_pages: 12
+survey_text_layer: full
+survey_fetch_mb: 1
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,9 @@ description: The standard reference formalizing "knowledge" as a modal/possible-
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1995
 url: https://www.cs.rice.edu/~vardi/papers/book.pdf
+survey_pages: 75
+survey_text_layer: full
+survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]
