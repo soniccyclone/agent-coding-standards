@@ -3,7 +3,7 @@ type: lesson
 title: "State a request's real requirements as data, because the code that could exploit them has not been written yet"
 figure: rashid
 works: [accent-a-communication-oriented-network-operating-system-kernel]
-axes: [expressiveness, verifiability, hardware-affinity]
+axes: [expressiveness, verifiability]
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 tags: [lesson]
 ---

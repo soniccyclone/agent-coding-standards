@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://gwern.net/doc/cs/1979-lehman.pdf — hosted in gwern.net's document archive, a well-established third-party preservation rehost. PDF resolves directly (HTTP 200); embedded PDF metadata (/Title, /Author) confirms exact title and "M. M. Lehman" as author.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Know what kind of law your claim about programming is, and hold it with the confidence that kind deserves](../lessons/know-what-kind-of-law-your-claim-about-programming-is.md)
+- [Size a change by how much re-understanding it forces, not by how much effort it takes to build](../lessons/size-changes-to-the-teams-capacity-to-re-understand-the-whole.md)
+- [A release is not a delivery event; it is the act of manufacturing an authoritative version to reason from](../lessons/a-release-is-the-act-of-manufacturing-an-authoritative-version.md)
+- Also reinforces, without adding a distinct lesson: [A deployed program becomes part of the situation it models](../lessons/a-deployed-program-changes-the-problem-it-was-built-to-solve.md), [Structural decay is the default outcome precisely because changing software is so cheap](../lessons/cheap-change-is-what-makes-structure-decay.md), and [Free local decisions aggregate into a system with its own measurable dynamics](../lessons/free-local-decisions-add-up-to-a-system-with-its-own-measurable-dynamics.md)
