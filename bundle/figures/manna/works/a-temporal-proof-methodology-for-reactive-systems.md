@@ -18,4 +18,8 @@ tags: [work]
 **Source:** http://theory.stanford.edu/~zm/papers/amir/jcitp.ps — self-archived PostScript on Manna's own Stanford CS Theory homepage (theory.stanford.edu/~zm), HTTP 200 verified. An extended version is co-hosted at http://theory.stanford.edu/~zm/papers/amir/marktoberdorf93.ps.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Fit the theory to the obligations you actually discharge, not to the space of obligations that exists](../lessons/fit-the-theory-to-the-obligations-you-actually-discharge.md)
+- [Specify by listing separate obligations, not by describing a mechanism](../lessons/specify-by-listing-obligations-not-by-describing-a-mechanism.md)
+- [Proof cost tracks how many things can change the answer, not how big the program is](../lessons/proof-cost-tracks-what-can-change-the-answer.md)
+- [The claim you want is rarely strong enough to support itself, and the failed check tells you what is missing](../lessons/the-claim-you-want-is-rarely-strong-enough-to-support-itself.md)
+- [Eventually is the weakest promise worth making, and ordering claims come almost free from the same skeleton](../lessons/eventually-is-the-weakest-promise-worth-making.md)

@@ -18,4 +18,8 @@ tags: [work]
 **Source:** http://theory.stanford.edu/~zm/papers/amir/completing.ps — self-archived PostScript on Manna's own Stanford CS Theory homepage (theory.stanford.edu/~zm), HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Classify the kinds of claim your system can make, then earn coverage instead of hoping for it](../lessons/classify-the-kinds-of-claim-before-building-methods.md)
+- [The representation that makes the metatheory tractable is not the one people should write in](../lessons/the-representation-that-proves-is-not-the-one-to-author-in.md)
+- [The language your auxiliary constructs are written in caps what you can prove](../lessons/the-annotation-language-is-the-real-ceiling.md)
+- [A rule that appeals to itself is sound exactly when something strictly shrinks](../lessons/circularity-is-legitimate-when-something-strictly-shrinks.md)
+- also cited by [Layer a reasoning system so the exotic part is program-independent and the program-specific part is boring](../lessons/push-exotic-reasoning-down-to-boring-reasoning.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Model concurrency as one uniform machine plus explicit, single-purpose scheduling assumptions"
+figure: manna
+works: [the-anchored-version-of-the-temporal-framework]
+axes: [parallelizability, verifiability, primitive-count]
+subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification]
+tags: [lesson]
+---
+# Model concurrency as one uniform machine plus explicit, single-purpose scheduling assumptions
+
+**Lesson:** Faced with shared variables, semaphores, and synchronous message passing — three genuinely different-looking concurrency mechanisms — Manna and Pnueli refuse to build three theories. All three compile into the same object: a set of state variables, a set of guarded state-to-state relations, an initial condition, and two families of scheduling assumptions. Everything a language offers for synchronization becomes structure in the transition relation. The reasoning apparatus is then written once against that single model, and adding a language means writing a translation, not extending a logic. Interleaving is the deliberate simplification that makes this possible: real parallelism is flattened into one action at a time, and what would otherwise be lost is paid back explicitly as a fairness requirement.
+
+The sharp part is how those requirements are factored. Each assumption is a pair — a set of transitions whose enabledness triggers the obligation, and a set whose being taken discharges it — and the authors are pointed about resisting the simpler-looking form where a transition's own enabledness obliges that same transition to run. The simpler form is rejected not because it is wrong but because it silently bundles two independent guarantees: that a process makes progress, and that a process choosing repeatedly among alternatives chooses fairly. Bundling them takes the decision away from whoever designs the language semantics. Keeping them separate means each assumption expresses exactly one thing and can be adopted, dropped, or strengthened on its own. The paper works this out concretely: semaphore acquisition needs the stronger form of the assumption to guarantee anyone gets in, plain assignments do not, and message passing needs it per participating process rather than per transition.
+
+What justifies where the assumptions are drawn is a robustness test rather than an appeal to intuition, and that test is the transferable idea. Independent actions in different processes can be reordered without changing anything real, so any guarantee your model makes must survive such reorderings. If two processes merely happened to be simultaneously ready and each had a local alternative, the coincidence can be scheduled away, so demanding they synchronize is demanding something the model cannot honestly promise. If one process is parked and waiting while the other repeatedly passes through, no reordering erases that asymmetry, so a guarantee there is real. The programmer who works this way states liveness assumptions as named, separable properties of the scheduler rather than folding them into the mechanism, and validates each one by asking which of them survive every reordering the system is allowed to perform.
+
+**Source:** [The Anchored Version of the Temporal Framework](../works/the-anchored-version-of-the-temporal-framework.md) — the sections defining the abstract fair-transition-system model and then instantiating it for shared variables, semaphores, and synchronous message passing, including the argument for the competition-set form of the fairness requirements and the reordering-robustness discussion that closes it.

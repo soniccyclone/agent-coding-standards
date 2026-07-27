@@ -18,4 +18,8 @@ tags: [work]
 **Source:** http://theory.stanford.edu/~zm/papers/amir/anchored.ps — self-archived PostScript on Manna's own Stanford CS Theory homepage (theory.stanford.edu/~zm), HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Where a claim gets evaluated is part of the claim](../lessons/fix-the-frame-a-claim-is-evaluated-in.md)
+- [Expressive equivalence is not the end of the argument for adding vocabulary](../lessons/redundant-vocabulary-can-pay-for-itself.md)
+- [Layer a reasoning system so the exotic part is program-independent and the program-specific part is boring](../lessons/push-exotic-reasoning-down-to-boring-reasoning.md)
+- [Model concurrency as one uniform machine plus explicit, single-purpose scheduling assumptions](../lessons/make-scheduling-assumptions-explicit-and-single-purpose.md)
+- [Classify the kinds of claim your system can make, then earn coverage instead of hoping for it](../lessons/classify-the-kinds-of-claim-before-building-methods.md)

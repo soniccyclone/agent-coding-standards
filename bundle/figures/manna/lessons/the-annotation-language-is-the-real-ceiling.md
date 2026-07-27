@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "The language your auxiliary constructs are written in caps what you can prove"
+figure: manna
+works: [completing-the-temporal-picture, temporal-verification-of-reactive-systems-progress]
+axes: [expressiveness, verifiability]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# The language your auxiliary constructs are written in caps what you can prove
+
+**Lesson:** Proof rules get all the attention, but Manna and Pnueli's completeness results hinge on something less visible: whether the invariants and ranking functions the rules demand can be *written down at all*. Their rules take auxiliary parameters — a strengthened invariant, a measure that decreases, a well-founded order over it — supplied by whoever applies the rule. If the object a rule needs exists mathematically but cannot be expressed in the assertion language, the rule is incomplete in practice no matter how sound it is. So the paper does something a rules-focused reader would not expect: it fixes the assertion language up front, notes that plain first-order logic is provably not enough for the needed constructions, and adds least- and greatest-fixpoint operators specifically to close the gap.
+
+The consequence shows up as real work rather than a footnote. The natural way to build the required measure uses ordinal ranks, which are outside the language, so a whole subsection exists to rebuild the same ordering as the greatest solution of a fixpoint equation over program states — an ordering the language can state — and then prove it captures the ordinal one exactly. The authors also refine the measure into a pair, because a coarse measure that decreases across long stretches cannot attribute progress to any single action, and the rules need a per-action obligation. Both moves are driven entirely by expressibility constraints in the annotation language, not by anything about the rules.
+
+The transferable belief: whenever a method requires humans (or a tool) to supply auxiliary evidence, the expressive power of the evidence language is the binding constraint on the whole method, and it is usually the part nobody specifies. Loop invariants that need a quantifier the annotation syntax lacks, decreasing measures that need a lexicographic pair when the checker takes a single integer, refinement relations that need to talk about histories when the language only sees the current state — in every case the rules are fine and the method still fails. Someone who has internalized this evaluates a verification approach, a type system, or a contract framework by asking what class of witness it forces you to produce and whether its annotation language can express those witnesses for the programs you actually have. And when the answer is no, the fix is at the level of the evidence language, not more rules.
+
+**Source:** [Completing the Temporal Picture](../works/completing-the-temporal-picture.md) — the section fixing the assertion language and importing fixpoint operators because first-order expressiveness is inadequate, and the later subsection devoted to re-deriving the well-founded ranking in a form the assertion language can express. [Temporal Verification of Reactive Systems: Progress](../works/temporal-verification-of-reactive-systems-progress.md) states the same boundary in its own completeness sections, noting explicitly that the first-order arithmetic language sufficient for every construct the safety rules demand stops being sufficient for the progress ones, and adopting fixpoint definitions over recursive equations to express the ordinal-valued rank it needs.

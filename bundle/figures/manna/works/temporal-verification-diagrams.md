@@ -18,4 +18,6 @@ tags: [work]
 **Source:** http://theory.stanford.edu/~zm/papers/diagrams.ps.Z — self-archived compressed PostScript on Manna's own Stanford CS Theory homepage (theory.stanford.edu/~zm), HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Formalize the picture people already draw instead of leaving it as illustration](../lessons/formalize-the-picture-people-already-draw.md)
+- [Every argument that something eventually happens is a measure that must strictly drop](../lessons/progress-is-structure-plus-a-measure.md)
+- [Give every distinction that changes an obligation its own visible form, including the ones that break your uniformity claim](../lessons/one-visible-distinction-per-distinct-obligation.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Classify the kinds of claim your system can make, then earn coverage instead of hoping for it"
+figure: manna
+works: [completing-the-temporal-picture, the-anchored-version-of-the-temporal-framework]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Classify the kinds of claim your system can make, then earn coverage instead of hoping for it
+
+**Lesson:** Before writing a single proof rule, Manna and Pnueli map out the shape of the space of claims. Every property expressible in their logic can be rewritten into one canonical arrangement of operators, and restricting that arrangement carves the space into a small ladder of classes — things that must always hold, things that must happen at least once, obligations combining the two, things that must keep happening, things that eventually stop failing, and the general combination at the top. The ladder is not a taste-based catalogue. Its top rung is provably everything the logic can say, which means a method that covers each rung covers the whole language. Coverage becomes a theorem rather than a hope.
+
+Two things make the taxonomy trustworthy, and both are worth stealing independent of the subject matter. First, each class is characterized three separate ways — by the syntactic shape of the formula that states it, by the set of executions it denotes as a topological object, and by a structural restriction on the machine that recognizes it — and the three characterizations pick out exactly the same classes. When independently-motivated definitions converge on the same boundaries, the boundaries are describing something real about the domain and not an artifact of one notation. Second, each class comes attached to its own proof discipline: things that always hold want an inductive invariant, things that must eventually happen want a well-founded measure, things that need repeated stimulus to make progress want both plus a fairness assumption. The classification is therefore also a dispatch table — identify which rung your claim sits on and the reasoning technique is chosen for you.
+
+The other payoff is the one Manna and Pnueli name explicitly, and it addresses a problem no formal machinery can solve. A specification can be proven internally consistent, but nothing can prove it complete against what someone actually wanted, because the wanting is informal. A taxonomy of property kinds converts that unsolvable problem into a survivable one: walk the classes and ask, for each, whether this system needs a claim of that kind and whether the spec contains one. Silence on a whole class is the signal. A programmer who thinks this way keeps an explicit inventory of the *kinds* of guarantee a component can offer — never-happens, eventually-happens, keeps-happening-if-prodded — treats an empty category as a review finding rather than an absence of concern, and knows before starting which reasoning technique each category demands.
+
+**Source:** [Completing the Temporal Picture](../works/completing-the-temporal-picture.md) — the canonical-form and classification section, and the paper's organization of the rest of itself as one rule-set per class with a completeness claim per class; the same hierarchy is developed at greater length, with its semantic and automaton-theoretic characterizations, in the classification-of-properties section of [The Anchored Version of the Temporal Framework](../works/the-anchored-version-of-the-temporal-framework.md), which also argues the specification-completeness-checklist motivation.

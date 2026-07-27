@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A progress argument has to track who is responsible, not only how far away the goal is"
+figure: manna
+works: [temporal-verification-of-reactive-systems-progress]
+axes: [verifiability, cognitive-load, parallelizability]
+subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# A progress argument has to track who is responsible, not only how far away the goal is
+
+**Lesson:** The obvious reading of a well-founded progress argument is that it is about distance: attach a measure to each situation, show the measure never grows, show something makes it shrink. Manna and Pnueli show that reading is incomplete, and they show it the honest way, by exhibiting that the rule becomes unsound if you weaken it in the tempting place. Their rule demands that a step which fails to reduce the measure must leave the situation unchanged in a specific sense — the same action stays nominated as the one responsible for progress. Drop that and permit the responsible action to be swapped for a different one at equal measure, and you can prove false things. The reason is that responsibility can be handed around a cycle forever. Each situation always has some action that would help, none of them is ever the one continuously ignored, the fairness assumption is never violated, and nothing ever happens.
+
+That failure mode is the general shape of stalled real systems, which is why the premise is worth internalizing rather than memorizing. Fairness assumptions only ever promise that a single continuously-possible action eventually runs. They promise nothing about a rotating cast of possible actions. So an argument that something eventually happens has to pin the promise on one identified actor and show that actor stays pinned as long as no progress occurs. Structurally: the measure and the nominated actor are a pair, and the invariant is that the pair only ever changes together.
+
+The same emphasis on responsibility reappears as the thing that drives how a progress argument is decomposed. Their smallest example is a program where two branches independently compute a result: the argument needs several intermediate situations not because it takes many steps to finish, but because different starting situations have different actions responsible for finishing them, and no single action is helpful everywhere. Case analysis is forced by variation in who is responsible, not by distance to the goal. The authors then observe that ranking the two independent branches against each other is entirely arbitrary — no execution ever moves between them — so part of the total ordering their formalism demands is an artifact of the formalism rather than a fact about the program. Being able to see which parts of your own structure are real and which are notational bookkeeping is a mark of understanding it.
+
+A programmer who thinks in these terms writes progress arguments as an assignment of responsibility: in this state, this component is the one that must act, and here is why it can. They decompose by responsibility rather than by phase, and they treat any state where responsibility could migrate without progress as the prime suspect for a livelock. In practice that is exactly the bug class — a system where every participant is always ready to do something helpful, help is always available from somebody, and the thing never converges because responsibility keeps moving. Naming the responsible party and requiring it to stay named is how you rule that out.
+
+**Source:** [Temporal Verification of Reactive Systems: Progress](../works/temporal-verification-of-reactive-systems-progress.md) — the Response chapter's discussion of the persistence requirement for helpful transitions, including the exercise establishing that relaxing it yields an unsound rule; and the section on case splitting according to helpful transitions, with the two-branch maximum program and the remark that the relative rank of the two independent branches is arbitrary.
