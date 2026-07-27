@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Define your portable contract as the weakest behavior any target could exhibit, and quarantine every place you exploit more"
+figure: torvalds
+works: [linux-kernel-source-and-design]
+axes: [hardware-affinity, verifiability, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Define your portable contract as the weakest behavior any target could exhibit, and quarantine every place you exploit more
+
+**Lesson:** A kernel that runs on dozens of processor families cannot be written against any of them. The Linux approach is to posit an abstract machine that is more permissive than every real machine it supports — one that may execute memory operations in any order, combine or discard adjacent accesses, fetch values speculatively before the branch that needs them, and propagate the effects of one processor's writes to other processors in an order none of them agreed on. Portable code is then written to be correct on that fictional worst case. An implementation that provides fewer guarantees than the abstract machine is by definition a broken implementation; an implementation that provides more is not thereby licensed to have code depend on it, and the extra strength may only be exploited inside code explicitly marked as belonging to that architecture.
+
+The framing of the contract as a floor rather than a description is what makes this workable. Each synchronization construct is documented by the minimum it guarantees, deliberately not by what it does on any particular machine, and the documentation is explicit that it is a guide rather than a specification of what the hardware must do — the authors' collective judgment, with a pointer to a separate formal model and an invitation to ask when in doubt rather than a claim of completeness. A single relaxed processor family effectively sets the floor for everyone: because one supported architecture could reorder two loads connected by a pointer dependency, every portable reader of a shared pointer had to be written as though that reordering happens, even on the machines where it cannot. That looks like a tax paid by the majority for a minority, and it is exactly the right tax, because the alternative is code whose correctness is silently a property of the machine it was tested on.
+
+The generalization is not about processors. Any system with multiple substrates — filesystems with different timestamp resolutions, databases with different isolation guarantees, network transports with different delivery semantics — faces the same choice, and the choice determines whether portability is a property of the design or a series of surprises discovered on each new target. Writing to the intersection of guarantees costs measurable performance on the strong targets. Writing to the union produces code that works everywhere it has been run and is wrong everywhere it has not.
+
+A programmer who believes this states the guarantees they depend on as a floor, and audits the gap between that floor and the platform in front of them. They also draw a hard boundary around the code allowed to know which platform it is on, because the value of the abstract contract collapses as soon as machine-specific assumptions can leak into ordinary code. And when a single weak target makes the floor expensive, they treat that as information about what the abstraction actually costs rather than as a reason to quietly raise the floor to whatever their test machines happen to provide.
+
+**Source:** [Linux Kernel Source and Design](../works/linux-kernel-source-and-design.md) — the kernel's in-tree memory-barrier documentation, whose disclaimer frames its purpose as specifying minimum reliable behavior rather than describing hardware, whose assumed-execution-ordering section adopts the most relaxed supported processor as the model, and whose treatment of pointer-dependency ordering shows one architecture's split-cache behavior setting the requirement for all portable code while restricting stronger assumptions to architecture-specific code.

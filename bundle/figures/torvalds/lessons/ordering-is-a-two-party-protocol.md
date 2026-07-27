@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Ordering is a protocol between participants, never a property of one of them, and the set of observers who agree is part of the specification"
+figure: torvalds
+works: [linux-kernel-source-and-design]
+axes: [parallelizability, verifiability, cognitive-load]
+subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Ordering is a protocol between participants, never a property of one of them, and the set of observers who agree is part of the specification
+
+**Lesson:** The rule the kernel's memory-ordering documentation states most bluntly is that a synchronization barrier on one processor, by itself, guarantees nothing about what another processor sees. It constrains only the order in which that processor's own accesses become available to the rest of the system; a reader who takes no corresponding measure may still observe them in any order. An unpaired barrier is therefore almost always a bug — not an insufficient fix but a non-fix, code that looks like synchronization and performs none. Ordering is established by two cooperating halves, and the writer's half is meaningless without the reader's. This is a hard idea to hold because a barrier appears, syntactically, to be an action a single piece of code takes. It is really one side of an agreement, and the agreement is what has the property.
+
+The second and deeper point is that even a correctly paired agreement has a limited membership. The intuitive assumption that a write becomes visible to everyone at the same instant, or at least that everyone agrees on the sequence in which writes became visible, is not something real hardware provides, because providing it would forbid optimizations the hardware wants. The consequence is that ordering established by a chain of paired handoffs holds for the participants in that chain and need not hold for anyone outside it. Two processors can both agree that one operation preceded another while a third, watching the same locations, sees them in the opposite order — and no one is malfunctioning. Restoring universal agreement requires the strongest available construct everywhere, and that cost is exactly what the weaker ones are avoiding.
+
+What follows is a discipline about how to state concurrent requirements. "These operations are ordered" is an incomplete claim; the complete claim names who observes the ordering. A programmer who has internalized this asks, for every ordering requirement, which parties must agree — often a small set, in which case cheap paired handoffs suffice, and occasionally everyone, in which case the expensive construct is not optional. This is also why the same documentation insists that pairs be identified explicitly rather than left implicit: a reader auditing one side of a synchronization needs to be able to find the other side, and the failure mode of an unmatched pair is not a crash but an occasional wrong value on some machines under some loads.
+
+A programmer who believes this never reviews a barrier, a release, or an acquire in isolation — they go find its counterpart, and if there isn't one, that is the finding. They write down the observer set along with the ordering requirement, and they stay suspicious of intuitions imported from single-processor reasoning, where a write really does become visible to everyone at once because there is only one everyone.
+
+**Source:** [Linux Kernel Source and Design](../works/linux-kernel-source-and-design.md) — the barrier-pairing and multicopy-atomicity sections of the kernel's memory-barrier documentation, which state that a one-sided barrier gives no cross-processor guarantee and that missing pairing is nearly certainly an error, and then work through a release-and-acquire chain in which participants agree on an order that a processor outside the chain is permitted to observe differently, together with the accompanying note that full agreement among all observers requires the strongest construct throughout.

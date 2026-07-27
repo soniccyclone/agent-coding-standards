@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Treat your compiler as an adversary wherever memory is shared, and mark the sharing at each access rather than fencing broadly"
+figure: torvalds
+works: [linux-kernel-source-and-design]
+axes: [verifiability, parallelizability, hardware-affinity, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Treat your compiler as an adversary wherever memory is shared, and mark the sharing at each access rather than fencing broadly
+
+**Lesson:** The most instructive part of the kernel's concurrency documentation is a catalog of transformations a compiler is fully entitled to perform, each of which is a clear improvement to single-threaded code and a defect in concurrent code. A load may be hoisted out of a loop so the loop never observes a change. A load may be dropped entirely because the compiler proved the value it would return. A store may be dropped because the variable already holds that value. A store the program never asked for may be invented in order to remove a branch. A single wide access may be split into narrow ones, or several narrow accesses fused into one wide one. Two accesses may be reordered across each other. Every one of these is licensed by the same assumption: that this thread is the only one touching the location. Where that assumption is false, the optimizer is not misbehaving — it was never told.
+
+The kernel's response is the interesting design choice. Rather than telling the compiler to forget everything at certain points, it annotates the individual accesses that are shared, so the constraint attaches to the data rather than to a location in the instruction stream. A coarse compiler fence forces the compiler to abandon every value it has cached in registers; marking a single load or store forces it to abandon only that location, which is both cheaper and — more importantly — locally meaningful. The mark becomes documentation at the exact point a human reader needs it: this access races, and the ordering around it matters. Concurrency assumptions that live only in a maintainer's head or in a comment paragraphs away are the ones that get optimized into nonexistence during an unrelated cleanup.
+
+The subtler warning is that some ordering you might rely on is not expressible at all, and depends on structure the compiler is free to dissolve. Ordering that flows from a branch — where a store may not happen until a load's value has been tested — exists only as long as the branch survives to machine code. If the compiler can prove the condition, or hoist an identical store out of both arms, or replace the branch with conditional moves, the ordering evaporates while every line of source that appeared to establish it is still sitting there. Any guarantee you depend on that a sufficiently clever compiler can prove away, it eventually will. So the guarantee must be requested explicitly, not inferred from the shape of the code.
+
+A programmer who believes this stops treating source order as a statement about execution order, and treats every shared location as a place where the annotation is part of the correctness argument. They prefer narrow, per-access declarations of intent over broad fences, because narrow ones survive refactoring and communicate to the next reader. And they are permanently suspicious of any concurrent reasoning whose validity depends on the compiler declining to do something it is permitted to do.
+
+**Source:** [Linux Kernel Source and Design](../works/linux-kernel-source-and-design.md) — the compiler-barrier section of the kernel's memory-barrier documentation, which enumerates load merging, invented stores, elided loads and stores, and access tearing as legal optimizations that break shared-memory code, argues for per-access marking over global fences on grounds of both cost and precision, and the neighboring treatment of branch-derived ordering, which shows several ways an optimizer legitimately destroys the conditional that the ordering depended on.

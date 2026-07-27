@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A cache earns its place by being destroyable, and it is only sound if it knows the window where its key is a lie"
+figure: torvalds
+works: [git-version-control-system]
+axes: [verifiability, hardware-affinity, cognitive-load]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# A cache earns its place by being destroyable, and it is only sound if it knows the window where its key is a lie
+
+**Lesson:** Git puts a mutable, machine-local file between the authoritative object store and the files a person is editing, and it is disciplined about what that file is allowed to be. It holds a proposed next state plus, for each path, a snapshot of the filesystem metadata observed when that path was last recorded. The first discipline is that it carries no information that cannot be reconstructed: destroy it entirely and nothing is lost, provided you still know the name of a stored tree, because the whole thing can be regenerated from that name. This is the property that makes an accelerator safe to have. A cache that accumulates unique state has quietly become a second authority, and every system with two authorities eventually has to answer which one is right — a question with no good answer.
+
+The second discipline is subtler and is where the design earns its keep. The cache does not key on content, which would be expensive; it keys on a proxy for content — file size, ownership, mode, and modification timestamps — on the theory that if the proxy is unchanged the content is unchanged. That theory is false in a specific, bounded way, because a filesystem's timestamp resolution is coarser than the rate at which a program can write a file. Two writes close enough together are indistinguishable through the proxy, and a stale entry then looks clean. The response is not to abandon the optimization or to paper over it, but to characterize exactly when the proxy can be lying and pay the full cost only there: the recorded state can only be untrustworthy for entries whose timestamp is not older than the cache file's own, so within that narrow window the system falls back to comparing actual content, and outside it the cheap check stands. A second measure deliberately corrupts the recorded size of any entry that was in the suspect window, guaranteeing that a later cheap comparison will fail rather than silently succeed.
+
+What generalizes is the shape of the reasoning. Any optimization that substitutes a cheap observable for an expensive truth is a bet, and the engineering question is not whether the bet ever loses but whether you can bound the region where it might. If you can name that region, the unsound fast path becomes a sound fast path with a small conservative slow path, and you can even go looking for the worst case — the same documentation reports what happens when a whole large working tree lands inside the suspect window, and later argues from measurement that a workaround introduced for it was not earning its complexity, and removes it.
+
+A programmer who believes this holds two rules simultaneously. Every derived structure must be destroyable without loss, and every proxy-keyed check must come with an explicit statement of the conditions under which the proxy is wrong, plus a conservative path for exactly those conditions. Mitigations whose triggering conditions cannot be described are not mitigations, and a fast path whose failure mode is "sometimes reports unmodified when modified" is not a fast path but a data-loss bug with good latency.
+
+**Source:** [Git Version Control System](../works/git-version-control-system.md) — the earliest design notes' account of the working-state cache, which stresses that it holds nothing unrecoverable and can be rebuilt from a named tree, together with the project's technical write-up of the race between filesystem timestamp granularity and rapid in-place writes, which bounds the suspect set by comparison against the cache file's own timestamp, falls back to content comparison inside it, and reasons from measurement about whether an extra avoidance mechanism was worth keeping.

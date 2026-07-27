@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://groups.google.com/g/comp.os.minix/c/dlNtH7RRrGA/m/SwRavCzVE7gJ — live, Google Groups' Usenet archive; third-party rehost of the original comp.os.minix post (Usenet itself has no single canonical host, so this counts as the citable public copy rather than a self-archived original).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Build the first version for the machine you actually own, and let generality be earned later](../lessons/build-for-the-machine-you-actually-own.md)
+- [Gather requirements from the people already suffering, then keep the decision to yourself](../lessons/gather-requirements-widely-decide-narrowly.md)
+- [When a system's real specification is other people's software, running that software unmodified is the only acceptance test that counts](../lessons/existing-software-is-the-specification.md)

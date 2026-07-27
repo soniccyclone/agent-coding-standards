@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Spend all your stability at one boundary: freeze what outsiders observe, churn everything behind it, and make the breaker do the fixing"
+figure: torvalds
+works: [linux-kernel-source-and-design]
+axes: [hardware-affinity, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Spend all your stability at one boundary: freeze what outsiders observe, churn everything behind it, and make the breaker do the fixing
+
+**Lesson:** The kernel's most distinctive architectural decision is not technical but jurisdictional: it draws exactly one line where compatibility is absolute, and grants itself total freedom everywhere else. Outside that line — the behavior programs running on the system can observe — nothing may break, ever, and the argument for the rule is entirely about human behavior rather than engineering purity: if upgrading might break something, people stop upgrading, and a project whose users are afraid of new versions has lost the feedback that keeps it correct. Inside the line, interfaces are rebuilt whenever someone finds a better shape, on the grounds that the alternative — supporting an old and a new way of doing something forever — imposes permanent unpaid work and leaves a wrong pattern available for the next newcomer to copy.
+
+What makes this coherent rather than arbitrary is the obligation attached to the inside freedom: whoever changes an internal interface fixes every user of it in the same change. That converts what would be a broadcast cost onto many maintainers into a concentrated cost on the person who chose to make the change, which both keeps the tree always buildable and provides exactly the right incentive gradient — churn is free when it is genuinely an improvement and expensive when it is gratuitous. The rule also has an unavoidable consequence, spelled out plainly in the project's own explanation of why it has no stable internal interface: code that lives outside the tree does not get carried along by the person doing the refactor, so the only sustainable place for a component is inside the boundary of collective maintenance. The internal interface's instability is thus not a defect to be apologized for; it is the mechanism that makes wholesale improvement affordable.
+
+There is a second, harder argument underneath, and it is about physical reality rather than policy. Even if the source-level interface were frozen, a compiled interface would not be: structure layout and padding shift with compiler version, entire synchronization constructs vanish under some build configurations, alignment varies with options, and none of it transfers across processor architectures. Binary stability is not a promise a project can choose to make; it is a property the hardware and toolchain refuse to grant. Recognizing that early saves you from designing around a guarantee you cannot actually deliver.
+
+A programmer who believes this identifies, deliberately and early, the one surface where other people's work will observe them, and treats that surface as sacred while treating everything behind it as freely reshapeable. They resist the appealing middle path of "somewhat stable" internal interfaces, because a half-frozen interior gives up the freedom without buying real compatibility. And they attach the fix-up duty to the change, not to the affected parties.
+
+**Source:** [Linux Kernel Source and Design](../works/linux-kernel-source-and-design.md) — the project's in-tree design documents: the account of why no stable in-kernel interface exists (with its argument that even a frozen source interface could not yield a stable compiled one, given compiler, configuration, and architecture variation, and its examples of subsystem interfaces reworked wholesale for correctness and security), and the regression-handling document's statement of the opposite rule at the user-facing boundary, including its insistence that whoever breaks an internal interface repairs its users rather than delegating that work.

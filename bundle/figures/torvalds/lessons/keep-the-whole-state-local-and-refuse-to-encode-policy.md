@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Keep every participant's state complete and local, then refuse to encode who is in charge"
+figure: torvalds
+works: [git-version-control-system, linux-kernel-source-and-design]
+axes: [parallelizability, cognitive-load, primitive-count]
+subdomains: [software-engineering-and-architecture, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Keep every participant's state complete and local, then refuse to encode who is in charge
+
+**Lesson:** The version control systems Git displaced had a structural asymmetry at their core: a repository was one thing and a working copy was another, the repository lived somewhere else, and most interesting operations required talking to it. Git collapses the distinction. A repository is a directory; the history is in it; there is nothing outside it. The consequences are almost embarrassingly direct. Copying a project's entire history is a file copy, and any generic transfer tool will do it. Deleting a project is deleting a directory. Branching is writing an object name into a small file, and inspecting which branch you are on is reading one. Operations that were network round-trips in the previous generation became local reads, not because they were optimized but because there was no longer anywhere else for the data to be.
+
+What makes this a lesson about parallelism rather than about storage is what the symmetry buys. When every participant holds a complete and independently usable copy, nobody's work is gated on anyone else's availability, and there is no distinguished node whose failure or policy becomes everyone's problem. Concurrency between contributors stops requiring coordination and starts requiring only reconciliation after the fact — which is a strictly easier problem, and one the content-addressed history is already shaped to solve. The cost is that reconciliation is now unavoidable and must be genuinely good, which is why merging is a first-class concern rather than an afterthought.
+
+The design's second refusal is the one people notice least and should notice most: having made every copy a peer, the tool declines to say which peer matters. The hierarchy the Linux kernel actually runs on — contributors feeding subsystem maintainers feeding one integrator — is described in the documentation as purely informal, with the explicit note that nothing in the mechanism enforces it and nobody is obliged to pull from only one place. The tool that was written specifically to serve that hierarchy contains no representation of it. That is a deliberate separation of a social question from a technical one: authority, review standards, and who gets to call something a release are all things a project should be free to decide and revise without asking permission from its tooling. Encoding the current arrangement into the mechanism would have frozen a policy that ought to stay negotiable, and would have made the tool useless to every project organized differently.
+
+A programmer who believes this splits mechanism from policy hard, and puts every hint of organizational structure on the policy side. They give each participant enough state to work alone, accept the reconciliation burden that follows, and resist requests to build the current workflow into the substrate — because the substrate outlives the workflow, and a general mechanism with a conventional usage pattern layered above it can serve arrangements its author never imagined.
+
+**Source:** [Git Version Control System](../works/git-version-control-system.md) — the core tutorial's treatment of a repository as a self-sufficient, relocatable directory duplicable with ordinary copy tools, its account of branches and the current-branch pointer as small files, and its section on collaboration, which sets out recommended workflows for project leads, subsystem maintainers, and individual contributors while stressing that the resulting hierarchy is a convention the tool does not enforce. Also [Linux Kernel Source and Design](../works/linux-kernel-source-and-design.md), the project whose maintainer structure that convention was written to serve.

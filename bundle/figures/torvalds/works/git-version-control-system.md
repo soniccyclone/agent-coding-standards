@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://git-scm.com/ — live, official Git project site, self-archived/institutional (Torvalds' own project's successor infrastructure, now maintained by the Git development community).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Name a thing by its content, and identity, integrity, and sharing stop being three separate problems](../lessons/name-things-by-what-they-are.md)
+- [Make meaning independent of layout, and layout becomes a free variable you can spend entirely on the machine](../lessons/make-meaning-independent-of-layout.md)
+- [A cache earns its place by being destroyable, and it is only sound if it knows the window where its key is a lie](../lessons/a-cache-must-be-disposable-and-distrust-its-own-key.md)
+- [Ship a small set of composable primitives, and let every convenience be visibly a composition of them](../lessons/ship-primitives-and-let-conveniences-be-compositions.md)
+- [Keep every participant's state complete and local, then refuse to encode who is in charge](../lessons/keep-the-whole-state-local-and-refuse-to-encode-policy.md)
