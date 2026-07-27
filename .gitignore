@@ -3,3 +3,12 @@
 .dolt/
 *.db
 .beads-credential-key
+
+# OCR / PDF-conversion intermediates. Phase 4 agents run pdftoppm+tesseract on
+# scanned sources; these must land in the session scratchpad, never in the repo.
+# Ignored as a backstop in case an agent's output prefix is wrong again.
+*.pgm
+*.ppm
+*.pbm
+*.tif
+*.tiff
