@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Let a contradictory configuration exist and fail only where it is actually depended on, and never let coincidental agreement resolve an ambiguity"
+figure: steele
+works: [the-java-language-specification]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Let a contradictory configuration exist and fail only where it is actually depended on, and never let coincidental agreement resolve an ambiguity
+
+**Lesson:** When a type acquires two same-named members through two different supertypes, a designer has to answer two separate questions, and the specification answers them in a way most systems get backwards. The first question is when to complain. It declines to reject the type: inheriting two same-named things is not itself an error, and the error is raised only at a use that cannot be resolved — a reference by short name — while a use that names its intended target explicitly stays legal. So a type may be in a state that is unusable in one specific way while remaining perfectly usable in every other way. The value of that placement is that the diagnostic lands where the reader's intent was actually indeterminate, which is where the fix belongs, and it means an author does not get punished for a conflict they never touch.
+
+The second question is what counts as resolved, and here the specification is deliberately, almost provocatively strict. Two inherited constants with the same name, the same type, the same value, and both unmodifiable are still ambiguous. It calls out this case explicitly to make the principle unmistakable: the question is how many declarations reached you, not whether they happen to agree today. That severity is the correct reading of who owns what. The agreement is a fact about two independently maintained sources at one instant, and neither maintainer promised the other anything; resolving the ambiguity by coincidence would silently pick one of them and would keep working right up until one of them changed, at which point a program's meaning shifts with no local edit and no diagnostic. Refusing to resolve turns a future silent behaviour change into a present, mechanical, fixable complaint.
+
+The pair of decisions works because they push in opposite directions on purpose. Deferring the error is permissive about states of the world; refusing coincidental resolution is strict about what counts as a determinate reference. Together they yield the property you actually want: nothing is rejected that no one relies on, and nothing is accepted whose meaning depends on an agreement nobody guaranteed. The specification carries the same shape through the neighbouring case where a single declaration is reachable by several inheritance paths — one declaration arriving twice is one declaration, and is not ambiguous at all — which confirms that the criterion really is declaration identity rather than reachability or equality of contents.
+
+A programmer who has absorbed this stops "helpfully" resolving duplicate keys in merged configuration, duplicate provider registrations, or colliding imports on the grounds that the values match. They make the collision an error at the point of ambiguous use, keep the explicit disambiguating form available, and check identity of the defining source rather than equality of the current value. And they resist validating whole aggregates up front when only part of the aggregate is contradictory, because rejecting a usable object for a conflict in a corner nobody touches is a cost paid by everyone to protect no one.
+
+**Source:** [The Java Language Specification](../works/the-java-language-specification.md) — the field-declaration section of the classes chapter, where multiply inherited same-named fields are permitted but ambiguous by simple name, the worked case of two identically valued constants is declared ambiguous anyway, and re-inheritance of one declaration by several paths is declared unambiguous.

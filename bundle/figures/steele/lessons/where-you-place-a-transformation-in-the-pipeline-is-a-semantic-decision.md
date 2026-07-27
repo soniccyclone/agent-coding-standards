@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Where you place a transformation in the pipeline is a semantic decision, and everything above it loses the power to protect itself"
+figure: steele
+works: [the-java-language-specification]
+axes: [cognitive-load, verifiability]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Where you place a transformation in the pipeline is a semantic decision, and everything above it loses the power to protect itself
+
+**Lesson:** This specification opens its treatment of program text by fixing an order of three translation steps, and the first of them is a character-level rewrite that runs before anything knows what a symbol, a literal, or a comment is. That placement looks like an implementation detail and is in fact one of the most consequential semantic commitments in the language. Because the rewrite happens beneath every other construct, no construct above it can shield its contents: the escape form that names a line break is expanded into a real line break before the machinery that would have treated it as ordinary text inside a quoted literal ever runs, so writing it there is not a way of embedding a line break — it is a way of terminating the literal and producing a syntax error. The same holds for the escape naming a carriage return, and for the escape naming the quote character, which cannot be used to close or open a literal at all.
+
+The lesson is that stage order determines who can quote whom. Any transformation you place early acquires universal reach, and everything downstream inherits a set of things it can no longer express, whether or not you intended that. The specification's response is the honest one and the expensive one: it enumerates the consequences at the point where a reader would otherwise be surprised, and it repeats the enumeration in each affected construct rather than stating it once and expecting the reader to derive it. It also patches the corner where the early stage would have been self-referentially unstable — it fixes a parity rule for how many preceding escape characters make the next one eligible, and declares that a character produced by the rewrite is inert with respect to further rewriting, so the transformation is a single pass rather than a fixed point. Without those two rules the rewrite would have no well-defined result at all.
+
+Related, and worth separating: the same section defines a mapping in the other direction that turns any program into a restricted-character form and back again without loss, achieved by making the encoding of an already-escaped sequence distinguishable from a freshly escaped one. That is the general recipe for a reversible encoding — you cannot merely encode the dangerous cases, you must also encode the marker that says "this was already encoded," or the round trip collapses. Most escaping bugs in real systems are exactly this omission.
+
+A programmer who thinks in these terms treats every preprocessing pass, template expansion, macro layer, shell interpolation, and build-time substitution as a semantic layer with a position, not as a convenience. The questions become: what can no longer be written literally now that this pass exists, is the pass a single sweep or a fixed point, and is its encoding invertible including the escape marker itself. Placing a rewrite early is a choice to take expressive power away from every layer above it, and the design work is deciding which power you are willing to surrender and then documenting the surrender.
+
+**Source:** [The Java Language Specification](../works/the-java-language-specification.md) — the lexical-structure chapter's ordering of the three translation steps and its treatment of the character-escape stage, including the eligibility parity rule, the non-participation rule, the reversible restricted-character transformation, and the notes attached to the character- and string-literal sections explaining why certain escapes cannot appear there.

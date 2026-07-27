@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "You can add a requirement to a published contract only if every conflict rule resolves toward what already exists"
+figure: steele
+works: [the-java-language-specification]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# You can add a requirement to a published contract only if every conflict rule resolves toward what already exists
+
+**Lesson:** An abstract contract that every implementor must satisfy has a fatal property: it can never gain a member, because every existing implementor instantly becomes incomplete. The escape this specification adopts is to let a contract carry a fallback body for a member, so an implementor that says nothing about the member gets the fallback and an implementor that already handles it is unaffected. What makes the mechanism actually safe is not the fallback itself but the direction of every tie-break rule around it, and the specification is explicit that this is the goal — the phrase it uses is that a contract should be able to grow without intruding, supplying behaviour only where the implementor does not already have it. So a concrete implementation reached through the class hierarchy beats a fallback. A fallback that has already been superseded by one intermediate contract is not re-inherited through a sibling path that never superseded it. An abstract declaration inherited from a class outranks a fallback and forces the implementor to speak, and the specification explains that this is deliberate: an assertion of incompleteness coming from the class side overrides the contract's offer to fill the gap.
+
+The complement is equally instructive. Two fallbacks for the same member arriving from unrelated contracts is a hard error, not a silent pick. That is the right call for the same reason the precedence rules are: there is no basis on which either author outranks the other, so any automatic choice would be arbitrary, and an arbitrary choice would silently change if either author edited their side. Making it an error forces the implementor — the only party who knows the intent — to state which behaviour they want, and gives them the syntax to say so explicitly.
+
+Behind all of it sits a single question, and it is the useful one to carry away: for each way a new default could meet existing code, does the new thing or the old thing win, and is there any case where the answer is "whichever the compiler happens to find first"? If the answer to the last part is ever yes, the extension mechanism is unsound no matter how convenient it looks, because the meaning of an old program now depends on an ordering nobody promised. Retroactive extension is not a feature you add; it is a property you establish by auditing every collision and confirming that either the incumbent wins or the human is asked.
+
+A programmer who has internalised this stops treating "just add a default implementation" as free. Adding a method with a body to a widely implemented interface, a defaulted field to a schema, a new step to a lifecycle hook, or a fallback handler to a plugin protocol are all the same move, and the design work is entirely in the precedence table: what beats the default, what the default beats, and which collisions must be escalated rather than resolved. Get that table right and the extension is invisible to everyone who already had an answer; get it wrong and you have shipped a silent behaviour change to code you have never seen.
+
+**Source:** [The Java Language Specification](../works/the-java-language-specification.md) — the interfaces chapter's treatment of default methods and their inheritance, including the rule that a superseded default is not re-inherited through a sibling path, the classes chapter's rule that a concrete or inherited abstract class method outranks a default, and the hard error on two unrelated defaults with equivalent signatures.

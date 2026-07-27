@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "When many situations each allow many transformations, name the transformations once and let each situation publish which ones it admits"
+figure: steele
+works: [the-java-language-specification]
+axes: [primitive-count, cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, foundations-of-computation]
+tags: [lesson]
+---
+# When many situations each allow many transformations, name the transformations once and let each situation publish which ones it admits
+
+**Lesson:** The obvious way to specify when one type may stand in for another is case by case: for each place in the grammar where a value meets an expected type, describe what is allowed there. That approach grows as the product of two independent things and becomes unmaintainable long before the language is finished. This specification instead factors the problem in two. It first defines a closed list of atomic transformations, each named, each fully described exactly once, including the degenerate one that changes nothing and the catch-all rule that anything not explicitly listed is forbidden. It then separately enumerates the small number of situations in which a value has to meet an expectation, and for each of them states only which of the named transformations are permitted, in what order they may compose, and which composite chains are legal. The rules for a given situation become a short list of references rather than a fresh body of prose.
+
+Three consequences fall out, and each one is visible in the document. First, the interesting design content moves into the permission table, where it can be compared: assignment allows a narrowing step that argument passing pointedly does not, and once both are expressed in the same vocabulary that asymmetry is a claim you can question rather than a discrepancy buried in two unrelated paragraphs. Second, the identity transformation earns its keep precisely because it is trivial — including it lets the whole system be stated as "every value in every position undergoes exactly one transformation," with no special case for "no conversion needed," and it incidentally licenses a redundant explicit conversion written purely for the reader. Third, since the composite behaviour is now mechanical, the specification can print the full cross product as tables and let a reader look up an answer instead of re-deriving it, with the tables serving as a check on the prose rather than a restatement of it.
+
+The reason to reach for this factoring is that the two dimensions genuinely vary independently. New transformations get added when the type system grows; new situations get added when the grammar grows; and the whole point is that adding one does not require rewriting the other. A design that never separates them pays for every new feature twice, and worse, it has no place to record the deliberate asymmetries — so the asymmetries turn into folklore.
+
+A programmer who thinks this way stops writing per-call-site coercion logic and starts asking what the closed set of value transformations in the system is, and which call sites are allowed to apply which of them. The same shape recurs constantly: permissions as roles crossed with actions rather than a rule per endpoint; serialization as a set of encoders crossed with a set of wire positions; validation as a set of normalizers crossed with a set of input sources. The test that you have done it right is whether a newly added transformation requires touching any site's description beyond adding one line to its permitted list, and whether the closed catch-all — everything not listed is refused — is stated rather than assumed.
+
+**Source:** [The Java Language Specification](../works/the-java-language-specification.md) — the conversions-and-contexts chapter, which defines the closed list of named conversion kinds separately from the enumerated conversion contexts, states each context purely as a permitted subset with allowed composition order, and prints the resulting cross product as lookup tables.

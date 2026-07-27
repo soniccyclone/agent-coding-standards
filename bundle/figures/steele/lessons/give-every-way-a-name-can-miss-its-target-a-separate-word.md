@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Resolve a name in staged narrowings, and give every distinct way a name can miss its target its own word"
+figure: steele
+works: [the-java-language-specification]
+axes: [cognitive-load, verifiability, primitive-count]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Resolve a name in staged narrowings, and give every distinct way a name can miss its target its own word
+
+**Lesson:** Working out what an identifier refers to in a language with packages, nested types, inheritance, imports, and members is a genuinely hard problem, and the reason it usually turns into folklore is that every sub-question gets answered at once. This specification refuses to do that. It defines resolution as three ordered stages: the surrounding syntax first assigns the name to one of a small closed set of categories, one of which explicitly means "not yet determined"; then the undetermined categories are narrowed by consulting declarations, with the narrowing applied left to right across a dotted name so each segment is resolved before the next depends on it; and only then does the settled category dictate what the name actually denotes. Every stage has a fixed, small input and output vocabulary, so a reader can carry out the procedure without holding the whole language in mind, and a wrong answer can be attributed to a particular stage.
+
+Layered on top, the specification separates four phenomena that a casual treatment would blend into "the name didn't work." Whether a declaration is reachable by a short name at all is one question. Which of several reachable declarations wins is a second, and the case where a same-kind declaration wins gets one name while the case where a name of one kind is preferred over a name of a different kind gets a different name — and the document states outright that these are distinct, then again that both are distinct from what happens when a subclass declaration displaces an inherited member. Whether the winning declaration may legally be used at all is a fourth question, and the specification says in as many words that this is a different concept from reachability, that it is decidable statically from declarations alone, and that it governs a different syntactic form. The payoff is diagnostic: given a name that doesn't work, you can say which of four things went wrong and therefore what to change, and the document can give per-phenomenon advice — this one you fix with a qualifier, that one you fix with an import, this other one you fix by renaming your own local.
+
+The same instinct produces a distinction most designs miss entirely. A member reachable through an inherited path has more than one dotted name that correctly denotes it, and the specification points out that all of them are legitimate references while only one is the designated form — so there is a canonical spelling separate from the set of valid spellings. That matters the moment anything outside the language has to write a name down: tools, imports, documentation, serialized references. Without the distinction, every consumer invents its own normalization and they disagree.
+
+A programmer who thinks this way stops writing single-pass resolvers that consult everything at once, and stops reporting "unresolved reference" for four unrelated conditions. In module systems, dependency resolvers, template engines, and configuration layering, the discipline is the same: define the categories a reference can be in, narrow them in a fixed order, and pick a distinct word for each distinct failure — because a system with one word for four failures cannot tell its user what to do next, and a system with no canonical spelling will be normalized inconsistently by everyone downstream.
+
+**Source:** [The Java Language Specification](../works/the-java-language-specification.md) — the names chapter, which fixes the three-step determination of a name's meaning over a closed set of syntactic categories, insists on the separateness of shadowing, obscuring, hiding, and access control, and distinguishes fully qualified from canonical names.

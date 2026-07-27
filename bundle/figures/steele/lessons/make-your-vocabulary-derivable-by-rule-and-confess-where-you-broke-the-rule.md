@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Make names and argument conventions derivable by rule so users compute them instead of memorising them, and confess every place you broke the rule"
+figure: steele
+works: [common-lisp-the-language-2nd-edition]
+axes: [cognitive-load, expressiveness, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Make names and argument conventions derivable by rule so users compute them instead of memorising them, and confess every place you broke the rule
+
+**Lesson:** A library of a thousand operations cannot be memorised, but it can be *derived* if its surface obeys rules. This specification takes that idea further than almost any comparable document. It states, as an explicit rule, when a hyphen appears before a predicate's trailing marker letter and when it does not, and justifies the rule by showing which misreadings the alternatives would invite. It defines a single family of modifier arguments — supply the comparison, supply a key extractor, restrict to a subrange, bound the number of hits, run from the other end — and then applies that family uniformly across every operation on ordered collections, defining once and for all what it means for an element to satisfy a test and what it means for two elements to match, so that dozens of individual operations need not restate it. It fixes the suffix pattern that turns an operation taking a value into one taking a predicate. The result is that a user who has learned the conventions can guess the name and the argument list of an operation they have never seen, and be right.
+
+What raises this above style-guide advice is that the specification treats a departure from a rule as something requiring disclosure. Where the string operations use one comparison suffix while the general conventions would have called for another, it says so and attributes the inconsistency to history. Where a type's name is shorter and more euphonious than the symmetric scheme would produce, it says outright that pleasantness to the ear and to the user were judged more important than rigid symmetry in that one case. Where the collection operations accept a symbol in place of a string but the general operations do not, it names this a small inelegance permitted for pragmatic reasons. Each confession is short, and each one is doing real work: it tells the reader that their derivation failed here for a knowable reason rather than because the rule they inferred was wrong.
+
+The reason the confessions matter as much as the rules is what happens to a user's model when a rule silently fails. A user who derives a name and finds it absent does not conclude that this is an exception; they conclude the rule does not hold, and revert to memorising. One undocumented exception can cost more than the rule saved. Documenting exceptions is therefore not humility, it is preservation of the rule's value. The same document also shows the maintenance side of this: when a later revision introduced a general way to negate a predicate, the whole redundant negated branch of the naming scheme was marked as deprecated — with a dry aside that deprecation in practice rarely leads to removal.
+
+A designer who works this way spends real effort on the naming and parameter scheme before writing many functions, publishes the scheme as part of the interface, and keeps a visible list of exceptions with reasons. The measure of success is not that the surface is small but that a competent user can predict the part they have not read yet.
+
+**Source:** [Common Lisp the Language, 2nd Edition](../works/common-lisp-the-language-2nd-edition.md) — the hyphenation rule stated at the top of the predicates chapter, the uniform keyword-argument and suffix conventions laid out at the start of the sequences chapter with its once-and-for-all definitions of "satisfies the test" and "match," and the acknowledged departures in the strings chapter and in the naming rationale for the simple-vector type.

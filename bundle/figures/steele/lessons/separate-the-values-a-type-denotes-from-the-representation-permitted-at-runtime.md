@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Separate the values a type denotes from the representations a machine may use for it, and let code declare whether it wants the latitude"
+figure: steele
+works: [the-java-language-specification]
+axes: [hardware-affinity, verifiability, cognitive-load]
+subdomains: [programming-languages-and-semantics, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Separate the values a type denotes from the representations a machine may use for it, and let code declare whether it wants the latitude
+
+**Lesson:** Real floating-point hardware does not agree with itself. Some units carry intermediate results in a wider exponent range than the declared width, and forcing every intermediate back to the narrow format costs real instructions on exactly the machines where numeric code is hot. A specification has three bad options: mandate the narrow behaviour and make the language slow on that hardware, leave the behaviour to the implementation and make numeric results unreproducible, or say nothing and let the ambiguity be discovered by people debugging discrepancies between machines. This specification takes a fourth route. It introduces an explicit notion of a set of representable values, defines the wider sets alongside the standard ones with their parameters stated as bounds rather than exact figures, and then says the thing that makes the whole scheme work: these sets are not types. A declared type continues to mean exactly what it meant; what varies is which member of the corresponding value set an implementation is permitted to hold at a given moment.
+
+With that separation in place, the latitude becomes something a program can control instead of something a program is subjected to. Moving a value between sets is defined as its own named operation with fully specified rounding, overflow, and underflow behaviour, and the specification then states precisely where that operation is mandatory and where it is optional. Storing into a variable, passing an argument, and returning across a boundary force the value back to the narrow set unconditionally; inside a region of code, latitude is permitted — unless that region has been declared to want reproducibility, in which case every implementation must behave identically. The wide sets are also arranged to be supersets of the narrow ones, so the latitude can only ever add range, never remove a value the program could already produce.
+
+The design lesson is that "implementation-defined" is a failure of factoring more often than it is a necessity. What looks like one irreducible choice — fast or reproducible — is usually two separable things: a precisely specified transformation, and a policy about where that transformation is required. Specify the transformation completely and you have made the behaviour analysable; make the policy declarable at some granularity a programmer can reason about, and you have given the numeric specialist reproducibility and everyone else speed, without either paying for the other's requirement. The boundaries where latitude ends are chosen to be exactly the boundaries where a value becomes observable to other code, which is why the scheme does not leak.
+
+A programmer who thinks this way stops writing "results may vary by platform" in documentation. They ask what the exact operation is that platforms differ by, define it, and then decide at which boundaries it must be applied — and make the strict mode a property a region of code can request rather than a global build flag. The same shape covers timer resolution, memory-ordering strength, hash iteration order, and locale-sensitive formatting: name the normalizing operation, specify it exactly, then argue only about where it is mandatory.
+
+**Source:** [The Java Language Specification](../works/the-java-language-specification.md) — the treatment of floating-point value sets in the types chapter, which declares that the value sets are not types, together with the value-set conversion rules in the conversions chapter that fix where the mapping is optional, where it is compulsory, and how a non-strict region differs from a strict one.
