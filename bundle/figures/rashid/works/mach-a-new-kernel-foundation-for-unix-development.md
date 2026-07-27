@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://raw.githubusercontent.com/tpn/pdfs/master/Mach%20-%20A%20New%20Kernel%20Foundation%20for%20UNIX%20Developers%20(mach_usenix86).pdf — third-party PDF-archive rehost (tpn/pdfs, a long-running personal collection of systems-papers on GitHub); confirmed serving as `application/pdf` directly from raw.githubusercontent.com.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A system that grows a new access mechanism per resource kind is losing the argument it started by winning](../lessons/one-kind-of-reference-for-every-kind-of-resource.md)
+- [When an abstraction is too expensive to use the way the problem wants, look for two concerns fused inside it](../lessons/split-the-abstraction-that-bundles-ownership-with-execution.md)
+- [Put mechanism in the privileged core and push every decision out of it, so the identity of the system lives in replaceable parts](../lessons/the-privileged-core-should-hold-mechanism-and-refuse-to-hold-decisions.md)
+- [A portability boundary holds only when the machine-specific side owns no truth and can be thrown away and rebuilt](../lessons/keep-truth-in-the-portable-layer-and-let-the-machine-layer-be-a-discardable-cache.md)

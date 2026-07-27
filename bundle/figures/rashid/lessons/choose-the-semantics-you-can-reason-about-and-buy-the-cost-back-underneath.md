@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Choose the semantics you can reason about, then buy the cost back underneath where nobody has to know"
+figure: rashid
+works: [accent-a-communication-oriented-network-operating-system-kernel, mach-a-new-kernel-foundation-for-unix-development, from-rig-to-accent-to-mach]
+axes: [hardware-affinity, cognitive-load, parallelizability, verifiability]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Choose the semantics you can reason about, then buy the cost back underneath where nobody has to know
+
+**Lesson:** Designers routinely weaken the meaning of an operation in order to make it fast. Handing over a value becomes handing over a pointer to a value; a self-contained transfer becomes a shared region with rules about who may touch it when. The performance argument for doing this is usually sound in the small and catastrophic in the large, because the weakened meaning is now part of the interface, every user has to reason about aliasing forever, and any capability that depended on the strong meaning is gone. The alternative discipline is to fix the semantics at the level that is easiest to reason about — a transfer means the receiver gets its own copy, full stop, nothing is shared — and then treat matching that meaning cheaply as an implementation problem to be solved with whatever the hardware offers.
+
+What makes this more than wishful thinking is that the machinery for cheating is already present in the address-translation hardware. A transfer whose meaning is "you now have your own copy" can be implemented by handing over page mappings and marking them so that the first write by either party causes a private copy of just that page, and if the receiver is indifferent to where the data lands, by simply installing the pages in its map and moving nothing at all. The observable behavior is indistinguishable from a copy. The cost is proportional to what is actually mutated afterward rather than to the size of the thing conceptually copied, which is why the strong semantics turns out to be affordable at sizes — whole address spaces — where the weak semantics was invented to cope.
+
+The payoff that justifies the discipline is not speed but what the strong meaning makes possible. Because nothing is ever really shared, the meaning of a transfer between two computations on one machine and two computations on different machines is identical, which is precisely why remoteness can be handled by an ordinary component sitting in the middle rather than by a second, parallel set of operations with different rules. Nothing has to be shared for the parties to make progress independently, so decomposition is free rather than negotiated. And the optimization is a strict optimization: an implementation that literally copies everything is correct, just slower, so the fast path can be added, removed, or restricted to aligned cases without any user's reasoning changing. That property — the trick is invisible and optional — is the test of whether you have done this correctly. If turning the optimization off would break programs, you did not preserve the semantics, you leaked the implementation.
+
+A programmer who works this way resists the reflex to expose sharing at an interface boundary as a performance measure, and instead asks what mechanism could make the honest meaning cheap. Two designs that admit the same behaviors are not the same design, and the one whose stated meaning is stronger has strictly more room underneath it.
+
+**Source:** [Accent: A Communication Oriented Network Operating System Kernel](../works/accent-a-communication-oriented-network-operating-system-kernel.md) — the virtual-memory section arguing that logical double-copy semantics need not entail physical copying, with the file-access example where large data crosses several components without being touched; the same integration is carried forward in [Mach](../works/mach-a-new-kernel-foundation-for-unix-development.md)'s account of large message transfer through a temporary kernel mapping.

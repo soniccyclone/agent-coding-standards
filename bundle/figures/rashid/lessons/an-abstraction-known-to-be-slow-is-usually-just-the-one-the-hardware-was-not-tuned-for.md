@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An abstraction everyone knows is slow is usually just the one the hardware was never tuned for"
+figure: rashid
+works: [accent-a-communication-oriented-network-operating-system-kernel]
+axes: [hardware-affinity, primitive-count, expressiveness]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# An abstraction everyone knows is slow is usually just the one the hardware was never tuned for
+
+**Lesson:** Some structuring ideas carry a reputation for being inherently expensive, and the reputation is transmitted as fact rather than as a measurement. The productive response is to decompose the claim: which part of the cost follows from the idea itself, and which part follows from the accumulated engineering investment in a rival idea? Procedure calling is fast on general-purpose machines because decades of hardware design went into making it fast — dedicated instructions, register conventions, stack support. Passing a request between isolated computations is slow on those same machines largely because nothing analogous was ever built for it, and because the isolation it depends on is implemented by mechanisms whose costs were nobody's priority. Those are different facts about the world, and only the first is a property of the abstraction.
+
+The way to tell them apart is to look for existing machines that do the supposedly expensive thing cheaply, and to work out what they did. Switching between protected contexts is expensive on hardware that must invalidate its translation caching on every switch, and cheap on hardware whose address translation incorporates an identifier for the current context so that entries from different contexts coexist. That is not an argument about how fast isolation can be; it is an argument about a specific implementation choice, one that can be made differently. Likewise, the cost of assembling and delivering a small request is not fixed by anything conceptual — given a machine whose low-level behavior can be extended, the operation can be given support comparable to what argument passing already gets, and the difference stops mattering. The same reasoning cuts the other way and must be applied honestly: this is exactly why cheap boundary crossing is a load-bearing assumption of any design that pushes decisions out of a privileged core, and why measuring it is not optional.
+
+Believing this changes what you do when you want a structure the folk wisdom forbids. Instead of abandoning it or hiding it behind an escape hatch that defeats its purpose, you locate the specific mechanism that is expensive, ask whether its expense is fundamental, and go work on that mechanism — because a structural advantage that survives is worth more than a constant factor, and constant factors attached to a poorly-supported mechanism have a way of disappearing once someone treats them as the problem. The failure mode this guards against is a system whose architecture was chosen by the incidental performance profile of one generation of hardware, and which is still shaped that way long after the profile changed.
+
+**Source:** [Accent: A Communication Oriented Network Operating System Kernel](../works/accent-a-communication-oriented-network-operating-system-kernel.md) — the closing discussion of why message-oriented systems acquired their reputation for slowness, contrasting machines whose translation caches must be flushed on a context switch against ones that tag translations with a context identifier, alongside the decision to give message passing low-level machine support of a complexity comparable to procedure argument passing.
