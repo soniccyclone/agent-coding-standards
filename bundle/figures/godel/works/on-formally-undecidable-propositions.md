@@ -17,4 +17,7 @@ tags: [work]
 **Source:** https://homepages.uc.edu/~martinj/History_of_Logic/Godel/Godel%20%E2%80%93%20On%20Formally%20Undecidable%20Propositions%20of%20Principia%20Mathematica%201931.pdf — third-party rehost: a course page ("History of Logic") on the University of Cincinnati faculty homepage server, mirroring the published Meltzer translation for teaching use. Verified live (200, direct PDF, text confirmed to match the Meltzer/Braithwaite translation).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Encode a system's own text as data inside the system, and questions about it become computations in it](../lessons/make-a-system-s-own-text-a-value-inside-it.md)
+- [A fixed rule-set rich enough to describe itself can neither settle every question about itself nor certify its own soundness](../lessons/no-fixed-rule-set-can-certify-itself.md)
+- [State the minimal properties your argument actually consumes, and it stops being about your artifact](../lessons/name-the-two-properties-your-argument-actually-uses.md)
+- [Bound every search you can, and know exactly which single one you cannot](../lessons/bound-every-search-and-know-the-one-you-cannot.md)

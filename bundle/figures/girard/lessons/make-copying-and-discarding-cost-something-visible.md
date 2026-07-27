@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Treat copying and discarding as operations that must be licensed, not as background privileges of notation"
+figure: girard
+works: [linear-logic, proofs-and-types]
+axes: [verifiability, hardware-affinity, expressiveness]
+subdomains: [programming-languages-and-semantics, foundations-of-computation]
+tags: [lesson]
+---
+# Treat copying and discarding as operations that must be licensed, not as background privileges of notation
+
+**Lesson:** Every conventional formalism grants two silent permissions: you may use a hypothesis as many times as you like, and you may ignore one you do not need. These are not stated as operations; they are properties of how the notation manages its own bookkeeping, invisible precisely because they are always available. Withdraw them and something surprising happens — the resulting system is not weaker in an interesting way, it is *sharper*. With no permission to duplicate, execution can only shrink what it is executing, which turns a qualitative claim about termination into a quantitative bound on it. The moment the permissions come back, that control evaporates. That contrast is the whole point: the permissions were never free, they were merely unpriced.
+
+The right response is not to ban them but to make them purchasable at a named point. Introduce an explicit marker that says "here, and only here, this thing may be duplicated or dropped," and the consequences of unrestricted use become localized to occurrences of that marker. Two payoffs follow. First, the marker acquires an operational reading that matches physical reality rather than fighting it: something marked as reusable is something written to stable storage and read an unspecified number of times, while something unmarked is consumed on its single use. Second — and this is the sharper engineering payoff — when you separate the rewriting rules that always shrink the work from the one rule that can blow it up, you discover that nearly all of execution is cheap and provably terminating, and that the entire risk of explosion and nontermination is concentrated in one identifiable construct. Seal that construct off and you can reason about the rest without fear; you could even deliberately install a nonterminating process inside it without destroying the analyzability of everything around it.
+
+The same instinct extends past data to the act of establishing a fact at all. If a claim is only meaningful relative to what an observer must do to verify it, then a logic can talk about verification effort instead of pretending truth is free-standing. That reframing is what makes resource-sensitive reasoning applicable to things like query answering and automated deduction, where the usual formalisms produce technically valid nonsense precisely because deducing costs nothing in them.
+
+A programmer who internalizes this stops treating aliasing, copying, and dropping as implementation details beneath the type system's notice, and starts treating them as facts a type ought to state. It also changes where you look when a system's performance is unpredictable: not at the whole program, but at the specific places where the discipline of single use was waived.
+
+**Source:** [Linear Logic](../works/linear-logic.md) — the sequent-calculus exposition, which locates the constructive content of the older logics in the *placement* of the duplication and discarding rules and then generalizes the restriction; the exponential connectives that buy the permissions back; the storage/repeated-reading operational reading in the computer-science section; and the "small normalization" result separating the size-decreasing rewrites from the single rule that makes cost explode. Also [Proofs and Types](../works/proofs-and-types.md) — the sequent-calculus chapter's claim that the seemingly contentless bookkeeping rules are in fact the most consequential ones in the system, determining the behaviour of everything defined afterwards, and its argument that the constructive properties usually credited to a restricted logic are really consequences of where duplication was forbidden.

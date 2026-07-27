@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://archive.org/download/godel-3/Godel-2.pdf — third-party rehost on Internet Archive of Collected Works Vol. II; the remarks begin around book page 150. Verified: file downloads directly (no lending/login gate), and the table of contents plus surrounding page text confirmed the title, introductory note, and a group photograph of the conference participants included in this section.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The concept worth having is the one its own strengthening cannot escape](../lessons/chase-concepts-their-own-strengthening-cannot-escape.md)
+- [To collapse an endless tower of meta-levels, make the level a parameter instead of a structural feature](../lessons/collapse-a-tower-of-levels-by-making-the-level-a-parameter.md)
+- [An impossibility result forbids a route, not a goal — read its hypotheses before you give up](../lessons/an-impossibility-result-forbids-a-route-not-a-goal.md)

@@ -17,4 +17,6 @@ tags: [work]
 **Source:** https://rjlipton.com/the-gdel-letter/ — third-party rehost: a post on "Gödel's Lost Letter and P=NP," the blog founded by the late Richard J. Lipton (Georgia Tech), reproducing the full English translation of the letter along with commentary. Verified live (200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Once you attach a budget, the question stops being whether it can be decided and becomes how the cost climbs with the budget](../lessons/replace-can-it-be-decided-with-what-does-the-budget-buy.md)
+- [Measure a problem by the gap between checking an answer and finding one, and treat exhaustive search as a baseline rather than a price](../lessons/measure-a-problem-by-the-gap-between-checking-and-finding.md)
+- [A best-known bound describes the reach of your technique, not the difficulty of the problem](../lessons/a-lower-bound-tells-you-about-your-technique-not-the-problem.md)

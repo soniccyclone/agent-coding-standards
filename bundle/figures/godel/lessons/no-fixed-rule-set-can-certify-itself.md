@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A fixed rule-set rich enough to describe itself can neither settle every question about itself nor certify its own soundness"
+figure: godel
+works: [on-formally-undecidable-propositions, on-undecidable-propositions-of-formal-mathematical-systems]
+axes: [verifiability, primitive-count, expressiveness]
+subdomains: [foundations-of-computation, formal-methods-and-verification]
+tags: [lesson]
+---
+# A fixed rule-set rich enough to describe itself can neither settle every question about itself nor certify its own soundness
+
+**Lesson:** Fix any finite, mechanically checkable set of rules that is strong enough to talk about its own texts, and two hard limits follow. There will be a statement in its own language that it can neither derive nor refute — not an exotic statement invented to be awkward, but one built out of the same substitution and quantification machinery the rules already use. And the particular statement asserting that the rule-set never contradicts itself is one of the ones it cannot derive. Both limits are structural: they do not depend on how the rules were chosen, how many axioms there are, or how much cleverness went into their design. Adding more axioms does not escape it, because the enlarged rule-set is itself a fixed, mechanically checkable rule-set and the argument simply reruns against the new one.
+
+The reason this holds is that self-description makes the notion "derivable in this system" expressible in the system, and once it is expressible you can aim it at a sentence that describes its own inaccessibility. Derivability then has to agree with the sentence's content, and the only consistent way to agree is for the derivation never to exist. The consistency case is the same argument compressed: the conditional "if these rules are consistent, then that sentence is out of reach" is itself derivable inside, so anything that derived the antecedent would derive the consequent, which is precisely what consistency forbids. Notice the shape — the limitation arrives *because* the system is expressive, not despite it. Expressive power and self-adjudication are in direct tension.
+
+What a programmer does differently: stop looking for the tool that validates itself. No configuration language settles all questions about its own configurations, no analyzer proves its own analysis sound, no type system decides every property of programs in that same type system, no test suite establishes the correctness of the framework that runs it. Assurance flows downhill from a level with more strength than the thing being assured — a proof checker small enough to audit by eye, a specification stated in a language the implementation cannot see, a review by someone whose model of the system is not the system's own model of itself. And the corollary is a positive design instruction: deliberately keep the *trusted* layer small and different in kind from the layer it judges, since a trusted core that shares its subject's expressive machinery inherits its subject's blind spots.
+
+Finally, the undecidable sentence is not unknowable — it is settled the moment you reason about the system from outside, since its being underivable is exactly what it claims. Truth about a system routinely exceeds what the system can establish. That is not a paradox to be resolved but a reason to keep an external vantage point in every verification story.
+
+**Source:** [On Formally Undecidable Propositions of Principia Mathematica and Related Systems I](../works/on-formally-undecidable-propositions.md) — the main undecidability result of Section 2 and its extension to consistency statements in Section 4, together with the introductory Section 1 remark that the underivable sentence gets decided once you step to the meta-level. Also [On Undecidable Propositions of Formal Mathematical Systems](../works/on-undecidable-propositions-of-formal-mathematical-systems.md) — the section listing five conditions under which the argument applies to an arbitrary system, and the 1964 postscript noting that a precise general account of mechanical procedure lets the first of those conditions be dropped entirely.

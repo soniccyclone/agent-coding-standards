@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Measure a problem by the gap between checking an answer and finding one, and treat exhaustive search as a baseline rather than a price"
+figure: godel
+works: [letter-to-von-neumann]
+axes: [verifiability]
+subdomains: [algorithms-and-complexity, foundations-of-computation]
+tags: [lesson]
+---
+# Measure a problem by the gap between checking an answer and finding one, and treat exhaustive search as a baseline rather than a price
+
+**Lesson:** The problem Gödel poses has a peculiar structure that he isolates deliberately. Recognizing a candidate is nearly free: given something claimed to be a derivation of bounded size, confirming it is mechanical and cheap. Producing one is what costs, and the only method obviously available is to walk the candidates. So the whole difficulty of the problem lives in one number, the ratio between the cost of confirming and the cost of finding, and Gödel says outright what it would mean if that ratio collapsed: the human contribution to a large class of intellectual work would be the search, and the search would have been automated away. What makes this a general way of thinking rather than an observation about logic is that the same structure recurs everywhere — a cheap checker plus an expensive producer. Schedules, layouts, routes, type assignments, satisfying inputs, valid configurations: in each case verifying is easy and the naive producer enumerates.
+
+Gödel's second move is to refuse to accept enumeration as an estimate of the cost. He points out that other finite problems have turned out to admit enormous collapses, where a method that appeared to require walking the whole space is replaced by one that exploits structure and does exponentially less work, and he names concrete instances from number theory where exactly that happened. The reasoning is inductive and honest: we have repeatedly discovered that a search space we were enumerating had structure we had not exploited, therefore the presence of a cheap checker is not evidence that finding must be expensive. He then asks the general form of the question, which is how far the step count of finite combinatorial problems can be pushed below plain search. That question is the whole subject that grew out of this letter, and it began as a refusal to mistake the best method currently known for the difficulty of the problem.
+
+For a working programmer the two halves compose into a diagnostic. When you find yourself writing a loop over candidates, first check whether the check is cheap — if it is, you are looking at a search problem, and search problems are exactly the ones where the structure of the candidate space is worth examining before the loop is optimized. Cheap-verify-expensive-find is also the signature of the place where a solver, a constraint formulation, or an indexed reformulation pays for itself, because those tools are built to exploit exactly the structure enumeration ignores. The complementary discipline is to keep the checker even after the clever finder arrives. The checker is the specification; if finding gets replaced by something structural and fast, the cheap check is what tells you the fast thing was right, which is why the asymmetry is worth preserving rather than optimizing away.
+
+**Source:** [Letter to John von Neumann](../works/letter-to-von-neumann.md) — the argument that a fast solution would make finding a proof no harder than recognizing one, and the following remarks citing number-theoretic problems where the step count drops drastically below exhaustive trial, ending with the general question about how far that reduction can go for finite combinatorial problems.

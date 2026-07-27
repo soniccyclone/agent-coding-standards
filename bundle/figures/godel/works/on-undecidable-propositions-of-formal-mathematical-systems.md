@@ -18,4 +18,7 @@ tags: [work]
 **Source:** https://archive.org/download/godel-3/Godel-1.pdf — third-party rehost on Internet Archive of Collected Works Vol. I; the article begins at book page 346 (introductory note by Kleene at p. 338). Verified: file downloads directly (no lending/login gate, `access-restricted-item` not set), and page-range text confirmed to match this article's title, section structure, and Postscriptum.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A specification only becomes a definition when the rules for deriving its answers ship with it](../lessons/a-definition-is-not-mechanical-until-the-derivation-rules-ship-with-it.md)
+- [Don't ban self-reference to escape paradox — find the one predicate that cannot be internalized](../lessons/do-not-ban-self-reference-find-the-predicate-that-cannot-be-internalized.md)
+- [Decidability is lost to feature interaction, not to any one feature's power](../lessons/decidability-dies-at-feature-interaction.md)
+- also contributes to [Encode a system's own text as data inside the system, and questions about it become computations in it](../lessons/make-a-system-s-own-text-a-value-inside-it.md), [A fixed rule-set rich enough to describe itself can neither settle every question about itself nor certify its own soundness](../lessons/no-fixed-rule-set-can-certify-itself.md), and [State the minimal properties your argument actually consumes, and it stops being about your artifact](../lessons/name-the-two-properties-your-argument-actually-uses.md)

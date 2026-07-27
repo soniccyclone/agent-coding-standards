@@ -17,4 +17,5 @@ tags: [work]
 **Source:** https://archive.org/download/godel-3/Godel-1.pdf — third-party rehost on Internet Archive of Collected Works Vol. I; German original and facing English translation begin at book page 396. Verified: file downloads directly (no lending/login gate), and the table of contents plus page text confirmed the German and English titles and page numbers.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Two formalisms can reach the same results while differing without bound in the effort to reach them](../lessons/same-reachable-results-unboundedly-different-effort.md)
+- also contributes to [The concept worth having is the one its own strengthening cannot escape](../lessons/chase-concepts-their-own-strengthening-cannot-escape.md)

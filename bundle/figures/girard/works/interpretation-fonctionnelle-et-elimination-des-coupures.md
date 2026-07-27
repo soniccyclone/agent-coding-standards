@@ -17,4 +17,8 @@ tags: [work]
 **Source:** https://girard.perso.math.cnrs.fr/These.pdf — live scanned PDF, self-archived on Girard's own CNRS personal page under his "Archives: articles techniques" listing.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Definable at every instance is not definable generically — the quantifier adds a constraint that pointwise evidence cannot see](../lessons/definable-at-every-instance-is-not-definable-generically.md)
+- [The obvious next generalization of a sound system is where soundness usually dies — attack it with the classic paradox before you build on it](../lessons/probe-a-generalization-by-trying-to-break-it.md)
+- [When a property is out of reach for the whole system, prove it uniformly on finitely generated slices and lift the family](../lessons/recover-an-unreachable-global-claim-from-uniform-local-ones.md)
+- ["Same program" is a parameter you set, not a fact you discover — and where you set it decides what you can decide](../lessons/sameness-of-programs-is-a-parameter-you-set.md)
+- also contributes to [An answer and the question it answers are different objects — a formalism that identifies them has thrown away the half you get paid for](../lessons/an-answer-is-not-the-question-it-answers.md)

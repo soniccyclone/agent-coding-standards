@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Don't ban self-reference to escape paradox — find the one predicate that cannot be internalized"
+figure: godel
+works: [on-undecidable-propositions-of-formal-mathematical-systems]
+axes: [expressiveness, verifiability, primitive-count]
+subdomains: [foundations-of-computation, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Don't ban self-reference to escape paradox — find the one predicate that cannot be internalized
+
+**Lesson:** Faced with the liar-style paradoxes, the fix inherited from *Principia* was prohibition: forbid a statement from saying anything about itself. Gödel calls that too drastic, and he has the receipts — he has just built self-referring statements out of ordinary arithmetic and shown that they are perfectly meaningful. He then generalizes: for *any* property of expressions that the system can express, you can construct an expression that says of itself that it has that property. Self-reference is not the disease. The construction works for whichever properties are expressible, and it is the expressibility of a particular property that decides whether a paradox or merely a limitation results.
+
+The diagnosis follows immediately. "Derivable in this system" is expressible inside the system, because derivability is a syntactic search over coded texts. "True," in the sense of holding of the intended subject matter, is not expressible — if it were, aiming the self-reference construction at its negation would produce a genuine contradiction rather than an interesting gap. So the two notions cannot coincide, and the incompleteness result drops out as a consequence: assuming the system only derives truths, the class of truths must exceed the class of derivable statements, so some true statement is out of reach. The liar paradox stops being a paradox and becomes a proof — a proof that no language contains its own truth predicate. The apparent contradiction was never about self-reference; it was about smuggling in a predicate that has to live one level up.
+
+For a programmer this reframes a whole family of recurring design fights. Reflection, self-hosting compilers, macro systems that manipulate the code they are part of, runtime introspection, plugins that rewrite their host — the reflex to forbid these on the grounds that self-reference is dangerous is the drastic fix, and it costs you enormous expressive power for no principled gain. The disciplined alternative is to work out which predicate you were secretly relying on being internally available. Whether a program is syntactically valid, whether a derivation is well-formed, whether this artifact satisfies that mechanically-checkable rule: internalize freely, these are the derivability-shaped notions. Whether a program is *correct*, whether an assertion is *true of the world*, whether this system is *sound*: these are the truth-shaped notions, and a design that expects to evaluate them from inside is not merely hard to build, it is asking for something that provably has no home there. Put those judgements in a distinct layer — a different language, an external oracle, a human, a stronger meta-theory — and the paradoxes evaporate without giving up reflection.
+
+**Source:** [On Undecidable Propositions of Formal Mathematical Systems](../works/on-undecidable-propositions-of-formal-mathematical-systems.md) — the section relating the argument to the paradoxes, which rejects the prohibition on self-reference, states the general construction of a sentence attributing an arbitrary expressible property to itself, and derives the truth/derivability split from the fact that only one of the two can be expressed internally.
