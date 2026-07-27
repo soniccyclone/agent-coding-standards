@@ -1,0 +1,21 @@
+---
+type: lesson
+title: "Whether a replicated thing can be weakened is decided by its operations, not by its protocol"
+figure: fischer
+works: [sacrificing-serializability-to-attain-high-availability-of-data]
+axes: [expressiveness, verifiability, primitive-count]
+subdomains: [databases-and-data-management, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+
+# Whether a replicated thing can be weakened is decided by its operations, not by its protocol
+
+**Lesson:** When replicas are allowed to diverge and later merge, the hard question is not which messages to send but which operations you permitted in the first place. Merging is only well defined when, for every pair of divergent histories, the union of what each side knows determines a unique answer. That is a property of the operation algebra, not of the transport. So the design work happens before any protocol exists: narrow the operations until the merge is forced, and the availability story writes itself. Leave the operations general and no amount of message-passing cleverness recovers a coherent state, because two replicas will hold genuinely contradictory evidence and nothing in their combined knowledge breaks the tie.
+
+The concrete shape of that narrowing is instructive because it looks like an arbitrary restriction until you see what it buys. An element may be created only once, so its identity is minted at creation and never reused; and removal may only name something already visible locally. Together those two constraints make creation and removal partially ordered rather than interleaved for any given element — removal can never be followed by re-creation — which is exactly what lets a replica that has learned of both facts conclude, with no timing information and no coordination, that the element is gone. Repeated removals become harmless because they collapse. The general operation set has no such property, and there the same merge is simply undefined. Notice also what the restriction costs: the interface is genuinely less expressive than the unrestricted one, and identity has to be manufactured rather than reused. That is the price, paid deliberately, in exchange for merges that need no arbiter.
+
+There is a second, easily missed consequence: the operation algebra also determines how much a replica must remember. The obvious implementation of merge — each node keeps everything it ever heard was created and everything it ever heard was removed, and merging is set union — is correct and useless, because its memory grows with the total history rather than with the live contents, so a workload of steady creation and removal costs unbounded storage to represent a small set. Getting from there to bounded state is not an optimization pass; it requires per-item provenance and a compact summary of how current each replica's knowledge of each peer is, and both are only sound because of the restrictions above. Any weak-consistency scheme should be interrogated on this point, since the ones that keep removal markers forever have deferred a cost rather than avoided one.
+
+A programmer who has internalized this stops asking "can we run this replicated and eventually consistent" about a system, and starts asking it about each operation. Operations that only add information, or that carry their own tie-breaking identity, replicate almost for free. Operations whose meaning depends on the current global state — anything that reads a total, enforces a limit, or reuses a name — do not, and dressing them in a merge protocol produces a system whose behavior under partition cannot be stated. The productive move is to redesign the operation down to a mergeable one, or to accept that this particular operation needs coordination and confine it, rather than to pretend the protocol layer can fix an algebra that does not close.
+
+**Source:** [Sacrificing Serializability to Attain High Availability of Data in an Unreliable Network](../works/sacrificing-serializability-to-attain-high-availability-of-data.md) — the two stated restrictions on the dictionary's operations and the reasoning about why they are needed and why they arise naturally in the intended applications, together with the discussion of why the naive keep-everything implementation grows without bound and what per-item and per-peer bookkeeping replaces it.

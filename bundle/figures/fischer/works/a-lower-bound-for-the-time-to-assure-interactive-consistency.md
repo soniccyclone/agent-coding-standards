@@ -18,4 +18,7 @@ tags: [work]
 **Source:** https://groups.csail.mit.edu/tds/papers/Lynch/ipl82.pdf — self-archived PDF on Nancy Lynch's own paper archive at MIT CSAIL (co-author's site), live and directly downloadable (HTTP 200). Confirmed as the published IPL version against MIT CSAIL TDS group's own bibliography (reflist.html), which lists this exact file for this exact citation (the same page also lists the September 1981 Georgia Tech technical report predecessor, GIT-ICS-81/13, as a separate self-archived scan).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Before reasoning about every possible implementation, collapse them into one canonical form](../lessons/collapse-the-space-of-candidates-before-arguing-about-all-of-them.md)
+- [Connect the executions nobody can tell apart, then walk the chain to a contradiction](../lessons/connect-the-executions-you-cannot-tell-apart.md)
+- [Optimal means nothing until you name the resource, and the winner on one resource can be absurd on another](../lessons/optimal-is-meaningless-until-you-name-the-resource.md)
+- [The binding constraint on a distributed component is what its local view cannot tell apart](../lessons/what-cannot-be-distinguished-bounds-what-can-be-decided.md)

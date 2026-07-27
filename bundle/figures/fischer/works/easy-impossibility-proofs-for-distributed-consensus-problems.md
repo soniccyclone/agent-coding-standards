@@ -18,4 +18,7 @@ tags: [work]
 **Source:** https://groups.csail.mit.edu/tds/papers/Lynch/FischerLynchMerritt-dc.pdf — self-archived PDF on Nancy Lynch's own paper archive at MIT CSAIL (co-author's site), live and directly downloadable (HTTP 200). Confirmed against MIT CSAIL TDS group's own bibliography (reflist.html) and against the paper's own text (extracted from the PDF stream: title, author affiliations, and abstract all match).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The useful payload of an impossibility result is the short list of assumptions it needs, not the negative verdict](../lessons/the-assumption-ledger-is-the-real-result.md)
+- [Connect the executions nobody can tell apart, then walk the chain to a contradiction](../lessons/connect-the-executions-you-cannot-tell-apart.md)
+- [A negative result gets its reach from how little it demands and how much it permits](../lessons/assume-less-to-forbid-more.md)
+- [The binding constraint on a distributed component is what its local view cannot tell apart](../lessons/what-cannot-be-distinguished-bounds-what-can-be-decided.md)

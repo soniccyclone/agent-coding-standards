@@ -1,0 +1,19 @@
+---
+type: lesson
+title: "The binding constraint on a distributed component is what its local view cannot tell apart"
+figure: fischer
+works: [impossibility-of-distributed-consensus-with-one-faulty-process, easy-impossibility-proofs-for-distributed-consensus-problems, a-lower-bound-for-the-time-to-assure-interactive-consistency]
+axes: [verifiability, parallelizability]
+subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification]
+tags: [lesson]
+---
+
+# The binding constraint on a distributed component is what its local view cannot tell apart
+
+**Lesson:** When a distributed protocol fails to achieve something, the instinct is to blame computational weakness: not enough information gathered, not enough rounds, not a clever enough encoding. The more accurate diagnosis is epistemic. A participant acts as a function of what it has locally observed, so if two globally different situations produce byte-identical local observations, the participant is forced to behave identically in both. If those two situations demand different behavior, the protocol is dead regardless of how much computation each participant performs. This is why unbounded internal state, infinite state spaces, and non-computable transition functions can all be granted freely in an impossibility argument without weakening it: the wall is not computation, it is the gap between local and global knowledge.
+
+The consequences are specific and unintuitive, which is what makes them worth holding onto. A participant that has heard nothing cannot separate a peer that has stopped forever from a peer that is merely slow, so any behavior conditioned on that separation is behavior conditioned on something unobservable. A participant embedded in a sparse or small network cannot separate its real neighborhood from a larger fabricated arrangement whose local wiring looks the same, because a misbehaving neighbor is free to present whatever face it likes on each of its links; correctness proved on the real topology therefore has to survive being transplanted into every arrangement that looks locally identical. A participant that has completed some fixed number of exchanges cannot separate situations whose difference has not yet had time to propagate to it, and information cannot arrive faster than the links carry it.
+
+A programmer who thinks this way designs by first asking what each component can actually discriminate, then only afterward asking what it should do. Failure detection stops being a library call and becomes a declared assumption. Reasoning about a partitioned system stops resting on "the other side will notice" and starts resting on what the other side's observations actually contain. And when a required behavior turns out to depend on a distinction no local view supports, the fix is to add a mechanism that makes the distinction observable, such as an unforgeable authenticator, a guaranteed minimum or maximum delay, or richer connectivity, rather than to write a smarter component out of the same blind inputs.
+
+**Source:** [Impossibility of Distributed Consensus with One Faulty Process](../works/impossibility-of-distributed-consensus-with-one-faulty-process.md) — the framing remarks about the inability to tell a dead participant from a slow one, which is what makes timeout-based approaches inadmissible in that model. Also [Easy Impossibility Proofs for Distributed Consensus Problems](../works/easy-impossibility-proofs-for-distributed-consensus-problems.md), whose closing discussion states plainly that the limitation is about distribution rather than computation, and whose locality and fault assumptions formalize exactly which observations a participant has access to; and [A Lower Bound for the Time to Assure Interactive Consistency](../works/a-lower-bound-for-the-time-to-assure-interactive-consistency.md), whose bound turns on what a participant's accumulated messages can encode after a limited number of exchanges.

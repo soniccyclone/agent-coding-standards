@@ -18,4 +18,5 @@ tags: [work]
 **Source:** https://sites.cs.ucsb.edu/~agrawal/spring2011/ugrad/p70-fischer.pdf — third-party rehost, a UCSB course reading page (Divyakant Agrawal's Spring 2011 course materials), live and directly downloadable (HTTP 200). Text extracted from the PDF confirms title, authors, and abstract match. The ACM Digital Library and a DTIC technical-report mirror (ADA111261) both exist but are paywalled/access-blocked respectively; this course mirror is the confirmed-public copy.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A weaker guarantee still deserves an exact one: specify degraded operation, do not merely apologize for it](../lessons/give-degraded-mode-an-exact-specification.md)
+- [Whether a replicated thing can be weakened is decided by its operations, not by its protocol](../lessons/choose-the-operation-set-that-can-be-reconciled.md)
