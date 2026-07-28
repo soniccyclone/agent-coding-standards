@@ -6,6 +6,7 @@ description: Describes Acme, Pike's combined window system, shell, and editor bu
 subdomains: [programming-environments-and-object-systems, operating-systems-and-systems-programming]
 year: 1994
 url: https://9p.io/sys/doc/acme/acme.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -17,4 +18,8 @@ tags: [work]
 **Source:** https://9p.io/sys/doc/acme/acme.html — live page, hosted on 9p.io, the official Plan 9 project documentation archive. PDF also available at https://9p.io/sys/doc/acme/acme.pdf.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Uniformity comes from withholding the toolkit, not shipping one](../lessons/uniformity-comes-from-withholding-the-toolkit.md)
+- [Prefer a medium the user can produce and edit](../lessons/prefer-a-medium-users-can-produce-and-edit.md)
+- [Let position supply the context that modes would have](../lessons/let-position-supply-the-context-that-modes-would-have.md)
+- [Notify after the fact rather than mediating every change](../lessons/notify-after-the-fact-rather-than-mediating-every-change.md)
+- [Let a process's position hold the state a queue would track](../lessons/let-a-process-position-hold-the-state-a-queue-would-track.md)

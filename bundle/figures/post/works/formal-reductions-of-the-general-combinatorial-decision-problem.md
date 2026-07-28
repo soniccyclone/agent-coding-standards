@@ -6,6 +6,7 @@ description: Develops Post's "canonical system" formalism — production rules t
 subdomains: [foundations-of-computation]
 year: 1943
 url: http://web.archive.org/web/20241021183321/http://lib.ysu.am/articles_art/63062f3ed126193beb426becc0fbbe33.pdf
+extraction: complete
 survey_pages: 20
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -21,4 +22,6 @@ tags: [work]
 **Host:** third-party-rehost — a university library's scan/mirror of a JSTOR-sourced journal article, not the institution's own original work (same category as a course mirror, per this corpus's existing convention).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Lower a rich notation in stages, paying in symbols for uniformity](../lessons/lower-in-stages-paying-symbols-for-uniformity.md)
+- [Build in the convenient form, export in the canonical one](../lessons/build-in-the-convenient-form-export-in-the-canonical-one.md)
+- [When the easiest instance resists you, stop solving and start proving impossible](../lessons/when-the-solution-keeps-escaping-invert-the-goal.md)

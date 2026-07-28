@@ -6,6 +6,7 @@ description: The paper that introduces UTF-8 to the world by documenting Plan 9'
 subdomains: [operating-systems-and-systems-programming, programming-languages-and-semantics]
 year: 1993
 url: https://9p.io/sys/doc/utf.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -18,4 +19,7 @@ tags: [work]
 **Source:** https://9p.io/sys/doc/utf.html — live page, hosted on 9p.io, the official Plan 9 project documentation archive. A scan of the original USENIX proceedings version is also mirrored at https://www.cl.cam.ac.uk/~mgk25/ucs/UTF-8-Plan9-paper.pdf (personal academic page, third-party rehost).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Spend a representation's design budget on what stays correct](../lessons/spend-the-representations-design-budget-on-what-stays-correct.md)
+- [An error return that every caller ignores is a design defect](../lessons/an-error-return-that-every-caller-ignores-is-a-design-defect.md)
+- [Changing a type does not find the assumptions it breaks](../lessons/changing-a-type-does-not-find-the-assumptions-it-breaks.md)
+- [A rule that forbids without replacing will be broken](../lessons/a-rule-that-forbids-without-replacing-will-be-broken.md)

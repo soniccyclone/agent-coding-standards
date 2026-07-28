@@ -20,4 +20,6 @@ tags: [work]
 **Source:** http://www.herpolhode.com/rob/utah2000.pdf — live page, Pike's own personal site (herpolhode.com).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Measuring what exists is not designing what could](../lessons/measuring-what-exists-is-not-designing-what-could.md)
+- [Count the conformance work before promising novelty](../lessons/count-the-conformance-work-before-promising-novelty.md)
+- [An abstraction that wins erases the variety it served](../lessons/an-abstraction-that-wins-erases-the-variety-it-served.md)

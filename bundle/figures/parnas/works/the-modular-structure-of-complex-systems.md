@@ -6,6 +6,7 @@ description: Extends the 1972 decomposition criteria to genuinely large systems,
 subdomains: [software-engineering-and-architecture]
 year: 1985
 url: https://cse.msu.edu/~cse870/Input/SS2002/MiniProject/Sources/parnas84-mod-structure.pdf
+extraction: complete
 survey_pages: 10
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://cse.msu.edu/~cse870/Input/SS2002/MiniProject/Sources/parnas84-mod-structure.pdf — Michigan State University course-reading mirror. Verified live.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A discipline validated on small examples can invert at scale, and the fix is the missing piece, not the retreat](../lessons/a-technique-that-works-small-can-invert-at-scale.md)
+- [Index a design by what each part conceals, because the other indexes read more naturally and destroy it](../lessons/index-a-design-by-what-each-part-conceals.md)
+- [Let the width of each level be set by what you can argue, not by what you can draw](../lessons/keep-each-level-small-enough-to-argue-completeness.md)
+- [Write down where your dividing criterion goes fuzzy, and name the arbiter that settles it](../lessons/name-the-places-your-criterion-breaks-down.md)

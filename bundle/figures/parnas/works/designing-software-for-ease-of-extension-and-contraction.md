@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/1c68d0f98909a126ec5eb6a0ff358ec7_parnas_ease.pdf — MIT OpenCourseWare, 16.355J Software Engineering Concepts (Fall 2005), official MIT institutional course-materials repository. Verified live.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A dependency is a claim about correctness, not a record of who calls whom](../lessons/a-dependency-is-a-correctness-claim-not-a-call.md)
+- [Find the smallest thing that could possibly run, and treat that as a requirement](../lessons/find-the-smallest-thing-that-could-run-before-designing-the-whole.md)
+- [When two parts seem to need each other, one of them is really two parts](../lessons/when-two-parts-need-each-other-one-of-them-is-two-parts.md)
+- [Generality and flexibility are two different purchases, paid for at different times](../lessons/generality-and-flexibility-are-bought-in-different-currencies.md)

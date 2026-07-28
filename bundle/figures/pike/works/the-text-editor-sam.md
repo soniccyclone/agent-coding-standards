@@ -6,6 +6,7 @@ description: Describes sam, Pike's earlier multi-file editor for bitmap displays
 subdomains: [programming-environments-and-object-systems]
 year: 1987
 url: https://research.swtch.com/sam.pdf
+extraction: complete
 survey_pages: 30
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,8 @@ tags: [work]
 **Host:** third-party-rehost.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Compose the selection, apply the change once](../lessons/compose-the-selection-apply-the-change-once.md)
+- [Write down the change before you make it](../lessons/write-down-the-change-before-you-make-it.md)
+- [The loop you write silently chooses the data's shape](../lessons/the-loop-you-write-silently-chooses-the-datas-shape.md)
+- [Extensibility is what you add when the core is too slow](../lessons/extensibility-is-what-you-add-when-the-core-is-too-slow.md)
+- [Both ends modelling what the other knows beats asking](../lessons/both-ends-modelling-what-the-other-knows-beats-asking.md)

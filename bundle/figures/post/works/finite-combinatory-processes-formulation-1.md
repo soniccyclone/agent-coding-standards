@@ -6,6 +6,7 @@ description: Post's own model of mechanical computation, worked out independentl
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://www.wolframscience.com/prizes/tm23/images/Post.pdf
+extraction: complete
 survey_pages: 4
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Host:** third-party-rehost — not Post's own site, not the original journal's site; a scan mirrored by a company with no ownership stake in the work, but a stable and legitimate host.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A claim that your model captures reality is a hypothesis, not a definition](../lessons/a-model-of-the-world-is-a-hypothesis-not-a-definition.md)
+- [Choose primitives for fidelity to whoever executes them, then earn expressiveness by reduction](../lessons/pick-primitives-by-fidelity-to-the-executing-agent.md)
+- [Trace a boundary problem back to the idealization that caused it](../lessons/an-idealization-you-cannot-supply-becomes-an-interface-bug.md)
+- [Sometimes leave bad programs expressible and carry the obligation instead](../lessons/leave-invalid-programs-expressible-and-carry-the-obligation.md)

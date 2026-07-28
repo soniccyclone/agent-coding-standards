@@ -6,6 +6,7 @@ description: Proves that the word problem for semigroups (given a finite set of 
 subdomains: [foundations-of-computation]
 year: 1947
 url: https://www.wolframscience.com/prizes/tm23/images/Post2.pdf
+extraction: complete
 survey_pages: 12
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -22,4 +23,7 @@ tags: [work]
 **Added beyond the Phase 1 top-10:** turned up during verification of the Formal Reductions paper's provenance; central enough to Post's legacy (first unsolvability result on a classical-mathematics problem) to include rather than skip.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When you cannot forbid the extra power, build the case where it is unreachable](../lessons/starve-the-extra-power-instead-of-forbidding-it.md)
+- [Equally powerful representations are not interchangeable; keep several and pick per problem](../lessons/equivalent-formalisms-are-not-interchangeable-instruments.md)
+- [A well-formedness condition must be checkable from the artifact, not from its behavior](../lessons/well-formedness-must-be-checkable-from-the-artifact.md)
+- [Publish the boundary of what you actually checked](../lessons/publish-the-boundary-of-what-you-actually-checked.md)

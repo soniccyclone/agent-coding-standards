@@ -6,6 +6,7 @@ description: The overview paper for the whole Plan 9 operating system, explainin
 subdomains: [operating-systems-and-systems-programming]
 year: 1995
 url: https://9p.io/sys/doc/9.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -18,4 +19,7 @@ tags: [work]
 **Source:** https://9p.io/sys/doc/9.html — live page, hosted on 9p.io, the official Plan 9 project documentation archive. PDF also available at https://9p.io/sys/doc/9.pdf.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Put the fix where it belongs, even if that means owning more](../lessons/put-the-fix-where-it-belongs-even-if-that-means-owning-more.md)
+- [The spread of your call sites grades the abstraction](../lessons/the-spread-of-your-call-sites-grades-the-abstraction.md)
+- [A primitive that encodes a usage style cannot be reused](../lessons/a-primitive-that-encodes-a-usage-style-cannot-be-reused.md)
+- [Guard the one interface everything already goes through](../lessons/guard-the-one-interface-everything-already-goes-through.md)

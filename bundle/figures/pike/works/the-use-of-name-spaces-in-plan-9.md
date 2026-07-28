@@ -6,6 +6,7 @@ description: Introduces Plan 9's per-process name space as the system's core str
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1993
 url: https://9p.io/sys/doc/names.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -18,4 +19,7 @@ tags: [work]
 **Source:** https://9p.io/sys/doc/names.html — live page, hosted on 9p.io, the official Plan 9 project documentation archive (originally plan9.bell-labs.com). PDF also available at https://9p.io/sys/doc/names.pdf.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [One access interface turns every resource into composable material](../lessons/one-access-interface-turns-every-resource-into-composable-material.md)
+- [Make the environment a value each process can rearrange](../lessons/make-the-environment-a-value-each-process-can-rearrange.md)
+- [A component that can host itself has a real interface](../lessons/a-component-that-can-host-itself-has-a-real-interface.md)
+- [Name the places your unifying idea does not reach](../lessons/name-the-places-your-unifying-idea-does-not-reach.md)

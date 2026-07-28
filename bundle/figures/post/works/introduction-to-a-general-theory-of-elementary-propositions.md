@@ -6,6 +6,7 @@ description: Post's doctoral dissertation work, in which he proves that the prop
 subdomains: [foundations-of-computation]
 year: 1921
 url: https://archive.org/details/jstor-2370324
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -18,4 +19,8 @@ tags: [work]
 **Host:** third-party-rehost — Internet Archive mirror of a JSTOR-hosted journal article, not an authorized republication.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When you generalize, the definitions break before the theorems do](../lessons/definitions-break-before-theorems-do.md)
+- [To rule out bad outputs, find the property every rule preserves](../lessons/find-the-property-every-rule-preserves.md)
+- [A yes/no test earns its keep when the proof of 'yes' also builds the thing](../lessons/decide-by-a-method-that-also-builds-the-witness.md)
+- [Step outside the system and reason about every expression it admits, not the ones you happen to want](../lessons/quantify-over-the-whole-space-of-programs-not-one-program.md)
+- [Which design looks natural is partly an artifact of the language you judged it in](../lessons/naturalness-is-an-artifact-of-the-language-you-judged-in.md)

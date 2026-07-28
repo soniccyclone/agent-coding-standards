@@ -6,6 +6,7 @@ description: Compares two decompositions of the same KWIC-index program — one 
 subdomains: [software-engineering-and-architecture]
 year: 1972
 url: https://www.win.tue.nl/~wstomv/edu/2ip30/references/criteria_for_modularization.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -24,4 +25,7 @@ first page reads "Programming Techniques / R. Morris Editor / On the Criteria To
 Be Used in Decomposing Systems into Modules". Host is `third-party-rehost`.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Cut a system along anticipated change, not along the order in which work happens](../lessons/cut-along-anticipated-change-not-along-processing-order.md)
+- [Promising something true is still a design error if you did not have to promise it](../lessons/promising-a-true-fact-is-still-a-design-error.md)
+- [A module is an assignment of responsibility, not a unit of the running program](../lessons/modules-are-responsibility-assignments-not-runtime-objects.md)
+- [Keep structural virtues separate: layering and clean boundaries are independent, and each buys something different](../lessons/dont-let-one-structural-virtue-stand-in-for-another.md)

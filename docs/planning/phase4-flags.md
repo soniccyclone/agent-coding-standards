@@ -358,6 +358,48 @@ corpus known to have been extracted under acknowledged sampling**, and it is a
 per-work re-dispatch candidate (H.2) rather than an OCR one. Nathan has not ruled
 on it.
 
+### H.5 `survey_text_layer` had a false-positive class — fixed, methodology corrected
+
+**Found 2026-07-28 by McMillan's agent, then audited corpus-wide.** The original
+survey classified extractability by *how many characters `pdftotext` recovered
+per page*. That is wrong for PDFs whose fonts are Type-3 bitmaps with a Custom
+encoding and no Unicode map: extraction emits plenty of characters and every one
+is garbage, a substitution cipher. Those works were recorded `full` and agents
+only discovered the truth after downloading them.
+
+**Corrected to `none` (4 works):**
+- `mcmillan/symbolic-model-checking-10-20-states-and-beyond` (33 of 35 fonts Type 3)
+- `mcmillan/symbolic-model-checking-an-approach-to-the-state-explosion-problem` (184 of 190)
+- `stearns/an-algebraic-model-for-combinatorial-problems`
+- `stearns/its-time-to-reconsider-time`
+
+Neither figure newly enters quarantine: `stearns` was already there, and
+`mcmillan` is done with one OCR-HOLD. So the corpus impact was metadata accuracy
+rather than coverage — but future agents would have kept rediscovering it.
+
+**Do NOT re-scan `mcmillan`'s thesis in an OCR batch.** Its text layer is
+unusable, but the work was read in full through the sanctioned channel: archive.org
+item `DTIC_ADA250924` exposes a `_djvu.txt` derivative covering all 214 pages
+(DTIC ADA250924 = CMU-CS-92-131). A note to that effect is in the work file.
+
+**Methodology, for whoever builds the OCR pipeline — font counts are the wrong
+test.** A first pass using `pdffonts` flagged 13 works, and a readability check
+showed **only 4 were actually unreadable**. The other 9 use Type-3 fonts for math
+glyphs while the body text extracts perfectly: Parnas's program-families paper
+yielded 883 common English words in four pages, Vardi's bounded-variable-queries
+paper 839. Font composition tells you a document *contains* bitmap glyphs, not
+that its prose is lost.
+
+The decisive test is cheap and should be the standard:
+
+    pdftotext -f 1 -l 4 file.pdf - | tr 'A-Z' 'a-z' | tr -s ' \n' '\n\n' \
+      | grep -cxE 'the|of|and|to|is|in|that|for|with|are|this'
+    # < ~10 hits over four pages => the text layer is garbage, needs OCR
+
+Worth re-running across the whole corpus if the OCR batch is ever built, since
+the original character-count survey may have mismarked in the other direction
+too (a genuinely scanned page yielding stray OCR noise would score as `partial`).
+
 ### H.4 Regenerating all of the above
 
     # OCR quarantine list + page counts

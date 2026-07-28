@@ -6,6 +6,7 @@ description: Introduces what's now called the Post correspondence problem — gi
 subdomains: [foundations-of-computation]
 year: 1946
 url: https://www.ams.org/bull/1946-52-04/S0002-9904-1946-08555-9/
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -18,4 +19,6 @@ tags: [work]
 **Host:** institutional — the American Mathematical Society's own journal archive.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Undecidable in general still leaves cheap answers in the cases you actually meet](../lessons/undecidable-in-general-still-leaves-cheap-answers-in-particular.md)
+- [Make a constraint a consequence of the encoding rather than a rule to be checked](../lessons/make-the-constraint-a-consequence-of-the-encoding.md)
+- [State a result in the poorest vocabulary you can, and it becomes everyone's building block](../lessons/state-the-hard-thing-in-the-poorest-vocabulary-available.md)
