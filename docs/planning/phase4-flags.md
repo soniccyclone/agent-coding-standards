@@ -262,3 +262,109 @@ a pass that re-reads only these 38 and stamps or extends them.
 **Regenerate this list** any time with the single-lesson query in
 `scratchpad/integrity.py`'s neighbourhood — count resolving lesson links per
 work, filter to exactly one, exclude OCR-HOLD and no-new-lesson markers.
+
+## H. Phase 4 blocked / deferred work — the standing backlog
+
+Written down because it was previously living only in a session todo list and
+chat scrollback, which is not a place work survives. Everything here is
+regenerable from the corpus itself (see the queries at the end), but the
+*decisions* are not, so they are recorded.
+
+### H.1 OCR quarantine — 17 figures, 1,190 scanned pages, ON HOLD
+
+**Nathan's instruction (2026-07-27): no subagent touches an OCR source until he
+gives an explicit go-ahead.** Reason: these are the expensive operations and he
+wants a cheaper deterministic pipeline designed first, rather than each agent
+improvising its own OCR. Not a technical blocker — a deliberate cost decision.
+
+How it is enforced, so it cannot be forgotten:
+- The gate is the committed `survey_text_layer: none` field on a work file.
+- `scratchpad/next-queue.py` refuses to queue any figure with such a work. A
+  figure is quarantined if *any* of its works needs OCR — deliberately coarse,
+  because a per-figure agent cannot do half a figure without leaving it
+  permanently unwired.
+- The agent prompts forbid OCR outright (no pdftoppm, no tesseract, no
+  page-image fallback). On hitting an untagged scan an agent marks that work
+  `_OCR-HOLD_`, continues with the figure's other works, and flags it. Both the
+  queue builder and the commit loop understand that marker, so a held figure is
+  bankable rather than churning forever.
+
+| figure | OCR pages | works |
+|---|---|---|
+| `jones` | 665 | `software-development-a-rigorous-approach` (400pg, 89MB)<br>`development-methods-for-computer-programs-including-a-notion-of-interference` (265pg, 10MB) |
+| `sussman` | 131 | `lambda-the-ultimate-declarative` (48pg)<br>`scheme-an-interpreter-for-extended-lambda-calculus` (43pg)<br>`lambda-the-ultimate-imperative` (40pg) |
+| `tarjan` | 77 | `efficient-planarity-testing` (57pg)<br>`fibonacci-heaps-and-their-uses-in-improved-network-optimization-algorithms` (20pg) |
+| `scott` | 58 | `a-type-theoretical-alternative-to-iswim-cuch-owhy` (30pg)<br>`toward-a-mathematical-semantics-for-computer-languages` (28pg) |
+| `kolmogorov` | 54 | `grundbegriffe-der-wahrscheinlichkeitsrechnung` (47pg)<br>`three-approaches-to-the-quantitative-definition-of-information` (7pg) |
+| `wirth` | 54 | `the-programming-language-pascal` (28pg)<br>`on-the-design-of-programming-languages` (8pg)<br>`program-development-by-stepwise-refinement` (7pg)<br>`from-programming-language-design-to-computer-construction` (6pg)<br>`a-plea-for-lean-software` (5pg) |
+| `reynolds` | 29 | `towards-a-theory-of-type-structure` (18pg)<br>`types-abstraction-and-parametric-polymorphism` (11pg) |
+| `vardi` | 25 | `on-the-semantics-of-updates-in-databases` (15pg)<br>`the-complexity-of-relational-query-languages` (10pg) |
+| `sifakis` | 15 | `cesar-1982` (15pg) |
+| `kay` | 14 | `user-interface-a-personal-view` (14pg) |
+| `naur` | 14 | `programming-as-theory-building` (14pg) |
+| `stearns` | 12 | `hierarchies-of-memory-limited-computations` (12pg) |
+| `yao` | 12 | `theory-and-applications-of-trapdoor-functions` (12pg) |
+| `valiant` | 10 | `np-is-as-easy-as-detecting-unique-solutions` (10pg) |
+| `ingalls` | 8 | `design-principles-behind-smalltalk` (8pg) |
+| `hoare` | 6 | `an-axiomatic-basis-for-computer-programming` (6pg) |
+| `wilkes` | 6 | `best-way-to-design-an-automatic-calculating-machine` (4pg)<br>`slave-memories-and-dynamic-storage-allocation` (2pg) |
+
+**Painful cases worth knowing:** Hoare is blocked on a *6-page* scan — five of
+his six works are fine, and "An Axiomatic Basis for Computer Programming" is the
+one holding the figure. Wirth is five small scans totalling 54 pages. Naur's
+"Programming as Theory Building" is 14 pages and is arguably the single most
+quoted essay in the whole roster. So the quarantine is coarse in a way that
+costs real coverage cheaply — a small OCR batch would unblock a lot.
+
+**One datapoint for pipeline design**, from the Girard agent that ran before the
+hold: `pdftoppm -r 250 -gray` piped to tesseract produced clean, greppable text
+from a 102-page scan, and it reported that as *far* cheaper than page-image
+reads. The obvious shape is: OCR every quarantined source once, mechanically,
+with no LLM involved; cache the text sidecars; then let agents read text. That
+converts ~1,190 image pages from a repeated token cost into a one-time CPU cost.
+Not built, not approved.
+
+### H.2 Context-limit figures — a different problem from OCR
+
+These have perfectly good text layers, so nothing in H.1 applies. They are
+simply too long for one agent to read inside a single context.
+
+| figure | text pages | state |
+|---|---|---|
+| `reenskaug` | 611 | unfinished |
+| `ullman` | 603 | unfinished |
+| `ungar` | 313 | unfinished |
+| `mcmillan` | 284 | done |
+
+The fix is dispatch shape, not reading policy: **one agent per work** instead of
+one per figure, so a 600-page source owns an entire agent lifetime rather than
+being item three on somebody's list. This has not been built. `mcmillan`
+completing at 284 pages suggests the practical ceiling sits somewhere above that.
+
+### H.3 Goldberg — complete, but with self-reported coverage gaps
+
+`goldberg` is marked done, and its agent flagged honestly that it could not fit
+both Smalltalk-80 books in context (~700 and ~500 pages, roughly 495k tokens as
+text). It read *Personal Dynamic Media* in full plus most of both books, then
+listed exactly what it skipped: Blue Book ch16, chs 18-20 (graphics kernel, pens,
+display objects), chs 23-25 (statistics and resources in simulations), chs 28-30
+(formal bytecode, primitive, and object-memory listings); and in the Orange Book
+chs 1-4, 6-8, 11-13, 16-21 and Appendix 1 at full depth.
+
+It also said plainly that judging that material "predominantly reference
+listings, UI walkthroughs, and worked examples rather than new argument" is
+exactly the selection judgment the spec forbids. **This is the one figure in the
+corpus known to have been extracted under acknowledged sampling**, and it is a
+per-work re-dispatch candidate (H.2) rather than an OCR one. Nathan has not ruled
+on it.
+
+### H.4 Regenerating all of the above
+
+    # OCR quarantine list + page counts
+    grep -l 'survey_text_layer: none' bundle/figures/*/works/*.md
+
+    # full status incl. quarantine and hand-inspect sets
+    python3 scratchpad/next-queue.py --status
+
+    # per-figure total text pages (context-limit risk)
+    #   sum survey_pages across a figure's works
