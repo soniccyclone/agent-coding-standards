@@ -6,6 +6,7 @@ description: A short companion note to Church's main 1936 paper, stating the uns
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://courses.fit.cvut.cz/MI-VYC/church-a-note-on-the-entscheidungsproblem.pdf
+extraction: complete
 survey_pages: 3
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,5 @@ tags: [work]
 **Source:** https://courses.fit.cvut.cz/MI-VYC/church-a-note-on-the-entscheidungsproblem.pdf — scanned JSTOR offprint rehosted on a Czech Technical University course page. Also widely available in print via Martin Davis (ed.), *The Undecidable* (1965).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Added vocabulary is not added power: if its laws can be hypotheses and its names variables, the base language already had it](../lessons/added-vocabulary-is-not-added-power.md)
+- [Audit both ends of a claim: assume only what the argument uses, and check that what you settled is what was asked](../lessons/audit-both-ends-of-the-claim.md)

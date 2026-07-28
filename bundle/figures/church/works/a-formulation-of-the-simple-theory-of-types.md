@@ -6,6 +6,7 @@ description: Church grafts Russell and Ramsey's simple theory of types onto the 
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1940
 url: https://www.classes.cs.uchicago.edu/archive/2007/spring/32001-1/papers/church-1940.pdf
+extraction: complete
 survey_pages: 14
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,6 @@ tags: [work]
 **Source:** https://www.classes.cs.uchicago.edu/archive/2007/spring/32001-1/papers/church-1940.pdf — scanned JSTOR offprint rehosted on a University of Chicago course archive page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Make legality part of how an expression is built, not a check run over it afterward](../lessons/legality-belongs-in-construction-not-inspection.md)
+- [When a construction repeats at every level, make the pattern the artifact and let instantiation cover the infinite family](../lessons/prove-the-pattern-not-the-instances.md)
+- [Track which assumption buys which capability, and prove one is needed by exhibiting the world where it fails](../lessons/know-which-assumption-buys-which-capability.md)

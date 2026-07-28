@@ -6,6 +6,7 @@ description: The second of a two-part paper (the first appeared in Annals of Mat
 subdomains: [foundations-of-computation]
 year: 1933
 url: https://www.cis.upenn.edu/~cis5110/Church-SetPostulatesFoundation-1933.pdf
+extraction: complete
 survey_pages: 27
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://www.cis.upenn.edu/~cis5110/Church-SetPostulatesFoundation-1933.pdf — scanned JSTOR offprint (pp. 839-864, matching original pagination) rehosted on a University of Pennsylvania CIS course page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A restriction you can evade by restating the problem in the permitted form is not a restriction at all](../lessons/a-restriction-you-can-restate-around-is-not-a-restriction.md)
+- [You can dissolve a bad case by declining to assume it means anything, instead of forbidding anyone to write it](../lessons/refuse-to-assume-every-expression-means-something.md)
+- [Make the system an object that a weaker tool can inspect from outside](../lessons/make-the-system-an-object-a-weaker-tool-can-inspect.md)
+- [Know whether your confidence comes from proof or from survival, and distrust your reading of the result aimed at your own work](../lessons/survival-is-evidence-not-proof.md)
