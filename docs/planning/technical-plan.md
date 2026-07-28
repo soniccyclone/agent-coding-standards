@@ -1,7 +1,7 @@
 ---
 type: execution-plan
 title: Good Programming Corpus — Technical Plan
-description: Phased build pipeline for the OKF bundle. Phases 0-3 complete (95 figures, all accepted; 450 work files across all 95 figures); Phase 4 (lesson extraction) next.
+description: Phased build pipeline for the OKF bundle. Phases 0-3 complete (95 figures, 450 work files); Phase 4 (lesson extraction) in progress; Phase 8 is an idea backlog for making the finished bundle queryable.
 tags: [execution, okf, pipeline, fan-out]
 ---
 
@@ -415,6 +415,83 @@ this replaces the current CLAUDE.md content, doesn't sit alongside it.
 was in service of.
 **Depends on:** Phases 3-6 substantially complete, at least for the first
 distillation pass; can re-run distillation as the bundle grows.
+
+### Phase 8 — Ingestion quality of life (idea backlog, nothing implemented)
+
+**Status: ideas only. Nothing in this phase has been built, and no file outside
+this document has been touched for it.** Phase 8 exists because the bundle's
+value is gated on how easily a person or an agent can actually *query* it, which
+is a separate problem from building it. Ideas accumulate here as Nathan raises
+them; each gets promoted to real work only on his say-so.
+
+**Depends on:** Phase 7 substantially complete (there needs to be a corpus worth
+querying), except where an idea is explicitly cheap enough to prototype earlier.
+
+#### 8.1 — "Ask Copilot" on the GitHub repo page (Nathan, 2026-07-28)
+
+**The idea.** A person who lands on this repository on github.com should be able
+to click the Copilot chat button in GitHub's web UI and immediately start asking
+substantive research questions against the OKF bundle — "what do these figures
+disagree about regarding whether proof scales to real software", "which lessons
+score on primitive-count and why", "who argues the opposite of Brooks on
+essential complexity" — and get answers grounded in the bundle's actual lesson
+files rather than in the model's own recollection of these papers.
+
+**Why it is worth doing.** The corpus is 95 figures of abstracted thinking with
+citations back to primary sources, organized along axes and subdomains. That
+shape is unusually well suited to retrieval-style questioning, and the whole
+point of the OKF layout (figures own content; axes and subdomains are
+cross-cutting indexes) is that a traversal order exists. Nobody gets that value
+from browsing markdown by hand. Making the repo self-explaining to an agent is
+the difference between an archive and a usable knowledge base.
+
+**Two audiences, two artifacts, and they are different jobs:**
+
+1. *Agent-facing instructions* — a file telling a coding assistant how to
+   traverse this bundle: that `bundle/figures/<f>/lessons/*.md` holds the
+   primary content, that `axes/` and `subdomains/` are cross-cutting indexes
+   into it rather than sources themselves, that `tensions/` records where
+   figures genuinely disagree, that every lesson cites a `work` with a URL so
+   claims can be chased to a primary source, that lessons are deliberately
+   abstract (never technique-level), and — importantly — that the
+   `extraction: complete` field and the two-tier confidence note in
+   [ledger.md](ledger.md) bound how much to trust exhaustiveness.
+2. *Human-facing instructions* — a README section telling a visitor that this
+   repo is meant to be talked to, and literally where the button is. Most
+   GitHub users with a Copilot subscription have never used it as a "ask this
+   repository questions" tool, so the instruction has to be explicit rather
+   than assumed.
+
+**Likely mechanism, with the part I am not sure about flagged.** GitHub supports
+repository-level custom instructions at `.github/copilot-instructions.md`, which
+is the natural home for the agent-facing file. What I have *not* verified is
+whether the web "Ask Copilot" surface on a repo page honors that file the same
+way the IDE integrations do — that needs checking against current GitHub docs
+before we design around it, because if the web chat ignores it the whole idea
+needs a different delivery vehicle (a prominently linked `AGENTS.md`, or
+instructions embedded in the README itself where the chat will definitely see
+them). Treat the mechanism as an open question, not a settled design.
+
+**Open questions to resolve before building:**
+- Does GitHub's web Copilot chat read `.github/copilot-instructions.md`? If not,
+  what does it read?
+- How much of the bundle fits in that surface's context, and does it retrieve
+  across files or only see what is linked? This determines whether the
+  instruction file should teach traversal or instead point at a small number of
+  pre-synthesized entry points (the root `index.md`, the axis rollups).
+- Do the Phase 7 distilled doc and this instruction file want to be the same
+  artifact or deliberately separate ones?
+
+**Stretch goal Nathan named:** that this becomes worth posting to Hacker News —
+"here is a knowledge base you can interrogate with a button you already have."
+That reframes the deliverable slightly: the repo's front door has to be
+legible to a stranger in about thirty seconds, which is a README problem more
+than a corpus problem.
+
+#### 8.2 — (next idea)
+
+Placeholder. Nathan has more ideas beyond 8.1; they get numbered here as they
+arrive so the backlog stays one list rather than scattering across the doc.
 
 ## Open before Phase 3 can start
 Nothing — Phase 2 closed 2026-07-24, all 95 figures accepted and
