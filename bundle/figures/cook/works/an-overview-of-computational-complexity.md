@@ -6,6 +6,7 @@ description: Cook's 1982 Turing Award lecture, surveying the first two decades o
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1983
 url: https://www.cs.cmu.edu/~odonnell/15455-s17/cook-history.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,7 @@ description: Distills earlier, more elaborate impossibility results for Byzantin
 subdomains: [distributed-systems-and-concurrency]
 year: 1986
 url: https://groups.csail.mit.edu/tds/papers/Lynch/FischerLynchMerritt-dc.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

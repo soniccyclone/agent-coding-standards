@@ -6,6 +6,7 @@ description: Works out a complexity measure based on running time for random acc
 subdomains: [algorithms-and-complexity]
 year: 1970
 url: https://ecommons.cornell.edu/handle/1813/5929
+extraction: complete
 access: public
 host: institutional
 tags: [work]

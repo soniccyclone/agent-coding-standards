@@ -6,6 +6,7 @@ description: Proposes the "Advice Taker," a hypothetical program that would repr
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1959
 url: https://www-formal.stanford.edu/jmc/mcc59/mcc59.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

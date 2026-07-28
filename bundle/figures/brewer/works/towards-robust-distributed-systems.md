@@ -6,6 +6,7 @@ description: The PODC 2000 keynote where Brewer first laid out the consistency/a
 subdomains: [distributed-systems-and-concurrency]
 year: 2000
 url: https://people.eecs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

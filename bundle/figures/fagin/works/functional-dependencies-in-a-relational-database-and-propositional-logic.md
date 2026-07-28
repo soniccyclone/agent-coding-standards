@@ -6,6 +6,7 @@ description: Shows that functional-dependency implication in a relational schema
 subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 1977
 url: https://web.archive.org/web/20210806201742/https://researcher.watson.ibm.com/researcher/files/us-fagin/ibmj77.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

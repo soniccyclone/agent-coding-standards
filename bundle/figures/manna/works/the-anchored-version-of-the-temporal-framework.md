@@ -6,6 +6,7 @@ description: Lays out a proof system that "anchors" temporal reasoning to a prog
 subdomains: [formal-methods-and-verification]
 year: 1989
 url: http://theory.stanford.edu/~zm/papers/amir/anchored.ps
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

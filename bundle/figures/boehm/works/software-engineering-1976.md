@@ -6,6 +6,7 @@ description: A survey written to give "software engineering" a working definitio
 subdomains: [software-engineering-and-architecture]
 year: 1976
 url: http://selab.netlab.uky.edu/homepage/boehm-sw-eng-paper.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

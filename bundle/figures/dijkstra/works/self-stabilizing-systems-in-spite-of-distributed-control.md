@@ -6,6 +6,7 @@ description: Poses and solves the problem of a distributed system built from ide
 subdomains: [distributed-systems-and-concurrency]
 year: 1974
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD426.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

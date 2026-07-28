@@ -6,6 +6,7 @@ description: Bachman's 1973 Turing Award lecture, arguing that the shift from se
 subdomains: [databases-and-data-management, operating-systems-and-systems-programming]
 year: 1973
 url: https://people.csail.mit.edu/tdanford/6830papers/bachman-programmer-as-navigator.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

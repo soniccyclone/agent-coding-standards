@@ -6,6 +6,7 @@ description: Introduces the guarded-command language and the weakest-preconditio
 subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
 year: 1975
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: The full monograph-length working-out of the 1938 PNAS announcement
 subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1940
 url: https://archive.org/download/godel-3/Godel-2.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

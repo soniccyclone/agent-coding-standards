@@ -6,6 +6,7 @@ description: A talk (hosted by Yahoo's YUI team) where Booch takes a wider view 
 subdomains: [software-engineering-and-architecture]
 year: 2007
 url: https://www.youtube.com/watch?v=adiVOdztQ34
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

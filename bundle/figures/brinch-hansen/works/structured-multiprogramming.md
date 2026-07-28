@@ -6,6 +6,7 @@ description: Argues that concurrent programs should be built from disciplined st
 subdomains: [distributed-systems-and-concurrency, software-engineering-and-architecture]
 year: 1972
 url: http://www.brinch-hansen.net/papers/1972a.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

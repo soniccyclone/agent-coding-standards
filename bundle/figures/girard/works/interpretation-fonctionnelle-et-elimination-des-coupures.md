@@ -6,6 +6,7 @@ description: Girard's doctoral thesis, written in French, which proves strong no
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1972
 url: https://girard.perso.math.cnrs.fr/These.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

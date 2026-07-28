@@ -6,6 +6,7 @@ description: A survey-style lecture packaging the deductive approach - temporal 
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1993
 url: http://theory.stanford.edu/~zm/papers/amir/jcitp.ps
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

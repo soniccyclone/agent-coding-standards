@@ -6,6 +6,7 @@ description: Transcript of a 1996 invited lecture walking a general audience thr
 subdomains: [foundations-of-computation]
 year: 1996
 url: https://www.cs.auckland.ac.nz/~cristian/ait_invitation.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

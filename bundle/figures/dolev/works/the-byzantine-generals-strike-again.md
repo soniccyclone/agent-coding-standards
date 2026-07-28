@@ -6,6 +6,7 @@ description: Extends the original Lamport-Shostak-Pease Byzantine Generals formu
 subdomains: [distributed-systems-and-concurrency]
 year: 1982
 url: https://www.cs.huji.ac.il/~dolev/pubs/byz-strike-again.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

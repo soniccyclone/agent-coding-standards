@@ -6,6 +6,7 @@ description: The paper laying out the design and early goals of System R, IBM's 
 subdomains: [databases-and-data-management]
 year: 1976
 url: https://www.cs.cmu.edu/~natassa/courses/15-721/papers/p97-astrahan.pdf
+extraction: complete
 survey_pages: 41
 survey_text_layer: full
 survey_fetch_mb: 3

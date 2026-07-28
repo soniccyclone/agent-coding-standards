@@ -6,6 +6,7 @@ description: The joint 2009 ACM Turing Award lecture, written as three linked es
 subdomains: [formal-methods-and-verification]
 year: 2009
 url: https://www.cs.cmu.edu/~emc/papers/Papers%20In%20Refereed%20Journals/Model%20checking%20algorithmic%20verification%20and%20debugging.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: An internal Mohasco Industries report documenting the first fleshed
 subdomains: [programming-languages-and-semantics]
 year: 1970
 url: https://www.ultratechnology.com/4th_1970.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

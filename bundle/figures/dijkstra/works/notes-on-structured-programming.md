@@ -6,6 +6,7 @@ description: A long, discursive essay written as private notes on how to compose
 subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
 year: 1969-1970
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

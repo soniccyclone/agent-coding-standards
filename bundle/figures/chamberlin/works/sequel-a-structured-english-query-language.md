@@ -6,6 +6,7 @@ description: The paper that introduced SEQUEL, the direct ancestor of SQL, as a 
 subdomains: [databases-and-data-management]
 year: 1974
 url: https://course.khoury.northeastern.edu/cs3200f20s2/ssl/readings/boyce.pdf
+extraction: complete
 survey_pages: 16
 survey_text_layer: full
 survey_fetch_mb: 0

@@ -6,6 +6,7 @@ description: A survey of the state of the art in specifying programming-language
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1964
 url: https://archive.org/details/DTIC_AD0626820
+extraction: complete
 access: public
 host: institutional
 tags: [work]

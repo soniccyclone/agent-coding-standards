@@ -6,6 +6,7 @@ description: A follow-up to Cox's software-industrial-revolution argument, frame
 subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
 year: 1992
 url: https://web.archive.org/web/20161225164137/http://www.virtualschool.edu/cox/pub/92ByteWhatIfSilverBullet/index.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

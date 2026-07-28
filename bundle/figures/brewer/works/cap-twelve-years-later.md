@@ -6,6 +6,7 @@ description: Brewer revisits his own 2000 conjecture a decade-plus on, arguing t
 subdomains: [distributed-systems-and-concurrency, databases-and-data-management]
 year: 2012
 url: https://sites.cs.ucsb.edu/~rich/class/cs293b-cloud/papers/brewer-cap.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

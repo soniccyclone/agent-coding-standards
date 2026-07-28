@@ -6,6 +6,7 @@ description: A practical, implementation-oriented paper walking through a type i
 subdomains: [programming-languages-and-semantics]
 year: 1987
 url: http://lucacardelli.name/Papers/BasicTypechecking.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

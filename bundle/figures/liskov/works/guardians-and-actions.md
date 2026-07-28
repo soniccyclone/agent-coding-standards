@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://courses.mpi-sws.org/ds-ws18/papers/liskov-argus.pdf — course-reading mirror hosted by MPI-SWS (Max Planck Institute for Software Systems) for a distributed-systems seminar, not the author's own site; content-verified (title, both author names, and abstract text present in the PDF). Note: a separate MIT OpenCourseWare link surfaced during the search hosts a discussion outline about this paper, not the paper itself — not used here.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Funnel every failure into the one outcome your program already knows how to handle](../lessons/funnel-every-failure-into-the-one-outcome-you-already-handle.md)
+- [Hide the mechanism and the location; never hide the possibility of failure or the cost](../lessons/hide-the-mechanism-never-the-possibility-of-failure.md)
+- [Make the unit of failure nestable and failure handling becomes composable](../lessons/make-the-unit-of-failure-nestable.md)
+- [Your representation choice sets the concurrency ceiling, not your concurrency constructs](../lessons/your-representation-choice-sets-the-concurrency-ceiling.md)

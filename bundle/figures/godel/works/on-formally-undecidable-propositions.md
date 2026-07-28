@@ -6,6 +6,7 @@ description: Constructs, for any formal system rich enough to express elementary
 subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1931
 url: https://homepages.uc.edu/~martinj/History_of_Logic/Godel/Godel%20%E2%80%93%20On%20Formally%20Undecidable%20Propositions%20of%20Principia%20Mathematica%201931.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

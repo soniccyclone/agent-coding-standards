@@ -6,6 +6,7 @@ description: A SATURN 2016 keynote in which Booch argues that architecture's rea
 subdomains: [software-engineering-and-architecture]
 year: 2016
 url: https://www.youtube.com/watch?v=RJ3v5cSNcB8
+extraction: complete
 access: public
 host: institutional
 tags: [work]

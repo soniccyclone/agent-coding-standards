@@ -6,6 +6,7 @@ description: Draft chapters for what was meant to be the third volume of the Spe
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1996
 url: http://theory.stanford.edu/~zm/apch1.ps
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: The book-length development of Date and Darwen's "Third Manifesto,"
 subdomains: [databases-and-data-management]
 year: 2006
 url: https://www.dcs.warwick.ac.uk/~hugh/TTM/DTATRM.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

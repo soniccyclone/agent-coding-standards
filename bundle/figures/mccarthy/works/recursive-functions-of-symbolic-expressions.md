@@ -6,6 +6,7 @@ description: The founding paper of Lisp, defining S-expressions as a uniform rep
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1960
 url: https://www-formal.stanford.edu/jmc/recursive.pdf
+extraction: complete
 survey_pages: 34
 survey_text_layer: full
 survey_fetch_mb: 0

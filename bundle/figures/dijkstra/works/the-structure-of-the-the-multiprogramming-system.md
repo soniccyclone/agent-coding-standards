@@ -6,6 +6,7 @@ description: Describes the layered design of the THE operating system, where eac
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1968
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD196.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

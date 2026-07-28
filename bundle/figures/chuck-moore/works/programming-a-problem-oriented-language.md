@@ -6,6 +6,7 @@ description: Not in the original top-10 list, but added here because it is argua
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1970
 url: https://colorforth.github.io/POL.htm
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

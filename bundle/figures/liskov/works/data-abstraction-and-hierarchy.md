@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://www.cs.tufts.edu/~nr/cs257/archive/barbara-liskov/data-abstraction-and-hierarchy.pdf — course-archive mirror on Tufts CS department pages (Nate Robins' cs257 archive), not the author's own site but a legitimate academic host; content extracted and confirmed to match (title, author, abstract text, October 1987 OOPSLA byline).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Inheritance is code assembly; it says nothing about what a type means](../lessons/inheritance-is-code-assembly-not-a-statement-of-meaning.md)
+- [Any mechanism that creates insiders owes them a second contract](../lessons/a-mechanism-that-creates-insiders-owes-them-a-second-contract.md)
+- [Keep the distinctions your implementation collapses](../lessons/keep-design-distinctions-the-implementation-collapses.md)
+- [When you noticed the commonality decides how you should express it](../lessons/when-you-noticed-the-commonality-decides-how-to-express-it.md)

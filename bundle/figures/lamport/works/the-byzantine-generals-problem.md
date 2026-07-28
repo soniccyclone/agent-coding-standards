@@ -6,6 +6,7 @@ description: Formalizes what it means for a set of distributed processes to reac
 subdomains: [distributed-systems-and-concurrency]
 year: 1982
 url: https://lamport.azurewebsites.net/pubs/byz.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

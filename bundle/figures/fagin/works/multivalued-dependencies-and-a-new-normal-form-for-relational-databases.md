@@ -6,6 +6,7 @@ description: Introduces the multivalued dependency as a generalization of Codd's
 subdomains: [databases-and-data-management]
 year: 1977
 url: https://web.archive.org/web/20210806201750/https://researcher.watson.ibm.com/researcher/files/us-fagin/tods77.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: The design paper for Concurrent Pascal, which extended Pascal with 
 subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency]
 year: 1975
 url: http://www.brinch-hansen.net/papers/1975a.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: The first published introduction to Simula for a general programmin
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1966
 url: https://web.archive.org/web/20250123230819/https://dl.acm.org/doi/pdf/10.1145/365813.365819
+extraction: complete
 access: public
 host: institutional
 tags: [work]

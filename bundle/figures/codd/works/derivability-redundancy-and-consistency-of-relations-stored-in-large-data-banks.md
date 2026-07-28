@@ -6,6 +6,7 @@ description: An IBM internal research report, written a year before the famous C
 subdomains: [databases-and-data-management]
 year: 1969
 url: https://technology.amis.nl/wp-content/uploads/images/RJ599.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

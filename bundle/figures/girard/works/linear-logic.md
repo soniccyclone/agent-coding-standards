@@ -6,6 +6,7 @@ description: The paper that introduces linear logic, a refinement of classical a
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1987
 url: https://girard.perso.math.cnrs.fr/linear.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

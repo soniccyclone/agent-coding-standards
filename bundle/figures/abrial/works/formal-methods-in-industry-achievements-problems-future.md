@@ -6,6 +6,7 @@ description: Abrial's invited ICSE 2006 talk surveying decades of applying forma
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 2006
 url: https://math.pku.edu.cn/teachers/jrabrial/FM-IndApp.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: Digs into why the laws of software evolution look more like statist
 subdomains: [software-engineering-and-architecture]
 year: 1980
 url: https://gwern.net/doc/cs/1979-lehman.pdf
+extraction: complete
 survey_pages: 9
 survey_text_layer: full
 survey_fetch_mb: 1

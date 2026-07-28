@@ -6,6 +6,7 @@ description: Chaitin's first major paper, written as a teenager working independ
 subdomains: [foundations-of-computation, algorithms-and-complexity]
 year: 1966
 url: https://web.archive.org/web/20131216022500/http://www.cs.auckland.ac.nz:80/CDMTCS/chaitin/acm66.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

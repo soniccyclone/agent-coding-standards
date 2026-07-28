@@ -6,6 +6,7 @@ description: A long tutorial/survey that assembles the scattered contemporary re
 subdomains: [operating-systems-and-systems-programming]
 year: 1970
 url: https://www.denninginstitute.com/pjd/PUBS/VirtMem_1970.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: Analyzes what temporal patterns of input ("events") a McCulloch-Pit
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1951
 url: https://www.rand.org/content/dam/rand/pubs/research_memoranda/2008/RM704.pdf
+extraction: complete
 survey_pages: 101
 survey_text_layer: full
 survey_fetch_mb: 3

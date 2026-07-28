@@ -6,6 +6,7 @@ description: The full journal treatment of the 1981 conference paper, co-authore
 subdomains: [formal-methods-and-verification]
 year: 1986
 url: https://www.cs.cmu.edu/~emc/papers/Papers%20In%20Refereed%20Journals/Automatic%20verification%20of%20finite-state%20concurrent%20systems%20using%20temporal%20logic%20specifications.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: The founding memo of Scheme, written as an MIT AI Lab report while 
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1975
 url: http://web.archive.org/web/20260425080506/https://dspace.mit.edu/handle/1721.1/5794
+extraction: complete
 access: public
 host: institutional
 tags: [work]

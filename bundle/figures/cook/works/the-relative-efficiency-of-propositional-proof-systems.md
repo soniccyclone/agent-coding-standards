@@ -6,6 +6,7 @@ description: With Robert Reckhow, formalizes what a "propositional proof system"
 subdomains: [algorithms-and-complexity, formal-methods-and-verification]
 year: 1979
 url: http://www.cs.toronto.edu/~sacook/homepage/cook_reckhow.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

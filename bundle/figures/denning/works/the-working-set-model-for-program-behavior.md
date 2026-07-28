@@ -6,6 +6,7 @@ description: Defines a program's working set as the set of pages it referenced i
 subdomains: [operating-systems-and-systems-programming]
 year: 1968
 url: https://www.denninginstitute.com/pjd/PUBS/WSModel_1968.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: The authoritative definition of Java's syntax and semantics, co-aut
 subdomains: [programming-languages-and-semantics]
 year: 1996-2015
 url: https://docs.oracle.com/javase/specs/jls/se8/html/index.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

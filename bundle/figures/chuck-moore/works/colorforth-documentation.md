@@ -6,6 +6,7 @@ description: Moore's own documentation for colorForth, his ground-up redesign of
 subdomains: [programming-languages-and-semantics, operating-systems-and-systems-programming]
 year: 2001-2009
 url: https://colorforth.github.io/cf.htm
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

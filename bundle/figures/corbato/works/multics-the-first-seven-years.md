@@ -6,6 +6,7 @@ description: A retrospective from the 1972 Spring Joint Computer Conference revi
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1972
 url: https://multicians.org/f7y.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

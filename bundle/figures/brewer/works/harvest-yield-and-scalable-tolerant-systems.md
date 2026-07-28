@@ -6,6 +6,7 @@ description: A short peer-reviewed workshop paper, co-authored with Armando Fox,
 subdomains: [distributed-systems-and-concurrency]
 year: 1999
 url: https://radlab.cs.berkeley.edu/people/fox/static/pubs/pdf/c18.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

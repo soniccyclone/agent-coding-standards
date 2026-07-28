@@ -6,6 +6,7 @@ description: Proposes a risk-driven process model where a project cycles repeate
 subdomains: [software-engineering-and-architecture]
 year: 1988
 url: https://faculty.washington.edu/hazeline/misc/reserve/boehm_spiralmodel.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,7 @@ description: Gives a Byzantine agreement protocol built on digital signatures (a
 subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
 year: 1982
 url: https://www.cs.huji.ac.il/~dolev/pubs/p401-dolev.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

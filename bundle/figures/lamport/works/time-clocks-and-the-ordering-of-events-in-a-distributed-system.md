@@ -6,6 +6,7 @@ description: Introduces logical clocks — a way to assign consistent timestamps
 subdomains: [distributed-systems-and-concurrency]
 year: 1978
 url: https://lamport.azurewebsites.net/pubs/time-clocks.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

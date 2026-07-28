@@ -6,6 +6,7 @@ description: Proves that no deterministic protocol can guarantee agreement among
 subdomains: [distributed-systems-and-concurrency]
 year: 1985
 url: https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

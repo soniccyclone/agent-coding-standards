@@ -6,6 +6,7 @@ description: Cox popularizes Ryoichi Mori's "superdistribution" scheme for Engli
 subdomains: [software-engineering-and-architecture]
 year: 1994
 url: https://web.archive.org/web/20130522103632/http://www.virtualschool.edu/cox/pub/94WiredSuperdistribution/index.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: The expanded journal treatment of the 1981 workshop paper, working 
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1982
 url: https://www.cs.cmu.edu/~emc/papers/Papers%20In%20Refereed%20Journals/UsingBranchingTimeTemporalLogicToSynthesizeSynchronizationSkeletons.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

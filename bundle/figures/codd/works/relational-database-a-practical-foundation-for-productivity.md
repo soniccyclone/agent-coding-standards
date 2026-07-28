@@ -6,6 +6,7 @@ description: Codd's 1981 Turing Award lecture, making the business case for the 
 subdomains: [databases-and-data-management, software-engineering-and-architecture]
 year: 1981
 url: https://www.softwaregems.com.au/Documents/Article/Database/Relational%20Model/Codd%20E%20F/Relational%20Database%20Practical%20Foundation%20Turing%20Award.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

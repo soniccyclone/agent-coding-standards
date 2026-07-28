@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://www.cs.princeton.edu/courses/archive/spr24/cos418/papers/lazy.pdf — course-reading mirror hosted by Princeton's COS 418 (Distributed Systems) archive, not the authors' own site; content-verified (PDF metadata title "Providing high availability using lazy replication", author "Ladin").
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Consistency strength belongs to the operation, not to the system](../lessons/consistency-strength-is-a-per-operation-choice.md)
+- [If you can name the dependency, you do not need the coordination](../lessons/if-you-can-name-the-dependency-you-do-not-need-the-coordination.md)
+- [A consistency guarantee ends where information flow leaves your interface](../lessons/your-guarantee-ends-where-information-flow-leaves-your-api.md)
+- [Never show anyone an effect that is less durable than the promise you made about it](../lessons/never-show-anyone-an-effect-less-durable-than-your-promise.md)

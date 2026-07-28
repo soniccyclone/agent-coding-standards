@@ -6,6 +6,7 @@ description: Defines the equational theory PV ("polynomial-time verifiable"), a 
 subdomains: [algorithms-and-complexity, formal-methods-and-verification]
 year: 1975
 url: https://www2.karlin.mff.cuni.cz/~krajicek/cookpv.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

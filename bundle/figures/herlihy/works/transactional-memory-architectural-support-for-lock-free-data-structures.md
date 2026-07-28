@@ -6,6 +6,7 @@ description: Proposes hardware transactional memory - extending a multiprocessor
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 year: 1993
 url: https://cs.brown.edu/people/mph/HerlihyM93/herlihy93transactional.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

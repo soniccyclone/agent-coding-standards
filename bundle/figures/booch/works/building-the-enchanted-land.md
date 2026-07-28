@@ -6,6 +6,7 @@ description: A QCon San Francisco 2018 keynote where Booch turns his architectur
 subdomains: [software-engineering-and-architecture]
 year: 2018
 url: https://www.youtube.com/watch?v=j9Qx3g2aEHw
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

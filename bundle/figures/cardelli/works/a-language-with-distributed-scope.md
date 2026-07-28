@@ -6,6 +6,7 @@ description: Presents Obliq, a lexically-scoped, interpreted language for distri
 subdomains: [distributed-systems-and-concurrency, programming-languages-and-semantics]
 year: 1995
 url: http://lucacardelli.name/Papers/Obliq.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

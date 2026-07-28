@@ -6,6 +6,7 @@ description: The founding paper of relational database theory, proposing that da
 subdomains: [databases-and-data-management]
 year: 1970
 url: https://www.engineering.upenn.edu/~zives/03f/cis550/codd.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

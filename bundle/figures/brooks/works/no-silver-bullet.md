@@ -6,6 +6,7 @@ description: Argues that software's difficulty splits into essential complexity 
 subdomains: [software-engineering-and-architecture]
 year: 1986
 url: https://www.cs.unc.edu/techreports/86-020.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

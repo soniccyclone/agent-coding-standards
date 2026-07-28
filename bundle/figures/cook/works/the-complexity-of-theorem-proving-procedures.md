@@ -6,6 +6,7 @@ description: Introduces what became known as the Cook-Levin theorem, showing tha
 subdomains: [algorithms-and-complexity]
 year: 1971
 url: http://www.cs.toronto.edu/~sacook/homepage/1971.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

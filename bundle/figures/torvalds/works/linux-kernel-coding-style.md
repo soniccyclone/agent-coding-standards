@@ -6,6 +6,7 @@ description: The kernel's official style guide — tabs over spaces, 8-character
 subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
 year: 1990s-present
 url: https://www.kernel.org/doc/html/latest/process/coding-style.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

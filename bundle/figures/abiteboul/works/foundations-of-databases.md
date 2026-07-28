@@ -6,6 +6,7 @@ description: A textbook treatment of the relational model built entirely from fo
 subdomains: [databases-and-data-management]
 year: 1995
 url: http://webdam.inria.fr/Alice/pdfs/all.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

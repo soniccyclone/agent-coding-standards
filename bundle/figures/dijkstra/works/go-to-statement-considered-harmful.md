@@ -6,6 +6,7 @@ description: A short letter to the editor arguing that unrestricted jump stateme
 subdomains: [software-engineering-and-architecture]
 year: 1968
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD215.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

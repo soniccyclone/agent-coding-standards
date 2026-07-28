@@ -6,6 +6,7 @@ description: Shows that the single notion of "acyclic" database scheme from prio
 subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 1983
 url: https://web.archive.org/web/20220120234304/https://researcher.watson.ibm.com/researcher/files/us-fagin/jacm83b.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: Chen studies how the grammatical structure of English requirement s
 subdomains: [databases-and-data-management]
 year: 1983
 url: https://csc.lsu.edu/~chen/pdf/english.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

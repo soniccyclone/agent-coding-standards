@@ -6,6 +6,7 @@ description: Lays out a formal theory of conditional expressions and their recur
 subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1963
 url: https://www-formal.stanford.edu/jmc/basis1.pdf
+extraction: complete
 survey_pages: 43
 survey_text_layer: full
 survey_fetch_mb: 0

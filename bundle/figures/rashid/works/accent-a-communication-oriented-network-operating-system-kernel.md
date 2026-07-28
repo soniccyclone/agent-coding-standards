@@ -6,6 +6,7 @@ description: Describes Accent, the CMU kernel that preceded Mach, built around a
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1981
 url: http://web.archive.org/web/20170810225453/http://cseweb.ucsd.edu/classes/wi08/cse221/papers/rashid81.pdf
+extraction: complete
 survey_pages: 12
 survey_text_layer: full
 survey_fetch_mb: 0

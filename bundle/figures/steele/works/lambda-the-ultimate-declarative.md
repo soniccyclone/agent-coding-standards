@@ -6,6 +6,7 @@ description: A sequel to "Lambda: The Ultimate Imperative" that reframes LAMBDA 
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1976
 url: http://web.archive.org/web/20260510053948/https://dspace.mit.edu/handle/1721.1/6091
+extraction: complete
 access: public
 host: institutional
 tags: [work]

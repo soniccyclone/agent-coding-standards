@@ -6,6 +6,7 @@ description: Relaxes exact agreement to approximate agreement — processes only
 subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
 year: 1986
 url: https://www.cs.huji.ac.il/~dolev/pubs/p499-dolev.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: Describes the RC 4000 nucleus, a small nucleus of code that handles
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1970
 url: http://www.brinch-hansen.net/papers/1970a.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

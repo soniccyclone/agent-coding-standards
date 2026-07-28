@@ -6,6 +6,7 @@ description: The full TLA+ textbook — teaches the specification language itsel
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 2002
 url: https://lamport.azurewebsites.net/tla/book-21-07-04.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

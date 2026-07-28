@@ -6,6 +6,7 @@ description: Notes from Gödel's own Institute for Advanced Study lectures re-de
 subdomains: [foundations-of-computation]
 year: 1934
 url: https://archive.org/download/godel-3/Godel-1.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

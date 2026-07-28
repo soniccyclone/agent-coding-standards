@@ -6,6 +6,7 @@ description: Backus's 1959 conference paper describes a formal metanotation for 
 subdomains: [programming-languages-and-semantics]
 year: 1959
 url: https://softwarepreservation.computerhistory.org/ALGOL/paper/Backus-ICIP-1959.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

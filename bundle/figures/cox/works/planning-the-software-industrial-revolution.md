@@ -6,6 +6,7 @@ description: Cox argues that software will only escape its productivity crisis t
 subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
 year: 1990
 url: https://web.archive.org/web/20160717195823/http://virtualschool.edu/cox/pub/PSIR/
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

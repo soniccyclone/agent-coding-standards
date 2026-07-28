@@ -6,6 +6,7 @@ description: Defines domain-key normal form (DK/NF), the first normal form state
 subdomains: [databases-and-data-management]
 year: 1981
 url: https://web.archive.org/web/20210806201709/https://researcher.watson.ibm.com/researcher/files/us-fagin/tods81.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

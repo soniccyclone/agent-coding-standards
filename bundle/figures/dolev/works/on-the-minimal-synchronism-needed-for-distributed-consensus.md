@@ -6,6 +6,7 @@ description: Maps out exactly which combinations of timing assumptions — bound
 subdomains: [distributed-systems-and-concurrency]
 year: 1987
 url: https://www.cs.huji.ac.il/~dolev/pubs/p77-dolev.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

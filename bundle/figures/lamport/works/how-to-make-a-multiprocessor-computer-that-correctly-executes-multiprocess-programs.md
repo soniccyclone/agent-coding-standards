@@ -6,6 +6,7 @@ description: Defines sequential consistency, the requirement that a multiprocess
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 year: 1979
 url: https://lamport.azurewebsites.net/pubs/multi.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

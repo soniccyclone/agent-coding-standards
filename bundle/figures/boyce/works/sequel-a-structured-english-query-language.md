@@ -6,6 +6,7 @@ description: The first published design for SEQUEL, the query language Boyce and
 subdomains: [databases-and-data-management, programming-languages-and-semantics]
 year: 1974
 url: http://web.archive.org/web/20181122134941/http://www.almaden.ibm.com/cs/people/chamberlin/sequel-1974.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

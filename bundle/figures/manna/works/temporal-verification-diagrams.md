@@ -6,6 +6,7 @@ description: Introduces verification diagrams - graph structures whose nodes are
 subdomains: [formal-methods-and-verification]
 year: 1994
 url: http://theory.stanford.edu/~zm/papers/diagrams.ps.Z
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

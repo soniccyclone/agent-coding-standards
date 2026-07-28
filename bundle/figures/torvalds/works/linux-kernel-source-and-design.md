@@ -6,6 +6,7 @@ description: The Linux kernel itself — an open-source, Unix-like monolithic ke
 subdomains: [operating-systems-and-systems-programming]
 year: 1991-present
 url: https://www.kernel.org/
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

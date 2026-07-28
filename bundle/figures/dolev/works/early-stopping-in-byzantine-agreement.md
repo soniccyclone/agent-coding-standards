@@ -6,6 +6,7 @@ description: Distinguishes Eventual Byzantine Agreement (processes can decide at
 subdomains: [distributed-systems-and-concurrency]
 year: 1990
 url: https://courses.csail.mit.edu/6.897/fall04/papers/Dolev/drs.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,7 @@ description: A follow-up textbook that extends the formal, primitives-first trea
 subdomains: [databases-and-data-management]
 year: 2011
 url: http://webdam.inria.fr/Jorge/files/wdm.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

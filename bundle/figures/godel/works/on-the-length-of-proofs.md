@@ -6,6 +6,7 @@ description: A brief note showing that moving to a formal system of strictly hig
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1936
 url: https://archive.org/download/godel-3/Godel-1.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

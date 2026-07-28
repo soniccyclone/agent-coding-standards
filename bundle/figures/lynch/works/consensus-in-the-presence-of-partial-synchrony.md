@@ -6,6 +6,7 @@ description: Introduces partial synchrony as a middle ground between the fully s
 subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
 year: 1988
 url: https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf
+extraction: complete
 survey_pages: 36
 survey_text_layer: full
 survey_fetch_mb: 3

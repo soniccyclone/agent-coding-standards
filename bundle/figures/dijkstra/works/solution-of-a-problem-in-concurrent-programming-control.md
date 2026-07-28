@@ -6,6 +6,7 @@ description: A one-page communication that answers an open question from 1962 on
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 year: 1965
 url: https://repositories.lib.utexas.edu/items/84831631-07fe-484b-a45c-3cff9f6b1f43
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: Builds the basic machinery of computability theory on top of genera
 subdomains: [foundations-of-computation]
 year: 1943
 url: https://www.ams.org/journals/tran/1943-053-01/S0002-9947-1943-0007371-8/S0002-9947-1943-0007371-8.pdf
+extraction: complete
 survey_pages: 33
 survey_text_layer: full
 survey_fetch_mb: 3

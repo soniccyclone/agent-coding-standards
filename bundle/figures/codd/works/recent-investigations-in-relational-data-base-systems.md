@@ -6,6 +6,7 @@ description: A solo-authored survey paper reviewing progress on several fronts o
 subdomains: [databases-and-data-management]
 year: 1974
 url: https://www.fsmwarden.com/Codd/rec-1975.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

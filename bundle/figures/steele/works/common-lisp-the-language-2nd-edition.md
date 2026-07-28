@@ -6,6 +6,7 @@ description: The de facto specification of Common Lisp before ANSI standardizati
 subdomains: [programming-languages-and-semantics]
 year: 1990
 url: https://www.cs.cmu.edu/Groups/AI/html/cltl/cltl2.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

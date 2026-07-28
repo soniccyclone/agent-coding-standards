@@ -6,6 +6,7 @@ description: Torvalds' famous post to the comp.os.minix newsgroup announcing the
 subdomains: [operating-systems-and-systems-programming]
 year: 1991
 url: https://groups.google.com/g/comp.os.minix/c/dlNtH7RRrGA/m/SwRavCzVE7gJ
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

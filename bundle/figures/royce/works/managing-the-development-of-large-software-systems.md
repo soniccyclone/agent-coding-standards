@@ -6,6 +6,7 @@ description: Royce contrasts a trivial two-step analysis-then-coding process wit
 subdomains: [software-engineering-and-architecture]
 year: 1970
 url: https://www.cs.umd.edu/class/spring2003/cmsc838p/Process/waterfall.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

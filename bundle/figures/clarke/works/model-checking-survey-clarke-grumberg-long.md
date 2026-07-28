@@ -6,6 +6,7 @@ description: A self-contained survey chapter, co-authored with Grumberg and Long
 subdomains: [formal-methods-and-verification]
 year: 1996
 url: https://www.cs.cmu.edu/~emc/papers/Books%20and%20Edited%20Volumes/Model%20Checking.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

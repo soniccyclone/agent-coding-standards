@@ -6,6 +6,7 @@ description: The kickoff paper for Multics, presented as part of a six-paper ses
 subdomains: [operating-systems-and-systems-programming]
 year: 1965
 url: https://multicians.org/fjcc1.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,7 @@ description: Karp, Vazirani, and Vazirani analyze the online bipartite matching 
 subdomains: [algorithms-and-complexity]
 year: 1990
 url: https://people.eecs.berkeley.edu/~vazirani/pubs/online.pdf
+extraction: complete
 survey_pages: 7
 survey_text_layer: full
 survey_fetch_mb: 0

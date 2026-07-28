@@ -6,6 +6,7 @@ description: Proposes a formal, view-based framework for comparing business-proc
 subdomains: [databases-and-data-management]
 year: 2012
 url: http://webdam.inria.fr/wordpress/wp-content/uploads/2012/12/AbiteboulComparing.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

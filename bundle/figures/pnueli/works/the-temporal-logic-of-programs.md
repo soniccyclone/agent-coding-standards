@@ -6,6 +6,7 @@ description: The paper that imported tense logic into computer science, arguing 
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1977
 url: https://cs.nyu.edu/home/people/in_memoriam/pnueli/focs77.ps.gz
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

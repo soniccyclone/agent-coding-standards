@@ -6,6 +6,7 @@ description: Revisits the original laws roughly two decades on, folding in metri
 subdomains: [software-engineering-and-architecture]
 year: 1997
 url: https://users.ece.utexas.edu/~perry/work/papers/feast1.pdf
+extraction: complete
 survey_pages: 13
 survey_text_layer: full
 survey_fetch_mb: 0

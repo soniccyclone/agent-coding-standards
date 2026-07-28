@@ -6,6 +6,7 @@ description: A long set of lecture notes that lays out the core problems of conc
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 year: 1965-1968
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD123.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

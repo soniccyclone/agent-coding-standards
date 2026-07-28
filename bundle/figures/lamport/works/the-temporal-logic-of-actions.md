@@ -6,6 +6,7 @@ description: Introduces TLA, a temporal logic in which both a system's specifica
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1994
 url: https://lamport.azurewebsites.net/pubs/lamport-actions.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

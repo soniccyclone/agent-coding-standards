@@ -6,6 +6,7 @@ description: A 270-page course-notes book that builds up the halting probability
 subdomains: [foundations-of-computation]
 year: 1994
 url: https://arxiv.org/abs/chao-dyn/9407003
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

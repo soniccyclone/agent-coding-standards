@@ -6,6 +6,7 @@ description: Introduces DSTM, a software transactional memory system where trans
 subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
 year: 2003
 url: https://cs.brown.edu/courses/cs161/papers/stm.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

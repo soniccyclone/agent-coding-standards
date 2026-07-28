@@ -6,6 +6,7 @@ description: Establishes that "acyclic" database schemes — schemes whose relat
 subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 1983
 url: https://web.archive.org/web/20210806201625/https://researcher.watson.ibm.com/researcher/files/us-fagin/jacm83a.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

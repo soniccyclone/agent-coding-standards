@@ -6,6 +6,7 @@ description: Introduces the object calculus itself — a minimal core calculus w
 subdomains: [programming-environments-and-object-systems, formal-methods-and-verification]
 year: 1996
 url: http://lucacardelli.name/Papers/PrimObj1stOrder.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

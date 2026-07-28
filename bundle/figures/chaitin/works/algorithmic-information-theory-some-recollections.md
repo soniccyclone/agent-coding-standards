@@ -6,6 +6,7 @@ description: A retrospective essay tracing four decades of Chaitin's own thinkin
 subdomains: [foundations-of-computation]
 year: 2007
 url: https://arxiv.org/abs/math/0701164
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

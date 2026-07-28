@@ -6,6 +6,7 @@ description: McCarthy's own first-person account of how Lisp came together betwe
 subdomains: [programming-languages-and-semantics]
 year: 1978
 url: https://www-formal.stanford.edu/jmc/history/lisp/lisp.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

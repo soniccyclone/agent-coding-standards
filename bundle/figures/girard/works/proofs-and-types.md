@@ -6,6 +6,7 @@ description: A graduate-level textbook, translated and annotated by Paul Taylor 
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1989
 url: https://www.paultaylor.eu/stable/prot.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -21,4 +21,7 @@ tags: [work]
 **Source:** Originally self-archived at http://pmg.csail.mit.edu/papers/osdi99.pdf (MIT Programming Methodology Group). The live pmg.csail.mit.edu host is currently unreachable (connection refused / 403 as of this check), so citing the Wayback Machine snapshot instead: http://web.archive.org/web/20251211170759/http://pmg.csail.mit.edu/papers/osdi99.pdf — content-verified (contains "Byzantine", "Castro", "castro,liskov" running header).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Never let a timing guess be load-bearing for correctness; spend it on progress instead](../lessons/never-let-a-timing-guess-be-load-bearing-for-correctness.md)
+- [Design so that no irreversible step rests on a judgment you cannot make reliably](../lessons/no-irreversible-step-on-an-unreliable-judgment.md)
+- [When a primitive is too expensive, find out which of its powers you actually use](../lessons/when-a-primitive-is-too-expensive-ask-which-of-its-powers-you-use.md)
+- [Independence of failure is something you build, not a number you pick](../lessons/independence-of-failure-is-built-not-assumed.md)

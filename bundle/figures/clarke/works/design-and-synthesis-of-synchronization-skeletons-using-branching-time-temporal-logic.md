@@ -6,6 +6,7 @@ description: The founding paper of model checking, co-authored with E. Allen Eme
 subdomains: [formal-methods-and-verification]
 year: 1981
 url: https://www.cs.cmu.edu/~emc/papers/Conference%20Papers/Design%20and%20synthesis%20of%20synchronization%20skeletons%20using%20branching%20time%20temporal%20logic.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

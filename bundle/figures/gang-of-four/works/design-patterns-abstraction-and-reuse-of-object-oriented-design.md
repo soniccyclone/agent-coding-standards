@@ -6,6 +6,7 @@ description: The conference paper that preceded the book by a year, co-authored 
 subdomains: [software-engineering-and-architecture]
 year: 1993
 url: https://cseweb.ucsd.edu/~wgg/CSE210/ecoop93-patterns.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

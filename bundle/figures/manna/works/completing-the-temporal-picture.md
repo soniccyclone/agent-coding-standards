@@ -6,6 +6,7 @@ description: Sorts temporal properties of reactive programs into a hierarchy (sa
 subdomains: [formal-methods-and-verification]
 year: 1991
 url: http://theory.stanford.edu/~zm/papers/amir/completing.ps
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

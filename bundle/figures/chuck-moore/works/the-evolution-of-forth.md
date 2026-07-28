@@ -6,6 +6,7 @@ description: The co-authored paper HOPL-II accepted in place of Moore's own subm
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1993
 url: https://www.forth.com/resources/forth-programming-language/
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: Brinch Hansen's own retrospective account, written for the ACM Seco
 subdomains: [distributed-systems-and-concurrency]
 year: 1993
 url: http://www.brinch-hansen.net/papers/1993a.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

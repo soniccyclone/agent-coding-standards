@@ -6,6 +6,7 @@ description: A short, plainly-written walkthrough of why repeating groups and ne
 subdomains: [databases-and-data-management]
 year: 1971
 url: https://www.fsmwarden.com/Codd/Normalized%20data%20base%20structure_%20a%20brief%20tutorial(1971,%20nov).pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

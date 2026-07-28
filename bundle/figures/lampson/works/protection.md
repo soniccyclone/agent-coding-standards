@@ -6,6 +6,7 @@ description: Introduces the access-control matrix as an abstract model of protec
 subdomains: [operating-systems-and-systems-programming]
 year: 1974
 url: https://bwlampson.site/08-Protection/Acrobat.pdf
+extraction: complete
 survey_pages: 10
 survey_text_layer: full
 survey_fetch_mb: 0

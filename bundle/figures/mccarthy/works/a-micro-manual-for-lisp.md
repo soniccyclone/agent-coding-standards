@@ -6,6 +6,7 @@ description: A deliberately compressed, few-page specification of a minimal Lisp
 subdomains: [programming-languages-and-semantics]
 year: 1978
 url: https://www.ecb.torontomu.ca/~elf/pub/misc/micromanualLISP.pdf
+extraction: complete
 survey_pages: 2
 survey_text_layer: full
 survey_fetch_mb: 0

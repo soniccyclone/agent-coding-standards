@@ -6,6 +6,7 @@ description: The original paper presenting what became known as Paxos, an algori
 subdomains: [distributed-systems-and-concurrency]
 year: 1998
 url: https://lamport.azurewebsites.net/pubs/lamport-paxos.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

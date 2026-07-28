@@ -6,6 +6,7 @@ description: A collection of essays distilling what Brooks learned managing IBM'
 subdomains: [software-engineering-and-architecture]
 year: 1975
 url: https://bowringj.people.charleston.edu/classes/csis%20602/docs/The.Mythical.Man.Month.F.Brooks.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

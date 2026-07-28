@@ -6,6 +6,7 @@ description: A revision of the original SEQUEL paper that folds data definition 
 subdomains: [databases-and-data-management]
 year: 1976
 url: https://bitsavers.org/pdf/ibm/IBM_Journal_of_Research_and_Development/206/ibmrd2006E.pdf
+extraction: complete
 survey_pages: 16
 survey_text_layer: full
 survey_fetch_mb: 1

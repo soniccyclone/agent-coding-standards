@@ -6,6 +6,7 @@ description: Hopcroft and Karp give an algorithm that finds a maximum matching i
 subdomains: [algorithms-and-complexity]
 year: 1973
 url: https://www.cs.princeton.edu/courses/archive/fall09/cos521/Handouts/Hopcroft.pdf
+extraction: complete
 survey_pages: 7
 survey_text_layer: full
 survey_fetch_mb: 0

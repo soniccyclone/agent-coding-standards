@@ -6,6 +6,7 @@ description: The canonical reference for Smalltalk-80, known informally as the "
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1983
 url: https://rmod-files.lille.inria.fr/FreeBooks/BlueBook/Bluebook.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

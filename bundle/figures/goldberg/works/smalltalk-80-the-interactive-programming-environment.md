@@ -6,6 +6,7 @@ description: Goldberg's solo-authored companion to the Blue Book, documenting th
 subdomains: [programming-environments-and-object-systems]
 year: 1984
 url: https://rmod-files.lille.inria.fr/FreeBooks/TheInteractiveProgrammingEnv/TheInteractiveProgrammingEnv.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

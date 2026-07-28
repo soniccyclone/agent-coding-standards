@@ -6,6 +6,7 @@ description: Backtracking search programs are notoriously hard to reason about b
 subdomains: [algorithms-and-complexity]
 year: 1975
 url: http://web.archive.org/web/20250124085742/https://www.ams.org/journals/mcom/1975-29-129/S0025-5718-1975-0373371-6/S0025-5718-1975-0373371-6.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

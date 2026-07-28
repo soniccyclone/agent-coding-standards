@@ -6,6 +6,7 @@ description: Landin generalizes the goto-and-label pair into the "J operator," a
 subdomains: [programming-languages-and-semantics]
 year: 1965
 url: https://www.math.bas.bg/softeng/bantchev/place/iswim/j.pdf
+extraction: complete
 survey_pages: 19
 survey_text_layer: full
 survey_fetch_mb: 0

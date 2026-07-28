@@ -6,6 +6,7 @@ description: Argues for subtyping defined structurally (by the shape of a type's
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1988
 url: http://lucacardelli.name/Papers/StructuralSubtyping.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

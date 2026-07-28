@@ -6,6 +6,7 @@ description: Popular-audience account of the halting probability Omega and algor
 subdomains: [foundations-of-computation]
 year: 2004
 url: https://arxiv.org/abs/math/0404335
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: Develops the formal theory of general recursive functions, the sche
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://gdz.sub.uni-goettingen.de/id/PPN235181684_0112?tify=%7B%22view%22:%22info%22,%22pages%22:%5B731%5D%7D
+extraction: complete
 access: public
 host: institutional
 tags: [work]

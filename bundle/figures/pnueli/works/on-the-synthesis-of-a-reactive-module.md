@@ -6,6 +6,7 @@ description: Poses the reactive-synthesis problem — given a temporal-logic spe
 subdomains: [formal-methods-and-verification]
 year: 1989
 url: https://dl.acm.org/doi/pdf/10.1145/75277.75293
+extraction: complete
 access: public
 host: institutional
 tags: [work]

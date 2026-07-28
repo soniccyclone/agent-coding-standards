@@ -6,6 +6,7 @@ description: Hilbert's 1899 axiomatization of Euclidean geometry, replacing the 
 subdomains: [foundations-of-computation]
 year: 1899
 url: https://archive.org/details/foundations-of-geometry-david-hilbert-1862-1943-translated-by-edgar-jerome-towns
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

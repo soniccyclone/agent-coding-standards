@@ -6,6 +6,7 @@ description: Presents a replicated-dictionary algorithm that stays available and
 subdomains: [distributed-systems-and-concurrency, databases-and-data-management]
 year: 1982
 url: https://sites.cs.ucsb.edu/~agrawal/spring2011/ugrad/p70-fischer.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

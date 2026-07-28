@@ -6,6 +6,7 @@ description: Moore's own first-person retrospective on how Forth came together p
 subdomains: [programming-languages-and-semantics]
 year: 1991
 url: https://worrydream.com/refs/Moore_1991_-_Forth,_The_Early_Years.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

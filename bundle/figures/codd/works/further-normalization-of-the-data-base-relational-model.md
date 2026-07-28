@@ -6,6 +6,7 @@ description: Introduces second and third normal form, giving database designers 
 subdomains: [databases-and-data-management]
 year: 1971
 url: https://www.fsmwarden.com/Codd/Further_Normalization(1971).pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

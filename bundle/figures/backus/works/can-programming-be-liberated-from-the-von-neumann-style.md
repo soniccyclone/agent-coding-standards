@@ -6,6 +6,7 @@ description: Backus's 1977 Turing Award lecture argues that conventional languag
 subdomains: [programming-languages-and-semantics]
 year: 1978
 url: https://archive.org/details/programming-liberated-von-neumann
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

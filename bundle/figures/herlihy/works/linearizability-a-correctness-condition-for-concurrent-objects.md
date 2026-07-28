@@ -6,6 +6,7 @@ description: Defines linearizability, a correctness condition requiring every co
 subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification]
 year: 1990
 url: http://www.cs.cmu.edu/~wing/publications/HerlihyWing90.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

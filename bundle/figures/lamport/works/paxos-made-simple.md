@@ -6,6 +6,7 @@ description: A plain, allegory-free restatement of the Paxos consensus algorithm
 subdomains: [distributed-systems-and-concurrency]
 year: 2001
 url: https://lamport.azurewebsites.net/pubs/paxos-simple.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

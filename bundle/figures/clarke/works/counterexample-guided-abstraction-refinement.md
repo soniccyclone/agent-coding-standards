@@ -6,6 +6,7 @@ description: Introduces the CEGAR loop, co-authored with Grumberg, Jha, Lu, and 
 subdomains: [formal-methods-and-verification]
 year: 2000
 url: https://www.cs.cmu.edu/~emc/papers/Papers%20In%20Refereed%20Journals/Counterexample-guided%20abstraction%20refinement.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: Works out a formal, type-theoretic account of inheritance and subty
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1984
 url: "http://lucacardelli.name/Papers/Inheritance%20(Semantics%20of%20Data%20Types).pdf"
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

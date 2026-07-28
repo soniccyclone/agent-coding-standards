@@ -6,6 +6,7 @@ description: Brooks's Allen Newell Award address argues that computer science's 
 subdomains: [software-engineering-and-architecture]
 year: 1996
 url: https://www.cs.unc.edu/~brooks/Toolsmith-CACM.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

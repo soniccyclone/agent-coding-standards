@@ -6,6 +6,7 @@ description: A short conference remark proposing that Turing's analysis of mecha
 subdomains: [foundations-of-computation]
 year: 1946
 url: https://archive.org/download/godel-3/Godel-2.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

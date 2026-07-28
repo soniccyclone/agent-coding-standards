@@ -6,6 +6,7 @@ description: Extends Floyd/Hoare-style assertional verification — proving prog
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1977
 url: https://lamport.azurewebsites.net/pubs/proving.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

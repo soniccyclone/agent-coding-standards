@@ -6,6 +6,7 @@ description: Co-authored with David Redell, this reports on what happened when H
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1980
 url: https://bwlampson.site/23-ProcessesInMesa/Acrobat.pdf
+extraction: complete
 survey_pages: 23
 survey_text_layer: full
 survey_fetch_mb: 0

@@ -6,6 +6,7 @@ description: A two-page research announcement stating, without full proofs, that
 subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1938
 url: https://web.archive.org/web/20250805171513/https://www.pnas.org/doi/pdf/10.1073/pnas.24.12.556
+extraction: complete
 access: public
 host: institutional
 tags: [work]

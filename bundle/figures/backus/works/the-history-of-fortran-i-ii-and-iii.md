@@ -6,6 +6,7 @@ description: Backus's own retrospective, delivered at the first History of Progr
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1978
 url: https://softwarepreservation.computerhistory.org/FORTRAN/paper/p165-backus.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

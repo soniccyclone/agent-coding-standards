@@ -6,6 +6,7 @@ description: Reports on Solo, a single-user operating system Brinch Hansen wrote
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1976
 url: http://www.brinch-hansen.net/papers/1976c.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: An 81-page survey by Manna and Pnueli presenting their mature tempo
 subdomains: [formal-methods-and-verification]
 year: 1989
 url: https://cs.nyu.edu/home/people/in_memoriam/pnueli/anchored.ps.gz
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

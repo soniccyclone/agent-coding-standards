@@ -6,6 +6,7 @@ description: A two-part Computerworld piece in which Codd, alarmed that vendors 
 subdomains: [databases-and-data-management]
 year: 1985
 url: https://archive.org/details/sim_computerworld_1985-10-14_19_41
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

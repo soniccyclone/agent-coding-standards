@@ -6,6 +6,7 @@ description: The original 1957 conference paper introducing FORTRAN, written by 
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 1957
 url: https://softwarepreservation.computerhistory.org/FORTRAN/paper/BackusEtAl-FortranAutomaticCodingSystem-1957.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

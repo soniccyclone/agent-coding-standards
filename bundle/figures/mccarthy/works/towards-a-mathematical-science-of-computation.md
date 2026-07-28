@@ -6,6 +6,7 @@ description: A companion piece to "A Basis for a Mathematical Theory of Computat
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1962
 url: https://www-formal.stanford.edu/jmc/towards.pdf
+extraction: complete
 survey_pages: 25
 survey_text_layer: full
 survey_fetch_mb: 0

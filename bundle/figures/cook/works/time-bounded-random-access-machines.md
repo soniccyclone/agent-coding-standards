@@ -6,6 +6,7 @@ description: With Robert Reckhow, defines a random-access machine (RAM) model wi
 subdomains: [algorithms-and-complexity]
 year: 1973
 url: http://www.cs.toronto.edu/~sacook/homepage/rams.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: The official problem statement Cook wrote for the Clay Mathematics 
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 2000
 url: https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: Landin defines an abstract applicative language rooted in Church's 
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1965
 url: https://www.iro.umontreal.ca/~feeley/cours/ift6232/doc/a-correspondence-between-algol-60-and-churchs-lambda-notation.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

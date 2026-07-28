@@ -6,6 +6,7 @@ description: A 1925 lecture, published 1926, in which Hilbert defends the use of
 subdomains: [foundations-of-computation]
 year: 1926
 url: https://archive.org/details/sim_mathematische-annalen_1926_95
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

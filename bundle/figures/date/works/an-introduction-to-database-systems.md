@@ -6,6 +6,7 @@ description: Date's long-running textbook, the primary vehicle through which sev
 subdomains: [databases-and-data-management]
 year: 2003
 url: https://www.mbit.edu.in/wp-content/uploads/2020/05/An-Introduction-to-Database-Systems-8e-By-C-J-Date-CodeBlah.com_.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

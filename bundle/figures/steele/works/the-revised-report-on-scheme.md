@@ -6,6 +6,7 @@ description: The first standardization pass on Scheme, written as a complete use
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1978
 url: http://web.archive.org/web/20250215082814/https://dspace.mit.edu/handle/1721.1/6283
+extraction: complete
 access: public
 host: institutional
 tags: [work]

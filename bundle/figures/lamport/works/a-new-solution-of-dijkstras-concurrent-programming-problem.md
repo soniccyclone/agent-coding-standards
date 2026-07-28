@@ -6,6 +6,7 @@ description: Presents the Bakery algorithm, a way for any number of processes to
 subdomains: [algorithms-and-complexity, distributed-systems-and-concurrency]
 year: 1974
 url: https://lamport.azurewebsites.net/pubs/bakery.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

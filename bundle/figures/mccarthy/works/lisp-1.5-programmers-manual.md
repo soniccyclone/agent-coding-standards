@@ -6,6 +6,7 @@ description: The first complete reference manual for a working Lisp implementati
 subdomains: [programming-languages-and-semantics]
 year: 1962
 url: https://softwarepreservation.computerhistory.org/LISP/book/LISP%201.5%20Programmers%20Manual.pdf
+extraction: complete
 survey_pages: 116
 survey_text_layer: full
 survey_fetch_mb: 5

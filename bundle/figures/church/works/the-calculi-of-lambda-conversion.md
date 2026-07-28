@@ -6,6 +6,7 @@ description: The full monograph-length treatment of lambda calculus, developed w
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1941
 url: https://compcalc.github.io/public/church/church_calculi_1941.pdf
+extraction: complete
 survey_pages: 92
 survey_text_layer: full
 survey_fetch_mb: 6

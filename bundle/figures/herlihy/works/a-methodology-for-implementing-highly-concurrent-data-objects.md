@@ -6,6 +6,7 @@ description: Presents a general "universal construction" - a recipe for turning 
 subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
 year: 1993
 url: https://cs.brown.edu/people/mph/Herlihy93/herlihy93methodology.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

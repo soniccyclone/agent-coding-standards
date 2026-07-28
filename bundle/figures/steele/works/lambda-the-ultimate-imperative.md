@@ -6,6 +6,7 @@ description: Shows that a wide range of imperative programming constructs — it
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1976
 url: http://web.archive.org/web/20260510053942/https://dspace.mit.edu/handle/1721.1/5790
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: Moore's own submission to the HOPL-II conference, rejected by the p
 subdomains: [programming-languages-and-semantics]
 year: 1993
 url: https://colorforth.github.io/HOPL.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

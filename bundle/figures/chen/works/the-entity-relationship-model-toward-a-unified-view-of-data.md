@@ -6,6 +6,7 @@ description: Chen's foundational paper proposes modeling data in terms of entiti
 subdomains: [databases-and-data-management]
 year: 1976
 url: https://www.comp.nus.edu.sg/~lingtw/papers/tods76.chen.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

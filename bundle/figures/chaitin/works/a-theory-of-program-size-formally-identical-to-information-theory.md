@@ -6,6 +6,7 @@ description: The 1975 JACM paper that redefines program-size complexity using se
 subdomains: [foundations-of-computation, algorithms-and-complexity]
 year: 1975
 url: https://web.archive.org/web/20131215223616/http://www.cs.auckland.ac.nz:80/CDMTCS/chaitin/acm75.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

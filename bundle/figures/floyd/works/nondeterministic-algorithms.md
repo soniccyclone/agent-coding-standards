@@ -6,6 +6,7 @@ description: Floyd shows that combinatorial search problems can be written natur
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1967
 url: https://doi.org/10.1184/R1/6607739.v1
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: Works out how to extend Datalog, which by design only queries data,
 subdomains: [databases-and-data-management, foundations-of-computation]
 year: 1991
 url: https://inria.hal.science/inria-00075656v1/file/RR-0900.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

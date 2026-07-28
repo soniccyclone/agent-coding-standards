@@ -6,6 +6,7 @@ description: The full Regnecentralen technical report behind the RC 4000 nucleus
 subdomains: [operating-systems-and-systems-programming]
 year: 1969
 url: http://www.brinch-hansen.net/papers/1969c.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

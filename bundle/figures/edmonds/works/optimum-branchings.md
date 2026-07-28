@@ -6,6 +6,7 @@ description: Edmonds gives a polynomial-time algorithm for finding a minimum- (o
 subdomains: [algorithms-and-complexity]
 year: 1967
 url: https://archive.org/download/jresv71Bn4p233/jresv71Bn4p233_A1b.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

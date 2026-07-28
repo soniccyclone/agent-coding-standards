@@ -6,6 +6,7 @@ description: Edmonds gives a matching algorithm for general (non-bipartite) grap
 subdomains: [algorithms-and-complexity]
 year: 1965
 url: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/08B492B72322C4130AE800C0610E0E21/S0008414X00039419a.pdf/paths-trees-and-flowers.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

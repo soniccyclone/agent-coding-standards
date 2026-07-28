@@ -6,6 +6,7 @@ description: Extends the functional object calculus to a setting with mutable st
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1995
 url: http://lucacardelli.name/Papers/PrimObjImp.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

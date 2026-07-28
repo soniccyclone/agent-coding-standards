@@ -6,6 +6,7 @@ description: Church defines "effective calculability" formally by identifying it
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://phil415.pbworks.com/f/Church.pdf
+extraction: complete
 survey_pages: 20
 survey_text_layer: partial
 survey_fetch_mb: 1

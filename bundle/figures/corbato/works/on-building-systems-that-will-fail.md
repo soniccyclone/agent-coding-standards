@@ -6,6 +6,7 @@ description: Corbató's 1990 Turing Award lecture, arguing that "ambitious syste
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1991
 url: http://larch-www.lcs.mit.edu:8001/~corbato/turing91/
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

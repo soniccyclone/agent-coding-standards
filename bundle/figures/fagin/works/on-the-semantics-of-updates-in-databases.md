@@ -6,6 +6,7 @@ description: Treats a database as a logical theory and asks what it should mean 
 subdomains: [databases-and-data-management]
 year: 1983
 url: https://web.archive.org/web/20210806201641/https://researcher.watson.ibm.com/researcher/files/us-fagin/pods83.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

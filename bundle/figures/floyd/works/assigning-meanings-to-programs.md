@@ -6,6 +6,7 @@ description: Floyd's foundational paper showing how to attach logical assertions
 subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
 year: 1967
 url: https://www.cs.tau.ac.il/~nachumd/term/FloydMeaning.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

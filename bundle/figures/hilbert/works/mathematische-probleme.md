@@ -6,6 +6,7 @@ description: Hilbert's address to the 1900 International Congress of Mathematici
 subdomains: [foundations-of-computation]
 year: 1900
 url: https://mathcs.clarku.edu/~djoyce/hilbert/problems.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

@@ -6,6 +6,7 @@ description: Karp's 1985 Turing Award lecture is a first-person retrospective on
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1985
 url: https://www.cs.umd.edu/~gasarch/COURSES/452/S21/notes/KarpTuringAward.pdf
+extraction: complete
 survey_pages: 12
 survey_text_layer: full
 survey_fetch_mb: 1

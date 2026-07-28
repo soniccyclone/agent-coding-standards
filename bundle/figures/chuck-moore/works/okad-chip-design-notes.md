@@ -6,6 +6,7 @@ description: Documentation for Moore's own chip design toolchain, used to lay ou
 subdomains: [programming-languages-and-semantics, operating-systems-and-systems-programming]
 year: 2000s
 url: https://colorforth.github.io/vlsi.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

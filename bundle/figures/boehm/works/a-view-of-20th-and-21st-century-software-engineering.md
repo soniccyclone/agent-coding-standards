@@ -6,6 +6,7 @@ description: A retrospective keynote reading five decades of software engineerin
 subdomains: [software-engineering-and-architecture]
 year: 2006
 url: https://www.irisa.fr/lande/lande/icse-proceedings/icse/p12.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

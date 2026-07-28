@@ -6,6 +6,7 @@ description: Edmonds extends the matching algorithm from "Paths, Trees, and Flow
 subdomains: [algorithms-and-complexity]
 year: 1965
 url: https://archive.org/download/jresv69Bn1-2p125/jresv69Bn1-2p125_A1b.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

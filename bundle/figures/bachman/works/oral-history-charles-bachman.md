@@ -6,6 +6,7 @@ description: A long-form interview conducted by Andrew L. Russell for the IEEE C
 subdomains: [databases-and-data-management]
 year: 2011
 url: https://ethw.org/Oral-History:Charles_Bachman
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: Proposes a programming model for networks of processes that share n
 subdomains: [distributed-systems-and-concurrency, programming-languages-and-semantics]
 year: 1978
 url: http://www.brinch-hansen.net/papers/1978a.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

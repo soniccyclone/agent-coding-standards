@@ -6,6 +6,7 @@ description: Co-written with Alan Kay, this paper lays out the vision for the Dy
 subdomains: [programming-environments-and-object-systems]
 year: 1977
 url: https://www.newmediareader.com/book_samples/nmr-26-kay.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

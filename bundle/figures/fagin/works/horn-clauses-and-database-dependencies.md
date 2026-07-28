@@ -6,6 +6,7 @@ description: Defines "implicational dependencies" and "embedded implicational de
 subdomains: [databases-and-data-management, foundations-of-computation]
 year: 1982
 url: https://web.archive.org/web/20210806201654/https://researcher.watson.ibm.com/researcher/files/us-fagin/jacm82.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

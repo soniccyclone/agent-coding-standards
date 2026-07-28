@@ -6,6 +6,7 @@ description: A short, precise treatment of a nasty security question — how do 
 subdomains: [operating-systems-and-systems-programming]
 year: 1973
 url: https://bwlampson.site/11-Confinement/Acrobat.pdf
+extraction: complete
 survey_pages: 5
 survey_text_layer: full
 survey_fetch_mb: 0

@@ -6,6 +6,7 @@ description: Chaitin's 1987 Cambridge Tracts monograph, the first systematic tex
 subdomains: [foundations-of-computation, algorithms-and-complexity]
 year: 1987
 url: https://web.archive.org/web/20000823034538/http://www.cs.auckland.ac.nz:80/CDMTCS/chaitin/cup.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

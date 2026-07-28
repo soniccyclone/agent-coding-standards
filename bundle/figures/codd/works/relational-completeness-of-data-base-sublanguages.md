@@ -6,6 +6,7 @@ description: Defines a yardstick for how expressive a database query language ne
 subdomains: [databases-and-data-management, programming-languages-and-semantics]
 year: 1972
 url: https://www.fsmwarden.com/Codd/Relational_Completeness(1972).pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

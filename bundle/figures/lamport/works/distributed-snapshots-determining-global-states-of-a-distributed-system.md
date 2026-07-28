@@ -6,6 +6,7 @@ description: Gives the Chandy-Lamport algorithm for capturing a consistent snaps
 subdomains: [distributed-systems-and-concurrency]
 year: 1985
 url: https://lamport.azurewebsites.net/pubs/chandy.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: A late essay arguing that computing science is fundamentally a bran
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 1988
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

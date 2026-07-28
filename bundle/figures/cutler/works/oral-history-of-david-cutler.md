@@ -6,6 +6,7 @@ description: A roughly three-hour recorded interview in which Cutler walks throu
 subdomains: [operating-systems-and-systems-programming]
 year: 2016
 url: https://archive.computerhistory.org/resources/access/text/2018/10/102717163-05-01-acc.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

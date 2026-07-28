@@ -6,6 +6,7 @@ description: The original CTSS paper, presented at the 1962 Spring Joint Compute
 subdomains: [operating-systems-and-systems-programming]
 year: 1962
 url: http://larch-www.lcs.mit.edu:8001/~corbato/sjcc62/
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

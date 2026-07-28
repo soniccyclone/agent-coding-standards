@@ -6,6 +6,7 @@ description: A personal letter asking whether the problem of deciding, for a for
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1956
 url: https://rjlipton.com/the-gdel-letter/
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

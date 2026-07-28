@@ -6,6 +6,7 @@ description: The canonical statement of Lehman's laws, arguing that large softwa
 subdomains: [software-engineering-and-architecture]
 year: 1980
 url: https://users.ece.utexas.edu/~perry/education/SE-Intro/lehman.pdf
+extraction: complete
 survey_pages: 17
 survey_text_layer: full
 survey_fetch_mb: 1

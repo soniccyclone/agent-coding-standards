@@ -6,6 +6,7 @@ description: Brinch Hansen's textbook treatment of operating-system design, cove
 subdomains: [operating-systems-and-systems-programming]
 year: 1973
 url: http://pascal.hansotten.com/uploads/pbh/Hansen%20-%20Operating%20System%20Principles%20(1973).pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

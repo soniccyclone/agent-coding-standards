@@ -6,6 +6,7 @@ description: An internal DEC strategy slide deck Cutler personally wrote and pre
 subdomains: [operating-systems-and-systems-programming]
 year: 1988
 url: https://bitsavers.org/pdf/dec/prism/memos/880530_Cutler_PRISM_vs_MIPS.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

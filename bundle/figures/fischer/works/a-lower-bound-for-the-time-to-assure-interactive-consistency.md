@@ -6,6 +6,7 @@ description: Proves that any protocol assuring interactive consistency (agreemen
 subdomains: [distributed-systems-and-concurrency]
 year: 1982
 url: https://groups.csail.mit.edu/tds/papers/Lynch/ipl82.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

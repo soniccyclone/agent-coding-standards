@@ -6,6 +6,7 @@ description: Introduces wait-freedom as a progress condition guaranteeing every 
 subdomains: [distributed-systems-and-concurrency, algorithms-and-complexity]
 year: 1991
 url: https://cs.brown.edu/people/mph/Herlihy91/p124-herlihy.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

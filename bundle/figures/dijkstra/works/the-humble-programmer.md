@@ -6,6 +6,7 @@ description: Dijkstra's 1972 Turing Award lecture, a personal retrospective on p
 subdomains: [software-engineering-and-architecture]
 year: 1972
 url: https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html
+extraction: complete
 access: public
 host: institutional
 tags: [work]

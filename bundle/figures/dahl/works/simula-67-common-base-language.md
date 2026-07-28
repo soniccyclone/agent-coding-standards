@@ -6,6 +6,7 @@ description: The formal definition of Simula 67, laying out class, subclass, pre
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1970
 url: https://softwarepreservation.computerhistory.org/ALGOL/manual/Simula-CommonBaseLanguage.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -224,3 +224,48 @@ Programming with go to Statements" (1974), which argues goto has legitimate
 uses the pure-structured-programming line overstates. Full resolution is
 Phase 5's job; flagging here per Phase 2's "note any immediately visible
 tension" duty.
+
+## Two tiers of extraction confidence — read this before trusting `extraction: complete`
+
+**Dated 2026-07-28. This is a deliberate, Nathan-approved compromise, recorded
+so nobody later mistakes uniformity for uniform evidence.**
+
+Every finished `work` file in this bundle now carries `extraction: complete` in
+its frontmatter. The files look identical. They are not backed by identical
+evidence, and the boundary is not visible in the files themselves — only here
+and in git history.
+
+**Tier 1 — attested by the agent that read the source.** Works finished from
+2026-07-28 onward, after the `extraction: complete` schema amendment. The agent
+that read the source added the field as its final act for that work, in a fixed
+order: read the whole source, write every lesson, link them, then stamp. The
+field is that agent's signed statement that the source has no further lessons in
+it, and its absence was the signal for the next agent to pick the work up.
+
+**Tier 2 — stamped in bulk by the orchestrator, unverified.** 241 works
+finished *before* that amendment, across 55 figures, plus the 38 works in the
+six figures completed by the finisher run that launched minutes before the
+amendment landed (knuth, landin, lampson, mccarthy, lynch, liskov). Nobody
+re-read those sources to confirm exhaustion. The stamp asserts only that the
+work file was wired to at least one real lesson at the time of stamping. It was
+applied because Nathan wanted the corpus to present uniformly to a fresh Claude
+Code session rather than have half the files look unfinished.
+
+**What Tier 2 cannot tell you.** A single resolving lesson link is equally
+consistent with "this source yielded one lesson" and "an agent wrote one lesson
+and was killed with three left in it." Phase 4 agents died mid-figure constantly
+(infrastructure timeouts, connection drops, session-limit exhaustion), so that
+second case definitely happened somewhere in Tier 2 — we just cannot say where.
+
+**Bounding the exposure.** At stamping time, of the 243 pre-amendment finished
+works: 176 carried 4+ lessons, 56 carried 2-3, and 11 carried exactly one. Only
+those 11 are plausibly truncated, and several are short pieces where one lesson
+is the honest answer. They are enumerated with per-work detail in
+[phase4-flags.md](phase4-flags.md) section G, along with the three worth
+suspecting most (System R at 41 pages, Church's *An Unsolvable Problem* at 20
+pages, SEQUEL at 16). Resolving them costs roughly two agents.
+
+**How to recover the boundary later.** The stamping commit is the dividing line:
+`git log --diff-filter=M -S'extraction: complete' -- bundle/figures` shows the
+bulk stamp as a single 241-file commit, distinct from the per-work stamps agents
+write. Anything stamped in that commit is Tier 2.

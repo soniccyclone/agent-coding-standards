@@ -6,6 +6,7 @@ description: The distributed version control system Torvalds wrote in 2005, in a
 subdomains: [software-engineering-and-architecture]
 year: 2005
 url: https://git-scm.com/
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

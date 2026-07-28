@@ -6,6 +6,7 @@ description: A retrospective column, written with Chang, Chari, Ranjan, and Roha
 subdomains: [algorithms-and-complexity]
 year: 1992
 url: https://userpages.cs.umbc.edu/chang/papers/revisionist/rev-book.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

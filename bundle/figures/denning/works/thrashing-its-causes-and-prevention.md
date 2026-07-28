@@ -6,6 +6,7 @@ description: Names and diagnoses thrashing, the collapse in system throughput th
 subdomains: [operating-systems-and-systems-programming]
 year: 1968
 url: https://www.denninginstitute.com/pjd/PUBS/thrashing-1968.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

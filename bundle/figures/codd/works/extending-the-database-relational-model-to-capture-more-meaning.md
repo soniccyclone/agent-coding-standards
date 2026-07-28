@@ -6,6 +6,7 @@ description: Codd's attempt to patch what he saw as the original relational mode
 subdomains: [databases-and-data-management]
 year: 1979
 url: http://www.esp.org/foundations/database-theory/holdings/codd-1979.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

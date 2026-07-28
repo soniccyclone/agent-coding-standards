@@ -6,6 +6,7 @@ description: Gives the first formal proof of what became known as the CAP theore
 subdomains: [distributed-systems-and-concurrency, databases-and-data-management]
 year: 2002
 url: http://groups.csail.mit.edu/tds/papers/Gilbert/Brewer6.pdf
+extraction: complete
 survey_pages: 13
 survey_text_layer: full
 survey_fetch_mb: 0

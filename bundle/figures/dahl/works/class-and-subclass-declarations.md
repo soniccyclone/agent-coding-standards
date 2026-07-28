@@ -6,6 +6,7 @@ description: The paper that first presents the class/subclass mechanism as a rem
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1967
 url: https://www.ub.uio.no/fag/informatikk/faglig/dns/dokumenter/classandsubclass1968.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

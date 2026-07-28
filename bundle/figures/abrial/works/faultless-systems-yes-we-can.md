@@ -6,6 +6,7 @@ description: An essay-length manifesto arguing that software's tolerance for bug
 subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
 year: 2009
 url: https://wp.software.imdea.org/cbc/wp-content/uploads/sites/5/2020/01/faultless-systems.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

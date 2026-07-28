@@ -6,6 +6,7 @@ description: Booch's ICSE 2015 keynote, surveying how software has grown from a 
 subdomains: [software-engineering-and-architecture]
 year: 2015
 url: https://www.youtube.com/watch?v=h1TGJJ-F-fE
+extraction: complete
 access: public
 host: institutional
 tags: [work]

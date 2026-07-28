@@ -6,6 +6,7 @@ description: Defines "architecture" in the modern computing sense — the progra
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1964
 url: https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/Arch/Architecture-of-the-IBM-System-360.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]

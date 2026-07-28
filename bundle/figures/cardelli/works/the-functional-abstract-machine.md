@@ -6,6 +6,7 @@ description: Describes the FAM, an abstract machine (a compilation target and ev
 subdomains: [programming-languages-and-semantics]
 year: 1983
 url: http://lucacardelli.name/Papers/FAM.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

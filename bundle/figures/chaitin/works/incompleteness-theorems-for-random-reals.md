@@ -6,6 +6,7 @@ description: Constructs an exponential Diophantine equation whose number of inte
 subdomains: [foundations-of-computation]
 year: 1987
 url: https://web.archive.org/web/20000819134754/http://www.cs.auckland.ac.nz:80/CDMTCS/chaitin/aam.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

@@ -6,6 +6,7 @@ description: With Richard Stearns, defines a formal measure of the time and spac
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 1965
 url: https://www.ams.org/journals/tran/1965-117-00/S0002-9947-1965-0170805-7/S0002-9947-1965-0170805-7.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

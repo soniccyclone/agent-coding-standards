@@ -6,6 +6,7 @@ description: A survey that organizes the then-scattered literature on type syste
 subdomains: [programming-languages-and-semantics]
 year: 1985
 url: http://lucacardelli.name/Papers/OnUnderstanding.pdf
+extraction: complete
 access: public
 host: self-archived
 tags: [work]

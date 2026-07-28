@@ -6,6 +6,7 @@ description: A 1974 paper proposing an abstract model of a database as objects c
 subdomains: [databases-and-data-management, programming-environments-and-object-systems]
 year: 1974
 url: https://hal.univ-grenoble-alpes.fr/hal-05150953/file/JeanRaymondAbrial-DataSemantics-1974.pdf
+extraction: complete
 access: public
 host: institutional
 tags: [work]

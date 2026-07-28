@@ -6,6 +6,7 @@ description: A retrospective, English-language survey of System F written fiftee
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1986
 url: https://web.archive.org/web/20240913204718/https://core.ac.uk/download/pdf/82258639.pdf
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
