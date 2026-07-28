@@ -6,6 +6,7 @@ description: One of Péter's earliest papers on recursive function theory, showi
 subdomains: [foundations-of-computation]
 year: 1934
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0110/LOG_0036.pdf
+extraction: complete
 survey_pages: 22
 survey_text_layer: partial
 survey_fetch_mb: 1
@@ -20,4 +21,8 @@ tags: [work]
 **Source:** https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0110/LOG_0036.pdf — direct per-article PDF served by the Göttinger Digitalisierungszentrum (GDZ), the digitization center of the SUB Göttingen (Göttingen State and University Library), from its public digitized run of Mathematische Annalen. Confirmed via the volume's METS metadata (article ID GDZPPN002277395, logical structure LOG_0036, author listed as "Péter (Politzer), R."), spanning physical pages 617-637 of the volume. No paywall or login. Volume-level viewer: https://gdz.sub.uni-goettingen.de/id/PPN235181684_0110
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Generality of notation is not generality of power](../lessons/generality-of-notation-is-not-generality-of-power.md)
+- [Reify the history to fit it through a narrow slot](../lessons/reify-the-history-to-fit-it-through-a-narrow-slot.md)
+- [Trade nesting depth for index arithmetic](../lessons/trade-nesting-depth-for-index-arithmetic.md)
+- [Reduce in stages until the residual case is trivial](../lessons/reduce-in-stages-until-the-hard-case-is-trivial.md)
+- [Fix the trusted base narrowly, then rebuild everything you borrow](../lessons/fix-the-trusted-base-narrowly-and-rebuild-what-you-borrow.md)

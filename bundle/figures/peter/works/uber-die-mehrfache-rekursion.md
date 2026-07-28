@@ -6,6 +6,7 @@ description: Extends Péter's analysis of recursion schemes to "multiple recursi
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0113/LOG_0035.pdf
+extraction: complete
 survey_pages: 40
 survey_text_layer: partial
 survey_fetch_mb: 1
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0113/LOG_0035.pdf — direct per-article PDF served by the Göttinger Digitalisierungszentrum (GDZ), the digitization center of the SUB Göttingen (Göttingen State and University Library), from its public digitized run of Mathematische Annalen. Confirmed via the volume's METS metadata (article ID GDZPPN002278820, logical structure LOG_0035, 39 pages, author "Péter, R."), spanning physical pages 494-532 of the volume. No paywall or login. Volume-level viewer: https://gdz.sub.uni-goettingen.de/id/PPN235181684_0113
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The order you impose on the domain is the real definition of a recursion](../lessons/the-order-you-impose-on-the-domain-is-the-definition.md)
+- [What one level cannot define, the level above defines easily](../lessons/what-one-level-cannot-define-the-level-above-defines-easily.md)
+- [To prove one level stronger than another, make it enumerate the weaker one](../lessons/separate-two-levels-of-power-by-making-the-higher-enumerate-the-lower.md)
+- [Swap a construction for a checkable record plus a search you can guarantee](../lessons/swap-a-construction-for-a-checkable-record-and-a-guarded-search.md)

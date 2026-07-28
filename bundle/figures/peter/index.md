@@ -41,3 +41,25 @@ Digitalisierungszentrum's digitized run of the journal — see
 and `works/uber-die-mehrfache-rekursion.md`. Note also that item 4's year is
 corrected to 1936 in the work file; the 1950 date in this stub appears to
 conflate it with a different, later JSL paper on the same theme.
+
+## Lessons
+Péter's two accessible Mathematische Annalen papers teach a single discipline:
+treat expressive power as something you measure rather than something you read
+off a definition's shape. A scheme that looks more general than primitive
+recursion usually is not, and the way to find out is to compile it away, which
+is why her method turns on encoding (packing a whole computation history into
+one value so it fits through a single-value recursion slot, replacing nested
+recursion depth with arithmetic on indices) and on staged reduction that keeps
+peeling cases until the last one is trivial. Where a scheme genuinely is
+stronger, the same measuring instinct demands a proof of strict separation, and
+her tool there is to make the higher level enumerate the lower and then diagonalize
+out of it, which reframes a hierarchy as a statement about what one level can
+say about another rather than about syntax. Two further habits carry beyond
+recursion theory: a recursion's real content is the well-ordering you impose on
+its domain, so choosing that order is the actual design decision and everything
+else is bookkeeping; and when a construction is hard to build directly, it is
+often easier to specify a record that can be checked and then search for it
+under a bound you can guarantee, trading constructive effort for verifiability.
+Underneath all of it is her insistence on a deliberately narrow trusted base,
+rebuilding borrowed machinery from a small set of primitives rather than
+assuming it, which is what makes her classification claims mean anything at all.
