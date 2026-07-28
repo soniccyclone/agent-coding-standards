@@ -23,3 +23,8 @@ tags: [work]
 - [Choose the entity whose viewpoint already holds the information the behavior needs, and the program shrinks](../lessons/decompose-from-the-viewpoint-that-already-holds-the-information.md)
 - [Let the machine's cost model set the grain of your abstractions, and refuse any mechanism whose expense is invisible to whoever uses it](../lessons/let-the-machines-cost-model-set-the-grain-of-your-abstractions.md)
 - [Reach a new paradigm by lifting a restriction off an existing primitive, not by adding one](../lessons/an-object-is-a-block-instance-with-the-stack-discipline-removed.md)
+- [Aim to be a middle layer: extend a base you refuse to replace, and become a base others need not replace](../lessons/build-a-middle-layer-language.md)
+- [Build the vocabulary that forces a complete description, then make the description itself the program](../lessons/make-the-description-the-executable-artifact.md)
+- [Give each component its own resumption point, and the state machine you would have hand-encoded disappears](../lessons/give-each-component-its-own-sequence-control.md)
+- [Refuse expressive power whose cost is invisible at the point where it is used](../lessons/refuse-power-whose-cost-is-invisible.md)
+- [To get a new kind of thing, take a construct you trust and delete one of its incidental restrictions](../lessons/objects-are-blocks-freed-from-the-stack.md)

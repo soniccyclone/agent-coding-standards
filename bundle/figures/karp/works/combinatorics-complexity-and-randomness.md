@@ -29,3 +29,4 @@ Also contributes to (extracted primarily from *Reducibility Among Combinatorial 
 - [Solve a new problem by translating it into one whose difficulty you already know](../lessons/translate-the-new-problem-into-one-you-already-understand.md)
 - [Ask how hard the answer is to check before asking how hard it is to find](../lessons/separate-the-cost-of-checking-from-the-cost-of-finding.md)
 - [Route many problems through one universal format instead of building translators between every pair](../lessons/route-everything-through-one-universal-format.md)
+- [Know whether your local check certifies a global property, because that decides if hill climbing is a proof or a guess](../lessons/when-no-local-improvement-exists-means-globally-optimal.md)

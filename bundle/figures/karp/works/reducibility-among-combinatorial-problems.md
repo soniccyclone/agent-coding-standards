@@ -24,3 +24,4 @@ tags: [work]
 - [Ask how hard the answer is to check before asking how hard it is to find](../lessons/separate-the-cost-of-checking-from-the-cost-of-finding.md)
 - [Trust only the distinctions that survive a change of machine and a change of representation](../lessons/trust-only-classifications-that-survive-a-change-of-machine.md)
 - [Route many problems through one universal format instead of building translators between every pair](../lessons/route-everything-through-one-universal-format.md)
+- [Cost that scales with the magnitude of your numbers rather than the size of your data is exponential in disguise](../lessons/cost-must-scale-with-input-size-not-input-magnitude.md)

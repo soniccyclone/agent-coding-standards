@@ -27,3 +27,8 @@ tags: [work]
 - [Separate the values a type denotes from the representations a machine may use for it, and let code declare whether it wants the latitude](../lessons/separate-the-values-a-type-denotes-from-the-representation-permitted-at-runtime.md)
 - [Resolve a name in staged narrowings, and give every distinct way a name can miss its target its own word](../lessons/give-every-way-a-name-can-miss-its-target-a-separate-word.md)
 - [Borrow global uniqueness from a registry that already exists, and then grant the borrowed hierarchy no authority whatsoever](../lessons/borrow-uniqueness-from-a-registry-that-exists-and-grant-the-hierarchy-no-authority.md)
+- [If you want a change to be non-breaking, make the matching relation deliberately blind to it](../lessons/make-the-matching-relation-blind-to-the-change-you-intend-to-permit.md)
+- [Let a contradictory configuration exist and fail only where it is actually depended on, and never let coincidental agreement resolve an ambiguity](../lessons/ambiguity-is-about-how-many-declarations-exist-not-whether-they-agree.md)
+- [Refuse to specify the things you do not want depended on, even when every implementation agrees on them](../lessons/refuse-to-specify-what-you-do-not-want-depended-on.md)
+- [Removing a construct to enforce discipline does not work; supplying a better-fitting one does](../lessons/prohibition-is-not-design-provide-the-better-construct.md)
+- [You can add a requirement to a published contract only if every conflict rule resolves toward what already exists](../lessons/retroactive-extension-works-only-if-what-already-exists-always-wins.md)

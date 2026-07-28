@@ -25,3 +25,4 @@ tags: [work]
 - [When an abstraction is too expensive to use the way the problem wants, look for two concerns fused inside it](../lessons/split-the-abstraction-that-bundles-ownership-with-execution.md)
 - [Put mechanism in the privileged core and push every decision out of it, so the identity of the system lives in replaceable parts](../lessons/the-privileged-core-should-hold-mechanism-and-refuse-to-hold-decisions.md)
 - [A portability boundary holds only when the machine-specific side owns no truth and can be thrown away and rebuilt](../lessons/keep-truth-in-the-portable-layer-and-let-the-machine-layer-be-a-discardable-cache.md)
+- [Choose the semantics you can reason about, then buy the cost back underneath where nobody has to know](../lessons/choose-the-semantics-you-can-reason-about-and-buy-the-cost-back-underneath.md)
