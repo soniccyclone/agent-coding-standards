@@ -452,10 +452,8 @@ the difference between an archive and a usable knowledge base.
    primary content, that `axes/` and `subdomains/` are cross-cutting indexes
    into it rather than sources themselves, that `tensions/` records where
    figures genuinely disagree, that every lesson cites a `work` with a URL so
-   claims can be chased to a primary source, that lessons are deliberately
-   abstract (never technique-level), and — importantly — that the
-   `extraction: complete` field and the two-tier confidence note in
-   [ledger.md](ledger.md) bound how much to trust exhaustiveness.
+   claims can be chased to a primary source, and that lessons are deliberately
+   abstract (never technique-level).
 2. *Human-facing instructions* — a README section telling a visitor that this
    repo is meant to be talked to, and literally where the button is. Most
    GitHub users with a Copilot subscription have never used it as a "ask this
@@ -471,6 +469,18 @@ before we design around it, because if the web chat ignores it the whole idea
 needs a different delivery vehicle (a prominently linked `AGENTS.md`, or
 instructions embedded in the README itself where the chat will definitely see
 them). Treat the mechanism as an open question, not a settled design.
+
+**Design rule for everything in this phase: consumer surfaces do not expose
+build-time bookkeeping.** `extraction: complete`, the `survey_*` fields, the
+Tier 1/Tier 2 confidence split in [ledger.md](ledger.md) — none of that belongs
+in an instruction file, a README, or anything else a bundle *consumer* touches.
+Those exist so we can audit our own pipeline; a reader asking what these figures
+thought about abstraction has no use for them, and surfacing them would only
+teach a stranger to hedge on content we are confident in. Same principle the
+bundle already follows internally: an abstraction layer presents a coherent
+worldview and does not leak the mechanics underneath. If we later decide to
+tighten the remaining loose ends, that is implementer work and stays on our side
+of the line.
 
 **Open questions to resolve before building:**
 - Does GitHub's web Copilot chat read `.github/copilot-instructions.md`? If not,
