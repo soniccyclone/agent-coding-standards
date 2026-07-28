@@ -21,4 +21,6 @@ tags: [work]
 **Source:** https://softwarepreservation.computerhistory.org/LISP/book/LISP%201.5%20Programmers%20Manual.pdf — live PDF, hosted by the Software Preservation Group at the Computer History Museum, posted with permission of MIT Press. Confirmed 200 OK. (Also mirrored, same scan, at archive.org/details/lisp15programmer00john.)
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Keep one calling discipline for everything, and carry the deviations as named classifications rather than as special syntax](../lessons/keep-one-calling-discipline-and-carry-the-exceptions-as-names.md)
+- [Publish a ladder of models at increasing fidelity, and state which one is allowed to answer which question](../lessons/publish-a-fidelity-ladder-and-say-which-model-is-authoritative.md)
+- [When an abstraction cannot be uniformly cheap, expose its cost tiers as declarations rather than picking one price and hiding it](../lessons/make-the-cost-tier-a-declaration-instead-of-a-hidden-uniform-choice.md)

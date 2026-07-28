@@ -22,4 +22,7 @@ tags: [work]
 **Host:** third-party-rehost — CMU course-reading mirror.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Closure is what turns one facility into many](../lessons/closure-turns-one-facility-into-many.md)
+- [Give performance tuning its own channel, and admit nothing into it that carries information](../lessons/give-tuning-its-own-channel-that-carries-no-meaning.md)
+- [Learnability is a measurable property of a notation, so measure it](../lessons/measure-a-notation-dont-defend-it.md)
+- [Make the system describe and constrain itself in the language it exposes](../lessons/let-the-system-describe-itself-in-its-own-language.md)

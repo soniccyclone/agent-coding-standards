@@ -22,4 +22,4 @@ tags: [work]
 **Host:** third-party-rehost — CMU course-reading mirror.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Give performance tuning its own channel, and admit nothing into it that carries information](../lessons/give-tuning-its-own-channel-that-carries-no-meaning.md)

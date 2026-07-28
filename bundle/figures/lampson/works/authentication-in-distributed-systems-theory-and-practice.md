@@ -23,4 +23,7 @@ tags: [work]
 **Source:** https://bwlampson.site/45-AuthenticationTheoryAndPractice/Acrobat.pdf — hosted on Lampson's own personal publications page (bwlampson.site), self-archived.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Treat the source of a request as a composed expression rather than an atomic name, and give the composition operators algebraic laws so authority can be computed instead of guessed](../lessons/make-identity-an-expression-not-an-atom.md)
+- [Split every decision into an expensive search you do not have to trust and a cheap check you do, then let the untrusted half fail only in the safe direction](../lessons/let-the-untrusted-part-search-and-the-trusted-part-only-check.md)
+- [Withdrawing a fact by notifying everyone who holds it is a distributed problem you cannot win; give the fact an expiry and make withdrawal a refusal to renew](../lessons/give-every-belief-an-expiry-instead-of-a-notification-list.md)
+- [When authority has to cross a boundary, do not hand it over — mint a weaker one that records both parties and requires both to opt in](../lessons/do-not-transfer-authority-manufacture-a-weaker-one-that-names-both-parties.md)

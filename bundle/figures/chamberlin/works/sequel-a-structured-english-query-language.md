@@ -22,4 +22,4 @@ tags: [work]
 **Host:** third-party-rehost — university course-reading mirror, not ACM's or the authors' own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Learnability is a measurable property of a notation, so measure it](../lessons/measure-a-notation-dont-defend-it.md)

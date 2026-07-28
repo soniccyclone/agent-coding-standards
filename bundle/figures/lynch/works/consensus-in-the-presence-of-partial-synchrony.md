@@ -21,4 +21,6 @@ tags: [work]
 **Source:** https://groups.csail.mit.edu/tds/papers/Lynch/jacm88.pdf — hosted on MIT CSAIL's Theory of Distributed Systems group publications page (university-hosted), live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let timing assumptions buy you progress and nothing else, so safety never depends on the clock](../lessons/keep-timing-assumptions-out-of-safety.md)
+- [Refusing to call a slow participant broken is what makes a fault budget mean anything](../lessons/a-slow-participant-is-not-a-broken-one.md)
+- [Solve the problem in the model you wish you had, then pay for that model once, in a layer you can swap](../lessons/build-the-model-you-wish-you-had-then-pay-for-it-once.md)

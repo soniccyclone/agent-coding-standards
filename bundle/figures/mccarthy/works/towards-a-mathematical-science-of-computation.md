@@ -20,4 +20,6 @@ tags: [work]
 **Source:** https://www-formal.stanford.edu/jmc/towards.pdf — live PDF, self-archived on McCarthy's Stanford page, confirmed 200 OK.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [State the criterion before the method, and a translator's correctness becomes an equation between two routes rather than a matter of testing](../lessons/translation-correctness-is-a-commuting-equation.md)
+- [Specify a language by the operations that take its programs apart, not by the notation people write them in](../lessons/specify-a-language-by-how-you-take-it-apart.md)
+- [Turn the mutable environment into a single value with stated laws, and imperative code becomes reasonable by the same means as functional code](../lessons/make-the-mutable-environment-a-value-with-laws.md)

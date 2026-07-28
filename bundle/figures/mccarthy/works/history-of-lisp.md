@@ -17,4 +17,7 @@ tags: [work]
 **Source:** https://www-formal.stanford.edu/jmc/history/lisp/lisp.html — live page, self-archived on McCarthy's Stanford page, confirmed 200 OK.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Whatever runs first becomes the specification, so treat every provisional notation as a candidate permanent one](../lessons/the-first-implementation-freezes-the-design.md)
+- [When the machine forecloses an option, check whether what survived is cleaner before you mourn the loss](../lessons/let-the-machine-prune-your-primitives.md)
+- [Shape the internal representation for the transformations you will perform, and push human-facing notation out to the boundary](../lessons/optimize-the-internal-form-and-translate-at-the-edges.md)
+- [Keep a core that obeys equational laws, and keep an explicit list of the features you have not been able to give semantics to](../lessons/keep-a-ledger-of-what-you-cannot-give-semantics-to.md)

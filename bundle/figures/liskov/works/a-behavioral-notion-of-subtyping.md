@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf — self-archived PDF on co-author Jeannette Wing's CMU page, live and directly downloadable (HTTP 200; PDF metadata title/author confirmed).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Substitutability is a claim about what clients can prove, not about what they can call](../lessons/substitutability-is-about-what-is-provable-not-what-is-callable.md)
+- [Extra capability is invisible only in a closed world](../lessons/extra-capability-is-invisible-only-in-a-closed-world.md)
+- [Plan the variation at the top, or the family cannot exist at all](../lessons/plan-the-variation-at-the-top-or-the-family-cannot-exist.md)
+- [Modularity bought by removing a proof rule must be paid back by hand](../lessons/modularity-bought-by-removing-a-proof-rule-must-be-paid-back-by-hand.md)

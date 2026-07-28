@@ -23,4 +23,5 @@ tags: [work]
 **Source:** https://bwlampson.site/11-Confinement/Acrobat.pdf — hosted on Lampson's own personal publications page (bwlampson.site), self-archived.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Every shared mechanism is a communication channel, so a component's real interface is everything an observer can measure about its execution — and containment becomes a quantity, not a yes or no](../lessons/every-shared-mechanism-is-a-channel.md)
+- [A restriction is something you impose on a component when you invoke it, not a property the component has — so it holds only if it propagates to everything the component calls, and only over a trust base you have named](../lessons/restrictions-are-imposed-at-invocation-and-must-propagate.md)

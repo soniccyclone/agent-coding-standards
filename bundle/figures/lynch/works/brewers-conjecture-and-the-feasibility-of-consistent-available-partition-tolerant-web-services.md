@@ -21,4 +21,5 @@ tags: [work]
 **Source:** http://groups.csail.mit.edu/tds/papers/Gilbert/Brewer6.pdf — hosted on MIT CSAIL's Theory of Distributed Systems group publications page (university-hosted), live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An impossibility result is an invoice for a model assumption, so learn to read which assumption it is charging you for](../lessons/an-impossibility-result-is-a-bill-for-a-model-assumption.md)
+- [A degraded mode is not the absence of a guarantee, it is a guarantee you have not bothered to write down](../lessons/a-degraded-mode-deserves-its-own-specification.md)

@@ -23,4 +23,5 @@ tags: [work]
 **Source:** https://bwlampson.site/08-Protection/Acrobat.pdf — hosted on Lampson's own personal publications page (bwlampson.site), self-archived.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When a field is full of rival mechanisms, look for the single relation they are all storing, then treat each mechanism as a layout choice for it](../lessons/rival-mechanisms-are-often-storage-layouts-of-one-relation.md)
+- [Build the impractically simple model that is obviously complete, then name exactly what it lacks — the conventions you add back are the real system, and they will grow their own lives](../lessons/build-the-impractical-complete-model-first.md)

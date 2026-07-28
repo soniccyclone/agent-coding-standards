@@ -20,4 +20,4 @@ tags: [work]
 **Source:** https://phil415.pbworks.com/f/Church.pdf — scanned JSTOR offprint (pp. 345-363, matching the original pagination exactly) rehosted on a university philosophy course wiki (pbworks.com course site).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Treat a function as the rule you can run, not as the pairs it happens to relate](../lessons/a-function-is-a-rule-not-a-table.md)

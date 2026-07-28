@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://www.math.bas.bg/softeng/bantchev/place/iswim/j.pdf — hosted on a personal ISWIM-history page under the Bulgarian Academy of Sciences' Institute of Mathematics and Informatics domain. Confirmed via decompressed PDF content: the file's reference list cites Landin's other papers by correct title/year/page-range (matching this corpus's other entries), and its embedded CreationDate (1998-11-20) matches the Higher-Order and Symbolic Computation reprint date.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Features arrive welded together; audit which dependencies are real and which restrictions are accidents](../lessons/audit-the-bundle-you-inherited.md)
+- [Sugar cannot break a law, so a broken law is proof that an addition is genuinely primitive](../lessons/a-broken-law-proves-a-new-primitive.md)
+- [Ask what an apparently non-denotable construct stands for; the answer is the surrounding situation it silently refers to](../lessons/ask-what-the-unaskable-thing-denotes.md)
+- [Hand the failure path in as an argument, and error handling stops being the part that escapes structure](../lessons/pass-the-failure-path-in-as-an-argument.md)

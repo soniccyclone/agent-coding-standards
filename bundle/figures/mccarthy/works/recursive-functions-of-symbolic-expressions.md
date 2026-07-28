@@ -20,4 +20,8 @@ tags: [work]
 **Source:** https://www-formal.stanford.edu/jmc/recursive.pdf — live PDF, self-archived on McCarthy's Stanford Formal Reasoning Group page (www-formal.stanford.edu/jmc/), confirmed 200 OK.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Look for the handful of operations that generate everything, then earn the rest by derivation instead of decree](../lessons/find-the-closed-basis-then-derive-everything.md)
+- [Choose one data representation general enough to hold your own programs, and the interpreter becomes an ordinary function](../lessons/one-representation-for-program-and-data.md)
+- [Treat undefinedness as a first-class semantic outcome, and let evaluation order be part of the meaning rather than an implementation detail](../lessons/undefinedness-belongs-in-the-semantics.md)
+- [Two formalisms of identical power can still be unequal designs: judge a basis by which operations it makes elementary](../lessons/equal-power-is-not-equal-structure.md)
+- [If a bookkeeping fact is derivable from the program's own structure, make the machine derive it instead of making the programmer track it](../lessons/let-the-machine-compute-what-the-machine-can-know.md)

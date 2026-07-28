@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf — course-materials mirror on Karl Crary's "Classic Papers in Programming Languages and Logic" (CMU 15-819, Fall 2009) page; PDF metadata confirms title "The next 700 programming languages", author "P. J. Landin", and the CACM DOI (10.1145/365230.365257) in the Subject field.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Design the space your artifact sits in, and give every decision that could have gone otherwise its own level](../lessons/design-the-family-not-the-member.md)
+- [A rule that almost always holds buys nothing; price every feature in the laws it breaks](../lessons/a-law-that-nearly-holds-is-not-a-law.md)
+- [Functional notation is a costume; the substance is whether an expression's meaning depends only on its parts' meanings](../lessons/functional-notation-is-a-costume.md)
+- [Written order is a claim about order, and most programs assert far more of it than they mean](../lessons/sequence-is-information-you-may-not-mean-to-assert.md)

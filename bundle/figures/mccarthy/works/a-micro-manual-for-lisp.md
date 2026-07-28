@@ -20,4 +20,5 @@ tags: [work]
 **Source:** https://www.ecb.torontomu.ca/~elf/pub/misc/micromanualLISP.pdf — live PDF (2 pages, matches expected short-manual format), confirmed 200 OK. Not found self-archived on McCarthy's own Stanford page (checked www-formal.stanford.edu/jmc/ index and jmc.stanford.edu/articles/ via Wayback CDX — no micromanual entry in either); this is a third-party mirror hosted on a Toronto Metropolitan University faculty personal page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A specification small enough to be read whole beats a reference large enough to be looked things up in — provided you name what you left out](../lessons/state-the-core-completely-and-name-the-omissions.md)
+- Also contributes to [Look for the handful of operations that generate everything, then earn the rest by derivation instead of decree](../lessons/find-the-closed-basis-then-derive-everything.md)

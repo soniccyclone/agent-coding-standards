@@ -23,4 +23,6 @@ tags: [work]
 **Source:** https://bwlampson.site/23-ProcessesInMesa/Acrobat.pdf — hosted on Lampson's own personal publications page (bwlampson.site), self-archived.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Deliberately weaken what a synchronization event promises, because a weaker guarantee makes every proof local and every later extension free](../lessons/weaken-the-promise-to-localize-the-proof.md)
+- [Mutual exclusion between participants of very different speeds destroys the fast one's worst-case guarantee, so a speed boundary is where a coordination model has to change](../lessons/never-share-exclusion-across-a-speed-boundary.md)
+- [The measured price of a primitive decides which program structures are available to you, so publish the price and treat granularity as a consequence of it](../lessons/the-price-of-a-primitive-decides-which-structures-you-can-think-in.md)

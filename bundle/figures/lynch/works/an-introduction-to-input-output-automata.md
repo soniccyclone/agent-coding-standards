@@ -21,4 +21,7 @@ tags: [work]
 **Source:** http://groups.csail.mit.edu/tds/papers/Lynch/CWI89.pdf — submitted-version PDF hosted on MIT CSAIL's Theory of Distributed Systems group publications page (university-hosted), live and directly downloadable (HTTP 200). A publisher-hosted copy is also live at the CWI institutional repository: https://ir.cwi.nl/pub/18164/18164A.pdf.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A component's interface is defined by what it cannot refuse, not by what it chooses to accept](../lessons/an-interface-is-defined-by-what-you-cannot-refuse.md)
+- [Make a specification the same kind of object as an implementation, so correctness is just containment](../lessons/a-specification-is-a-more-permissive-program.md)
+- [The right obligation on an open component is never to be the first to break the invariant](../lessons/never-be-the-first-to-break-the-invariant.md)
+- [Judge a composition operator by whether your reasoning survives it in both directions](../lessons/an-abstraction-operator-must-preserve-the-properties-you-reason-with.md)

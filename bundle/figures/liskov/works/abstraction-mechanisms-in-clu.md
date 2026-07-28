@@ -21,4 +21,4 @@ tags: [work]
 **Source:** https://csg.csail.mit.edu/pubs/memos/Memo-144/Memo-144.pdf — hosted as Memo-144 in MIT CSAIL's Computation Structures Group memo archive, an official MIT lab repository; content-verified (title, all four author names, abstract text present).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Traversal order is an abstraction, and the collection should own it](../lessons/traversal-order-is-an-abstraction-someone-should-own.md)

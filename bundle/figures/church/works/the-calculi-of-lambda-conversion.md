@@ -20,4 +20,7 @@ tags: [work]
 **Source:** https://compcalc.github.io/public/church/church_calculi_1941.pdf — full scanned monograph rehosted on a computability/lambda-calculus research course site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Data can be defined by the behavior it supports rather than by the stuff it is made of](../lessons/data-is-whatever-behaves-like-it.md)
+- [Names and binding are a convenience layer, not part of the computational content](../lessons/names-are-a-layer-above-the-computation.md)
+- [Order independence is a property you purchase with restrictions, and convenience in the core can spend it](../lessons/order-independence-is-bought-not-given.md)
+- [Treat a function as the rule you can run, not as the pairs it happens to relate](../lessons/a-function-is-a-rule-not-a-table.md)
