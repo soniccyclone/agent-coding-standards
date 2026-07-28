@@ -22,3 +22,4 @@ tags: [work]
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
+_OCR-HOLD -- no text layer; deferred pending explicit go-ahead_
