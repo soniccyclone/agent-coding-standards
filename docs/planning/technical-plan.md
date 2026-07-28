@@ -68,6 +68,30 @@ time (`scratchpad/survey-works.sh`), and unlike `description` or `access` they
 carry no editorial judgment. Nothing downstream should treat them as
 load-bearing for citation — they are routing hints.
 
+**2026-07-28 — `extraction: complete` added to the `work` frontmatter.** A
+one-line, agent-written attestation that a source has been read in full and has
+no further lessons left in it. Absent means "not confirmed exhausted."
+
+Reason: a link from a work file to a lesson proves a lesson was written; it does
+not prove the source was fully mined. Phase 4 agents are killed by
+infrastructure timeouts constantly, and an agent that writes one lesson and then
+dies leaves a work file that looks finished while silently losing whatever else
+that source contained. Link integrity (which direction points where) is a
+different property from extraction completeness (was this source exhausted), and
+the corpus previously had no way to express the second.
+
+Written last, deliberately: read the source, write the lessons, link them, then
+add the field. That ordering is what makes it meaningful — it is a signature on
+completed work rather than a declaration of intent.
+
+**Grandfathering:** the 243 works finished before this date carry no field, and
+their absence should NOT be read as incomplete. Measured at the time: 176 of
+those had 4+ lessons, 56 had 2-3, and only 11 had a single lesson — most of
+those being genuinely short pieces (Dijkstra's two-page goto letter, Lamport's
+Byzantine Generals). The field is a forward guarantee, not a retroactive audit.
+A spot-check of the 11 single-lesson works is the proportionate follow-up if one
+is ever wanted.
+
 ## Bundle target structure
 
 ```
