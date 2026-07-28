@@ -67,3 +67,28 @@ DOI variants indexed for it (10.1145/800025.1198392,
 10.1145/800025.808391, 10.1145/960118.808391), no repository copy. Not
 flagged above since it wasn't a surprise and the SIMULA 67 language report
 itself (public, see works/) already carries the core technical claim.
+
+## Lessons
+Nygaard's two surviving accessible works pull in the same direction from
+opposite ends of the stack. In the Simula 67 report the recurring move is
+economy of mechanism: the object arrives not as a new primitive but as an
+existing construct with two accidental restrictions lifted, justified
+explicitly by how few concepts a person can hold at once; concurrency is
+reduced to suspend-and-resume with every scheduling policy pushed into
+ordinary declarations above it; domain specialization becomes an operation
+inside the one language, tested by defining the language's own set-handling,
+simulation, and I/O facilities with it; and safety is handled by declaring
+what a reference may denote, rejecting what is provably wrong, and converting
+the undecidable remainder into a defined runtime failure rather than a silent
+one. The 1986 lecture then turns the same skepticism on the designer. A
+system is not something the world contains but something a person elects to
+see, with a purpose and a discarded set of properties; the major programming
+styles are lenses to switch between rather than paradigms to win with;
+whoever supplies the vocabulary of a design has already settled it, and
+declining to state your assumptions enlists you in the ambient ones; and the
+properties of a running program are largely fixed at levels above the
+program, in how the work was organized and what the organization knew. Read
+together, they teach a programmer to spend primitives sparingly, to keep
+mechanism separate from policy, and to hold the model itself as a revisable
+choice with an author rather than as a description of how things are.
+

@@ -6,6 +6,7 @@ description: The formal definition of Simula 67 — the language report that spe
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1968
 url: https://softwarepreservation.computerhistory.org/ALGOL/manual/Simula-CommonBaseLanguage.pdf
+extraction: complete
 survey_pages: 151
 survey_text_layer: full
 survey_fetch_mb: 3
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://softwarepreservation.computerhistory.org/ALGOL/manual/Simula-CommonBaseLanguage.pdf — live PDF hosted by the Computer History Museum's Software Preservation Group (successor to softwarepreservation.org, which now redirects there); a preservation-nonprofit rehost of the original Norwegian Computing Center report, not the authors' own site. Verified resolving 200 with `content-type: application/pdf` via direct curl in addition to fetch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Find The Arbitrary Restriction On What You Already Have](../lessons/lift-the-restriction-instead-of-adding-a-primitive.md)
+- [Put Only Suspend-And-Resume In The Machine; Keep Scheduling Policy In Libraries](../lessons/minimum-interleaving-primitive-policy-above.md)
+- [Make Domain Specialization An Operation In The Language, Then Define Your Own Facilities With It](../lessons/specialization-belongs-inside-the-language.md)
+- [Constrain What A Pointer May Denote, And Check At Runtime What You Cannot Prove](../lessons/qualified-references-bound-wrong-assumptions.md)

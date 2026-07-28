@@ -6,6 +6,7 @@ description: An invited lecture summing up Nygaard's system-development research
 subdomains: [software-engineering-and-architecture]
 year: 1986
 url: http://web.archive.org/web/20060924071352/http://heim.ifi.uio.no/~kristen/PDF_MAPPE/F_PDF_MAPPE/F_IFIP_86.pdf
+extraction: complete
 survey_pages: 25
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** http://web.archive.org/web/20060924071352/http://heim.ifi.uio.no/~kristen/PDF_MAPPE/F_PDF_MAPPE/F_IFIP_86.pdf — Wayback Machine snapshot of the PDF Nygaard self-archived on his own University of Oslo homepage (heim.ifi.uio.no/~kristen); the live homepage is dead, so this is the Wayback-fallback case per the discovery rules. Confirmed genuine (not a placeholder) by decompressing the PDF's content streams directly: opening text reads "PROGRAM DEVELOPMENT AS A SOCIAL ACTIVITY / Kristen Nygaard / Institute of Informatics, University of Oslo" with a preface citing the exact IFIP 86 reference above. Resolves 200 via curl (follows one redirect to the archived timestamp).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Nothing Is Inherently A System; You Decide To See One](../lessons/a-system-is-a-choice-not-a-property.md)
+- [Treat Programming Styles As Lenses To Switch Between, Not Camps To Join](../lessons/no-programming-perspective-wins.md)
+- [Whoever Supplies The Vocabulary Has Already Decided The Design](../lessons/whose-concepts-frame-the-design.md)
+- [The Limits On A Running Program Were Set At Levels Above The Program](../lessons/what-constrains-a-program-lives-outside-it.md)
