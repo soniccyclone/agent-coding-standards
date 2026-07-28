@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Functional notation is a costume; the substance is whether an expression's meaning depends only on its parts' meanings"
+figure: landin
+works: [next-700-programming-languages]
+axes: [cognitive-load, verifiability, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Functional notation is a costume; the substance is whether an expression's meaning depends only on its parts' meanings
+
+**Lesson:** Landin isolates why ordinary algebraic expressions are so much easier to work with than most things people say to computers, and the reason is narrower than it first looks. It is not the nesting, and not that each part stands for something; it is that what a compound expression stands for is settled entirely by what its parts stand for, and by nothing else about them. Nothing about how a part was spelled, how it was arrived at, or what happened along the way can leak into the meaning of the whole. That single property is what lets you understand a large expression by understanding pieces of it, replace a piece with any other piece that means the same thing, and trust the result — the entire basis of reading, reviewing and refactoring code by local inspection.
+
+Having named the property, he uses it as a lie detector. A notation can adopt every visual mannerism of mathematics — prefix operators, arguments in parentheses, results returned rather than assigned — and still fail the test, at which point it is only impersonating functional structure. His verdict is blunt: rearranging a piece of symbolism into applications and brackets is trivial and pointless work. What is hard, and what actually pays, is characterizing the thing you are modelling as a set of entities and relations among them; once that is done, the notation you write it in is a matter of ergonomics, and other notations may well be better for humans. Functional notation earns its place as a yardstick for describing other notations and as a fallback when they run out, not as the goal.
+
+He is equally sharp about the neighbouring confusion, that a language becomes better by being made to sound like a description of what you want rather than instructions for getting it. He tests that idea by asking whether a language lets you name and compose the operation "the unique thing satisfying this property," and observes that a classification which admits such a description standing alone but forbids it nested inside a larger expression, passed to a function, or defined once and reused, is not a distinction worth having — it is a licence for restrictive design. The property he cares about survives nesting by construction; a surface style does not.
+
+For a working programmer the payoff is a test you can apply to your own code rather than to language taxonomies. Take an expression and ask what its value could possibly depend on besides the values of the things inside it: the order two arguments were evaluated in, a field mutated in between, a global consulted on the way, whether a supposedly equal object was the same object. Every affirmative answer is a place where local reasoning has quietly failed and where a refactor that looks safe is not. The corollary is a warning about self-congratulation. Adopting a pipeline-shaped or expression-shaped style while leaving hidden dependence on ambient state intact buys the appearance of the property and none of its benefits — and the appearance is worse than nothing, because it invites exactly the local reasoning that the code will not support.
+
+**Source:** [The Next 700 Programming Languages](../works/next-700-programming-languages.md) — the section on application and denotation that isolates dependence-only-on-subexpression-values as the crucial property, the terminology section's separation of that property from functional-looking notation, and the argument that a distinction which fails to survive nesting and composition is not a useful classification of languages.
