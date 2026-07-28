@@ -6,6 +6,7 @@ description: Introduces abstract data types as a language-level construct — a 
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1974
 url: https://dl.acm.org/doi/pdf/10.1145/800233.807045
+extraction: complete
 access: public
 host: institutional
 tags: [work]

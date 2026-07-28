@@ -6,6 +6,7 @@ description: The full language definition for CLU — syntax, semantics, and the
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1979
 url: https://dspace.mit.edu/handle/1721.1/149509
+extraction: complete
 access: public
 host: institutional
 tags: [work]

@@ -6,6 +6,7 @@ description: An OOPSLA keynote arguing that data abstraction, not inheritance, i
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1987
 url: https://www.cs.tufts.edu/~nr/cs257/archive/barbara-liskov/data-abstraction-and-hierarchy.pdf
+extraction: complete
 survey_pages: 18
 survey_text_layer: full
 survey_fetch_mb: 1

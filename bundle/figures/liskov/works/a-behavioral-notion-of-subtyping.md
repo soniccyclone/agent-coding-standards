@@ -6,6 +6,7 @@ description: Formalizes what it should mean, semantically rather than just synta
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1994
 url: https://www.cs.cmu.edu/~wing/publications/LiskovWing94.pdf
+extraction: complete
 survey_pages: 31
 survey_text_layer: full
 survey_fetch_mb: 1

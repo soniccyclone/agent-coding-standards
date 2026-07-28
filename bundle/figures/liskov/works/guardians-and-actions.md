@@ -6,6 +6,7 @@ description: Introduces Argus, a language built around two constructs for distri
 subdomains: [distributed-systems-and-concurrency, programming-languages-and-semantics]
 year: 1983
 url: https://courses.mpi-sws.org/ds-ws18/papers/liskov-argus.pdf
+extraction: complete
 survey_pages: 24
 survey_text_layer: full
 survey_fetch_mb: 1

@@ -6,6 +6,7 @@ description: Liskov's own retrospective on data abstraction's path from research
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 2010
 url: https://www.youtube.com/watch?v=qAKrMdUycb8
+extraction: complete
 access: public
 host: institutional
 tags: [work]
