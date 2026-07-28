@@ -6,6 +6,7 @@ description: Proposes Quilt, a query language that merges the document-transform
 subdomains: [databases-and-data-management, programming-languages-and-semantics]
 year: 2000
 url: https://xml.coverpages.org/quilt_euro.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -19,4 +20,6 @@ tags: [work]
 **Host:** third-party-rehost — XML Cover Pages preservation archive, not the authors' own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [What a language can ask is capped by what its intermediate values can hold](../lessons/the-intermediate-value-shape-sets-the-ceiling-on-questions.md)
+- [Let the cases that defeat existing notations choose your features](../lessons/let-the-failed-cases-of-rival-notations-pick-your-features.md)
+- [Distinguish binding forms by granularity and the clause zoo collapses](../lessons/binding-granularity-decides-where-a-predicate-can-live.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Make the system describe and constrain itself in the language it exposes"
+figure: chamberlin
+works: [sequel-2-a-unified-approach, a-history-and-evaluation-of-system-r]
+axes: [primitive-count, cognitive-load]
+subdomains: [databases-and-data-management, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Make the system describe and constrain itself in the language it exposes
+
+**Lesson:** A system's knowledge about itself — what objects exist, what rules constrain them, who may touch them, what depends on what — is data, and the decision about where to keep it is consequential. Keeping it in a private internal format means every question about the system needs a bespoke inspection tool, and each tool drifts as the internals move. Keeping it in the system's own primary structure, queryable through the system's own user-facing language, means introspection costs nothing to build and cannot fall out of date, because the description is maintained by the same machinery that maintains everything else. This design decision was made early in the lineage described here — the catalog of what the database contains was stored as ordinary tables inside the database — and the field evaluation reports that users especially liked it, for the plain reason that they already knew how to ask questions of tables.
+
+The self-description pays a second time in a place nobody designs for. The component choosing execution strategies needs statistics about sizes and value distributions, and those statistics live in the same catalog that users read; no separate metadata pipeline is needed to feed the planner. It pays a third time in dependency management: the record of which compiled artifacts relied on which database objects is itself kept as a table, which is what makes it mechanical to mark artifacts stale when a structure they assumed disappears, and to regenerate them silently on next use. A private data structure would have supported the same logic, but it would not have been inspectable, auditable, or queryable by the people debugging it.
+
+The same reflexive move extends past description to constraint. Integrity rules are written as predicates in the very language used to ask questions, so learning to state a query is learning to state an invariant; access grants and their revocation are ordinary statements rather than an administrative side channel; and rules that fire on change are bodies of ordinary statements. The consequence is a single vocabulary that spans asking, defining, restricting, and authorizing — and the field reports pick that uniformity out as a benefit that reached past individuals into organizations, because administrators and application programmers were finally arguing in the same notation. A programmer who takes this seriously refuses to invent a second language for configuration, policy, or schema when the system's primary language can carry it, and stores the system's self-knowledge in the same store, in the same shape, as the user's data.
+
+**Source:** [A History and Evaluation of System R](../works/a-history-and-evaluation-of-system-r.md) — the early-prototype section's decision to hold the catalog as regular relations and the closing observation list, where users' approval of a catalog queryable with the ordinary language is recorded; also the compilation discussion's use of a relation to hold artifact dependencies for invalidation and regeneration. Also [SEQUEL 2: A Unified Approach](../works/sequel-2-a-unified-approach.md) (the data-control section, where integrity assertions are predicates of the query language, privileges are granted and revoked by ordinary statements, and change-triggered actions are bodies of ordinary statements).
