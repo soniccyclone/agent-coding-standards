@@ -265,7 +265,25 @@ is the honest answer. They are enumerated with per-work detail in
 suspecting most (System R at 41 pages, Church's *An Unsolvable Problem* at 20
 pages, SEQUEL at 16). Resolving them costs roughly two agents.
 
-**How to recover the boundary later.** The stamping commit is the dividing line:
-`git log --diff-filter=M -S'extraction: complete' -- bundle/figures` shows the
-bulk stamp as a single 241-file commit, distinct from the per-work stamps agents
-write. Anything stamped in that commit is Tier 2.
+**How to recover the boundary later — for whoever picks this up cold.** The
+bulk stamp is commit **`443703b`** ("Bulk-stamp extraction: complete on 241
+grandfathered works"). That hash is the dividing line, and it is the reliable
+handle; prefer it over any search.
+
+    # list every Tier 2 work (unverified stamp) - 241 files
+    git show --stat --name-only 443703b -- bundle/figures | grep '/works/'
+
+    # is one specific work Tier 1 or Tier 2?
+    git log --oneline 443703b -1 -- bundle/figures/<figure>/works/<work>.md
+    # ...output means it was bulk-stamped (Tier 2); empty means an agent
+    #    stamped it after reading the source (Tier 1)
+
+A caution on the obvious search: `git log -S'extraction: complete' -- bundle/figures`
+returned exactly one commit on 2026-07-28 because no agent had stamped anything
+yet, but it will return steadily more as Tier 1 works land, and the bulk commit
+is then distinguishable only by its size (241 files) and message. Use the hash.
+
+Tier 2 also includes Liskov's 7 works and the 38 works in knuth, landin,
+lampson, mccarthy and lynch if they were stamped in a later cleanup commit
+rather than by a reading agent — check those against the hash test above rather
+than assuming.
