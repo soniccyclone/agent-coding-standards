@@ -6,6 +6,7 @@ description: Pike's account of why Go looks the way it does, framing the languag
 subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
 year: 2012
 url: https://go.dev/talks/2012/splash.article
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -17,4 +18,8 @@ tags: [work]
 **Source:** https://go.dev/talks/2012/splash.article — live page, hosted on go.dev, the official Go programming language project site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Design against the costs you measured, not the feature checklist](../lessons/design-against-the-costs-you-measured-not-the-feature-checklist.md)
+- [An annoyance now beats a decision deferred forever](../lessons/an-annoyance-now-beats-a-decision-deferred-forever.md)
+- [Let structure be discovered rather than committed up front](../lessons/let-structure-be-discovered-rather-than-committed-up-front.md)
+- [Mechanical analyzability is what buys the right to change your mind](../lessons/mechanical-analyzability-is-what-buys-the-right-to-change-your-mind.md)
+- [Weigh a reuse's dependency price against copying](../lessons/weigh-a-reuses-dependency-price-against-copying.md)
