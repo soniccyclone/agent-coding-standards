@@ -6,6 +6,7 @@ description: The original technical definition of C as implemented for the PDP-1
 subdomains: [programming-languages-and-semantics]
 year: 1975
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cman.pdf
+extraction: complete
 survey_pages: 31
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,6 @@ tags: [work]
 **Source:** https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cman.pdf — self-archived PDF on Ritchie's personal Bell Labs page, migrated to Nokia's Bell Labs site. Verified live, content confirmed against the manual's own title, byline, and introduction.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Define conveniences as exact rewrites into a small core, so growing the syntax does not grow the semantics](../lessons/define-conveniences-as-rewrites-into-a-small-core.md)
+- [Mark where the specification stops and the machine begins, and classify each divergence by what should happen to it](../lessons/mark-where-the-spec-stops-and-the-machine-begins.md)
+- [What is permitted and what is advisable are separate claims, and a definition should carry both](../lessons/what-is-permitted-and-what-is-advisable-are-separate-claims.md)

@@ -6,6 +6,7 @@ description: Ritchie's own history of C, tracing its lineage from the typeless B
 subdomains: [programming-languages-and-semantics, operating-systems-and-systems-programming]
 year: 1993
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]
@@ -17,4 +18,7 @@ tags: [work]
 **Source:** https://www.nokia.com/bell-labs/about/dennis-m-ritchie/chist.html — self-archived on Ritchie's personal Bell Labs page ("This electronic reprint made available by the author as a courtesy"), migrated to Nokia's Bell Labs site. Verified live, content confirmed against the page's own title, byline, and abstract.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A live body of existing code is the dominant design constraint, and the concessions it extracts are permanent](../lessons/a-live-corpus-is-the-dominant-design-constraint.md)
+- [A feature that will not fit is evidence against your model, not a case for a special rule](../lessons/a-feature-that-will-not-fit-indicts-the-model.md)
+- [Derive new notation from how the thing is used, and accept that the analogy inherits its flaws](../lessons/derive-new-notation-from-how-things-are-used.md)
+- [Unifying features into one mechanism buys simplicity by pinning semantics you may later need to loosen](../lessons/unification-buys-simplicity-and-forecloses-reinterpretation.md)

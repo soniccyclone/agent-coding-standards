@@ -6,6 +6,7 @@ description: A candid self-assessment of Unix roughly seven years after it becam
 subdomains: [operating-systems-and-systems-programming]
 year: 1978
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/retro.pdf
+extraction: complete
 survey_pages: 13
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://www.nokia.com/bell-labs/about/dennis-m-ritchie/retro.pdf — self-archived PDF on Ritchie's personal Bell Labs page, migrated to Nokia's Bell Labs site. Verified live, content confirmed against the paper's own title and abstract.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [One canonical form per kind of data is what makes independent programs combinable](../lessons/one-canonical-form-per-kind-of-data.md)
+- [Promote something to a primitive only when its absence has a demonstrated cost, not a theoretical one](../lessons/promote-to-primitive-only-on-demonstrated-cost.md)
+- [A component's output is an interface, so verbosity and interrogation are design errors rather than taste](../lessons/design-output-for-the-next-program-not-the-reader.md)
+- [Know in advance which measurements could change your decision, and say so when none of them could](../lessons/know-which-measurements-can-change-a-decision.md)

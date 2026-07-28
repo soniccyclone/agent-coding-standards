@@ -6,6 +6,7 @@ description: The paper that introduced Unix to a wide technical audience, writte
 subdomains: [operating-systems-and-systems-programming]
 year: 1974
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cacm.pdf
+extraction: complete
 survey_pages: 15
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cacm.pdf — self-archived PDF on Ritchie's personal Bell Labs page, migrated to Nokia's Bell Labs site after the bell-labs.com/usr/dmr/www address was retired (original address now returns HTTP 410). Verified live, content confirmed against the original abstract and introduction.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Leave the bottom layer unstructured so every layer above can choose its own structure](../lessons/leave-the-bottom-layer-unstructured.md)
+- [Put the variability in the joints between components, not inside the components](../lessons/put-the-variability-in-the-joints.md)
+- [Pick the representation whose global invariant is cheap to check, not the one that reads best](../lessons/pick-representations-whose-invariants-are-cheap-to-check.md)
+- [Decline the guarantees your actual environment never asks for, and be explicit about which ones you kept](../lessons/decline-the-guarantees-your-environment-never-needed.md)

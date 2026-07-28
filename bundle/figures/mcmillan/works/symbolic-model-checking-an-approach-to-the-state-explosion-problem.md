@@ -8,7 +8,7 @@ year: 1992
 url: https://mcmil.net/pubs/thesis.pdf
 extraction: complete
 survey_pages: 214
-survey_text_layer: full
+survey_text_layer: none
 survey_fetch_mb: 1
 access: public
 host: self-archived
@@ -19,6 +19,13 @@ tags: [work]
 
 **Venue/year:** PhD thesis, Carnegie Mellon University (CMU-CS-92-131), May 1992.
 **Source:** https://mcmil.net/pubs/thesis.pdf — self-archived PDF on McMillan's own site, live and directly downloadable (HTTP 200, title page confirmed: "Symbolic Model Checking: An approach to the state explosion problem," Kenneth L. McMillan, May 1992, CMU-CS-92-131).
+
+**OCR-batch note (2026-07-28):** this PDF's own text layer is unusable (Type-3
+bitmap fonts, `pdftotext` yields a substitution cipher), but the work has
+ALREADY been read in full and does not need OCR. Extraction used a
+host-provided text derivative instead: archive.org item `DTIC_ADA250924` exposes
+`DTIC_ADA250924_djvu.txt` (403KB, ~58.8k words, all 214 pages; DTIC ADA250924 =
+CMU-CS-92-131, same work). Do not rescan this in any OCR batch.
 
 ## Lessons
 - [Change the representation underneath your algorithms, not the algorithms](../lessons/change-the-representation-under-the-algorithms-not-the-algorithms.md)
