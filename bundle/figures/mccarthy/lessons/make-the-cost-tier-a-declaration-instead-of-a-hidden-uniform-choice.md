@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "When an abstraction cannot be uniformly cheap, expose its cost tiers as declarations rather than picking one price and hiding it"
+figure: mccarthy
+works: [lisp-1.5-programmers-manual]
+axes: [hardware-affinity, cognitive-load, verifiability]
+subdomains: [programming-languages-and-semantics, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# When an abstraction cannot be uniformly cheap, expose its cost tiers as declarations rather than picking one price and hiding it
+
+**Lesson:** Variable reference looks like one concept, and a language designer's instinct is to implement it once. LISP 1.5's compiler cannot. A variable used only inside the function that binds it can live in a slot on the recursion stack, which costs nothing and is invisible to everyone else — which is exactly why it cannot serve as a name another function reaches for. Making it reachable requires a fixed cell whose old contents are saved and restored around each binding, which is still nearly free but only connects compiled code to compiled code. Making it reachable from interpreted code as well requires carrying the binding on a runtime association list that must be searched, which works everywhere and is slow. Three mechanisms, three different reachability guarantees, three different prices, and no way to collapse them without giving something up.
+
+The manual's response is to make the choice the programmer's, by declaration, before compilation, and to state what each tier buys and what it costs in the same breath. That is a real position, not a punt. The alternative — pick the most general mechanism and use it for everything — would have made every variable reference in every compiled function pay for a capability most references never use, and the manual is explicit that the general tier slows down any function that touches it. Picking the cheapest for everything would have silently broken the programs that need cross-function names. When the tiers genuinely differ in what they can do, a uniform choice is not an abstraction; it is a decision made on the programmer's behalf, wrongly, in one direction or the other.
+
+The manual also documents what happens when the tier is left undeclared, and this is the part worth carrying furthest. A function with an undeclared free variable behaves one way interpreted and another way compiled: the interpreter raises a diagnostic about the unbound name, while the compiled version may simply proceed with an empty value. Two executions of the same source text disagree, and neither is obviously wrong, because the source never said which mechanism it wanted. That is the precise cost of an unexposed tier — not slowness, but a program whose meaning depends on which implementation ran it. Once the declaration exists and is required, the ambiguity is gone, and the reason correctness now depends on remembering to declare is that correctness genuinely did depend on it all along.
+
+A programmer who works this way treats "several implementations with different costs and different guarantees" as information belonging in the program rather than in the compiler's private judgement. They look for the places where an abstraction has quietly picked a tier — a default lock granularity, a default consistency level, a default allocation strategy — and ask whether the choice is uniform because it should be or because nobody wanted to expose it. And they take divergence between two implementations of the same source as evidence of a missing declaration rather than a bug in one of the implementations.
+
+**Source:** [LISP 1.5 Programmer's Manual](../works/lisp-1.5-programmers-manual.md) — the free-variable discussion in the compiler appendix, which sets out the three storage classes with their reachability and speed consequences, requires the non-default ones to be declared before compilation, and records that an undeclared free variable produces an unbound-variable diagnostic under the interpreter but may quietly evaluate to the empty value in compiled code.

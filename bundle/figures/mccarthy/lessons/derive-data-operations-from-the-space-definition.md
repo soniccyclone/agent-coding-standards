@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Define your data spaces with an algebra of constructions, and the primitive operations arrive as consequences instead of choices"
+figure: mccarthy
+works: [a-basis-for-a-mathematical-theory-of-computation]
+axes: [primitive-count, expressiveness, verifiability]
+subdomains: [programming-languages-and-semantics, foundations-of-computation]
+tags: [lesson]
+---
+# Define your data spaces with an algebra of constructions, and the primitive operations arrive as consequences instead of choices
+
+**Lesson:** Languages of the era let you write recursive definitions over functions while leaving the *data* fixed: integers, arrays, whatever the machine happened to offer. The paper identifies this asymmetry as the main weakness of the mainstream language of its day and repairs it by giving data spaces the same treatment functions already had — a small set of construction operators, and equations over them that may refer to the space being defined. Pairing, disjoint alternation, and function space are enough to start; write an equation in which a space appears on both sides and you have defined the sequences over an alphabet, or the nested-pair expressions that a whole language can be built from, or the natural numbers, each as a solution rather than as a postulate.
+
+What makes this more than tidy bookkeeping is that the operators come with their own operations attached, independent of what the elements are. A product carries its two projections and its constructor; an alternation carries its two injections, its two membership tests, and its two partial extractors. These are determined by the construction, not by the contents, so once you have written the defining equation of a data space you have not yet chosen its interface — you have already *derived* it. The paper makes the point unforgettable by taking the five primitives of a Lisp-like language, which the earlier work simply introduced as given, and exhibiting each of them as a composition of the canonical maps belonging to the equation that defines the expression space. Test-for-atom is the alternation's discriminator; the two structural accessors are the extractor followed by a projection; construction is the pair constructor followed by an injection. Nothing was invented; the equation had already said it.
+
+The algebra also behaves like an algebra, which is where the real leverage sits. Products distribute over alternations, iterated products collapse into exponents, and a recursive equation can be unrolled term by term into an infinite sum — the same answer you get by solving it formally as if it were arithmetic and expanding the result as a series. When your type definitions obey laws, two data layouts that look unrelated can be shown to be canonically the same thing, and the isomorphism is exhibited rather than asserted. That is a very different situation from a language in which each new record or variant is an opaque act of declaration whose relationship to the others exists only in the author's head.
+
+A programmer who takes this on board treats the shape of the data as the first design artifact and the operations as its consequence, which is the opposite of the usual order. They resist adding a special-purpose accessor when the space's construction does not justify one, since an operation with no counterpart in the definition is an operation with no law governing it. They expect equivalences between representations to be provable. And when a data design produces an awkward interface, they read that as a defect in the space's definition rather than in the interface, and go back one level.
+
+**Source:** [A Basis for a Mathematical Theory of Computation](../works/a-basis-for-a-mathematical-theory-of-computation.md) — the section on recursive definitions of sets: the construction operators and the canonical mappings each one supplies, the list of isomorphism laws relating them, the recursive equations yielding sequences and nested-pair expressions, and the reconstruction of the Lisp primitives and of successor and predecessor purely from the canonical maps of their defining equations.

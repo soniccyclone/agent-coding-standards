@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Specify a language by the operations that take its programs apart, not by the notation people write them in"
+figure: mccarthy
+works: [towards-a-mathematical-science-of-computation]
+axes: [expressiveness, cognitive-load, verifiability]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Specify a language by the operations that take its programs apart, not by the notation people write them in
+
+**Lesson:** The standard way to define a language's structure is to say how its legal texts are assembled from smaller texts — a grammar, read as a recipe for construction. That description is oriented the wrong way for almost everything you will actually do with it. A compiler, an interpreter, a semantics, a rewriter, a static analyzer: every one of these takes a program it did not build and needs to ask what kind of thing this is and to hand back its parts. So describe the language by exactly that: a set of classification predicates that decide which sort of construct you are holding, and a set of selectors that extract each constituent, with the requirement that repeated selection terminates. Nothing about how a sum is punctuated appears in such a description, and that omission is the entire point — the same structure is served whether the surface form is infix, prefix, parenthesized, or an arithmetic encoding into numbers, because everything downstream only ever consults the predicates and selectors.
+
+The payoff is that meaning can now be written against the interface instead of against the text. A valuation function that maps a program and a state to a result is definable purely by case analysis on the predicates and recursion through the selectors, so the semantics of the language is fixed before any concrete notation is chosen, and choosing a different notation cannot change it. This is also what makes semantics a small object rather than a large one: everything ambiguous, redundant, or merely conventional about the written form has already been stripped out before the definition begins.
+
+Supply both directions and you get laws you can actually check. Alongside the tests and selectors, provide constructors that assemble a program from its parts, and then demand the obvious round-trip relationships: a constructed sum reports itself as a sum, its selectors return the parts it was built from, and any sum can be rebuilt from its own parts unchanged. A language whose two halves fit together this cleanly is well-behaved by construction, and a language where the relationships only hold up to some equivalence — because the notation permits redundant decoration — is telling you precisely where its representation is lossy. Describing a language only synthetically, by contrast, leaves the analysis direction to be recovered later by whoever writes a parser, and recovering it can be arbitrarily hard or outright impossible.
+
+The general habit is to define any structured artifact by the interface its consumers need — recognizers and accessors — and to treat the serialized form as an implementation of that interface rather than as the thing itself. A programmer working this way writes tooling against the abstract structure, so a change of surface syntax touches one layer; keeps the constructor and destructor sides in a stated algebraic relationship rather than in an implicit one; and reads any violation of a round-trip law as a real defect in the representation rather than as an inconvenience to be worked around.
+
+**Source:** [Towards a Mathematical Science of Computation](../works/towards-a-mathematical-science-of-computation.md) — the section on abstract syntax, which contrasts a construction-oriented grammar with an analysis-oriented description built from classification predicates and part-extracting functions, states the convergence requirement on repeated analysis, adds the constructor side and the regularity relations between the two, and observes that a language's notation is then irrelevant. The following section on semantics defines a valuation entirely through that interface.

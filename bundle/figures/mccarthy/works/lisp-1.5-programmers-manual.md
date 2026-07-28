@@ -24,3 +24,6 @@ tags: [work]
 - [Keep one calling discipline for everything, and carry the deviations as named classifications rather than as special syntax](../lessons/keep-one-calling-discipline-and-carry-the-exceptions-as-names.md)
 - [Publish a ladder of models at increasing fidelity, and state which one is allowed to answer which question](../lessons/publish-a-fidelity-ladder-and-say-which-model-is-authoritative.md)
 - [When an abstraction cannot be uniformly cheap, expose its cost tiers as declarations rather than picking one price and hiding it](../lessons/make-the-cost-tier-a-declaration-instead-of-a-hidden-uniform-choice.md)
+- [Define liveness as reachability from a declared set of roots, and the correctness burden collapses to whether you named every root](../lessons/define-liveness-as-reachability-from-a-declared-root-set.md)
+- [Introduce a destructive operation as the twin of a pure one, specified by the equation it still satisfies and the equation it breaks](../lessons/specify-a-destructive-operation-by-the-equation-it-keeps-and-the-one-it-breaks.md)
+- [In a self-hosted system the fast artifact is a cache, so name the high-level definitions as the only place a change may enter](../lessons/the-fast-artifact-is-a-cache-changes-enter-through-the-definitions.md)

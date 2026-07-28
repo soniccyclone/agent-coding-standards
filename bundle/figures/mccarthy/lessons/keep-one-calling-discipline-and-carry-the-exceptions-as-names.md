@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Keep one calling discipline for everything, and carry the deviations as named classifications rather than as special syntax"
+figure: mccarthy
+works: [lisp-1.5-programmers-manual]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Keep one calling discipline for everything, and carry the deviations as named classifications rather than as special syntax
+
+**Lesson:** A working system accumulates things that are not functions. Printing consumes an argument and changes the world. Defining a name modifies the machine's own state. Some constructs need their arguments unevaluated, and some need an unbounded number of them. The obvious accommodation is to give each of these its own syntactic form — a statement keyword, a command, a directive — and languages have done this for decades. LISP 1.5 makes the opposite choice, and the choice is instructive. Every addition to the system is bent to fit the existing call-and-compose form even where it is not a function. Output is expressed as a one-argument application whose result is its own argument, so it nests inside other expressions and gets evaluated by the ordinary inner-first rule. The rule that every such construct must yield *some* value, however uninteresting, is stated as a characteristic of the system rather than apologised for.
+
+The deviations are not hidden by this; they are relocated. Instead of living in the syntax, where they would fragment composition, they live as named categories the reader can look up: a term for the things that are called like functions but exist for their effect, and a distinct term for the things that see their arguments unevaluated or take indefinitely many. The same relocation happens one level down, on the property lists. What a symbol *is* — an expression-defined function, a machine subroutine, an argument-quoting form of either kind, a constant, a variable with a particular storage class — is a named tag attached to a single uniform carrier, and the evaluator's behaviour is a sequence of lookups asking which tags are present. Adding a new kind of thing means adding a tag, not adding a syntactic case.
+
+Two things follow, and they pull in the same direction. Composition survives: because the impure and the special still present the same shape, a program can be built by nesting without the author first classifying each piece, and the machinery that walks programs needs to handle one shape rather than several. And the deviations stay visible: a named category is searchable, enumerable, and can be reasoned about as a set, whereas a deviation encoded as different-looking syntax is only visible to someone who already knows the syntax means something. The uniformity buys composability, and the naming buys the ability to see what you gave up.
+
+A programmer who takes this seriously distinguishes two questions that feel like one. Should this thing obey the same interface as everything else? Usually yes, and the cost of forcing it — inventing a return value nobody wants — is smaller than it looks. Should this thing be marked as different from everything else? Also yes, but by a name in a classification the whole system shares, not by a shape that breaks composition. The failure mode they watch for is the opposite pairing: constructs that look different for no semantic reason, and constructs that look identical while quietly violating the contract with nothing anywhere recording that they do.
+
+**Source:** [LISP 1.5 Programmer's Manual](../works/lisp-1.5-programmers-manual.md) — the opening of the extensions section, which states the policy that additions conform to the functional call syntax even when they are not functions, uses output as the worked example, and names the effect-bearing category; the neighbouring treatment of argument-quoting and variadic forms as a second named category; and the property-list section, where each role a symbol can play is an independently attachable named indicator that the evaluator dispatches on.
