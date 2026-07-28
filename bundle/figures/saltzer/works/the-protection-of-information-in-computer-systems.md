@@ -17,5 +17,14 @@ tags: [work]
 **Venue/year:** Proceedings of the IEEE 63, 9 (September 1975), invited paper.
 **Source:** https://web.mit.edu/Saltzer/www/publications/protection/index.html — self-archived on Saltzer's own MIT publications page; page fetched and verified directly (title, authors, and tutorial structure confirmed).
 
+**Navigation note (2026-07-28):** the URL is the entry page of a *hypertext*
+edition, not the whole paper — `index.html` carries the abstract and glossary and
+about 4.9k characters of text, while the body lives in sibling pages linked from
+it: `Basic.html` (Section I, design principles), `Descriptors.html` (Section II,
+protection architectures), `State.html` (Section III, state of the art),
+`References.html`, `notes.html`, and the `figN.html` figures. Follow the links;
+reading only `index.html` would miss the paper. This is the shape of the source,
+not a defect.
+
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
