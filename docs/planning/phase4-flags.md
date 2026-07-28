@@ -206,3 +206,59 @@ real time here.
   thin for Cardelli, Corbató, and Backus; Clarke scores verifiability on all 14
   of his lessons. Phase 6 should decide whether per-figure axis balance is even
   a goal before treating this as a defect.
+
+## G. Deferred: spot-check the 11 single-lesson works (grandfathered)
+
+Open task, no action taken. Recorded here so it stays actionable if Nathan
+decides he wants it.
+
+**Background.** `extraction: complete` (schema amendment 2026-07-28) is the
+per-work attestation that a source was read in full and has no lessons left in
+it. It is a *forward* guarantee: the 243 works finished before that date carry
+no field, and their absence must not be read as incomplete. The question the
+field exists to answer — was this source exhausted, or did an agent write one
+lesson and die with three left in it — cannot be answered retroactively from the
+files, because a single resolving link is consistent with both.
+
+**Why the exposure is small.** Of the 243 grandfathered works, 176 carry 4+
+lessons and 56 carry 2-3. Only the 11 below carry exactly one, so they are the
+entire retroactive risk surface. Several are almost certainly correct at one
+lesson — Dijkstra's goto piece is a two-page letter to the editor, and Lamport's
+one-idea papers genuinely yield one thinking-lesson each.
+
+**Cost if wanted:** roughly two agents' worth. A finisher-style pass restricted
+to these works, instructed to re-read each source and either add the lessons it
+finds or stamp `extraction: complete` to confirm one was right.
+
+| figure | work | pages | its single lesson |
+|---|---|---|---|
+| brewer | `cap-twelve-years-later` | HTML | manage-the-partition-as-an-event |
+| chamberlin | `sequel-a-structured-english-query-language` | 16 | measure-a-notation-dont-defend-it |
+| chamberlin | `system-r-relational-approach-to-database-management` | 41 | give-tuning-its-own-channel-that-carries-no-meaning |
+| church | `an-unsolvable-problem-of-elementary-number-theory` | 20 | a-function-is-a-rule-not-a-table |
+| dijkstra | `go-to-statement-considered-harmful` | HTML | shorten-the-gap-between-text-and-computation |
+| dijkstra | `self-stabilizing-systems-in-spite-of-distributed-control` | HTML | make-the-legal-state-an-attractor |
+| lamport | `a-new-solution-of-dijkstras-concurrent-programming-problem` | PDF | assume-the-least-from-your-primitives |
+| lamport | `distributed-snapshots-determining-global-states-of-a-distributed-system` | PDF | a-consistent-snapshot-need-not-have-happened |
+| lamport | `how-to-make-a-multiprocessor-computer-that-correctly-executes-multiprocess-programs` | PDF | local-correctness-does-not-compose |
+| lamport | `the-byzantine-generals-problem` | PDF | make-failure-model-explicit |
+| liskov | `abstraction-mechanisms-in-clu` | 1 | traversal-order-is-an-abstraction-someone-should-own |
+
+**Highest-suspicion three**, if a partial pass is preferred over all 11:
+`chamberlin/system-r-relational-approach-to-database-management` (41 pages
+yielding one lesson), `church/an-unsolvable-problem-of-elementary-number-theory`
+(20 pages, and Church's most consequential paper), and
+`chamberlin/sequel-a-structured-english-query-language` (16 pages). The Lamport
+and Dijkstra entries are the likeliest true single-lesson works.
+
+**Also unattested: the six figures finished by the 2026-07-28 finisher run**
+(knuth, landin, lampson, mccarthy, lynch, liskov — 38 works). That run was
+launched minutes before `extraction: complete` was added to the prompt, so its
+agents were never told to stamp the field. Their works are wired and their
+lessons are real; they simply carry no attestation, same as the grandfathered
+243. Attesting them is cheap if wanted, since the sources were read that day —
+a pass that re-reads only these 38 and stamps or extends them.
+
+**Regenerate this list** any time with the single-lesson query in
+`scratchpad/integrity.py`'s neighbourhood — count resolving lesson links per
+work, filter to exactly one, exclude OCR-HOLD and no-new-lesson markers.
