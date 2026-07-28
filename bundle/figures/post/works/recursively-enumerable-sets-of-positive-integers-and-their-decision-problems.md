@@ -6,6 +6,7 @@ description: A wide-ranging survey, written for a general mathematical audience,
 subdomains: [foundations-of-computation]
 year: 1944
 url: https://www.ams.org/journals/bull/1944-50-05/S0002-9904-1944-08111-1/S0002-9904-1944-08111-1.pdf
+extraction: complete
 survey_pages: 33
 survey_text_layer: full
 survey_fetch_mb: 3
@@ -21,4 +22,7 @@ tags: [work]
 **Host:** institutional — the American Mathematical Society's own journal archive.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Do the discovering in the loose register; rigor is translation, not invention](../lessons/do-the-discovery-loosely-then-translate-into-rigor.md)
+- [When the comparison you need is out of reach, grade it into weaker ones you can actually make](../lessons/grade-the-comparison-you-cannot-make-directly.md)
+- [If the gap in a rule set is computable from the rule set, plan for a permanent operator, not a final version](../lessons/a-ruleset-whose-gap-is-computable-needs-a-permanent-operator.md)
+- [Publish the question your framework cannot answer, along with what breaks either way](../lessons/leave-the-central-question-open-and-say-what-turns-on-it.md)

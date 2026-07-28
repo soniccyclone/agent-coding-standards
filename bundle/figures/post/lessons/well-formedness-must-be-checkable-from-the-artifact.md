@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A well-formedness condition must be checkable from the artifact, not from its behavior"
+figure: post
+works: [recursive-unsolvability-of-a-problem-of-thue]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [formal-methods-and-verification, foundations-of-computation, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A well-formedness condition must be checkable from the artifact, not from its behavior
+
+The appendix of this paper contains one of the sharpest pieces of design criticism in early computing, and its target is a convention that looks entirely innocent. Turing had adopted a discipline for laying out the tape — reserving alternate cells for permanent data and the rest for scratch, never overwriting the permanent ones, never moving off the left end. As a working practice it is excellent. The trouble Post identifies is that the discipline is stated as a condition on how a machine *behaves while running*, and it silently became part of what "machine" means. The consequence is not aesthetic. Whether an arbitrary description denotes a machine obeying the discipline turns out not to be decidable, so every theorem quantified over such machines carries an undecidable side condition, and cannot be plugged into a later reduction: you would get an answer, and still have no effective way to know whether the machine you asked about qualified.
+
+Post's repair is the instructive part. He replaces the behavioral condition with one imposed directly on the instruction table — a rule about which instructions may appear at all, checkable by inspection, with no reference to any execution. He notes explicitly that the difference between the two conditions is precisely that one concerns the machine's history in action while the other concerns only the text defining it, and that this is what restores usability. The class of well-formed artifacts becomes recognizable, the theorem becomes composable, and the useful discipline survives — as a practice observed when building particular machines, not as a clause in the definition of the general object.
+
+The same failure is everywhere in ordinary software, usually phrased as a validity condition nobody can evaluate. A configuration is valid if it never causes the scheduler to thrash. A plugin is well-behaved if it never holds the lock too long. A query is acceptable if it does not blow the memory budget. Each is a real requirement and each is stated over executions, which means no admission check can enforce it, no static analysis can confirm it, and every guarantee built on top inherits a condition that can only be discovered violated in production. The fix is the one Post makes: find a condition on the artifact — the config text, the plugin's declared capabilities, the query's shape — that is decidable by inspection and strong enough to imply what you wanted. It will admit fewer things than the behavioral version. That is the price, and it buys a property you can actually check at the boundary.
+
+Post presses a related point about the same development: he judges that the original preoccupation with computing real numbers distorted the whole treatment of machines, and suggests rebuilding the general notion without it. The composite step that always prints and moves together draws the same objection, because it manufactures spurious printing events that later definitions then have to be written around. Both are the general shape of the error — the needs of the motivating special case, and the conveniences of writing programs in it, leaking downward into the definition of the general object. Keep the convenience at the level where it is convenient.
+
+**Source:** [Recursive Unsolvability of a Problem of Thue](../works/recursive-unsolvability-of-a-problem-of-thue.md) — the appendix, where Post distinguishes a machine from a convention-machine, shows the convention's class is not recursively enumerable and therefore unusable in his reduction, and substitutes a convention stated on the defining instructions instead.
