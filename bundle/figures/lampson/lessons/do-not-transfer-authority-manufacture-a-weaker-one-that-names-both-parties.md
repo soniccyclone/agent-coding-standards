@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When authority has to cross a boundary, do not hand it over — mint a weaker one that records both parties and requires both to opt in"
+figure: lampson
+works: [authentication-in-distributed-systems-theory-and-practice]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# When authority has to cross a boundary, do not hand it over — mint a weaker one that records both parties and requires both to opt in
+
+**Lesson:** The default way one component acts for another is impersonation: the caller's credentials are passed along, and downstream the request is indistinguishable from one the caller made directly. This is convenient and it throws away the two facts that matter most. It loses the intermediary, so nothing downstream can decline to honor a request that arrived through a component it does not trust, and no audit record can show the path. And it is all-or-nothing, so the only way to let a service do one thing on your behalf is to let it do everything you could do, forever.
+
+The better construction is to treat "B acting for A" as a distinct, first-class thing that is strictly weaker than either party alone, and to require an explicit act from each side to bring it into existence: A must say it is willing, and B must say it accepts. Both signatures are necessary because the composite draws on both parties' standing — B is not merely relaying A, it is adding its own weight, and a component should never acquire extra authority as a side effect of receiving a message. This is why the acceptance step cannot be made automatic even though a plain, unqualified handoff safely can be: the two cases differ in whether the recipient's own authority is being spent. Meanwhile the same style of composition lets a party voluntarily shrink itself, adopting a restriction that any holder is always free to take on, since narrowing your own reach never needs anyone's permission.
+
+Once these composites exist, the interesting consequence is that the *policy* language gets richer without the mechanism growing. A resource can now be granted to a specific program running on a specific class of machine on behalf of a specific person, and each of those clauses is checked independently, so a compromise of one layer does not silently satisfy the others. The same construct explains a chain of hops: nesting the composites preserves the order in which authority was passed along, which is exactly the information an operator needs after an incident. What a builder does differently is to stop threading a caller's credentials through call stacks and stop equating "service acts for user" with "service is user." Instead they name the composite, make its creation a two-sided act with a short life, and write policies against the composite rather than against the innermost party — and they accept the extra plumbing, because the alternative is a system where every intermediary is permanently as powerful as its most privileged client.
+
+**Source:** [Authentication in Distributed Systems: Theory and Practice](../works/authentication-in-distributed-systems-theory-and-practice.md) — the delegation section, where the acting-for composite is defined to require assertions from both the delegator and the acceptor, and the neighboring treatment of roles as self-imposed weakening; the interprocess-communication section contrasts this with an unqualified handoff, which may be claimed automatically precisely because it adds no authority of the recipient's own.

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An indirection is only real if absence is representable and detectable; without a fault on 'not here yet' you must materialize everything in advance, and that eagerness spreads into layers with no business knowing"
+figure: lampson
+works: [reflections-on-an-operating-system-design]
+axes: [hardware-affinity, expressiveness, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# An indirection is only real if absence is representable and detectable; without a fault on "not here yet" you must materialize everything in advance, and that eagerness spreads into layers with no business knowing
+
+**Lesson:** Every scheme for placing a thing somewhere other than where it appears to be — a slower store, another machine, a lazily built structure — rests on one primitive that is easy to overlook because when you have it, it is invisible: the ability to notice, at the moment of use, that the thing is not actually there, and to hand control to something that can go get it. Take that primitive away and the illusion does not degrade gracefully, it inverts. Since you cannot discover absence on demand, you must guarantee presence in advance, which means someone has to compute the full set of things that could be touched and pin all of them before execution begins.
+
+That inversion is where the damage compounds. The pinning obligation cannot stay in one place: the component that decides what to keep resident and the component that enforces presence end up maintaining parallel copies of the same knowledge, because neither can see the other's events, and duplicated bookkeeping across a protection boundary is precisely the kind of state that drifts. Reclaiming resources becomes coarse to the point of absurdity, since the only reliable way to release something pinned by a running context may be to destroy the context. And the eager scheme's costs leak sideways into unrelated design decisions — a limit meant to bound one component's footprint silently becomes a limit on the sum of a whole chain of components, and the implementation contorts itself to stay under a ceiling that only exists because absence was not expressible.
+
+The corrective is to treat "not present" as a first-class state of the thing itself rather than as an error, and to pair it with two more properties: a defined party to call when absence is discovered, and an atomic way to go from absent to fully present, so that no observer ever sees a half-built object. Atomicity matters more than it first appears, because the whole point of the absence-fault is that it fires exactly when someone is looking. A designer with this in hand asks, before committing to any level of indirection, what mechanism will report the miss and whether the fill can be made to appear instantaneous. If either answer is missing, the honest move is to abandon the illusion rather than approximate it — an imprecise imitation of a mapped or paged abstraction is not a weaker version of the real thing, it is a different and worse thing whose failures show up as aliasing and as constraints in code that never asked to participate.
+
+**Source:** [Reflections on an Operating System Design](../works/reflections-on-an-operating-system-design.md) — the retrospective on the map mechanism, where software imitation of address mapping fails for lack of any way to trap a reference to missing data, and the resulting duplicate bookkeeping and full-path memory limits are traced back to that single absent capability; the same fault-on-absence idea reappears as the proposed cure in the layering discussion.

@@ -23,4 +23,7 @@ tags: [work]
 **Source:** https://bwlampson.site/15-ReflectionsOnOS/Acrobat.pdf — hosted on Lampson's own personal publications page (bwlampson.site), self-archived.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A foundation that supplies every mechanism is not yet a usable system, and no checklist of mechanisms can tell you whether it is adequate — only building its most demanding client can](../lessons/a-kernel-is-not-a-system-and-only-its-hardest-client-can-tell-you.md)
+- [An indirection is only real if absence is representable and detectable; without a fault on 'not here yet' you must materialize everything in advance, and that eagerness spreads into layers with no business knowing](../lessons/indirection-you-cannot-fault-on-is-not-indirection.md)
+- [When an outer layer's job is to construct the inner layer's objects, self-defense cannot mean withholding the dangerous power — give it the power over a bounded territory instead](../lessons/bound-the-dangerous-power-instead-of-refusing-it.md)
+- [A rule about how costs must be attributed is an architectural constraint in disguise: decide what it forbids before you adopt it, and make sure every exhaustible resource is inside the model rather than beside it](../lessons/an-accounting-rule-is-an-architectural-constraint-in-disguise.md)

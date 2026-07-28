@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "An abstraction exists to erase the properties you don't want, so anything good underneath must survive the trip upward"
+figure: lampson
+works: [hints-for-computer-system-design]
+axes: [hardware-affinity, expressiveness, primitive-count]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# An abstraction exists to erase the properties you don't want, so anything good underneath must survive the trip upward
+
+**Lesson:** Layering is usually justified as concealment, and the justification is only half stated. What a layer is for is concealing the awkward, unstable, or dangerous properties of the thing below it. Concealing the *desirable* properties is not abstraction working, it is abstraction misfiring — and it happens constantly, because the same act that hides an irregularity also hides the speed or the directness that came with it. The discipline that follows is to audit each layer for what capability it destroyed. If the hardware underneath can move a whole track at device speed, some interface reachable from above should still be able to move a whole track at device speed. Multiplexing a resource among clients does cost something, but a single client with the resource to itself should be able to get essentially all of it. When a layer cannot pass a capability through, the price should be one identifiable thing knowingly given up, not diffuse degradation.
+
+This reorders the priority between power and speed. A basic operation that runs fast is worth more than a stronger operation that runs slow, because the client can assemble what it wants out of fast pieces, whereas nobody can decompose a slow powerful operation back into its parts. The client that does not need the extra strength ends up paying for it anyway, and the extra strength usually turns out not to have been the right generalization in the first place. The same argument explains why simple instruction repertoires can outrun elaborate ones on the same transistor budget: real programs spend their time on trivial actions, so making the trivial actions cheap beats making sophisticated actions available.
+
+The constructive technique is to hand control back rather than legislate policy. Passing a procedure across an interface — a predicate to filter an enumeration, a routine to be called at each recognized construct, a handler for the failure path — collapses what would otherwise become a jumble of parameters and mode flags amounting to a badly designed miniature language. Where control transfer is cheap, an interface can solve exactly one problem and hand the rest of the problem back, which simultaneously buys simplicity, flexibility, and speed instead of trading among them. The mechanism that does very little and leaves the real decisions outside is often criticized for its omissions when those omissions are the source of its strength: a synchronization construct that refuses to choose which waiter runs next has not failed to provide scheduling, it has left scheduling to the only party who knows what the right scheduling is.
+
+A programmer who internalizes this stops treating "the layer above shouldn't have to care" as self-evidently virtuous, and starts asking which specific bad property each layer is paid to remove. There is a real tension here with keeping implementation freedom: every capability you expose becomes an assumption clients make, and assumptions are what you later cannot change. That tension does not resolve into a rule. It resolves into knowing which side you are erring toward and why.
+
+**Source:** [Hints for Computer System Design](../works/hints-for-computer-system-design.md) — the corollaries to simplicity: the preference for fast basic operations over slower powerful ones, the argument that abstractions should conceal undesirable properties only, the use of procedure arguments for flexibility, and the case for solving one problem and returning control to the client. The later discussion of implementation secrecy states the countervailing pressure.

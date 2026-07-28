@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Deliberately weaken what a synchronization event promises, because a weaker guarantee makes every proof local and every later extension free"
+figure: lampson
+works: [experience-with-processes-and-monitors-in-mesa]
+axes: [verifiability, cognitive-load, parallelizability]
+subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Deliberately weaken what a synchronization event promises, because a weaker guarantee makes every proof local and every later extension free
+
+**Lesson:** The instinct when designing a coordination primitive is to make it promise as much as possible: when one participant announces that a condition now holds, the participant that was waiting for it should be able to assume that condition on resumption. That instinct is a trap. Honoring the strong promise forces the runtime to hand control over immediately, which costs extra switches on every resumption and — worse — makes the announcement mechanism load-bearing, so it must be perfectly reliable. The alternative is to define an announcement as nothing more than a suggestion that something may have changed, guaranteeing only that the waiter will eventually get to look again. The waiter must then re-examine the world in a loop rather than testing once. Paying that one redundant test buys a great deal.
+
+What it buys is that the reasoning obligation becomes uniform. Under the strong promise there are two different things a resuming party may assume — the general invariant in some places, a stronger derived predicate in others — and the announcer carries the burden of establishing the stronger one. Under the weak promise there is exactly one thing anyone may ever assume anywhere, and the waiter's own explicit re-test supplies whatever more it needs, right where it needs it. The proof shrinks and stops depending on remote code. The same weakening is what makes every subsequent feature drop in without disturbing anything: waking a waiter after an elapsed interval, waking one so it can notice it has been asked to shut down, waking all of them instead of one — none of these can violate a rule that already permits gratuitous wakeups. A design that admits spurious resumption has pre-approved an open-ended family of extensions; a design that forbids it must relitigate its correctness argument for each.
+
+The weak promise also licenses a genuinely different decomposition. Because a waiter is obliged to check for itself, the announcer no longer has to know precisely who is waiting for what, and can announce something crude and cheap that merely implies the interesting cases — one shared condition covering an entire collection, with each waiter filtering for the object it cares about. The knowledge of who wants what then lives implicitly in the states of the waiting parties instead of being materialized in a shared structure that both sides must agree on and maintain. Two components stop needing to know each other's business. This only works if resumption is cheap, which is the connection between an apparently semantic choice and an implementation cost.
+
+A programmer who internalizes this stops writing coordination code that tests a condition once on waking and stops treating a notification as data. They also stop using the exclusion mechanism to express policy: if a wakeup carries no promise about order, then fairness and priority are visibly not the lock's job, and any real scheduling decision must be made by a component that understands the resource it is scheduling and parks its clients on conditions after recording what they need. The low-level mechanism gets to be dumb, fast, and provably simple precisely because the design refused to let it promise anything interesting.
+
+**Source:** [Experience with Processes and Monitors in Mesa](../works/experience-with-processes-and-monitors-in-mesa.md) — the condition-variable section contrasting the immediate-handoff definition with Mesa's treatment of notification as a hint, the resulting verification rules, and the follow-on discussions of timeouts, aborts, broadcast, and covering conditions.

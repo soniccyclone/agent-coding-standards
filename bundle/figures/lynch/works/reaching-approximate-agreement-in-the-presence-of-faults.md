@@ -21,4 +21,6 @@ tags: [work]
 **Source:** https://groups.csail.mit.edu/tds/papers/Lynch/jacm86.pdf — hosted on MIT CSAIL's Theory of Distributed Systems group publications page (university-hosted), live and directly downloadable (HTTP 200).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Check whether the impossibility is about exactness rather than difficulty, because arbitrarily close is often reachable when equal is not](../lessons/impossibility-often-attaches-to-exactness-not-to-closeness.md)
+- [Size a robust aggregate by how far two honest observers' views can diverge, not by how many liars there are](../lessons/size-a-robust-aggregate-by-how-far-two-honest-views-can-diverge.md)
+- [Turn "eventually" into a quantity that provably shrinks, and both the deadline and the freedom to stop early follow](../lessons/turn-eventually-into-a-quantity-that-shrinks.md)

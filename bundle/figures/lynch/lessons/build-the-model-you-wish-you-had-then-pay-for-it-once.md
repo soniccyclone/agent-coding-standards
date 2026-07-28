@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Solve the problem in the model you wish you had, then pay for that model once, in a layer you can swap"
+figure: lynch
+works: [consensus-in-the-presence-of-partial-synchrony]
+axes: [cognitive-load, verifiability]
+subdomains: [distributed-systems-and-concurrency, software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# Solve the problem in the model you wish you had, then pay for that model once, in a layer you can swap
+
+Faced with several environments of differing hostility, the tempting move is to write one algorithm per environment, each hardened against its own particular weirdness. The better move is to notice that the algorithmic idea does not vary and only the environment does. So invent the most comfortable environment in which the idea is expressible — here, tidy numbered rounds where everyone sends, then everyone receives, then everyone computes, with the sole concession that messages may vanish until some unknown round — solve the problem there, and treat every real environment as an obligation to *manufacture* that comfortable one. The algorithmic content gets stated and proved exactly once; the environment-specific work becomes a separate, small, replaceable piece.
+
+What makes this more than tidiness is that it turns a matrix of results into a product of two short lists. One list holds the protocols, one per failure mode. The other holds the constructions that build the convenient model on top of a given set of timing assumptions: carve real steps into groups big enough for a round when the delay bound exists but is unknown; grow the groups without limit when you cannot even bound the bound, so that the groups eventually outgrow whatever the true value turns out to be; and when processes themselves run at unrelated speeds, first build an approximately shared counter out of mutual tick-and-claim messages and use it in place of the rounds nobody is handing you. Compose any protocol with any construction and you get a working system, plus a resiliency figure and a time bound you can read off from the two pieces. Notably, adding process-speed uncertainty on top of message-delay uncertainty turns out to cost nothing in resiliency — a fact you could barely notice, let alone prove, if each combination were its own bespoke algorithm.
+
+The lesson for a practitioner is to be deliberate about where an assumption is discharged. Every design rests on assumptions about its substrate — bounded latency, roughly comparable clocks, ordered delivery, at-most-once semantics. Scattering the compensations for those assumptions through the logic that actually solves your problem produces code where nobody can tell which lines are the idea and which are the apology to reality. Naming the environment you want, implementing it once as its own layer, and stating precisely what that layer guarantees means the substrate can change and only the layer is rewritten. The rigorous version of this is a simulation argument: show that every run of the real system corresponds to a legitimate run of the idealized one, preserving who is faulty and how, at which point every property you proved upstairs transfers down for free.
+
+**Source:** [Consensus in the Presence of Partial Synchrony](../works/consensus-in-the-presence-of-partial-synchrony.md) — the structure is the paper's own: a basic round model with three protocols, then successive sections that simulate that model under an unknown delay bound, under an eventually-holding bound, and finally over partially synchronous processes by way of the fault-tolerant distributed clocks.

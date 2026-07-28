@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A restriction is something you impose on a component when you invoke it, not a property the component has — so it holds only if it propagates to everything the component calls, and only over a trust base you have named"
+figure: lampson
+works: [a-note-on-the-confinement-problem]
+axes: [verifiability, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, formal-methods-and-verification]
+tags: [lesson]
+---
+# A restriction is something you impose on a component when you invoke it, not a property the component has — so it holds only if it propagates to everything the component calls, and only over a trust base you have named
+
+**Lesson:** The useful move is to stop treating a guarantee as an adjective describing a program and start treating it as a condition attached to a particular execution. Nothing about the code changes; the environment it runs in refuses it certain things. That shift matters because it tells you immediately where the reasoning can break. If the restricted execution can transfer control to something unrestricted, the restriction evaporates — the callee does whatever the caller wanted done and is under no constraint. So the condition has to be transitive: anything reached from restricted code is itself restricted, all the way down. Also, a stateless component is a precondition rather than a detail, because a component that can retain anything between invocations doesn't need a channel at all; it just waits to be asked. Freedom from retained state is exactly what makes the per-invocation framing sound.
+
+Transitivity taken literally would forbid every call, including calls into the substrate, which is useless. That dead end is instructive rather than fatal: it forces you to name, explicitly, the components you have decided to believe. The substrate cannot be restricted by the mechanism it implements, so it has to be trusted instead, and trust here is a precise claim — that this component will neither leak on its own account nor act as a conduit for a restricted caller. Every containment argument therefore has two parts you can point at: a propagation rule, and a list of things exempted from it because you chose to. A design that cannot produce the second list has not established anything; it has only moved the question somewhere it isn't being asked. And the exempted components carry a heavy burden, because the obligation on them is not merely to behave well but to have closed every observable path, which is the hardest kind of correctness to demonstrate.
+
+The constructive technique in the paper is worth generalizing on its own. Where a restricted component must produce some output that reaches a party you are guarding against, you cannot police the content — any freedom it has to vary the output is capacity it can encode into. So remove the freedom: require that the value be fixed in advance by the party being protected, and let the component merely accept or refuse the terms. This is the general shape of eliminating a channel rather than monitoring it. Deny the degree of freedom instead of auditing its use. It works for resource consumption too, since the substrate can force the observable behavior to match the pre-agreed profile by padding it, and although this wastes work, it converts an unbounded leak into a fixed cost.
+
+A programmer who has absorbed this designs sandboxes as closures rather than checkpoints. They ask what the restricted code can reach, not what it was permitted to do at the entry point; they insist on knowing which parts of the system are inside the trust base and why; and when a channel cannot be closed, they look for a way to fix its content in advance rather than a way to inspect the traffic.
+
+**Source:** [A Note on the Confinement Problem](../works/a-note-on-the-confinement-problem.md) — the confinement rules section, which moves from the unusable total-isolation rule through the transitivity rule and the necessity of a trusted supervisor, then states masking (the caller determines the constrained program's inputs to legitimate and covert channels) and the enforcement obligation that follows from it.

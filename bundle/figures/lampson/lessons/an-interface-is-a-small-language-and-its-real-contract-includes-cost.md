@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Every interface you define is a small programming language, and the cost of using it is part of the contract whether you write it down or not"
+figure: lampson
+works: [hints-for-computer-system-design]
+axes: [expressiveness, primitive-count, cognitive-load]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Every interface you define is a small programming language, and the cost of using it is part of the contract whether you write it down or not
+
+**Lesson:** The reason interfaces are hard has nothing to do with syntax. Defining one means choosing a set of objects and the operations that act on them, which is exactly the work of designing a language, minus the parsing — so every difficulty that afflicts language design shows up in a module boundary too. That reframing changes what you are willing to put in. A designer who believes he is merely listing entry points will happily accept another parameter, another mode flag, another special case; a designer who knows he is defining a vocabulary asks whether each addition earns its place in a vocabulary everything above will be written in. The written specification captures only half of what clients actually depend on. The other half is the unwritten promise that using an operation costs something proportional to what it does. Break that half and you have broken the interface, even though every stated guarantee still holds: a construct whose expense swings with context or argument type forces every caller to reason about the implementation it was supposed to be insulated from, and a small overrun repeated through a stack of layers compounds into an order of magnitude at the top.
+
+This is why the pressure toward generality is a trap rather than a virtue. An operation that spans many cases either handles most of them badly or requires an implementation so large and clever that no one can predict its behavior — and the extra capability is usually not the capability anyone wanted. The honest constraint is that the interface must not promise more than its implementer, today, actually knows how to deliver. A future implementer who understands the problem better might manage it; that does you no good now, and shipping the promise on the strength of someone else's hypothetical competence is how systems become slow in ways that cannot be fixed later. The rule inverts for genuine research, where discovering how to implement something is the point, but then nothing else may be built on the assumption of success.
+
+Generality also fails in a way worse than slowness: it produces behavior nobody anticipated because nobody could hold the full interface in mind. When a system call is permitted to report a memory fault back to its caller mid-execution, and arguments arrive by reference, and an authorization check loops over characters, the composition leaks a secret through timing and fault position that none of the three features suggests in isolation. Nobody reviewed that combination because the true interface — everything a caller can observe — was far larger than the interface anyone had written down.
+
+The constructive move is to reach for the same good idea repeatedly in specialized form rather than build one construct that subsumes all its uses. A local scheme for duplicating a small amount of data and a general scheme for replicating large distributed data can both exist, the second even built atop the first, without either being contorted to cover the other's case. Reuse the idea; decline to reuse the code. That keeps each implementation small enough to be fast and understood, and it keeps the vocabulary at every level minimal without impoverishing it.
+
+**Source:** [Hints for Computer System Design](../works/hints-for-computer-system-design.md) — the functionality section's opening claim about interfaces being programming languages, the simplicity argument about predictable cost and unstated assumptions (with the language and virtual-memory comparisons), the password-guessing case study, and the later hint about applying an idea again instead of widening it.

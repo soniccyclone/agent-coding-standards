@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "The measured price of a primitive decides which program structures are available to you, so publish the price and treat granularity as a consequence of it"
+figure: lampson
+works: [experience-with-processes-and-monitors-in-mesa]
+axes: [hardware-affinity, expressiveness, parallelizability]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# The measured price of a primitive decides which program structures are available to you, so publish the price and treat granularity as a consequence of it
+
+**Lesson:** Whether a construct is expensive is not a footnote about its implementation; it decides which designs a programmer is permitted to have. A whole family of coordination problems has an obvious, transparent solution built from concurrent activities and shared-state guardians — but only if creating an activity is cheap. Make creation expensive and those solutions become unaffordable, so programmers write something else: a hand-rolled state machine, a pool with its own lifecycle bugs, an explicit table recording what everyone is waiting for. The awkward program is not evidence that the programmer lacked taste. It is the cost of the primitive showing up as structure. This runs the other way too: drive the cost down and designs that were previously absurd become the natural ones — a separate guardian per object rather than one guarding the whole collection, a separate short-lived activity per remote replica that does its errand and evaporates, an interrupt handled by simply resuming an ordinary activity rather than by a distinct forced-branch mechanism with its own rules.
+
+The consequence for a designer is to treat the numbers as part of the specification and to measure them against the constructs programmers already use, not against zero. A guardian entry that costs somewhat more than a plain procedure call is affordable at fine grain; an activity creation that costs dozens of calls is not, and the honest response is to say so, name it as the one place the implementation fell short of its goal, and note which usage pattern that pushes people toward. The comparison basis matters more than the absolute figure, because programmers are choosing between constructs, not deciding whether to compute at all. A design document that reports "the guarded call is a few tens of percent above the bare call, and the storage for an activity is twice the minimum for a procedure instance" is telling its readers exactly how finely they may decompose. One that reports nothing is inviting them to guess, and they will guess conservatively and write coarser, uglier programs than they had to.
+
+There is also a division-of-labor claim here that cuts against the aesthetic instinct. Which operations get implemented in the fastest layer available should be decided by how often they are used, not by where they sit in a conceptual hierarchy. Scheduling and guarded entry go into the machine because everything touches them; creation and joining stay in software because they are rarer and more intricate. That the resulting split happened to turn out cleanly layered, with birth and death of activities implemented on top of exclusion and scheduling, was a pleasant accident rather than the organizing principle — and treating it as the principle first would have produced a worse allocation.
+
+A programmer who takes this seriously refuses to reason about concurrency structure in the abstract. They ask what an activity costs on this system, in this runtime, today, and they let that answer set the grain size — rather than importing a granularity from a paper written on a system where the numbers were different.
+
+**Source:** [Experience with Processes and Monitors in Mesa](../works/experience-with-processes-and-monitors-in-mesa.md) — the properties claimed for activity creation early in the paper, the performance section's storage and timing tables and its candid note about the weakest operation, and the applications section's per-replica and per-object structures that depend on those costs.
