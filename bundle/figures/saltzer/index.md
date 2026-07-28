@@ -24,3 +24,28 @@ Publication list (~50 items) self-archived in full at web.mit.edu/Saltzer. Phase
 5. "Traffic Control in a Multiplexed Computer System" (1966, Sc.D. dissertation, advised by Corbató) — `public` — [work file](works/traffic-control-in-a-multiplexed-computer-system.md) — added beyond the original 4: explicitly named in this figure's own bio as the origin of his process-switching work, and confirmed public (self-archived + independently mirrored at MIT DSpace and CSAIL Publications).
 
 Still fewer than 10 individually verified — this remains a seminal-works pass against the ~50-item self-archive, not an exhaustive bibliography sweep. Candidates not pursued because they read as narrower/derivative of the above rather than independently central: the Multics ring-based hardware protection paper, the "Origin of Kerberos" retrospective, and the various CTSS/Project Athena technical memos.
+
+## Lessons
+
+Saltzer's recurring move is to ask what a piece of a system actually knows, and to
+let the answer decide where the piece belongs. A function can only be finished
+where the knowledge to finish it lives, so a lower layer that lacks the
+application's definition of correctness can offer a performance improvement but
+never the guarantee — and a partial guarantee is worse than none, because callers
+read it as total. The same reasoning runs the other way for decisions: rather than
+hoisting every fact a judgment needs into a global table, move the judgment to
+where the data already sits, which shrinks the shared surface and lets different
+callers run different policy under one mechanism. His method for finding these
+boundaries is to strip the constraints away first — reason about the problem with
+unlimited resources to see what coordination is intrinsic, then reintroduce
+scarcity one constraint at a time so that every piece of machinery arrives with a
+visible cause, and so that the parts a better machine would erase are labelled as
+such. What survives that pass gets held to hard invariants: overhead per operation
+must not scale with the population, state that can be recreated must not be
+retained, primitives are chosen for how few failure modes they leave their callers,
+and the privileged core is held to stricter discipline than the code above it
+because trust boundaries expand for reasons having nothing to do with trust.
+Underneath all of it is an unusual honesty about limits — negative requirements
+cannot be tested into existence, no system bootstraps its own trust, people and
+institutions are inside the mechanism rather than outside it, and the responsible
+thing to publish alongside a design is the list of what it does not do well.

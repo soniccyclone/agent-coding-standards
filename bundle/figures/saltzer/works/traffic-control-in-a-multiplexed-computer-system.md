@@ -6,6 +6,7 @@ description: Saltzer's doctoral dissertation, advised by Corbató, proposing a s
 subdomains: [operating-systems-and-systems-programming]
 year: 1966
 url: https://web.mit.edu/Saltzer/www/publications/TRs+TMs/Multics/TR-030.pdf
+extraction: complete
 survey_pages: 92
 survey_text_layer: full
 survey_fetch_mb: 4
@@ -20,4 +21,9 @@ tags: [work]
 **Source:** https://web.mit.edu/Saltzer/www/publications/TRs+TMs/Multics/TR-030.pdf — self-archived on Saltzer's own MIT publications page (PDF resolves 200). Also independently mirrored at MIT DSpace (hdl.handle.net/1721.1/16316) and CSAIL Publications (publications.csail.mit.edu/lcs/pubs/pdf/MIT-LCS-TR-030.pdf, resolves 200), both institutional.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Sort problems by whether better technology would erase them](../lessons/sort-problems-by-whether-better-technology-would-erase-them.md)
+- [Study the problem with the scarcity switched off](../lessons/study-the-problem-with-the-scarcity-switched-off.md)
+- [Choose primitives that funnel every race into one](../lessons/choose-primitives-that-funnel-every-race-into-one.md)
+- [Send the decision to the data, not the data to the decision](../lessons/send-the-decision-to-the-data-not-the-data-to-the-decision.md)
+- [Keep only the state you could not rebuild](../lessons/keep-only-the-state-you-could-not-rebuild.md)
+- [Decide up front what your overhead is allowed to scale with](../lessons/decide-up-front-what-your-overhead-is-allowed-to-scale-with.md)

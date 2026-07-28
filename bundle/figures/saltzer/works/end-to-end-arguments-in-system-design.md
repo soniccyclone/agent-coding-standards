@@ -6,6 +6,7 @@ description: Argues that reliability, security, and delivery-guarantee functions
 subdomains: [software-engineering-and-architecture, distributed-systems-and-concurrency]
 year: 1984
 url: https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf
+extraction: complete
 survey_pages: 10
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf — self-archived on Saltzer's own MIT publications page; PDF fetched and verified directly (full text confirms title, authors, venue, and content).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A function belongs where the knowledge to finish it lives](../lessons/a-function-belongs-where-the-knowledge-to-finish-it-lives.md)
+- [Keep correctness claims and performance claims in separate ledgers](../lessons/keep-correctness-claims-and-performance-claims-in-separate-ledgers.md)
+- [A partial guarantee gets read as a total one](../lessons/a-partial-guarantee-gets-read-as-a-total-one.md)
+- [Where the endpoints are is a property of the use, not the data](../lessons/where-the-endpoints-are-is-a-property-of-the-use-not-the-data.md)

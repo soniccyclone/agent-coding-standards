@@ -6,6 +6,7 @@ description: Describes how Multics implements access control in practice — acc
 subdomains: [operating-systems-and-systems-programming]
 year: 1974
 url: https://web.mit.edu/Saltzer/www/publications/protmult.pdf
+extraction: complete
 survey_pages: 15
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://web.mit.edu/Saltzer/www/publications/protmult.pdf — self-archived on Saltzer's own MIT publications page (PDF resolves 200; a scanned document, so metadata cross-checked against the ACM DL record and independent citation indexes rather than OCR'd text).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Prefer the restriction users can predict to the generality they cannot](../lessons/prefer-the-restriction-users-can-predict-to-the-generality-they-cannot.md)
+- [Hold the privileged code to the same discipline as the rest](../lessons/hold-the-privileged-code-to-the-same-discipline-as-the-rest.md)
+- [The trusted region grows for reasons unrelated to trust](../lessons/the-trusted-region-grows-for-reasons-unrelated-to-trust.md)
+- [Publish the list of what your system does not do well](../lessons/publish-the-list-of-what-your-system-does-not-do-well.md)

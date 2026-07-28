@@ -6,6 +6,7 @@ description: A tutorial survey of the hardware and software mechanisms needed to
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1975
 url: https://web.mit.edu/Saltzer/www/publications/protection/index.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]
@@ -27,4 +28,8 @@ reading only `index.html` would miss the paper. This is the shape of the source,
 not a defect.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A requirement that nothing bad happens cannot be tested into existence](../lessons/a-requirement-that-nothing-bad-happens-cannot-be-tested-into-existence.md)
+- [Pick the default whose mistakes are self-reporting](../lessons/pick-the-default-whose-mistakes-are-self-reporting.md)
+- [Every remembered decision is a decision you can no longer take back](../lessons/every-remembered-decision-is-a-decision-you-can-no-longer-take-back.md)
+- [No system can bootstrap its own trust](../lessons/no-system-can-bootstrap-its-own-trust.md)
+- [People and institutions are inside the mechanism](../lessons/people-and-institutions-are-inside-the-mechanism.md)

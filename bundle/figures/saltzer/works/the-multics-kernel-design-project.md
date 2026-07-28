@@ -6,6 +6,7 @@ description: Reports on an effort to restructure the Multics supervisor into a s
 subdomains: [operating-systems-and-systems-programming]
 year: 1977
 url: https://web.mit.edu/Saltzer/www/publications/rfc/csr-rfc-140.pdf
+extraction: complete
 survey_pages: 41
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -21,4 +22,8 @@ tags: [work]
 **Source:** https://web.mit.edu/Saltzer/www/publications/rfc/csr-rfc-140.pdf — self-archived on Saltzer's own MIT publications page (PDF resolves 200; a scanned document — title, authors, and venue cross-checked against the full citation given in reference [16] of Saltzer, Reed & Clark's "End-to-End Arguments," verified directly from that paper's text).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The dependency graph you drew is not the one you have](../lessons/the-dependency-graph-you-drew-is-not-the-one-you-have.md)
+- [Exception paths and resource limits decide your module boundaries](../lessons/exception-paths-and-resource-limits-decide-your-module-boundaries.md)
+- [Waiting for the answer is what creates the dependency](../lessons/waiting-for-the-answer-is-what-creates-the-dependency.md)
+- [Interface conveniences are billed to the implementation](../lessons/interface-conveniences-are-billed-to-the-implementation.md)
+- [Simplification shows up as fewer paths, not fewer lines](../lessons/simplification-shows-up-as-fewer-paths-not-fewer-lines.md)
