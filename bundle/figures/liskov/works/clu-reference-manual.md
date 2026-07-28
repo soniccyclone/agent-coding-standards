@@ -18,4 +18,7 @@ tags: [work]
 **Source:** https://dspace.mit.edu/handle/1721.1/149509 — MIT's own DSpace institutional repository, official archival copy of MIT/LCS/TR-225; downloadable scan content-verified (byline "Barbara Liskov, Russ Atkinson, Toby Bloom, Eliot Moss, Craig Schaffert, Bob Scheifler, Alan Snyder, October 1979" and opening "History of CLU" section both present, OCR text is noisy but legible). The Phase 1 pass had marked this `paywalled` based on the Springer LNCS edition; the original MIT technical report predates that and is openly archived.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Failure paths belong to the interface, and they stop at your immediate caller](../lessons/failure-paths-are-part-of-the-interface-and-stop-at-the-caller.md)
+- [Attach each requirement to the smallest thing that actually needs it](../lessons/attach-each-requirement-to-the-smallest-thing-that-needs-it.md)
+- [Build against frozen interfaces and defer choosing implementations](../lessons/build-against-frozen-interfaces-and-defer-choosing-implementations.md)
+- [When a rule cannot be checked, state it as an obligation instead of approximating it](../lessons/when-a-rule-cannot-be-checked-state-it-as-an-obligation.md)
