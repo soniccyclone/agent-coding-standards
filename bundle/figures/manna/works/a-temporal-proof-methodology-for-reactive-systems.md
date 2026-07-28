@@ -5,7 +5,7 @@ figure: manna
 description: A survey-style lecture packaging the deductive approach - temporal logic plus proof rules plus verification diagrams - into a single teachable methodology for proving reactive and concurrent programs correct. Written for a NATO Advanced Study Institute summer school, it reads as the pedagogical distillation of the two-volume book series Manna and Pnueli were assembling at the same time. The self-archived copy is the extended Marktoberdorf lecture-notes version of the published NATO ASI chapter.
 subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
 year: 1993
-url: http://theory.stanford.edu/~zm/papers/amir/jcitp.ps
+url: http://theory.stanford.edu/~zm/papers/amir/marktoberdorf93.ps
 extraction: complete
 access: public
 host: self-archived
@@ -17,6 +17,17 @@ tags: [work]
 **Author(s):** Zohar Manna, Amir Pnueli
 **Venue/year:** Program Design Calculi, NATO ASI Series F vol. 118, Springer, 1993 (extended version delivered at the Marktoberdorf summer school).
 **Source:** http://theory.stanford.edu/~zm/papers/amir/jcitp.ps — self-archived PostScript on Manna's own Stanford CS Theory homepage (theory.stanford.edu/~zm), HTTP 200 verified. An extended version is co-hosted at http://theory.stanford.edu/~zm/papers/amir/marktoberdorf93.ps.
+
+**Phase 4 URL correction (2026-07-28):** this file previously pointed at
+`jcitp.ps`, which is the *abbreviated* 1990 version (17 pages, two property
+classes) presented at the 5th Jerusalem Conference on Information Technology --
+while the description here characterises the *extended* Marktoberdorf lecture
+notes (37 pages, three property classes, adds Peterson's algorithm, an
+incremental invariance rule, and bounded-overtaking/precedence material). The
+url now points at the extended version actually being described; the paper's own
+footnote confirms "a preliminary and abbreviated version of this paper appeared
+in [MP90]". The abbreviated precursor remains available at
+`http://theory.stanford.edu/~zm/papers/amir/jcitp.ps`.
 
 ## Lessons
 - [Fit the theory to the obligations you actually discharge, not to the space of obligations that exists](../lessons/fit-the-theory-to-the-obligations-you-actually-discharge.md)
