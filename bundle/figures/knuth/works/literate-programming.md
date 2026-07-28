@@ -20,4 +20,9 @@ tags: [work]
 **Source:** http://www.literateprogramming.com/knuthweb.pdf — third-party rehost (literateprogramming.com, a dedicated literate-programming/CWEB resource site hosting a "PDF Articles" collection), live PDF, verified HTTP 200. The Oxford Academic/ACM original is paywalled.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The order a program should be presented in is a discoverable property of the problem, not a choice between top-down and bottom-up](../lessons/expository-order-is-the-real-structure-not-top-down-or-bottom-up.md)
+- [Agreement between a program and its explanation has to be structural, because discipline does not hold it](../lessons/consistency-between-code-and-explanation-must-be-structural.md)
+- [Explaining a program is a coverage check on your own understanding, and understanding is where the bugs are](../lessons/explaining-a-program-is-a-verification-pass-over-your-own-understanding.md)
+- [Relative size in source text is read as a statement of purpose, so the notation ends up rewriting your design decisions](../lessons/visual-proportion-reads-as-importance-so-layout-deforms-design.md)
+- [Before generalizing a primitive, check whether composing the restricted one already covers every use you actually saw](../lessons/restrict-the-primitive-and-check-whether-composition-already-covers-the-gap.md)
+- [Give the axis of local variation its own artifact, and edits along the two axes stop colliding](../lessons/make-the-axis-of-local-variation-a-separate-artifact.md)

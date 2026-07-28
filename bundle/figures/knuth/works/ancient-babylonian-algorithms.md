@@ -20,4 +20,5 @@ tags: [work]
 **Source:** https://teaching.csse.uwa.edu.au/units/CITS1001/extension/ancient-babylonian-algorithms.pdf — third-party rehost (University of Western Australia CS course page), live PDF, verified HTTP 200. ACM's own copy (dl.acm.org) is paywalled.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A general procedure is only communicable when a concrete instance is carried alongside it](../lessons/a-general-procedure-needs-a-worked-instance-to-be-understood.md)
+- [The primitives a notation lacks are visible as duplication in everything written in it](../lessons/missing-control-flow-shows-up-as-duplicated-procedure-text.md)

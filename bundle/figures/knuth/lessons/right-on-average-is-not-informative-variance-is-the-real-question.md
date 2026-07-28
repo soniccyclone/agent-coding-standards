@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Right on average is not the same as informative — the shape of the error distribution is the real question"
+figure: knuth
+works: [estimating-the-efficiency-of-backtrack-programs]
+axes: [verifiability]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification]
+tags: [lesson]
+---
+# Right on average is not the same as informative — the shape of the error distribution is the real question
+
+**Lesson:** Having proved his estimator correct in expectation, Knuth spends the following section attacking it. The attack is not a hedge; it is the substantive point. He constructs a measurement that is almost always one and very rarely a million, whose mean is around a thousand — a number the measurement itself will essentially never produce. Any realistic amount of sampling from such a quantity leaves you confidently believing the answer is one. So a proof that a statistic has the right mean is not a proof that the statistic is useful, and treating the two as equivalent is the standard way to be badly wrong while holding a valid theorem.
+
+He then shows why his own method is structurally at risk of exactly this. In real search problems the bulk of the space piles up in a few middle layers, so the count of positions per layer, plotted on a logarithmic scale, has a hump. But any single sampled walk produces layer estimates that can only climb — each step multiplies by an integer count — until the walk hits a dead end and everything after is zero. The individual measurement therefore has a shape that is nothing like the truth: monotone rise then cliff, versus a smooth hump. Averaging many of these wrong-shaped curves recovers the right one, which is the theorem doing its job, and yet no single curve resembles the answer. That is the clearest possible illustration of the gap between an unbiased procedure and an informative one, and it also predicts the failure mode: estimates will mostly land low, occasionally land enormously high, and the enormous ones are carrying all the mass.
+
+The repair is instructive because of what it costs. The sampling need not be uniform — you may bias the choice at every step however you like and stay unbiased overall, as long as you divide out the probability you actually used. Knuth then proves that some biasing is *perfect*, driving the error to zero exactly, and identifies it: weight each branch in proportion to the cost of the subtree hanging off it. Which is the answer. The zero-variance scheme requires knowing what you set out to estimate. He does not treat that as a dead end, and this is the durable part of the lesson: the closed form of an unreachable optimum is still a specification for a heuristic, because it names what your guesses should approximate. Any hunch you have about which branches are expensive is worth encoding, and the accompanying bound quantifies the penalty for guessing badly — the error grows with the factor by which your weights misjudge the true relative costs.
+
+The aside he attaches is the sharpest sentence in the paper's reasoning. For the cube puzzle he uses as a running example, no branch looks more promising than any other before you explore it, so no useful bias exists — and he suggests this is exactly why the puzzle is maddening to humans, since intuition normally has something to grip. Estimator variance and problem difficulty turn out to have one source: the absence of exploitable structure that correlates with outcome. A programmer who believes all this stops reporting mean latency from a handful of runs, starts asking what shape the tail has, and treats "I have no heuristic here" as a measurement of the problem rather than a gap in their cleverness.
+
+**Source:** [Estimating the Efficiency of Backtrack Programs](../works/estimating-the-efficiency-of-backtrack-programs.md) — the cautionary section contrasting the humped true distribution of node counts per level against the monotone-then-zero shape of any individual estimate, and the following section's zero-variance result and its variance bound for imperfect weightings.

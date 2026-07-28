@@ -17,4 +17,7 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2025-01-24) of the official AMS journal PDF (https://www.ams.org/journals/mcom/...). Semantic Scholar flags the AMS copy as open ("BRONZE" — freely readable, no login wall), but ams.org returns HTTP 403 to automated/scripted fetches (bot-blocking, not a paywall); the Wayback snapshot resolves cleanly (HTTP 200) and is used here to guarantee a verifiable link.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When a cost cannot be derived or afforded, sample it: one weighted traversal estimates a structure you can never build](../lessons/sample-the-aggregate-instead-of-analyzing-or-running-it.md)
+- [Right on average is not the same as informative — the shape of the error distribution is the real question](../lessons/right-on-average-is-not-informative-variance-is-the-real-question.md)
+- [Correctness pins down a family of programs, not one program — cost is the free parameter you then choose](../lessons/correctness-pins-down-a-family-of-programs-not-one-program.md)
+- [A theoretical weakness is a hypothesis about your inputs — measure whether it bites before building the machinery that fixes it](../lessons/a-theoretical-weakness-is-a-hypothesis-about-inputs-measure-before-you-fix-it.md)

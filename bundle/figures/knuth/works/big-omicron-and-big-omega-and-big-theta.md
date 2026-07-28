@@ -20,4 +20,6 @@ tags: [work]
 **Source:** Wayback Machine snapshot (2016-03-04) of http://www.phil.uu.nl/datastructuren/07-08/knuth_big_omicron.pdf — a Utrecht University course-page mirror. The live URL is now dead (404); the archived snapshot resolves and serves the full PDF (HTTP 200 via web.archive.org). ACM's own copy (dl.acm.org) and the MIT Press reprint are both paywalled; Semantic Scholar lists no open-access copy, so this rehost-via-Wayback is the only public route found.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A vocabulary missing a distinction does not stay silent about it — it gets abused into stating it wrongly](../lessons/a-vocabulary-that-cannot-state-a-distinction-gets-abused-into-stating-it-wrongly.md)
+- [An approximate quantity is a set of behaviors, so relations over it legitimately run one way only](../lessons/an-approximate-quantity-is-a-set-of-behaviors-so-its-relations-run-one-way.md)
+- [Notation is judged by where it can appear and who already reads it, not by its formal elegance](../lessons/notation-is-judged-by-where-it-can-appear-and-who-already-reads-it.md)
