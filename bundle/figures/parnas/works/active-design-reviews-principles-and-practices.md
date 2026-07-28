@@ -6,6 +6,7 @@ description: Critiques the standard design-review meeting, where a presenter wal
 subdomains: [software-engineering-and-architecture]
 year: 1985
 url: https://archive.org/download/DTIC_ADA163188/DTIC_ADA163188.pdf
+extraction: complete
 survey_pages: 17
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -21,4 +22,8 @@ tags: [work]
 **Source:** https://archive.org/download/DTIC_ADA163188/DTIC_ADA163188.pdf — Internet Archive mirror of the original DTIC (Defense Technical Information Center) government technical report ADA163188 (details page: https://archive.org/details/DTIC_ADA163188). Verified live.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A check that can be passed without doing the work is not a check](../lessons/a-check-that-is-cheap-to-pass-is-not-a-check.md)
+- [Nothing can be detected in a description that says everything only once](../lessons/redundancy-is-the-precondition-of-detection.md)
+- [State the perspective you need before you name the person, and let missing knowledge be a qualification](../lessons/state-the-perspective-you-need-before-you-name-the-person.md)
+- [Scrutiny held collectively is held by nobody, so partition it and keep a check on the partition](../lessons/responsibility-held-collectively-is-held-by-nobody.md)
+- [A taxonomy of failures is worth what it makes you look for, not whether its boxes are disjoint](../lessons/a-taxonomy-is-worth-what-it-makes-you-look-for.md)

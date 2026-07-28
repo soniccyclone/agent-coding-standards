@@ -41,3 +41,32 @@ Structure of Complex Systems" — but it's not the paper the vetting
 philosophy points to (that's "On the Criteria..."), so its absence doesn't
 weaken the core case. Excluded from the `works/` directory per the
 public-sources-only rule.
+
+## Lessons
+
+Parnas's whole body of work turns on one substitution: stop describing what a
+system does and start describing what each of its parts is permitted to know.
+Every structural virtue he argues for follows from that move. Boundaries get
+drawn along the decisions likely to be revised rather than along the order in
+which processing happens, because the flowchart's joints are not the places
+change arrives. A part is then an assignment of responsibility for concealing
+something, not a chunk of the running program, and its interface is the set of
+claims its clients are allowed to rely on — which makes a true but unnecessary
+promise a design error, makes the "uses" relation a statement about correctness
+rather than a call graph, and makes any knowledge that reaches a client outside
+the specification a leak to be closed. He is consistently more interested in
+what a design forbids than in what it enables: judge it by the programs it has
+ruled out, by which exceptions to its own rules each change forces, by the width
+of a level you can still argue is complete. Where lesser treatments would stop
+at the principle, he pushes on the parts that resist it — the criterion that
+goes fuzzy and needs a named arbiter, the technique that inverts once the system
+outgrows the tutorial example, the two parts that appear to need each other and
+are therefore miscounted, the ordering of decisions that no amount of cleverness
+lets you back out of. The later work carries the same logic into process:
+specifications are objects to be tested before any code exists, documentation is
+worth what its timing allows rather than what it contains, redundancy is the
+precondition of detecting anything at all, scrutiny held collectively is held by
+nobody, and a question phrased so it can be answered without doing the work is
+not a check. The through-line is a refusal to let plausibility substitute for a
+demonstration — including, pointedly, when the thing being taken on faith is
+your own design discipline working.
