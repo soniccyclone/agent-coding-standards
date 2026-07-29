@@ -6,6 +6,7 @@ description: Joy's public debut paper, introducing the language to a Forth audie
 subdomains: [programming-languages-and-semantics]
 year: 2001
 url: https://www.complang.tuwien.ac.at/anton/euroforth/ef01/thomas01a.pdf
+extraction: complete
 survey_pages: 9
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,6 @@ tags: [work]
 **Source:** https://www.complang.tuwien.ac.at/anton/euroforth/ef01/thomas01a.pdf — direct PDF hosted in the official EuroForth conference proceedings archive maintained by TU Wien's Institut für Computersprachen (complang.tuwien.ac.at); institutional, not a rehost. HTTP 200 verified. Also survives via Kevin Albrecht's mirror of von Thun's now-offline La Trobe site (kevinalbrecht.com/code/joy-mirror/forth-joy.html), used here as corroboration only.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A shared execution model does not confer shared reasoning power](../lessons/a-shared-execution-model-does-not-confer-shared-reasoning-power.md)
+- [Count the invisible machines your semantics requires](../lessons/count-the-invisible-machines-your-semantics-requires.md)
+- [Abstract over the shape of the recursion, not only over its values](../lessons/abstract-over-the-shape-of-the-recursion-not-only-over-its-values.md)

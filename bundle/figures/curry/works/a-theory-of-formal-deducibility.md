@@ -44,8 +44,28 @@ Chapter PDFs come from Project Euclid's download endpoint, substituting the id:
 (1175197176 is the title/copyright page and 1175197178 the printed contents —
 both skippable.) The argument-carrying chapters are the Introduction and I-V;
 fetch them individually rather than looking for a whole-book PDF, which is not
-offered. A copy of the whole book also exists on archive.org as
-`theoryofformalde0000curr` if the chapter endpoint ever stops working.
+offered. **Correction (2026-07-29):** an earlier version of this note offered archive.org
+item `theoryofformalde0000curr` as a fallback "if the chapter endpoint ever stops
+working." That was wrong and is retracted — the item is access-restricted
+(`access-restricted-item: true`) and its `_djvu.txt` derivative returns an "Item
+not available" HTML page. There is no working fallback for this book.
+
+**Project Euclid is now behind an Imperva JS bot challenge** (added 2026-07-29,
+discovered the hard way). A bare curl — even with a browser User-Agent — returns
+a ~6KB "Pardon Our Interruption" interstitial *named as a .pdf*, for both the TOC
+page and every chapter endpoint. Working recipe:
+
+1. Fetch the TOC page into a fresh cookie jar (`curl -c jar ...`).
+2. Wait ~3 seconds.
+3. Request the chapter endpoint with `-b jar` AND a `Referer:` header pointing at
+   the TOC page.
+
+Imperva rate-limits aggressively: a burst of 9 sequential requests tripped it,
+and it then refused even a slow retry loop for 10+ minutes. Pace the jar-seeding
+genuinely. The chapter PDFs themselves have clean text layers (all 129 pages
+extract with `pdftotext -layout`); OCR quality is mediocre in formula-heavy
+passages — proof schemes mangle, "OF" often reads "OP" — but every argumentative
+paragraph is legible.
 
 ## Lessons
 - [Define an operator by what entitles you to assert it, and its laws stop being a matter of taste](../lessons/define-an-operator-by-what-entitles-you-to-assert-it.md)

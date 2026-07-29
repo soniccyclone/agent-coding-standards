@@ -6,6 +6,7 @@ description: The founding Self paper, laying out prototypes, slots, and behavior
 subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
 year: 1987
 url: https://bibliography.selflanguage.org/_static/self-power.pdf
+extraction: complete
 survey_pages: 20
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://bibliography.selflanguage.org/_static/self-power.pdf — hosted directly on the Self language project's official bibliography site (selflanguage.org), the project's own archive of its papers. Verified reachable (HTTP 200, application/pdf) and confirmed by directly matching content against the page's listed abstract and author line.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Deleting a distinction can buy expressive power, because every case the distinction forbade becomes ordinary](../lessons/removing-a-distinction-can-buy-expressive-power.md)
+- [An abstraction is only as strong as its weakest bypass: leave exactly one path to every value](../lessons/leave-no-path-that-bypasses-the-interposition-point.md)
+- [If the seed object needs privileges the others lack, the mechanism is not uniform yet](../lessons/a-uniform-mechanism-must-include-its-own-seed.md)
+- [Cutting constructs relocates the cost into the environment rather than erasing it](../lessons/simplicity-relocates-cost-it-does-not-erase-it.md)

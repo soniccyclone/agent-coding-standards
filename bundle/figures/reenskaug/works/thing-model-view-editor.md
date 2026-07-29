@@ -6,6 +6,7 @@ description: An internal Xerox PARC technical note walking through a planning-sy
 subdomains: [programming-environments-and-object-systems]
 year: 1979
 url: https://folk.universitetetioslo.no/trygver/1979/mvc-1/1979-05-MVC.pdf
+extraction: complete
 survey_pages: 11
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,6 @@ tags: [work]
 **Source:** https://folk.universitetetioslo.no/trygver/1979/mvc-1/1979-05-MVC.pdf — self-archived by Reenskaug on his University of Oslo homepage, in the MVC section of his publications list. Verified live (HTTP 200, direct PDF).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Derivability, not layering etiquette, decides which side of a boundary a piece of state belongs on](../lessons/derivability-decides-which-side-of-a-boundary-state-lives-on.md)
+- [Let a system hold several partial models of the same reality rather than one consistent one](../lessons/many-partial-models-beat-one-consistent-one.md)
+- [Strip a component of its own initiative to make it composable](../lessons/strip-a-component-of-its-own-initiative-to-make-it-composable.md)

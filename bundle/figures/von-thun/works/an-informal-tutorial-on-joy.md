@@ -6,6 +6,7 @@ description: The working introduction to Joy for programmers rather than logicia
 subdomains: [programming-languages-and-semantics]
 year: 2001
 url: https://www.complang.tuwien.ac.at/anton/euroforth/ef01/thun01.pdf
+extraction: complete
 survey_pages: 15
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,6 @@ tags: [work]
 **Source:** https://www.complang.tuwien.ac.at/anton/euroforth/ef01/thun01.pdf — direct PDF hosted in the official EuroForth conference proceedings archive, TU Wien (complang.tuwien.ac.at); institutional, not a rehost. HTTP 200 verified. A later-revised (February 2003) copy also survives via Kevin Albrecht's mirror of von Thun's now-offline La Trobe site (kevinalbrecht.com/code/joy-mirror/j01tut.html) — same tutorial, updated content, not used as primary here since the conference PDF is the citable fixed version.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Notation that over-specifies order hides independence you already have](../lessons/notation-that-over-specifies-order-hides-independence-you-already-have.md)
+- [Build behavior with the same tools you build data](../lessons/build-behavior-with-the-same-tools-you-build-data.md)
+- [Definability is not availability — judge a mechanism by what it costs to invoke](../lessons/definability-is-not-availability-judge-a-mechanism-by-what-it-costs-to-invoke.md)

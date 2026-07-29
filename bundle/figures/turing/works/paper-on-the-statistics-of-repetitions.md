@@ -6,6 +6,7 @@ description: A wartime cryptanalysis memo developed at Bletchley Park working ou
 subdomains: [algorithms-and-complexity]
 year: circa 1941-42
 url: https://arxiv.org/pdf/1505.04715
+extraction: complete
 survey_pages: 4
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,6 @@ tags: [work]
 **Source:** https://arxiv.org/pdf/1505.04715 — verified live PDF (HTTP 200), a typeset transcription of the declassified manuscript hosted on arXiv (Cornell University), an institutional open-access repository.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Count what your machinery finds cheap, then recover the number you actually wanted by arithmetic](../lessons/count-what-is-cheap-and-invert-for-what-you-wanted.md)
+- [Name the false assumption you are buying tractability with, and say where it fails](../lessons/name-the-false-assumption-you-are-buying-tractability-with.md)
+- [Calibrate against the whole space by computing its summary in closed form, never by walking it](../lessons/calibrate-against-a-space-too-large-to-walk.md)

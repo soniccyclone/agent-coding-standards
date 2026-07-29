@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Assume in advance that some questions about your programs admit no general answer, and design so you never need to ask them"
+figure: turing
+works: [on-computable-numbers]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [foundations-of-computation, formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Assume in advance that some questions about your programs admit no general answer, and design so you never need to ask them
+
+Once behaviour is data, a hypothetical analyzer becomes an ordinary program, and an ordinary program can be handed its own description. That is the whole shape of the argument here: suppose a machine exists that inspects any description and reports whether it produces output forever; use it to build a machine that walks the integers, keeps the ones its analyzer approves, and emits the approved machines' diagonal digits; then ask that machine about itself. It cannot be rejected, because by construction each of its stages terminates. It cannot be accepted either, because acceptance obliges it to compute one of its own future digits before producing it. Both verdicts are impossible, so the analyzer was impossible. The same technique then kills a weaker analyzer — one that only decides whether a given machine ever emits a particular symbol — by reducing that question to the first, and finally kills the general decision procedure for provability in the predicate calculus by encoding a machine's step relation as a formula whose provability tracks whether the symbol ever appears.
+
+The transferable content is not the theorem but the reflex. Analyzers are programs, so any analyzer strong enough to answer a global behavioural question about arbitrary programs is strong enough to be turned against itself, and self-application is where such tools break. This is not a statement about the state of the art. No amount of engineering removes it, and the sequence of reductions in the paper shows how cheaply an innocent-looking question inherits the impossibility of a hard one: the moment your question can encode "does this ever happen," it is as hard as the halting question. So when a tool promises a general, always-correct verdict on termination, reachability, equivalence, or resource use for unrestricted programs, the promise is broken before it starts.
+
+The paper also draws a line that gets confused constantly. Its own published correction shows that a number can be provably guaranteed to exist — bracketed by a rule that produces converging rational bounds — while there is demonstrably no uniform procedure that turns such a rule into a machine computing it. The existence argument leans on a classical principle and delivers no construction. The fix is to change the representation so that the constructive version becomes true, at the price of giving up uniqueness of representation, which is judged an acceptable trade. That is a real engineering pattern: when a guarantee you want is unobtainable in the current encoding, sometimes the encoding is what should move.
+
+A programmer who believes all this stops shopping for the impossible tool and starts trading generality for decidability on purpose. Restrict the language so the analysis becomes tractable, accept sound-but-incomplete answers and design workflows around the "don't know" case, demand annotations rather than infer everything, put bounds in the artifact instead of hoping to discover them, and check whether an existence claim in a design document actually comes with a procedure. Knowing which questions have no general answer is what lets you spend effort on the ones that do.
+
+**Source:** [On Computable Numbers, with an Application to the Entscheidungsproblem](../works/on-computable-numbers.md) — the diagonal-process section and its two impossibility arguments, the reduction of the decision problem for the functional calculus to them, and the published correction's contrast between a number's guaranteed existence and the absence of any uniform way to obtain a machine for it.

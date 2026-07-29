@@ -16,5 +16,18 @@ tags: [work]
 **Venue/year:** The Journal of Symbolic Logic 2(4), December 1937, pp. 153-163.
 **Source:** https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-11 — verified live page (HTTP 200), the offprint's item page at the Turing Digital Archive, King's College Cambridge, with an embedded viewer/download for the scanned original (subject to the archive's stated terms of use). The Cambridge Core journal-of-record copy is paywalled.
 
+**ACCESS GATE, not an OCR case (2026-07-29).** The recorded King's College
+archive URL returns HTTP 200 but serves a *catalogue* page with no file: the page
+text invites you to "read the terms of use if you wish to download the PDF file
+below" while the served HTML contains no PDF anchor, iframe, embed, or IIIF media
+URL anonymously — it is presumably behind `/user/login`. Guessed paths under
+`/sites/default/files/` 404. This is not a User-Agent problem (a browser UA was
+sent, and other pages on the host served fine), and it is *not* a missing text
+layer, so deliberately no OCR-HOLD marker was left. The journal of record (JSL
+1937) is paywalled per the fields above.
+
+To finish this work someone needs either King's archive credentials or a
+different open copy of the 1937 offprint.
+
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

@@ -6,6 +6,7 @@ description: Proposes that a system of diffusing, reacting chemical substances (
 subdomains: [foundations-of-computation]
 year: 1952
 url: https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf
+extraction: complete
 survey_pages: 37
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf — verified live PDF (HTTP 200, correct content-type/size). The Royal Society's own site (royalsocietypublishing.org) blocked automated access behind a Cloudflare bot challenge during verification, so this Caltech course-page mirror is used instead; a legitimate open copy may also exist directly on the Royal Society site for a human visitor.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Cut the model along the seam where two subsystems stop influencing each other](../lessons/cut-the-model-along-the-seam-where-the-coupling-vanishes.md)
+- [Uniform rules cannot produce non-uniform output; build an instability that selects among the noise instead](../lessons/get-variety-from-an-instability-that-selects-among-noise.md)
+- [The rate at which you cross a threshold changes the outcome, not just the time it takes to get there](../lessons/how-fast-you-cross-a-threshold-changes-the-result.md)
+- [The count of interacting parts caps which behaviours are reachable at all, whatever you tune](../lessons/the-number-of-interacting-parts-bounds-the-behaviours-available.md)

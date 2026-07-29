@@ -6,6 +6,7 @@ description: A survey of how to make sense of negated subgoals in Datalog-style 
 subdomains: [databases-and-data-management]
 year: 1994
 url: http://infolab.stanford.edu/~ullman/pub/negation.ps
+extraction: complete
 access: public
 host: self-archived
 tags: [work]
@@ -17,4 +18,7 @@ tags: [work]
 **Source:** http://infolab.stanford.edu/~ullman/pub/negation.ps — live, self-archived PostScript on Ullman's own Stanford InfoLab page (verified 200 via direct fetch).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [One new construct can turn meaning from a fact into a choice you must justify](../lessons/one-new-construct-can-turn-meaning-into-a-choice.md)
+- [Admitting 'undetermined' as an answer buys you a total, computable definition](../lessons/admit-undetermined-as-an-answer.md)
+- [Carve out the subclass your implementation techniques survive, and check it survives refactoring](../lessons/carve-the-subclass-your-implementation-can-still-handle.md)
+- [Two specifications can be identical and still want different answers](../lessons/intent-lives-outside-the-text.md)

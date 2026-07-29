@@ -6,6 +6,7 @@ description: Von Thun's formal justification for treating Joy programs as mathem
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1994
 url: https://www.kevinalbrecht.com/code/joy-mirror/j02maf.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -17,4 +18,6 @@ tags: [work]
 **Source:** https://www.kevinalbrecht.com/code/joy-mirror/j02maf.html — Kevin Albrecht's mirror of von Thun's original La Trobe philosophy-department site, which is now offline. Legitimate hobbyist preservation mirror (built from a Wayback Machine capture of the original), link-only citation. HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Make the algebra of your notation match the algebra of its meaning](../lessons/make-the-algebra-of-your-notation-match-the-algebra-of-its-meaning.md)
+- [Know exactly where substituting equals for equals stops working](../lessons/know-exactly-where-substituting-equals-for-equals-stops-working.md)
+- [Eliminate the need for names instead of building machinery to scope them](../lessons/eliminate-the-need-for-names-instead-of-building-machinery-to-scope-them.md)

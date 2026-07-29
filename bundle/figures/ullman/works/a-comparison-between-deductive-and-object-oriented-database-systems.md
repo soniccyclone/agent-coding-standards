@@ -6,6 +6,7 @@ description: An openly one-sided invited paper arguing that the deductive (logic
 subdomains: [databases-and-data-management]
 year: 1991
 url: http://infolab.stanford.edu/~ullman/pub/dood.ps
+extraction: complete
 access: public
 host: self-archived
 tags: [work]
@@ -17,4 +18,8 @@ tags: [work]
 **Source:** http://infolab.stanford.edu/~ullman/pub/dood.ps — live, self-archived PostScript on Ullman's own Stanford InfoLab page (verified 200 via direct fetch).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A capability you have to avoid using is not a capability](../lessons/a-capability-you-must-not-use-is-not-a-capability.md)
+- [An optimizer can only exploit the laws you hand it in advance](../lessons/an-optimizer-can-only-use-laws-you-hand-it.md)
+- [What you decide counts as 'the same thing' sets the size of your state space](../lessons/identity-criteria-set-the-size-of-your-state-space.md)
+- [Only unknown questions justify paying for a query language](../lessons/unknown-questions-are-what-justify-a-query-language.md)
+- [How you group data is a search strategy in disguise](../lessons/how-you-group-data-is-an-access-plan-in-disguise.md)
