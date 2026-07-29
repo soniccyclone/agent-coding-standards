@@ -6,6 +6,7 @@ description: A retrospective on Postgres's first several years, written by its l
 subdomains: [databases-and-data-management, programming-environments-and-object-systems]
 year: 1990
 url: https://dsf.berkeley.edu/papers/ERL-M90-34.pdf
+extraction: complete
 survey_pages: 36
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://dsf.berkeley.edu/papers/ERL-M90-34.pdf — hosted by UC Berkeley's Data Systems and Foundations (DSF) research group, the Berkeley EECS group Stonebraker's own database-systems lineage runs through (institutional); PDF confirmed live (200) and its text (extracted via manual LZW decoding of the scanned original) opens with the exact title, author list, and "EECS Department, University of California, Berkeley" affiliation line.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A model you can rename into your rival's is your rival's model](../lessons/a-model-you-can-rename-into-your-rival-s-is-your-rival-s-model.md)
+- [An extension point is only as open as the invariants it makes you learn](../lessons/an-extension-point-is-only-as-open-as-the-invariants-it-makes-you-learn.md)
+- [Wanting to be different is not a design criterion](../lessons/wanting-to-be-different-is-not-a-design-criterion.md)
+- [Never schedule the cleanup below the work that depends on it](../lessons/never-schedule-the-cleanup-below-the-work-that-depends-on-it.md)

@@ -6,6 +6,7 @@ description: A response to the early-2010s claim that MapReduce would make paral
 subdomains: [databases-and-data-management, distributed-systems-and-concurrency]
 year: 2010
 url: https://cs.stanford.edu/people/chrismre/cs345/rl/PDBMSvsMR.pdf
+extraction: complete
 survey_pages: 8
 survey_text_layer: full
 survey_fetch_mb: 3
@@ -21,4 +22,6 @@ tags: [work]
 **Source:** https://cs.stanford.edu/people/chrismre/cs345/rl/PDBMSvsMR.pdf — course-materials mirror on a Stanford faculty course page (Chris Ré, not an author), third-party rehost; PDF confirmed live (200) and its extracted text opens with the matching "Communications of the ACM | January 2010 | vol. 53 | no. 1" masthead.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Separate the model from the implementation before you blame either](../lessons/separate-the-model-from-the-implementation-before-you-blame-either.md)
+- [Decide where in a data set's life you pay the cost](../lessons/decide-where-in-a-data-set-s-life-you-pay-the-cost.md)
+- [The cost of reaching a system's advertised speed is part of its speed](../lessons/the-cost-of-reaching-a-system-s-advertised-speed-is-part-of-its-speed.md)

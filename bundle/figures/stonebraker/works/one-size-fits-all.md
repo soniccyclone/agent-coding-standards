@@ -6,6 +6,7 @@ description: Makes the case that the general-purpose relational engine, tuned to
 subdomains: [databases-and-data-management, software-engineering-and-architecture]
 year: 2005
 url: https://cs.brown.edu/people/ugur/fits_all.pdf
+extraction: complete
 survey_pages: 10
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://cs.brown.edu/people/ugur/fits_all.pdf — self-archived on co-author Uğur Çetintemel's own Brown University faculty page; PDF confirmed live (200) and its extracted text opens with the exact title, both authors' names, and both authors' institutional emails (stonebraker@csail.mit.edu, ugur@cs.brown.edu).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A retrofitted opposite is always a second-class citizen](../lessons/a-retrofitted-opposite-is-always-a-second-class-citizen.md)
+- [Ask which side holds still — the data or the question](../lessons/ask-which-side-holds-still-the-data-or-the-question.md)
+- [The boundaries between components are inherited, not derived](../lessons/the-boundaries-between-components-are-inherited-not-derived.md)
+- [When features serve disjoint audiences, the system has already split](../lessons/when-features-serve-disjoint-audiences-the-system-has-already-split.md)

@@ -6,6 +6,7 @@ description: Describes the operational 1976 INGRES system — one of the first w
 subdomains: [databases-and-data-management, operating-systems-and-systems-programming]
 year: 1976
 url: https://www2.eecs.berkeley.edu/Pubs/TechRpts/1976/Archive/ERL-m-577.pdf
+extraction: complete
 survey_pages: 36
 survey_text_layer: full
 survey_fetch_mb: 6
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://www2.eecs.berkeley.edu/Pubs/TechRpts/1976/Archive/ERL-m-577.pdf — UC Berkeley EECS Technical Reports archive (institutional), linked directly from the department's own tech-report index page at https://www2.eecs.berkeley.edu/Pubs/TechRpts/1976/29338.html; PDF confirmed live (200) and its extracted text shows the matching 1976 copyright notice.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Three features that rewrite the same tree are one feature](../lessons/three-features-that-rewrite-the-same-tree-are-one-feature.md)
+- [A system that describes itself in its own terms inherits its own tooling](../lessons/a-system-that-describes-itself-in-its-own-terms-inherits-its-own-tooling.md)
+- [Solve one case completely and make everything else reduce to it](../lessons/solve-one-case-completely-and-make-everything-else-reduce-to-it.md)
+- [An atomic unit can only be as large as what you can undo](../lessons/an-atomic-unit-can-only-be-as-large-as-what-you-can-undo.md)

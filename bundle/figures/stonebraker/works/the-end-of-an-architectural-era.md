@@ -21,4 +21,5 @@ tags: [work]
 **Source:** https://www.vldb.org/conf/2007/papers/industrial/p1150-stonebraker.pdf — official VLDB conference archive (vldb.org), institutional host; resolves 200 via direct GET with a browser user agent (bare HEAD/curl default UA gets a 403 from vldb.org's front end — false negative on a naive check, confirmed live by both curl GET and WebFetch).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Measure useful work as a fraction of runtime](../lessons/measure-useful-work-as-a-fraction-of-runtime.md)
+- [Name the workload property that lets a mechanism be deleted](../lessons/name-the-workload-property-that-lets-a-mechanism-be-deleted.md)
