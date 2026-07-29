@@ -6,6 +6,7 @@ description: Lecture notes from a course Curry taught at Notre Dame, laying out 
 subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1950
 url: https://projecteuclid.org/ebooks/notre-dame-mathematical-lectures/A-Theory-of-Formal-Deducibility/toc/ndml/1175197175
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -47,4 +48,9 @@ offered. A copy of the whole book also exists on archive.org as
 `theoryofformalde0000curr` if the chapter endpoint ever stops working.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Define an operator by what entitles you to assert it, and its laws stop being a matter of taste](../lessons/define-an-operator-by-what-entitles-you-to-assert-it.md)
+- [A predicate that flips when the system grows cannot be a primitive](../lessons/a-predicate-that-flips-when-the-system-grows-cannot-be-primitive.md)
+- [The step you never think about is carrying your whole metatheory](../lessons/the-rule-you-never-think-about-carries-your-whole-metatheory.md)
+- [Build the system that explains before the system that feels natural, then derive the second from the first](../lessons/build-the-explaining-system-first-and-derive-the-comfortable-one.md)
+- [Make checking definite even where finding cannot be](../lessons/make-checking-definite-even-where-finding-cannot-be.md)
+- [There is no outside the language you are working in, so carve the layer you need out of the inside](../lessons/there-is-no-outside-the-language-you-are-working-in.md)
