@@ -6,6 +6,7 @@ description: A metacircular-interpreter design paper — von Thun builds an inte
 subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 2009
 url: https://www.kevinalbrecht.com/code/joy-mirror/jp-joyjoy.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -17,4 +18,6 @@ tags: [work]
 **Source:** https://www.kevinalbrecht.com/code/joy-mirror/jp-joyjoy.html — Kevin Albrecht's mirror of von Thun's original La Trobe philosophy-department site, which is now offline. Legitimate hobbyist preservation mirror, link-only citation. HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A right answer is no proof your interpreter is doing the interpreting](../lessons/a-right-answer-is-no-proof-your-interpreter-is-doing-the-interpreting.md)
+- [Give a partial model a fall-through, and make the fall-through confess](../lessons/give-a-partial-model-a-fallthrough-and-make-the-fallthrough-confess.md)
+- [Let self-interpretation decide what belongs in the core](../lessons/let-self-interpretation-decide-what-belongs-in-the-core.md)

@@ -6,6 +6,7 @@ description: The reference manual for the C-based prototype interpreter of Joy �
 subdomains: [programming-languages-and-semantics]
 year: 2003
 url: https://www.kevinalbrecht.com/code/joy-mirror/j09imp.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -17,4 +18,6 @@ tags: [work]
 **Source:** https://www.kevinalbrecht.com/code/joy-mirror/j09imp.html — Kevin Albrecht's mirror of von Thun's original La Trobe philosophy-department site, which is now offline. Legitimate hobbyist preservation mirror, link-only citation. HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The complete list of ways to be wrong measures your design](../lessons/the-complete-list-of-ways-to-be-wrong-measures-your-design.md)
+- [Once naming is unnecessary, every name is a message to a reader](../lessons/once-naming-is-unnecessary-every-name-is-a-message-to-a-reader.md)
+- [Configuration is just a definition you resolve later](../lessons/configuration-is-just-a-definition-you-resolve-later.md)

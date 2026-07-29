@@ -6,6 +6,7 @@ description: A worked-examples paper showing Joy's combinator style applied to o
 subdomains: [programming-languages-and-semantics, algorithms-and-complexity]
 year: 1996
 url: https://www.kevinalbrecht.com/code/joy-mirror/j06prg.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -17,4 +18,7 @@ tags: [work]
 **Source:** https://www.kevinalbrecht.com/code/joy-mirror/j06prg.html — Kevin Albrecht's mirror of von Thun's original La Trobe philosophy-department site, which is now offline. Legitimate hobbyist preservation mirror, link-only citation. HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When you cannot enumerate the variations, take the variation as code](../lessons/when-you-cannot-enumerate-the-variations-take-the-variation-as-code.md)
+- [An abstraction is right when the informal description transcribes without residue](../lessons/an-abstraction-is-right-when-the-informal-description-transcribes-without-residue.md)
+- [Reinterpretation can do the work of computation — at a cost in generality](../lessons/reinterpretation-can-do-the-work-of-computation.md)
+- [Powerful abstraction tools are what make a stopping rule necessary](../lessons/powerful-abstraction-tools-are-what-make-a-stopping-rule-necessary.md)

@@ -6,6 +6,7 @@ description: Argues that classical computability-theory results — the paramete
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1996
 url: https://www.kevinalbrecht.com/code/joy-mirror/j05cmp.html
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -17,4 +18,7 @@ tags: [work]
 **Source:** https://www.kevinalbrecht.com/code/joy-mirror/j05cmp.html — Kevin Albrecht's mirror of von Thun's original La Trobe philosophy-department site, which is now offline. Legitimate hobbyist preservation mirror, link-only citation. HTTP 200 verified.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Hard theory is often an artifact of the encoding you inherited](../lessons/hard-theory-is-often-an-artifact-of-the-encoding-you-inherited.md)
+- [Derive the implementation from its defining law](../lessons/derive-the-implementation-from-its-defining-law.md)
+- [Never settle for existence — ask for the uniform constructor](../lessons/never-settle-for-existence-ask-for-the-uniform-constructor.md)
+- [Evaluation-order pathologies are a symptom of substitution, not of laziness](../lessons/evaluation-order-pathologies-are-a-symptom-of-substitution.md)
