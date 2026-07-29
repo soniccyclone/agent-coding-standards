@@ -6,6 +6,7 @@ description: Argues that the 1970s-era RDBMS architecture — disk-oriented buff
 subdomains: [databases-and-data-management, distributed-systems-and-concurrency]
 year: 2007
 url: https://www.vldb.org/conf/2007/papers/industrial/p1150-stonebraker.pdf
+extraction: complete
 survey_pages: 11
 survey_text_layer: full
 survey_fetch_mb: 2
@@ -23,3 +24,7 @@ tags: [work]
 ## Lessons
 - [Measure useful work as a fraction of runtime](../lessons/measure-useful-work-as-a-fraction-of-runtime.md)
 - [Name the workload property that lets a mechanism be deleted](../lessons/name-the-workload-property-that-lets-a-mechanism-be-deleted.md)
+- [A closed set of programs turns runtime decisions into design-time ones](../lessons/a-closed-set-of-programs-turns-runtime-decisions-into-design-time-ones.md)
+- [Escalate mechanism on measured failure, not on its possibility](../lessons/escalate-mechanism-on-measured-failure-not-on-its-possibility.md)
+- [A live copy can replace a record of the past](../lessons/a-live-copy-can-replace-a-record-of-the-past.md)
+- [The seam between two languages is where the cost collects](../lessons/the-seam-between-two-languages-is-where-the-cost-collects.md)
