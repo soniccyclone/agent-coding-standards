@@ -16,5 +16,35 @@ tags: [work]
 **Venue/year:** Notre Dame Mathematical Lectures, No. 6, University of Notre Dame, 1950 (lithoprinted).
 **Source:** https://projecteuclid.org/ebooks/notre-dame-mathematical-lectures/A-Theory-of-Formal-Deducibility/toc/ndml/1175197175 — table-of-contents page for the volume on Project Euclid, whose "Notre Dame Mathematical Lectures" ebook series is published open access. Each chapter link carries an Open Access icon and download button; verified by directly fetching a chapter PDF (returned a real, unauthenticated 2-page PDF, not a paywall or login prompt). An Internet Archive copy also exists (archive.org/details/theoryofformalde0000curr) but is lending-restricted, so the Project Euclid open-access edition is the citation of record here.
 
+**Phase 4 URL correction (2026-07-28).** The recorded URL is Project Euclid's
+table-of-contents page for the book. That page renders an "institutional
+sign-in" link prominently, which is misleading: the individual chapter PDFs
+download **without any authentication**. Verified — a chapter fetch returned
+HTTP 200, `application/pdf`. The reason five successive agents failed on this
+figure is that all three of its sources were landing pages rather than content,
+and nothing here told them how to get through.
+
+Chapter PDFs come from Project Euclid's download endpoint, substituting the id:
+
+    https://projecteuclid.org/accountAjax/Download?urlId=ndml%2F<ID>&downloadType=presschapter
+
+| id | chapter |
+|---|---|
+| 1175197177 | Preface |
+| 1175197179 | Notational Explanations |
+| 1175197180 | Introduction |
+| 1175197181 | Chapter I — Formal Systems and Formal Reasoning |
+| 1175197182 | Chapter II — The Finite Positive Connectives |
+| 1175197183 | Chapter III — Quantifiers |
+| 1175197184 | Chapter IV — Negation |
+| 1175197185 | Chapter V — Modalities |
+| 1175197186 | Bibliography |
+
+(1175197176 is the title/copyright page and 1175197178 the printed contents —
+both skippable.) The argument-carrying chapters are the Introduction and I-V;
+fetch them individually rather than looking for a whole-book PDF, which is not
+offered. A copy of the whole book also exists on archive.org as
+`theoryofformalde0000curr` if the chapter endpoint ever stops working.
+
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
