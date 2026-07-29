@@ -6,6 +6,7 @@ description: Develops a general technique for synchronizing processes in a distr
 subdomains: [distributed-systems-and-concurrency, programming-languages-and-semantics]
 year: 1982
 url: https://www.cs.cornell.edu/fbs/publications/synchDistProg.pdf
+extraction: complete
 survey_pages: 24
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -20,4 +21,10 @@ tags: [work]
 **Source:** https://www.cs.cornell.edu/fbs/publications/synchDistProg.pdf — self-archived PDF on Schneider's own Cornell publications page (`cs.cornell.edu/fbs/publications/`), live and directly downloadable (HTTP 200, `application/pdf`, ~1.5MB). Phase 1 pass had flagged this `paywalled` (it does sit behind ACM DL at dl.acm.org/doi/10.1145/357162.357163); the author's self-archived copy resolves that.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When a technique cannot express a requirement, suspect the requirement: use the failure as a probe](../lessons/an-unimplementable-condition-indicts-the-specification.md)
+- [Make every distributed decision rule immune to learning more, and interference disappears](../lessons/decisions-that-later-news-cannot-falsify.md)
+- [Derive knowledge from what a participant can no longer say, not from what it has said](../lessons/infer-from-what-a-participant-can-no-longer-say.md)
+- [Start from the extravagant version nobody could build, then compress it to exactly what the decisions read](../lessons/start-from-the-extravagant-version-then-compress.md)
+- [Broadcast the reason you are waiting, not just the fact of it, and global questions turn into local ones](../lessons/broadcast-the-reason-you-are-waiting.md)
+- [The cost of coordination is set by the size of its audience, so shrink the audience before tuning the protocol](../lessons/shrink-the-audience-before-optimizing-the-protocol.md)
+- [A designated role is hidden state that has to be rebuilt after a crash; symmetric designs have nothing to re-elect](../lessons/a-role-is-state-that-must-be-rebuilt.md)
