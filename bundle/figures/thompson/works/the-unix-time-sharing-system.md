@@ -6,6 +6,7 @@ description: The original public description of Unix, written for a general CACM
 subdomains: [operating-systems-and-systems-programming]
 year: 1974
 url: https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cacm.pdf
+extraction: complete
 survey_pages: 15
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -25,3 +26,7 @@ tags: [work]
 - [Put the variety in the joints between programs, not inside them](../lessons/put-the-variety-in-the-joints-not-in-the-programs.md)
 - [Decline to model what your layer does not need to know](../lessons/decline-to-model-what-your-layer-does-not-need-to-know.md)
 - [A system you are forced to inhabit corrects itself; one built to a requirements list does not](../lessons/a-system-you-are-forced-to-inhabit-corrects-itself.md)
+- [Build for the mode that subsumes the other, not the one that looks simpler](../lessons/build-for-the-mode-that-subsumes-the-other.md)
+- [Constrain a structure's shape so the question you cannot afford to ask stays cheap](../lessons/constrain-the-shape-to-keep-the-unaffordable-question-cheap.md)
+- [Judge a safety mechanism at the level users actually care about, not the level it operates on](../lessons/neither-necessary-nor-sufficient-means-refuse-not-weaken.md)
+- [An unnegotiable ceiling forces factoring where a generous one permits accumulation](../lessons/an-unnegotiable-ceiling-forces-factoring-instead-of-accumulation.md)
