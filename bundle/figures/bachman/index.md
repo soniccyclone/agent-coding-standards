@@ -74,7 +74,7 @@ could be found. Flagging per standing procedure rather than blocking; Phase
 4 lesson extraction for Bachman will have a thinner public-primary-source
 base than the other pilot figures as a result.
 
-## Lessons rollup
+## Lessons
 
 Bachman teaches mechanism-first data thinking from the side that lost the
 relational argument but kept several truths the winner still depends on. His

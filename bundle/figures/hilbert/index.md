@@ -48,7 +48,7 @@ confirmed current — except for a genuinely partial self-archived resource
 public" and was left out of `works/` on that basis. Both stay excluded from
 `works/`; flagging per standing procedure rather than blocking on it.
 
-## Lessons rollup
+## Lessons
 Hilbert teaches that the way to get control of a subject is to fix, exactly and
 in the open, what it rests on — and that once you have done so, questions that
 looked philosophical become technical. His primitives are introduced as
