@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://www.cs.ox.ac.uk/files/3233/PRG11.pdf — official University of Oxford Department of Computer Science publications page (cs.ox.ac.uk/publications/publication3729-abstract.html links directly to this file); institutional host. Verified via HTTP 200 fetch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Make the rest of the computation an argument](../lessons/make-the-rest-of-the-computation-an-argument.md)
+- [Test a formalism against the feature you would ban](../lessons/test-a-formalism-against-the-feature-you-would-ban.md)
+- [Say what happens and stay silent about the bookkeeping](../lessons/say-what-happens-and-stay-silent-about-the-bookkeeping.md)
+- [Judge a semantics by the equalities it lets you prove](../lessons/judge-a-semantics-by-the-equalities-it-lets-you-prove.md)

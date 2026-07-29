@@ -6,6 +6,7 @@ description: A short conference paper arguing that a large computer should be ab
 subdomains: [operating-systems-and-systems-programming]
 year: 1959
 url: https://archive.org/details/large-fast-computers
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -17,4 +18,8 @@ tags: [work]
 **Source:** https://archive.org/details/large-fast-computers — scanned original hosted on the Internet Archive (preservation nonprofit); third-party rehost. Full text and PDF confirmed viewable/downloadable on the item page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let a program do the organising, and hardware only what a program cannot](../lessons/let-a-program-do-the-organising-and-hardware-only-what-a-program-cannot.md)
+- [Rank urgency by what cannot be made to wait](../lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
+- [Hand each user a whole smaller machine, not a slice of yours](../lessons/hand-each-user-a-whole-smaller-machine.md)
+- [Put the power to change a guard out of reach of what it guards](../lessons/put-the-power-to-change-a-guard-out-of-reach-of-what-it-guards.md)
+- [Make the expected cost part of the request](../lessons/make-the-expected-cost-part-of-the-request.md)

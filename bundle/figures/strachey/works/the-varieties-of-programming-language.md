@@ -6,6 +6,7 @@ description: A comparative survey of the "domains" of values a language can mani
 subdomains: [programming-languages-and-semantics]
 year: 1973
 url: https://www.cs.ox.ac.uk/files/3232/PRG10.pdf
+extraction: complete
 survey_pages: 24
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://www.cs.ox.ac.uk/files/3232/PRG10.pdf — official University of Oxford Department of Computer Science publications page; institutional host. Verified via HTTP 200 fetch (scanned OCR document, Oxford CS domain).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Two questions fix a design: what can be named, and what can be stored](../lessons/two-questions-fix-a-design-what-can-be-named-and-what-can-be-stored.md)
+- [Keep what is settled by context apart from what is settled by history](../lessons/keep-what-is-settled-by-context-apart-from-what-is-settled-by-history.md)
+- [Measure every version against the ideal, not against each other](../lessons/measure-every-version-against-the-ideal-not-against-each-other.md)
+- [Study the extremes to find out which of your assumptions are local](../lessons/study-the-extremes-to-find-out-which-of-your-assumptions-are-local.md)

@@ -21,4 +21,8 @@ tags: [work]
 **Source:** http://web.archive.org/web/20250401021940/http://www.math.bas.bg/~bantchev/place/cpl/features.pdf — Wayback Machine snapshot (2025-04-01) of a scanned PDF mirrored on a personal academic site (math.bas.bg); third-party rehost. The live math.bas.bg URL now 404s/redirects after a site redesign, so citing the Wayback snapshot per the fallback policy. Verified snapshot fetches as an 11-page PDF via HTTP 200; the OUP original (academic.oup.com/comjnl/article-abstract/6/2/134/364746) is paywalled.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Find the one choice a design keeps re-asking](../lessons/find-the-one-choice-a-design-keeps-re-asking.md)
+- [Make the machine's reality sayable instead of escapable](../lessons/make-the-machines-reality-sayable-instead-of-escapable.md)
+- [Put the variety in the composable layer](../lessons/put-the-variety-in-the-composable-layer.md)
+- [Close an ambiguity with a required part, not a tie-breaking rule](../lessons/close-an-ambiguity-with-a-required-part-not-a-tie-breaking-rule.md)
+- [Treat familiarity as a cost the replacement has to cover](../lessons/treat-familiarity-as-a-cost-the-replacement-has-to-cover.md)
