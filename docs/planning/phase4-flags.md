@@ -400,6 +400,46 @@ Worth re-running across the whole corpus if the OCR batch is ever built, since
 the original character-count survey may have mismarked in the other direction
 too (a genuinely scanned page yielding stray OCR noise would score as `partial`).
 
+### H.6 GDZ cover-only scans, and a lesson-provenance question about Péter
+
+**Found 2026-07-29.** All 8 works in this corpus hosted by Göttingen's GDZ have
+*no* extractable article text — the only embedded text is the library's German
+cover sheet, and article pages yield exactly zero characters. All 8 were recorded
+`partial`, which is worse than `none` would have been: it reads as "some of the
+article extracts" when none of it does. My survey had been measuring the cover
+boilerplate. GDZ also exposes no ALTO/OCR derivative (its IIIF manifest 404s),
+so unlike McMillan's thesis there is no host-provided-text escape hatch.
+
+Corrected to `none`: `kleene/general-recursive-functions-of-natural-numbers`,
+`peter/uber-den-zusammenhang-...`, `peter/uber-die-mehrfache-rekursion`,
+`schonfinkel/bausteine-der-mathematischen-logik`,
+`schonfinkel/entscheidungsproblem-der-mathematischen-logik`, and Strassen's
+three. Quarantine grows from 17 figures to 19 (adds `kleene`, `schonfinkel`).
+
+**OCR batch priority — best value per page in the whole backlog.** Strassen's
+*Gaussian Elimination is not Optimal* (1969) is **4 pages, of which only 2-3 are
+article**, and it is the figure's flagship result: the entire reason Strassen is
+in this corpus. Strassen currently has a rollup and **zero lessons** because all
+three of its works are held. Three scanned pages unblock a whole figure. If the
+batch gets prioritized at all, start here.
+
+**NEEDS NATHAN — Péter's lesson provenance.** `peter` is marked done with 9
+lessons and `extraction: complete` on both works, but both works are now
+confirmed cover-only. So those 9 lessons were not derived from extracted text.
+The likely explanation is benign: the extracting agent read the page images
+visually, which was permitted before the OCR prohibition landed on 2026-07-28.
+The finisher that later touched Péter said as much — "no OCR-HOLD marker was
+left, so a prior agent evidently got enough text through. Not re-verified per
+task scope." But nobody has confirmed it, and the alternative (lessons written
+from model recollection of Péter's work rather than from the source) is exactly
+what this project's rules exist to prevent. **This is the one place in the corpus
+where lesson grounding is genuinely unverified rather than merely unattested.**
+Cheapest resolution: one agent re-reads the two GDZ scans as page images and
+confirms the 9 lessons are supported, or flags the ones that are not.
+
+Same question applies more weakly to `kleene`, which has lessons against a
+cover-only GDZ scan; it should be checked in the same pass.
+
 ### H.4 Regenerating all of the above
 
     # OCR quarantine list + page counts

@@ -6,6 +6,7 @@ description: A survey tracing 35 years of database data-model proposals across n
 subdomains: [databases-and-data-management]
 year: 2005
 url: https://people.cs.umass.edu/~yanlei/courses/CS691LL-f06/papers/SH05.pdf
+extraction: complete
 survey_pages: 40
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://people.cs.umass.edu/~yanlei/courses/CS691LL-f06/papers/SH05.pdf — course-materials mirror (UMass Amherst CS691LL), third-party rehost of the widely self-archived paper; content verified against the original text (opening abstract confirmed by direct extraction).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A new construct must pay for its complexity in leverage, not in elegance](../lessons/a-new-construct-must-pay-for-its-complexity-in-leverage.md)
+- [Design interfaces so the data outlives the programs that touch it](../lessons/design-interfaces-so-data-outlives-the-programs-that-touch-it.md)
+- [State what you want and surrender the plan](../lessons/state-what-you-want-and-surrender-the-plan.md)
+- [The field's history is your cheapest experiment](../lessons/the-field-s-history-is-your-cheapest-experiment.md)

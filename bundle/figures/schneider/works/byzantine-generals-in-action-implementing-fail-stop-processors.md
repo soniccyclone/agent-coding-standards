@@ -6,6 +6,7 @@ description: Shows how to approximate an idealized "fail-stop processor" — one
 subdomains: [distributed-systems-and-concurrency]
 year: 1984
 url: https://www.cs.cornell.edu/fbs/publications/ByzGensInAction.pdf
+extraction: complete
 survey_pages: 10
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://www.cs.cornell.edu/fbs/publications/ByzGensInAction.pdf — self-archived PDF on Schneider's own Cornell publications page (`cs.cornell.edu/fbs/publications/`), live and directly downloadable (HTTP 200, `application/pdf`, ~650KB). Phase 1 pass had flagged this `paywalled` (it does sit behind ACM DL at dl.acm.org/doi/10.1145/190.357399); the author's self-archived copy resolves that.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An assumption is a debt: you don't know what a design costs until someone builds the thing it assumes](../lessons/price-the-assumption-you-build-on.md)
+- [When an ideal is unbuildable, keep its interface and make the gap a parameter](../lessons/index-an-unreachable-abstraction-by-its-breaking-point.md)
+- [Noticing a fault is cheaper than surviving one, so buy redundancy per layer instead of uniformly](../lessons/detect-cheaply-mask-expensively.md)
+- [Compare two architectures by which event fires their expensive operation, not by how expensive the operation is](../lessons/compare-designs-by-what-triggers-the-expensive-operation.md)

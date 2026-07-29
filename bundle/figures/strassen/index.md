@@ -22,3 +22,18 @@ Influence concentrates heavily in 2-3 works:
 3. "Relative Bilinear Complexity and Matrix Multiplication" (1987) — `paywalled`
 4. "The Asymptotic Spectrum of Tensors and the Exponent of Matrix Multiplication" (1988, FOCS) — `uncertain`
 5. "Evaluation of Rational Functions" (1973) — `uncertain`
+
+## Lessons
+
+No lessons yet. All three of this figure's sourced works are GDZ (SUB Göttingen)
+digitizations whose only machine-readable text is the library's own cover sheet;
+every content page is an image with no text layer, confirmed via `pdftotext`
+in both `-layout` and `-raw` modes and by `pdffonts` (the sole embedded fonts
+belong to the cover). Each work file therefore carries an `_OCR-HOLD_` marker
+beneath its untouched placeholder, and none carries `extraction: complete`.
+The extraction is blocked on the deterministic OCR batch, not on reading effort.
+No synthesis is offered here deliberately: a figure-level claim about how Strassen
+thought has to be grounded in the argument as he actually wrote it, and none of
+that text was readable, so stating one now would only launder prior knowledge of
+the results into the corpus as if it had been mined. Held pages: 4 (1969),
+39 (1987), 52 (1988). Once OCR lands, all three works are open.

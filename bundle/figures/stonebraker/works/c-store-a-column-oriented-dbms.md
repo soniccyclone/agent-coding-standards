@@ -6,6 +6,7 @@ description: Proposes a relational database engine built around column-wise rath
 subdomains: [databases-and-data-management]
 year: 2005
 url: https://www.vldb.org/archives/website/2005/program/paper/thu/p553-stonebraker.pdf
+extraction: complete
 survey_pages: 12
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://www.vldb.org/archives/website/2005/program/paper/thu/p553-stonebraker.pdf — official VLDB conference archive (vldb.org), institutional host; resolves 200 via direct GET (blocks bare HEAD requests, hence the browser-UA check).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A stable interface is a license to rebuild everything beneath it](../lessons/a-stable-interface-is-a-license-to-rebuild-everything-beneath-it.md)
+- [Design against the ratio between resources, not their absolute speed](../lessons/design-against-the-ratio-between-resources-not-their-absolute-speed.md)
+- [When two goals fight, build two structures and a reconciler](../lessons/when-two-goals-fight-build-two-structures-and-a-reconciler.md)
+- [Weaken a guarantee nobody needs and whole mechanisms vanish](../lessons/weaken-a-guarantee-nobody-needs-and-whole-mechanisms-vanish.md)

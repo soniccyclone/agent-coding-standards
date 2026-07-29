@@ -21,4 +21,6 @@ tags: [work]
 **Source:** https://www.cs.ox.ac.uk/files/3228/PRG06.pdf — official University of Oxford Department of Computer Science publications page (cs.ox.ac.uk/publications/publication3723-abstract.html links directly to this file); institutional host. Verified via HTTP 200 fetch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Give a construct a meaning, not another notation](../lessons/give-a-construct-a-meaning-not-another-notation.md)
+- [Order things by how much they tell you](../lessons/order-things-by-how-much-they-tell-you.md)
+- [Give undefinedness a value instead of a hole](../lessons/give-undefinedness-a-value-instead-of-a-hole.md)

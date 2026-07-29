@@ -6,6 +6,7 @@ description: Lecture notes attempting a systematic vocabulary for describing wha
 subdomains: [programming-languages-and-semantics]
 year: 1967
 url: https://reed.cs.depaul.edu/jriely/447/assets/articles/strachey-fundamental-concepts-in-programming-languages.pdf
+extraction: complete
 survey_pages: 39
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,8 @@ tags: [work]
 **Source:** https://reed.cs.depaul.edu/jriely/447/assets/articles/strachey-fundamental-concepts-in-programming-languages.pdf — PDF hosted as course reading material on a DePaul University CS course site (course mirror, third-party rehost); verified live, PDF metadata title matches. Confirmed via HTTP 200 fetch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Name the concept before you formalise it](../lessons/name-the-concept-before-you-formalise-it.md)
+- [Map the space of meanings before arguing about notation](../lessons/map-the-space-of-meanings-before-arguing-about-notation.md)
+- [When a feature breaks a property, split the notion rather than abandon the property](../lessons/when-a-feature-breaks-a-property-split-the-notion-not-the-property.md)
+- [Ask what a construct is forbidden to do](../lessons/ask-what-a-construct-is-forbidden-to-do.md)
+- [Preserve the programmer's indifference to order](../lessons/preserve-the-programmers-indifference-to-order.md)

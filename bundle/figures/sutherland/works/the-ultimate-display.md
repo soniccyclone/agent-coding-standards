@@ -6,6 +6,7 @@ description: A short, visionary 1965 paper arguing that a computer display shoul
 subdomains: [programming-environments-and-object-systems]
 year: 1965
 url: https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf
+extraction: complete
 survey_pages: 2
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,6 @@ tags: [work]
 **Source:** https://worrydream.com/refs/Sutherland_1965_-_The_Ultimate_Display.pdf — live PDF (curl HTTP 200; confirmed by downloading the file and checking embedded PDF metadata: `/Title (The Ultimate Display)`), hosted on Bret Victor's personal reference archive (worrydream.com), a well-known third-party collection of primary-source CS papers.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Familiarity is something you can manufacture, so stop imitating the physical world](../lessons/familiarity-is-buildable-so-stop-imitating-the-physical.md)
+- [A projection is only usable if it carries the way back to the node that made it](../lessons/a-projection-must-carry-its-way-back-to-the-node.md)
+- [State your project's asymptote, so you can tell essential limits from current ones](../lessons/state-the-asymptote-not-the-next-increment.md)

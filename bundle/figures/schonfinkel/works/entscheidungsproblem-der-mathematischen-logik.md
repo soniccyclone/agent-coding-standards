@@ -7,7 +7,7 @@ subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1928
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0099/LOG_0022.pdf
 survey_pages: 32
-survey_text_layer: partial
+survey_text_layer: none
 survey_fetch_mb: 2
 access: public
 host: institutional
@@ -21,6 +21,17 @@ tags: [work]
 **Venue/year:** Mathematische Annalen, vol. 99, pp. 342-372 (1928)
 
 **Source:** Göttinger Digitalisierungszentrum (GDZ), the digitization center of the SUB Göttingen (Göttingen State and University Library) — direct PDF of the article as digitized from the original Mathematische Annalen volume. Persistent identifier: GDZPPN002272393 (resolvable via http://resolver.sub.uni-goettingen.de/purl?GDZPPN002272393, which redirects to the volume-level viewer). Also present as part of the full-volume scan on Internet Archive (https://archive.org/details/sim_mathematische-annalen_1928_99). Public domain (both authors died more than 70 years ago).
+
+**Text-layer correction (2026-07-29): GDZ cover-only.** This is a
+Göttingen Digitalisierungszentrum scan whose *only* embedded text is the
+library's own German cover sheet. Article pages yield exactly zero characters
+under `pdftotext -layout` and `-raw`, and `pdffonts` shows the sole embedded
+font belongs to the cover. It was previously recorded `partial`, which was
+actively misleading — that reads as "some of the article extracts" when in fact
+none of it does; my survey had measured the cover boilerplate. GDZ exposes no
+ALTO/OCR derivative for these items either (the IIIF manifest 404s), so the
+host-provided-text channel is genuinely unavailable rather than unattempted.
+This work needs the deterministic OCR batch.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

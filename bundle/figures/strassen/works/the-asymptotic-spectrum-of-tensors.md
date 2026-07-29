@@ -7,7 +7,7 @@ subdomains: [algorithms-and-complexity]
 year: 1988
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0384/LOG_0008.pdf
 survey_pages: 52
-survey_text_layer: partial
+survey_text_layer: none
 survey_fetch_mb: 3
 access: public
 host: institutional
@@ -21,5 +21,17 @@ tags: [work]
 
 Note: the Phase 1/2 stub listed this as "The Asymptotic Spectrum of Tensors and the Exponent of Matrix Multiplication (1988, FOCS)" — that conflates two related items. The actual FOCS extended abstract ("...and the Exponent of Matrix Multiplication") ran in FOCS 1986 (IEEE SFCS '86, pp. 49-54, DOI 10.1109/SFCS.1986.52) and sits behind the IEEE Xplore paywall with no public copy found. The full journal treatment, titled simply "The Asymptotic Spectrum of Tensors," appeared in Crelle's Journal in 1988 and is the version linked here.
 
+**Text-layer correction (2026-07-29): GDZ cover-only.** This is a
+Göttingen Digitalisierungszentrum scan whose *only* embedded text is the
+library's own German cover sheet. Article pages yield exactly zero characters
+under `pdftotext -layout` and `-raw`, and `pdffonts` shows the sole embedded
+font belongs to the cover. It was previously recorded `partial`, which was
+actively misleading — that reads as "some of the article extracts" when in fact
+none of it does; my survey had measured the cover boilerplate. GDZ exposes no
+ALTO/OCR derivative for these items either (the IIIF manifest 404s), so the
+host-provided-text channel is genuinely unavailable rather than unattempted.
+This work needs the deterministic OCR batch.
+
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
+_OCR-HOLD -- no text layer; deferred pending explicit go-ahead_
