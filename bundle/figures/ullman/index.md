@@ -52,3 +52,23 @@ Net effect: the specific database-theory textbooks and 1979 relational-theory pa
 original pass are not independently verifiable as public through this process, though the broader
 "textbook as curriculum mechanism" claim is still evidenced by *Mining of Massive Datasets* and by the
 self-archived Datalog papers above.
+
+## Lessons
+
+Ullman's consistent teaching is that the hard reasoning belongs in the statement of the problem, not
+in the machinery that answers it — and that a statement is only worth having if you can prove things
+about what it means and what it costs. On the logic side this shows up as insistence that adding a
+construct to a language obliges you to justify a meaning for it, that admitting an "undetermined"
+answer can be what makes a definition total, that a capability nobody dares use is not a capability,
+and that an optimiser can only exploit the laws you handed it in advance; on the data-mining side it
+shows up as insistence that you compute what pure chance would hand you before believing any
+discovery, that a cost model is a physical claim about which resource runs out first, and that the
+dependency between inputs and outputs bounds what any parallel implementation can possibly cost. The
+unifying habit is treating representation as the design decision: how you group data, what you count
+as the same thing, what unit you sample, and what single question your summary is built to preserve
+each determine what remains answerable downstream, far more forcefully than any later tuning. Paired
+with that is an unusual candour about limits — carve out the subclass your techniques actually
+survive, keep a signal out of your score so it can calibrate the score, know that an error bound is
+a theorem about one setting and not a property of a technique, and when the exact question is
+provably unaffordable, change the question rather than pretend to answer it. Learn only the part of a
+problem you cannot state yourself; state the rest, and let the machine work from the statement.
