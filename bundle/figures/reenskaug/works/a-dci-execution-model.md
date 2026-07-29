@@ -6,6 +6,7 @@ description: A technical account of how DCI's Context/Role/RoleMethod structure 
 subdomains: [programming-environments-and-object-systems]
 year: 2012
 url: https://folk.universitetetioslo.no/trygver/2012/DCIExecutionModel-2.1.pdf
+extraction: complete
 survey_pages: 11
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,6 @@ tags: [work]
 **Source:** https://folk.universitetetioslo.no/trygver/2012/DCIExecutionModel-2.1.pdf — self-archived by Reenskaug on his University of Oslo homepage, linked from the BabyIDE/DCI documents page. Verified live (HTTP 200, direct PDF) and confirmed by extracting text of the first page. Substituted for the index stub's less-specific "DCI tutorial/overview materials (SPLASH '12, with Coplien)" entry: no standalone SPLASH 2012 slide deck could be located (the artima.com "thedciarchitecture" mirror referenced from Reenskaug's BabyIDE page is dead — Google Sites page returns an empty shell); this is the closest verified, dated, self-archived DCI overview piece from the same period.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [What a language has no word for, its programs cannot govern](../lessons/what-a-language-cannot-name-it-cannot-manage.md)
+- [Local correctness does not compose when "correct" depends on the caller's purpose](../lessons/local-correctness-does-not-compose-when-correct-depends-on-context.md)
+- [A new binding mechanism must be restricted until local reasoning survives it](../lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)

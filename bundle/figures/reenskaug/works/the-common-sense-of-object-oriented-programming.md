@@ -6,6 +6,7 @@ description: Reenskaug's own solo formulation of DCI, arguing that class-based O
 subdomains: [programming-environments-and-object-systems]
 year: 2009
 url: https://folk.universitetetioslo.no/trygver/2009/commonsense.pdf
+extraction: complete
 survey_pages: 74
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://folk.universitetetioslo.no/trygver/2009/commonsense.pdf — self-archived by Reenskaug on his University of Oslo homepage, linked from the BabyIDE/DCI documents page. Verified live (HTTP 200, direct PDF) and confirmed by extracting text of the first page (title, author, and abstract match).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A discipline is worth exactly what it forbids](../lessons/a-discipline-is-worth-what-it-forbids.md)
+- [The browser is part of the language](../lessons/the-browser-is-part-of-the-language.md)
+- [State whose meaning expires with the operation must not be stored where the object lives](../lessons/state-whose-meaning-expires-should-not-be-stored-where-the-object-lives.md)
+- [Between one omniscient coordinator and pure emergence sits declared topology](../lessons/between-one-coordinator-and-pure-emergence.md)

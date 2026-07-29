@@ -6,6 +6,7 @@ description: The core public statement of DCI (Data, Context, Interaction), writ
 subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
 year: 2009
 url: https://www.artima.com/articles/the-dci-architecture-a-new-vision-of-object-oriented-programming
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -18,4 +19,7 @@ tags: [work]
 **Source:** https://www.artima.com/articles/the-dci-architecture-a-new-vision-of-object-oriented-programming — hosted on Artima, a developer-focused publication the authors published through directly rather than a mirror of the ACM paper; treated as third-party-rehost since it isn't either author's own site or an institutional repo. Verified live (HTTP 200, full article text).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Two orthogonal decompositions cannot share one mechanism without both coming out wrong](../lessons/two-orthogonal-decompositions-cannot-share-one-mechanism.md)
+- [Sort behavior by what it drags in, not by the noun it mentions](../lessons/sort-behavior-by-rate-of-change-not-by-the-noun-it-mentions.md)
+- [A requirement nobody can point at in the code cannot be reviewed](../lessons/a-requirement-you-cannot-point-at-in-the-code-cannot-be-reviewed.md)
+- [An entity at one level is a collaboration one level down](../lessons/an-entity-at-one-level-is-a-collaboration-at-the-level-below.md)

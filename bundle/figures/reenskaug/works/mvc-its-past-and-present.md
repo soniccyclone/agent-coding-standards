@@ -6,6 +6,7 @@ description: A 2003 retrospective talk recounting MVC's 1978-79 origins at PARC 
 subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
 year: 2003
 url: https://folk.universitetetioslo.no/trygver/2003/javazone-jaoo/MVC_pattern.pdf
+extraction: complete
 survey_pages: 16
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://folk.universitetetioslo.no/trygver/2003/javazone-jaoo/MVC_pattern.pdf — self-archived by Reenskaug on his University of Oslo homepage, linked from an abstract page in the MVC section of his publications list. Verified live (HTTP 200, direct PDF, ~1MB).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Roles are the invariant; how many objects carry them is a sizing decision](../lessons/roles-are-the-invariant-object-count-is-a-sizing-decision.md)
+- [Comprehensibility cannot be bolted on after the fact](../lessons/comprehensibility-cannot-be-retrofitted.md)
+- [When two structures legitimately disagree, give the disagreement its own layer](../lessons/give-the-structural-mismatch-its-own-layer.md)
+- [Announce change at the granularity of intent, not of mutation](../lessons/notify-at-the-granularity-of-intent-not-of-mutation.md)
