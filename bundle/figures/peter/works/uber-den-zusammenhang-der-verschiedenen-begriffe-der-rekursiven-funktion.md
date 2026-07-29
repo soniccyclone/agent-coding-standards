@@ -8,7 +8,7 @@ year: 1934
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0110/LOG_0036.pdf
 extraction: complete
 survey_pages: 22
-survey_text_layer: partial
+survey_text_layer: none
 survey_fetch_mb: 1
 access: public
 host: institutional
@@ -19,6 +19,17 @@ tags: [work]
 
 **Venue/year:** Mathematische Annalen, Bd. 110 (received 16 April 1934, published in the 1935 issue), pp. 612-632.
 **Source:** https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0110/LOG_0036.pdf — direct per-article PDF served by the Göttinger Digitalisierungszentrum (GDZ), the digitization center of the SUB Göttingen (Göttingen State and University Library), from its public digitized run of Mathematische Annalen. Confirmed via the volume's METS metadata (article ID GDZPPN002277395, logical structure LOG_0036, author listed as "Péter (Politzer), R."), spanning physical pages 617-637 of the volume. No paywall or login. Volume-level viewer: https://gdz.sub.uni-goettingen.de/id/PPN235181684_0110
+
+**Text-layer correction (2026-07-29): GDZ cover-only.** This is a
+Göttingen Digitalisierungszentrum scan whose *only* embedded text is the
+library's own German cover sheet. Article pages yield exactly zero characters
+under `pdftotext -layout` and `-raw`, and `pdffonts` shows the sole embedded
+font belongs to the cover. It was previously recorded `partial`, which was
+actively misleading — that reads as "some of the article extracts" when in fact
+none of it does; my survey had measured the cover boilerplate. GDZ exposes no
+ALTO/OCR derivative for these items either (the IIIF manifest 404s), so the
+host-provided-text channel is genuinely unavailable rather than unattempted.
+This work needs the deterministic OCR batch.
 
 ## Lessons
 - [Generality of notation is not generality of power](../lessons/generality-of-notation-is-not-generality-of-power.md)

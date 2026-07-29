@@ -8,7 +8,7 @@ year: 1936
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0113/LOG_0035.pdf
 extraction: complete
 survey_pages: 40
-survey_text_layer: partial
+survey_text_layer: none
 survey_fetch_mb: 1
 access: public
 host: institutional
@@ -19,6 +19,17 @@ tags: [work]
 
 **Venue/year:** Mathematische Annalen, Bd. 113 (1936), pp. 489-527.
 **Source:** https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0113/LOG_0035.pdf — direct per-article PDF served by the Göttinger Digitalisierungszentrum (GDZ), the digitization center of the SUB Göttingen (Göttingen State and University Library), from its public digitized run of Mathematische Annalen. Confirmed via the volume's METS metadata (article ID GDZPPN002278820, logical structure LOG_0035, 39 pages, author "Péter, R."), spanning physical pages 494-532 of the volume. No paywall or login. Volume-level viewer: https://gdz.sub.uni-goettingen.de/id/PPN235181684_0113
+
+**Text-layer correction (2026-07-29): GDZ cover-only.** This is a
+Göttingen Digitalisierungszentrum scan whose *only* embedded text is the
+library's own German cover sheet. Article pages yield exactly zero characters
+under `pdftotext -layout` and `-raw`, and `pdffonts` shows the sole embedded
+font belongs to the cover. It was previously recorded `partial`, which was
+actively misleading — that reads as "some of the article extracts" when in fact
+none of it does; my survey had measured the cover boilerplate. GDZ exposes no
+ALTO/OCR derivative for these items either (the IIIF manifest 404s), so the
+host-provided-text channel is genuinely unavailable rather than unattempted.
+This work needs the deterministic OCR batch.
 
 ## Lessons
 - [The order you impose on the domain is the real definition of a recursion](../lessons/the-order-you-impose-on-the-domain-is-the-definition.md)

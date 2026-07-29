@@ -6,6 +6,7 @@ description: Develops the formal theory of general recursive functions, the sche
 subdomains: [foundations-of-computation]
 year: 1936
 url: https://gdz.sub.uni-goettingen.de/id/PPN235181684_0112?tify=%7B%22view%22:%22info%22,%22pages%22:%5B731%5D%7D
+survey_text_layer: none
 extraction: complete
 access: public
 host: institutional
@@ -16,6 +17,17 @@ tags: [work]
 
 **Venue/year:** Mathematische Annalen, Bd. 112 (1936), pp. 727-742.
 **Source:** https://gdz.sub.uni-goettingen.de/id/PPN235181684_0112?tify=%7B%22view%22:%22info%22,%22pages%22:%5B731%5D%7D — Göttingen Digitization Center (GDZ), Göttingen State and University Library's public digitized run of Mathematische Annalen; resolves to the volume 112 viewer opened at the article's starting page, no paywall or login. A direct whole-volume PDF is also served from the same host (gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0112/PPN235181684_0112.pdf).
+
+**Text-layer correction (2026-07-29): GDZ cover-only.** This is a
+Göttingen Digitalisierungszentrum scan whose *only* embedded text is the
+library's own German cover sheet. Article pages yield exactly zero characters
+under `pdftotext -layout` and `-raw`, and `pdffonts` shows the sole embedded
+font belongs to the cover. It was previously recorded `partial`, which was
+actively misleading — that reads as "some of the article extracts" when in fact
+none of it does; my survey had measured the cover boilerplate. GDZ exposes no
+ALTO/OCR derivative for these items either (the IIIF manifest 404s), so the
+host-provided-text channel is genuinely unavailable rather than unattempted.
+This work needs the deterministic OCR batch.
 
 ## Lessons
 - [Exactly one capability separates the always-terminating from the fully general: search with no bound on how long it runs](../lessons/one-unbounded-search-separates-the-bounded-from-the-general.md)
