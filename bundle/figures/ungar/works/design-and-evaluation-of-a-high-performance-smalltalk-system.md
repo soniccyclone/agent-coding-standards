@@ -6,6 +6,7 @@ description: Ungar's Berkeley PhD dissertation, showing that a reduced-instructi
 subdomains: [programming-environments-and-object-systems, operating-systems-and-systems-programming]
 year: 1986
 url: https://archive.org/download/DTIC_ADA173022/DTIC_ADA173022.pdf
+extraction: complete
 survey_pages: 245
 survey_text_layer: full
 survey_fetch_mb: 13
@@ -20,4 +21,8 @@ tags: [work]
 **Source:** https://archive.org/download/DTIC_ADA173022/DTIC_ADA173022.pdf — Internet Archive's unrestricted mirror of the original DTIC government technical report (identifier `DTIC_ADA173022`, `access-restricted-item: false`). Verified reachable (HTTP 200, application/pdf, ~14MB) and content-matched via the item's OCR text, which opens with the DARPA/DTIC cover sheet and the dissertation's title page and abstract. This is the original open tech-report edition of the dissertation, distinct from the later paywalled MIT Press book edition (same title) that the Phase 1/2 stub flagged.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Price every feature by what its absence would cost, in a unit that lets the prices add up](../lessons/price-a-feature-by-the-cost-of-removing-it.md)
+- [Start the likely case and check the assumption alongside it, rather than checking first](../lessons/assume-the-common-case-and-verify-it-concurrently.md)
+- [When a population's behavior is sharply split, find the cheap observable that separates it and stop treating it uniformly](../lessons/stratify-a-population-by-a-cheap-predictor.md)
+- [Whatever dimension your metric leaves out is the dimension your design will quietly spend](../lessons/a-metric-that-omits-a-dimension-gets-spent-there.md)
+- [Treat the boundary between layers as a design variable, and decide what lives on each side last](../lessons/keep-the-layer-boundary-movable.md)

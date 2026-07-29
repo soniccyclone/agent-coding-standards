@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When a population's behavior is sharply split, find the cheap observable that separates it and stop treating it uniformly"
+figure: ungar
+works: [design-and-evaluation-of-a-high-performance-smalltalk-system]
+axes: [hardware-affinity, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, algorithms-and-complexity]
+tags: [lesson]
+---
+# When a population's behavior is sharply split, find the cheap observable that separates it and stop treating it uniformly
+
+**Lesson:** Housekeeping algorithms are usually written as if every item they manage were alike, and their cost then scales with the whole population. But real populations are rarely uniform: measure them and you often find two sharply different behaviors with almost nothing in between. Most items are gone almost immediately; the ones that make it past a short window tend to persist indefinitely. Uniform treatment is exactly the wrong response to that shape, because it spends the same effort on the vast majority that will need nothing as on the small minority that will need everything. The redesign has two moves. First, find an observable proxy that predicts which class an item belongs to — something you can check without doing the work you are trying to avoid, such as how long it has already lasted. Second, arrange the algorithm so its cost is proportional to the small class rather than the large one: handle the survivors, and let the majority be reclaimed implicitly rather than visited individually.
+
+The consequences of getting this right run past the immediate saving. An algorithm whose work is proportional to survivors has an interruption length you can predict from a single measurable quantity, which means you can hold the interruption under a perceptual threshold by controlling that quantity instead of hoping. It also composes with the layer below: keeping the volatile class in a bounded region means it never interacts with backing storage at all, whereas uniform treatment drags the whole population past the storage hierarchy on every pass. And a design organized around survivors gets a structural side benefit — relocating what survives leaves the vacated region contiguous, so a separate defragmentation step becomes unnecessary, which in turn permits deleting an entire indirection layer that only existed to support that step.
+
+The honest caveat belongs to the lesson, not to a footnote: the whole scheme rests on the proxy being predictive, and it fails precisely on items whose observable class does not match their real behavior. An item that survives just long enough to be reclassified as permanent, and then dies, is retained forever, and enough of those accumulate into wasted footprint and worse locality. So the reasoning is not finished when you find the split; you must also know the shape of the middle of the distribution, decide the threshold from measurement rather than convenience, and consider whether the middle deserves a class of its own. A programmer who works this way starts by measuring the lifetime distribution of what they manage — and treats that distribution, not the algorithm, as the real object of study.
+
+**Source:** [The Design and Evaluation of a High-Performance Smalltalk System](../works/design-and-evaluation-of-a-high-performance-smalltalk-system.md) — the storage reclamation chapter, which surveys the uniform algorithms, states the two lifetime observations it builds on, derives an algorithm whose cost tracks survivors rather than the dead, and then devotes a further chapter to the objects whose age fails to predict their lifetime.

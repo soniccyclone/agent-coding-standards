@@ -6,6 +6,7 @@ description: A retrospective making the "liveness as design goal" argument expli
 subdomains: [programming-environments-and-object-systems]
 year: 1995
 url: https://bibliography.selflanguage.org/_static/programming-as-experience.pdf
+extraction: complete
 survey_pages: 28
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -21,4 +22,9 @@ tags: [work]
 **Source:** https://bibliography.selflanguage.org/_static/programming-as-experience.pdf — hosted directly on the Self language project's official bibliography site. Verified reachable (HTTP 200, application/pdf) and content-matched against the page's abstract/author listing and DBLP (conf/ecoop/SmithU95, year 1995 — corrects the stub's "1998").
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Judge an optimization by whether it shows through, not by how much it saves](../lessons/an-optimization-that-shows-through-is-disqualified.md)
+- [A feature whose case rests on a compelling example is probably a mistake, because the example is local and the cost is global](../lessons/features-justified-by-a-compelling-example-are-usually-mistakes.md)
+- [Your cost model is the style guide people actually obey; make the good structure the cheap one](../lessons/your-cost-model-is-a-style-guide-people-actually-obey.md)
+- [Sort every declaration by who consumes it, and let the language carry only what execution requires](../lessons/put-only-execution-facts-in-the-language.md)
+- [Report performance in the unit a person actually experiences, or your numbers will flatter you](../lessons/measure-in-the-unit-the-user-perceives.md)
+- [Fluency in the system you left is the main source of bad idioms in the one you built](../lessons/old-fluency-is-the-source-of-bad-idioms.md)

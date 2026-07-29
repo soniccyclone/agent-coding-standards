@@ -6,6 +6,7 @@ description: Proposes "immediacy" as a design principle for programming environm
 subdomains: [programming-environments-and-object-systems]
 year: 1997
 url: https://web.media.mit.edu/~lieber/Lieberary/Softviz/CACM-Debugging/Immediacy/Immediacy.html
+extraction: complete
 access: public
 host: self-archived
 tags: [work]
@@ -18,4 +19,6 @@ tags: [work]
 **Source:** https://web.media.mit.edu/~lieber/Lieberary/Softviz/CACM-Debugging/Immediacy/Immediacy.html — self-archived full text on co-author Henry Lieberman's own MIT Media Lab page (linked from his live publications list at web.media.mit.edu/~lieber/Publications/Publications.html). Verified reachable (HTTP 200, text/html) and content directly matches the CACM paper's introduction and author affiliations (Ungar/Sun Microsystems Labs, Lieberman/MIT Media Lab, Fry/PowerScout Corp).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Build tools to run in the direction reasoning runs, which is backward from symptom to cause](../lessons/design-for-the-direction-inference-travels.md)
+- [Count the programmer's attention shifts the way you count instructions, because that is the resource being spent](../lessons/count-attention-switches-like-instructions.md)
+- [Each stage that rewrites your source is another program you are on the hook for understanding](../lessons/every-translation-stage-is-another-program-to-debug.md)
