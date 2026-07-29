@@ -40,15 +40,20 @@ tags: [work]
 - [Building it is the experiment that tells you whether your separation of concerns was real](../lessons/implementation-is-the-test-of-whether-your-decomposition-was-real.md)
 - [A description complete enough to generate the system has become the system, and needs its own abstraction](../lessons/a-description-detailed-enough-to-generate-code-is-code.md)
 
+- [A picture too tangled to draw honestly is evidence about the program, not about the picture](../lessons/a-diagram-too-complex-to-draw-indicts-the-program.md)
+- [Draw a boundary, distrust everything crossing it, and trust everything inside](../lessons/check-at-the-firewall-and-trust-inside-it.md)
+- [Learn a new way of thinking in a language that forbids the old one, even if you will ship in one that permits both](../lessons/similarity-to-the-old-paradigm-impedes-learning-the-new.md)
+- [Constrain a variable by what its occupant must be able to do, never by how the occupant is built](../lessons/type-on-what-an-object-can-do-not-on-how-it-is-built.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. Stopping point is now chapter 4 section 4.2 (line 7237), book page ~165
-of 497 — chapter 4 sections 4.1.x are read in full, the rest of chapter 4 is not of the `pdftotext -layout` extraction held at
+across all seven views)**. **Chapters 0-4 are now read in full** (through line 8120, book page 186 of 497).
+Next unread line is 8121, the start of chapter 5 of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
-NOT yet read: chapter 4 (bridge to implementation, Smalltalk and C++), chapter 5
+NOT yet read: chapter 5
 (creating reusable components), chapter 6 (additional views and notation),
 chapters 7-9 and 12 (the four case studies), chapter 10 (organizing for software
 productivity, value chains), chapter 11 (instance-based reuse), and appendix A
