@@ -29,4 +29,29 @@ tags: [work]
 - [The rigidity that makes an organization inhuman is exactly right for machines](../lessons/rigidity-that-is-inhuman-is-correct-for-machines.md)
 - [Many views, one model — never let a view become the model](../lessons/many-views-one-model-never-let-a-view-become-the-model.md)
 
-_PARTIAL EXTRACTION — the above lessons come from a full reading of the preface, chapter 1 (The main ideas), and all of chapter 2 (Role Modeling), stopping at the start of chapter 3 section 3.1.1 — book page 108 of 497, line 4680 of the text extracted with `pdftotext -layout`. NOT yet read: the bulk of chapter 3 (role model synthesis, aggregation, safe/unsafe synthesis notation), chapter 4 (bridge to implementation, Smalltalk and C++), chapter 5 (creating reusable components), chapter 6 (additional views and notation), chapters 7-9 and 12 (the four case studies), chapter 10 (organizing for software productivity, value chains), chapter 11 (instance-based reuse), and appendix A (the OOram language). Those chapters are expected to yield further lessons — especially chapter 3, since the synthesis mechanism is only sketched in chapter 1's overview here, and chapter 10, whose subject (organizational value chains for software production) is untouched by any existing lesson. `extraction: complete` deliberately withheld._
+- [Sort your correctness claims by who can check them, because a tool's silence is not approval](../lessons/classify-your-correctness-claims-by-who-can-check-them.md)
+- [Start where the risk is, not at the top of the abstraction ladder](../lessons/start-where-the-risk-is-not-where-the-abstraction-is.md)
+- [When the ugly requirement arrives, describe it somewhere else and compose, rather than spoiling the clean description](../lessons/model-the-mess-separately-and-compose-it-in.md)
+- [When you borrow a mechanism, permit it less than its source did](../lessons/deliberately-narrow-a-borrowed-mechanism.md)
+- [Size each description to what a reader can hold at once, and exempt the pieces that get reused everywhere](../lessons/size-a-description-to-working-memory-with-a-reuse-exception.md)
+- [Reuse costs you the fresh look, and the person advocating it should be the one to say so](../lessons/name-reuses-own-cost.md)
+
+_PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
+(The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
+model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
+attributes and message parameters, safe vs unsafe synthesis, and the notation
+across all seven views)**. Stopping point is now the start of chapter 4, book page
+147 of 497, line 6287 of the `pdftotext -layout` extraction held at
+`scratchpad/reenskaug/ooram-slim.txt`.
+
+NOT yet read: chapter 4 (bridge to implementation, Smalltalk and C++), chapter 5
+(creating reusable components), chapter 6 (additional views and notation),
+chapters 7-9 and 12 (the four case studies), chapter 10 (organizing for software
+productivity, value chains), chapter 11 (instance-based reuse), and appendix A
+(the OOram language). Chapter boundaries in that extraction: ch4 6287, ch5 8121,
+ch6 9436, ch7 10525, ch8 12342, ch9 13620, ch10 15667, ch11 16756, ch12 18172,
+end 21176.
+
+Chapter 10 remains the highest-value unread target — organizational value chains
+for software production is a subject no lesson in this corpus touches yet.
+`extraction: complete` still deliberately withheld._
