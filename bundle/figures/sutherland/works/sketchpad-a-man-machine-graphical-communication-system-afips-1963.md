@@ -6,6 +6,7 @@ description: The condensed conference version of Sutherland's Sketchpad disserta
 subdomains: [programming-environments-and-object-systems]
 year: 1963
 url: https://papers.cumincad.org/data/works/att/5680.content.pdf
+extraction: complete
 survey_pages: 18
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -20,4 +21,9 @@ tags: [work]
 **Source:** https://papers.cumincad.org/data/works/att/5680.content.pdf — live PDF (curl HTTP 200; verified by rendering page 1, which shows the title "Sketchpad / A Man-Machine Graphical Communication System" by Ivan E. Sutherland, Consultant, Lincoln Laboratory / MIT, with a footnote that the paper is based on his PhD thesis). Hosted by CumInCAD, an open-access index of computer-aided design literature. A second independent copy resolves at https://www.cl.cam.ac.uk/~pr10/iui/sutherland63.pdf (a University of Cambridge Computer Laboratory course reading-list mirror, also HTTP 200 and verified page-1-identical).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When ad hoc operations pile up, find the one operation that generates them](../lessons/when-ad-hoc-operations-pile-up-find-the-one-that-generates-them.md)
+- [Reach the middle ground by composing the extremes, not by parameterizing them](../lessons/reach-the-middle-ground-by-composing-the-extremes.md)
+- [Keep the slow general method underneath the fast special one](../lessons/keep-the-general-slow-method-under-the-fast-special-one.md)
+- [Search for an evaluation order, not for the answer](../lessons/search-for-the-evaluation-order-not-the-answer.md)
+- [Snap approximate input onto the model's vocabulary at the boundary](../lessons/snap-input-to-the-models-vocabulary-at-the-boundary.md)
+- [Computation the apparatus performs for free is also a dependency on that apparatus](../lessons/work-the-apparatus-does-for-free-is-also-a-dependency.md)
