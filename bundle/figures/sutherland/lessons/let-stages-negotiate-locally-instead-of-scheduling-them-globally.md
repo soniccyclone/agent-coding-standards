@@ -4,7 +4,7 @@ title: "Let stages negotiate locally instead of scheduling them globally"
 figure: sutherland
 works: [a-head-mounted-three-dimensional-display]
 axes: [parallelizability, hardware-affinity, verifiability]
-subdomains: [programming-environments-and-object-systems, concurrency-and-distribution]
+subdomains: [programming-environments-and-object-systems, distributed-systems-and-concurrency]
 tags: [lesson]
 ---
 # Let stages negotiate locally instead of scheduling them globally
