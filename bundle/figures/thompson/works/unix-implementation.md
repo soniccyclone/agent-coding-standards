@@ -6,6 +6,7 @@ description: A high-level walkthrough of the actual mechanics inside the Unix ke
 subdomains: [operating-systems-and-systems-programming]
 year: 1978
 url: https://users.soe.ucsc.edu/~sbrandt/221/Papers/History/thompson-bstj78.pdf
+extraction: complete
 survey_pages: 10
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -20,4 +21,7 @@ tags: [work]
 **Source:** https://users.soe.ucsc.edu/~sbrandt/221/Papers/History/thompson-bstj78.pdf — live PDF, UC Santa Cruz course-reading mirror (CS 221 papers archive). Content verified 2026-07-24 (decoded PDF text stream shows title, author, and abstract). The full BSTJ 57(6) issue is also freely downloadable from the Internet Archive (archive.org/details/bstj57-6-1931) as an alternate copy.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The layer nobody can replace should offer the common divisor of the options you skipped](../lessons/the-mandatory-layer-should-offer-the-common-divisor-of-the-options-you-skipped.md)
+- [Admit complexity only where it can be quarantined, not where it pays best](../lessons/admit-complexity-only-where-it-can-be-quarantined.md)
+- [When two sharing rules disagree about where a piece of state lives, you have found a missing layer](../lessons/when-sharing-rules-disagree-you-have-found-a-missing-table.md)
+- [A primitive that carries no state has handed that state to every caller](../lessons/a-primitive-that-carries-no-state-hands-its-state-to-every-caller.md)

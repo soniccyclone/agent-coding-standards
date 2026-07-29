@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://www.nokia.com/bell-labs/about/dennis-m-ritchie/cacm.pdf — live PDF, hosted on Nokia Bell Labs' official Dennis Ritchie memorial/archive page (Nokia is Bell Labs' corporate successor). Verified resolving and content-matched 2026-07-24.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Absorb hardware variety at the lowest boundary so nothing above it has to know](../lessons/absorb-variety-at-the-lowest-boundary.md)
+- [Put the variety in the joints between programs, not inside them](../lessons/put-the-variety-in-the-joints-not-in-the-programs.md)
+- [Decline to model what your layer does not need to know](../lessons/decline-to-model-what-your-layer-does-not-need-to-know.md)
+- [A system you are forced to inhabit corrects itself; one built to a requirements list does not](../lessons/a-system-you-are-forced-to-inhabit-corrects-itself.md)

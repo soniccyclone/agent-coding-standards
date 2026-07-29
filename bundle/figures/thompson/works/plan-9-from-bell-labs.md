@@ -6,6 +6,7 @@ description: The full system overview of Plan 9, the distributed successor to Un
 subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
 year: 1995
 url: https://www.usenix.org/legacy/publications/compsystems/1995/sum_pike.pdf
+extraction: complete
 survey_pages: 34
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://www.usenix.org/legacy/publications/compsystems/1995/sum_pike.pdf — live PDF, USENIX's own legacy publications archive (USENIX was the original publisher of Computing Systems). Content verified 2026-07-24 (decoded PDF text stream shows title, authors, and USENIX/Computing Systems reprint notice).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A closed interface vocabulary is what lets every newcomer inherit the ecosystem](../lessons/a-closed-vocabulary-lets-newcomers-inherit-the-ecosystem.md)
+- [Named variants are frozen points in a space; expose the axes instead](../lessons/named-variants-are-frozen-points-expose-the-axes.md)
+- [If a concern has to be re-solved per service, you have not found the choke point](../lessons/re-solving-a-concern-per-service-means-you-missed-the-choke-point.md)
+- [Delete the privileged default so the general path is the only path](../lessons/delete-the-privileged-default-so-the-general-path-is-the-only-path.md)

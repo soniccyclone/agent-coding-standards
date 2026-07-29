@@ -6,6 +6,7 @@ description: Thompson's Turing Award lecture, demonstrating that a compiler can 
 subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
 year: 1984
 url: https://www.cl.cam.ac.uk/teaching/2324/R209/Reflections-Trusting-Trust.pdf
+extraction: complete
 survey_pages: 7
 survey_text_layer: partial
 survey_fetch_mb: 0
@@ -20,4 +21,6 @@ tags: [work]
 **Source:** https://www.cl.cam.ac.uk/teaching/2324/R209/Reflections-Trusting-Trust.pdf — live PDF, University of Cambridge course-reading mirror (Computer Laboratory, course R209). Content verified 2026-07-24 (decoded PDF text stream shows title, author, and CACM citation). Widely mirrored elsewhere (CMU, UMass, and others) with identical content.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Trust attaches to a construction history, not to the artifact in front of you](../lessons/trust-attaches-to-construction-history-not-to-artifacts.md)
+- [In a self-hosting system, some knowledge lives in the lineage rather than in any text](../lessons/some-knowledge-lives-in-the-lineage-not-in-the-text.md)
+- [Detectability falls off as you descend the stack, so reason about depth before reasoning about cleverness](../lessons/detectability-falls-off-as-you-descend-the-stack.md)
