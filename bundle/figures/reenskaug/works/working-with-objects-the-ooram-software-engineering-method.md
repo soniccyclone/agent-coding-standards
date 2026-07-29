@@ -36,12 +36,16 @@ tags: [work]
 - [Size each description to what a reader can hold at once, and exempt the pieces that get reused everywhere](../lessons/size-a-description-to-working-memory-with-a-reuse-exception.md)
 - [Reuse costs you the fresh look, and the person advocating it should be the one to say so](../lessons/name-reuses-own-cost.md)
 
+- [Of the programs that work, confine yourself to the ones you can understand — the machine will accept far worse](../lessons/restrict-yourself-to-the-programs-you-can-understand.md)
+- [Building it is the experiment that tells you whether your separation of concerns was real](../lessons/implementation-is-the-test-of-whether-your-decomposition-was-real.md)
+- [A description complete enough to generate the system has become the system, and needs its own abstraction](../lessons/a-description-detailed-enough-to-generate-code-is-code.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. Stopping point is now the start of chapter 4, book page
-147 of 497, line 6287 of the `pdftotext -layout` extraction held at
+across all seven views)**. Stopping point is now chapter 4 section 4.2 (line 7237), book page ~165
+of 497 — chapter 4 sections 4.1.x are read in full, the rest of chapter 4 is not of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
 NOT yet read: chapter 4 (bridge to implementation, Smalltalk and C++), chapter 5
