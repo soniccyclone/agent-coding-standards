@@ -52,12 +52,17 @@ tags: [work]
 - [Separate what a reader can already do from what they can only recognize, and layer the documentation on that seam](../lessons/layer-documentation-by-active-versus-passive-competence.md)
 - [Your process is varnish over your people's competence, and it only holds where that competence already reaches](../lessons/formalism-is-varnish-on-competence.md)
 
+- [A description in terms of kinds cannot say it was the same one throughout](../lessons/types-cannot-express-that-it-is-the-same-one.md)
+- [The compositions that stay safe are exactly the ones that refuse to multiply the state space](../lessons/safe-composition-is-composition-that-does-not-multiply-states.md)
+- [Two organizations can share one coherent system while nobody anywhere understands all of it](../lessons/integrate-through-shared-models-so-nobody-holds-the-whole.md)
+- [Introduce the expensive notation last, and prefer redesigning the thing so you never need it](../lessons/defer-the-notation-whose-cost-is-volume.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. **Chapters 0-5 are now read in full** (through line 9435, book page 218 of 497).
-Next unread line is 9436, the start of chapter 6 of the `pdftotext -layout` extraction held at
+across all seven views)**. **Chapters 0-6 are now read in full** (through line 10524, book page 244 of 497).
+Next unread line is 10525, the start of chapter 7 — the first of the four case studies of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
 NOT yet read: chapter 6 (additional views and notation),
