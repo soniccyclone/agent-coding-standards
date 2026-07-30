@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A theory is a filter for judging design candidates, not a source of them, and past its range it suppresses the obvious answer"
+figure: kay
+works: [user-interface-a-personal-view]
+axes: [cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# A theory is a filter for judging design candidates, not a source of them, and past its range it suppresses the obvious answer
+
+**Lesson:** There is a persistent hope that the right conceptual framework will produce designs, and it is misplaced. What a good framework actually does is evaluate: given a candidate, it says whether the candidate is sound, why, and where it belongs relative to everything else already accepted. That is genuinely valuable — it is what lets a group converge instead of trading tastes, and it is what makes an accepted decision explicable to people who were not in the room. But the candidates themselves arrive from elsewhere, from noticing something, from an analogy, from a person whose background is unrelated to the problem. Treating a framework as a generator produces designs whose only merit is that they satisfy the framework, and it fills the schedule with work that would never have survived being asked what problem it solves.
+
+The sharper danger is a framework applied past the range where it holds. A model that correctly captures one dimension exerts steady pressure to push that dimension into places it does not belong, and the resulting near-misses get sustained for years because they are on-theory, while a plain and obviously adequate solution goes unbuilt because it looks unambitious in the framework's terms. The defense is to hold explicit boundaries for every model you rely on — to be able to say what it does not cover, not merely what it explains — and to treat "the theory suggests this" as a reason to go check something, never as evidence in itself.
+
+If theory is not the source, the sources have to be empirical, and two are reliably underused. The first is work already completed in adjacent fields by people who are not in your discipline and have no interest in your problem; once you are actually prepared to look, the ground is usually thick with results you can use, which means the scarce resource is readiness to recognize an answer rather than the answer. The second is trials in quantity. The distance between holding a correct framework and having a design that works is measured in years and hundreds of users, not in a design review; the framework shortens the evaluation of each attempt without reducing how many attempts are needed. And when the thing you are designing for is people — including yourself as the user — discount your introspective account of how you work, since the self-model consciousness supplies is built for simplicity rather than accuracy, and being immersed in something is exactly the condition under which you cannot see it.
+
+**Source:** [User Interface: A Personal View](../works/user-interface-a-personal-view.md) — the assessment that the borrowed cognitive framework was much better at confirming an idea was good than at generating ideas, and that in one area it actively held back progress by making a plain use of signs seem inadequate next to a more theoretically attractive but wrong direction; the remark that once ready to look at the human element the author found the surrounding fields already full of usable finished work; the note that a practical design still took about five years and hundreds of users after the theory was in hand; and the argument that our commonsense self-view should be distrusted because consciousness represents us to ourselves as simply as possible.

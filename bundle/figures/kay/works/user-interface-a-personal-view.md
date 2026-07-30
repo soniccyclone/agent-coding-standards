@@ -24,3 +24,4 @@ tags: [work]
 - [A representation people internalize becomes invisible and reshapes their thinking, so judge it by the thinking it installs](../lessons/a-medium-reshapes-whoever-internalizes-it.md)
 - [Design for several distinct reasoning faculties that compete, and give each one work it is good at](../lessons/several-reasoners-not-one.md)
 - [Remove a mode by generalizing the representation until the competing operations become one, usually by admitting the degenerate case](../lessons/kill-modes-by-admitting-the-degenerate-case.md)
+- [A theory is a filter for judging design candidates, not a source of them, and past its range it suppresses the obvious answer](../lessons/theory-judges-ideas-it-does-not-generate-them.md)
