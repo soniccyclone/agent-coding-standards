@@ -21,4 +21,7 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/kolmogorov__three-approaches-to-the-quantitative-definition-of-information.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Measure a thing by the shortest program that produces it, not by how much of it there is](../lessons/measure-a-thing-by-its-shortest-generator.md)
+- [If a property only exists over a population you invented, move it onto the object itself](../lessons/put-the-property-on-the-object-not-on-the-population.md)
+- [An arbitrary choice stops mattering once you bound its effect, and then you may only claim what the bound leaves](../lessons/bound-the-arbitrary-choice-then-claim-only-what-survives-it.md)
+- [The shortest description and the affordable one are different things, so carry the time budget in the definition](../lessons/the-shortest-description-is-not-the-affordable-one.md)

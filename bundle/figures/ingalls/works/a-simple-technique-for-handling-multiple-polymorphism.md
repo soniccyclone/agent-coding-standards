@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -21,3 +22,4 @@ tags: [work]
 
 ## Lessons
 - [Treat a dispatch as one degree of type-uncertainty removed, and chain as many as the problem has variable terms](../lessons/each-dispatch-removes-one-degree-of-polymorphism.md)
+- [Judge an extension mechanism by the marginal cost of the Nth addition, not by what one addition costs](../lessons/judge-extensibility-by-the-cost-of-the-nth-addition.md)

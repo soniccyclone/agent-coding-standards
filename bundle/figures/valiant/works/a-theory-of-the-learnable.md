@@ -20,4 +20,6 @@ tags: [work]
 **Source:** https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnable.pdf — copy hosted on Kurt Mehlhorn's seminar materials page at the Max Planck Institute for Informatics; third-party rehost of the original CACM paper.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Define correctness against the inputs that actually occur, and buy the remaining accuracy with runtime](../lessons/define-correctness-against-the-input-distribution-you-will-meet.md)
+- [Fix the information channel before asking what is achievable, and bound its power from both sides](../lessons/bound-the-interface-from-both-sides-before-asking-what-is-feasible.md)
+- [Charge cost to what actually appears, not to the size of the surrounding universe](../lessons/charge-cost-to-what-appears-not-to-the-ambient-universe.md)

@@ -33,3 +33,6 @@ This work needs the deterministic OCR batch.
 
 ## Lessons
 - [An optimality result bounds the operation set it was proved over, never the problem itself](../lessons/an-optimality-proof-bounds-the-operation-set-not-the-problem.md)
+- [In a self-applicable construction, only the operations that recurse set the growth rate — spend freely on the ones that do not](../lessons/eliminate-the-operation-that-recurses.md)
+- [Locate the operation an entire family of problems reduces to, and improve that one](../lessons/find-the-operation-the-whole-family-reduces-to.md)
+- [Separate improvements that exploit today's cost table from improvements that change the growth law](../lessons/separate-improvements-that-exploit-the-cost-table-from-those-that-change-the-growth-law.md)

@@ -20,4 +20,6 @@ tags: [work]
 **Source:** https://cdn.sanity.io/files/r000fwn3/production/0e0427aedfed65c8dd688c094b181feacf4eaab4.pdf — PDF asset linked from Evervault's papers page (evervault.com/papers/yao), a company-run rehost of classic cryptography papers. Verified by rendering page 1: title, "Andrew C. Yao, University of California, Berkeley," and the Millionaires' Problem introduction are all visible.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [State a privacy requirement as an equality with what the answer already implies, quantified over what an adversary can compute](../lessons/state-privacy-as-an-equality-with-what-the-answer-implies.md)
+- [Concede the deviation you cannot prevent, then define correctness as that deviation being the only one available](../lessons/concede-the-attack-you-cannot-prevent-and-make-it-the-only-one.md)
+- [An audit that requires opening the box destroys the property it was protecting; buy tunable doubt instead](../lessons/an-audit-that-opens-the-box-is-not-an-audit.md)

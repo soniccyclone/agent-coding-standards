@@ -22,3 +22,7 @@ tags: [work]
 
 ## Lessons
 - [What you are actually building is a theory of the world; the program text is a by-product](../lessons/the-artifact-is-the-theory-not-the-text.md)
+- [A system is alive only while someone still holds its theory, and that state is not recoverable from documents](../lessons/a-system-is-alive-only-while-someone-holds-its-theory.md)
+- [Behavioral correctness does not make a change right; judge it against the account the system embodies](../lessons/correct-behavior-does-not-make-a-change-right.md)
+- [No prescribed ordering of steps can produce understanding, so methods teach rather than govern](../lessons/no-ordering-of-steps-can-produce-understanding.md)
+- [Built-in flexibility is a wager paid up front; adaptability comes from people, not parameters](../lessons/built-in-flexibility-is-a-bet-paid-for-up-front.md)

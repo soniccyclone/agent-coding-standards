@@ -21,4 +21,6 @@ tags: [work]
 **Source:** https://worrydream.com/refs/Kay_1977_-_Personal_Dynamic_Media.pdf — live PDF, rehosted on Bret Victor's worrydream.com reference archive. Verified 200 OK, application/pdf.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When the users' needs are genuinely unbounded, ship a medium plus exemplars instead of enumerating features](../lessons/design-a-medium-not-a-feature-set.md)
+- [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../lessons/response-inside-the-loop-of-thought.md)
+- [Look for the shared process beneath surface-different domains, then split the score from the performer](../lessons/one-vocabulary-for-domains-that-only-look-different.md)

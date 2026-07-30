@@ -23,4 +23,6 @@ tags: [work]
 **Source:** Self-archived by Sifakis on his Verimag/CNRS Grenoble faculty page (www-verimag.imag.fr/~sifakis/TuringAwardPaper-Apr14.pdf), linked from his publications list.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Ask whether this one structure satisfies the formula, not whether some structure does](../lessons/check-the-model-you-have-not-every-model.md)
+- [Make the negative answer carry evidence: an analysis that only says no is half a tool](../lessons/a-failing-check-must-hand-back-a-witness.md)
+- [A method that must be practiced while building competes with building; one that runs on the finished artifact does not](../lessons/separate-the-analysis-from-the-act-of-building.md)

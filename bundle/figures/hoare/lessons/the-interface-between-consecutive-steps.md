@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "The interface between two consecutive steps is the whole machine until you deliberately narrow it"
+figure: hoare
+works: [hints-on-programming-language-design]
+axes: [cognitive-load, verifiability, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# The interface between two consecutive steps is the whole machine until you deliberately narrow it
+
+**Lesson:** Take any two adjacent instructions in a raw machine program and ask what one hands to the other. The answer is everything: every register, every word of store, every peripheral, and the instruction stream itself. That is the default state of any system with unrestricted mutation, and it has a consequence that only shows up under failure. While the program is right, the enormous interface costs nothing; the moment a single bit is wrong there is no bound on what was damaged and no bound on the search for where the damage started. Reasoning locally is impossible not because the steps are complicated but because nothing in the notation limits their reach.
+
+Every mechanism worth having in a higher-level notation is an attack on that width, and they are all the same attack. Partitioning the store into separately named variables makes each step's blast radius a stated thing rather than an unstated one. Requiring the target of a change to appear literally in the text of the change makes reach legible without running anything. Guaranteeing that distinct names denote disjoint storage means altering one cannot alter another, which is what makes an argument about one variable survive contact with the rest of the program. Confining a name to the region that uses it shrinks the interface between parts to whatever is deliberately passed, and it also happens to let the implementation reuse the storage — the two benefits arrive together, which is the signature of a feature that is right rather than merely convenient. And crucially, that reuse stays safe under a check performed before the program runs, because the visible extent of a name and the lifetime of its storage were made to coincide.
+
+The corollary is the useful part, because it identifies which features quietly undo the whole edifice. Any construct that lets the location being modified be computed rather than written reintroduces the machine-code condition wholesale — under such a scheme an assignment naming a target may change some entirely different part of the store while leaving the named thing alone, which is precisely the address-versus-contents confusion the higher level existed to abolish. Aliasing does the same damage more cheaply: hand the same storage to a procedure under two parameter names and disjointness is gone, and with it every argument that assumed it, in a way that looks perfectly reasonable at the call site. So the review question for a proposed feature is not whether it is expressive but whether, after adding it, you can still determine from the text alone which parts of the state a step can reach. Once the answer is no, the feature has spent the entire budget the language was built to accumulate, and it must be paid for with something proportionally large.
+
+**Source:** [Hints on Programming Language Design](../works/hints-on-programming-language-design.md) — the Variables and Block Structure sections, which characterize the machine-code interface as the entire machine state and derive naming, disjointness, and locality as the corrective; the critique of assignable references as reimporting that state; and the aliasing example in the Procedures and Parameters section.
