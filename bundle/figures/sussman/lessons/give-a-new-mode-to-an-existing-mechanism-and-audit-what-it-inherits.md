@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited"
+figure: sussman
+works: [scheme-an-interpreter-for-extended-lambda-calculus]
+axes: [primitive-count, cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited
+
+**Lesson:** A new capability that amounts to "for a while, the system behaves differently" invites its own bespoke machinery: a global flag, a counter, a stack of saved modes, and a set of hand-written rules for when the mode begins and ends. Every one of those rules is a fresh opportunity to be wrong, and none of them will compose with anything else in the system. The cheaper construction is to notice that the language already has a mechanism whose whole purpose is establishing something over a delimited region — its way of associating names with values — and to make the mode an entry in that structure rather than a new kind of thing. Suppressing preemption becomes binding one name to a value that the dispatch loop consults before it will honour a pending interrupt. There is no new concept, no new bookkeeping, and no new question about extent, because the answer to "how long does the mode last?" is now whatever answer the language already gives for names.
+
+What you buy is that the existing mechanism's laws now apply to the new property for free, including in cases you did not think about. Some of those cases are gifts. A process spinning in a wait loop implemented as a repeated call re-enters the region on each pass, so the mode is re-established rather than continuously held, and competitors get their chance at the top of every iteration — a liveness property that would have needed deliberate design under a naive global flag, and that you get here as a consequence of ordinary scope. Other inherited cases are surprises that demand a decision rather than a shrug: a function created inside the region and handed outward carries the binding with it, so calling it later, from somewhere entirely unrelated, silently runs under the mode. That may be exactly right, and it may be a hazard, but the point is that you do not get to be neutral about it. Reusing a mechanism means adopting its consequences wholesale.
+
+So the move has two halves and only the first is the clever one. Encode the property in existing machinery, then go through that machinery's rules one at a time and ask what each says about your property, treating anything you would not have written down yourself as a finding. The failure mode of clever reuse is stopping after the first half: the implementation is short, the common cases work, and the inherited behaviour in the uncommon cases was never chosen by anyone. A designer who has read the inherited laws through can at least state the strange consequence out loud, which is the difference between a documented rule and a latent defect.
+
+**Source:** [Scheme: An Interpreter for Extended Lambda Calculus](../works/scheme-an-interpreter-for-extended-lambda-calculus.md) — the reference-manual entry for the uninterruptible-evaluation primitive, which states outright that uninterruptibility follows the rules of variable scoping and that a function value returned from such a region is itself uninterruptible when later applied, together with the accompanying semaphore example whose busy-wait relies on the region being re-entered each iteration; and the implementation section, where the primitive turns out to be nothing but a binding of one name that the dispatch loop consults before allowing a process switch.

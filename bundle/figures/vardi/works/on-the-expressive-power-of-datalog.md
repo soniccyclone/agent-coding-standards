@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -22,4 +23,11 @@ tags: [work]
 **Host:** self-archived — author's own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Price a feature by which closure property it breaks, and read your limits off the ones that remain](../lessons/price-a-feature-by-which-closure-property-it-breaks.md)
+- [To prove something impossible, enlarge it until the impossibility is easy, then inherit the result](../lessons/to-prove-something-impossible-enlarge-it-until-the-proof-is-easy.md)
+- [Turn a question about what can be said into a game about what an adversary can distinguish](../lessons/turn-a-definability-question-into-a-two-player-game.md)
+- [Mine an existing hardness proof for its adversarial inputs, not just its conclusion](../lessons/mine-an-existing-hardness-proof-for-its-adversarial-inputs.md)
+- [Drive a complicated process from a simple shadow of it, and keep the correspondence as the invariant](../lessons/drive-a-complicated-process-from-a-simple-shadow-of-it.md)
+- [A cheap test may replace an expensive one exactly when the language asking cannot tell them apart](../lessons/an-approximation-is-exact-relative-to-an-observer-that-cannot-tell.md)
+- [When a problem lands just outside your formalism, change the encoding rather than the formalism](../lessons/change-the-encoding-not-the-formalism.md)
+- [When an unproven conjecture blocks the distinction you need, change the yardstick to one you can actually settle](../lessons/when-the-conjecture-blocks-you-change-the-yardstick.md)

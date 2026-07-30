@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -20,4 +21,9 @@ tags: [work]
 **Source:** https://www2.eecs.berkeley.edu/Pubs/TechRpts/1974/Archive/ERL-m-434.pdf — live page, UC Berkeley EECS technical reports archive; verified by extracting the embedded text stream (union-rule and collapsing-find discussion matches the published paper's content).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Simple code does not imply simple analysis, and the complicated rival is usually the worse choice](../lessons/simple-code-does-not-mean-simple-analysis.md)
+- [Evaluate mitigations in combination, and prefer ones that cover different failure modes](../lessons/measure-mitigations-in-combination-not-one-at-a-time.md)
+- [Hoist one kind of operation to the front and re-encode the interleaving as a constraint](../lessons/hoist-the-interleaving-out-and-re-encode-it-as-a-constraint.md)
+- [Split the cost into classes with different arguments, leave the granularity free, and tune it last](../lessons/split-the-cost-into-classes-and-leave-the-granularity-free.md)
+- [A worst case only counts if it is reachable through legal operations and pays for its own setup](../lessons/a-worst-case-must-be-reachable-and-pay-for-itself.md)
+- [Find the regime where the bad bound actually bites, because outside it the cheap analysis holds](../lessons/find-the-regime-where-the-bad-bound-actually-bites.md)

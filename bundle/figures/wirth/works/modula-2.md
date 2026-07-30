@@ -20,4 +20,5 @@ tags: [work]
 **Source:** https://www.research-collection.ethz.ch/server/api/core/bitstreams/289cc859-94e5-4758-8786-ac05437780a2/content — direct PDF, ETH Zurich Research Collection (institutional repository), item marked "Open access," DOI 10.3929/ethz-a-000153014. Landing page (https://www.research-collection.ethz.ch/handle/20.500.11850/69215) currently returns an HTTP 500 from the Angular front-end despite serving full page content; the direct bitstream link above was verified to resolve cleanly and is used as the primary URL.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [If the language can express a facility, the facility does not belong in the language](../lessons/if-the-system-can-express-it-it-does-not-belong-in-the-system.md)
+- [Declare dependence in both directions, and resolve names at the point of use once the participant set is open](../lessons/declare-dependence-in-both-directions-and-resolve-names-at-use.md)

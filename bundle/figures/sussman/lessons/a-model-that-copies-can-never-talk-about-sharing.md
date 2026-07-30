@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable"
+figure: sussman
+works: [scheme-an-interpreter-for-extended-lambda-calculus]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [programming-languages-and-semantics, foundations-of-computation]
+tags: [lesson]
+---
+# A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable
+
+**Lesson:** Every formal account of a language is a bet about which phenomena matter, and the bet shows up in the primitive operation the account is built from. If that operation is textual replacement — rewrite this expression into that one, substituting arguments for parameters — then the model's world consists entirely of independent copies, and there is simply no way to say that two occurrences of a name denote *the same* location. Mutation, and everything downstream of it, is therefore not an awkward extension that the model handles badly: it is a claim the model has no sentence for. Recognizing that difference matters, because "hard to model" invites you to push harder, while "inexpressible in this model" tells you to change models. The same diagnosis explains why concurrent processes can be bolted onto a rewriting account with mild discomfort — you can imagine several expressions with a reduction chosen among them at each step — while *synchronization* between those processes resists entirely, since synchronization is a statement about contention for one shared thing.
+
+The instructive part is where the missing vocabulary came from. An implementation that literally performed the rewriting would copy expressions constantly, so the standard fix is to stop copying: leave the body alone and carry alongside it a structure recording what the names currently mean, consulted whenever a name is reached. That change is introduced purely as an efficiency measure — a set of substitutions performed virtually rather than actually. But by refusing to copy, it has created exactly the thing the rewriting account lacked. All occurrences of a name scoped in one context now reach the same cell, so a primitive that overwrites a cell's contents suddenly means something, and every later reference sees the change. An optimization has silently enlarged what the language can express.
+
+Two habits follow. First, when a feature seems to fight your semantics, check whether the semantics can represent the feature's subject matter at all before blaming the feature; the answer determines whether you are debugging or re-founding. Second, treat representation changes made for performance as semantic events and audit them for new expressive power, because that power arrives whether or not you asked for it. Sharing that exists in the implementation is observable in principle from the moment it exists, and a language that declines to give it a name has not eliminated it — it has only made it inaccessible to the programmer and invisible to the reasoning apparatus.
+
+**Source:** [Scheme: An Interpreter for Extended Lambda Calculus](../works/scheme-an-interpreter-for-extended-lambda-calculus.md) — the closing part of the implementation-issues section, which argues that side effects resist substitution semantics specifically because substitution produces copies and copies cannot model sharing, and then derives the assignment primitive from the fact that an environment-based evaluator already has all occurrences of a variable reaching one value cell; together with the earlier introduction of the environment as nothing more than a way to avoid copying intermediate expressions.

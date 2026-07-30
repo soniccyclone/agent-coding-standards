@@ -21,4 +21,8 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~sleator/papers/dynamic-trees.pdf — live page, self-archived by co-author Daniel Sleator on his CMU faculty site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Invent the middle layer, then keep the cost a product of factors you can improve separately](../lessons/invent-the-middle-layer-and-keep-the-cost-a-product.md)
+- [Promoting a concept from your analysis into the runtime buys worst-case guarantees and costs you a repair step](../lessons/promote-an-analysis-concept-into-the-runtime-only-if-you-need-worst-case.md)
+- [Park a pending transformation at the top of the aggregate and resolve it on the way down](../lessons/park-a-pending-transformation-at-the-root-and-resolve-it-on-descent.md)
+- [Push what the outer layer knows about access frequency down into the inner structure](../lessons/push-the-access-distribution-down-into-the-lower-layer.md)
+- [Price each operation in your interface by what it forces on the implementation, and name the algebra you actually need](../lessons/price-each-operation-in-your-interface-by-what-it-forces-below.md)

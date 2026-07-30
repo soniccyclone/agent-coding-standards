@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Mismatch across a layer boundary is a permanent tax, and the lower layer is the one you cannot revise"
+figure: wirth
+works: [from-programming-language-design-to-computer-construction]
+axes: [hardware-affinity, cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Mismatch across a layer boundary is a permanent tax, and the lower layer is the one you cannot revise
+
+**Lesson:** When two layers are designed independently, the translator between them absorbs the difference, and the effort of producing good output is proportional to how badly the layers correspond. That proportionality is the useful form of the claim: the cost is not a one-time integration expense but a standing tax paid by every implementation, every maintainer of the translator, and every program that runs across the boundary. A high-level language compiled to a machine whose instruction set was designed for hand coding needs an intricate code generator to reach a fraction of the quality that a matched pair reaches with a simple one, and the intricacy never goes away. So the honest accounting for a mismatch includes the compiler complexity nobody sees, not just the cycles that show up in a benchmark.
+
+Design the pair together and the payoff appears in more than one currency at once, which is how you know it is structural rather than a benchmark artifact. A workstation designed alongside the language it runs can beat a minicomputer of several times its complexity and cost on execution time, emit code shorter by a factor of two or three than the same programs compiled for popular architectures, and do it with a code generator markedly simpler than theirs. Speed, density, and translator simplicity move together because they all measure the same underlying quantity: how much work the boundary is doing. That is also why the marketing claim that a given architecture is well suited to high-level languages should be checked against code size and compiler complexity rather than accepted from a feature list, and why the two factors compound — a longer instruction sequence in a less dense encoding multiplies rather than adds.
+
+The asymmetry is what makes this urgent. Bulky software can be modified and in the worst case replaced; a design committed to silicon cannot. When commercial pressure freezes an architecture before its effectiveness has been demonstrated, the unproven choice is then reproduced in enormous quantity and becomes the standard building block everyone else must accommodate — and mastery of complexity is no better at the hardware level than at the software level, so there is no reason to expect the frozen design to be a good one. Rapid improvement in the underlying technology makes this worse rather than better, because gains from the substrate overshadow structural gains and make architecture look like a solved or irrelevant question. The general rule for any layered system: spend disproportionate care on the layer that will be hardest to change later, and be suspicious when abundance in that layer is offered as a reason not to.
+
+**Source:** [From Programming Language Design to Computer Construction](../works/from-programming-language-design-to-computer-construction.md) — the passage on the effort to generate good code being proportional to the mismatch between language and machine on the CDC 6000, the Lilith results section comparing execution time against a VAX and code length and code-generator intricacy against PDP-11, VAX, 68000 and NS 32000, and the following passage on complexity descending into the chips where it can no longer be modified or replaced.

@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 2
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -22,4 +23,9 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/sussman__lambda-the-ultimate-imperative.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Try to encode a feature in your core, and let the locality of the encoding tell you whether it belongs there](../lessons/encode-a-feature-to-learn-whether-it-is-really-primitive.md)
+- [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../lessons/a-call-is-a-jump-that-carries-bindings.md)
+- [Turn the machinery the implementation passes behind your back into an ordinary argument, then hide it again in the notation](../lessons/reify-the-hidden-argument-then-suppress-it-in-notation.md)
+- [Removing a construct does not remove the practice; supply a better alternative or watch the omission get patched back in](../lessons/invent-better-constructs-instead-of-forbidding-bad-ones.md)
+- [Put a procedure where a value goes, and you gain control over when, whether, and how often it is computed](../lessons/put-a-procedure-where-a-value-goes.md)
+- [Every cache asserts that nothing observable has changed; if you cannot witness that, the optimization is a semantic change](../lessons/caching-is-a-claim-about-invariance-and-needs-a-witness.md)

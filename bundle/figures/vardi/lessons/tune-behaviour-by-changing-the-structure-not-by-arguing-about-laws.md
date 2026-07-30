@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Tune behaviour by changing the structure, not by arguing about the laws — and know which laws the framework forces on you"
+figure: vardi
+works: [reasoning-about-knowledge]
+axes: [verifiability, primitive-count, expressiveness]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Tune behaviour by changing the structure, not by arguing about the laws — and know which laws the framework forces on you
+
+**Lesson:** Philosophers spent decades arguing about which laws a notion of knowledge should obey. Vardi's treatment sidesteps the argument by exhibiting a correspondence: each contested law is the exact shadow of one structural property of the underlying relation. Require that the actual situation always be among those considered possible and you get the law that what is known is true. Require transitivity and you get knowing-that-you-know. Require the Euclidean property and you get knowing-what-you-do-not-know. Require only that some situation always be considered possible and you get consistency without truthfulness — which is how the same machinery models belief rather than knowledge. The table of correspondences replaces the debate with a menu, and choosing an entry from it is a design decision rather than a philosophical position.
+
+The deeper move is separating the commitments you selected from the ones the framework imposes whatever you select. Two of the laws survive every modification of the structure: closure of knowledge under implication, and knowing everything that holds universally. Those are not choices; they are the price of the representation, and they are exactly what you must argue about if you want to argue about the framework at all. Being able to say precisely which of your system's properties are consequences of your modelling choice and which are consequences of your modelling *medium* is what makes a design critique possible instead of a preference exchange.
+
+Two matching disciplines make this rigorous. First, build both views of your semantics and prove they coincide — a syntactic account of which statements hold and a structural account of which configurations are admissible — since soundness plus completeness is precisely the claim that changing one is the same as changing the other, and without it a "law" is just a hope about the structure. Second, resist the search for the one correct notion. Vardi states outright that there is no right model of knowledge and that different applications want different ones, then justifies a particular choice by fitness for the problems at hand. Naming the application before fixing the axioms is what keeps a formalism honest, and it is the reason the same apparatus serves puzzles, protocols, and economics without pretending they are the same subject.
+
+**Source:** [Reasoning About Knowledge](../works/reasoning-about-knowledge.md) — chapter three's table pairing each axiom with a property of the possibility relation (truthfulness with reflexivity, positive introspection with transitivity, negative introspection with the Euclidean property, consistency with seriality, and the further symmetry axiom), together with the soundness-and-completeness theorems establishing that each combination characterizes exactly the corresponding class of structures; the observation in chapters two and three that the Distribution Axiom and Knowledge Generalization Rule hold no matter how the relations are modified; and chapter one's explicit refusal to claim a uniquely right model of knowledge, with chapter three's worked examples of situations where reflexivity or symmetry would be the wrong choice.

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Optimize for the caller's operation mix, and let an abstract operation set spread the gain"
+figure: tarjan
+works: [fibonacci-heaps-and-their-uses-in-improved-network-optimization-algorithms]
+axes: [expressiveness, hardware-affinity, cognitive-load]
+subdomains: [algorithms-and-complexity]
+tags: [lesson]
+---
+# Optimize for the caller's operation mix, and let an abstract operation set spread the gain
+
+**Lesson:** The structure Fredman and Tarjan were improving on already had a respectable, uniform guarantee: every operation logarithmic. Uniformity is the trap. They started instead from a specific consumer — the classic shortest-path algorithm — and counted what it actually asks for. One removal of the current minimum per vertex, but a key-lowering per edge. On any graph denser than a tree those two counts differ by an order, so the cost of the whole algorithm is dominated by the operation the uniform structure treated as no more important than any other. Their design goal follows mechanically from that count: make the frequent operation constant-time even at the price of keeping the rare one logarithmic. The resulting structure is worse than nothing at no operation and better than the old one at exactly the operations the caller performs most. The paper is explicit that the structure was built for that consumer first and generalized afterward, which is the honest order.
+
+The habit is to profile the *call site's operation frequencies* before choosing or tuning an implementation, and to treat a symmetric cost profile as a smell rather than a virtue. Symmetric bounds are what you produce when you have no information about the workload; the moment you have that information, symmetry is leaving value on the table, because a structure that is uniformly good is being asked to defend against a mix that never occurs. The corresponding failure mode is real and worth naming: specializing to a mix you assumed rather than counted gives you a structure that is spectacular on your benchmark and worse than the boring option in production.
+
+The second half of the leverage comes from where the specialization is allowed to live. The paper defines a heap by its operation set — create, insert, report the minimum, remove the minimum, merge, lower a key, remove an arbitrary item — before any representation is proposed, and the consuming algorithms are written against that set. Because the consumers name only operations, substituting an implementation improves every one of them without touching their code, and the paper harvests exactly that: the shortest-path algorithm gets faster, and then every algorithm that calls it as a subroutine gets faster for free, in a list the authors just read off. That multiplication is only available if the dependency was on a named operation set rather than on an inlined structure. The design rule is to find the primitive that many consumers bottleneck on, make sure they depend on it through its contract and not its internals, and then spend your optimization effort there — one improvement, harvested many times.
+
+**Source:** [Fibonacci Heaps and Their Uses in Improved Network Optimization Algorithms](../works/fibonacci-heaps-and-their-uses-in-improved-network-optimization-algorithms.md) — the introduction's abstract listing of the heap operations before any implementation, its statement that the structure was originally developed to speed up a specific shortest-path algorithm and that the target situation is one where deletions are few relative to all other operations, the shortest-path section's per-operation count against vertices and edges, and the enumeration of further algorithms that improve because they call that algorithm as a subroutine.

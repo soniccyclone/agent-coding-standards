@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,9 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/wirth__on-the-design-of-programming-languages.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Generality can strip out the redundancy you were reasoning with](../lessons/generality-can-remove-the-redundancy-you-reason-with.md)
+- [Ask how the need arises, not what the user wants, then answer it with a restricted construct](../lessons/ask-how-the-need-arises-not-what-is-wanted.md)
+- [One name per thing, one role per feature: mixed levels and merged roles destroy the same guarantee](../lessons/one-name-per-thing-and-one-role-per-feature.md)
+- [Every facility owes its user a cost model it can explain by itself](../lessons/every-facility-owes-the-user-a-cost-model.md)
+- [Write the contradictory demands down, then look for the invention before settling for the compromise](../lessons/write-the-contradictory-demands-down-then-look-for-the-invention.md)
+- [A well-solved subproblem is not a licence for complexity, and rigor is an instrument, not a deliverable](../lessons/a-solved-subproblem-is-not-a-licence-for-complexity.md)

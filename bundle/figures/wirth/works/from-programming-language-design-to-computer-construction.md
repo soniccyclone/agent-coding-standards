@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 2
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,9 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/wirth__from-programming-language-design-to-computer-construction.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Bootstrap every tool into its own next use, so your mistakes come back to you first](../lessons/bootstrap-every-tool-into-its-own-next-use.md)
+- [Sort every design question into essential or ephemeral, and never let an ephemeral one perturb the core](../lessons/decide-what-is-essential-before-what-is-convenient.md)
+- [Keep tools commensurate with the product, and read the tool you need as a measurement of your design](../lessons/keep-your-tools-commensurate-with-the-product.md)
+- [Mismatch across a layer boundary is a permanent tax, and the lower layer is the one you cannot revise](../lessons/mismatch-across-a-layer-boundary-is-a-permanent-tax.md)
+- [Bound an ambitious project with a few axioms, and expect them to contradict the fashion](../lessons/bound-a-project-with-axioms-chosen-against-the-fashion.md)
+- [Unify the substrate of one system, not the demands of every user](../lessons/unify-the-substrate-of-one-system-not-the-needs-of-every-user.md)

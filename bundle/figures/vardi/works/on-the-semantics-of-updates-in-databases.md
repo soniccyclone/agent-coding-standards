@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -23,4 +24,10 @@ tags: [work]
 **Host:** self-archived — author's own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Decide whether your state is closed under its own consequences, because that decides what deletion means](../lessons/decide-whether-your-state-is-closed-under-consequence.md)
+- [Paired operations are rarely duals: check which direction your invariant survives](../lessons/paired-operations-are-rarely-duals-check-which-way-the-invariant-survives.md)
+- [An ambiguous outcome should widen what you record, not reject the request](../lessons/an-ambiguous-answer-should-widen-the-state-not-reject-the-request.md)
+- [Rank your invariants explicitly, or automatic repair will sacrifice whichever one is cheapest to drop](../lessons/rank-your-invariants-or-repair-will-sacrifice-the-wrong-one.md)
+- [What you chose to record explicitly decides what a change means, not the change operator](../lessons/what-you-record-explicitly-decides-what-a-change-means.md)
+- [Read a request as evidence in the caller's vocabulary, not as a description of the end state](../lessons/read-a-request-as-evidence-not-as-a-description-of-the-end-state.md)
+- [To state a constraint that spans two structures, build the single structure that contains both](../lessons/to-constrain-a-relation-between-two-structures-build-the-one-containing-both.md)

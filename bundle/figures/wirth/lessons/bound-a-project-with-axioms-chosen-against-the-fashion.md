@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Bound an ambitious project with a few axioms, and expect them to contradict the fashion"
+figure: wirth
+works: [from-programming-language-design-to-computer-construction]
+axes: [cognitive-load, primitive-count]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Bound an ambitious project with a few axioms, and expect them to contradict the fashion
+
+**Lesson:** A project large enough to be worth doing is usually large enough that starting it looks irresponsible, and the standard responses to that gap — more people, more schedule, more scope negotiation — attack the wrong variable. The move that works is to fix a very small number of non-negotiable simplifying commitments at the outset and refuse to reopen them: one processor, one user, one language. Each is a decision that eliminates whole categories of work rather than sequencing it. Every axiom of this kind is worth several units of manpower, because what it buys is not speed on the tasks but the non-existence of the tasks, and it buys the ability to keep the whole undertaking in view while it is still being built. Note the character of these commitments: they are not feature choices, they are restrictions on the shape of the answer, adopted before the design begins so that the design cannot silently exceed them.
+
+Expect such axioms to run directly against the prevailing research agenda, and treat that as neutral information rather than as a warning. When the field is oriented toward multiprocessor configurations, time-sharing multiuser systems, and polyglot environments, the single-processor single-user single-language stance reads as retrograde — and it is nonetheless what makes a complete, coherent, working system reachable by a handful of part-time hands. The reason a fashion is a poor guide is that it is a statement about where a community expects value to be found in general, not about what constraints will let this particular effort finish. Adopting the majority position by default imports the majority's cost structure along with it.
+
+Two organizational corollaries fall out, both counterintuitive. First, scarcity of manpower functions as a design filter and can be an outright advantage: when there is no capacity to implement everything, features whose implementation cost is disproportionate to their benefit get excluded on arithmetic rather than on taste, and the exclusions are the thing that keeps the artifact coherent. Second, consensus processes systematically produce the opposite. A committee splits between those who want to erect a monument and those who want an adequate improvement in useful time, and the ambitious side tends to win the vote while the pragmatic side turns out to have been right about what ships and gets used. Freedom from having to obtain a consensus is what makes it possible to include exactly what you judge essential and exclude what you judge overpriced — which is a genuine argument for concentrated authorship, not merely a preference for working alone.
+
+**Source:** [From Programming Language Design to Computer Construction](../works/from-programming-language-design-to-computer-construction.md) — the Lilith section on the project seeming irresponsible to start with around seven part-time assistants and the three dogmas of a single processor, single user and single language being diametrically opposed to the trends of the time, the remark that severely limited manpower is sometimes an advantage when freed from committee consensus, and the earlier account of the ALGOL successor working group splitting into ambitious and pragmatic camps.

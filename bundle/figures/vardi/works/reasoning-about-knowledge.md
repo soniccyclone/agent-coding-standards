@@ -22,4 +22,10 @@ tags: [work]
 **Host:** self-archived — author's own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Represent ignorance as the set of alternatives you cannot rule out, and let knowledge be what survives across all of them](../lessons/represent-ignorance-as-the-set-of-alternatives-you-cannot-rule-out.md)
+- [A state is not its observable values: keep the worlds nobody believes in, drop the facts that hold everywhere](../lessons/a-state-is-not-its-observable-values.md)
+- [A group's knowledge is its own object, above and below the sum of its members'](../lessons/a-groups-knowledge-is-its-own-object.md)
+- [A broadcast is not n messages: the mode of delivery, not the payload, is what a group can build on](../lessons/a-broadcast-is-not-n-messages.md)
+- [An infinite conjunction is not a specification until you find its one-step equivalent](../lessons/replace-an-infinite-conjunction-with-a-one-step-condition.md)
+- [Tune behaviour by changing the structure, not by arguing about the laws — and know which laws the framework forces on you](../lessons/tune-behaviour-by-changing-the-structure-not-by-arguing-about-laws.md)
+- [To show a description is realizable, build the artifact out of the descriptions themselves](../lessons/to-show-a-description-is-realizable-build-the-thing-out-of-descriptions.md)

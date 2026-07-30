@@ -6,6 +6,7 @@ description: Wilkes's 1967 Turing Award lecture, a retrospective on the two deca
 subdomains: [operating-systems-and-systems-programming, programming-languages-and-semantics]
 year: 1967
 url: https://chsasank.com/classic_papers/maurice-wilkes-computers-then-and-now.html
+extraction: complete
 survey_text_layer: full
 access: public
 host: third-party-rehost
@@ -19,4 +20,14 @@ tags: [work]
 **Reading copy:** full text is served as HTML, not PDF (~4,152 words). Fetch the URL and read the HTML directly; `pdftotext` on it returns nothing, which is what made earlier surveys record this as having no text layer.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Expect a long, demoralizing gap between demonstrating a principle and exploiting the technology behind it](../lessons/the-trough-between-demonstration-and-full-engineering.md)
+- [Refuse to build a craft around a constraint you expect the technology to remove](../lessons/dont-build-a-craft-around-a-constraint-you-expect-to-disappear.md)
+- [Keep building things that are not meant to become products, especially when the unit of composition changes](../lessons/builds-that-are-not-products-are-how-a-field-learns.md)
+- [Learn to recognize the efficiency objection that is valid and still loses](../lessons/the-efficiency-objection-is-usually-valid-and-usually-loses.md)
+- [Separate the part of a language that organizes control from the part that touches data, and share only the first](../lessons/separate-the-control-shell-from-the-data-vocabulary.md)
+- [Choose the representation the problem needs first, and treat a notation as a commitment to a representation](../lessons/choosing-a-language-is-choosing-a-data-structure.md)
+- [Make the substrate-independent form the authoritative one, not a translation you produce on demand](../lessons/make-the-portable-form-the-authoritative-one.md)
+- [A user's overreaction to a demonstration is wrong about the solution and right about the need](../lessons/an-overreaction-still-carries-real-information.md)
+- [Borrow the problem from an existing solution, never the mechanism, when the materials differ](../lessons/borrow-the-problem-not-the-mechanism.md)
+- [A deliberately simple model at the user's level is what allows sophistication to be stacked above it](../lessons/one-thing-at-a-time-is-what-lets-abstraction-stack.md)
+- [Judge a parallel design by its utilization on the problems you did not have in mind](../lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)

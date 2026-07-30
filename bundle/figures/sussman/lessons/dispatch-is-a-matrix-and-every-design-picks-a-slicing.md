@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table"
+figure: sussman
+works: [lambda-the-ultimate-declarative]
+axes: [expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table
+
+**Lesson:** Strip the vocabulary away from any scheme for deciding what a program should actually do, and the same object appears underneath: a table whose rows are kinds of operand and whose columns are operations, each cell naming the primitive steps to take. Nobody writes the table out — it is enormous, and most of it is generated rather than stored, since one arithmetic routine covers every integer and one traversal covers every list. But the table is what the design is organizing, and this reframing pays immediately, because it turns a long-running argument between styles into a question with a definite shape. Grouping cells by column gives you a routine per operation that begins by examining what it was handed. Grouping cells by row gives you a bundle per kind of operand that begins by examining what was asked of it. Neither is a philosophy; each is a direction of slicing.
+
+The cost structure then becomes forced rather than arguable, and symmetrically so. Slice by column and a new operation is a single new routine while a new kind of operand requires touching every routine that exists. Slice by row and a new kind of operand is one new bundle while a new operation requires touching every bundle. This is one trade-off seen from two sides, so a proposal that claims to make extension easy is obliged to say extension *along which axis*, and a proposal that claims one style is simply better has almost certainly failed to notice that it optimized one direction by pessimizing the other. Slicing at the granularity of individual cells, so each combination is its own module, is available and has been tried; it removes both problems and produces code that no longer reads as anything, which is its own kind of answer.
+
+Once the table is the object of study, the mechanisms lose their mystery. Any indexing device serves as a row selector — a tag, a few bits, a pointer to code, a procedure that answers requests — and the choice among them is representational, not conceptual. That is what makes it defensible to build data out of procedures that respond to requests naming an operation, and it is also why the classical machine model of computation, which indexes a table of actions by current state and current symbol, is recognizably the same object. Reasoning at the level of the table, instead of at the level of whichever slicing your language happens to offer, is what lets you see that two designs presented as rival worldviews are the same information with the axes exchanged.
+
+**Source:** [Lambda: The Ultimate Declarative](../works/lambda-the-ultimate-declarative.md) — the procedural-view-of-data-types section, which sets up the operations matrix indexed by operator and operand, explains why entries get lumped into classes rather than written individually, observes that history has sliced the matrix by columns while the procedural approach slices it by rows and that each choice makes extension along one axis easy and the other hard, notes that a data type is simply whatever selects a row and that the selector's representation is immaterial, and remarks in passing on the correspondence to a Turing machine's two-parameter action table and on the disjointed result of slicing both ways at once.

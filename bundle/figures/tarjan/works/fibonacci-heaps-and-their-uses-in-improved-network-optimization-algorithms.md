@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 2
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -22,4 +23,9 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/tarjan__fibonacci-heaps-and-their-uses-in-improved-network-optimization-algorithms.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Optimize for the caller's operation mix, and let an abstract operation set spread the gain](../lessons/optimize-for-the-callers-operation-mix-not-per-operation-symmetry.md)
+- [Prefer an invariant you can prove about your rules to one you have to store and enforce](../lessons/prefer-an-invariant-you-can-prove-to-one-you-must-maintain.md)
+- [Tolerate a bounded amount of damage before repairing, and let the accounting pick the threshold](../lessons/let-the-accounting-choose-the-repair-threshold.md)
+- [Size each round to the unavoidable floor, then reduce the whole analysis to counting rounds](../lessons/size-each-round-to-the-unavoidable-floor-then-count-rounds.md)
+- [A lower bound on your method is not a lower bound on the problem; find what it solves incidentally](../lessons/a-lower-bound-on-your-method-is-not-a-lower-bound-on-the-problem.md)
+- [Know which machine your claim needs, and don't let a convenience strengthen the assumption](../lessons/know-which-machine-your-claim-needs.md)

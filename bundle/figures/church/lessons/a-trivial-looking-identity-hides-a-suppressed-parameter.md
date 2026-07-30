@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "An identity that looks trivially true is usually a relation with a parameter suppressed by convention; vary the parameter and the triviality dissolves"
+figure: church
+works: [introduction-to-mathematical-logic]
+axes: [verifiability, cognitive-load]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# An identity that looks trivially true is usually a relation with a parameter suppressed by convention; vary the parameter and the triviality dissolves
+
+Church takes up a family of statements that everyone finds obvious on sight: that a certain quoted sentence is true exactly when things are as that sentence says, or that a quoted place name is the name of that place. He says flatly that the impression of triviality is false, and rather than argue the point he supplies a technique for dissolving it. Translate the statement into another language. The proposition being asserted is the same proposition either way — a proposition cannot be trivial in one language and substantive in another — and once the two halves of the apparent tautology are no longer spelled the same, the content becomes visible. Rendered for a speaker of another language, the claim that one particular string names a particular city stops looking self-evident and starts looking like a contingent fact about English, which is what it always was.
+
+The diagnosis he gives is the general lesson. The naming relation is not really a two-place relation between an expression and a thing; it is a three-place relation that also involves the language, and it collapses to two places only because a particular language has been fixed by the surrounding context. The apparent triviality was an artifact of that suppression. Fill the third slot in explicitly, and the statements separate into one that is plainly false and one that is plainly substantive — and, satisfyingly, each looks obvious in one language and non-obvious in the other, which is exactly what you would expect if the hidden parameter is the culprit.
+
+So the technique generalizes into a test with real diagnostic power: when a claim strikes you as too obvious to need stating, look for the argument you left out. Something is being held fixed by context, and the fixing is doing all the work. This is where a large class of engineering confusions live, because the suppressed parameter is almost always an ambient one that varies across exactly the boundaries where bugs happen. A timestamp equals a timestamp — in which zone. A price equals a price — in which currency, and at which rate. This identifier refers to that record — in which environment, in which shard, in which tenant. The rendered document matches the source — under which encoding, which locale, which collation. Two systems agree on the value — after which normalization. Every one of these reads as tautological until the ambient parameter differs between the two sides, at which point the tautology turns out to have been a substantive and false claim all along.
+
+The habit worth building is Church's, and it is cheap: take the obvious statement and re-express it with the context varied. Say it in another representation, another environment, another unit, another locale. If it survives the change, it may have been genuinely trivial. If it stops being obvious, you have located a parameter that your design has been carrying implicitly, and the right move is to make it explicit in the type, the name, or the record — because implicit context is not a simplification, it is a claim of uniqueness that nothing enforces.
+
+**Source:** [Introduction to Mathematical Logic](../works/introduction-to-mathematical-logic.md) — the section on syntax, and its treatment of the false impression that statements equating a quoted sentence with its own content are trivial, including the translation-into-another-language method for dispelling the impression and the observation that the naming relation is properly three-place and becomes two-place only by fixing the language contextually.

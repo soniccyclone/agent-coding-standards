@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 2
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -22,4 +23,11 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/sussman__lambda-the-ultimate-declarative.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Treat a name as something a quantity acquires, not something a location holds, and the whole storage question changes shape](../lessons/name-the-quantity-not-the-location.md)
+- [Push a conjectured symmetry until it predicts something you have not noticed, then go looking for it](../lessons/use-a-conjectured-symmetry-to-predict-the-missing-piece.md)
+- [Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table](../lessons/dispatch-is-a-matrix-and-every-design-picks-a-slicing.md)
+- [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
+- [No representation is more efficient than another absolutely; ask which lifetimes make it win, or you have not stated a claim](../lessons/no-representation-is-more-efficient-without-a-usage-model.md)
+- [Any obligation that comes due after a transfer of control forces a frame, so undo-on-exit features quietly forbid unbounded looping](../lessons/any-obligation-after-a-transfer-forbids-the-transfer-being-a-jump.md)
+- [Choose among candidate primitives by which one explains the others, since one-way definability is the only asymmetry that carries information](../lessons/pick-a-primitive-by-which-candidate-explains-the-others.md)
+- [A layer meant to be shared by everything must be low in concept count, not close to the machine — those are different kinds of low](../lessons/a-common-layer-must-be-low-in-concepts-not-close-to-the-machine.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "The product of iteration should be a smaller program, and schedule pressure is what prevents it"
+figure: wirth
+works: [a-plea-for-lean-software]
+axes: [cognitive-load]
+subdomains: [software-engineering-and-architecture]
+tags: [lesson]
+---
+# The product of iteration should be a smaller program, and schedule pressure is what prevents it
+
+**Lesson:** Take it as given that a first design for anything hard is complicated, even from people who are entirely competent. That is not a defect in the engineers; it is what a first pass is. What separates a mature artifact from an immature one is what happens next, and the most valuable revisions are the ones that make the thing smaller — where a new insight collapses several mechanisms into one, or reveals that a whole layer was compensating for a bad earlier choice. Simplification is the payoff of understanding, so a design that has never shrunk is a design nobody has finished thinking about. Other engineering disciplines take this for granted: better performance from the same resources, obtained by successive refinement under a fixed budget. Software is unusual mainly in that its budget is elastic, so the pressure that would have forced the refinement never arrives.
+
+The reason this rarely happens is economic, and naming the mechanism matters more than deploring the outcome. Collapsing a design requires unhurried thought whose product is invisible — nothing new appears, something merely stops being there — while patching a deficiency with a hastily conceived addition produces something demonstrable today. Under deadline the second always wins, and the accumulated additions are exactly the bulk. The corrosive part is that this does not merely damage the artifact: sustained time pressure resets an engineer's internal standard for what counts as good enough, so the judgment that would have caught the next shortcut degrades along with the code. Add the market fact that arriving first beats arriving better, and the incentive to stop at the first solution that runs is complete. None of this is a law of nature, which is the point — knowing that the force is a reward structure rather than a technical necessity is what makes resisting it a decision you can actually make.
+
+Two consequences for how to judge work. Competence is the ability to find a simple solution, not throughput: measuring a programmer by volume produced inverts the sign of the thing you want, and someone highly prolific may be actively increasing the eventual cost of the system. And the standard to hold code to is publishability — written to be read by a person, polished as an exposition and not merely until the tests pass. That is a far harder target than working, and treating it as the finish line is what keeps a system explainable to whoever inherits it. One corollary cuts against a rule usually stated absolutely: specify-before-implement has to be held loosely, because a specification is a design artifact and can be wrong in exactly the way an implementation can be wrong. Discovering that during implementation is information, not failure, and a process that cannot revise upward wastes it.
+
+**Source:** [A Plea for Lean Software](../works/a-plea-for-lean-software.md) — the passages on initial designs being invariably complicated with the most rewarding iterations being simplifications, the "never enough time" section on time pressure corrupting standards and rewarding quick additions, the closing lessons on judging competence by simple solutions and writing programs to publication quality, and the note on relaxing specification-before-implementation.

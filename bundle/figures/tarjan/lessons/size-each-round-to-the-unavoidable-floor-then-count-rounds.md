@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Size each round to the unavoidable floor, then reduce the whole analysis to counting rounds"
+figure: tarjan
+works: [fibonacci-heaps-and-their-uses-in-improved-network-optimization-algorithms]
+axes: [hardware-affinity, verifiability]
+subdomains: [algorithms-and-complexity]
+tags: [lesson]
+---
+# Size each round to the unavoidable floor, then reduce the whole analysis to counting rounds
+
+**Lesson:** The spanning-tree algorithm has a parameter that trades in two directions at once: it caps how large the working set is allowed to get before the current partial answer is abandoned and a fresh one started. A small cap makes each round cheap but leaves many fragments, so more rounds are needed. A large cap merges aggressively and finishes in fewer rounds, but each round pays a logarithmic factor on a bigger working set. Rather than search for a single value that balances the two, Fredman and Tarjan pick the cap so that every round costs exactly the floor — one pass over the input, which is unavoidable anyway — and then recompute the cap for the next round from how much structure survived. Once each round is pinned to the floor, the entire cost analysis collapses into one question: how many rounds are there? And that question is answered by showing each round leaves survivors that are individually large enough to force the next cap sharply higher, which makes the round count grow inconceivably slowly in the input size.
+
+Two moves are worth separating out. The first is deliberately abandoning work in progress: the algorithm stops growing a partial answer once its working set exceeds the cap, accepting a worse intermediate result on purpose, because the cost of continuing is superlinear in the working set while the cost of starting over is not. Self-limitation as an optimization is counterintuitive and generally available — bounded queues, chunked scans, capped batch sizes all have the same shape, and the reason they work is that a cost that grows faster than linearly in the size of the thing you are holding is a reason to hold less of it. The second move is refusing a global value for the parameter. The right cap depends on how much work remains, which changes every round, so the parameter is recomputed each time from current state. A single tuned constant chosen up front would be wrong at both ends of the run.
+
+The analytic payoff is what makes this worth internalizing as a template. Equalizing the per-round cost against a floor you already have to pay is what lets you stop reasoning about cost at all and reason only about progress, and progress arguments are much easier to get right than accumulated-cost arguments. So when you face a multi-pass process with a tunable batch or window, resist tuning it for throughput in isolation. Ask what the per-pass cost floor is, choose the parameter that puts each pass at that floor, and then spend your effort proving that each pass makes enough irreversible progress to bound the number of passes. Total cost falls out as the product of two things you now understand separately.
+
+**Source:** [Fibonacci Heaps and Their Uses in Improved Network Optimization Algorithms](../works/fibonacci-heaps-and-their-uses-in-improved-network-optimization-algorithms.md) — the minimum-spanning-tree section's tree-growing step with its heap-size cap, the discussion of how smaller caps reduce per-pass time while larger caps reduce the pass count, the choice of a cap recomputed per pass from the surviving fragment count so that each pass costs a single scan of the edges, and the subsequent argument bounding the number of passes from the size of the surviving fragments.

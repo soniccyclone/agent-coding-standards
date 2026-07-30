@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When values can be absent, weaken the logic rather than pretend, and definedness becomes visible"
+figure: jones
+works: [systematic-software-development-using-vdm]
+axes: [verifiability, expressiveness, primitive-count]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# When values can be absent, weaken the logic rather than pretend, and definedness becomes visible
+
+**Lesson:** Real programs are full of expressions that may fail to denote anything: a division that cannot be performed, a lookup with no entry, a computation that does not terminate. Classical two-valued reasoning has no room for this — it assumes every expression has a value — so the usual response is to patch around it, by pretending an absent value is some particular value, by restricting the language until the problem cannot be written, or by simply not noticing. The principled response is to admit that a claim may fail to have a truth value and to accept the consequences for what you can prove. The absent case is emphatically not a third value to compute with; it is the recorded absence of one, and the point of admitting it is bookkeeping, not arithmetic.
+
+Deciding how the connectives behave in the presence of absence has a right answer, and the criterion is worth remembering because it recurs whenever partial information must be combined. Extend each operator so that it delivers a result whenever a result is determined by what is known, and no result otherwise — one true operand settles a disjunction whatever the other turns out to be. That rule is exactly the discipline of never delivering an answer that later information could contradict, and it happens to coincide with what a concurrent evaluator does when it takes the first operand to finish. Choosing the most generous such extension yields connectives that stay symmetric, so the familiar commutative and associative laws survive.
+
+What you give up is a small number of classical laws, chiefly the one asserting that every claim is either true or false, and giving it up is the point rather than the price. There is no reason to believe that a division by zero either equals one or fails to equal one, and a system that insists otherwise has quietly told you a falsehood about your program. The compensation is precise: the lost laws come back as soon as you state, explicitly, that the expressions involved are defined. So every place your argument depends on something having a value becomes a written assumption instead of an invisible one — which is exactly the information a programmer needs, since those are the places where the program will fail. A weaker logic that shows you where you are exposed is stronger engineering than a complete one that hides it.
+
+**Source:** [Systematic Software Development Using VDM](../works/systematic-software-development-using-vdm.md) — the section on reasoning about partial functions: its motivation from a recursive subtraction whose proof obligation contains a non-denoting term, the three-case operator tables described as the most generous monotonic extensions of the classical ones that do not contradict them, the parallel-evaluation reading and the argument that a result delivered on incomplete information will not be wrong however the information is completed, the deliberate loss of the excluded middle illustrated by division by zero, the resulting failure of the deduction theorem without an explicit definedness assumption, and the closing observation that classical tautologies become valid judgements once the required definedness assumptions are written on the left of the turnstile.

@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 1
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,8 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/wirth__a-plea-for-lean-software.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Before accepting a system's complexity, separate what the problem demands from what abundance permitted](../lessons/separate-inherent-complexity-from-self-inflicted-complexity.md)
+- [The product of iteration should be a smaller program, and schedule pressure is what prevents it](../lessons/the-product-of-iteration-should-be-a-smaller-program.md)
+- [Scope a system to what one mind can hold, and treat added people as added coupling](../lessons/scope-a-system-to-what-one-mind-can-hold.md)
+- [Ship a minimal core with an extension mechanism, and earn features by reusing it rather than by adding them](../lessons/earn-features-by-reusing-one-mechanism.md)
+- [Unbreakable static typing is what makes abstraction real and redesign affordable](../lessons/unbreakable-static-typing-is-what-makes-abstraction-real.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An explanation that uses the feature it explains transmits your misunderstandings intact"
+figure: reynolds
+works: [definitional-interpreters-for-higher-order-programming-languages]
+axes: [cognitive-load, expressiveness, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# An explanation that uses the feature it explains transmits your misunderstandings intact
+
+**Lesson:** The most natural way to explain a mechanism is to write it out using the same mechanism — define what applying a function means by applying a function, define branching by branching, define recursion by recursion. Such an account is short, complete, and worthless to exactly the audience that needs it. It says nothing to anyone who does not already understand the medium, and, worse, it silently forwards every misconception the reader has about that medium into the thing being explained. Believe the medium's conditional yields something odd for a non-boolean test, and the explained language now inherits that oddity, with no place in the text where the error could have been caught. The general test to apply to any explanation, specification, or model is therefore: which of its properties does it *state*, and which does it merely *inherit*? Only the stated ones have been explained.
+
+The remedy is to insist on explaining a thing in a medium strictly weaker than the thing itself, and to treat every failure of that attempt as information. Three concrete deficiencies show up when the demand is made honestly here. An account of higher-order behaviour written in a higher-order medium illuminates nothing about how higher-order behaviour could be realized, so the target should be a first-order medium. An account that evaluates operands whenever its host happens to evaluate operands has not specified the evaluation order at all, so the target should be a medium under which the account means the same thing either way. And an account whose control structure borrows the host's control structure cannot be extended to control features the host does not have, which reveals that the borrowing was load-bearing all along.
+
+Two payoffs justify the extra work. First, the deficiencies turn out to be related in ways nobody could have predicted from the informal statement: the discipline adopted to remove evaluation-order inheritance is exactly what makes the previously impossible control features definable. Repairs to independent-looking weaknesses in an explanation converge when the weaknesses share a hidden cause. Second, the criticism generalizes past interpreters. Any construction that defines something in terms of a richer version of itself — a framework configured by the framework, a build system that requires itself to build, a specification written in the notation it specifies — buys concision by borrowing understanding it never provides, and the borrowing is invisible until someone who lacks the loan tries to read it.
+
+**Source:** [Definitional Interpreters for Higher-Order Programming Languages](../works/definitional-interpreters-for-higher-order-programming-languages.md) — section 5, which coins meta-circularity for a definition that explains each feature of the defined language by the corresponding feature of the defining language, argues that such a definition is concise for the already-informed while carrying misunderstandings across intact, lists the three serious objections concerning higher-order functions, order-of-application dependence and inextensibility to jumps, and notes that the transformation answering the second objection also answers the third.

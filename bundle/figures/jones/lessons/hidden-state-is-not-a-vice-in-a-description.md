@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Choose between describing a thing by a model and by its visible behaviour according to who is reading"
+figure: jones
+works: [development-methods-for-computer-programs-including-a-notion-of-interference]
+axes: [expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Choose between describing a thing by a model and by its visible behaviour according to who is reading
+
+**Lesson:** There are two honest ways to say what a component is. Give it an internal structure and define each operation as a transformation of that structure; or give no structure at all and instead state the relationships that must hold among the operations, or the sequences of external events it may exhibit. The second is often presented as strictly superior on the grounds that it commits to nothing. That is a real advantage and it comes with real costs, and the choice between them is better made by asking who needs the description than by ranking them.
+
+Behaviour-only description suits a reader who will consume the component and never build it: nothing they cannot observe appears, so nothing misleads them and nothing constrains a future implementation. It is measurably worse for the reader who must construct the thing. Some ordinary components are awkward or impossible to characterize this way without introducing operations that exist only to make the characterization work, or an unbounded family of relationships. It is markedly harder to pin down something whose behaviour depends on which of its contents is nearest a boundary than something that simply hands items back in arrival order, and for a component whose whole purpose is to maintain a classification, the behaviour-only account becomes unclear where the structural one is a routine exercise. Worse, correctness of a behaviour-only description is hard to see: the mistakes look like well-formed statements, and the literature contains published corrections to specifications whose structural counterparts would have been obviously right or obviously wrong on sight.
+
+So use the structural description where the task is to construct the object, and the behaviour-only description where the object is to be handed to others as a component. The one rule that makes the structural style safe is the ban on distinctions no operation can observe; with that in place its supposed vice — having an inside — costs nothing, because the inside has been reduced to exactly the information the outside requires. Treating "no internal state" as an unconditional virtue is a category error: what matters is that the description contains nothing unobservable, not that it contains nothing.
+
+**Source:** [Development Methods for Computer Programs including a Notion of Interference](../works/development-methods-for-computer-programs-including-a-notion-of-interference.md) — the property-oriented-specification subsection of the specification chapter, listing the need for hidden functions or infinite collections of properties, the dissimilarity of specifications for closely related structures, the difficulty of being sure such a specification is correct as evidenced by published corrections, and Jones's position that property-oriented descriptions suit objects to be used in other programs while model-oriented ones suit the task of constructing the object; and the corresponding doubts in the communication-based-parallelism chapter, where trace-only specification is judged significantly harder for one container discipline than another and unclear for the equivalence-relation problem.

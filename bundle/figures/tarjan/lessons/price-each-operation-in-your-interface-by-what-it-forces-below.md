@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Price each operation in your interface by what it forces on the implementation, and name the algebra you actually need"
+figure: tarjan
+works: [a-data-structure-for-dynamic-trees]
+axes: [primitive-count, expressiveness, cognitive-load]
+subdomains: [algorithms-and-complexity]
+tags: [lesson]
+---
+# Price each operation in your interface by what it forces on the implementation, and name the algebra you actually need
+
+**Lesson:** Immediately after fixing the operation set, Sleator and Tarjan itemize what would change if the set were different, and the most instructive entry is the one operation they identify as expensive to *offer*: re-rooting a tree, turning it inside out. Supporting it forces a per-node orientation bit, an interpretation rule that resolves orientation lazily during every descent, mirrored copies of several auxiliary fields so both directions can be searched, and an indirection scheme for parent pointers that would otherwise be unnecessary. They state plainly that dropping it permits a simpler structure with fewer fields and a faster parent lookup. That is the right way to reason about an API: an operation's cost is not what it costs to execute, it is what its mere availability imposes on everything else. One rarely-used capability can force representational tax on every operation in the set, and the only way to see that is to ask, feature by feature, what would get simpler if it were absent.
+
+They also do the opposite exercise — what the machinery would still support if it were asked for less specifically. The paper's queries combine costs by taking a minimum and update them by adding, but the note observes that nothing in the construction depends on those particular operations; any fixed algebraic structure with the right composition behaviour works, and the same machinery then serves a whole family of aggregate queries rather than one. Recognizing that a concrete pair of operations was only ever an instance of an abstract requirement costs a sentence and multiplies the result's reach. The practical version of this in ordinary code is noticing that a routine written against a specific comparison, accumulator, or merge function needs only its associativity, and lifting the requirement into a parameter.
+
+The two exercises are the same discipline pointed in opposite directions, and both belong in the design phase rather than after. For each capability you are considering exposing: what does it force the representation to carry, and would removing it collapse anything? For each concrete operation you are relying on: which of its properties does the argument actually use? The first question keeps interfaces from accreting features whose cost is invisible because it's distributed. The second turns one solution into a family. Doing both leaves you able to state not one structure but a small matrix — this operation set costs this much, dropping that one saves this, and the whole thing works over anything satisfying these laws — which is far more useful to a reader than a single point in that space.
+
+**Source:** [A Data Structure for Dynamic Trees](../works/a-data-structure-for-dynamic-trees.md) — the enumerated variations following the operation set, including the note that dropping the re-rooting operation permits simplification of the structure, the later remarks identifying exactly which fields and which parent-pointer scheme exist only to support it, and the variation observing that the real-valued costs combined by minimization and updated by addition can be replaced by the elements of an arbitrary fixed semigroup with the operations redefined appropriately.

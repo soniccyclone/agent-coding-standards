@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,7 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/reynolds__towards-a-theory-of-type-structure.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Judge a discipline by an invariance it guarantees, not by the mistakes it happens to catch](../lessons/judge-a-discipline-by-the-invariance-it-guarantees.md)
+- [Duplication that refuses to factor means you are missing a kind of parameter, not a clever trick](../lessons/duplication-that-will-not-factor-means-a-missing-kind-of-parameter.md)
+- [A theorem you cannot even state is telling you some construct's meaning is too thin](../lessons/an-unstateable-theorem-means-a-meaning-is-too-thin.md)
+- [A feature added for convenience can change what is computable, so measure its power instead of assuming](../lessons/a-convenience-feature-can-change-what-is-computable.md)

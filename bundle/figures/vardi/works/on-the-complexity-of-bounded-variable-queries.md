@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,10 @@ tags: [work]
 **Host:** self-archived — author's own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Find the quantity that actually blows up, then bound it with something checkable in the text](../lessons/find-the-quantity-that-actually-blows-up-then-bound-it-syntactically.md)
+- [Length is cheap, simultaneity is not: reuse names to keep the working set narrow](../lessons/length-is-cheap-simultaneity-is-not-reuse-your-names.md)
+- [Equal expressive power does not mean equal leverage: techniques attach to structure, not to what is sayable](../lessons/equal-expressive-power-does-not-mean-equal-proof-leverage.md)
+- [Replace an inner recomputation with a guess you can check, and a product of costs becomes a sum](../lessons/replace-inner-recomputation-with-a-guess-you-can-check.md)
+- [A whole you only ever observe through a few narrow windows can be replaced by the windows, plus the coherence you just gave up](../lessons/replace-an-unobservable-whole-with-its-observations-plus-coherence.md)
+- [Finitize one dimension and evaluation stops being computation, becoming recognition](../lessons/finitize-one-dimension-and-evaluation-becomes-recognition.md)
+- [When a normalization removes a parameter, find where the cost went before calling it a simplification](../lessons/when-a-normalization-removes-a-parameter-find-where-the-cost-went.md)

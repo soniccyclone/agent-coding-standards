@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -22,4 +23,9 @@ tags: [work]
 **Host:** self-archived — author's own site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Name which input you are holding fixed before you quote a cost](../lessons/name-which-input-you-are-holding-fixed-before-you-quote-a-cost.md)
+- [Shorter notation moves cost onto the evaluator; it does not remove it](../lessons/shorter-notation-moves-cost-onto-the-evaluator.md)
+- [Earn each new construct with a thing the old language cannot say, and price it before adding it](../lessons/earn-each-new-construct-with-a-thing-the-old-language-cannot-say.md)
+- [A language blind to arrangement cannot count, so hand it the arrangement deliberately](../lessons/a-language-blind-to-arrangement-cannot-count.md)
+- [When two opposed styles measure identically, the choice between them is ergonomic](../lessons/when-two-opposed-styles-measure-identically-the-choice-is-ergonomic.md)
+- [Measure the smallest yes-or-no question, then check the reduction back is faithful](../lessons/measure-the-smallest-decidable-question-then-check-the-reduction-is-faithful.md)

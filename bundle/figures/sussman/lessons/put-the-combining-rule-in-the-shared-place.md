@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Put the combining rule in the shared place rather than in the producers, and directions of flow you never enumerated become available"
+figure: sussman
+works: [the-art-of-the-propagator]
+axes: [expressiveness, parallelizability, cognitive-load]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Put the combining rule in the shared place rather than in the producers, and directions of flow you never enumerated become available
+
+**Lesson:** When several computations can contribute to the same conclusion, there are two places to put the logic that reconciles them. The obvious place is between the producers: run each, then apply a reconciling step to their outputs. The other place is inside the thing they share — the destination itself knows how to fold an incoming contribution into what it already holds. For any fixed, known set of producers these are equivalent, and the honest way to introduce the second option is to admit that on a small example it buys nothing but tidiness, plus a little incrementality since the destination need not wait for every producer to finish before it has something usable.
+
+The reason to prefer it anyway is that reconciliation-between-producers requires the set of producers to be known where the reconciling happens, and reconciliation-in-the-destination does not. Once the destination owns the rule, a contributor can be attached without anything else in the system being told, which is what allows a computation to be reorganized from a function into a relation: install the mechanism that computes each of the several ways a relationship can be read — solve for this given those, solve for that given these — and let whichever of them finds itself with enough information proceed. Consumers become producers depending on what is known, information flows backward through a computation that was written forward, and a refinement obtained at the end of a chain propagates back to sharpen the inputs it came from. None of these behaviours has to be designed; they are consequences of the reconciling rule not needing to know who is participating.
+
+The general principle is about where knowledge of participants is required. Any design in which the point of combination must enumerate its contributors has a fixed topology, and every new flow is a new piece of code. Move the combination to the shared resource, give it a rule that is total over contributions rather than specific to a list of them, and the topology becomes a property of what has been connected rather than of what was anticipated. The price is that the rule now has to be defined for arbitrary pairs of contributions, including the case where they conflict — which is the real work, and is worth paying attention to, because a combining rule that is only correct for the flows you had in mind has quietly reintroduced the fixed topology you were trying to escape.
+
+**Source:** [The Art of the Propagator](../works/the-art-of-the-propagator.md) — the sections on partial information and multidirectional computation, which admit that the building-measurement example gains only aesthetic cleanliness over an explicit intersection step between two known methods, argue that the real advantage of letting the shared cell do the merging is the much broader range of possible information flows it permits, and demonstrate this by stacking mutual inverses of each arithmetic relation so that whichever direction has sufficient inputs proceeds — after which better information about the result propagates backward to refine the original measurements.

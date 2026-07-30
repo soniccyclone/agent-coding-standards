@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 1
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,7 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/afs/cs/user/sleator/www/papers/amortized-efficiency.pdf — live page, self-archived by co-author Daniel Sleator on his CMU faculty site; verified by extracting the embedded text stream (self-organizing-lists / access-delete discussion matches the published paper's content).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Choose the cost measure before the algorithm, because the measure decides the answer](../lessons/choose-the-cost-measure-before-the-algorithm.md)
+- [To prove you beat every rival, run the rival inside the proof and make disagreement the ledger](../lessons/to-beat-every-rival-run-the-rival-in-the-proof.md)
+- [A cost model that permits arbitrage is the wrong model, and pricing it right prunes the strategy space](../lessons/a-cost-model-that-permits-arbitrage-is-the-wrong-model.md)
+- [Price out what foresight is worth; when the ratio will not close, buy slack instead](../lessons/price-out-foresight-then-buy-slack-instead.md)

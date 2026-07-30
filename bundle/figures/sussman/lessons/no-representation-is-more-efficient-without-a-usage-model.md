@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "No representation is more efficient than another absolutely; ask which lifetimes make it win, or you have not stated a claim"
+figure: sussman
+works: [lambda-the-ultimate-declarative]
+axes: [hardware-affinity, cognitive-load, verifiability]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# No representation is more efficient than another absolutely; ask which lifetimes make it win, or you have not stated a claim
+
+**Lesson:** Between two ways of laying out the same information there is usually a partisan for each, and both partisans reason from the program text. One side counts total slots: several small packages, each carrying only what its own code touches, will together carry more entries than one shared package that all of them consult, because the shared entries are counted once instead of many times. The other side counts what stays alive: a shared package is retained as long as anything referring to it survives, so one long-lived participant pins everything the group ever needed, while small packages let the majority be reclaimed the moment their holders are finished. Both counts are correct. Which one determines the actual cost depends on how long each participant survives, and that is a fact about the run rather than about the text — which means the text cannot decide it, however hard you analyse the text.
+
+The right response is not to declare a winner but to notice what kind of question you are holding. A choice whose answer depends on runtime lifetimes has no textual solution, so a design that hard-codes one strategy has silently assumed a usage pattern it never stated, and will be wrong exactly when that pattern does not hold. Systems get built on such assumptions in both directions and both get defended as principled, when the honest position is that the decision is a parameter: made by whoever can see the lifetimes, chosen by the compiler where the pattern is evident, and otherwise taken from the programmer as advice. Notice too the asymmetry in when each answer is right — the shared layout wins on total footprint and loses on retention, so the same program can prefer one at peak and the other over its lifetime.
+
+This generalizes past storage layout to a whole class of arguments: fine-grained copies against a coarse-grained shared structure, eager splitting against lazy sharing, per-consumer views against one common record. In every case the partisan counting slots and the partisan counting lifetimes talk past each other because they are measuring different quantities and neither says so. The productive question to force is not "which is more efficient" but "under what distribution of lifetimes does each one win, and which distribution does this program actually have?" A claim of efficiency without a usage model attached is not yet a claim about anything.
+
+**Source:** [Lambda: The Ultimate Declarative](../works/lambda-the-ultimate-declarative.md) — the lexical-and-dynamic-binding section, which answers the argument that closures should carry only the quantities their code needs by exhibiting six closures over four shared variables where the minimal strategy costs twelve entries against the shared environment's four, then observes that if five of the six are used and discarded immediately while the sixth survives indefinitely the minimal strategy wins after all, and draws the moral that neither strategy is more efficient in any absolute sense because the efficiency depends on the behaviour of the program rather than on its textual form, so the compiler should decide case by case and be prepared to accept declarations.

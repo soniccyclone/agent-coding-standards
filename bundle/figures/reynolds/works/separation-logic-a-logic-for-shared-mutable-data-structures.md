@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -20,4 +21,9 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~jcr/seplogic.pdf — live PDF (HTTP 200), self-archived on Reynolds's own CMU faculty page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [If your specifications grow quadratically as you mention more things, the fix is a new connective, not more clauses](../lessons/build-the-invariant-into-the-connective.md)
+- [Describe only what a component touches, and make the extension to a larger context somebody else's rule](../lessons/specify-the-footprint-and-let-a-rule-extend-it.md)
+- [Say what the program is about before you say how it is stored, and define the link by recursion on the abstract value](../lessons/recurse-on-the-abstract-value-not-on-the-memory.md)
+- [A proof step that refuses to fire is usually reporting a weak specification, not an inadequate rule](../lessons/a-blocked-proof-step-is-telling-you-the-specification-is-too-weak.md)
+- [Types and program assertions are one continuum, divided by a decidability frontier you get to choose](../lessons/types-and-assertions-are-one-continuum-with-a-decidability-frontier.md)
+- [Non-interference between processes is a claim about resource ownership, and syntax cannot check it for you](../lessons/non-interference-is-a-resource-partition-not-a-syntactic-rule.md)

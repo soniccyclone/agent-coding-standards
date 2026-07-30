@@ -21,4 +21,9 @@ tags: [work]
 **Source:** https://groups.csail.mit.edu/mac/users/gjs/6.945/readings/art.pdf — live PDF self-archived in Sussman's own MIT CSAIL directory, served as a reading for his 6.945 course.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Find the assumption too basic to be stated, negate it, and follow the consequences — that is where new models come from](../lessons/negate-the-assumption-nobody-writes-down.md)
+- [Put the combining rule in the shared place rather than in the producers, and directions of flow you never enumerated become available](../lessons/put-the-combining-rule-in-the-shared-place.md)
+- [If updates only ever add information, order stops mattering — and the single operation that takes information away costs you that freedom everywhere](../lessons/one-retraction-costs-you-the-whole-schedule-freedom.md)
+- [Carry each conclusion's grounds with it, and inconsistency stops being fatal because consistency becomes local](../lessons/carry-the-grounds-and-inconsistency-stops-being-fatal.md)
+- [Put failure in the infrastructure and make it name its causes; a dead end that knows why it failed eliminates a region instead of a point](../lessons/make-failure-informative-instead-of-encoding-around-it.md)
+- [Bookkeeping attached to an aggregate can never be finer than the aggregate, and its errors are silent because the answers stay right](../lessons/metadata-is-only-as-precise-as-the-unit-it-is-attached-to.md)

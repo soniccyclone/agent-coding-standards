@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When a technique's guarantee weakens in a harder setting, inventory the new cases instead of abandoning it"
+figure: tarjan
+works: [depth-first-search-and-linear-graph-algorithms]
+axes: [verifiability, cognitive-load]
+subdomains: [algorithms-and-complexity]
+tags: [lesson]
+---
+# When a technique's guarantee weakens in a harder setting, inventory the new cases instead of abandoning it
+
+**Lesson:** The clean invariant that makes the undirected case easy depends on a freedom that quietly disappears in the directed case. When edges have no inherent direction, the traversal gets to orient each one as it crosses it, and that is what lets every non-discovering edge be forced to point back at an ancestor. When directions are given in advance, the traversal cannot orient anything, and the guarantee simply fails. Two responses are available and both are wrong: declare the technique inapplicable, or carry on assuming the invariant still holds because it held before. Tarjan takes a third path — enumerate exhaustively what *can* now appear, and find out what weaker fact survives. Three new kinds of edge are possible; one kind is proved incapable of affecting the answer and thrown away outright; the second is the familiar back-pointing kind; the third, connections between unrelated branches, is new and cannot be eliminated, but obeys a proved numerical constraint on the direction it can run relative to discovery order. That residual constraint is exactly strong enough to rebuild the argument.
+
+The follow-on subtlety is where most of the care goes. The per-vertex summary that worked before now has to consult those cross-branch edges *conditionally* — the target counts only if it belongs to the same group, and whether it does is not yet known at the moment the edge is examined. So the algorithm needs a cheap, always-correct proxy for that membership question, and the traversal's own bookkeeping supplies it: anything already assigned to a finished group has left the working stack, so presence on the stack answers it in constant time. The pattern is that weakening an invariant introduces a side condition, and the side condition is only affordable if some structure you are already maintaining happens to decide it. Finding that coincidence — or engineering it — is the real work of the port.
+
+The transferable discipline is a bookkeeping one. When you move a technique across a boundary where it stops being obviously valid, write down the precise property the old setting supplied for free, then enumerate the complete set of situations the new setting permits that the old one didn't. Exhaustiveness is what makes this rigorous rather than optimistic: a partial inventory is how ported algorithms acquire bugs that only appear on inputs nobody thought to draw. Then classify each new case as irrelevant, already handled, or genuinely new, and prove the irrelevance claims instead of asserting them. Naming the resulting weaker structure, as this paper does, is not decoration — it gives later reasoning something to cite that isn't the original, stronger, no-longer-true guarantee.
+
+**Source:** [Depth-First Search and Linear Graph Algorithms](../works/depth-first-search-and-linear-graph-algorithms.md) — the opening of the strong-connectivity section, which observes that fixed edge directions destroy the undirected case's structure, classifies the non-tree edges into three kinds, discards ancestor-to-descendant edges as unable to affect the components, proves the ordering constraint on cross-branch edges, and defines the per-vertex summary with a same-component side condition later decided by stack membership.

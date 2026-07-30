@@ -6,6 +6,7 @@ description: An informal introduction to CPL (Combined Programming Language), a 
 subdomains: [programming-languages-and-semantics]
 year: 1963
 url: http://web.archive.org/web/20250401021940/http://www.math.bas.bg/~bantchev/place/cpl/features.pdf
+extraction: complete
 survey_pages: 10
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -26,3 +27,7 @@ tags: [work]
 - [Put the variety in the composable layer](../lessons/put-the-variety-in-the-composable-layer.md)
 - [Close an ambiguity with a required part, not a tie-breaking rule](../lessons/close-an-ambiguity-with-a-required-part-not-a-tie-breaking-rule.md)
 - [Treat familiarity as a cost the replacement has to cover](../lessons/treat-familiarity-as-a-cost-the-replacement-has-to-cover.md)
+- [Go back and refit the earlier decisions to the principle you only discovered halfway through](../lessons/refit-the-design-to-the-principle-you-only-just-found.md)
+- [Pick a property you will guarantee everywhere, and let it decide where operations get split in two](../lessons/let-a-guaranteed-property-decide-where-to-split-an-operation.md)
+- [Before inventing a rule for a special case, look for an existing notion that already has the property you need](../lessons/reach-for-an-existing-notion-before-inventing-a-rule.md)
+- [Calibrate surface rules against how people already read the notation, not against internal regularity](../lessons/calibrate-surface-rules-to-how-people-already-read.md)

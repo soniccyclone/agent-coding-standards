@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Put a procedure where a value goes, and you gain control over when, whether, and how often it is computed"
+figure: sussman
+works: [lambda-the-ultimate-imperative]
+axes: [expressiveness, primitive-count]
+subdomains: [programming-languages-and-semantics]
+tags: [lesson]
+---
+# Put a procedure where a value goes, and you gain control over when, whether, and how often it is computed
+
+**Lesson:** A value and a zero-argument procedure that produces it are interchangeable at every interface, but they differ in one decisive way: handing over the value commits to computing it now, while handing over the procedure defers that decision to whoever holds it. That single substitution is the whole content of several features that are usually presented as separate language mechanisms. Pass the procedure instead of the value and you get by-name parameters, so a definition that would loop forever building an infinite sequence terminates because the tail is never demanded. Wrap the procedure so it caches on first call and you get by-need. Pass a *pair* of procedures, one that reads and one that writes, and you get an assignable reference, so a callee can store into a location it was never told the name of. The mechanism does not change; only what the procedure closes over and how many of them you send.
+
+The same substitution builds data out of nothing but procedures. A two-field record can be a procedure that takes a selector and returns whichever of its two captured values you asked for, with the two accessors being nothing but applications to the two possible selectors — Church's encoding of pairs, which the authors point out is the same construction as the list primitives every Lisp programmer already uses. This is worth internalizing as a stance rather than a trick: a data structure is characterized by the observations you can make on it, so a procedure that answers those observations *is* the structure, and the choice between a literal record and a procedural stand-in becomes a free implementation decision that callers cannot detect. Structures that hold unevaluated components, structures whose components are computed on demand, and structures whose components can be assigned all fall out of the same procedural representation.
+
+Where the pattern runs out is instructive too. Making a reference assignable requires knowing, at the point of the read, where the value came from — and a procedure that merely returns a value has thrown that away. If callees may need to write back through arbitrary expressions, every value in the program must travel as an access-and-assign pair, which is the same thing as saying values are addresses. That is a real design fork, not an oversight: languages that admit assignable places everywhere pay for it in every value, and languages that traffic only in pure results get simplicity in exchange for not being able to hand out writable locations. Recognizing that the fork is forced tells you which cost you are choosing.
+
+**Source:** [Lambda: The Ultimate Imperative](../works/lambda-the-ultimate-imperative.md) — the parameter-passing chapter: by-name arguments modelled as explicitly passed zero-argument procedures, the pair constructor rewritten as a selector-taking procedure whose accessors apply it to the two booleans, the by-need wrapper that overwrites itself with its result on first reference, the two-procedure model of assignment through a parameter, and the closing discussion of why general writable places force every value to become a pointer, with the note observing that Church's pair encoding is isomorphic to the list primitives.

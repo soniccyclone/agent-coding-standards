@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 4
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -20,4 +21,9 @@ tags: [work]
 **Source:** https://sites.cs.ucsb.edu/~gilbert/cs240a/old/cs240aSpr2011/slides/TarjanDFS.pdf — full scan of the SIAM paper, hosted as course reading material on a UC Santa Barbara CS course site; verified by extracting the embedded text stream (abstract and opening section confirmed to match the published paper).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Constrain the order you explore in and you buy an invariant, not just a search](../lessons/constrain-the-traversal-order-to-buy-an-invariant.md)
+- [Replace a global test with a per-node summary that flows upward](../lessons/replace-a-global-test-with-a-summary-that-flows-upward.md)
+- [Don't make the repair step cheaper; order the work so nothing needs repairing](../lessons/do-not-speed-up-the-repair-step-order-the-work-so-nothing-needs-repair.md)
+- [When a technique's guarantee weakens in a harder setting, inventory the new cases instead of abandoning it](../lessons/when-a-guarantee-weakens-inventory-the-new-cases.md)
+- [Separate the canonical answer from the representation artifact, then prove the answer indifferent to it](../lessons/prove-the-answer-independent-of-the-representation-you-happened-to-pick.md)
+- [Find the floor before you climb, so you know when optimizing is finished](../lessons/find-the-floor-so-you-know-when-to-stop-optimizing.md)

@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A component whose only job is to make things faster has a vacuous functional specification"
+figure: jones
+works: [tentative-steps-toward-a-development-method-for-interfering-programs, development-methods-for-computer-programs-including-a-notion-of-interference]
+axes: [verifiability, cognitive-load]
+subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# A component whose only job is to make things faster has a vacuous functional specification
+
+**Lesson:** Write the specification of a purely optimizing component honestly and you get a surprise: it promises to change nothing observable, which means doing nothing satisfies it. That is not a flaw in the specification, it is the specification correctly reporting that the component's entire value lies outside what functional description can capture. The useful reflex is to treat the vacuity as a signal rather than an embarrassment. A component that can be legally implemented as a no-op is a component whose reason for existing has not been written down anywhere, and if the only place that reason lives is in the head of whoever proposed it, the next person to touch the system has no way to know that removing it is a regression.
+
+The right conclusion is that some requirements are not about the relation between input and output at all, and a specification language that admits only that relation is incomplete for real systems. Cost, latency, memory shape, and the amortized behaviour of a data structure under adversarial sequences of operations are properties of the same component and need to be stated with the same care. They are harder to state, which is why they get left out, and leaving them out is how a system accumulates parts nobody can justify and parts nobody dares delete.
+
+Notice also what the vacuity buys, because it is not purely a problem. A component that guarantees to change nothing observable is trivially safe to run concurrently with anything, at any rate, or not at all — its correctness argument is free and its scheduling is unconstrained. That is a genuinely attractive engineering position: the pieces of a system whose contribution is entirely quantitative are exactly the pieces you can turn off, throttle, or relocate without reasoning about them. Separating a system into a part that must be correct and a part that only has to help is worth doing deliberately, provided the part that only has to help still carries a written statement of how much it is supposed to help.
+
+There is a trap on the other side of the same coin. Because such a component's safety argument is free, nothing in that argument constrains how many copies of it you run — and correctness is not the same as benefit. A helper duplicated for throughput can, under unlucky timing, degrade the very measure it exists to improve, and no amount of coexistence proof will mention it. Whenever a component's contribution is quantitative, the decision about how many to run belongs to measurement, and the fact that adding more is provably harmless is not evidence that adding more helps.
+
+**Source:** [Tentative Steps Toward a Development Method for Interfering Programs](../works/tentative-steps-toward-a-development-method-for-interfering-programs.md) — the specification of the tree-compacting task, whose postcondition is trivially true, and the immediately following observation that one valid implementation is to make no change at all, so a specification of such a component must also say something about performance to avoid misunderstanding. Also [Development Methods for Computer Programs including a Notion of Interference](../works/development-methods-for-computer-programs-including-a-notion-of-interference.md) — the same specification in the examples chapter, described there as required only to continually seek to optimise the structure; and the multiple-instances subsection, which having established that several copies coexist correctly observes that they can nevertheless make the structure deeper and concludes that the number of parallel tasks should not be increased indiscriminately.

@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,8 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/wirth__the-programming-language-pascal.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Decide which questions the text alone must answer, then shape every construct to preserve that](../lessons/decide-which-questions-the-text-must-answer.md)
+- [A belief that enforces itself needs a counterexample, not an argument](../lessons/build-the-counterexample-to-a-self-enforcing-belief.md)
+- [Inherit a predecessor's principles, refuse to contain it as a subset](../lessons/inherit-the-principles-refuse-the-subset-relation.md)
+- [Enumerate the machine-dependent parameters and publish the list; its length is the portability claim](../lessons/enumerate-the-machine-dependent-parameters-and-publish-the-list.md)
+- [Define each addition by translation, and give the top level no privileges](../lessons/define-additions-by-translation-and-give-the-top-level-no-privileges.md)

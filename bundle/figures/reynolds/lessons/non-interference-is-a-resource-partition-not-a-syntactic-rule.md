@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Non-interference between processes is a claim about resource ownership, and syntax cannot check it for you"
+figure: reynolds
+works: [separation-logic-a-logic-for-shared-mutable-data-structures]
+axes: [parallelizability, verifiability]
+subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification]
+tags: [lesson]
+---
+# Non-interference between processes is a claim about resource ownership, and syntax cannot check it for you
+
+**Lesson:** The classical way to keep concurrent processes from racing is syntactic: partition the named variables among processes, permit sharing only inside explicitly marked regions, and let inspection of the program text establish that no two processes touch the same thing. That approach quietly assumes each resource has exactly one name. Once processes manipulate structures reached indirectly, two processes can hold what looks like unrelated state and be operating on the same storage, and no amount of textual analysis will notice. Interference stops being a syntactic property at that point. What it becomes is a claim about ownership of resources — and ownership is the sort of thing you assert and prove, not something a compiler can read off the program.
+
+Recast that way, the composition rule for genuine parallelism is disarmingly simple: two processes each with their own description, run together, satisfy the composition of the descriptions provided the resources those descriptions concern are separate. The interesting part is what this makes expressible beyond the fixed-partition case. A partition need not be static. Ownership of a resource can move — allocated by one process, handed to a shared structure, taken up and released by another — and the transfer is visible in the proof as the resource passing from one side of a composition to the other, with no operation in the program that corresponds to the transfer. Divide-and-conquer parallelism gets the same treatment: split the resource, hand the halves to independent recursive activities, rejoin afterwards.
+
+Two cautions belong with this, and they are the reason the idea is subtle rather than merely tidy. First, the shifting partition is not determined by the program at all; it exists only in the assertions, so ownership is in the eye of whoever writes the proof, and establishing that such a discipline is sound is genuinely hard — at the time of this survey it was an open problem for the proposed rules. A reasoning device that programs cannot see is powerful precisely because it is unconstrained by them, which is also why its soundness cannot be taken on faith. Second, exclusive ownership is too blunt for real systems: concurrent readers of an unmodified resource are safe and common, so a usable discipline needs a notion of held-but-not-modified alongside held-and-mutable, which means the underlying model of a resource needs a third state between owned and absent. Design the ownership vocabulary with read-only sharing in it from the beginning rather than bolting it on.
+
+**Source:** [Separation Logic: A Logic for Shared Mutable Data Structures](../works/separation-logic-a-logic-for-shared-mutable-data-structures.md) — section 11.3, which argues that in the presence of shared mutable structure processes can interfere in ways too subtle to detect syntactically, gives the concurrency rule for non-interfering processes, describes O'Hearn's extension of critical-region reasoning with ownership transferred between processes and resources, admits that no soundness proof exists because the changing partitions are determined only by the assertions, and proposes extending passivity to heap cells with a read-only intermediate state.

@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Analyze only as deep as the argument needs, and remember that which things you treat as atomic is a choice with no canonical answer"
+figure: church
+works: [introduction-to-mathematical-logic]
+axes: [cognitive-load, primitive-count, verifiability]
+subdomains: [software-engineering-and-architecture, foundations-of-computation, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Analyze only as deep as the argument needs, and remember that which things you treat as atomic is a choice with no canonical answer
+
+When Church rewrites his opening informal arguments into formal notation, he leaves several of the relations in them entirely unopened — a kinship relation, a numerical relation, a property of having been observed. He then explains himself twice over, and both explanations are methodological rather than technical. The first: these relations are obviously capable of further analysis, but that analysis is irrelevant to whether the reasoning in these particular examples is valid, so it is not performed. The second, and the sharper one: no such analysis is final or absolute anyway. He demonstrates it by exhibiting a pair of relations where either can be taken as the undefined one and used to define the other, with equal right in both directions. Which of the two is primitive is settled by the analyst's convenience, not by any fact about the subject matter.
+
+Put together, those two remarks describe a discipline that resists both of the standard failure modes. Under-analysis is bounded by the first: keep opening things up until nothing further could change the conclusion, and no further. Over-analysis is bounded by the second: since the decomposition is not discovering a hidden true structure, going deeper does not accumulate truth, it accumulates commitments. Every level you open is a level you must now maintain, justify, and reason through, and if the argument you actually care about was already sound without it, the whole layer is cost with no return.
+
+The clean stopping rule is the counterfactual one Church uses implicitly. For each thing you are considering decomposing, ask whether any way the internals could turn out would change the conclusion you are trying to establish. If not, the thing is atomic for present purposes and should be given a name and left shut. This is a statement about the argument, not about the object — the same relation may need full analysis in the next chapter and none in this one, and that is not an inconsistency.
+
+For a designer the two halves land in different places. The stopping rule is the answer to modelling that never terminates: the domain model that grows a table for every noun somebody mentioned, the entity hierarchy that distinguishes cases no code branches on, the configuration schema that anticipates variation nobody has asked for. If no downstream decision changes on the distinction, the distinction is not information, it is inventory. The other half is the answer to arguments about the correct decomposition. Whether an operation is fundamental and the other derived, or the reverse, is very often symmetric — either can be built from either — so a disagreement of that shape is a disagreement about convenience, ergonomics, or which direction is cheaper to change later. Naming it as such ends the argument faster than trying to settle which choice is really right, and it also warns you that the boundary you drew is reversible and should not be treated as a discovered law of the domain.
+
+**Source:** [Introduction to Mathematical Logic](../works/introduction-to-mathematical-logic.md) — the section on operators and quantifiers, and its worked translation of the Introduction's informal arguments into formal notation, where several relations are deliberately left unanalyzed because their analysis cannot affect the validity of those arguments, together with the accompanying observation that such analyses are never final and that either of a pair of relations may with equal right be taken as fundamental and used to define the other.

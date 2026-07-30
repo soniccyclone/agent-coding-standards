@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 1
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -21,4 +22,7 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/wirth__program-development-by-stepwise-refinement.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Restructure the candidate space before you optimize the search through it](../lessons/restructure-the-candidate-space-before-searching-it.md)
+- [Pay for speed with derived state, but price the exchange before you buy](../lessons/pay-for-speed-with-derived-state-and-price-it-first.md)
+- [Judge a decomposition by what survives optimization and an unforeseen change of purpose](../lessons/judge-a-decomposition-by-what-survives-a-change.md)
+- [Start the notation at the problem and let it converge on the machine](../lessons/let-notation-start-at-the-problem-and-converge-on-the-machine.md)

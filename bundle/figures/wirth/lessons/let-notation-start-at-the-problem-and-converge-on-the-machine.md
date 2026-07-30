@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Start the notation at the problem and let it converge on the machine"
+figure: wirth
+works: [program-development-by-stepwise-refinement]
+axes: [expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Start the notation at the problem and let it converge on the machine
+
+**Lesson:** During design, write in whatever notation is natural to the problem, and keep doing so for as long as you can get away with it. The point of refinement is that the notation migrates: each step replaces problem vocabulary with something nearer the vocabulary the target actually provides, and the process terminates exactly when the two coincide. Which means the target's facilities are not a concern that arrives at the end — they exert a pull backwards through every step, since the direction each refinement takes is chosen with the eventual landing point in mind. The visible consequence is that the target language determines when you are forced to commit to a representation. Refinement can proceed in terms of an abstract notion of the state only until the next step must be phrased in things the language can actually hold; at that moment the representation decision becomes unavoidable. Deferral is a real technique, but its limit is set by the expressive reach of where you are heading, and knowing where that limit falls is part of planning the sequence.
+
+This puts two requirements on the target, and they pull against each other, which is why choosing one is a real decision rather than a matter of taste. It has to receive the structures the design produced — expressing the program and data shapes that emerged, clearly enough that the final text still reads as the design. And it has to guide the refinement, by exhibiting the structuring principles that are natural to the machine that will run the result, so the descent has somewhere to descend to and the cost of each choice is visible while it is still a choice. A language that satisfies neither leaves you translating by hand at every step and gives no signal about which of two refinements is cheap, and it is worth noticing that the language most widely used to teach programming can be the one that meets these requirements least — popularity in instruction is uncorrelated with fitness for design.
+
+There is a small practical move implied here that is easy to miss because it looks like a triviality. When the notation you need does not exist, extend it. If repetition expressed with labels and jumps obscures the thing you are trying to show, introduce a repeat-until construct and say what it means, before writing the program rather than after fighting the program. The habit generalizes: the notation is a design instrument, and contorting a structure to fit a notation you happened to inherit is the wrong way round. Fix the instrument to fit the structures your method produces, and be explicit that you have done so.
+
+**Source:** [Program Development by Stepwise Refinement](../works/program-development-by-stepwise-refinement.md) — the introduction's account of refinement terminating when all instructions are expressed in the facilities of the underlying computer or language and being guided by them, section 2's augmentation of Algol 60 with a repeat-until statement to express repetition more lucidly than labels and jumps, the point in section 4 where a decision on data representation can no longer be postponed because the instructions must be expressed in representable terms, and conclusion point 3 on using a notation natural to the problem as long as possible and the dual requirement on the ultimate language.

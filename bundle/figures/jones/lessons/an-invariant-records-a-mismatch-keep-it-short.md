@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An invariant records where a clean structure meets a ragged reality, so treat its length as a warning"
+figure: jones
+works: [systematic-software-development-using-vdm]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# An invariant records where a clean structure meets a ragged reality, so treat its length as a warning
+
+**Lesson:** Tidy structures fit regular situations, and the things worth modelling are usually irregular. So you pick the structure that comes closest and then rule out the combinations it admits but reality does not — a day number that exists only in some years, a pair of collections that must never overlap. That exclusion is the invariant, and understanding what it is makes it diagnostic. Its content is precisely the gap between the shape you chose and the shape you meant. A short one says the fit is good. A long or intricate one says you probably chose the wrong structure, and the right response is to go looking for a different structure with a simpler constraint rather than to write the constraint more carefully. Several structures can describe identical behaviour, and among those the one needing least exclusion is the better description.
+
+Which makes the expected direction of growth informative too. In a description meant to be understood, keep the constraint minimal. In a design, expect it to grow, because designs deliberately add redundancy to make operations fast — a second index, a reverse link, a cached count — and every piece of redundancy brings a condition tying it to what it duplicates. An invariant appearing during design is the price of a performance decision, correctly recorded. An elaborate invariant appearing in a description is a mistake not yet noticed.
+
+Three reasons justify separating the constraint out rather than folding it into each operation's conditions, and they are worth knowing because they explain what the artifact is for. It gets checked once against every operation instead of being restated and re-derived. It survives into the future as an explicit statement of what the original authors assumed, so whoever revises the thing years later trips over the assumption instead of silently breaking it. And it bounds the search for representations, since a constrained abstraction is easier to find a realization for than an unconstrained one. There is a cost, and it should be understood rather than discovered: once a type's membership depends on an arbitrary condition rather than on shape alone, checking membership stops being something a mechanical procedure can do and becomes something that must be argued. That trade — expressiveness bought with the loss of automatic checking — is worth making, but only knowingly.
+
+**Source:** [Systematic Software Development Using VDM](../works/systematic-software-development-using-vdm.md) — the data-type-invariants discussion in the composite-objects chapter, which describes neat mathematical abstractions as fitting regular situations while some objects to be modelled are ragged, and whose footnote observes that admitting truth-valued sub-typing forces type checking to rely on proofs rather than a simple compiler algorithm; and the states-and-proof-obligations section, which reads a state invariant as conjoined to the conditions of every operation on that state, gives the three arguments for recording it separately, warns that a long invariant hints at a better state model, notes that designing representations frequently forces redundancy that gives rise to invariants, and distinguishes constraints on single states from relations between successive ones.
