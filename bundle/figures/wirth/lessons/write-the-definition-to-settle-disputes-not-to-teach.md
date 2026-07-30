@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Write the definition to settle disputes, not to teach, and put the same artifact between independent implementors"
+figure: wirth
+works: [modula-2]
+axes: [cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Write the definition to settle disputes, not to teach, and put the same artifact between independent implementors
+
+**Lesson:** A definition, a tutorial, and an implementation guide are three documents with three different jobs, and the failure mode is writing one text that attempts all three and therefore adjudicates nothing. Decide first which job the artifact has. If the job is to be the arbiter — the thing consulted when two parties who have both read it disagree about what is required — then the properties to optimize for are different from the properties that make a good teaching text. It has to be complete over the questions in dispute, it has to state each rule in exactly one place so there is no second passage to appeal to, and it has to be short enough that both parties can find the ruling rather than each finding a sentence that favours them. Length actively hurts here, and so does motivation: explanation of why a rule exists is valuable in a tutorial and is a liability in an arbiter, because it gives a reader grounds to argue that the rule should not apply in their case. Say plainly at the top which document this is not, so nobody comes to it for what it does not provide.
+
+The same reasoning scales down from the specification of a whole notation to the specification of a single component, and the identical structure appears: a declaration-only artifact containing the constants, types and the shapes of the operations, with no bodies and nothing executable. Its use is not primarily information hiding. It is that when several implementations of one interface are being written by different people, possibly compiled at different times, there has to be a single artifact that all of them are checked against, or else the agreement between them is a social one and will drift. The declaration-only unit is the binding contract, and the fact that it can be mechanically checked against every implementation is what distinguishes it from a document describing the same thing in prose.
+
+Two consequences worth carrying into any project. First, when you find yourself unable to answer a question about your own system without reading code or asking a person, you do not have an arbiter, and adding a wiki page will not create one — an arbiter is defined by being the thing everybody has agreed to lose an argument to. Second, an arbiter has to be maintained as one: every time it is convenient to explain a subtlety in a comment, a release note, or a reply to a question, the authority leaks out of the document that was supposed to hold it, and the drift is gradual enough to be invisible until the day two implementations disagree and there is nothing to consult.
+
+**Source:** [MODULA-2](../works/modula-2.md) — the introduction's statement that the report is intended neither as a programmer's manual nor as an implementation tutorial, is deliberately kept concise and brief, and functions as a reference for programmers, implementors and manual writers and as an arbiter should they find disagreement; and section 12's description of a definition module containing declarations and procedure headings only, with an empty statement part, used where several separately compiled modules implement it and it serves as the central basis and binding contract between the various implementors.

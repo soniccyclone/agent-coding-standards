@@ -27,3 +27,5 @@ tags: [work]
 - [Learn the formal method so you can tell when the informal argument is enough](../lessons/learn-the-formal-method-to-know-when-to-skip-it.md)
 - [Find the loop's invariant by asking how much of the goal you can have for free](../lessons/split-the-goal-into-the-free-part-and-the-earned-part.md)
 - [When the uniform algorithm fails at one edge, try extending the definition before adding a branch](../lessons/extend-the-definition-instead-of-branching-on-the-edge-case.md)
+- [Locality is something you discover in the contract, not something you decide when declaring](../lessons/read-a-variables-scope-off-its-contract.md)
+- [If renaming a component's internal names can change what it means, you have no encapsulation](../lessons/if-renaming-can-change-meaning-you-have-no-encapsulation.md)

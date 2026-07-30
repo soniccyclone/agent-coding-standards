@@ -22,3 +22,6 @@ tags: [work]
 ## Lessons
 - [If the language can express a facility, the facility does not belong in the language](../lessons/if-the-system-can-express-it-it-does-not-belong-in-the-system.md)
 - [Declare dependence in both directions, and resolve names at the point of use once the participant set is open](../lessons/declare-dependence-in-both-directions-and-resolve-names-at-use.md)
+- [Confine the unsafe capability to a named region, and make requesting it visible in the text](../lessons/confine-the-unsafe-capability-and-make-requesting-it-visible.md)
+- [Publish which parts of the design you do not yet believe, and name them individually](../lessons/publish-which-parts-of-the-design-you-do-not-yet-believe.md)
+- [Write the definition to settle disputes, not to teach, and put the same artifact between independent implementors](../lessons/write-the-definition-to-settle-disputes-not-to-teach.md)
