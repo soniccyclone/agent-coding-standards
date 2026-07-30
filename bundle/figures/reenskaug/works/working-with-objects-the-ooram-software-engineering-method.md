@@ -71,12 +71,21 @@ tags: [work]
 - [Choose the conformance check that works in every case over the one that would be elegant](../lessons/prefer-the-conformance-check-that-always-applies.md)
 - [A design idea impossible to express in one substrate can be the native vocabulary of another](../lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
 
+- [The class hierarchy will not tell you how the thing works; only the collaboration will](../lessons/inheritance-structure-explains-nothing-about-behavior.md)
+- [To understand a mechanism, dissect its simplest instance, not its most representative one](../lessons/reverse-engineer-through-the-simplest-instance.md)
+- [Ask which parts of a famous decomposition were forced by the language rather than by the problem](../lessons/mvcs-author-on-which-of-its-splits-was-a-language-artifact.md)
+- [Showing two views of one thing at once costs the feeling that the thing is real, and that is a choice to make deliberately](../lessons/multiple-views-cost-you-the-illusion-of-a-concrete-thing.md)
+- [There are exactly three ways to promise a delivery date, and two of them are honest](../lessons/the-three-ways-to-make-a-firm-commitment.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. **Chapters 0-8 are now read in full** (through line 13619, book page 314 of 497).
-Next unread line is 13620, the start of chapter 9 of the `pdftotext -layout` extraction held at
+across all seven views)**. **Chapters 0-8 read in full, plus chapter 9 sections 9.1-9.3.3** (through line
+14719, book page ~339 of 497). Next unread line is 14720, inside chapter 9 section
+9.3.3 — remaining in ch9: the rest of the input models, the Scroller role model,
+and steps four through seven (specify, document as patterns, describe design,
+inform consumers) of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
 NOT yet read: chapter 6 (additional views and notation),
