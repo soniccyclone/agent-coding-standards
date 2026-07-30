@@ -41,3 +41,5 @@ tags: [work]
 - [When a rule breaks on updating part of a thing, lift the update to the whole value instead of patching the rule](../lessons/lift-a-partial-update-into-a-whole-value-update.md)
 - [A case split in a basic law is a prediction of where the bugs will be](../lessons/a-case-split-in-a-basic-law-predicts-where-the-bugs-will-be.md)
 - [Attack your own specification with a cheating program, then add the clause that stops it](../lessons/attack-your-own-specification-with-a-cheating-program.md)
+- [Define an operation up to the equivalence you actually care about, not up to equality](../lessons/define-the-operation-up-to-the-equivalence-you-actually-need.md)
+- [Push the caller's actual question into the computation, because a comparison is cheaper than a value](../lessons/compute-the-question-the-caller-asks-not-the-value.md)

@@ -29,3 +29,5 @@ tags: [work]
 - [Repair the part that broke its own contract; weakening the requirement instead has to be priced out loud](../lessons/repair-the-part-that-broke-its-own-contract.md)
 - [Encode the live set in the arrangement, so the hot loop has nothing to test](../lessons/encode-the-live-set-in-the-arrangement.md)
 - [Let the shape of the definition decide recursion or iteration, and prove the depth is small](../lessons/let-the-shape-of-the-definition-decide-recursion-or-iteration.md)
+- [Put the degenerate case inside the operation, and postpone the optimization that moves it out](../lessons/put-the-degenerate-case-inside-the-operation.md)
+- [The more demanding specification can be the simpler program](../lessons/the-more-demanding-specification-can-be-the-simpler-program.md)
