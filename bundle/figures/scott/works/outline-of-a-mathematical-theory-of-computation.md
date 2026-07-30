@@ -23,3 +23,6 @@ tags: [work]
 - [The case you dismissed as pathological is usually already load-bearing somewhere ordinary](../lessons/the-pathological-case-is-usually-already-load-bearing.md)
 - [Being forced to store a representation instead of the thing is a report of a missing structure](../lessons/storing-a-representation-instead-of-the-thing-is-a-missing-structure.md)
 - [A counterexample to your law is often a function with an argument you forgot to declare](../lessons/a-counterexample-to-your-law-may-be-a-suppressed-argument.md)
+- [Make realizability a predicate over a clean structure, not a restriction built into it](../lessons/make-effectiveness-a-predicate-over-a-clean-structure.md)
+- [Knowing something can be computed is a different state of knowledge from knowing how](../lessons/knowing-a-thing-is-computable-is-not-knowing-how.md)
+- [A construction closed enough to solve your equation will admit objects you did not intend](../lessons/a-closed-construction-admits-objects-you-did-not-intend.md)

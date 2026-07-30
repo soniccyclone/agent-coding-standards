@@ -21,4 +21,4 @@ tags: [work]
 **Source:** https://tinlizzie.org/VPRIPapers/tr2007008_steps.pdf — live PDF, self-archived on the Viewpoints Research Institute papers archive (the successor mirror to the now cert-broken vpri.org). Verified 200 OK.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Keep a runnable statement of what the system means, separate from everything that makes it fast, and require it to run with the speed removed](../lessons/keep-meaning-separate-from-optimization.md)

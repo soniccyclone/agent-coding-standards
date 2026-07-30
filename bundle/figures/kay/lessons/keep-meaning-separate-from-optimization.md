@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Keep a runnable statement of what the system means, separate from everything that makes it fast, and require it to run with the speed removed"
+figure: kay
+works: [steps-toward-the-reinvention-of-programming]
+axes: [cognitive-load, verifiability, expressiveness]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Keep a runnable statement of what the system means, separate from everything that makes it fast, and require it to run with the speed removed
+
+**Lesson:** Open a mature, respected implementation of almost anything and most of what you find is not the thing; it is the special cases that make the thing fast. A rendering library is a short mathematical relationship surrounded by tens of thousands of lines of hand-written variants, one per combination of pixel format and operator, because each combination was worth coding by hand. The relationship itself was never large. It was simply never kept anywhere as a first-class artifact, so the only surviving statement of what the system means is distributed across the optimizations and can no longer be read off them.
+
+The discipline that prevents this is to maintain the meaning as its own runnable artifact and to hold every optimization accountable to it. That has a concrete, testable form: the system must still work with all optimizations switched off. If it does not, some behavior lives only in the fast path and the meaning is no longer the authority — which is precisely the condition under which nobody can say what the system is supposed to do when the fast path is wrong. Once the property holds, it pays repeatedly. The definition is small enough to read, the optimizations can be checked against it rather than against each other, and a new one is a local addition rather than another entry in a grid of cases. It also changes what "size of the system" means: the count that matters is lines of meaning, since the rest is derived and can in principle be regenerated.
+
+The stronger form is to stop hand-writing the special cases at all. If the specialization is mechanical — the combinatorial expansion of a few parameters whose values are known at some later moment — then a generator that consumes the meaning and emits the specialized code at that moment collapses the whole grid, and the result can be competitive with the hand-written versions because it specializes on exactly the parameters that are actually bound rather than on the subset someone had the patience to enumerate. This inverts the usual relationship between a small model and a large mature system: instead of the small model being a toy that aspires to the mature one, the mature system consumes the small model as its optimizer. The general test for whether this move is available is whether the bulk you are looking at is variation over parameters rather than genuinely different ideas — if it is, that bulk is output, and it should be treated as output rather than as source.
+
+**Source:** [STEPS Toward the Reinvention of Programming](../works/steps-toward-the-reinvention-of-programming.md) — the stated principle of separating meaning from optimizations so that only lines of meaning need be counted and the system must be able to run with the optimizations turned off, together with the compositing-engine account in which the bulk of an established graphics library was found to be special-case optimization code and was replaced by on-demand compilation from a compact description, ending with the established library adopting the small model as its optimizer.

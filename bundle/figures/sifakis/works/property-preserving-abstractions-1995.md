@@ -26,3 +26,6 @@ tags: [work]
 
 ## Lessons
 - [When two communities have separate words for the same idea, prove the coincidence and then use whichever wording is shorter](../lessons/prove-the-two-vocabularies-coincide-then-keep-both.md)
+- ["Can it happen?" and "must it always hold?" need approximations that err in opposite directions](../lessons/existential-and-universal-questions-need-opposite-approximations.md)
+- [Monotonicity carries an approximation through composition; only non-contradiction carries it through negation](../lessons/monotone-is-not-enough-once-you-negate.md)
+- [Do not ask whether an approximation is good; tabulate which hypothesis buys which class of transferable answer](../lessons/price-the-guarantee-against-the-hypothesis-that-buys-it.md)

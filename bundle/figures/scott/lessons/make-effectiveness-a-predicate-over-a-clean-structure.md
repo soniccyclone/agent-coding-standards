@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Make realizability a predicate over a clean structure, not a restriction built into it"
+figure: scott
+works: [outline-of-a-mathematical-theory-of-computation]
+axes: [verifiability, expressiveness, hardware-affinity]
+subdomains: [foundations-of-computation, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Make realizability a predicate over a clean structure, not a restriction built into it
+
+**Lesson:** When a theory has to answer to a machine, there are two ways to let the machine in. The tempting one is to admit only objects the machine can build, so that everything in the theory is by construction realizable. The better one is to develop the structure on its own terms first, then add a separate axiom saying that the structure comes equipped with a distinguished countable part whose elements and relations are decidable, and define realizability as a property an object may or may not have relative to that part: an object is reachable iff some effectively enumerable increasing sequence of distinguished elements converges to it. The theory keeps whatever closure and completeness properties made it work, and the machine question becomes a predicate you can apply, rather than a constraint that has to be threaded through every construction.
+
+The payoff is that the two concerns can now vary independently. The ambient space is free to be uncountable while only countably many of its elements are reachable, and nothing breaks — the unreachable elements are not errors, they are the limits that let the space be closed under the constructions you needed, and they simply fail the predicate. Conversely the predicate applies uniformly wherever the structure goes: build products, sums, and function spaces from the pieces and the notion of realizability comes along, so you get a definition of computable higher-order object for free rather than needing a new theory of computability for each level of type. This is dependency direction applied to foundations: the core does not depend on the machine, the machine-facing notion depends on the core, and both are stated in terms of a small interface — the distinguished basis and the decidability of its operations.
+
+The habit transfers well beyond semantics. Whenever a design has an idealized model and a set of physical limitations, resist folding the limitations into the model's definitions. Give the model the properties that make it composable, then define separately which of its inhabitants your implementation can actually produce and which of its operations your hardware can actually perform. You get a vocabulary for talking about the gap — this configuration is expressible but not constructible, that one is constructible but only through this enumeration — instead of a model that silently cannot express the thing you wanted to rule out later. And note the honest admission that goes with it: what exactly counts as an effectively given basis can be left somewhat informal, because in any concrete instance it is obvious, and precision spent there buys less than precision spent on the structure.
+
+**Source:** [Outline of a Mathematical Theory of Computation](../works/outline-of-a-mathematical-theory-of-computation.md) — the computability section, which observes that the structural axioms alone say nothing about physical realizability, then adds the axiom of an effectively given basis with decidable comparison and join, defines an element to be computable exactly when an effectively given increasing sequence of basis elements converges to it, remarks that a type may have uncountably many elements but only countably many computable ones, and notes that the same notion of computable element then applies to the function spaces.
