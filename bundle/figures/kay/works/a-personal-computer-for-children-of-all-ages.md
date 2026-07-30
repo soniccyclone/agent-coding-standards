@@ -20,4 +20,6 @@ tags: [work]
 **Source:** https://tinlizzie.org/VPRIPapers/hc_pers_comp_for_children.pdf — live PDF, self-archived on the Viewpoints Research Institute (Kay's own research institute) papers archive. Verified 200 OK.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Write the story of someone using the thing before you specify it, and let the story generate the requirements](../lessons/write-the-use-story-before-the-spec.md)
+- [People hold knowledge as ad hoc procedures, not consistent axioms, so build on the models they already have](../lessons/fit-abstractions-to-operational-models.md)
+- [An environment people get good in offers early subgoals, many stances, no penalty for being wrong, and compounding results](../lessons/environments-that-grow-skill.md)

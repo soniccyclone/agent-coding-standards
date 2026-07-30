@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -26,3 +27,4 @@ tags: [work]
 - [Price a new guarantee as a ratio to the unconstrained baseline, so you learn whether the cost belongs to the guarantee or to the problem](../lessons/price-a-guarantee-against-the-unconstrained-baseline.md)
 - [A model earns its keep by making impossibility sayable, not by making solutions prettier](../lessons/a-model-earns-its-keep-by-making-impossibility-sayable.md)
 - [When a goal is proved unreachable, vary the goal's shape rather than reaching for stronger tools](../lessons/when-a-goal-is-impossible-vary-the-goal-not-the-tools.md)
+- [Build on the weakest interface that suffices, not on an instance's incidental extra structure](../lessons/depend-on-the-interface-not-the-instance.md)

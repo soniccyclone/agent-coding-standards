@@ -32,4 +32,4 @@ host-provided-text channel is genuinely unavailable rather than unattempted.
 This work needs the deterministic OCR batch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When a quantity only matters up to a bounded factor, replace its operational definition with an algebraic one](../lessons/swap-the-operational-definition-for-an-invariant-that-is-robust-to-constants.md)

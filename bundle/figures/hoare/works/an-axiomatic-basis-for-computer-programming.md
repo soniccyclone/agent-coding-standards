@@ -8,6 +8,7 @@ year: 1969
 url: http://www.cs.cmu.edu/~crary/819-f09/Hoare69.pdf
 survey_pages: 6
 survey_text_layer: ocr
+extraction: complete
 survey_fetch_mb: 2
 access: public
 host: third-party-rehost
@@ -21,4 +22,7 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/hoare__an-axiomatic-basis-for-computer-programming.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Underspecify on purpose: a specification should name the choices it refuses to make](../lessons/underspecify-on-purpose-and-make-the-choice-explicit.md)
+- [Let the rule for reasoning about a construct be its definition, and let the rule's ugliness be its grade](../lessons/let-the-reasoning-rule-be-the-definition-and-the-grade.md)
+- [Scope a guarantee to what you can actually discharge, and push the residue somewhere it can be detected](../lessons/scope-the-guarantee-and-name-the-residue.md)
+- [A component's stated contract is simultaneously its documentation, its proof obligation, and its licence to be replaced](../lessons/a-components-contract-is-its-documentation-and-its-replacement-license.md)

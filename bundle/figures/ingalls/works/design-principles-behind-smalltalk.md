@@ -25,3 +25,6 @@ tags: [work]
 - [Set the size of the whole system by what one person can master, and pay for it by deleting special cases](../lessons/one-person-must-be-able-to-hold-the-whole-system.md)
 - [Read your own programs for bookkeeping: text that is not about the problem is an indictment of the language](../lessons/programs-should-visibly-be-about-their-problem.md)
 - [State what you want, never how it is done, because dependencies grow quadratically and only the request is safe to share](../lessons/ask-for-intent-and-let-the-receiver-choose-the-method.md)
+- [Pick one metaphor and make it hold at every scale, so the vocabulary learned at the bottom still works at the top](../lessons/one-metaphor-applied-at-every-scale.md)
+- [Give user-defined things exactly the standing of built-in ones, or people will model their domain in primitives](../lessons/give-user-defined-things-the-same-standing-as-built-ins.md)
+- [Put each capability at the one place where the most things inherit it, and let protocol rather than type set the reach](../lessons/put-each-capability-where-it-is-amplified.md)

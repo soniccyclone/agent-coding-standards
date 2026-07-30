@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -32,3 +33,6 @@ tags: [work]
 - [A one-directional guarantee plus a feedback loop beats waiting for a two-directional one](../lessons/let-the-false-alarm-refine-the-abstraction.md)
 - [Everything you prove is about the model; the whole guarantee rests on how the model was derived](../lessons/a-model-is-worth-only-its-link-to-the-artifact.md)
 - [Automation covers whether your requirements are consistent, never whether they are all there](../lessons/soundness-can-be-checked-completeness-cannot.md)
+- [Give up on the general theory: specialize the argument to one property and one architecture](../lessons/narrow-the-guarantee-until-it-becomes-cheap.md)
+- [Heavy reliance on after-the-fact checking is a symptom of a discipline that lacks construction rules](../lessons/put-the-guarantee-in-the-construction-rule.md)
+- [Reasoning at the level where structure is still visible beats translating everything down to one composition primitive](../lessons/do-not-flatten-architecture-into-one-primitive.md)
