@@ -41,3 +41,5 @@ tags: [work]
 - [Fit your model to the subject matter when the operation list is still open, not to the distinctions today's operations can see](../lessons/fit-the-model-to-the-subject-not-to-todays-operations.md)
 - [Treat a stated assumption as a licence you granted, and remember that correct only ever means meets this description](../lessons/a-pre-condition-is-a-licence-and-correct-means-nothing-alone.md)
 - [Find the smallest set of things that build your type, because definitions and proofs both decompose along it](../lessons/find-the-generating-basis-and-everything-decomposes-along-it.md)
+- [Let the checks tell you which decision you owe next, and never expect them to tell you whether it was a good one](../lessons/let-obligations-name-the-next-decision-but-never-expect-them-to-judge-it.md)
+- [Carve a description into units for the reader's sake, and depend on what each unit promised rather than on how it was written](../lessons/carve-a-description-for-the-reader-not-as-a-build-plan.md)

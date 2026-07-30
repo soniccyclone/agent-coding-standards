@@ -39,3 +39,4 @@ tags: [work]
 - [When a step needs a messy operation, find the weakest property that discharges it rather than unfolding the definition](../lessons/prove-from-the-weakest-property-not-the-definition.md)
 - [An arbitrary order, agreed on by everybody, buys speed without meaning anything](../lessons/an-arbitrary-agreed-order-buys-speed-without-meaning-anything.md)
 - [When a rule breaks on updating part of a thing, lift the update to the whole value instead of patching the rule](../lessons/lift-a-partial-update-into-a-whole-value-update.md)
+- [A case split in a basic law is a prediction of where the bugs will be](../lessons/a-case-split-in-a-basic-law-predicts-where-the-bugs-will-be.md)

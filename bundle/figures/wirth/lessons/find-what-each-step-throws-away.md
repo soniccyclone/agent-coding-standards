@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When a method hits its floor, find what each step computes and throws away"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, expressiveness]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# When a method hits its floor, find what each step computes and throws away
+
+**Lesson:** A method that repeats a scan and keeps only the scan's headline answer has a cost floor you cannot argue your way past, and the productive question is not how to make the scan faster but what the scan learned that you discarded. Repeatedly finding the smallest of a shrinking collection costs the sum of the collection's sizes, and no amount of care inside the scan changes that; what changes it is noticing that a pass which determines the smallest element has, along the way, established a great many pairwise facts, and that keeping those facts turns each subsequent extraction into a walk down one path instead of a fresh scan. The same reasoning, applied to searching a text for a pattern, gives the same shape of answer: restarting the pattern at its beginning after a partial match throws away everything the failed comparisons established about the text just examined, and retaining it is what removes the multiplicative worst case. Two unrelated problems, one move.
+
+The move has a recognizable cost, and being clear about it prevents the mistake of expecting a free lunch. What you keep has to be stored, so the space you use grows; and the bookkeeping per step becomes more elaborate, so the constant factor rises and the method may be worse than the naive one at small sizes. Both are acceptable prices; both need to be named. There is also a follow-on question that is where most of the remaining work lies: the first structure that makes the retained information usable is usually wasteful, holding roughly twice the necessary storage and accumulating vacancies as the process runs, and the real result comes from finding an arrangement that holds the same information in the space of the original data with no vacancies at all. So expect two stages — first identify the discarded information, then find the representation that carries it cheaply — and do not judge the idea by the cost of the first stage.
+
+The generalizable habit is a diagnostic one. When you have a loop or a pass whose result is a single small answer, ask what else that pass necessarily determined, whether the next pass will need any of it, and whether the next pass is currently recomputing it. If it is, there is an algorithm to be had. Notice also the difference in what the retained information depends on, because it decides where the retention lives: facts about the collection being processed have to be maintained as the collection changes, whereas facts about a fixed pattern can be computed once before the process starts. The second case is far cheaper and is the one to look for first.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 2.3.2's argument that selection sorting can be improved only by retaining from each scan more information than the identity of the single least item, the resulting selection tree, the note that bookkeeping becomes more elaborate and the method is not recommended for small collections, and the subsequent search for a form using n units of storage instead of 2n-1 and eliminating the holes; and section 1.9.2's observation that starting each pattern comparison at the beginning discards valuable information gathered during previous comparisons, with the shift table precompiled from the pattern alone.

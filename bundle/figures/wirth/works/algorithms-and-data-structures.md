@@ -24,3 +24,6 @@ tags: [work]
 - [Separate the structure from the position in it, and give the position its own invariant](../lessons/separate-the-structure-from-the-position-in-it.md)
 - [Pick the representation that turns the operations into machine primitives, then bound the abstraction to keep it](../lessons/pick-the-representation-that-turns-the-operations-into-machine-primitives.md)
 - [Admit to the foundation only what one representation can serve for nearly everyone](../lessons/admit-to-the-foundation-only-what-one-representation-can-serve.md)
+- [Improve the dominant term or do not call it an improvement](../lessons/improve-the-dominant-term-or-do-not-call-it-an-improvement.md)
+- [When a method hits its floor, find what each step computes and throws away](../lessons/find-what-each-step-throws-away.md)
+- [Repair the part that broke its own contract; weakening the requirement instead has to be priced out loud](../lessons/repair-the-part-that-broke-its-own-contract.md)
