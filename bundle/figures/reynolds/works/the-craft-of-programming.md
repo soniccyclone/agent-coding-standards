@@ -34,3 +34,5 @@ tags: [work]
 - [Reasoning that feels hard is often only unfamiliar, so build the vocabulary the domain is missing](../lessons/difficulty-that-is-only-unfamiliarity-is-fixed-by-building-vocabulary.md)
 - [Refuse constructs that hide iteration, because counting loops is the only cost model you have](../lessons/keep-hidden-iteration-out-of-the-expression-language.md)
 - [A set of simultaneous updates is not the same as performing them one at a time](../lessons/simultaneous-updates-are-not-a-sequence-of-updates.md)
+- [What the property depends on, plus what you already know, sets the floor on how much you must examine](../lessons/what-the-predicate-depends-on-sets-the-floor-on-work.md)
+- [A generalization earns its place only with several real instances below it and nontrivial laws above it](../lessons/a-generalization-earns-its-place-with-instances-below-and-laws-above.md)

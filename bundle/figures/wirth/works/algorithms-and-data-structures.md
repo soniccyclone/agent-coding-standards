@@ -20,4 +20,4 @@ tags: [work]
 **Source:** https://people.inf.ethz.ch/wirth/AD.pdf — live PDF, self-archived on Niklaus Wirth's ETH Zurich personal page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Buy mechanization with a restriction on access, and expect it to redraw the algorithms](../lessons/buy-mechanization-with-a-restriction-on-access.md)

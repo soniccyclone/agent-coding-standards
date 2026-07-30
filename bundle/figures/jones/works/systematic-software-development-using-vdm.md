@@ -35,3 +35,7 @@ tags: [work]
 - [Describing a type by laws instead of a model does not escape the model, it just stops you choosing it](../lessons/equations-do-not-escape-a-model-they-hide-which-one.md)
 - [Split what a loop promises into a claim about each state and a claim about each step, and let mutation decide which carries the weight](../lessons/split-what-a-loop-promises-into-per-state-and-per-step.md)
 - [Write down the intermediate claims, because that is what turns one big check into several small independent ones](../lessons/write-down-the-carries.md)
+- [Say explicitly what a component may not touch, and remember the guarantee dies the moment two names can reach one thing](../lessons/say-what-must-not-change-and-control-who-can-name-it.md)
+- [Name the restricted case, because generality is what costs you the ability to say anything about it](../lessons/name-the-restricted-case-to-buy-back-laws.md)
+- [Admit a range of acceptable outcomes deliberately, because that is how a decision gets deferred to whoever should make it](../lessons/describe-a-range-of-outcomes-to-defer-the-decision.md)
+- [Fit your model to the subject matter when the operation list is still open, not to the distinctions today's operations can see](../lessons/fit-the-model-to-the-subject-not-to-todays-operations.md)
