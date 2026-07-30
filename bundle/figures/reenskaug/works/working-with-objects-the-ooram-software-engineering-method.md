@@ -96,24 +96,36 @@ tags: [work]
 - [There is no best reuse mechanism — match it to the layer, and expect the crude one to win somewhere](../lessons/there-is-no-best-reuse-mechanism-match-it-to-the-layer.md)
 - [Hold the bespoke one percent to different standards than the library it sits on](../lessons/hold-the-bespoke-one-percent-to-different-standards-than-the-library.md)
 
+- [Broker the match at runtime so installing one part makes it available everywhere it fits](../lessons/broker-the-match-at-runtime-so-installing-a-part-lights-it-up-everywhere.md)
+- [The good-default-plus-escape shape is found by failing at both poles, and both failures are necessary](../lessons/good-default-plus-escape-is-found-by-failing-at-both-poles.md)
+- [Nobody asks for what they believe is impossible, so absence of a request is not absence of a need](../lessons/nobody-asks-for-what-they-believe-impossible.md)
+- [Leaving a mature framework costs you all of its tooling at once — so decide whether you are stepping outside it or widening it](../lessons/leaving-a-mature-framework-costs-you-its-tooling-all-at-once.md)
+- [A substrate that can represent anything cannot be used without programming, and that is the trade](../lessons/generality-forecloses-generation.md)
+- [Three conceptual frameworks succeeded in fifty years — price your own proposal against that base rate](../lessons/count-the-conceptual-frameworks-that-actually-succeeded.md)
+- [Constrain the transitions rather than the states, and schema change stops requiring migration](../lessons/constrain-the-transition-not-the-state.md)
+- [Instantiating gives you what the programmer specified; copying a validated master gives you what was learned](../lessons/copying-a-validated-master-is-a-production-technique.md)
+- [An operation whose extent depends on the caller's intent cannot have a correct default](../lessons/an-operation-whose-extent-depends-on-intent-has-no-correct-default.md)
+- [Separate difficulty that comes from the specification from difficulty that comes from the technology](../lessons/separate-difficulty-in-the-specification-from-difficulty-in-the-technology.md)
+- [Let the framework hold the global problem and ask each participant exactly one local question](../lessons/let-the-framework-hold-the-global-problem-and-ask-each-part-one-local-question.md)
+- [Require a redundant statement for every choice, so forgetting is distinguishable from deciding](../lessons/make-omission-distinguishable-from-decision.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Source is the `pdftotext -layout`
 extraction held at `scratchpad/reenskaug/ooram-slim.txt` (21,176 lines = 497 book
 pages).
 
-READ IN FULL: preface and chapters 1 through 10 — the main ideas, role modeling,
+READ IN FULL: preface and chapters 1 through 11 — the main ideas, role modeling,
 role model synthesis, the method's process, communicating with consumers, the
 additional views and notation, the first three case studies including all seven
-steps of chapter 9's framework-creation study, and all of chapter 10 (the value
-chain, production engineering, the Intelligent Network and business-information
-chains, the Fountain Model, job rotation, and the investment-versus-production
-management problem) — through line 16755, book page ~390 of 497. Next unread line
-is **16756**, the start of chapter 11.
+steps of chapter 9's framework-creation study, all of chapter 10 (the value chain,
+production engineering, the Fountain Model, job rotation, the
+investment-versus-production management problem), and all of chapter 11 (object
+trading, the OOCS composition system and its schema/type layers, and the four
+object-duplication algorithms) — through line 18171, book page ~424 of 497. Next
+unread line is **18172**, the start of chapter 12.
 
-NOT yet read: chapter 11 (instance-based reuse: runtime configuration, object
-trading, the OOCS composition system, and the four object-duplication strategies),
-chapter 12 (the Intelligent Network Services value chain in detail, seven actor
-layers), and appendix A (the OOram language). Chapter boundaries: ch11 16756,
-ch12 18172, body ends ~19500, index/TOC from ~20800.
+NOT yet read: chapter 12 (the Intelligent Network Services value chain in detail,
+seven actor layers, lines 18172 to roughly 19500) and appendix A (the OOram
+language). Body ends ~19500; index/TOC from ~20800.
 
-`extraction: complete` deliberately withheld until chapters 11-12 and appendix A
-are read._
+`extraction: complete` deliberately withheld until chapter 12 and appendix A are
+read._

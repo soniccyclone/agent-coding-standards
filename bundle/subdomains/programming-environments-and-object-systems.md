@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-184 lessons from 28 figures.
+190 lessons from 28 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -156,7 +156,7 @@ No works or lessons tagged with this subdomain yet.
 - [Uniformity comes from withholding the toolkit, not shipping one](../figures/pike/lessons/uniformity-comes-from-withholding-the-toolkit.md)
 - [Write down the change before you make it](../figures/pike/lessons/write-down-the-change-before-you-make-it.md)
 
-**reenskaug** (35)
+**reenskaug** (41)
 - [A caller that walks the structure to reach a service has absorbed the structure](../figures/reenskaug/lessons/a-caller-that-walks-the-structure-has-absorbed-the-structure.md)
 - [A discipline is worth exactly what it forbids](../figures/reenskaug/lessons/a-discipline-is-worth-what-it-forbids.md)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
@@ -164,20 +164,26 @@ No works or lessons tagged with this subdomain yet.
 - [A responsibility that keeps changing owners belongs to whoever already carries its obligations](../figures/reenskaug/lessons/home-a-roving-responsibility-where-its-obligations-already-live.md)
 - [An entity at one level is a collaboration one level down](../figures/reenskaug/lessons/an-entity-at-one-level-is-a-collaboration-at-the-level-below.md)
 - [An interface is factored correctly when a program can stand in for the user](../figures/reenskaug/lessons/an-interface-is-right-when-a-program-can-stand-in-for-the-user.md)
+- [An operation whose extent depends on the caller's intent cannot have a correct default](../figures/reenskaug/lessons/an-operation-whose-extent-depends-on-intent-has-no-correct-default.md)
 - [Announce change at the granularity of intent, not of mutation](../figures/reenskaug/lessons/notify-at-the-granularity-of-intent-not-of-mutation.md)
 - [Ask which parts of a famous decomposition were forced by the language rather than by the problem](../figures/reenskaug/lessons/mvcs-author-on-which-of-its-splits-was-a-language-artifact.md)
 - [Between one omniscient coordinator and pure emergence sits declared topology](../figures/reenskaug/lessons/between-one-coordinator-and-pure-emergence.md)
+- [Broker the match at runtime so installing one part makes it available everywhere it fits](../figures/reenskaug/lessons/broker-the-match-at-runtime-so-installing-a-part-lights-it-up-everywhere.md)
 - [Comprehensibility cannot be bolted on after the fact](../figures/reenskaug/lessons/comprehensibility-cannot-be-retrofitted.md)
 - [Derivability, not layering etiquette, decides which side of a boundary a piece of state belongs on](../figures/reenskaug/lessons/derivability-decides-which-side-of-a-boundary-state-lives-on.md)
 - [Extending one part alone is meaningless; extend the arrangement](../figures/reenskaug/lessons/extend-the-arrangement-not-the-part.md)
 - [Give each attribute one legal direction of inquiry, and forbid the other](../figures/reenskaug/lessons/give-each-attribute-one-legal-direction-of-inquiry.md)
 - [Hierarchy is an artifact of thought, not a property of the world](../figures/reenskaug/lessons/hierarchy-is-an-artifact-of-thought-not-a-property-of-the-world.md)
+- [Instantiating gives you what the programmer specified; copying a validated master gives you what was learned](../figures/reenskaug/lessons/copying-a-validated-master-is-a-production-technique.md)
 - [Keep every node of a representation at one altitude, and pick the altitude from whoever owns the problem](../figures/reenskaug/lessons/keep-every-node-of-a-representation-at-one-altitude.md)
 - [Let a system hold several partial models of the same reality rather than one consistent one](../figures/reenskaug/lessons/many-partial-models-beat-one-consistent-one.md)
 - [Let people point at what they can see, and accept that some things should have no name](../figures/reenskaug/lessons/pointing-beats-naming-and-not-everything-needs-a-name.md)
+- [Let the framework hold the global problem and ask each participant exactly one local question](../figures/reenskaug/lessons/let-the-framework-hold-the-global-problem-and-ask-each-part-one-local-question.md)
 - [Local correctness does not compose when \"correct\" depends on the caller's purpose](../figures/reenskaug/lessons/local-correctness-does-not-compose-when-correct-depends-on-context.md)
 - [Many views, one model — never let a view become the model](../figures/reenskaug/lessons/many-views-one-model-never-let-a-view-become-the-model.md)
+- [Require a redundant statement for every choice, so forgetting is distinguishable from deciding](../figures/reenskaug/lessons/make-omission-distinguishable-from-decision.md)
 - [Roles are the invariant; how many objects carry them is a sizing decision](../figures/reenskaug/lessons/roles-are-the-invariant-object-count-is-a-sizing-decision.md)
+- [Separate difficulty that comes from the specification from difficulty that comes from the technology](../figures/reenskaug/lessons/separate-difficulty-in-the-specification-from-difficulty-in-the-technology.md)
 - [Showing two views of one thing at once costs the feeling that the thing is real, and that is a choice to make deliberately](../figures/reenskaug/lessons/multiple-views-cost-you-the-illusion-of-a-concrete-thing.md)
 - [Slowness costs you the user's held state, so make every operation small enough to complete inside their attention](../figures/reenskaug/lessons/latency-breaks-the-circuit-so-make-operations-closeable.md)
 - [Sort behavior by what it drags in, not by the noun it mentions](../figures/reenskaug/lessons/sort-behavior-by-rate-of-change-not-by-the-noun-it-mentions.md)

@@ -19,7 +19,7 @@ built-in vocabulary while staying easy to write against.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-624 lessons from 74 figures.
+627 lessons from 74 figures.
 
 **abiteboul** (9)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -557,16 +557,19 @@ No lessons scored on this axis yet.
 - [State a request's real requirements as data, because the code that could exploit them has not been written yet](../figures/rashid/lessons/state-requirements-as-data-so-parties-you-never-anticipated-can-act-on-them.md)
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 
-**reenskaug** (33)
+**reenskaug** (36)
 - [A description complete enough to generate the system has become the system, and needs its own abstraction](../figures/reenskaug/lessons/a-description-detailed-enough-to-generate-code-is-code.md)
 - [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [A design idea impossible to express in one substrate can be the native vocabulary of another](../figures/reenskaug/lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
 - [A discipline is worth exactly what it forbids](../figures/reenskaug/lessons/a-discipline-is-worth-what-it-forbids.md)
+- [A substrate that can represent anything cannot be used without programming, and that is the trade](../figures/reenskaug/lessons/generality-forecloses-generation.md)
 - [An entity at one level is a collaboration one level down](../figures/reenskaug/lessons/an-entity-at-one-level-is-a-collaboration-at-the-level-below.md)
 - [An interface is factored correctly when a program can stand in for the user](../figures/reenskaug/lessons/an-interface-is-right-when-a-program-can-stand-in-for-the-user.md)
+- [An operation whose extent depends on the caller's intent cannot have a correct default](../figures/reenskaug/lessons/an-operation-whose-extent-depends-on-intent-has-no-correct-default.md)
 - [Ask which parts of a famous decomposition were forced by the language rather than by the problem](../figures/reenskaug/lessons/mvcs-author-on-which-of-its-splits-was-a-language-artifact.md)
 - [Before integrating two groups' data, separate their words from their concepts](../figures/reenskaug/lessons/separate-the-term-from-the-concept-before-integrating.md)
 - [Between one omniscient coordinator and pure emergence sits declared topology](../figures/reenskaug/lessons/between-one-coordinator-and-pure-emergence.md)
+- [Broker the match at runtime so installing one part makes it available everywhere it fits](../figures/reenskaug/lessons/broker-the-match-at-runtime-so-installing-a-part-lights-it-up-everywhere.md)
 - [Comprehensibility cannot be bolted on after the fact](../figures/reenskaug/lessons/comprehensibility-cannot-be-retrofitted.md)
 - [Constrain a variable by what its occupant must be able to do, never by how the occupant is built](../figures/reenskaug/lessons/type-on-what-an-object-can-do-not-on-how-it-is-built.md)
 - [Extending one part alone is meaningless; extend the arrangement](../figures/reenskaug/lessons/extend-the-arrangement-not-the-part.md)
