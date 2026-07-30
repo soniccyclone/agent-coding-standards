@@ -21,4 +21,4 @@ tags: [work]
 **Source:** https://worrydream.com/refs/Ingalls_1988_-_Fabrik,_A_Visual_Programming_Environment.pdf — live PDF, rehosted on Bret Victor's worrydream.com reference archive. Verified 200 OK, application/pdf, 15 pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Before building the general mechanism, check whether the feature people want is shorthand for something you already have](../lessons/check-whether-the-hard-feature-is-shorthand-for-one-you-have.md)

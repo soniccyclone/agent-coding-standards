@@ -26,3 +26,6 @@ tags: [work]
 - [Keep the notation and the thing it denotes apart, because equivalence is a question about meanings](../lessons/keep-the-notation-and-the-thing-it-denotes-apart.md)
 - [Separate the fixed skeleton from the pluggable primitives, so one account covers a whole class of models](../lessons/parameterize-over-a-class-of-models-not-one.md)
 - [Put the space of values on the table before arguing about the notation](../lessons/put-the-value-space-on-the-table-before-the-notation.md)
+- [An impossibility result indicts one of your background assumptions, not the thing you wanted](../lessons/an-impossibility-result-indicts-an-assumption-not-your-goal.md)
+- [When a definition is circular, its meaning is the least thing that satisfies it](../lessons/a-circular-definition-means-the-least-thing-that-satisfies-it.md)
+- [When meaning depends on context, make the context an argument rather than a hidden table](../lessons/make-the-context-an-argument-not-a-hidden-table.md)

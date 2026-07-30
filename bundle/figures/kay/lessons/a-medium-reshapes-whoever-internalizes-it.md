@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A representation people internalize becomes invisible and reshapes their thinking, so judge it by the thinking it installs"
+figure: kay
+works: [user-interface-a-personal-view]
+axes: [cognitive-load, expressiveness]
+subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A representation people internalize becomes invisible and reshapes their thinking, so judge it by the thinking it installs
+
+**Lesson:** Receiving anything through a representation requires already having absorbed that representation well enough to subtract it out; until then you are reading the notation instead of the content. This has an uncomfortable consequence. Anyone fluent in a system has, by definition, made its structure part of how they think, and no longer perceives it as a choice. Its categories become the categories available for framing problems, and the things it makes awkward to say become things that are rarely thought. So the significant cost of a language, an interface or a data model is not the hours spent learning it; it is the shape of thought it leaves behind in everyone who becomes fluent. Evaluating a representation only on what can be expressed in it, or on how quickly newcomers get productive, misses the part that actually compounds.
+
+Two practical consequences follow. First, the honest question to ask about a new medium is what kind of reasoner someone becomes after years inside it, not what tasks it accelerates this quarter. A representation that makes the easy things easy while quietly making a whole class of ideas unstatable will be judged excellent by every short-term measure. Second, a genuinely new medium that is used to imitate the previous one throws away most of its value; the previous medium's forms encode the previous medium's constraints, and reproducing them means paying for new capability while receiving old thinking. The interesting move is to ask what this substrate can do that the old one physically could not — where the old one held static descriptions, the new one can hold things that run, and can hold several conflicting positions at once so they can be tried against each other rather than argued about.
+
+The corresponding test for whether a population is actually literate in a medium is whether they can both read and write in it: consume what others have made, and produce things others will consume. A system where most users can only read is one where the representation is being used on them rather than by them, and it will be defended on grounds of protecting people from complexity. In a computational medium the stakes are higher than in a static one, because what you write is not an argument but a process — something that runs, decides and produces new results without you. Withholding authorship from most of your users therefore withholds far more than convenience, and the mark of a design that took this seriously is that the ability to write extends down to the least expert person the system is meant for, rather than stopping at a professional tier.
+
+**Source:** [User Interface: A Personal View](../works/user-interface-a-personal-view.md) — the reading of McLuhan in which message receipt is treated as message recovery requiring the medium to be internalized and subtracted, the argument that tool use reshapes the tool user and that print changed thought patterns rather than merely improving access, the claim that a truly new medium should go beyond static representation to dynamic simulation and to holding many points of view for comparison, and the literacy argument that reading and writing are both required and that what one writes in this medium is a process rather than rhetoric.

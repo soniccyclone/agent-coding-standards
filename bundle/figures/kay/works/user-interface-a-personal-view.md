@@ -21,4 +21,4 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/kay__user-interface-a-personal-view.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A representation people internalize becomes invisible and reshapes their thinking, so judge it by the thinking it installs](../lessons/a-medium-reshapes-whoever-internalizes-it.md)

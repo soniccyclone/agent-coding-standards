@@ -8,6 +8,7 @@ year: 2003
 url: https://www.csl.sri.com/users/shankar/GC04/hoare-compiler.pdf
 survey_pages: 7
 survey_text_layer: full
+extraction: complete
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
@@ -23,3 +24,5 @@ tags: [work]
 - [Revive an abandoned idea only when you can name what killed it and show each cause is gone](../lessons/revive-an-abandoned-idea-only-by-auditing-what-killed-it.md)
 - [Give a long effort a gradable axis, so partial results are the deliverable and not consolation](../lessons/give-a-long-effort-a-gradable-axis-so-partial-results-are-the-deliverable.md)
 - [You don't have to trust the checker if rival checkers can refute each other](../lessons/independent-checkers-beat-a-trusted-checker.md)
+- [Prove a method on material you did not choose, and expect most of what it flags not to be a bug](../lessons/prove-a-method-on-material-you-did-not-choose.md)
+- [A checking tool's real payoff is that it moves the specification earlier](../lessons/a-checking-tool-moves-the-specification-earlier.md)

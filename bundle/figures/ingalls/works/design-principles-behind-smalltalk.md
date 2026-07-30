@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 5
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -31,3 +32,4 @@ tags: [work]
 - [Concentrate the whole system's contact with hardware into a few primitives, then spend all your optimization there](../lessons/concentrate-contact-with-technology-into-few-primitives.md)
 - [Treat everything that does not fit your framework as a defect in the framework's reach, not as a separate layer to live with](../lessons/anything-outside-the-framework-is-a-defect-in-its-reach.md)
 - [Treat human cognition as the fixed constraint and the machine as the adjustable side, then design to the whole span between them](../lessons/treat-the-human-side-as-the-fixed-point.md)
+- [Make reference uniform, so a variable can hold anything and no caller has to plan for what it holds](../lessons/make-reference-uniform-so-generality-costs-nothing-per-use.md)
