@@ -25,3 +25,4 @@ tags: [work]
 - [Give each construct a meaning of its own instead of explaining the whole by translating it away](../lessons/define-meaning-clause-by-clause-not-by-translation.md)
 - [Keep the notation and the thing it denotes apart, because equivalence is a question about meanings](../lessons/keep-the-notation-and-the-thing-it-denotes-apart.md)
 - [Separate the fixed skeleton from the pluggable primitives, so one account covers a whole class of models](../lessons/parameterize-over-a-class-of-models-not-one.md)
+- [Put the space of values on the table before arguing about the notation](../lessons/put-the-value-space-on-the-table-before-the-notation.md)

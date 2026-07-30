@@ -20,4 +20,6 @@ tags: [work]
 **Source:** https://www.csl.sri.com/users/shankar/GC04/hoare-compiler.pdf — mirror hosted by SRI International's Computer Science Laboratory (Natarajan Shankar), tied to a verification-themed workshop page. Content verified directly by decompressing the PDF's text streams: opening text reads "The Verifying Compiler: A Grand Challenge for Computing Research / TONY HOARE / Microsoft Research Ltd., Cambridge".
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Revive an abandoned idea only when you can name what killed it and show each cause is gone](../lessons/revive-an-abandoned-idea-only-by-auditing-what-killed-it.md)
+- [Give a long effort a gradable axis, so partial results are the deliverable and not consolation](../lessons/give-a-long-effort-a-gradable-axis-so-partial-results-are-the-deliverable.md)
+- [You don't have to trust the checker if rival checkers can refute each other](../lessons/independent-checkers-beat-a-trusted-checker.md)

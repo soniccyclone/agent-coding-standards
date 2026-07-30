@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Measure quality where output is received, and design into the consumer's processing instead of around it"
+figure: kay
+works: [a-personal-computer-for-children-of-all-ages]
+axes: [hardware-affinity, cognitive-load]
+subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Measure quality where output is received, and design into the consumer's processing instead of around it
+
+**Lesson:** Nothing a system produces is consumed raw. Whatever comes out passes through a receiver that does its own processing first — an eye, a parser, a compiler, a cache, a human reading a log — and that receiver has a transfer function: it discards some things, smooths others, and sharpens others still. Judging output on its own terms, by counting the resolution or precision or completeness of the artifact itself, measures a quantity nobody experiences. The quantity that matters is what survives the receiver. Getting this right usually means spending far less than a naive specification demands, because the receiver reconstructs structure you would otherwise have had to supply; a coarse representation can land as better than its own numbers predict, precisely because the consumer's smoothing stage does the work the extra bits would have done.
+
+Two disciplines make this usable rather than lucky. The first is to evaluate at the real operating point and nowhere else. Output that is excellent at working scale can be visibly bad when magnified, and the magnified view is the one engineers instinctively trust because it shows more. It is the wrong view: the receiver never sees it, and optimizing against it buys fidelity that is thrown away while missing defects that only appear in situ. Distances, data volumes, timings and viewing conditions all belong in the test rig. The second is that the receiver's behavior is frequently nonlinear, with thresholds rather than gradients. The same improvement that yields nothing below a threshold can more than double perceived quality just above it, because the receiver's filter flips from treating a feature as noise to treating it as signal. Budget accordingly: find the threshold rather than buying uniform improvement across the range.
+
+The stronger move is to build an explicit model of the receiver and then aim at it deliberately. Once you know that a stage discards isolated small features and enhances contiguous ones, you can make a representation register by exaggerating exactly the property that stage amplifies — adding no information, only a cue the filter treats as signal. That is a different activity from raising quality, and it is much cheaper. It is also the difference between tuning by superstition and tuning by explanation: without a model of the consumer you can only try adjustments and keep whichever felt better, which does not transfer to the next case, whereas an explanation of why the trick works tells you where else it applies and where it will fail.
+
+**Source:** [A Personal Computer for Children of All Ages](../works/a-personal-computer-for-children-of-all-ages.md) — the display and character-generation discussion, where matrix-defined characters are found to look better than their quantization level should allow while looking ugly when blown up, explained by an averaging-then-differentiating filter in the optic tract that removes small isolated glitches; the same explanation is used to account for a higher scan rate being subjectively more than proportionally better, and to justify deliberately using multiple-width strokes on very small characters so the filter enhances them rather than discarding them as noise.

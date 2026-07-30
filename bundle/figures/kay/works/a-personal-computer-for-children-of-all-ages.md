@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 3
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -24,3 +25,5 @@ tags: [work]
 - [People hold knowledge as ad hoc procedures, not consistent axioms, so build on the models they already have](../lessons/fit-abstractions-to-operational-models.md)
 - [An environment people get good in offers early subgoals, many stances, no penalty for being wrong, and compounding results](../lessons/environments-that-grow-skill.md)
 - [Collapse a system's categories when they differ only by rate, and delete the subsystems the distinction required](../lessons/collapse-system-categories-into-one-concept.md)
+- [Measure quality where output is received, and design into the consumer's processing instead of around it](../lessons/design-into-the-receivers-transfer-function.md)
+- [Convert the one non-negotiable requirement into a numeric budget, and let the budget eliminate whole option classes](../lessons/turn-the-hard-requirement-into-a-budget-that-eliminates.md)

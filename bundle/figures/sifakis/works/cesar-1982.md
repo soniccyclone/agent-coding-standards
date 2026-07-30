@@ -24,4 +24,6 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/sifakis__cesar-1982.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Choose the intermediate representation for what it makes nameable, not just for what it can represent](../lessons/translate-into-a-formalism-that-names-what-you-must-talk-about.md)
+- [Let the author declare what carries no meaning, so abstraction becomes a deletion rather than a guess](../lessons/declare-what-is-irrelevant-so-the-model-can-drop-it.md)
+- [The claim you most need about a running system is that a way forward still exists](../lessons/some-properties-are-about-what-remains-possible.md)
