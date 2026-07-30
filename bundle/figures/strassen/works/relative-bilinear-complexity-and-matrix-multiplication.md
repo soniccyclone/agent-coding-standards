@@ -33,3 +33,4 @@ This work needs the deterministic OCR batch.
 
 ## Lessons
 - [When a quantity only matters up to a bounded factor, replace its operational definition with an algebraic one](../lessons/swap-the-operational-definition-for-an-invariant-that-is-robust-to-constants.md)
+- [Make the comparison relation the primitive object, and let the numeric measures fall out as extremes of it](../lessons/make-the-comparison-relation-primitive-and-let-the-numbers-fall-out.md)

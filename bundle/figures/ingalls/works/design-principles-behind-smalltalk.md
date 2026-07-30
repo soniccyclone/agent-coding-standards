@@ -28,3 +28,4 @@ tags: [work]
 - [Pick one metaphor and make it hold at every scale, so the vocabulary learned at the bottom still works at the top](../lessons/one-metaphor-applied-at-every-scale.md)
 - [Give user-defined things exactly the standing of built-in ones, or people will model their domain in primitives](../lessons/give-user-defined-things-the-same-standing-as-built-ins.md)
 - [Put each capability at the one place where the most things inherit it, and let protocol rather than type set the reach](../lessons/put-each-capability-where-it-is-amplified.md)
+- [Concentrate the whole system's contact with hardware into a few primitives, then spend all your optimization there](../lessons/concentrate-contact-with-technology-into-few-primitives.md)

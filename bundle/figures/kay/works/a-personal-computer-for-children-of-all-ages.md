@@ -23,3 +23,4 @@ tags: [work]
 - [Write the story of someone using the thing before you specify it, and let the story generate the requirements](../lessons/write-the-use-story-before-the-spec.md)
 - [People hold knowledge as ad hoc procedures, not consistent axioms, so build on the models they already have](../lessons/fit-abstractions-to-operational-models.md)
 - [An environment people get good in offers early subgoals, many stances, no penalty for being wrong, and compounding results](../lessons/environments-that-grow-skill.md)
+- [Collapse a system's categories when they differ only by rate, and delete the subsystems the distinction required](../lessons/collapse-system-categories-into-one-concept.md)
