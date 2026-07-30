@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -24,3 +25,4 @@ tags: [work]
 - [Rest the whole edifice on one named assumption, stated before the first result](../lessons/rest-everything-on-one-named-assumption.md)
 - [When two incomparable things must change hands, stop balancing the trade and build one gate that opens for both](../lessons/stop-balancing-the-trade-and-build-a-shared-gate.md)
 - [When the protocol cannot be strengthened, strengthen what participants must arrive holding — and pick the arrival format that lets stages chain](../lessons/change-the-entry-contract-to-buy-a-stronger-guarantee.md)
+- [When a rival definition of the same property appears, satisfy it rather than defend yours](../lessons/satisfy-the-rival-definition-rather-than-defend-your-own.md)

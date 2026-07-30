@@ -9,6 +9,7 @@ url: https://www.cs.cmu.edu/~crary/819-f09/Scott71.pdf
 survey_pages: 28
 survey_text_layer: ocr
 survey_fetch_mb: 8
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -29,3 +30,4 @@ tags: [work]
 - [An impossibility result indicts one of your background assumptions, not the thing you wanted](../lessons/an-impossibility-result-indicts-an-assumption-not-your-goal.md)
 - [When a definition is circular, its meaning is the least thing that satisfies it](../lessons/a-circular-definition-means-the-least-thing-that-satisfies-it.md)
 - [When meaning depends on context, make the context an argument rather than a hidden table](../lessons/make-the-context-an-argument-not-a-hidden-table.md)
+- [Only an account of meaning that owes nothing to the implementation can judge the implementation](../lessons/an-independent-account-of-meaning-is-what-makes-correctness-checkable.md)

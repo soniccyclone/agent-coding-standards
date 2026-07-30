@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Make the authoring medium incapable of producing malformed work, and refuse the bad join while the author's hand is still on it"
+figure: ingalls
+works: [fabrik-a-visual-programming-environment]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Make the authoring medium incapable of producing malformed work, and refuse the bad join while the author's hand is still on it
+
+**Lesson:** Whole categories of error are properties of the medium people compose in, not of the people. When the medium is a stream of characters, malformedness is possible at every position, so the system needs a phase that detects it and a vocabulary for reporting it, and every author needs a mental model of what shapes are legal. Compose instead by placing things and joining them, and that entire category ceases to have a representation: there is no gesture available whose result is unparseable. The design lesson is to ask, of any authoring interface, what the smallest set of composition gestures is that can express everything wanted — because the errors the medium cannot represent are the only ones you never have to diagnose, explain, or teach.
+
+That reduction leaves a residue, and the residue is where the real design attention should go. Once shape is guaranteed, what remains is joins that are well formed but wrong: two things connected that have no business being connected. Meeting that requires deciding, at the moment a join is proposed, whether it can stand, which means the constraint information must be attached to the parts themselves and be interrogable mid-gesture rather than after a commitment. This flips the usual arrangement, in which the author completes a structure and then learns whether it was allowed. And the feedback is better delivered as a property of the act than as a report about it — a join that resists or that pulls into place tells the author the answer without interrupting them, requires no reading, and arrives while the decision is still cheap to change.
+
+Making that possible constrains the constraint system itself in an underrated way. Partial, half-built structures have to carry meaningful information, so the scheme must work by inference and propagation rather than by up-front declaration: an unconstrained part adopts the character of the first thing it is joined to and spreads that to its other terminals, and when a join is severed it relaxes back or re-derives from whatever remains. A design where information must be declared before it can be checked cannot help someone mid-construction, which is exactly when help is worth the most. The consequence worth generalizing is that in a system that infers continuously, a finished structure ends up fully characterized without anyone having written a characterization down.
+
+**Source:** [Fabrik: A Visual Programming Environment](../works/fabrik-a-visual-programming-environment.md) — the user-interface section's argument that manipulating components directly to assert relationships eliminates syntax errors as a category and leaves connecting the wrong two terminals as the only remaining error, with modality and type both checked before a connection is permitted and the verdict communicated as apparent attraction or repulsion during the wiring gesture; and the type-system section's account of unspecified terminals acquiring a type from the first connection, propagating it to sibling terminals, and reverting or re-inferring when a connection is cut, so that complete diagrams end up fully typed.

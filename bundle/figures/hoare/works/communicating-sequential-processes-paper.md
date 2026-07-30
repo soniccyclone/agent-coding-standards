@@ -21,4 +21,5 @@ tags: [work]
 **Source:** http://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf — course-reading mirror hosted by Karl Crary for a CMU graduate course (819, Fall 2009). The original Phase 1 pass flagged this as paywalled/uncertain (ACM Digital Library gates the canonical copy); PDF metadata on this mirror confirms it directly: Title "Communicating sequential processes", Author "C. A. R. Hoare", Subject "http://doi.acm.org/10.1145/359576.359585", CreationDate 1978-08-02.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Test a candidate primitive by re-deriving the constructs it should replace, then keep them anyway](../lessons/re-derive-the-constructs-to-test-a-primitive-then-keep-them.md)
+- [Never let correctness rest on a courtesy the implementation was never obliged to provide](../lessons/never-let-correctness-rest-on-a-courtesy.md)

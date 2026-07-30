@@ -36,3 +36,5 @@ This work needs the deterministic OCR batch.
 - [Make the comparison relation the primitive object, and let the numeric measures fall out as extremes of it](../lessons/make-the-comparison-relation-primitive-and-let-the-numbers-fall-out.md)
 - [Turn the question around: besides what an object costs to build, ask what can be extracted from it](../lessons/turn-the-question-around-ask-what-can-be-extracted.md)
 - [Find the equivalent condition that survives outside the friendly case, then make it the definition](../lessons/find-the-equivalent-condition-that-survives-outside-the-friendly-case.md)
+- [Let a solution be approximate when the error is repaid by scale](../lessons/let-a-solution-be-approximate-when-the-error-is-repaid-by-scale.md)
+- [Keep several equivalent encodings of the same object, and switch to whichever exposes the structure you need](../lessons/keep-several-equivalent-encodings-and-switch-to-whichever-exposes-the-structure.md)
