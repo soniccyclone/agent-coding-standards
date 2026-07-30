@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "An operation whose extent depends on the caller's intent cannot have a correct default"
+figure: reenskaug
+works: [working-with-objects-the-ooram-software-engineering-method]
+axes: [expressiveness, verifiability]
+subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# An operation whose extent depends on the caller's intent cannot have a correct default
+
+**Lesson:** Copying looks like the most obvious operation there is, and in any specific situation it is completely clear what should be copied and what should be shared. That combination — obvious in every instance, undefined in general — is what makes it dangerous. The ambiguity lives entirely in what happens to the things the copied thing refers to. Duplicating a container of references: should the result point at the same members, or at copies of them, and if copies, then by which rule applied how far down? Every answer is right for some caller. None is right for all of them, because the correct extent follows from what the structure means and what the user is trying to accomplish, neither of which is available at the point where the operation is defined.
+
+The failure mode this produces is worth recognizing because it does not look like a copying bug. When the shallow answer is chosen as the default, the copy shares its referents with the original, and mutating a shared referent through the copy changes the original — while replacing a reference outright does not. So the same conceptual edit produces action at a distance or not depending on which of two nearly identical code paths was used, and the symptom appears far from the copy, in the original, at a later time. That is why the author reports these as hard-to-track bugs rather than as design disagreements: the defect is a meaning that was never specified, and it surfaces as spooky behavior somewhere else.
+
+The corresponding trap at the other extreme is the operation that follows every reference recursively. It appears to resolve the ambiguity by choosing maximum copying, but it is not a valid general default either: over an unrestricted graph it does not terminate, and a structure containing a path back to itself — trivially, a container holding itself — is enough. Beyond termination, it copies the whole reachable world, which is essentially never what anyone wanted. The recommendation given is simply never to use it, and the reasoning generalizes: an operation that traverses arbitrary references without a stopping rule supplied from outside is unsound, not merely inefficient.
+
+The design conclusion is that such an operation must not present a single entry point implying a settled meaning. Either the intent is a parameter, or the participating types declare what belongs to them, or the boundary of the operation is passed in explicitly — but the ambiguity must be surfaced rather than resolved by fiat. And the diagnostic generalizes past copying to deletion, serialization, comparison, and locking: any operation on a reference graph whose extent is a judgement call has the same structure, and each will be silently wrong in the same way if it ships one default.
+
+**Source:** [Working With Objects: The OOram Software Engineering Method](../works/working-with-objects-the-ooram-software-engineering-method.md) — chapter 11 section 11.4, which observes that duplication seems obvious but that copy means different things under different circumstances, the difference being in how referenced objects are handled, and that which objects to copy depends on the semantics of the structure and the user's intentions; section 11.4.1's account of shallowCopy causing hard-to-track bugs via shared Point objects in copied Rectangles, where mutating a shared referent rearranges the original window while replacing the reference does not; and section 11.4.4's recommendation never to use deepCopy, with a four-line array-containing-itself example that sends it into infinite recursion.

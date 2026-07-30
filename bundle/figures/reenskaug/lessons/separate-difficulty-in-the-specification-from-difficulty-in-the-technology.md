@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Separate difficulty that comes from the specification from difficulty that comes from the technology"
+figure: reenskaug
+works: [working-with-objects-the-ooram-software-engineering-method]
+axes: [cognitive-load]
+subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Separate difficulty that comes from the specification from difficulty that comes from the technology
+
+**Lesson:** A hard problem in this system exposes a genuine weakness of the paradigm it was built in. The task is to duplicate an unspecified portion of an unspecified structure, and in a decentralized design there is no vantage point from which the whole is visible — no main program that sees everything and knows everything. The work is therefore spread across the participants, and every participant must be prepared to be the thing being copied, a part copied along with it, a resulting copy, or a neighbor that must survive untouched. Every one of them, in every combination. The author says plainly that even seasoned programmers should expect an unpleasant surprise when a user copies a substructure nobody anticipated.
+
+Having laid out a real deficiency of the approach, he then declines the obvious inference. Returning to the previous paradigm would not fix it, because the difficulty stems from the specification rather than from the technology. That distinction is the transferable content and it is the discipline most often skipped, because a paradigm that visibly hurts is a satisfying thing to blame. The test is a counterfactual: state the problem in the other technology and see whether it gets easier. Here it does not — no manager would ask for an algorithm that copies an unspecified part of an unspecified structure in a procedural setting either, and the reason the request is even entertainable in the decentralized one is that parts of the answer can be left open and supplied where the knowledge actually lives. The decentralization is what makes the impossible specification approachable, so it is not the source of the pain; the open-endedness of the specification is.
+
+Applying the test changes what you do next. Specification difficulty is reduced by narrowing what is being asked for, or by arranging for the missing knowledge to be contributed by whoever holds it. Technology difficulty is reduced by changing tools. Misdiagnose the first as the second and you carry out an expensive migration and arrive at the same problem in new clothing, having also lost whatever the old tools were good at. The author's own accounting is honest about the residue: they traded the new technology's power for functionality, flexibility and generality, and in doing so pushed the programmer's capabilities to their limit. That is a real cost recorded as a real cost, not resolved.
+
+The wider habit is to ask, whenever a technology feels like it is fighting you, whether the requirement you are trying to satisfy would be tractable anywhere. Requirements with no bounded statement are hard everywhere, and they are the ones most likely to be blamed on the tool at hand.
+
+**Source:** [Working With Objects: The OOram Software Engineering Method](../works/working-with-objects-the-ooram-software-engineering-method.md) — chapter 11 section 11.4's "The solution" discussion, which calls structure duplication an illustration of both the power and the weakness of the distributed nature of object-oriented systems (no main program sees everything; every object must be able to play master, copied subobject, copy, and uncopied environment object), states that a return to procedural programming would not solve the problem because the difficulties stem from the specification rather than the technology, notes that no sane manager would ask a procedural programmer for an algorithm copying an unspecified part of an unspecified structure, and concludes that they traded the new technology's power for functionality, flexibility and generality while straining the programmer's capabilities to their limits.
