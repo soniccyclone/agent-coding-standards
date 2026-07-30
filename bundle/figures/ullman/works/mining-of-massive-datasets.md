@@ -33,7 +33,31 @@ tags: [work]
 - [How you combine independent estimates is part of the estimator, not a formality](../lessons/how-you-combine-estimates-is-part-of-the-estimator.md)
 - [When the exact question is provably unaffordable, change the question](../lessons/when-the-exact-question-is-unaffordable-change-the-question.md)
 
-_Coverage note: lessons above are drawn from Chapters 1-4 (pp. 1-174), read in full.
-Chapters 5-13 (link analysis, frequent itemsets, clustering, advertising, recommendation,
-social-network graphs, dimensionality reduction, large-scale ML, deep learning; pp. 175-568)
-are not yet mined, so this work is deliberately left unmarked as fully extracted._
+- [Set the explainability requirement from who bears the decision and can contest it](../lessons/set-the-explainability-requirement-from-who-can-contest-the-decision.md)
+- [Rank by concentration, because neither frequency nor rarity identifies signal](../lessons/rank-by-concentration-not-by-frequency-or-rarity.md)
+- [Find which half of the problem is hard, because the deployed part is often trivial](../lessons/find-where-the-difficulty-lives-before-choosing-what-to-build.md)
+- [When a field renames itself every decade, check whether the substance moved at all](../lessons/a-field-that-keeps-renaming-itself-is-telling-you-the-substance-held.md)
+- [A randomizing function is only random relative to the input population you actually feed it](../lessons/a-randomizing-function-is-only-random-against-the-inputs-you-feed-it.md)
+- [Learn to recognize your algorithm being performed without a computer](../lessons/learn-to-see-your-algorithm-being-performed-without-a-computer.md)
+
+_EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
+not by a subagent, because the enormous books need the top-level orchestrator.
+Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in
+`scratchpad/ullman/CHAPTERS.md`._
+
+_Chapters 1-4 (pp. 1-174) had been read by an earlier agent pass, yielding the
+lessons above the divider. **Chapter 1 was then re-read by hand on 2026-07-30 and
+yielded six further lessons** (the six immediately above this note) — worth
+recording as evidence about method: a careful second pass over 20 pages that were
+already marked "read in full" found six ideas the first pass missed, and two more
+that legitimately duplicated existing lessons and were dropped. One draft lesson on
+aggressive summarization was written and then deleted as a genuine duplicate of
+`compress-so-that-one-question-survives-exactly`, which makes the same claim from
+the min-hashing chapter._
+
+_Next unread line is **8703**, the start of chapter 5. Remaining: ch5 link analysis,
+ch6 frequent itemsets, ch7 clustering, ch8 advertising, ch9 recommendation systems,
+ch10 social-network graphs, ch11 dimensionality reduction, ch12 large-scale ML,
+ch13 neural nets. Chapters 2-4 should also get a hand re-read at the same depth as
+chapter 1 before this work is attested. `extraction: complete` deliberately
+withheld._
