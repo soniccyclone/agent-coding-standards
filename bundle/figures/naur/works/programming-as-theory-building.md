@@ -21,4 +21,4 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/naur__programming-as-theory-building.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [What you are actually building is a theory of the world; the program text is a by-product](../lessons/the-artifact-is-the-theory-not-the-text.md)

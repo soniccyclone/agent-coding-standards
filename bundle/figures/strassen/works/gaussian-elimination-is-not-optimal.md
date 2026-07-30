@@ -32,4 +32,4 @@ host-provided-text channel is genuinely unavailable rather than unattempted.
 This work needs the deterministic OCR batch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An optimality result bounds the operation set it was proved over, never the problem itself](../lessons/an-optimality-proof-bounds-the-operation-set-not-the-problem.md)

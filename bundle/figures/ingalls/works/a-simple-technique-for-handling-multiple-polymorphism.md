@@ -20,4 +20,4 @@ tags: [work]
 **Source:** https://algoritmos-iii.github.io/assets/bibliografia/simple-technique-for-handling-multiple-polymorphism.pdf — live PDF, rehosted as a course bibliography mirror (Algoritmos III). Verified 200 OK, application/pdf, 3 pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Treat a dispatch as one degree of type-uncertainty removed, and chain as many as the problem has variable terms](../lessons/each-dispatch-removes-one-degree-of-polymorphism.md)
