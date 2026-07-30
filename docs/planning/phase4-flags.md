@@ -270,7 +270,52 @@ chat scrollback, which is not a place work survives. Everything here is
 regenerable from the corpus itself (see the queries at the end), but the
 *decisions* are not, so they are recorded.
 
-### H.1 OCR quarantine — 17 figures, 1,190 scanned pages, ON HOLD
+### H.1 OCR quarantine — RESOLVED 2026-07-29
+
+**Nathan gave the go-ahead on 2026-07-29 and the deterministic pipeline he asked
+for was built.** What follows is the original entry, kept because the reasoning
+still explains the design; the resolution is recorded first.
+
+**Resolution.** Local OCR with `tesseract` (already installed) driven by
+`scratchpad/ocr-run.sh`: rasterize at 300dpi with `pdftoppm`, OCR pages 8-way
+parallel, stitch to one text file per work with `=== page N ===` markers. Zero
+token cost, minutes of wall time. Agents never OCR anything — they read a
+prepared text file, which is exactly the cheap deterministic pipeline Nathan
+asked for instead of letting each agent improvise.
+
+Three findings from doing it, each of which changed the corpus:
+
+1. **The quarantine was drawn at the wrong level.** A figure was quarantined if
+   *any* of its works needed OCR. Of the 93 unattested works in the 21
+   quarantined figures, only 37 actually needed OCR — **46 were fully readable
+   with zero lessons written**. One scanned paper in Hoare's bibliography was
+   blocking seven readable Hoare works. The coarseness was a deliberate choice
+   (see the original reasoning below) and it was the wrong one: the correct unit
+   is the work, and an agent *can* do part of a figure as long as the untouched
+   works keep their deferral marker.
+2. **Several `survey_text_layer: none` records were simply wrong.** Four works
+   had perfectly good native text layers (`mcmillan/symbolic-model-checking`,
+   98K chars, was tagged OCR-HOLD). Four more were HTML, not PDF — the surveyor
+   ran `pdftotext` on HTML, got nothing, and recorded "no text layer." Kay's
+   *Early History of Smalltalk* (25,133 words) and his 336-page *Reactive
+   Engine* thesis were both sitting there readable the whole time.
+3. **`https` vs `http` was hiding a whole thesis.** `the-reactive-engine` was
+   recorded with an `https` URL; the host serves only plain `http`, so it read
+   as a dead link (HTTP 000). Over `http` it returns the full text.
+
+**The OCR quality caveat, measured not assumed.** On Hoare 1969, `pdftotext`
+recovers 6 characters and tesseract recovers the whole paper cleanly. But on a
+rules-of-inference page, `⊢` came out as `+`, `|` and `}` interchangeably, `⊃`
+as `D`, and `Q₁; Q₂; ⋯ ; Qₙ` as `Qi; Q2; --- ; Q,`. **Prose is reliable;
+notation is not.** Every OCR'd work therefore carries a `**Reading copy:**` line
+warning the agent to ground lessons in the prose argument and never to rely on a
+formula from the OCR text. This matters most for the notation-heavy figures
+(Schönfinkel is 1924 German *and* combinator notation; Kolmogorov is measure
+theory).
+
+---
+
+*Original entry, 2026-07-27:*
 
 **Nathan's instruction (2026-07-27): no subagent touches an OCR source until he
 gives an explicit go-ahead.** Reason: these are the expensive operations and he
@@ -450,3 +495,33 @@ cover-only GDZ scan; it should be checked in the same pass.
 
     # per-figure total text pages (context-limit risk)
     #   sum survey_pages across a figure's works
+
+### H.7 Four works with no obtainable source — needs Nathan's decision
+
+Found 2026-07-29 while clearing the OCR quarantine. These are not OCR problems
+and not fixable by a better fetch; the text is not reachable from a URL we have.
+Each blocks its figure from full attestation, so each needs either a source
+Nathan can supply or an explicit decision to drop the work from the figure's list.
+
+| figure | work | what is actually at the URL | why it is not fixable here |
+|---|---|---|---|
+| `turing` | `computability-and-lambda-definability` | Turing Digital Archive landing page (26KB, no full text) | See the misattribution note below. Turing is otherwise 7/8 attested with 27 lessons. |
+| `kolmogorov` | `logical-basis-for-information-theory-and-probability-theory` | mathnet.ru abstract page (24KB) | Guessed mirrors on `alexander.shen.free.fr` return 404. |
+| `kolmogorov` | `on-the-definition-of-an-algorithm` | mathnet.ru abstract page (23KB) | Same. |
+| `valiant` | `the-extent-and-limitations-of-mechanistic-explanations-of-nature` | a YouTube video | It is a recorded talk, not a text. Needs a transcript or substitution with a written work. |
+
+**A near-miss worth recording, because it would have corrupted the corpus
+silently.** Searching for the Turing paper surfaced
+`baklaniv.at.ua/CPP/fp.pdf`, a real PDF titled "Computability and
+λ-Definability" — the exact title of Turing's 1937 JSL paper. It is a **2013 book
+chapter by Barendregt, Plasmeijer and others** that merely shares the title.
+Fetching it and reading the first page caught it; accepting it on title match
+would have attributed another author's work to Turing and produced lessons
+grounded in the wrong paper, with nothing downstream able to detect the error.
+
+The rule this earns: **a recovered URL is not verified until its first page has
+been read and the author and venue confirmed.** Title match is not identity —
+titles are reused, especially for survey and textbook treatments of a famous
+result. The existing `url-sweep.sh` classifies by HTTP status and byte count,
+which would have passed this file as `OK`.
+
