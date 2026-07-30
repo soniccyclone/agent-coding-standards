@@ -68,12 +68,15 @@ tags: [work]
 - [Slowness costs you the user's held state, so make every operation small enough to complete inside their attention](../lessons/latency-breaks-the-circuit-so-make-operations-closeable.md)
 - [Let people point at what they can see, and accept that some things should have no name](../lessons/pointing-beats-naming-and-not-everything-needs-a-name.md)
 
+- [Choose the conformance check that works in every case over the one that would be elegant](../lessons/prefer-the-conformance-check-that-always-applies.md)
+- [A design idea impossible to express in one substrate can be the native vocabulary of another](../lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. **Chapters 0-7 are now read in full** (through line 12341, book page 286 of 497).
-Next unread line is 12342, the start of chapter 8 of the `pdftotext -layout` extraction held at
+across all seven views)**. **Chapters 0-8 are now read in full** (through line 13619, book page 314 of 497).
+Next unread line is 13620, the start of chapter 9 of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
 NOT yet read: chapter 6 (additional views and notation),
