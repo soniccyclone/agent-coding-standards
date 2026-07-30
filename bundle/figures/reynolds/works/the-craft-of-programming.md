@@ -36,3 +36,6 @@ tags: [work]
 - [A set of simultaneous updates is not the same as performing them one at a time](../lessons/simultaneous-updates-are-not-a-sequence-of-updates.md)
 - [What the property depends on, plus what you already know, sets the floor on how much you must examine](../lessons/what-the-predicate-depends-on-sets-the-floor-on-work.md)
 - [A generalization earns its place only with several real instances below it and nontrivial laws above it](../lessons/a-generalization-earns-its-place-with-instances-below-and-laws-above.md)
+- [When a step needs a messy operation, find the weakest property that discharges it rather than unfolding the definition](../lessons/prove-from-the-weakest-property-not-the-definition.md)
+- [An arbitrary order, agreed on by everybody, buys speed without meaning anything](../lessons/an-arbitrary-agreed-order-buys-speed-without-meaning-anything.md)
+- [When a rule breaks on updating part of a thing, lift the update to the whole value instead of patching the rule](../lessons/lift-a-partial-update-into-a-whole-value-update.md)

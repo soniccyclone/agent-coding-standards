@@ -21,3 +21,6 @@ tags: [work]
 
 ## Lessons
 - [Buy mechanization with a restriction on access, and expect it to redraw the algorithms](../lessons/buy-mechanization-with-a-restriction-on-access.md)
+- [Separate the structure from the position in it, and give the position its own invariant](../lessons/separate-the-structure-from-the-position-in-it.md)
+- [Pick the representation that turns the operations into machine primitives, then bound the abstraction to keep it](../lessons/pick-the-representation-that-turns-the-operations-into-machine-primitives.md)
+- [Admit to the foundation only what one representation can serve for nearly everyone](../lessons/admit-to-the-foundation-only-what-one-representation-can-serve.md)

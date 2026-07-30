@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Pick the representation that turns the operations into machine primitives, then bound the abstraction to keep it"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [hardware-affinity, parallelizability, expressiveness]
+subdomains: [algorithms-and-complexity, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Pick the representation that turns the operations into machine primitives, then bound the abstraction to keep it
+
+**Lesson:** The usual way to choose a representation is to ask which one stores the values most naturally. A better question is which one makes the operations you actually perform coincide with operations the machine already performs in one step. Represent a collection of small elements not as a list of the elements present but as one indicator per possible element, packed into a machine word, and the correspondence becomes exact: combining two collections is the word-wise disjunction, intersecting them is the conjunction, removing one from another is conjunction with a complement, and testing membership is a shift and a sign test. Nothing has been implemented; the operations were already there. The payoff is not a constant factor on a loop but the disappearance of the loop — testing whether a value belongs to a set of several alternatives becomes a fixed-cost operation instead of a chain of comparisons proportional to the number of alternatives.
+
+The step people flinch at is the second one, and it is the one that makes this work. A correspondence this tight is only available over a restricted domain, so bound the abstraction to the domain where it holds rather than generalizing the abstraction and losing the correspondence. If the mapping requires the whole collection to sit in a small fixed number of words, then say that the elements must be drawn from a range no larger than the machine's word, and say it in the definition of the abstraction, not in a footnote about performance. This looks like letting the hardware dictate the semantics, and in a sense it is; the alternative is an abstraction whose cost varies unpredictably with how it is used, which is worse for the person reasoning about the program than an honest limit is.
+
+Two habits follow. First, when an abstraction seems expensive, check whether its cost is inherent or an artifact of representing it in the shape the domain suggests instead of the shape the operations suggest — the two are different questions and only the second is under your control. Second, treat a restriction that preserves an exact correspondence as a feature to be documented and defended, because the pressure to relax it will come from people who see the restriction and not the correspondence it protects. The general form of the reasoning is: enumerate the operations, find the machine capability each one could become, and then ask what has to be true of the abstraction for that identification to hold. If the answer is a limit you can live with, take it.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 1.6.3 on representing a set by its characteristic function as a bitstring, the equivalences relating union, intersection and difference to the elementary logical operations that operate on all bits of a word at once, the observation that a membership test against a set of constants is implemented considerably more efficiently than the equivalent chain of equality comparisons, and the stated corollary that the set structure should therefore be used only for elements up to the wordlength of the underlying computer.

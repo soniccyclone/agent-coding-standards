@@ -39,3 +39,5 @@ tags: [work]
 - [Name the restricted case, because generality is what costs you the ability to say anything about it](../lessons/name-the-restricted-case-to-buy-back-laws.md)
 - [Admit a range of acceptable outcomes deliberately, because that is how a decision gets deferred to whoever should make it](../lessons/describe-a-range-of-outcomes-to-defer-the-decision.md)
 - [Fit your model to the subject matter when the operation list is still open, not to the distinctions today's operations can see](../lessons/fit-the-model-to-the-subject-not-to-todays-operations.md)
+- [Treat a stated assumption as a licence you granted, and remember that correct only ever means meets this description](../lessons/a-pre-condition-is-a-licence-and-correct-means-nothing-alone.md)
+- [Find the smallest set of things that build your type, because definitions and proofs both decompose along it](../lessons/find-the-generating-basis-and-everything-decomposes-along-it.md)
