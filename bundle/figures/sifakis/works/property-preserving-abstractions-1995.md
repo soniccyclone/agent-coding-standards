@@ -29,3 +29,5 @@ tags: [work]
 - ["Can it happen?" and "must it always hold?" need approximations that err in opposite directions](../lessons/existential-and-universal-questions-need-opposite-approximations.md)
 - [Monotonicity carries an approximation through composition; only non-contradiction carries it through negation](../lessons/monotone-is-not-enough-once-you-negate.md)
 - [Do not ask whether an approximation is good; tabulate which hypothesis buys which class of transferable answer](../lessons/price-the-guarantee-against-the-hypothesis-that-buys-it.md)
+- [Derive the reduced model by rewriting the description, never by walking the thing described](../lessons/reduce-the-description-not-the-thing-it-describes.md)
+- [Define the best possible version of the thing you are approximating, even when you intend to ship something worse](../lessons/define-the-optimum-you-will-not-compute.md)

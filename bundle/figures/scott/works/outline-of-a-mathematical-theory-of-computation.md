@@ -9,6 +9,7 @@ url: https://www.cs.ox.ac.uk/files/3222/PRG02.pdf
 survey_pages: 30
 survey_text_layer: full
 survey_fetch_mb: 0
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -26,3 +27,6 @@ tags: [work]
 - [Make realizability a predicate over a clean structure, not a restriction built into it](../lessons/make-effectiveness-a-predicate-over-a-clean-structure.md)
 - [Knowing something can be computed is a different state of knowledge from knowing how](../lessons/knowing-a-thing-is-computable-is-not-knowing-how.md)
 - [A construction closed enough to solve your equation will admit objects you did not intend](../lessons/a-closed-construction-admits-objects-you-did-not-intend.md)
+- [Solve the closure problem once, and each specific design collapses into an equation](../lessons/solve-the-closure-problem-once-so-designs-become-equations.md)
+- [Give conflict its own value, and never confuse conflicting with merely unrelated](../lessons/give-conflict-a-value-and-keep-it-distinct-from-unrelated.md)
+- [Order your assumptions by how the ideas arise, not by logical minimality](../lessons/order-assumptions-by-motivation-not-by-logical-minimality.md)
