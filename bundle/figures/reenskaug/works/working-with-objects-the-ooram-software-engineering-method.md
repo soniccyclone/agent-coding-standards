@@ -85,24 +85,35 @@ tags: [work]
 - [Size a general escape hatch to what existing code actually needed, and admit when you cannot justify it](../lessons/size-the-escape-hatch-to-what-existing-code-actually-needed.md)
 - [When automatic derivation fails, require a declaration and mechanically audit it for completeness](../lessons/when-derivation-fails-require-a-declaration-you-can-audit.md)
 
+- [A process model with no actor dimension smuggles in the author's own role as the default](../lessons/a-process-model-without-an-actor-dimension-hides-the-handoffs.md)
+- [An environment built to satisfy every internal audience will satisfy none of them](../lessons/one-environment-for-every-need-satisfies-nobody.md)
+- [Assume your consumers are hostile, but expect ignorance rather than malice — and pair every restriction with completeness](../lessons/the-threat-from-the-layer-above-is-ignorance-not-malice.md)
+- [The simple picture is a deliverable someone owns, and that someone is not in the picture](../lessons/someone-must-own-the-simple-picture-and-they-are-not-in-it.md)
+- [Delivery adds entropy and generalization removes it; each has a visible failure signature when it dominates](../lessons/production-adds-entropy-cleanup-removes-it-neither-may-dominate.md)
+- [Rotate people between building and generalizing, alternately — holding both at once collapses to the nearer deadline](../lessons/alternate-the-two-jobs-over-time-never-hold-both-at-once.md)
+- [An investment you cannot price needs a decider who has done both jobs, not a better formula](../lessons/an-investment-you-cannot-price-needs-a-decider-who-has-done-both.md)
+- [When your data cannot answer the question, find the person already answering it and name the role](../lessons/when-your-data-cannot-answer-name-the-person-already-answering.md)
+- [There is no best reuse mechanism — match it to the layer, and expect the crude one to win somewhere](../lessons/there-is-no-best-reuse-mechanism-match-it-to-the-layer.md)
+- [Hold the bespoke one percent to different standards than the library it sits on](../lessons/hold-the-bespoke-one-percent-to-different-standards-than-the-library.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Source is the `pdftotext -layout`
 extraction held at `scratchpad/reenskaug/ooram-slim.txt` (21,176 lines = 497 book
 pages).
 
-READ IN FULL: preface and chapters 1 through 9 — the main ideas, role modeling,
+READ IN FULL: preface and chapters 1 through 10 — the main ideas, role modeling,
 role model synthesis, the method's process, communicating with consumers, the
-additional views and notation, and the first three case studies including all
-seven steps of chapter 9's framework-creation study (through line 15666, book page
-~364). Next unread line is **15667**, the start of chapter 10.
+additional views and notation, the first three case studies including all seven
+steps of chapter 9's framework-creation study, and all of chapter 10 (the value
+chain, production engineering, the Intelligent Network and business-information
+chains, the Fountain Model, job rotation, and the investment-versus-production
+management problem) — through line 16755, book page ~390 of 497. Next unread line
+is **16756**, the start of chapter 11.
 
-NOT yet read: chapter 10 (organizing for software productivity, value chains),
-chapter 11 (instance-based reuse: runtime configuration, object trading, the OOCS
-composition system, and the four object-duplication strategies), chapter 12 (the
-Intelligent Network Services value chain, seven actor layers), and appendix A (the
-OOram language). Chapter boundaries: ch10 15667, ch11 16756, ch12 18172, body ends
-~19500, index/TOC from ~20800.
+NOT yet read: chapter 11 (instance-based reuse: runtime configuration, object
+trading, the OOCS composition system, and the four object-duplication strategies),
+chapter 12 (the Intelligent Network Services value chain in detail, seven actor
+layers), and appendix A (the OOram language). Chapter boundaries: ch11 16756,
+ch12 18172, body ends ~19500, index/TOC from ~20800.
 
-Chapter 10 remains the highest-value unread target — organizational value chains
-for software production is a subject no lesson in this corpus touches yet.
-`extraction: complete` deliberately withheld until chapters 10-12 and appendix A
+`extraction: complete` deliberately withheld until chapters 11-12 and appendix A
 are read._

@@ -19,7 +19,7 @@ built-in vocabulary while staying easy to write against.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-623 lessons from 74 figures.
+624 lessons from 74 figures.
 
 **abiteboul** (9)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -557,7 +557,7 @@ No lessons scored on this axis yet.
 - [State a request's real requirements as data, because the code that could exploit them has not been written yet](../figures/rashid/lessons/state-requirements-as-data-so-parties-you-never-anticipated-can-act-on-them.md)
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 
-**reenskaug** (32)
+**reenskaug** (33)
 - [A description complete enough to generate the system has become the system, and needs its own abstraction](../figures/reenskaug/lessons/a-description-detailed-enough-to-generate-code-is-code.md)
 - [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [A design idea impossible to express in one substrate can be the native vocabulary of another](../figures/reenskaug/lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
@@ -582,6 +582,7 @@ No lessons scored on this axis yet.
 - [Size a general escape hatch to what existing code actually needed, and admit when you cannot justify it](../figures/reenskaug/lessons/size-the-escape-hatch-to-what-existing-code-actually-needed.md)
 - [Strip a component of its own initiative to make it composable](../figures/reenskaug/lessons/strip-a-component-of-its-own-initiative-to-make-it-composable.md)
 - [The browser is part of the language](../figures/reenskaug/lessons/the-browser-is-part-of-the-language.md)
+- [There is no best reuse mechanism — match it to the layer, and expect the crude one to win somewhere](../figures/reenskaug/lessons/there-is-no-best-reuse-mechanism-match-it-to-the-layer.md)
 - [Two orthogonal decompositions cannot share one mechanism without both coming out wrong](../figures/reenskaug/lessons/two-orthogonal-decompositions-cannot-share-one-mechanism.md)
 - [What a language has no word for, its programs cannot govern](../figures/reenskaug/lessons/what-a-language-cannot-name-it-cannot-manage.md)
 - [When the ugly requirement arrives, describe it somewhere else and compose, rather than spoiling the clean description](../figures/reenskaug/lessons/model-the-mess-separately-and-compose-it-in.md)

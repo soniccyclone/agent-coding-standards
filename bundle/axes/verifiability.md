@@ -20,7 +20,7 @@ subdomain is organized around.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-825 lessons from 76 figures.
+826 lessons from 76 figures.
 
 **abiteboul** (7)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -763,13 +763,14 @@ No lessons scored on this axis yet.
 - [State a request's real requirements as data, because the code that could exploit them has not been written yet](../figures/rashid/lessons/state-requirements-as-data-so-parties-you-never-anticipated-can-act-on-them.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
-**reenskaug** (26)
+**reenskaug** (27)
 - [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [A discipline is worth exactly what it forbids](../figures/reenskaug/lessons/a-discipline-is-worth-what-it-forbids.md)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
 - [A picture too tangled to draw honestly is evidence about the program, not about the picture](../figures/reenskaug/lessons/a-diagram-too-complex-to-draw-indicts-the-program.md)
 - [A requirement nobody can point at in the code cannot be reviewed](../figures/reenskaug/lessons/a-requirement-you-cannot-point-at-in-the-code-cannot-be-reviewed.md)
 - [An interface is factored correctly when a program can stand in for the user](../figures/reenskaug/lessons/an-interface-is-right-when-a-program-can-stand-in-for-the-user.md)
+- [Assume your consumers are hostile, but expect ignorance rather than malice — and pair every restriction with completeness](../figures/reenskaug/lessons/the-threat-from-the-layer-above-is-ignorance-not-malice.md)
 - [Building it is the experiment that tells you whether your separation of concerns was real](../figures/reenskaug/lessons/implementation-is-the-test-of-whether-your-decomposition-was-real.md)
 - [Choose the conformance check that works in every case over the one that would be elegant](../figures/reenskaug/lessons/prefer-the-conformance-check-that-always-applies.md)
 - [Composition is reuse only when it preserves what you already checked](../figures/reenskaug/lessons/composition-is-reuse-only-if-it-preserves-what-you-already-checked.md)

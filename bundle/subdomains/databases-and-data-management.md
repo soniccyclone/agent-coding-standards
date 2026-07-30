@@ -18,7 +18,7 @@ the implementation-mapping layer.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-162 lessons from 22 figures.
+163 lessons from 22 figures.
 
 **abiteboul** (12)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -165,11 +165,12 @@ No works or lessons tagged with this subdomain yet.
 **pike** (1)
 - [Write down the change before you make it](../figures/pike/lessons/write-down-the-change-before-you-make-it.md)
 
-**reenskaug** (4)
+**reenskaug** (5)
 - [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [Before integrating two groups' data, separate their words from their concepts](../figures/reenskaug/lessons/separate-the-term-from-the-concept-before-integrating.md)
 - [When two groups mean different things by one word, translating beats forcing them to agree](../figures/reenskaug/lessons/translate-to-the-users-model-rather-than-harmonizing-vocabularies.md)
 - [When two structures legitimately disagree, give the disagreement its own layer](../figures/reenskaug/lessons/give-the-structural-mismatch-its-own-layer.md)
+- [When your data cannot answer the question, find the person already answering it and name the role](../figures/reenskaug/lessons/when-your-data-cannot-answer-name-the-person-already-answering.md)
 
 **ritchie** (1)
 - [Pick the representation whose global invariant is cheap to check, not the one that reads best](../figures/ritchie/lessons/pick-representations-whose-invariants-are-cheap-to-check.md)

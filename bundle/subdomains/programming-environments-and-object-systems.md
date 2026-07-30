@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-183 lessons from 28 figures.
+184 lessons from 28 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -156,7 +156,7 @@ No works or lessons tagged with this subdomain yet.
 - [Uniformity comes from withholding the toolkit, not shipping one](../figures/pike/lessons/uniformity-comes-from-withholding-the-toolkit.md)
 - [Write down the change before you make it](../figures/pike/lessons/write-down-the-change-before-you-make-it.md)
 
-**reenskaug** (34)
+**reenskaug** (35)
 - [A caller that walks the structure to reach a service has absorbed the structure](../figures/reenskaug/lessons/a-caller-that-walks-the-structure-has-absorbed-the-structure.md)
 - [A discipline is worth exactly what it forbids](../figures/reenskaug/lessons/a-discipline-is-worth-what-it-forbids.md)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
@@ -186,6 +186,7 @@ No works or lessons tagged with this subdomain yet.
 - [The browser is part of the language](../figures/reenskaug/lessons/the-browser-is-part-of-the-language.md)
 - [The class hierarchy will not tell you how the thing works; only the collaboration will](../figures/reenskaug/lessons/inheritance-structure-explains-nothing-about-behavior.md)
 - [The rigidity that makes an organization inhuman is exactly right for machines](../figures/reenskaug/lessons/rigidity-that-is-inhuman-is-correct-for-machines.md)
+- [There is no best reuse mechanism — match it to the layer, and expect the crude one to win somewhere](../figures/reenskaug/lessons/there-is-no-best-reuse-mechanism-match-it-to-the-layer.md)
 - [To understand a mechanism, dissect its simplest instance, not its most representative one](../figures/reenskaug/lessons/reverse-engineer-through-the-simplest-instance.md)
 - [Treat any exclamation of surprise from a user as a bug report against the design](../figures/reenskaug/lessons/astonishment-is-a-defect-report.md)
 - [Two orthogonal decompositions cannot share one mechanism without both coming out wrong](../figures/reenskaug/lessons/two-orthogonal-decompositions-cannot-share-one-mechanism.md)

@@ -22,7 +22,7 @@ stylistic preference.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-513 lessons from 76 figures.
+514 lessons from 76 figures.
 
 **abiteboul** (2)
 - [The class of computations is the real object; notations and semantics are viewpoints on it](../figures/abiteboul/lessons/the-computation-class-is-the-object-syntaxes-are-viewpoints.md)
@@ -498,7 +498,7 @@ No lessons scored on this axis yet.
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
-**reenskaug** (15)
+**reenskaug** (16)
 - [A design idea impossible to express in one substrate can be the native vocabulary of another](../figures/reenskaug/lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
 - [An entity at one level is a collaboration one level down](../figures/reenskaug/lessons/an-entity-at-one-level-is-a-collaboration-at-the-level-below.md)
 - [Anticipated flexibility goes unused and does not prevent the extensions you failed to anticipate](../figures/reenskaug/lessons/hooks-for-every-need-refuted-by-its-own-usage-data.md)
@@ -511,6 +511,7 @@ No lessons scored on this axis yet.
 - [Sort behavior by what it drags in, not by the noun it mentions](../figures/reenskaug/lessons/sort-behavior-by-rate-of-change-not-by-the-noun-it-mentions.md)
 - [State whose meaning expires with the operation must not be stored where the object lives](../figures/reenskaug/lessons/state-whose-meaning-expires-should-not-be-stored-where-the-object-lives.md)
 - [Strip a component of its own initiative to make it composable](../figures/reenskaug/lessons/strip-a-component-of-its-own-initiative-to-make-it-composable.md)
+- [There is no best reuse mechanism — match it to the layer, and expect the crude one to win somewhere](../figures/reenskaug/lessons/there-is-no-best-reuse-mechanism-match-it-to-the-layer.md)
 - [Two orthogonal decompositions cannot share one mechanism without both coming out wrong](../figures/reenskaug/lessons/two-orthogonal-decompositions-cannot-share-one-mechanism.md)
 - [What a language has no word for, its programs cannot govern](../figures/reenskaug/lessons/what-a-language-cannot-name-it-cannot-manage.md)
 - [When you borrow a mechanism, permit it less than its source did](../figures/reenskaug/lessons/deliberately-narrow-a-borrowed-mechanism.md)
