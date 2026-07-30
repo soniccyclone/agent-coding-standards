@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -43,3 +44,5 @@ tags: [work]
 - [Find the smallest set of things that build your type, because definitions and proofs both decompose along it](../lessons/find-the-generating-basis-and-everything-decomposes-along-it.md)
 - [Let the checks tell you which decision you owe next, and never expect them to tell you whether it was a good one](../lessons/let-obligations-name-the-next-decision-but-never-expect-them-to-judge-it.md)
 - [Carve a description into units for the reader's sake, and depend on what each unit promised rather than on how it was written](../lessons/carve-a-description-for-the-reader-not-as-a-build-plan.md)
+- [To get something existing under intellectual control, describe the idealized version first and relate the real one back to it](../lessons/describe-the-idealized-version-first-then-relate-the-real-one.md)
+- [When descriptions get clumsy, add derived views rather than stored redundancy, and keep two whole structures if each earns its keep](../lessons/add-derived-views-not-stored-redundancy.md)

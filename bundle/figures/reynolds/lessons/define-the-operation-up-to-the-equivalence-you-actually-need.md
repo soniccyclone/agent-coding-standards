@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Define an operation up to the equivalence you actually care about, not up to equality"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [expressiveness, cognitive-load, verifiability]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Define an operation up to the equivalence you actually care about, not up to equality
+
+**Lesson:** An operation that has an obvious definition on a narrow class of inputs often refuses to generalize, and the obstacle is usually not the operation — it is an incidental commitment in the definition. Joining two things end to end is the standard case: define it only for objects indexed from one and the definition is clean but useless the moment either operand is indexed differently, indexed by something that is not a number, or indexed by a set that is not contiguous. The way out is to ask what about the result you actually depend on. Almost always the answer is a structural property — that the result splits into two parts, that the first part corresponds to the first operand, the second to the second, and that the parts stand in the right order — and never the specific identity of the indices. Once you see that, you may build the result's index set however you like, for instance by tagging each operand's indices to keep them apart, and the operation generalizes immediately.
+
+The price of the move is that your laws now hold up to an equivalence rather than as equalities, and that price is worth paying deliberately rather than resisting. Joining three things in the two possible groupings does not produce equal results under the tagged construction; it produces results that correspond element for element in order, which is a weaker statement and is entirely sufficient for every use. Say so, and associativity, the identity laws and commutativity-up-to-reordering all become available, and each one can be applied inside a chain of reasoning without a canonical-form conversion. Insist on equality instead and you must invent a normalization step, prove it commutes with everything, and carry it through every proof — enormous work in exchange for a property nobody needed.
+
+Two habits follow. First, when a definition resists generalizing, look for the arbitrary choice it made — a starting index, a fixed ordering, an identifier scheme — and replace the commitment with the property you needed from it. Second, once the laws hold up to some equivalence, check whether the resulting structure is a familiar one; if the operation and its identity form a monoid under your equivalence, or a commutative one, then you know in advance which laws to expect, and any of them you have not verified is a gap worth closing before it stops a proof. Recognizing the algebra is not decoration — it is a checklist telling you what facts about your own operation you are going to need.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 2.3.7, which observes that the sequence definition of concatenation does not generalize cleanly to functions whose domains are not intervals or not even sets of integers, resolves this by noting that the specific domain does not matter provided it partitions into parts with the stated correspondence and ordering properties, defines the general operation by tagging each operand's domain, states associativity, identity and commutativity only up to realignment or rearrangement, remarks that the quotients form a monoid and a commutative monoid so these laws are likely to be pervasive, and later hides applications of associativity in a proof on the grounds that realignment is enough for the purpose.
