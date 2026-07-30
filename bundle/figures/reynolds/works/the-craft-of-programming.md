@@ -43,3 +43,6 @@ tags: [work]
 - [Attack your own specification with a cheating program, then add the clause that stops it](../lessons/attack-your-own-specification-with-a-cheating-program.md)
 - [Define an operation up to the equivalence you actually care about, not up to equality](../lessons/define-the-operation-up-to-the-equivalence-you-actually-need.md)
 - [Push the caller's actual question into the computation, because a comparison is cheaper than a value](../lessons/compute-the-question-the-caller-asks-not-the-value.md)
+- [Classify an interface position by what kind of phrase it admits, not by what kind of value flows through it](../lessons/classify-a-position-by-what-kind-of-phrase-it-admits.md)
+- [Sort every obligation by who can enforce it, and give each class its own notation](../lessons/sort-obligations-by-who-can-enforce-them.md)
+- [A mechanism's hazard and its expressive power are often the same property seen twice](../lessons/a-hazard-and-a-capability-are-often-the-same-property.md)
