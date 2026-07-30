@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Being forced to store a representation instead of the thing is a report of a missing structure"
+figure: scott
+works: [outline-of-a-mathematical-theory-of-computation]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Being forced to store a representation instead of the thing is a report of a missing structure
+
+**Lesson:** A recurring workaround, in formalisms and in running systems alike, is to hold an encoding of an object where the object itself will not fit: a name, a piece of text, a code word, a handle, an index into a table that someone else has to interpret. This is so routine that it reads as an implementation detail. It is better read as a diagnosis. The encoding is there because the space you are working in does not contain the thing you need to put in it, and every consumer of the encoded value now has to be handed the interpreting apparatus along with it. The cost is not the indirection; it is that questions about the object have become questions about a convention for decoding, and answering them drags in the whole machinery of how compound cases, parameters, and nesting are represented. That is not a conceptual resolution of the problem, only a place to keep it.
+
+The productive response is to treat the encoding as a specification of the structure you are missing. Ask what property a space would need in order to hold the object directly — often something self-referential, since the encoding usually exists precisely to break a circularity the space cannot express — and go looking for whether such a space exists. This is a live research question, not a formality; the honest sequence in Scott's own account was an attempt to use an existing higher-type formalism, a concrete obstruction in the form of having to store representations of functions rather than functions, and only then the conjecture that structures with the required self-referential property might exist at all. The obstruction is what told him what to build. Had the representation trick been accepted as good enough, the search would never have started.
+
+Two things make this a usable habit rather than a counsel of perfection. First, the test is sharp: if the users of a value cannot do anything with it without a shared decoding convention, you are storing a representation, whatever the type says. Second, the payoff is specific — once the space holds the thing itself, the operations you wanted become ordinary application rather than interpretation, and the properties you wanted to prove become statements about objects rather than statements about an encoding scheme and the code that maintains it. Where no such space exists, the encoding is a legitimate compromise; the mistake is to reach for it before finding out, because indirection is comfortable enough that a system can carry the missing structure indefinitely without anyone noticing what it is missing.
+
+**Source:** [Outline of a Mathematical Theory of Computation](../works/outline-of-a-mathematical-theory-of-computation.md) — the rejection of the operational escape of storing a code word or piece of text standing for a command as not a satisfactory conceptual way out, given the difficulty of formalizing it for compound parameterized commands; and the background section's account of the joint work with Strachey being hampered by having to store representations of functions rather than the functions themselves, which led to conjecturing structures with the proper self-referential storage properties.

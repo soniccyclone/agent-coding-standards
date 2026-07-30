@@ -21,4 +21,6 @@ tags: [work]
 **Source:** https://softwarepreservation.computerhistory.org/ALGOL/report/Algol60_revised_report_CACM.pdf — live PDF, hosted by the Software Preservation Group / Computer History Museum's ALGOL archive.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Build the notation for describing the thing before you describe the thing](../lessons/build-the-metalanguage-before-the-language.md)
+- [Fix the defining form for human understanding, and let every machine encoding be a transliteration of it](../lessons/one-defining-representation-many-encodings.md)
+- [Mark every hole in a definition deliberately, and say who is obliged to fill it](../lessons/name-the-holes-and-name-who-fills-them.md)

@@ -20,4 +20,6 @@ tags: [work]
 **Source:** https://www.cs.ox.ac.uk/files/3222/PRG02.pdf — Oxford Department of Computer Science's official publications page (publication3720-abstract.html) links this file directly; institutional archive. Title page confirmed by direct render.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The case you dismissed as pathological is usually already load-bearing somewhere ordinary](../lessons/the-pathological-case-is-usually-already-load-bearing.md)
+- [Being forced to store a representation instead of the thing is a report of a missing structure](../lessons/storing-a-representation-instead-of-the-thing-is-a-missing-structure.md)
+- [A counterexample to your law is often a function with an argument you forgot to declare](../lessons/a-counterexample-to-your-law-may-be-a-suppressed-argument.md)

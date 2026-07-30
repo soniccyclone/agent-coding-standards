@@ -25,4 +25,4 @@ tags: [work]
 **Correction note:** The Phase 1/2 stub cited this work as "(1992, with Clarke, Grumberg, Long)." That citation is mistaken — Clarke, Grumberg, and Long wrote a related but distinct paper, "Model Checking and Abstraction" (ACM TOPLAS 16(5), 1994), which is not co-authored with Sifakis. The paper actually bearing this exact title is this one, published in Formal Methods in System Design in 1995 (with an earlier CAV'92 precursor, "Property Preserving Simulations," by Bensalem/Bouajjani/Loiseaux/Sifakis without Graf). The index.md top-10 entry has been corrected to reflect the verified authorship and year.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [When two communities have separate words for the same idea, prove the coincidence and then use whichever wording is shorter](../lessons/prove-the-two-vocabularies-coincide-then-keep-both.md)
