@@ -18,7 +18,7 @@ the implementation-mapping layer.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-166 lessons from 22 figures.
+190 lessons from 26 figures.
 
 **abiteboul** (12)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -147,6 +147,9 @@ No works or lessons tagged with this subdomain yet.
 **herlihy** (1)
 - [A pure safety condition can quietly forbid progress; audit what your consistency contract makes impossible](../figures/herlihy/lessons/a-safety-condition-can-silently-cost-you-liveness.md)
 
+**jones** (1)
+- [State is history divided by what still matters, and keeping the history instead is the lazy answer](../figures/jones/lessons/state-is-history-quotiented-by-what-still-matters.md)
+
 **liskov** (6)
 - [A consistency guarantee ends where information flow leaves your interface](../figures/liskov/lessons/your-guarantee-ends-where-information-flow-leaves-your-api.md)
 - [Consistency strength belongs to the operation, not to the system](../figures/liskov/lessons/consistency-strength-is-a-per-operation-choice.md)
@@ -174,6 +177,9 @@ No works or lessons tagged with this subdomain yet.
 - [When two groups mean different things by one word, translating beats forcing them to agree](../figures/reenskaug/lessons/translate-to-the-users-model-rather-than-harmonizing-vocabularies.md)
 - [When two structures legitimately disagree, give the disagreement its own layer](../figures/reenskaug/lessons/give-the-structural-mismatch-its-own-layer.md)
 - [When your data cannot answer the question, find the person already answering it and name the role](../figures/reenskaug/lessons/when-your-data-cannot-answer-name-the-person-already-answering.md)
+
+**reynolds** (1)
+- [An arbitrary order, agreed on by everybody, buys speed without meaning anything](../figures/reynolds/lessons/an-arbitrary-agreed-order-buys-speed-without-meaning-anything.md)
 
 **ritchie** (1)
 - [Pick the representation whose global invariant is cheap to check, not the one that reads best](../figures/ritchie/lessons/pick-representations-whose-invariants-are-cheap-to-check.md)
@@ -213,7 +219,7 @@ No works or lessons tagged with this subdomain yet.
 - [Make meaning independent of layout, and layout becomes a free variable you can spend entirely on the machine](../figures/torvalds/lessons/make-meaning-independent-of-layout.md)
 - [Name a thing by its content, and identity, integrity, and sharing stop being three separate problems](../figures/torvalds/lessons/name-things-by-what-they-are.md)
 
-**ullman** (15)
+**ullman** (17)
 - [Admitting 'undetermined' as an answer buys you a total, computable definition](../figures/ullman/lessons/admit-undetermined-as-an-answer.md)
 - [An optimizer can only exploit the laws you hand it in advance](../figures/ullman/lessons/an-optimizer-can-only-use-laws-you-hand-it.md)
 - [Build the error curve you want by composing tests too weak to use alone](../figures/ullman/lessons/build-the-error-curve-you-want-from-weak-tests.md)
@@ -226,6 +232,32 @@ No works or lessons tagged with this subdomain yet.
 - [Learn only the part of the problem you cannot state yourself](../figures/ullman/lessons/learn-only-what-you-cannot-state-yourself.md)
 - [One new construct can turn meaning from a fact into a choice you must justify](../figures/ullman/lessons/one-new-construct-can-turn-meaning-into-a-choice.md)
 - [Only unknown questions justify paying for a query language](../figures/ullman/lessons/unknown-questions-are-what-justify-a-query-language.md)
+- [Rank by concentration, because neither frequency nor rarity identifies signal](../figures/ullman/lessons/rank-by-concentration-not-by-frequency-or-rarity.md)
 - [Sample the entity your question quantifies over, not the records in front of you](../figures/ullman/lessons/sample-the-entity-your-question-is-about.md)
 - [Two specifications can be identical and still want different answers](../figures/ullman/lessons/intent-lives-outside-the-text.md)
 - [What you decide counts as 'the same thing' sets the size of your state space](../figures/ullman/lessons/identity-criteria-set-the-size-of-your-state-space.md)
+- [When a field renames itself every decade, check whether the substance moved at all](../figures/ullman/lessons/a-field-that-keeps-renaming-itself-is-telling-you-the-substance-held.md)
+
+**vardi** (18)
+- [A cheap test may replace an expensive one exactly when the language asking cannot tell them apart](../figures/vardi/lessons/an-approximation-is-exact-relative-to-an-observer-that-cannot-tell.md)
+- [A language blind to arrangement cannot count, so hand it the arrangement deliberately](../figures/vardi/lessons/a-language-blind-to-arrangement-cannot-count.md)
+- [A whole you only ever observe through a few narrow windows can be replaced by the windows, plus the coherence you just gave up](../figures/vardi/lessons/replace-an-unobservable-whole-with-its-observations-plus-coherence.md)
+- [An ambiguous outcome should widen what you record, not reject the request](../figures/vardi/lessons/an-ambiguous-answer-should-widen-the-state-not-reject-the-request.md)
+- [Decide whether your state is closed under its own consequences, because that decides what deletion means](../figures/vardi/lessons/decide-whether-your-state-is-closed-under-consequence.md)
+- [Earn each new construct with a thing the old language cannot say, and price it before adding it](../figures/vardi/lessons/earn-each-new-construct-with-a-thing-the-old-language-cannot-say.md)
+- [Find the quantity that actually blows up, then bound it with something checkable in the text](../figures/vardi/lessons/find-the-quantity-that-actually-blows-up-then-bound-it-syntactically.md)
+- [Length is cheap, simultaneity is not: reuse names to keep the working set narrow](../figures/vardi/lessons/length-is-cheap-simultaneity-is-not-reuse-your-names.md)
+- [Measure the smallest yes-or-no question, then check the reduction back is faithful](../figures/vardi/lessons/measure-the-smallest-decidable-question-then-check-the-reduction-is-faithful.md)
+- [Name which input you are holding fixed before you quote a cost](../figures/vardi/lessons/name-which-input-you-are-holding-fixed-before-you-quote-a-cost.md)
+- [Paired operations are rarely duals: check which direction your invariant survives](../figures/vardi/lessons/paired-operations-are-rarely-duals-check-which-way-the-invariant-survives.md)
+- [Price a feature by which closure property it breaks, and read your limits off the ones that remain](../figures/vardi/lessons/price-a-feature-by-which-closure-property-it-breaks.md)
+- [Rank your invariants explicitly, or automatic repair will sacrifice whichever one is cheapest to drop](../figures/vardi/lessons/rank-your-invariants-or-repair-will-sacrifice-the-wrong-one.md)
+- [Read a request as evidence in the caller's vocabulary, not as a description of the end state](../figures/vardi/lessons/read-a-request-as-evidence-not-as-a-description-of-the-end-state.md)
+- [Shorter notation moves cost onto the evaluator; it does not remove it](../figures/vardi/lessons/shorter-notation-moves-cost-onto-the-evaluator.md)
+- [To state a constraint that spans two structures, build the single structure that contains both](../figures/vardi/lessons/to-constrain-a-relation-between-two-structures-build-the-one-containing-both.md)
+- [What you chose to record explicitly decides what a change means, not the change operator](../figures/vardi/lessons/what-you-record-explicitly-decides-what-a-change-means.md)
+- [When two opposed styles measure identically, the choice between them is ergonomic](../figures/vardi/lessons/when-two-opposed-styles-measure-identically-the-choice-is-ergonomic.md)
+
+**wilkes** (2)
+- [Choose a representation by what the management operations must iterate over, not by which is conceptually cleaner](../figures/wilkes/lessons/keep-together-what-must-be-managed-together.md)
+- [State crash safety as ordering invariants, then defer every write the invariants do not pin down](../figures/wilkes/lessons/state-the-ordering-invariants-then-defer-freely.md)

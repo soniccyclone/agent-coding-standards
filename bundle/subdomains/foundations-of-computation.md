@@ -19,7 +19,7 @@ corpus retains alongside it, not a rejected alternative.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-240 lessons from 35 figures.
+281 lessons from 39 figures.
 
 **abiteboul** (3)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -50,20 +50,29 @@ No works or lessons tagged with this subdomain yet.
 - [The size of the source is not the amount you said](../figures/chaitin/lessons/notation-you-enjoy-writing-is-not-a-measure-of-content.md)
 - [When every consequence needs a correction term, the definition is wrong](../figures/chaitin/lessons/awkward-consequences-indict-the-definition.md)
 
-**church** (14)
+**church** (23)
 - [A restriction you can evade by restating the problem in the permitted form is not a restriction at all](../figures/church/lessons/a-restriction-you-can-restate-around-is-not-a-restriction.md)
+- [A rule set does not determine its own consequences: the same axioms under a stronger surrounding logic are a different subject entirely](../figures/church/lessons/the-rules-plus-the-inference-machinery-are-the-theory.md)
 - [Added vocabulary is not added power: if its laws can be hypotheses and its names variables, the base language already had it](../figures/church/lessons/added-vocabulary-is-not-added-power.md)
+- [Analyze only as deep as the argument needs, and remember that which things you treat as atomic is a choice with no canonical answer](../figures/church/lessons/analyze-only-as-deep-as-the-argument-needs.md)
+- [Any notation you can actually write in names only countably much, so the expressive ceiling is arithmetic, not a failure of cleverness](../figures/church/lessons/a-notation-can-only-name-countably-much.md)
+- [Any set of requirements can be a foundation you build inside or a predicate you quantify over, and the second turns every specific result into a general one](../figures/church/lessons/requirements-as-a-predicate-you-quantify-over.md)
 - [Audit both ends of a claim: assume only what the argument uses, and check that what you settled is what was asked](../figures/church/lessons/audit-both-ends-of-the-claim.md)
 - [Choosing a notation is choosing a theory of the domain, and surface similarity is no evidence of shared structure](../figures/church/lessons/choosing-a-notation-is-choosing-a-theory.md)
 - [Data can be defined by the behavior it supports rather than by the stuff it is made of](../figures/church/lessons/data-is-whatever-behaves-like-it.md)
 - [Denoting the same thing does not make two expressions interchangeable; substitution has a scope and you must know where it ends](../figures/church/lessons/same-value-does-not-mean-interchangeable.md)
+- [Every property you claim splits into a tool-relative version and a truth-relative version, and the implication runs only one way](../figures/church/lessons/every-property-splits-into-tool-relative-and-truth-relative.md)
+- [Evidence gathered in a setting that already assumes the claim would persuade nobody who actually doubted it, and knowing that is the difference between verification and a consistency check on your own beliefs](../figures/church/lessons/evidence-that-presupposes-the-claim-convinces-nobody.md)
+- [Know whether a definition is eliminable shorthand or a genuine extension, because a definition facility rigorous enough to trust is also one you did not need](../figures/church/lessons/know-whether-a-definition-is-shorthand-or-an-extension.md)
 - [Know whether your confidence comes from proof or from survival, and distrust your reading of the result aimed at your own work](../figures/church/lessons/survival-is-evidence-not-proof.md)
 - [Make legality part of how an expression is built, not a check run over it afterward](../figures/church/lessons/legality-belongs-in-construction-not-inspection.md)
 - [Make the system an object that a weaker tool can inspect from outside](../figures/church/lessons/make-the-system-an-object-a-weaker-tool-can-inspect.md)
 - [Names and binding are a convenience layer, not part of the computational content](../figures/church/lessons/names-are-a-layer-above-the-computation.md)
+- [Reduction bottoms out at the act of combining, and a regress that reappears one level up is a floor rather than a step](../figures/church/lessons/reduction-bottoms-out-at-the-act-of-combining.md)
 - [Track which assumption buys which capability, and prove one is needed by exhibiting the world where it fails](../figures/church/lessons/know-which-assumption-buys-which-capability.md)
 - [Treat a function as the rule you can run, not as the pairs it happens to relate](../figures/church/lessons/a-function-is-a-rule-not-a-table.md)
 - [When a construction repeats at every level, make the pattern the artifact and let instantiation cover the infinite family](../figures/church/lessons/prove-the-pattern-not-the-instances.md)
+- [When a second theory would duplicate the first step for step, collapse the two concepts — then state the law the collapse breaks](../figures/church/lessons/collapse-the-duplicate-concept-then-name-what-the-collapse-costs.md)
 - [You can dissolve a bad case by declining to assume it means anything, instead of forbidding anyone to write it](../figures/church/lessons/refuse-to-assume-every-expression-means-something.md)
 
 **clarke** (1)
@@ -272,11 +281,27 @@ No works or lessons tagged with this subdomain yet.
 **reenskaug** (1)
 - [Without the question, there is nothing in a model to judge](../figures/reenskaug/lessons/a-model-answers-a-question-or-cannot-be-judged.md)
 
+**reynolds** (7)
+- [A feature added for convenience can change what is computable, so measure its power instead of assuming](../figures/reynolds/lessons/a-convenience-feature-can-change-what-is-computable.md)
+- [A theorem you cannot even state is telling you some construct's meaning is too thin](../figures/reynolds/lessons/an-unstateable-theorem-means-a-meaning-is-too-thin.md)
+- [To stop depending on a choice your host made, find the discipline that makes the choice irrelevant](../figures/reynolds/lessons/adopt-the-discipline-that-makes-your-hosts-choices-irrelevant.md)
+- [Turn what-happens-next into an ordinary value, and the special control constructs collapse into one](../figures/reynolds/lessons/make-what-happens-next-into-a-value.md)
+- [When a definition resists you, derive it from the theorems it has to support and prove your results parametric in it](../figures/reynolds/lessons/let-the-theorems-you-must-keep-determine-the-definition.md)
+- [When the same construct is forced on you in unrelated settings, you have found structure — factor it out](../figures/reynolds/lessons/repeated-independent-rediscovery-marks-a-real-abstraction.md)
+- [When your notion of correspondence stops working at higher order, weaken the notion rather than shrink the language](../figures/reynolds/lessons/weaken-the-notion-of-correspondence-until-it-crosses-higher-order.md)
+
 **schonfinkel** (4)
 - [A smaller basis is a purchase, not a free win](../figures/schonfinkel/lessons/a-smaller-basis-is-a-purchase-not-a-free-win.md)
 - [Bound names are bookkeeping, not meaning](../figures/schonfinkel/lessons/bound-names-are-bookkeeping-not-meaning.md)
 - [Widen what a value can be and arity stops mattering](../figures/schonfinkel/lessons/widen-what-a-value-can-be-and-arity-stops-mattering.md)
 - [Your primitives are the moves your notation cannot make silently](../figures/schonfinkel/lessons/your-primitives-are-the-moves-your-notation-cannot-make-silently.md)
+
+**scott** (5)
+- [Before accepting a restriction, find out whether it is forced by the mathematics or inherited as caution](../figures/scott/lessons/test-whether-a-restriction-is-mathematics-or-inherited-caution.md)
+- [Earn the right to infinite objects by building them as limits of finite ones](../figures/scott/lessons/earn-infinite-objects-as-limits-of-finite-ones.md)
+- [Formalize the property that carries the weight, not the one that happens to be true](../figures/scott/lessons/formalize-the-property-that-carries-the-weight.md)
+- [Keep the notation and the thing it denotes apart, because equivalence is a question about meanings](../figures/scott/lessons/keep-the-notation-and-the-thing-it-denotes-apart.md)
+- [Make undefinedness an ordinary value ordered by how much it tells you, not a hole outside the type](../figures/scott/lessons/make-undefinedness-a-value-not-an-exception.md)
 
 **steele** (11)
 - [A jump is a call whose value nobody wants, and a loop variable is a parameter, so control flow and data flow are one mechanism](../figures/steele/lessons/a-jump-is-a-call-whose-value-nobody-wants.md)
@@ -294,6 +319,16 @@ No works or lessons tagged with this subdomain yet.
 **strachey** (2)
 - [Name the concept before you formalise it](../figures/strachey/lessons/name-the-concept-before-you-formalise-it.md)
 - [Order things by how much they tell you](../figures/strachey/lessons/order-things-by-how-much-they-tell-you.md)
+
+**sussman** (8)
+- [A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable](../figures/sussman/lessons/a-model-that-copies-can-never-talk-about-sharing.md)
+- [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
+- [Check whether a clever encoding is secretly parasitic on the evaluation rule you were about to change](../figures/sussman/lessons/an-encoding-can-be-parasitic-on-the-rule-you-are-replacing.md)
+- [Choose among candidate primitives by which one explains the others, since one-way definability is the only asymmetry that carries information](../figures/sussman/lessons/pick-a-primitive-by-which-candidate-explains-the-others.md)
+- [Classify a process by what accumulates as it runs, not by what the source text looks like](../figures/sussman/lessons/classify-a-process-by-what-accumulates-not-by-how-it-looks.md)
+- [Deferred work is retained state, so a demand-driven discipline cannot express a loop no matter how the loop is written](../figures/sussman/lessons/deferred-work-is-retained-state.md)
+- [Push a conjectured symmetry until it predicts something you have not noticed, then go looking for it](../figures/sussman/lessons/use-a-conjectured-symmetry-to-predict-the-missing-piece.md)
+- [Try to encode a feature in your core, and let the locality of the encoding tell you whether it belongs there](../figures/sussman/lessons/encode-a-feature-to-learn-whether-it-is-really-primitive.md)
 
 **turing** (20)
 - [A guarantee whose precondition is as hard as the original problem has relocated the work, not removed it](../figures/turing/lessons/a-guarantee-whose-precondition-is-as-hard-as-the-problem-has-moved-the-work.md)
@@ -317,8 +352,22 @@ No works or lessons tagged with this subdomain yet.
 - [When a requirement is stated in words nobody can check, replace it with a test that has an outcome](../figures/turing/lessons/swap-an-undecidable-requirement-for-an-observable-test.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (1)
+**ullman** (2)
+- [Learn to recognize your algorithm being performed without a computer](../figures/ullman/lessons/learn-to-see-your-algorithm-being-performed-without-a-computer.md)
 - [When the exact question is provably unaffordable, change the question](../figures/ullman/lessons/when-the-exact-question-is-unaffordable-change-the-question.md)
+
+**vardi** (11)
+- [A language blind to arrangement cannot count, so hand it the arrangement deliberately](../figures/vardi/lessons/a-language-blind-to-arrangement-cannot-count.md)
+- [An ambiguous outcome should widen what you record, not reject the request](../figures/vardi/lessons/an-ambiguous-answer-should-widen-the-state-not-reject-the-request.md)
+- [An infinite conjunction is not a specification until you find its one-step equivalent](../figures/vardi/lessons/replace-an-infinite-conjunction-with-a-one-step-condition.md)
+- [Decide whether your state is closed under its own consequences, because that decides what deletion means](../figures/vardi/lessons/decide-whether-your-state-is-closed-under-consequence.md)
+- [Equal expressive power does not mean equal leverage: techniques attach to structure, not to what is sayable](../figures/vardi/lessons/equal-expressive-power-does-not-mean-equal-proof-leverage.md)
+- [Finitize one dimension and evaluation stops being computation, becoming recognition](../figures/vardi/lessons/finitize-one-dimension-and-evaluation-becomes-recognition.md)
+- [Paired operations are rarely duals: check which direction your invariant survives](../figures/vardi/lessons/paired-operations-are-rarely-duals-check-which-way-the-invariant-survives.md)
+- [To prove something impossible, enlarge it until the impossibility is easy, then inherit the result](../figures/vardi/lessons/to-prove-something-impossible-enlarge-it-until-the-proof-is-easy.md)
+- [To show a description is realizable, build the artifact out of the descriptions themselves](../figures/vardi/lessons/to-show-a-description-is-realizable-build-the-thing-out-of-descriptions.md)
+- [Turn a question about what can be said into a game about what an adversary can distinguish](../figures/vardi/lessons/turn-a-definability-question-into-a-two-player-game.md)
+- [When an unproven conjecture blocks the distinction you need, change the yardstick to one you can actually settle](../figures/vardi/lessons/when-the-conjecture-blocks-you-change-the-yardstick.md)
 
 **von-thun** (9)
 - [A right answer is no proof your interpreter is doing the interpreting](../figures/von-thun/lessons/a-right-answer-is-no-proof-your-interpreter-is-doing-the-interpreting.md)

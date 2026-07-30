@@ -27,3 +27,5 @@ tags: [work]
 - [Carry each conclusion's grounds with it, and inconsistency stops being fatal because consistency becomes local](../lessons/carry-the-grounds-and-inconsistency-stops-being-fatal.md)
 - [Put failure in the infrastructure and make it name its causes; a dead end that knows why it failed eliminates a region instead of a point](../lessons/make-failure-informative-instead-of-encoding-around-it.md)
 - [Bookkeeping attached to an aggregate can never be finer than the aggregate, and its errors are silent because the answers stay right](../lessons/metadata-is-only-as-precise-as-the-unit-it-is-attached-to.md)
+- [Demand-driven evaluation silently assumes one producer and a final answer; drop either and pulling has no definition until interest itself becomes data](../lessons/demand-is-undefined-when-a-place-has-many-sources.md)
+- [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)

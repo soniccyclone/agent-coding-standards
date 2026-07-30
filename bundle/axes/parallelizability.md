@@ -20,7 +20,7 @@ units of work.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-177 lessons from 65 figures.
+201 lessons from 71 figures.
 
 **abiteboul** (2)
 - [How you schedule the steps is part of what the program means](../figures/abiteboul/lessons/how-you-schedule-the-rules-is-part-of-what-they-mean.md)
@@ -168,6 +168,16 @@ No lessons scored on this axis yet.
 - [Separate the part that must be correct from the part that must be tuned, and let only the tuned part be replaceable](../figures/herlihy/lessons/separate-the-mechanism-that-is-correct-from-the-policy-that-makes-progress.md)
 - [Shrink what you hold before getting clever about arbitrating collisions](../figures/herlihy/lessons/shrink-the-window-before-arbitrating-the-collisions.md)
 
+**jones** (8)
+- [Choose the property that must hold at every intermediate moment before you design the parts that run](../figures/jones/lessons/choose-the-property-that-holds-mid-flight-first.md)
+- [Constrain shared state to move in one direction, and a stale read becomes merely conservative](../figures/jones/lessons/make-shared-state-move-in-one-direction.md)
+- [Give every component a written statement of the interference it may assume and the interference it may inflict](../figures/jones/lessons/write-down-what-you-assume-about-interference.md)
+- [Let concurrent participants coexist by partitioning what each may change, not by scheduling when each may run](../figures/jones/lessons/partition-the-right-to-change.md)
+- [Record order-independence at the moment you know it, because it cannot be recovered later](../figures/jones/lessons/record-order-independence-while-you-still-know-it.md)
+- [Treat shared memory and message passing as alternative realizations of one abstraction, chosen late](../figures/jones/lessons/treat-shared-variable-versus-message-as-a-late-choice.md)
+- [Two fragments with the same effect in isolation are not interchangeable once anything else can watch](../figures/jones/lessons/sequential-equivalence-is-not-equivalence-under-interference.md)
+- [When participants cannot coexist, weaken each assumption until the promises can supply it](../figures/jones/lessons/weaken-the-assumption-until-the-promises-can-supply-it.md)
+
 **karp** (1)
 - [Stop optimizing the single step; find the batch of non-interfering steps and bound how many batches there are](../figures/karp/lessons/batch-non-interfering-improvements-into-phases.md)
 
@@ -262,6 +272,9 @@ No lessons scored on this axis yet.
 - [Split a two-party protocol at the ownership boundary so each side's policy lives in the object it owns](../figures/reenskaug/lessons/split-a-protocol-at-the-ownership-boundary.md)
 - [The compositions that stay safe are exactly the ones that refuse to multiply the state space](../figures/reenskaug/lessons/safe-composition-is-composition-that-does-not-multiply-states.md)
 
+**reynolds** (1)
+- [Non-interference between processes is a claim about resource ownership, and syntax cannot check it for you](../figures/reynolds/lessons/non-interference-is-a-resource-partition-not-a-syntactic-rule.md)
+
 **ritchie** (3)
 - [Put the variability in the joints between components, not inside the components](../figures/ritchie/lessons/put-the-variability-in-the-joints.md)
 - [Unifying features into one mechanism buys simplicity by pinning semantics you may later need to loosen](../figures/ritchie/lessons/unification-buys-simplicity-and-forecloses-reinterpretation.md)
@@ -300,6 +313,10 @@ No lessons scored on this axis yet.
 - [Preserve the programmer's indifference to order](../figures/strachey/lessons/preserve-the-programmers-indifference-to-order.md)
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
 
+**sussman** (2)
+- [If updates only ever add information, order stops mattering — and the single operation that takes information away costs you that freedom everywhere](../figures/sussman/lessons/one-retraction-costs-you-the-whole-schedule-freedom.md)
+- [Put the combining rule in the shared place rather than in the producers, and directions of flow you never enumerated become available](../figures/sussman/lessons/put-the-combining-rule-in-the-shared-place.md)
+
 **sutherland** (1)
 - [Let stages negotiate locally instead of scheduling them globally](../figures/sutherland/lessons/let-stages-negotiate-locally-instead-of-scheduling-them-globally.md)
 
@@ -326,5 +343,24 @@ No lessons scored on this axis yet.
 **ungar** (1)
 - [Start the likely case and check the assumption alongside it, rather than checking first](../figures/ungar/lessons/assume-the-common-case-and-verify-it-concurrently.md)
 
+**vardi** (4)
+- [A broadcast is not n messages: the mode of delivery, not the payload, is what a group can build on](../figures/vardi/lessons/a-broadcast-is-not-n-messages.md)
+- [A group's knowledge is its own object, above and below the sum of its members'](../figures/vardi/lessons/a-groups-knowledge-is-its-own-object.md)
+- [Finitize one dimension and evaluation stops being computation, becoming recognition](../figures/vardi/lessons/finitize-one-dimension-and-evaluation-becomes-recognition.md)
+- [Replace an inner recomputation with a guess you can check, and a product of costs becomes a sum](../figures/vardi/lessons/replace-inner-recomputation-with-a-guess-you-can-check.md)
+
 **von-thun** (1)
 - [Notation that over-specifies order hides independence you already have](../figures/von-thun/lessons/notation-that-over-specifies-order-hides-independence-you-already-have.md)
+
+**wilkes** (6)
+- [A deliberately simple model at the user's level is what allows sophistication to be stacked above it](../figures/wilkes/lessons/one-thing-at-a-time-is-what-lets-abstraction-stack.md)
+- [Compare two mechanisms by counting how many of their properties have to be exactly right](../figures/wilkes/lessons/count-how-many-things-have-to-be-exactly-right.md)
+- [Judge a parallel design by its utilization on the problems you did not have in mind](../figures/wilkes/lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)
+- [Specify what a component requires from its environment, not only what it offers, and the call-versus-message choice becomes reversible](../figures/wilkes/lessons/specify-the-environment-a-component-needs.md)
+- [State crash safety as ordering invariants, then defer every write the invariants do not pin down](../figures/wilkes/lessons/state-the-ordering-invariants-then-defer-freely.md)
+- [Whoever saves your state holds your secrets, so look for leaks in the suspend mechanism and not in the interface](../figures/wilkes/lessons/whoever-saves-your-state-holds-your-secrets.md)
+
+**wirth** (3)
+- [Make the set of interleaving points enumerable by construction, and hang the exclusion on the boundary](../figures/wirth/lessons/make-the-set-of-interleaving-points-enumerable-by-construction.md)
+- [Pick the representation that turns the operations into machine primitives, then bound the abstraction to keep it](../figures/wirth/lessons/pick-the-representation-that-turns-the-operations-into-machine-primitives.md)
+- [Separate the structure from the position in it, and give the position its own invariant](../figures/wirth/lessons/separate-the-structure-from-the-position-in-it.md)

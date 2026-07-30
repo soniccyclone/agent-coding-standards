@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-194 lessons from 28 figures.
+199 lessons from 30 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -214,6 +214,12 @@ No works or lessons tagged with this subdomain yet.
 - [A model you can rename into your rival's is your rival's model](../figures/stonebraker/lessons/a-model-you-can-rename-into-your-rival-s-is-your-rival-s-model.md)
 - [The seam between two languages is where the cost collects](../figures/stonebraker/lessons/the-seam-between-two-languages-is-where-the-cost-collects.md)
 
+**sussman** (4)
+- [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../figures/sussman/lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
+- [Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table](../figures/sussman/lessons/dispatch-is-a-matrix-and-every-design-picks-a-slicing.md)
+- [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../figures/sussman/lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
+- [When you cannot tell whether two ideas differ, implement both in one substrate and see whether the artifacts coincide](../figures/sussman/lessons/build-it-to-find-out-whether-two-ideas-are-the-same.md)
+
 **sutherland** (21)
 - [A projection is only usable if it carries the way back to the node that made it](../figures/sutherland/lessons/a-projection-must-carry-its-way-back-to-the-node.md)
 - [An invariant you cannot point at cannot be maintained](../figures/sutherland/lessons/an-invariant-you-cannot-point-at-cannot-be-maintained.md)
@@ -268,3 +274,6 @@ No works or lessons tagged with this subdomain yet.
 
 **von-thun** (1)
 - [Configuration is just a definition you resolve later](../figures/von-thun/lessons/configuration-is-just-a-definition-you-resolve-later.md)
+
+**wilkes** (1)
+- [A user's overreaction to a demonstration is wrong about the solution and right about the need](../figures/wilkes/lessons/an-overreaction-still-carries-real-information.md)

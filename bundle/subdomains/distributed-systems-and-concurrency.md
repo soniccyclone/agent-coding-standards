@@ -17,7 +17,7 @@ single-machine formalisms don't have to account for.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-279 lessons from 52 figures.
+303 lessons from 58 figures.
 
 **abiteboul** (4)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -64,8 +64,9 @@ No works or lessons tagged with this subdomain yet.
 - [Separate the guarantee you require from the moment you establish it, and pick the moment per boundary](../figures/cardelli/lessons/when-you-check-is-not-what-you-guarantee.md)
 - [When code moves, move its environment with it, because the worst failure is the one that succeeds with the wrong meaning](../figures/cardelli/lessons/ship-the-environment-not-the-text.md)
 
-**church** (1)
+**church** (2)
 - [Order independence is a property you purchase with restrictions, and convenience in the core can spend it](../figures/church/lessons/order-independence-is-bought-not-given.md)
+- [The order in which you alternate 'for every' and 'there is' is the whole content of a guarantee](../figures/church/lessons/the-order-of-for-all-and-there-exists-is-the-claim.md)
 
 **clarke** (5)
 - [A specification tight enough to check is tight enough to build from](../figures/clarke/lessons/a-spec-tight-enough-to-check-is-tight-enough-to-build-from.md)
@@ -181,6 +182,18 @@ No works or lessons tagged with this subdomain yet.
 
 **hilbert** (1)
 - [When something resists being built, go prove it cannot be built under the assumptions you made](../figures/hilbert/lessons/an-impossibility-proof-is-a-result.md)
+
+**jones** (10)
+- [Choose the property that must hold at every intermediate moment before you design the parts that run](../figures/jones/lessons/choose-the-property-that-holds-mid-flight-first.md)
+- [Constrain shared state to move in one direction, and a stale read becomes merely conservative](../figures/jones/lessons/make-shared-state-move-in-one-direction.md)
+- [Give every component a written statement of the interference it may assume and the interference it may inflict](../figures/jones/lessons/write-down-what-you-assume-about-interference.md)
+- [Let concurrent participants coexist by partitioning what each may change, not by scheduling when each may run](../figures/jones/lessons/partition-the-right-to-change.md)
+- [Record order-independence at the moment you know it, because it cannot be recovered later](../figures/jones/lessons/record-order-independence-while-you-still-know-it.md)
+- [Replace a blanket restriction with an obligation you can discharge case by case](../figures/jones/lessons/replace-blanket-restrictions-with-dischargeable-obligations.md)
+- [Specify a fault-tolerant component as ideal behaviour plus the substrate misbehaviour it survives](../figures/jones/lessons/specify-reliability-as-ideal-behaviour-plus-tolerated-misbehaviour.md)
+- [Treat shared memory and message passing as alternative realizations of one abstraction, chosen late](../figures/jones/lessons/treat-shared-variable-versus-message-as-a-late-choice.md)
+- [Two fragments with the same effect in isolation are not interchangeable once anything else can watch](../figures/jones/lessons/sequential-equivalence-is-not-equivalence-under-interference.md)
+- [When participants cannot coexist, weaken each assumption until the promises can supply it](../figures/jones/lessons/weaken-the-assumption-until-the-promises-can-supply-it.md)
 
 **karp** (2)
 - [When decisions are irrevocable and the future is unknown, redefine quality as a ratio to an oracle, then prove the ceiling so you know when to stop trying](../figures/karp/lessons/judge-irrevocable-decisions-against-an-oracle-and-prove-the-ceiling.md)
@@ -315,6 +328,9 @@ No works or lessons tagged with this subdomain yet.
 - [Split a two-party protocol at the ownership boundary so each side's policy lives in the object it owns](../figures/reenskaug/lessons/split-a-protocol-at-the-ownership-boundary.md)
 - [Two organizations can share one coherent system while nobody anywhere understands all of it](../figures/reenskaug/lessons/integrate-through-shared-models-so-nobody-holds-the-whole.md)
 
+**reynolds** (1)
+- [Non-interference between processes is a claim about resource ownership, and syntax cannot check it for you](../figures/reynolds/lessons/non-interference-is-a-resource-partition-not-a-syntactic-rule.md)
+
 **ritchie** (4)
 - [Decline the guarantees your actual environment never asks for, and be explicit about which ones you kept](../figures/ritchie/lessons/decline-the-guarantees-your-environment-never-needed.md)
 - [Promote something to a primitive only when its absence has a demonstrated cost, not a theoretical one](../figures/ritchie/lessons/promote-to-primitive-only-on-demonstrated-cost.md)
@@ -370,6 +386,11 @@ No works or lessons tagged with this subdomain yet.
 - [Preserve the programmer's indifference to order](../figures/strachey/lessons/preserve-the-programmers-indifference-to-order.md)
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
 
+**sussman** (3)
+- [Demand-driven evaluation silently assumes one producer and a final answer; drop either and pulling has no definition until interest itself becomes data](../figures/sussman/lessons/demand-is-undefined-when-a-place-has-many-sources.md)
+- [Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited](../figures/sussman/lessons/give-a-new-mode-to-an-existing-mechanism-and-audit-what-it-inherits.md)
+- [If updates only ever add information, order stops mattering — and the single operation that takes information away costs you that freedom everywhere](../figures/sussman/lessons/one-retraction-costs-you-the-whole-schedule-freedom.md)
+
 **sutherland** (1)
 - [Let stages negotiate locally instead of scheduling them globally](../figures/sutherland/lessons/let-stages-negotiate-locally-instead-of-scheduling-them-globally.md)
 
@@ -399,5 +420,20 @@ No works or lessons tagged with this subdomain yet.
 - [Restartability is a shape you keep, not a feature you add](../figures/ullman/lessons/restartability-is-a-shape-not-a-feature.md)
 - [The dependency between inputs and outputs bounds what any parallel version can cost](../figures/ullman/lessons/what-each-output-needs-bounds-what-parallelism-can-cost.md)
 
+**vardi** (3)
+- [A broadcast is not n messages: the mode of delivery, not the payload, is what a group can build on](../figures/vardi/lessons/a-broadcast-is-not-n-messages.md)
+- [A group's knowledge is its own object, above and below the sum of its members'](../figures/vardi/lessons/a-groups-knowledge-is-its-own-object.md)
+- [Represent ignorance as the set of alternatives you cannot rule out, and let knowledge be what survives across all of them](../figures/vardi/lessons/represent-ignorance-as-the-set-of-alternatives-you-cannot-rule-out.md)
+
 **von-thun** (1)
 - [Notation that over-specifies order hides independence you already have](../figures/von-thun/lessons/notation-that-over-specifies-order-hides-independence-you-already-have.md)
+
+**wilkes** (5)
+- [Compare two mechanisms by counting how many of their properties have to be exactly right](../figures/wilkes/lessons/count-how-many-things-have-to-be-exactly-right.md)
+- [Judge a parallel design by its utilization on the problems you did not have in mind](../figures/wilkes/lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)
+- [Leaving a rule unenforced needs an argument about who could break it, not about how likely breakage is](../figures/wilkes/lessons/an-unenforced-rule-needs-a-bounded-set-of-violators.md)
+- [Specify what a component requires from its environment, not only what it offers, and the call-versus-message choice becomes reversible](../figures/wilkes/lessons/specify-the-environment-a-component-needs.md)
+- [Whoever saves your state holds your secrets, so look for leaks in the suspend mechanism and not in the interface](../figures/wilkes/lessons/whoever-saves-your-state-holds-your-secrets.md)
+
+**wirth** (1)
+- [Make the set of interleaving points enumerable by construction, and hang the exclusion on the boundary](../figures/wirth/lessons/make-the-set-of-interleaving-points-enumerable-by-construction.md)

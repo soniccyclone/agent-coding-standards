@@ -22,4 +22,6 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/scott__toward-a-mathematical-semantics-for-computer-languages.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Give each construct a meaning of its own instead of explaining the whole by translating it away](../lessons/define-meaning-clause-by-clause-not-by-translation.md)
+- [Keep the notation and the thing it denotes apart, because equivalence is a question about meanings](../lessons/keep-the-notation-and-the-thing-it-denotes-apart.md)
+- [Separate the fixed skeleton from the pluggable primitives, so one account covers a whole class of models](../lessons/parameterize-over-a-class-of-models-not-one.md)

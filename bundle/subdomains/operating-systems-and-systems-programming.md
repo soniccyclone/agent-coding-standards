@@ -17,7 +17,7 @@ philosophy here, it's the actual subject matter.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-271 lessons from 43 figures.
+319 lessons from 49 figures.
 
 **abrial** (1)
 - [Every guarantee has an edge; state where it is and cover the outside with a mechanism of a different kind](../figures/abrial/lessons/name-the-edge-of-your-guarantee.md)
@@ -147,6 +147,9 @@ No works or lessons tagged with this subdomain yet.
 **hilbert** (1)
 - [Nothing you actually run is infinite; every guarantee has to be cashed out against the finite mechanism](../figures/hilbert/lessons/cash-out-the-idealization-against-the-finite-machine.md)
 
+**jones** (1)
+- [To get something existing under intellectual control, describe the idealized version first and relate the real one back to it](../figures/jones/lessons/describe-the-idealized-version-first-then-relate-the-real-one.md)
+
 **knuth** (2)
 - [Find the state that makes already-consumed input unnecessary, and a scan becomes a stream](../figures/knuth/lessons/find-the-state-that-makes-the-consumed-input-unnecessary.md)
 - [Give the axis of local variation its own artifact, and edits along the two axes stop colliding](../figures/knuth/lessons/make-the-axis-of-local-variation-a-separate-artifact.md)
@@ -249,6 +252,9 @@ No works or lessons tagged with this subdomain yet.
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
+**reynolds** (1)
+- [Design against an idealized machine, then insist the real one turn every deviation into a hard failure](../figures/reynolds/lessons/design-for-the-idealized-machine-and-make-the-gap-fatal.md)
+
 **ritchie** (19)
 - [A component's output is an interface, so verbosity and interrogation are design errors rather than taste](../figures/ritchie/lessons/design-output-for-the-next-program-not-the-reader.md)
 - [A feature that will not fit is evidence against your model, not a case for a special rule](../figures/ritchie/lessons/a-feature-that-will-not-fit-indicts-the-model.md)
@@ -321,6 +327,10 @@ No works or lessons tagged with this subdomain yet.
 - [Put the power to change a guard out of reach of what it guards](../figures/strachey/lessons/put-the-power-to-change-a-guard-out-of-reach-of-what-it-guards.md)
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
 
+**tarjan** (2)
+- [Choose the cost measure before the algorithm, because the measure decides the answer](../figures/tarjan/lessons/choose-the-cost-measure-before-the-algorithm.md)
+- [Price out what foresight is worth; when the ratio will not close, buy slack instead](../figures/tarjan/lessons/price-out-foresight-then-buy-slack-instead.md)
+
 **thompson** (20)
 - [A closed interface vocabulary is what lets every newcomer inherit the ecosystem](../figures/thompson/lessons/a-closed-vocabulary-lets-newcomers-inherit-the-ecosystem.md)
 - [A component that consumes the same interface it provides can be interposed anywhere](../figures/thompson/lessons/a-component-that-consumes-the-interface-it-provides-can-be-interposed.md)
@@ -368,6 +378,9 @@ No works or lessons tagged with this subdomain yet.
 - [State an interface as classes separated by a margin, and error stops accumulating across the boundary](../figures/turing/lessons/state-the-contract-as-classes-far-enough-apart-to-restore.md)
 - [The rate at which you cross a threshold changes the outcome, not just the time it takes to get there](../figures/turing/lessons/how-fast-you-cross-a-threshold-changes-the-result.md)
 
+**ullman** (1)
+- [A randomizing function is only random relative to the input population you actually feed it](../figures/ullman/lessons/a-randomizing-function-is-only-random-against-the-inputs-you-feed-it.md)
+
 **ungar** (6)
 - [Judge an optimization by whether it shows through, not by how much it saves](../figures/ungar/lessons/an-optimization-that-shows-through-is-disqualified.md)
 - [Price every feature by what its absence would cost, in a unit that lets the prices add up](../figures/ungar/lessons/price-a-feature-by-the-cost-of-removing-it.md)
@@ -375,3 +388,50 @@ No works or lessons tagged with this subdomain yet.
 - [Treat the boundary between layers as a design variable, and decide what lives on each side last](../figures/ungar/lessons/keep-the-layer-boundary-movable.md)
 - [Whatever dimension your metric leaves out is the dimension your design will quietly spend](../figures/ungar/lessons/a-metric-that-omits-a-dimension-gets-spent-there.md)
 - [When a population's behavior is sharply split, find the cheap observable that separates it and stop treating it uniformly](../figures/ungar/lessons/stratify-a-population-by-a-cheap-predictor.md)
+
+**wilkes** (34)
+- [A convenience pool of ambient authority is invisible overprivilege, and its harmlessness is relative to a model you may change](../figures/wilkes/lessons/ambient-convenience-authority-is-invisible-overprivilege.md)
+- [A deliberately simple model at the user's level is what allows sophistication to be stacked above it](../figures/wilkes/lessons/one-thing-at-a-time-is-what-lets-abstraction-stack.md)
+- [A design principle earns its keep by settling the hundreds of small decisions nobody could argue individually](../figures/wilkes/lessons/a-principle-that-settles-the-arbitrary-cases.md)
+- [A service that both a layer and its clients require cannot live in either, and that is a verdict on the layering](../figures/wilkes/lessons/a-service-both-sides-need-belongs-to-neither.md)
+- [A uniform rule about failure doubles as a complexity budget you did not have to argue for](../figures/wilkes/lessons/a-uniform-failure-rule-is-a-complexity-budget.md)
+- [Ask what your fixed part is a special case of, then price the version where it varies](../figures/wilkes/lessons/a-fixed-table-is-a-writable-one-with-a-constraint.md)
+- [Choose a representation by what the management operations must iterate over, not by which is conceptually cleaner](../figures/wilkes/lessons/keep-together-what-must-be-managed-together.md)
+- [Compare two mechanisms by counting how many of their properties have to be exactly right](../figures/wilkes/lessons/count-how-many-things-have-to-be-exactly-right.md)
+- [Count the problems a design makes impossible to state, not just the features it provides](../figures/wilkes/lessons/count-the-problems-your-design-cannot-have.md)
+- [Define complexity as the interconnection that hides logical structure, not as the amount of stuff](../figures/wilkes/lessons/define-complexity-as-the-connection-that-hides-structure.md)
+- [Design the principled version first so that every economy you take afterwards has a visible price](../figures/wilkes/lessons/keep-the-principled-layout-as-the-yardstick-for-every-economy.md)
+- [Expect a long, demoralizing gap between demonstrating a principle and exploiting the technology behind it](../figures/wilkes/lessons/the-trough-between-demonstration-and-full-engineering.md)
+- [Find the corner of the design still being done ad hoc, and recast it as a program over a small set of primitive moves](../figures/wilkes/lessons/turn-the-ad-hoc-corner-of-a-design-into-a-program.md)
+- [Hierarchy is right for organizing control and wrong for organizing authority](../figures/wilkes/lessons/hierarchy-fits-control-flow-not-authority.md)
+- [Judge a parallel design by its utilization on the problems you did not have in mind](../figures/wilkes/lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)
+- [Keep building things that are not meant to become products, especially when the unit of composition changes](../figures/wilkes/lessons/builds-that-are-not-products-are-how-a-field-learns.md)
+- [Let a fixed core enforce distinctions whose meaning it cannot interpret](../figures/wilkes/lessons/enforce-distinctions-you-cannot-interpret.md)
+- [Let a request escalate along the call chain until it meets enough authority, instead of asking who has it](../figures/wilkes/lessons/let-a-request-escalate-until-it-meets-authority.md)
+- [Let the requirement for privilege, not functional cohesion, draw your module boundaries](../figures/wilkes/lessons/let-the-privilege-requirement-draw-the-boundary.md)
+- [Make the substrate-independent form the authoritative one, not a translation you produce on demand](../figures/wilkes/lessons/make-the-portable-form-the-authoritative-one.md)
+- [Prefer restrictions that make the forbidden thing unnameable over restrictions that merely catch the attempt](../figures/wilkes/lessons/make-the-forbidden-unnameable.md)
+- [Price the generality you add for elegance by asking what the structure would actually change](../figures/wilkes/lessons/price-the-generality-you-add-for-elegance.md)
+- [Put a number on how much extra you would pay for uniformity, so the trade stops being a matter of taste](../figures/wilkes/lessons/name-the-exchange-rate-you-would-pay-for-uniformity.md)
+- [Refuse to build a craft around a constraint you expect the technology to remove](../figures/wilkes/lessons/dont-build-a-craft-around-a-constraint-you-expect-to-disappear.md)
+- [State crash safety as ordering invariants, then defer every write the invariants do not pin down](../figures/wilkes/lessons/state-the-ordering-invariants-then-defer-freely.md)
+- [Test a candidate architecture against the controlled exceptions experience says you will need](../figures/wilkes/lessons/test-an-architecture-against-the-exceptions-you-know-you-need.md)
+- [The cost of crossing a boundary decides how much ends up inside it](../figures/wilkes/lessons/the-cost-of-crossing-decides-what-ends-up-inside.md)
+- [The metaphor you adopt for a primitive fixes which operations are cheap and which become impossible](../figures/wilkes/lessons/the-metaphor-you-pick-fixes-what-is-affordable.md)
+- [The return on minimum privilege is inspectable blast radius, and it is paid mostly in development and change](../figures/wilkes/lessons/least-privilege-pays-in-inspectability.md)
+- [To control an operation, guard the values it accepts instead of the actors allowed to perform it](../figures/wilkes/lessons/guard-the-value-not-only-the-actor.md)
+- [Trade repeated work for the absence of state: abandon and retry instead of recursing](../figures/wilkes/lessons/trade-repeated-work-for-the-absence-of-state.md)
+- [Two mechanisms maintained for different reasons that must agree somewhere give you a free oracle](../figures/wilkes/lessons/two-mechanisms-that-must-agree-are-an-oracle.md)
+- [When accountability fights speed, split the mechanism at the frequency boundary rather than picking one policy](../figures/wilkes/lessons/split-a-mechanism-at-the-frequency-boundary.md)
+- [Whoever saves your state holds your secrets, so look for leaks in the suspend mechanism and not in the interface](../figures/wilkes/lessons/whoever-saves-your-state-holds-your-secrets.md)
+
+**wirth** (9)
+- [Bound an ambitious project with a few axioms, and expect them to contradict the fashion](../figures/wirth/lessons/bound-a-project-with-axioms-chosen-against-the-fashion.md)
+- [Buy mechanization with a restriction on access, and expect it to redraw the algorithms](../figures/wirth/lessons/buy-mechanization-with-a-restriction-on-access.md)
+- [Confine the unsafe capability to a named region, and make requesting it visible in the text](../figures/wirth/lessons/confine-the-unsafe-capability-and-make-requesting-it-visible.md)
+- [Enumerate the machine-dependent parameters and publish the list; its length is the portability claim](../figures/wirth/lessons/enumerate-the-machine-dependent-parameters-and-publish-the-list.md)
+- [Find the notion the hardware event already is, instead of adding machinery to describe it](../figures/wirth/lessons/find-the-notion-the-hardware-event-already-is.md)
+- [If the language can express a facility, the facility does not belong in the language](../figures/wirth/lessons/if-the-system-can-express-it-it-does-not-belong-in-the-system.md)
+- [Make the set of interleaving points enumerable by construction, and hang the exclusion on the boundary](../figures/wirth/lessons/make-the-set-of-interleaving-points-enumerable-by-construction.md)
+- [Ship a minimal core with an extension mechanism, and earn features by reusing it rather than by adding them](../figures/wirth/lessons/earn-features-by-reusing-one-mechanism.md)
+- [Unify the substrate of one system, not the demands of every user](../figures/wirth/lessons/unify-the-substrate-of-one-system-not-the-needs-of-every-user.md)

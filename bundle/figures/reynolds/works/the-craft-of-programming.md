@@ -48,3 +48,4 @@ tags: [work]
 - [A mechanism's hazard and its expressive power are often the same property seen twice](../lessons/a-hazard-and-a-capability-are-often-the-same-property.md)
 - [To say anything about change, name the old value with something the program cannot touch](../lessons/name-the-old-value-with-something-the-program-cannot-touch.md)
 - [Keep "it finishes" and "it is right" as two separate arguments, because one can die while the other still stands](../lessons/keep-finishing-and-being-right-as-two-separate-arguments.md)
+- [Structure is a property of what a reader can see, not a record of the order you built it in](../lessons/structure-is-what-the-reader-can-see-not-how-you-built-it.md)
