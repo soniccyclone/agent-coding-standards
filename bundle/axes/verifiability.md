@@ -20,7 +20,7 @@ subdomain is organized around.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-809 lessons from 76 figures.
+825 lessons from 76 figures.
 
 **abiteboul** (7)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -763,17 +763,33 @@ No lessons scored on this axis yet.
 - [State a request's real requirements as data, because the code that could exploit them has not been written yet](../figures/rashid/lessons/state-requirements-as-data-so-parties-you-never-anticipated-can-act-on-them.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
-**reenskaug** (10)
+**reenskaug** (26)
+- [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [A discipline is worth exactly what it forbids](../figures/reenskaug/lessons/a-discipline-is-worth-what-it-forbids.md)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
+- [A picture too tangled to draw honestly is evidence about the program, not about the picture](../figures/reenskaug/lessons/a-diagram-too-complex-to-draw-indicts-the-program.md)
 - [A requirement nobody can point at in the code cannot be reviewed](../figures/reenskaug/lessons/a-requirement-you-cannot-point-at-in-the-code-cannot-be-reviewed.md)
 - [An interface is factored correctly when a program can stand in for the user](../figures/reenskaug/lessons/an-interface-is-right-when-a-program-can-stand-in-for-the-user.md)
+- [Building it is the experiment that tells you whether your separation of concerns was real](../figures/reenskaug/lessons/implementation-is-the-test-of-whether-your-decomposition-was-real.md)
+- [Choose the conformance check that works in every case over the one that would be elegant](../figures/reenskaug/lessons/prefer-the-conformance-check-that-always-applies.md)
 - [Composition is reuse only when it preserves what you already checked](../figures/reenskaug/lessons/composition-is-reuse-only-if-it-preserves-what-you-already-checked.md)
+- [Constrain a variable by what its occupant must be able to do, never by how the occupant is built](../figures/reenskaug/lessons/type-on-what-an-object-can-do-not-on-how-it-is-built.md)
+- [Draw a boundary, distrust everything crossing it, and trust everything inside](../figures/reenskaug/lessons/check-at-the-firewall-and-trust-inside-it.md)
+- [Give each attribute one legal direction of inquiry, and forbid the other](../figures/reenskaug/lessons/give-each-attribute-one-legal-direction-of-inquiry.md)
+- [Introduce the expensive notation last, and prefer redesigning the thing so you never need it](../figures/reenskaug/lessons/defer-the-notation-whose-cost-is-volume.md)
+- [Known confusion is safe; it is the undetected mismatch that destroys projects](../figures/reenskaug/lessons/undetected-agreement-is-the-dangerous-state.md)
 - [Local correctness does not compose when \"correct\" depends on the caller's purpose](../figures/reenskaug/lessons/local-correctness-does-not-compose-when-correct-depends-on-context.md)
 - [Many views, one model — never let a view become the model](../figures/reenskaug/lessons/many-views-one-model-never-let-a-view-become-the-model.md)
+- [Name every assumption that crosses a component boundary, then freeze exactly that and improve everything behind it](../figures/reenskaug/lessons/specify-and-freeze-the-surface-area.md)
+- [Of the programs that work, confine yourself to the ones you can understand — the machine will accept far worse](../figures/reenskaug/lessons/restrict-yourself-to-the-programs-you-can-understand.md)
 - [Permission belongs to the relationship, not to the interface](../figures/reenskaug/lessons/permission-belongs-to-the-relationship-not-the-interface.md)
+- [Sort your correctness claims by who can check them, because a tool's silence is not approval](../figures/reenskaug/lessons/classify-your-correctness-claims-by-who-can-check-them.md)
 - [State whose meaning expires with the operation must not be stored where the object lives](../figures/reenskaug/lessons/state-whose-meaning-expires-should-not-be-stored-where-the-object-lives.md)
+- [The compositions that stay safe are exactly the ones that refuse to multiply the state space](../figures/reenskaug/lessons/safe-composition-is-composition-that-does-not-multiply-states.md)
 - [The rigidity that makes an organization inhuman is exactly right for machines](../figures/reenskaug/lessons/rigidity-that-is-inhuman-is-correct-for-machines.md)
+- [Treat any exclamation of surprise from a user as a bug report against the design](../figures/reenskaug/lessons/astonishment-is-a-defect-report.md)
+- [When automatic derivation fails, require a declaration and mechanically audit it for completeness](../figures/reenskaug/lessons/when-derivation-fails-require-a-declaration-you-can-audit.md)
+- [When you borrow a mechanism, permit it less than its source did](../figures/reenskaug/lessons/deliberately-narrow-a-borrowed-mechanism.md)
 
 **ritchie** (13)
 - [A live body of existing code is the dominant design constraint, and the concessions it extracts are permanent](../figures/ritchie/lessons/a-live-corpus-is-the-dominant-design-constraint.md)

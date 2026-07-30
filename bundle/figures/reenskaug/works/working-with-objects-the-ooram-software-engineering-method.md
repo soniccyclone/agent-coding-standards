@@ -76,25 +76,33 @@ tags: [work]
 - [Ask which parts of a famous decomposition were forced by the language rather than by the problem](../lessons/mvcs-author-on-which-of-its-splits-was-a-language-artifact.md)
 - [Showing two views of one thing at once costs the feeling that the thing is real, and that is a choice to make deliberately](../lessons/multiple-views-cost-you-the-illusion-of-a-concrete-thing.md)
 - [There are exactly three ways to promise a delivery date, and two of them are honest](../lessons/the-three-ways-to-make-a-firm-commitment.md)
+- [A caller that walks the structure to reach a service has absorbed the structure](../lessons/a-caller-that-walks-the-structure-has-absorbed-the-structure.md)
+- [Simplicity is a property of the whole a user must hold, not of each part](../lessons/simplicity-is-a-property-of-the-whole-a-user-must-hold.md)
+- [Write requirements as limits on what the user is permitted to have to know](../lessons/write-requirements-as-limits-on-what-the-user-must-know.md)
+- [Give each attribute one legal direction of inquiry, and forbid the other](../lessons/give-each-attribute-one-legal-direction-of-inquiry.md)
+- [When the vocabulary you inherited is ambiguous, coin your own rather than guess at the original intent](../lessons/coin-your-own-terms-rather-than-guess-at-inherited-intent.md)
+- [A responsibility that keeps changing owners belongs to whoever already carries its obligations](../lessons/home-a-roving-responsibility-where-its-obligations-already-live.md)
+- [Size a general escape hatch to what existing code actually needed, and admit when you cannot justify it](../lessons/size-the-escape-hatch-to-what-existing-code-actually-needed.md)
+- [When automatic derivation fails, require a declaration and mechanically audit it for completeness](../lessons/when-derivation-fails-require-a-declaration-you-can-audit.md)
 
-_PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
-(The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
-model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
-attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. **Chapters 0-8 read in full, plus chapter 9 sections 9.1-9.3.3** (through line
-14719, book page ~339 of 497). Next unread line is 14720, inside chapter 9 section
-9.3.3 — remaining in ch9: the rest of the input models, the Scroller role model,
-and steps four through seven (specify, document as patterns, describe design,
-inform consumers) of the `pdftotext -layout` extraction held at
-`scratchpad/reenskaug/ooram-slim.txt`.
+_PARTIAL EXTRACTION — updated 2026-07-29. Source is the `pdftotext -layout`
+extraction held at `scratchpad/reenskaug/ooram-slim.txt` (21,176 lines = 497 book
+pages).
 
-NOT yet read: chapter 6 (additional views and notation),
-chapters 7-9 and 12 (the four case studies), chapter 10 (organizing for software
-productivity, value chains), chapter 11 (instance-based reuse), and appendix A
-(the OOram language). Chapter boundaries in that extraction: ch4 6287, ch5 8121,
-ch6 9436, ch7 10525, ch8 12342, ch9 13620, ch10 15667, ch11 16756, ch12 18172,
-end 21176.
+READ IN FULL: preface and chapters 1 through 9 — the main ideas, role modeling,
+role model synthesis, the method's process, communicating with consumers, the
+additional views and notation, and the first three case studies including all
+seven steps of chapter 9's framework-creation study (through line 15666, book page
+~364). Next unread line is **15667**, the start of chapter 10.
+
+NOT yet read: chapter 10 (organizing for software productivity, value chains),
+chapter 11 (instance-based reuse: runtime configuration, object trading, the OOCS
+composition system, and the four object-duplication strategies), chapter 12 (the
+Intelligent Network Services value chain, seven actor layers), and appendix A (the
+OOram language). Chapter boundaries: ch10 15667, ch11 16756, ch12 18172, body ends
+~19500, index/TOC from ~20800.
 
 Chapter 10 remains the highest-value unread target — organizational value chains
 for software production is a subject no lesson in this corpus touches yet.
-`extraction: complete` still deliberately withheld._
+`extraction: complete` deliberately withheld until chapters 10-12 and appendix A
+are read._

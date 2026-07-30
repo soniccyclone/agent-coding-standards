@@ -17,7 +17,7 @@ single-machine formalisms don't have to account for.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-277 lessons from 52 figures.
+278 lessons from 52 figures.
 
 **abiteboul** (4)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -310,8 +310,9 @@ No works or lessons tagged with this subdomain yet.
 - [State a request's real requirements as data, because the code that could exploit them has not been written yet](../figures/rashid/lessons/state-requirements-as-data-so-parties-you-never-anticipated-can-act-on-them.md)
 - [When an abstraction is too expensive to use the way the problem wants, look for two concerns fused inside it](../figures/rashid/lessons/split-the-abstraction-that-bundles-ownership-with-execution.md)
 
-**reenskaug** (1)
+**reenskaug** (2)
 - [Permission belongs to the relationship, not to the interface](../figures/reenskaug/lessons/permission-belongs-to-the-relationship-not-the-interface.md)
+- [Two organizations can share one coherent system while nobody anywhere understands all of it](../figures/reenskaug/lessons/integrate-through-shared-models-so-nobody-holds-the-whole.md)
 
 **ritchie** (4)
 - [Decline the guarantees your actual environment never asks for, and be explicit about which ones you kept](../figures/ritchie/lessons/decline-the-guarantees-your-environment-never-needed.md)

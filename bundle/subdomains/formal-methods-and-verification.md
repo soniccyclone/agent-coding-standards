@@ -18,7 +18,7 @@ its own sake.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-331 lessons from 59 figures.
+334 lessons from 59 figures.
 
 **abiteboul** (5)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -426,8 +426,11 @@ No works or lessons tagged with this subdomain yet.
 - [Every capability you add is paid for in questions you can no longer answer](../figures/rabin/lessons/every-added-capability-is-paid-for-in-questions-you-can-no-longer-answer.md)
 - [Give up unbounded power on purpose: a bounded state space converts infinite checks into finite ones](../figures/rabin/lessons/a-bounded-state-space-turns-infinite-checks-into-finite-ones.md)
 
-**reenskaug** (1)
+**reenskaug** (4)
+- [Choose the conformance check that works in every case over the one that would be elegant](../figures/reenskaug/lessons/prefer-the-conformance-check-that-always-applies.md)
 - [Composition is reuse only when it preserves what you already checked](../figures/reenskaug/lessons/composition-is-reuse-only-if-it-preserves-what-you-already-checked.md)
+- [Sort your correctness claims by who can check them, because a tool's silence is not approval](../figures/reenskaug/lessons/classify-your-correctness-claims-by-who-can-check-them.md)
+- [The compositions that stay safe are exactly the ones that refuse to multiply the state space](../figures/reenskaug/lessons/safe-composition-is-composition-that-does-not-multiply-states.md)
 
 **ritchie** (1)
 - [Individually logical rules compose into a policy nobody chose, so evaluate the composition against the property you wanted](../figures/ritchie/lessons/individually-logical-rules-compose-into-unchosen-policy.md)

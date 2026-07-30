@@ -22,7 +22,7 @@ stylistic preference.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-507 lessons from 76 figures.
+513 lessons from 76 figures.
 
 **abiteboul** (2)
 - [The class of computations is the real object; notations and semantics are viewpoints on it](../figures/abiteboul/lessons/the-computation-class-is-the-object-syntaxes-are-viewpoints.md)
@@ -498,16 +498,22 @@ No lessons scored on this axis yet.
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
-**reenskaug** (9)
+**reenskaug** (15)
+- [A design idea impossible to express in one substrate can be the native vocabulary of another](../figures/reenskaug/lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
 - [An entity at one level is a collaboration one level down](../figures/reenskaug/lessons/an-entity-at-one-level-is-a-collaboration-at-the-level-below.md)
+- [Anticipated flexibility goes unused and does not prevent the extensions you failed to anticipate](../figures/reenskaug/lessons/hooks-for-every-need-refuted-by-its-own-usage-data.md)
+- [Ask which parts of a famous decomposition were forced by the language rather than by the problem](../figures/reenskaug/lessons/mvcs-author-on-which-of-its-splits-was-a-language-artifact.md)
 - [Between one omniscient coordinator and pure emergence sits declared topology](../figures/reenskaug/lessons/between-one-coordinator-and-pure-emergence.md)
 - [Extending one part alone is meaningless; extend the arrangement](../figures/reenskaug/lessons/extend-the-arrangement-not-the-part.md)
 - [Roles are the invariant; how many objects carry them is a sizing decision](../figures/reenskaug/lessons/roles-are-the-invariant-object-count-is-a-sizing-decision.md)
+- [Simplicity is a property of the whole a user must hold, not of each part](../figures/reenskaug/lessons/simplicity-is-a-property-of-the-whole-a-user-must-hold.md)
+- [Size a general escape hatch to what existing code actually needed, and admit when you cannot justify it](../figures/reenskaug/lessons/size-the-escape-hatch-to-what-existing-code-actually-needed.md)
 - [Sort behavior by what it drags in, not by the noun it mentions](../figures/reenskaug/lessons/sort-behavior-by-rate-of-change-not-by-the-noun-it-mentions.md)
 - [State whose meaning expires with the operation must not be stored where the object lives](../figures/reenskaug/lessons/state-whose-meaning-expires-should-not-be-stored-where-the-object-lives.md)
 - [Strip a component of its own initiative to make it composable](../figures/reenskaug/lessons/strip-a-component-of-its-own-initiative-to-make-it-composable.md)
 - [Two orthogonal decompositions cannot share one mechanism without both coming out wrong](../figures/reenskaug/lessons/two-orthogonal-decompositions-cannot-share-one-mechanism.md)
 - [What a language has no word for, its programs cannot govern](../figures/reenskaug/lessons/what-a-language-cannot-name-it-cannot-manage.md)
+- [When you borrow a mechanism, permit it less than its source did](../figures/reenskaug/lessons/deliberately-narrow-a-borrowed-mechanism.md)
 
 **ritchie** (13)
 - [A component's output is an interface, so verbosity and interrogation are design errors rather than taste](../figures/ritchie/lessons/design-output-for-the-next-program-not-the-reader.md)

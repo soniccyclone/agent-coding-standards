@@ -20,7 +20,7 @@ units of work.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-175 lessons from 65 figures.
+176 lessons from 65 figures.
 
 **abiteboul** (2)
 - [How you schedule the steps is part of what the program means](../figures/abiteboul/lessons/how-you-schedule-the-rules-is-part-of-what-they-mean.md)
@@ -257,8 +257,9 @@ No lessons scored on this axis yet.
 - [Choose the semantics you can reason about, then buy the cost back underneath where nobody has to know](../figures/rashid/lessons/choose-the-semantics-you-can-reason-about-and-buy-the-cost-back-underneath.md)
 - [When an abstraction is too expensive to use the way the problem wants, look for two concerns fused inside it](../figures/rashid/lessons/split-the-abstraction-that-bundles-ownership-with-execution.md)
 
-**reenskaug** (1)
+**reenskaug** (2)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
+- [The compositions that stay safe are exactly the ones that refuse to multiply the state space](../figures/reenskaug/lessons/safe-composition-is-composition-that-does-not-multiply-states.md)
 
 **ritchie** (3)
 - [Put the variability in the joints between components, not inside the components](../figures/ritchie/lessons/put-the-variability-in-the-joints.md)

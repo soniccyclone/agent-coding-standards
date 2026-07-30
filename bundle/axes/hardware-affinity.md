@@ -21,7 +21,7 @@ programming, but the axis that scores the compilation step itself.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-269 lessons from 66 figures.
+271 lessons from 66 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -308,9 +308,11 @@ No lessons scored on this axis yet.
 - [When an abstraction is too expensive to use the way the problem wants, look for two concerns fused inside it](../figures/rashid/lessons/split-the-abstraction-that-bundles-ownership-with-execution.md)
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 
-**reenskaug** (2)
+**reenskaug** (4)
 - [Announce change at the granularity of intent, not of mutation](../figures/reenskaug/lessons/notify-at-the-granularity-of-intent-not-of-mutation.md)
 - [Derivability, not layering etiquette, decides which side of a boundary a piece of state belongs on](../figures/reenskaug/lessons/derivability-decides-which-side-of-a-boundary-state-lives-on.md)
+- [Permit a dependency only in the direction of the thing that changes more slowly](../figures/reenskaug/lessons/allow-coupling-only-toward-what-changes-more-slowly.md)
+- [Slowness costs you the user's held state, so make every operation small enough to complete inside their attention](../figures/reenskaug/lessons/latency-breaks-the-circuit-so-make-operations-closeable.md)
 
 **ritchie** (6)
 - [A feature that will not fit is evidence against your model, not a case for a special rule](../figures/ritchie/lessons/a-feature-that-will-not-fit-indicts-the-model.md)
