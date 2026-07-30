@@ -18,7 +18,7 @@ mechanisms rather than deriving new primitives.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-678 lessons from 72 figures.
+689 lessons from 72 figures.
 
 **abiteboul** (5)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -539,8 +539,9 @@ No works or lessons tagged with this subdomain yet.
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
-**reenskaug** (91)
+**reenskaug** (102)
 - [A caller that walks the structure to reach a service has absorbed the structure](../figures/reenskaug/lessons/a-caller-that-walks-the-structure-has-absorbed-the-structure.md)
+- [A demonstrator validates the shape of an answer, not its scale — so enumerate what it left out](../figures/reenskaug/lessons/a-demonstrator-validates-the-shape-not-the-scale.md)
 - [A description complete enough to generate the system has become the system, and needs its own abstraction](../figures/reenskaug/lessons/a-description-detailed-enough-to-generate-code-is-code.md)
 - [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [A design idea impossible to express in one substrate can be the native vocabulary of another](../figures/reenskaug/lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
@@ -553,6 +554,7 @@ No works or lessons tagged with this subdomain yet.
 - [An entity at one level is a collaboration one level down](../figures/reenskaug/lessons/an-entity-at-one-level-is-a-collaboration-at-the-level-below.md)
 - [An environment built to satisfy every internal audience will satisfy none of them](../figures/reenskaug/lessons/one-environment-for-every-need-satisfies-nobody.md)
 - [An interface is factored correctly when a program can stand in for the user](../figures/reenskaug/lessons/an-interface-is-right-when-a-program-can-stand-in-for-the-user.md)
+- [An interface that ships with a reference card is the wrong interface, and invisible modes are why](../figures/reenskaug/lessons/an-interface-needing-a-reference-card-is-the-wrong-interface.md)
 - [An investment you cannot price needs a decider who has done both jobs, not a better formula](../figures/reenskaug/lessons/an-investment-you-cannot-price-needs-a-decider-who-has-done-both.md)
 - [An operation whose extent depends on the caller's intent cannot have a correct default](../figures/reenskaug/lessons/an-operation-whose-extent-depends-on-intent-has-no-correct-default.md)
 - [Announce change at the granularity of intent, not of mutation](../figures/reenskaug/lessons/notify-at-the-granularity-of-intent-not-of-mutation.md)
@@ -563,6 +565,7 @@ No works or lessons tagged with this subdomain yet.
 - [Between one omniscient coordinator and pure emergence sits declared topology](../figures/reenskaug/lessons/between-one-coordinator-and-pure-emergence.md)
 - [Broker the match at runtime so installing one part makes it available everywhere it fits](../figures/reenskaug/lessons/broker-the-match-at-runtime-so-installing-a-part-lights-it-up-everywhere.md)
 - [Building it is the experiment that tells you whether your separation of concerns was real](../figures/reenskaug/lessons/implementation-is-the-test-of-whether-your-decomposition-was-real.md)
+- [Carry identity in an opaque handle, then constrain the human names by whatever consumes them downstream](../figures/reenskaug/lessons/identity-by-opaque-handle-names-constrained-by-the-generation-target.md)
 - [Choose the conformance check that works in every case over the one that would be elegant](../figures/reenskaug/lessons/prefer-the-conformance-check-that-always-applies.md)
 - [Composition is reuse only when it preserves what you already checked](../figures/reenskaug/lessons/composition-is-reuse-only-if-it-preserves-what-you-already-checked.md)
 - [Comprehensibility cannot be bolted on after the fact](../figures/reenskaug/lessons/comprehensibility-cannot-be-retrofitted.md)
@@ -571,7 +574,9 @@ No works or lessons tagged with this subdomain yet.
 - [Delivery adds entropy and generalization removes it; each has a visible failure signature when it dominates](../figures/reenskaug/lessons/production-adds-entropy-cleanup-removes-it-neither-may-dominate.md)
 - [Derivability, not layering etiquette, decides which side of a boundary a piece of state belongs on](../figures/reenskaug/lessons/derivability-decides-which-side-of-a-boundary-state-lives-on.md)
 - [Draw a boundary, distrust everything crossing it, and trust everything inside](../figures/reenskaug/lessons/check-at-the-firewall-and-trust-inside-it.md)
+- [Express legality as where things can be placed, not as an error after they are](../figures/reenskaug/lessons/express-legality-as-where-things-can-go-not-as-an-error.md)
 - [Extending one part alone is meaningless; extend the arrangement](../figures/reenskaug/lessons/extend-the-arrangement-not-the-part.md)
+- [Gate expressive power by the operator's competence, using the same machinery restricted differently](../figures/reenskaug/lessons/gate-expressive-power-by-competence-using-the-same-machinery.md)
 - [Give each attribute one legal direction of inquiry, and forbid the other](../figures/reenskaug/lessons/give-each-attribute-one-legal-direction-of-inquiry.md)
 - [Hierarchy is an artifact of thought, not a property of the world](../figures/reenskaug/lessons/hierarchy-is-an-artifact-of-thought-not-a-property-of-the-world.md)
 - [Hold the bespoke one percent to different standards than the library it sits on](../figures/reenskaug/lessons/hold-the-bespoke-one-percent-to-different-standards-than-the-library.md)
@@ -581,11 +586,15 @@ No works or lessons tagged with this subdomain yet.
 - [Known confusion is safe; it is the undetected mismatch that destroys projects](../figures/reenskaug/lessons/undetected-agreement-is-the-dangerous-state.md)
 - [Leaving a mature framework costs you all of its tooling at once — so decide whether you are stepping outside it or widening it](../figures/reenskaug/lessons/leaving-a-mature-framework-costs-you-its-tooling-all-at-once.md)
 - [Let a system hold several partial models of the same reality rather than one consistent one](../figures/reenskaug/lessons/many-partial-models-beat-one-consistent-one.md)
+- [Let each authority bind the parameters it alone knows and pass the artifact on still open](../figures/reenskaug/lessons/let-each-authority-bind-what-it-knows-and-pass-the-rest-down.md)
 - [Let people point at what they can see, and accept that some things should have no name](../figures/reenskaug/lessons/pointing-beats-naming-and-not-everything-needs-a-name.md)
 - [Let the framework hold the global problem and ask each participant exactly one local question](../figures/reenskaug/lessons/let-the-framework-hold-the-global-problem-and-ask-each-part-one-local-question.md)
 - [Local correctness does not compose when \"correct\" depends on the caller's purpose](../figures/reenskaug/lessons/local-correctness-does-not-compose-when-correct-depends-on-context.md)
+- [Make the signed agreement and the deployment input the same artifact](../figures/reenskaug/lessons/one-artifact-that-is-both-the-signed-agreement-and-the-deployment-input.md)
 - [Many views, one model — never let a view become the model](../figures/reenskaug/lessons/many-views-one-model-never-let-a-view-become-the-model.md)
+- [Mark the extension surface in the design notation itself, and seal everything else](../figures/reenskaug/lessons/declare-the-extension-surface-in-the-model-and-seal-the-rest.md)
 - [Name every assumption that crosses a component boundary, then freeze exactly that and improve everything behind it](../figures/reenskaug/lessons/specify-and-freeze-the-surface-area.md)
+- [Narrow a word deliberately until the goal stated with it becomes checkable](../figures/reenskaug/lessons/narrow-the-definition-until-the-goal-becomes-checkable.md)
 - [Nobody asks for what they believe is impossible, so absence of a request is not absence of a need](../figures/reenskaug/lessons/nobody-asks-for-what-they-believe-impossible.md)
 - [Of the programs that work, confine yourself to the ones you can understand — the machine will accept far worse](../figures/reenskaug/lessons/restrict-yourself-to-the-programs-you-can-understand.md)
 - [Permission belongs to the relationship, not to the interface](../figures/reenskaug/lessons/permission-belongs-to-the-relationship-not-the-interface.md)
@@ -602,6 +611,7 @@ No works or lessons tagged with this subdomain yet.
 - [Slowness costs you the user's held state, so make every operation small enough to complete inside their attention](../figures/reenskaug/lessons/latency-breaks-the-circuit-so-make-operations-closeable.md)
 - [Sort behavior by what it drags in, not by the noun it mentions](../figures/reenskaug/lessons/sort-behavior-by-rate-of-change-not-by-the-noun-it-mentions.md)
 - [Sort your correctness claims by who can check them, because a tool's silence is not approval](../figures/reenskaug/lessons/classify-your-correctness-claims-by-who-can-check-them.md)
+- [Split a two-party protocol at the ownership boundary so each side's policy lives in the object it owns](../figures/reenskaug/lessons/split-a-protocol-at-the-ownership-boundary.md)
 - [Start where the risk is, not at the top of the abstraction ladder](../figures/reenskaug/lessons/start-where-the-risk-is-not-where-the-abstraction-is.md)
 - [State whose meaning expires with the operation must not be stored where the object lives](../figures/reenskaug/lessons/state-whose-meaning-expires-should-not-be-stored-where-the-object-lives.md)
 - [Strip a component of its own initiative to make it composable](../figures/reenskaug/lessons/strip-a-component-of-its-own-initiative-to-make-it-composable.md)
@@ -630,6 +640,7 @@ No works or lessons tagged with this subdomain yet.
 - [Without the question, there is nothing in a model to judge](../figures/reenskaug/lessons/a-model-answers-a-question-or-cannot-be-judged.md)
 - [Write requirements as limits on what the user is permitted to have to know](../figures/reenskaug/lessons/write-requirements-as-limits-on-what-the-user-must-know.md)
 - [Write the consumer's instructions before you build the thing, and let your laziness simplify the interface](../figures/reenskaug/lessons/write-the-manual-before-the-thing-and-let-laziness-design-it.md)
+- [Write the textual grammar even when your tool is graphical — the grammar is where you find out if the concepts cohere](../figures/reenskaug/lessons/write-the-grammar-even-when-the-tool-is-graphical.md)
 - [Your process is varnish over your people's competence, and it only holds where that competence already reaches](../figures/reenskaug/lessons/formalism-is-varnish-on-competence.md)
 
 **ritchie** (11)

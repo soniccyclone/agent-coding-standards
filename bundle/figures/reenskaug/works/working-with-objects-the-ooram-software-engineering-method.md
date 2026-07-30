@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 1
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -109,23 +110,37 @@ tags: [work]
 - [Let the framework hold the global problem and ask each participant exactly one local question](../lessons/let-the-framework-hold-the-global-problem-and-ask-each-part-one-local-question.md)
 - [Require a redundant statement for every choice, so forgetting is distinguishable from deciding](../lessons/make-omission-distinguishable-from-decision.md)
 
-_PARTIAL EXTRACTION — updated 2026-07-29. Source is the `pdftotext -layout`
+- [Narrow a word deliberately until the goal stated with it becomes checkable](../lessons/narrow-the-definition-until-the-goal-becomes-checkable.md)
+- [Let each authority bind the parameters it alone knows and pass the artifact on still open](../lessons/let-each-authority-bind-what-it-knows-and-pass-the-rest-down.md)
+- [Gate expressive power by the operator's competence, using the same machinery restricted differently](../lessons/gate-expressive-power-by-competence-using-the-same-machinery.md)
+- [Express legality as where things can be placed, not as an error after they are](../lessons/express-legality-as-where-things-can-go-not-as-an-error.md)
+- [Make the signed agreement and the deployment input the same artifact](../lessons/one-artifact-that-is-both-the-signed-agreement-and-the-deployment-input.md)
+- [Mark the extension surface in the design notation itself, and seal everything else](../lessons/declare-the-extension-surface-in-the-model-and-seal-the-rest.md)
+- [A demonstrator validates the shape of an answer, not its scale — so enumerate what it left out](../lessons/a-demonstrator-validates-the-shape-not-the-scale.md)
+- [An interface that ships with a reference card is the wrong interface, and invisible modes are why](../lessons/an-interface-needing-a-reference-card-is-the-wrong-interface.md)
+- [Split a two-party protocol at the ownership boundary so each side's policy lives in the object it owns](../lessons/split-a-protocol-at-the-ownership-boundary.md)
+
+- [Carry identity in an opaque handle, then constrain the human names by whatever consumes them downstream](../lessons/identity-by-opaque-handle-names-constrained-by-the-generation-target.md)
+- [Write the textual grammar even when your tool is graphical — the grammar is where you find out if the concepts cohere](../lessons/write-the-grammar-even-when-the-tool-is-graphical.md)
+
+_EXTRACTION NOTES — updated 2026-07-29. Source is the `pdftotext -layout`
 extraction held at `scratchpad/reenskaug/ooram-slim.txt` (21,176 lines = 497 book
 pages).
 
-READ IN FULL: preface and chapters 1 through 11 — the main ideas, role modeling,
-role model synthesis, the method's process, communicating with consumers, the
-additional views and notation, the first three case studies including all seven
-steps of chapter 9's framework-creation study, all of chapter 10 (the value chain,
-production engineering, the Fountain Model, job rotation, the
-investment-versus-production management problem), and all of chapter 11 (object
-trading, the OOCS composition system and its schema/type layers, and the four
-object-duplication algorithms) — through line 18171, book page ~424 of 497. Next
-unread line is **18172**, the start of chapter 12.
+All twelve chapters and the appendix prose were read in full, by hand, in the main
+loop rather than by a subagent — the `pdftotext -layout` extraction at
+`scratchpad/reenskaug/ooram-slim.txt`, 21,176 lines for 497 book pages. Reading ran
+chapter by chapter with lessons written and committed after each, so a death
+mid-book would have cost one chapter rather than the run.
 
-NOT yet read: chapter 12 (the Intelligent Network Services value chain in detail,
-seven actor layers, lines 18172 to roughly 19500) and appendix A (the OOram
-language). Body ends ~19500; index/TOC from ~20800.
+Covered: preface and chapters 1-12 (lines 1-19239) plus appendix A1-A3 (19240-19536),
+which is the OOram language's purposes, lexical conventions, EBNF grammar and scoping
+rules.
 
-`extraction: complete` deliberately withheld until chapter 12 and appendix A are
-read._
+Deliberately not treated as lesson-bearing: appendices A4 and A5 (19537-19983) are
+tool-generated OOram-language listings of the travel-expense and synthesis models
+whose prose treatment is in chapters 7 and 3 and is already extracted; appendix B
+(19984-20289) is the bibliography; everything from ~20600 is the table of contents.
+Read and checked, no independent content.
+
+`extraction: complete` is set on the strength of that pass._

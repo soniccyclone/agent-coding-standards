@@ -19,7 +19,7 @@ implicitly through many call sites).
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-994 lessons from 76 figures.
+1002 lessons from 76 figures.
 
 **abiteboul** (7)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -781,8 +781,9 @@ No lessons scored on this axis yet.
 - [Several unrelated-looking defects usually share one representational cause, and names that encode structure are a frequent culprit](../figures/rashid/lessons/several-unrelated-defects-usually-share-one-representational-cause.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
-**reenskaug** (84)
+**reenskaug** (92)
 - [A caller that walks the structure to reach a service has absorbed the structure](../figures/reenskaug/lessons/a-caller-that-walks-the-structure-has-absorbed-the-structure.md)
+- [A demonstrator validates the shape of an answer, not its scale — so enumerate what it left out](../figures/reenskaug/lessons/a-demonstrator-validates-the-shape-not-the-scale.md)
 - [A description complete enough to generate the system has become the system, and needs its own abstraction](../figures/reenskaug/lessons/a-description-detailed-enough-to-generate-code-is-code.md)
 - [A discipline is worth exactly what it forbids](../figures/reenskaug/lessons/a-discipline-is-worth-what-it-forbids.md)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
@@ -793,6 +794,7 @@ No lessons scored on this axis yet.
 - [An entity at one level is a collaboration one level down](../figures/reenskaug/lessons/an-entity-at-one-level-is-a-collaboration-at-the-level-below.md)
 - [An environment built to satisfy every internal audience will satisfy none of them](../figures/reenskaug/lessons/one-environment-for-every-need-satisfies-nobody.md)
 - [An interface is factored correctly when a program can stand in for the user](../figures/reenskaug/lessons/an-interface-is-right-when-a-program-can-stand-in-for-the-user.md)
+- [An interface that ships with a reference card is the wrong interface, and invisible modes are why](../figures/reenskaug/lessons/an-interface-needing-a-reference-card-is-the-wrong-interface.md)
 - [An investment you cannot price needs a decider who has done both jobs, not a better formula](../figures/reenskaug/lessons/an-investment-you-cannot-price-needs-a-decider-who-has-done-both.md)
 - [Announce change at the granularity of intent, not of mutation](../figures/reenskaug/lessons/notify-at-the-granularity-of-intent-not-of-mutation.md)
 - [Anticipated flexibility goes unused and does not prevent the extensions you failed to anticipate](../figures/reenskaug/lessons/hooks-for-every-need-refuted-by-its-own-usage-data.md)
@@ -807,7 +809,9 @@ No lessons scored on this axis yet.
 - [Delivery adds entropy and generalization removes it; each has a visible failure signature when it dominates](../figures/reenskaug/lessons/production-adds-entropy-cleanup-removes-it-neither-may-dominate.md)
 - [Derivability, not layering etiquette, decides which side of a boundary a piece of state belongs on](../figures/reenskaug/lessons/derivability-decides-which-side-of-a-boundary-state-lives-on.md)
 - [Draw a boundary, distrust everything crossing it, and trust everything inside](../figures/reenskaug/lessons/check-at-the-firewall-and-trust-inside-it.md)
+- [Express legality as where things can be placed, not as an error after they are](../figures/reenskaug/lessons/express-legality-as-where-things-can-go-not-as-an-error.md)
 - [Extending one part alone is meaningless; extend the arrangement](../figures/reenskaug/lessons/extend-the-arrangement-not-the-part.md)
+- [Gate expressive power by the operator's competence, using the same machinery restricted differently](../figures/reenskaug/lessons/gate-expressive-power-by-competence-using-the-same-machinery.md)
 - [Give each attribute one legal direction of inquiry, and forbid the other](../figures/reenskaug/lessons/give-each-attribute-one-legal-direction-of-inquiry.md)
 - [Hierarchy is an artifact of thought, not a property of the world](../figures/reenskaug/lessons/hierarchy-is-an-artifact-of-thought-not-a-property-of-the-world.md)
 - [Hold the bespoke one percent to different standards than the library it sits on](../figures/reenskaug/lessons/hold-the-bespoke-one-percent-to-different-standards-than-the-library.md)
@@ -818,11 +822,15 @@ No lessons scored on this axis yet.
 - [Learn a new way of thinking in a language that forbids the old one, even if you will ship in one that permits both](../figures/reenskaug/lessons/similarity-to-the-old-paradigm-impedes-learning-the-new.md)
 - [Leaving a mature framework costs you all of its tooling at once — so decide whether you are stepping outside it or widening it](../figures/reenskaug/lessons/leaving-a-mature-framework-costs-you-its-tooling-all-at-once.md)
 - [Let a system hold several partial models of the same reality rather than one consistent one](../figures/reenskaug/lessons/many-partial-models-beat-one-consistent-one.md)
+- [Let each authority bind the parameters it alone knows and pass the artifact on still open](../figures/reenskaug/lessons/let-each-authority-bind-what-it-knows-and-pass-the-rest-down.md)
 - [Let people point at what they can see, and accept that some things should have no name](../figures/reenskaug/lessons/pointing-beats-naming-and-not-everything-needs-a-name.md)
 - [Let the framework hold the global problem and ask each participant exactly one local question](../figures/reenskaug/lessons/let-the-framework-hold-the-global-problem-and-ask-each-part-one-local-question.md)
 - [Local correctness does not compose when \"correct\" depends on the caller's purpose](../figures/reenskaug/lessons/local-correctness-does-not-compose-when-correct-depends-on-context.md)
+- [Make the signed agreement and the deployment input the same artifact](../figures/reenskaug/lessons/one-artifact-that-is-both-the-signed-agreement-and-the-deployment-input.md)
 - [Many views, one model — never let a view become the model](../figures/reenskaug/lessons/many-views-one-model-never-let-a-view-become-the-model.md)
+- [Mark the extension surface in the design notation itself, and seal everything else](../figures/reenskaug/lessons/declare-the-extension-surface-in-the-model-and-seal-the-rest.md)
 - [Name every assumption that crosses a component boundary, then freeze exactly that and improve everything behind it](../figures/reenskaug/lessons/specify-and-freeze-the-surface-area.md)
+- [Narrow a word deliberately until the goal stated with it becomes checkable](../figures/reenskaug/lessons/narrow-the-definition-until-the-goal-becomes-checkable.md)
 - [Nobody asks for what they believe is impossible, so absence of a request is not absence of a need](../figures/reenskaug/lessons/nobody-asks-for-what-they-believe-impossible.md)
 - [Of the programs that work, confine yourself to the ones you can understand — the machine will accept far worse](../figures/reenskaug/lessons/restrict-yourself-to-the-programs-you-can-understand.md)
 - [Permit a dependency only in the direction of the thing that changes more slowly](../figures/reenskaug/lessons/allow-coupling-only-toward-what-changes-more-slowly.md)

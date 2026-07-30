@@ -17,7 +17,7 @@ primarily here.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-481 lessons from 59 figures.
+482 lessons from 59 figures.
 
 **abiteboul** (4)
 - [Declarative and procedural is not a dichotomy; ask instead where the control lives](../figures/abiteboul/lessons/declarative-is-a-question-of-where-control-lives.md)
@@ -441,7 +441,7 @@ No works or lessons tagged with this subdomain yet.
 **rabin** (1)
 - [State the behavior by allowing choices, then let a mechanical translation remove them](../figures/rabin/lessons/state-the-behavior-with-choice-then-mechanize-the-choice-away.md)
 
-**reenskaug** (8)
+**reenskaug** (9)
 - [A description complete enough to generate the system has become the system, and needs its own abstraction](../figures/reenskaug/lessons/a-description-detailed-enough-to-generate-code-is-code.md)
 - [A design idea impossible to express in one substrate can be the native vocabulary of another](../figures/reenskaug/lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
@@ -450,6 +450,7 @@ No works or lessons tagged with this subdomain yet.
 - [The browser is part of the language](../figures/reenskaug/lessons/the-browser-is-part-of-the-language.md)
 - [What a language has no word for, its programs cannot govern](../figures/reenskaug/lessons/what-a-language-cannot-name-it-cannot-manage.md)
 - [When you borrow a mechanism, permit it less than its source did](../figures/reenskaug/lessons/deliberately-narrow-a-borrowed-mechanism.md)
+- [Write the textual grammar even when your tool is graphical — the grammar is where you find out if the concepts cohere](../figures/reenskaug/lessons/write-the-grammar-even-when-the-tool-is-graphical.md)
 
 **ritchie** (9)
 - [A feature that will not fit is evidence against your model, not a case for a special rule](../figures/ritchie/lessons/a-feature-that-will-not-fit-indicts-the-model.md)

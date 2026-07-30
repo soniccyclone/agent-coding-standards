@@ -20,7 +20,7 @@ subdomain is organized around.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-831 lessons from 76 figures.
+838 lessons from 76 figures.
 
 **abiteboul** (7)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -763,7 +763,8 @@ No lessons scored on this axis yet.
 - [State a request's real requirements as data, because the code that could exploit them has not been written yet](../figures/rashid/lessons/state-requirements-as-data-so-parties-you-never-anticipated-can-act-on-them.md)
 - [Write your usage assumptions down as predictions, then let measurement of the running system retire mechanism](../figures/rashid/lessons/write-down-your-usage-assumptions-then-let-measurement-retire-mechanism.md)
 
-**reenskaug** (32)
+**reenskaug** (39)
+- [A demonstrator validates the shape of an answer, not its scale — so enumerate what it left out](../figures/reenskaug/lessons/a-demonstrator-validates-the-shape-not-the-scale.md)
 - [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [A discipline is worth exactly what it forbids](../figures/reenskaug/lessons/a-discipline-is-worth-what-it-forbids.md)
 - [A new binding mechanism must be restricted until local reasoning survives it](../figures/reenskaug/lessons/restrict-a-dynamic-binding-mechanism-until-local-reasoning-survives.md)
@@ -773,19 +774,24 @@ No lessons scored on this axis yet.
 - [An operation whose extent depends on the caller's intent cannot have a correct default](../figures/reenskaug/lessons/an-operation-whose-extent-depends-on-intent-has-no-correct-default.md)
 - [Assume your consumers are hostile, but expect ignorance rather than malice — and pair every restriction with completeness](../figures/reenskaug/lessons/the-threat-from-the-layer-above-is-ignorance-not-malice.md)
 - [Building it is the experiment that tells you whether your separation of concerns was real](../figures/reenskaug/lessons/implementation-is-the-test-of-whether-your-decomposition-was-real.md)
+- [Carry identity in an opaque handle, then constrain the human names by whatever consumes them downstream](../figures/reenskaug/lessons/identity-by-opaque-handle-names-constrained-by-the-generation-target.md)
 - [Choose the conformance check that works in every case over the one that would be elegant](../figures/reenskaug/lessons/prefer-the-conformance-check-that-always-applies.md)
 - [Composition is reuse only when it preserves what you already checked](../figures/reenskaug/lessons/composition-is-reuse-only-if-it-preserves-what-you-already-checked.md)
 - [Constrain a variable by what its occupant must be able to do, never by how the occupant is built](../figures/reenskaug/lessons/type-on-what-an-object-can-do-not-on-how-it-is-built.md)
 - [Constrain the transitions rather than the states, and schema change stops requiring migration](../figures/reenskaug/lessons/constrain-the-transition-not-the-state.md)
 - [Draw a boundary, distrust everything crossing it, and trust everything inside](../figures/reenskaug/lessons/check-at-the-firewall-and-trust-inside-it.md)
+- [Express legality as where things can be placed, not as an error after they are](../figures/reenskaug/lessons/express-legality-as-where-things-can-go-not-as-an-error.md)
 - [Give each attribute one legal direction of inquiry, and forbid the other](../figures/reenskaug/lessons/give-each-attribute-one-legal-direction-of-inquiry.md)
 - [Introduce the expensive notation last, and prefer redesigning the thing so you never need it](../figures/reenskaug/lessons/defer-the-notation-whose-cost-is-volume.md)
 - [Known confusion is safe; it is the undetected mismatch that destroys projects](../figures/reenskaug/lessons/undetected-agreement-is-the-dangerous-state.md)
 - [Leaving a mature framework costs you all of its tooling at once — so decide whether you are stepping outside it or widening it](../figures/reenskaug/lessons/leaving-a-mature-framework-costs-you-its-tooling-all-at-once.md)
 - [Let the framework hold the global problem and ask each participant exactly one local question](../figures/reenskaug/lessons/let-the-framework-hold-the-global-problem-and-ask-each-part-one-local-question.md)
 - [Local correctness does not compose when \"correct\" depends on the caller's purpose](../figures/reenskaug/lessons/local-correctness-does-not-compose-when-correct-depends-on-context.md)
+- [Make the signed agreement and the deployment input the same artifact](../figures/reenskaug/lessons/one-artifact-that-is-both-the-signed-agreement-and-the-deployment-input.md)
 - [Many views, one model — never let a view become the model](../figures/reenskaug/lessons/many-views-one-model-never-let-a-view-become-the-model.md)
+- [Mark the extension surface in the design notation itself, and seal everything else](../figures/reenskaug/lessons/declare-the-extension-surface-in-the-model-and-seal-the-rest.md)
 - [Name every assumption that crosses a component boundary, then freeze exactly that and improve everything behind it](../figures/reenskaug/lessons/specify-and-freeze-the-surface-area.md)
+- [Narrow a word deliberately until the goal stated with it becomes checkable](../figures/reenskaug/lessons/narrow-the-definition-until-the-goal-becomes-checkable.md)
 - [Of the programs that work, confine yourself to the ones you can understand — the machine will accept far worse](../figures/reenskaug/lessons/restrict-yourself-to-the-programs-you-can-understand.md)
 - [Permission belongs to the relationship, not to the interface](../figures/reenskaug/lessons/permission-belongs-to-the-relationship-not-the-interface.md)
 - [Require a redundant statement for every choice, so forgetting is distinguishable from deciding](../figures/reenskaug/lessons/make-omission-distinguishable-from-decision.md)
@@ -796,6 +802,7 @@ No lessons scored on this axis yet.
 - [Treat any exclamation of surprise from a user as a bug report against the design](../figures/reenskaug/lessons/astonishment-is-a-defect-report.md)
 - [When automatic derivation fails, require a declaration and mechanically audit it for completeness](../figures/reenskaug/lessons/when-derivation-fails-require-a-declaration-you-can-audit.md)
 - [When you borrow a mechanism, permit it less than its source did](../figures/reenskaug/lessons/deliberately-narrow-a-borrowed-mechanism.md)
+- [Write the textual grammar even when your tool is graphical — the grammar is where you find out if the concepts cohere](../figures/reenskaug/lessons/write-the-grammar-even-when-the-tool-is-graphical.md)
 
 **ritchie** (13)
 - [A live body of existing code is the dominant design constraint, and the concessions it extracts are permanent](../figures/ritchie/lessons/a-live-corpus-is-the-dominant-design-constraint.md)

@@ -19,7 +19,7 @@ built-in vocabulary while staying easy to write against.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-627 lessons from 74 figures.
+632 lessons from 74 figures.
 
 **abiteboul** (9)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -557,7 +557,7 @@ No lessons scored on this axis yet.
 - [State a request's real requirements as data, because the code that could exploit them has not been written yet](../figures/rashid/lessons/state-requirements-as-data-so-parties-you-never-anticipated-can-act-on-them.md)
 - [Whether a design survives is decided outside its own quality: does it match the next machine, and can it host the software that already exists](../figures/rashid/lessons/a-design-survives-by-matching-the-next-machine-and-hosting-the-existing-software.md)
 
-**reenskaug** (36)
+**reenskaug** (41)
 - [A description complete enough to generate the system has become the system, and needs its own abstraction](../figures/reenskaug/lessons/a-description-detailed-enough-to-generate-code-is-code.md)
 - [A description in terms of kinds cannot say it was the same one throughout](../figures/reenskaug/lessons/types-cannot-express-that-it-is-the-same-one.md)
 - [A design idea impossible to express in one substrate can be the native vocabulary of another](../figures/reenskaug/lessons/the-same-design-idea-can-be-native-in-one-substrate-and-impossible-in-another.md)
@@ -570,19 +570,23 @@ No lessons scored on this axis yet.
 - [Before integrating two groups' data, separate their words from their concepts](../figures/reenskaug/lessons/separate-the-term-from-the-concept-before-integrating.md)
 - [Between one omniscient coordinator and pure emergence sits declared topology](../figures/reenskaug/lessons/between-one-coordinator-and-pure-emergence.md)
 - [Broker the match at runtime so installing one part makes it available everywhere it fits](../figures/reenskaug/lessons/broker-the-match-at-runtime-so-installing-a-part-lights-it-up-everywhere.md)
+- [Carry identity in an opaque handle, then constrain the human names by whatever consumes them downstream](../figures/reenskaug/lessons/identity-by-opaque-handle-names-constrained-by-the-generation-target.md)
 - [Comprehensibility cannot be bolted on after the fact](../figures/reenskaug/lessons/comprehensibility-cannot-be-retrofitted.md)
 - [Constrain a variable by what its occupant must be able to do, never by how the occupant is built](../figures/reenskaug/lessons/type-on-what-an-object-can-do-not-on-how-it-is-built.md)
 - [Extending one part alone is meaningless; extend the arrangement](../figures/reenskaug/lessons/extend-the-arrangement-not-the-part.md)
+- [Gate expressive power by the operator's competence, using the same machinery restricted differently](../figures/reenskaug/lessons/gate-expressive-power-by-competence-using-the-same-machinery.md)
 - [Hierarchy is an artifact of thought, not a property of the world](../figures/reenskaug/lessons/hierarchy-is-an-artifact-of-thought-not-a-property-of-the-world.md)
 - [Keep every node of a representation at one altitude, and pick the altitude from whoever owns the problem](../figures/reenskaug/lessons/keep-every-node-of-a-representation-at-one-altitude.md)
 - [Learn a new way of thinking in a language that forbids the old one, even if you will ship in one that permits both](../figures/reenskaug/lessons/similarity-to-the-old-paradigm-impedes-learning-the-new.md)
 - [Let a system hold several partial models of the same reality rather than one consistent one](../figures/reenskaug/lessons/many-partial-models-beat-one-consistent-one.md)
+- [Let each authority bind the parameters it alone knows and pass the artifact on still open](../figures/reenskaug/lessons/let-each-authority-bind-what-it-knows-and-pass-the-rest-down.md)
 - [Let people point at what they can see, and accept that some things should have no name](../figures/reenskaug/lessons/pointing-beats-naming-and-not-everything-needs-a-name.md)
 - [Many views, one model — never let a view become the model](../figures/reenskaug/lessons/many-views-one-model-never-let-a-view-become-the-model.md)
 - [Permission belongs to the relationship, not to the interface](../figures/reenskaug/lessons/permission-belongs-to-the-relationship-not-the-interface.md)
 - [Roles are the invariant; how many objects carry them is a sizing decision](../figures/reenskaug/lessons/roles-are-the-invariant-object-count-is-a-sizing-decision.md)
 - [Showing two views of one thing at once costs the feeling that the thing is real, and that is a choice to make deliberately](../figures/reenskaug/lessons/multiple-views-cost-you-the-illusion-of-a-concrete-thing.md)
 - [Size a general escape hatch to what existing code actually needed, and admit when you cannot justify it](../figures/reenskaug/lessons/size-the-escape-hatch-to-what-existing-code-actually-needed.md)
+- [Split a two-party protocol at the ownership boundary so each side's policy lives in the object it owns](../figures/reenskaug/lessons/split-a-protocol-at-the-ownership-boundary.md)
 - [Strip a component of its own initiative to make it composable](../figures/reenskaug/lessons/strip-a-component-of-its-own-initiative-to-make-it-composable.md)
 - [The browser is part of the language](../figures/reenskaug/lessons/the-browser-is-part-of-the-language.md)
 - [There is no best reuse mechanism — match it to the layer, and expect the crude one to win somewhere](../figures/reenskaug/lessons/there-is-no-best-reuse-mechanism-match-it-to-the-layer.md)
@@ -594,6 +598,7 @@ No lessons scored on this axis yet.
 - [When two structures legitimately disagree, give the disagreement its own layer](../figures/reenskaug/lessons/give-the-structural-mismatch-its-own-layer.md)
 - [Without the question, there is nothing in a model to judge](../figures/reenskaug/lessons/a-model-answers-a-question-or-cannot-be-judged.md)
 - [Write the consumer's instructions before you build the thing, and let your laziness simplify the interface](../figures/reenskaug/lessons/write-the-manual-before-the-thing-and-let-laziness-design-it.md)
+- [Write the textual grammar even when your tool is graphical — the grammar is where you find out if the concepts cohere](../figures/reenskaug/lessons/write-the-grammar-even-when-the-tool-is-graphical.md)
 
 **ritchie** (15)
 - [A component's output is an interface, so verbosity and interrogation are design errors rather than taste](../figures/ritchie/lessons/design-output-for-the-next-program-not-the-reader.md)
