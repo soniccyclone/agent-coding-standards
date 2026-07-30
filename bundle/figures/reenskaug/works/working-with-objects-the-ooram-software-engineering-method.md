@@ -63,14 +63,17 @@ tags: [work]
 - [The channel you are automating is also carrying the social and teaching traffic](../lessons/a-work-channel-carries-social-and-training-traffic-too.md)
 - [Permit a dependency only in the direction of the thing that changes more slowly](../lessons/allow-coupling-only-toward-what-changes-more-slowly.md)
 
+- [When two groups mean different things by one word, translating beats forcing them to agree](../lessons/translate-to-the-users-model-rather-than-harmonizing-vocabularies.md)
+- [Treat any exclamation of surprise from a user as a bug report against the design](../lessons/astonishment-is-a-defect-report.md)
+- [Slowness costs you the user's held state, so make every operation small enough to complete inside their attention](../lessons/latency-breaks-the-circuit-so-make-operations-closeable.md)
+- [Let people point at what they can see, and accept that some things should have no name](../lessons/pointing-beats-naming-and-not-everything-needs-a-name.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. **Chapters 0-6 read in full, plus chapter 7 sections 7.0-7.2.3** (through line
-11524, book page ~267 of 497). Next unread line is 11525, mid chapter 7 section
-7.2.3 — remaining in ch7: the rest of the Information model and all of section 7.3
-(the Task/Tool/Service model) of the `pdftotext -layout` extraction held at
+across all seven views)**. **Chapters 0-7 are now read in full** (through line 12341, book page 286 of 497).
+Next unread line is 12342, the start of chapter 8 of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
 NOT yet read: chapter 6 (additional views and notation),
