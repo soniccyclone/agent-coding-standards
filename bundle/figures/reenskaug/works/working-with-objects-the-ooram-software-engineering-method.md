@@ -45,16 +45,22 @@ tags: [work]
 - [Learn a new way of thinking in a language that forbids the old one, even if you will ship in one that permits both](../lessons/similarity-to-the-old-paradigm-impedes-learning-the-new.md)
 - [Constrain a variable by what its occupant must be able to do, never by how the occupant is built](../lessons/type-on-what-an-object-can-do-not-on-how-it-is-built.md)
 
+- [Whether a component gets adopted is uncorrelated with how good it is](../lessons/adoption-does-not-track-technical-quality.md)
+- [Anticipated flexibility goes unused and does not prevent the extensions you failed to anticipate](../lessons/hooks-for-every-need-refuted-by-its-own-usage-data.md)
+- [Write the consumer's instructions before you build the thing, and let your laziness simplify the interface](../lessons/write-the-manual-before-the-thing-and-let-laziness-design-it.md)
+- [Name every assumption that crosses a component boundary, then freeze exactly that and improve everything behind it](../lessons/specify-and-freeze-the-surface-area.md)
+- [Separate what a reader can already do from what they can only recognize, and layer the documentation on that seam](../lessons/layer-documentation-by-active-versus-passive-competence.md)
+- [Your process is varnish over your people's competence, and it only holds where that competence already reaches](../lessons/formalism-is-varnish-on-competence.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. **Chapters 0-4 are now read in full** (through line 8120, book page 186 of 497).
-Next unread line is 8121, the start of chapter 5 of the `pdftotext -layout` extraction held at
+across all seven views)**. **Chapters 0-5 are now read in full** (through line 9435, book page 218 of 497).
+Next unread line is 9436, the start of chapter 6 of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
-NOT yet read: chapter 5
-(creating reusable components), chapter 6 (additional views and notation),
+NOT yet read: chapter 6 (additional views and notation),
 chapters 7-9 and 12 (the four case studies), chapter 10 (organizing for software
 productivity, value chains), chapter 11 (instance-based reuse), and appendix A
 (the OOram language). Chapter boundaries in that extraction: ch4 6287, ch5 8121,
