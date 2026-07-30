@@ -46,3 +46,5 @@ tags: [work]
 - [Classify an interface position by what kind of phrase it admits, not by what kind of value flows through it](../lessons/classify-a-position-by-what-kind-of-phrase-it-admits.md)
 - [Sort every obligation by who can enforce it, and give each class its own notation](../lessons/sort-obligations-by-who-can-enforce-them.md)
 - [A mechanism's hazard and its expressive power are often the same property seen twice](../lessons/a-hazard-and-a-capability-are-often-the-same-property.md)
+- [To say anything about change, name the old value with something the program cannot touch](../lessons/name-the-old-value-with-something-the-program-cannot-touch.md)
+- [Keep "it finishes" and "it is right" as two separate arguments, because one can die while the other still stands](../lessons/keep-finishing-and-being-right-as-two-separate-arguments.md)
