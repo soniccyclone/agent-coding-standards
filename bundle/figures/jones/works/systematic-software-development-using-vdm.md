@@ -33,3 +33,5 @@ tags: [work]
 - [Read the architecture off the state, because whatever the state does not say gets scattered everywhere else](../lessons/read-the-architecture-off-the-state.md)
 - [Spend the confidence a better method buys you on making the same systems safer, not on attempting harder ones](../lessons/spend-the-dividend-of-rigour-on-safety-not-ambition.md)
 - [Describing a type by laws instead of a model does not escape the model, it just stops you choosing it](../lessons/equations-do-not-escape-a-model-they-hide-which-one.md)
+- [Split what a loop promises into a claim about each state and a claim about each step, and let mutation decide which carries the weight](../lessons/split-what-a-loop-promises-into-per-state-and-per-step.md)
+- [Write down the intermediate claims, because that is what turns one big check into several small independent ones](../lessons/write-down-the-carries.md)
