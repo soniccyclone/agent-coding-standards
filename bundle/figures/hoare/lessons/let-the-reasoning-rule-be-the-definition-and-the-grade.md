@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Let the rule for reasoning about a construct be its definition, and let the rule's ugliness be its grade"
+figure: hoare
+works: [an-axiomatic-basis-for-computer-programming]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Let the rule for reasoning about a construct be its definition, and let the rule's ugliness be its grade
+
+**Lesson:** There are two ways to say what a construct means. One describes the steps a machine goes through, which answers the implementer's question and leaves the user to reverse-engineer what may be concluded. The other states directly what one may infer about the state afterwards given what held before, which answers the user's question and leaves the implementer to satisfy it. Adopting the second as the *official* meaning has a property the first lacks: it is simultaneously the specification an implementation must meet, the license a programmer reasons under, and a single document both parties can read. Correctness of an implementation becomes a checkable claim instead of a matter of comparing against a reference build, and the widening gap between the people who build a system and the people who use it gets bridged by one artifact rather than two divergent ones.
+
+The reason to want this beyond tidiness is that it turns the design of the thing being described into a feedback loop. A construct whose reasoning rule is short and obvious is a construct whose consequences a user can hold in mind and combine with others; a construct requiring a long, conditional, hedged rule is one whose consequences are genuinely hard to hold in mind, and no amount of implementation cleverness makes that go away. So when the rule comes out ugly, the correct response is not to blame the notation but to suspect the feature. That the difficult cases are the ones that break locality — arbitrary transfers of control, indirection through stored locations, arguments whose evaluation is deferred into the caller's world — is not a coincidence and not a limitation of the technique; those constructs really do make it hard to say what follows from what, which is exactly the complaint their users have always had, now made measurable.
+
+Two working habits fall out. First, any reasoning technique carries assumptions that are usually left implicit, and a technique applied where its assumptions fail produces confident nonsense; if the rules were derived assuming that evaluating an expression changes nothing, then before using them you owe a separate argument that nothing was changed, which is a real reason to doubt whether a notation that hides state changes inside expression-shaped things is buying enough to justify its price. Second, rules stated independently of each other can be worked on independently — a designer can revise one without fear that some other part of the system silently changed meaning, which is precisely the freedom that a description in terms of machine steps, where everything shares one machine, never provides.
+
+**Source:** [An Axiomatic Basis for Computer Programming](../works/an-axiomatic-basis-for-computer-programming.md) — the formal-language-definition section, which proposes accepting the inference rules as the definitive meaning of a language and argues few self-evident rules beat many obscure ones; the general-reservations section, where the constructs identified as genuinely difficult are those whose rules would necessarily be complex; and the side-effect caveat opening that same section.

@@ -22,3 +22,6 @@ tags: [work]
 
 ## Lessons
 - [Design a language by building real applications in the version you already have, then redesigning from the scar tissue](../lessons/design-the-language-by-being-its-user-first.md)
+- [Set the size of the whole system by what one person can master, and pay for it by deleting special cases](../lessons/one-person-must-be-able-to-hold-the-whole-system.md)
+- [Read your own programs for bookkeeping: text that is not about the problem is an indictment of the language](../lessons/programs-should-visibly-be-about-their-problem.md)
+- [State what you want, never how it is done, because dependencies grow quadratically and only the request is safe to share](../lessons/ask-for-intent-and-let-the-receiver-choose-the-method.md)

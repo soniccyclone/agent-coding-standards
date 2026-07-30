@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Underspecify on purpose: a specification should name the choices it refuses to make"
+figure: hoare
+works: [an-axiomatic-basis-for-computer-programming]
+axes: [verifiability, hardware-affinity, expressiveness]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Underspecify on purpose: a specification should name the choices it refuses to make
+
+**Lesson:** A specification faces a dilemma that looks unresolvable. Pin down every behavior and you have forbidden the implementer from doing the sensible thing on hardware you did not anticipate, so the thing is either slow everywhere or honored nowhere. Leave behavior unstated and portability becomes folklore: programs quietly acquire dependencies on whatever the local implementation happened to do, and the dependency surfaces years later as an expensive surprise on a different machine. The way out is to notice that the dilemma assumes only two options, specified and unspecified, when the useful third one is *specified as a choice*. Split the description into properties that hold everywhere, and a small menu of mutually exclusive properties covering exactly the decisions an implementer legitimately gets to make. Every implementation then satisfies the common core plus one selection from each menu.
+
+This changes the character of portability from a hope to a bookkeeping problem. Any reasoning about a program is conducted against a stated set of properties, so a program that genuinely depends on a local decision cannot pretend otherwise: the argument for it will refuse to go through on the common core alone, and the dependence surfaces at the moment of reasoning rather than the moment of migration. Having surfaced, it becomes a decision made in the open. The programmer either reformulates to avoid it, or accepts it and records the chosen menu item as a stated condition of use — at which point the program can move with complete confidence to any host making the same choice, and every site that would have to change on a host making a different choice is already marked, because that is where the argument leaned on the choice. Machine dependence stops being contamination and becomes a declared parameter.
+
+What makes the technique work is that the properties are stated as constraints rather than as a description of behavior. A recipe or a reference implementation is total by construction: it does something in every case, and everything it does becomes normative whether you meant it to or not. A set of constraints is silent wherever you did not write one, and silence is the resource being budgeted. So the design skill is knowing which questions to answer for everyone, which to answer with an explicit small menu, and which to leave open — and it is worth noticing that this is only possible when the common core is genuinely common; properties that quietly hold on only some of the hosts you claim to cover are the failure mode, and the reason to check each one against the odd cases (saturating, wrapping, aborting) rather than against the mathematically ideal one.
+
+**Source:** [An Axiomatic Basis for Computer Programming](../works/an-axiomatic-basis-for-computer-programming.md) — the computer-arithmetic section, which chooses a common core of properties true of both unbounded and bounded integer sets and shows the different overflow disciplines separated by mutually exclusive supplementary properties; and the formal-language-definition section, which proposes this as the shape of a language standard and argues portability failures are exposed by proof rather than by migration.

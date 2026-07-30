@@ -9,6 +9,7 @@ url: https://pages.cs.wisc.edu/~remzi/Naur.pdf
 survey_pages: 14
 survey_text_layer: ocr
 survey_fetch_mb: 0
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -26,3 +27,4 @@ tags: [work]
 - [Behavioral correctness does not make a change right; judge it against the account the system embodies](../lessons/correct-behavior-does-not-make-a-change-right.md)
 - [No prescribed ordering of steps can produce understanding, so methods teach rather than govern](../lessons/no-ordering-of-steps-can-produce-understanding.md)
 - [Built-in flexibility is a wager paid up front; adaptability comes from people, not parameters](../lessons/built-in-flexibility-is-a-bet-paid-for-up-front.md)
+- [Cheap to edit is not cheap to change; the medium's malleability says nothing about the cost](../lessons/cheap-to-edit-is-not-cheap-to-change.md)

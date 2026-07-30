@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 16
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -24,3 +25,5 @@ tags: [work]
 - [When the users' needs are genuinely unbounded, ship a medium plus exemplars instead of enumerating features](../lessons/design-a-medium-not-a-feature-set.md)
 - [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../lessons/response-inside-the-loop-of-thought.md)
 - [Look for the shared process beneath surface-different domains, then split the score from the performer](../lessons/one-vocabulary-for-domains-that-only-look-different.md)
+- [Every capability should be equally reachable by hand and by program, and every object equally open to inspection](../lessons/nothing-reachable-only-by-hand.md)
+- [A replacement must not be worse than the incumbent in any way its users care about, and must not stop at imitating it](../lessons/match-what-you-replace-before-you-transcend-it.md)

@@ -8,6 +8,7 @@ year: 1973
 url: https://rebelsky.cs.grinnell.edu/Courses/CS302/2007S/Readings/hoare-design.pdf
 survey_pages: 5
 survey_text_layer: full
+extraction: complete
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
@@ -26,3 +27,6 @@ tags: [work]
 - [When the workaround for a slow tool starts dictating how you decompose the program, the tool is the bug](../lessons/when-a-workaround-reshapes-the-program-fix-the-tool.md)
 - [Don't pre-spend your users' efficiency budget, and make any optimization visible in their own terms](../lessons/dont-pre-spend-your-users-efficiency-budget.md)
 - [Nested expressions are the model of good structure, and their narrow interface is the source of both their power and their limits](../lessons/why-nested-expressions-are-the-model-of-structure.md)
+- [The interface between two consecutive steps is the whole machine until you deliberately narrow it](../lessons/the-interface-between-consecutive-steps.md)
+- [The machine's tolerance is exactly why you must declare your meaning above it](../lessons/the-machines-tolerance-is-why-you-need-declarations.md)
+- [Inventing a feature and assembling a system are different jobs, and assembly is consolidation, not invention](../lessons/inventing-a-feature-and-assembling-a-system-are-different-jobs.md)

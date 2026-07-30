@@ -9,6 +9,7 @@ url: https://people.mpi-inf.mpg.de/~mehlhorn/SeminarEvolvability/ValiantLearnabl
 survey_pages: 9
 survey_text_layer: full
 survey_fetch_mb: 0
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -23,3 +24,6 @@ tags: [work]
 - [Define correctness against the inputs that actually occur, and buy the remaining accuracy with runtime](../lessons/define-correctness-against-the-input-distribution-you-will-meet.md)
 - [Fix the information channel before asking what is achievable, and bound its power from both sides](../lessons/bound-the-interface-from-both-sides-before-asking-what-is-feasible.md)
 - [Charge cost to what actually appears, not to the size of the surrounding universe](../lessons/charge-cost-to-what-appears-not-to-the-ambient-universe.md)
+- [Make every surprise consume a bounded budget, and a counting argument finishes the proof](../lessons/make-every-surprise-pay-from-a-bounded-budget.md)
+- [Every impossibility result is somebody's guarantee — go find the field where it is good news](../lessons/read-your-impossibility-result-from-the-other-side.md)
+- [A bound on what one step can span is what forces named intermediates, and it sets their granularity](../lessons/a-bounded-step-size-is-what-forces-named-intermediates.md)

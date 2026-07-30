@@ -9,6 +9,7 @@ url: http://alexander.shen.free.fr/library/Kolmogorov65_Three-Approaches-to-Info
 survey_pages: 7
 survey_text_layer: ocr
 survey_fetch_mb: 0
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -25,3 +26,7 @@ tags: [work]
 - [If a property only exists over a population you invented, move it onto the object itself](../lessons/put-the-property-on-the-object-not-on-the-population.md)
 - [An arbitrary choice stops mattering once you bound its effect, and then you may only claim what the bound leaves](../lessons/bound-the-arbitrary-choice-then-claim-only-what-survives-it.md)
 - [The shortest description and the affordable one are different things, so carry the time budget in the definition](../lessons/the-shortest-description-is-not-the-affordable-one.md)
+- [A quantity can be worth defining even when nothing can compute it](../lessons/a-quantity-can-be-worth-defining-without-being-computable.md)
+- [Two systems are related only at some level of description, and refining either one destroys the relation](../lessons/coupling-exists-only-at-a-level-of-description.md)
+- [Find out which assumptions a result actually rests on, because inherited machinery narrows where it applies](../lessons/find-out-which-assumptions-the-result-actually-rests-on.md)
+- [Before assuming you need a global pass, check whether local adaptation reaches the same bound](../lessons/reach-the-global-optimum-without-a-global-pass.md)

@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -36,3 +37,5 @@ This work needs the deterministic OCR batch.
 - [In a self-applicable construction, only the operations that recurse set the growth rate — spend freely on the ones that do not](../lessons/eliminate-the-operation-that-recurses.md)
 - [Locate the operation an entire family of problems reduces to, and improve that one](../lessons/find-the-operation-the-whole-family-reduces-to.md)
 - [Separate improvements that exploit today's cost table from improvements that change the growth law](../lessons/separate-improvements-that-exploit-the-cost-table-from-those-that-change-the-growth-law.md)
+- [Define a construction only on the shapes where it is clean, then reach the general case by embedding](../lessons/define-the-method-where-it-is-clean-and-embed-the-general-case.md)
+- [State a faster method's side conditions up front, and compare them against the incumbent's rather than against perfection](../lessons/state-the-side-conditions-and-compare-them-to-the-incumbents.md)

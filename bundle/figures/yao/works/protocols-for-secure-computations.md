@@ -23,3 +23,6 @@ tags: [work]
 - [State a privacy requirement as an equality with what the answer already implies, quantified over what an adversary can compute](../lessons/state-privacy-as-an-equality-with-what-the-answer-implies.md)
 - [Concede the deviation you cannot prevent, then define correctness as that deviation being the only one available](../lessons/concede-the-attack-you-cannot-prevent-and-make-it-the-only-one.md)
 - [An audit that requires opening the box destroys the property it was protecting; buy tunable doubt instead](../lessons/an-audit-that-opens-the-box-is-not-an-audit.md)
+- [Price a new guarantee as a ratio to the unconstrained baseline, so you learn whether the cost belongs to the guarantee or to the problem](../lessons/price-a-guarantee-against-the-unconstrained-baseline.md)
+- [A model earns its keep by making impossibility sayable, not by making solutions prettier](../lessons/a-model-earns-its-keep-by-making-impossibility-sayable.md)
+- [When a goal is proved unreachable, vary the goal's shape rather than reaching for stronger tools](../lessons/when-a-goal-is-impossible-vary-the-goal-not-the-tools.md)
