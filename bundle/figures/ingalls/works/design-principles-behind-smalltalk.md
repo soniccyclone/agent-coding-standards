@@ -29,3 +29,5 @@ tags: [work]
 - [Give user-defined things exactly the standing of built-in ones, or people will model their domain in primitives](../lessons/give-user-defined-things-the-same-standing-as-built-ins.md)
 - [Put each capability at the one place where the most things inherit it, and let protocol rather than type set the reach](../lessons/put-each-capability-where-it-is-amplified.md)
 - [Concentrate the whole system's contact with hardware into a few primitives, then spend all your optimization there](../lessons/concentrate-contact-with-technology-into-few-primitives.md)
+- [Treat everything that does not fit your framework as a defect in the framework's reach, not as a separate layer to live with](../lessons/anything-outside-the-framework-is-a-defect-in-its-reach.md)
+- [Treat human cognition as the fixed constraint and the machine as the adjustable side, then design to the whole span between them](../lessons/treat-the-human-side-as-the-fixed-point.md)
