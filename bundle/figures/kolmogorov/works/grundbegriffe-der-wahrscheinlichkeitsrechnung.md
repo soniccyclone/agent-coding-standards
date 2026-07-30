@@ -7,7 +7,7 @@ subdomains: [foundations-of-computation]
 year: 1933
 url: https://www.york.ac.uk/depts/maths/histstat/kolmogorov_foundations.pdf
 survey_pages: 47
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 3
 access: public
 host: institutional
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Ergebnisse der Mathematik und ihrer Grenzgebiete, Julius Springer, Berlin, 1933. English translation by Nathan Morrison, "Foundations of the Theory of Probability," Chelsea Publishing Co., New York, 1950 (2nd ed. 1956) - the linked copy.
 **Source:** https://www.york.ac.uk/depts/maths/histstat/kolmogorov_foundations.pdf — direct PDF of the Morrison English translation, hosted on the University of York Mathematics Department's history-of-statistics resource page (verified resolving, 200 OK, valid PDF). Institutional host. A scan of the 1933 German original is also public via the Internet Archive (https://archive.org/details/kolmogoroff-1933-grundbegriffe-der-wahrscheinlichkeitsrechnung) as a third-party-rehost fallback.
+**Reading copy:** `scratchpad/ocr-text/kolmogorov__grundbegriffe-der-wahrscheinlichkeitsrechnung.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

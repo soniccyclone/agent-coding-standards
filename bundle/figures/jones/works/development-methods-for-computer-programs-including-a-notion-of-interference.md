@@ -7,7 +7,7 @@ subdomains: [formal-methods-and-verification, distributed-systems-and-concurrenc
 year: 1981
 url: http://www.cs.ox.ac.uk/files/9025/PRG-25.pdf
 survey_pages: 265
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 10
 access: public
 host: institutional
@@ -19,6 +19,7 @@ tags: [work]
 **Venue/year:** PhD thesis, Oxford University, June 1981. Printed as Programming Research Group Technical Monograph PRG-25.
 
 **Source:** http://www.cs.ox.ac.uk/files/9025/PRG-25.pdf — hosted on Oxford's own Computer Science department file server, linked directly from Jones's Newcastle publications list (HTTP 200, confirmed live).
+**Reading copy:** `scratchpad/ocr-text/jones__development-methods-for-computer-programs-including-a-notion-of-interference.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

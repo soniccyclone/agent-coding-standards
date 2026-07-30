@@ -7,7 +7,7 @@ subdomains: [software-engineering-and-architecture]
 year: 1995
 url: https://people.inf.ethz.ch/wirth/Articles/LeanSoftware.pdf
 survey_pages: 5
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 1
 access: public
 host: self-archived
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** IEEE Computer 28(2), February 1995, pp. 64-68.
 **Source:** https://people.inf.ethz.ch/wirth/Articles/LeanSoftware.pdf — live PDF, self-archived on Niklaus Wirth's ETH Zurich personal page.
+**Reading copy:** `scratchpad/ocr-text/wirth__a-plea-for-lean-software.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

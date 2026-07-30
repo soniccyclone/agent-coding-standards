@@ -7,7 +7,7 @@ subdomains: [software-engineering-and-architecture]
 year: 1971
 url: https://people.inf.ethz.ch/wirth/Articles/StepwiseRefinement.pdf
 survey_pages: 7
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 1
 access: public
 host: self-archived
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Communications of the ACM 14(4), April 1971, pp. 221-227.
 **Source:** https://people.inf.ethz.ch/wirth/Articles/StepwiseRefinement.pdf — live PDF, self-archived on Niklaus Wirth's ETH Zurich personal page.
+**Reading copy:** `scratchpad/ocr-text/wirth__program-development-by-stepwise-refinement.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

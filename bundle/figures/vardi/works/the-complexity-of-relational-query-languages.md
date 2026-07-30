@@ -7,7 +7,7 @@ subdomains: [databases-and-data-management, algorithms-and-complexity]
 year: 1982
 url: http://www.cs.rice.edu/~vardi/papers/stoc82.pdf
 survey_pages: 10
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: self-archived
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** STOC 1982 (14th Annual ACM Symposium on Theory of Computing), Extended Abstract.
 **Source:** http://www.cs.rice.edu/~vardi/papers/stoc82.pdf — verified live (HTTP 200, application/pdf, ~590KB), self-archived on Vardi's own Rice University papers page.
+**Reading copy:** `scratchpad/ocr-text/vardi__the-complexity-of-relational-query-languages.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 **Host:** self-archived — author's own site.
 
 ## Lessons

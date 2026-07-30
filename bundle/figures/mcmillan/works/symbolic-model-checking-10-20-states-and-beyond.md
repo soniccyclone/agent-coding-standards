@@ -7,7 +7,7 @@ subdomains: [formal-methods-and-verification]
 year: 1990
 url: https://mcmil.net/pubs/LICS90.pdf
 survey_pages: 33
-survey_text_layer: none
+survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
@@ -22,4 +22,3 @@ tags: [work]
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
-_OCR-HOLD -- no text layer; deferred pending explicit go-ahead_

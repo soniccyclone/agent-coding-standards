@@ -7,7 +7,7 @@ subdomains: [algorithms-and-complexity]
 year: 1987
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0375_0376/LOG_0024.pdf
 survey_pages: 39
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 4
 access: public
 host: institutional
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Journal für die reine und angewandte Mathematik (Crelle's Journal), vol. 375/376 (1987), 406-443.
 **Source:** https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0375_0376/LOG_0024.pdf — direct PDF download from the Göttinger Digitalisierungszentrum (SUB Göttingen), which digitizes Crelle's Journal's historical volumes. Fetched and verified: HTTP 200, application/pdf, 39 pages, author/title metadata confirmed via the volume's IIIF manifest. (The publisher-of-record copy at De Gruyter is paywalled; this GDZ scan is the public copy.)
+**Reading copy:** `scratchpad/ocr-text/strassen__relative-bilinear-complexity-and-matrix-multiplication.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 **Text-layer correction (2026-07-29): GDZ cover-only.** This is a
 Göttingen Digitalisierungszentrum scan whose *only* embedded text is the
@@ -32,4 +33,3 @@ This work needs the deterministic OCR batch.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
-_OCR-HOLD -- no text layer; deferred pending explicit go-ahead_

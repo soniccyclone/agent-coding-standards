@@ -7,7 +7,7 @@ subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1974
 url: https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/theotypestr.pdf
 survey_pages: 18
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: self-archived
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Programming Symposium (Colloque sur la Programmation), Paris, LNCS vol. 19, Springer-Verlag, 1974, pp. 408-425.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/theotypestr.pdf — live PDF (HTTP 200), a scanned copy self-archived by Reynolds in his own CMU FTP directory (filename `theotypestr.pdf`, under his `jcr` account). Also independently mirrored by CMU (`~crary/819-f09/Reynolds74.pdf`) and Northeastern's PRL group, both live, confirming this is the correct paper.
+**Reading copy:** `scratchpad/ocr-text/reynolds__towards-a-theory-of-type-structure.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

@@ -7,7 +7,7 @@ subdomains: [algorithms-and-complexity]
 year: 1986
 url: https://www.cs.princeton.edu/courses/archive/fall05/cos528/handouts/NP_is_as.pdf
 survey_pages: 10
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
@@ -19,6 +19,7 @@ tags: [work]
 **Author(s):** with Vijay V. Vazirani
 **Venue/year:** Theoretical Computer Science, vol. 47 (1986), pp. 85-93 (originally presented at STOC 1985).
 **Source:** https://www.cs.princeton.edu/courses/archive/fall05/cos528/handouts/NP_is_as.pdf — scanned copy hosted as a handout on a Princeton COS 528 course archive page; third-party rehost of the original journal paper.
+**Reading copy:** `scratchpad/ocr-text/valiant__np-is-as-easy-as-detecting-unique-solutions.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

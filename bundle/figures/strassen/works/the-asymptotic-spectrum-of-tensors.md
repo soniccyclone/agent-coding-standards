@@ -7,7 +7,7 @@ subdomains: [algorithms-and-complexity]
 year: 1988
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0384/LOG_0008.pdf
 survey_pages: 52
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 3
 access: public
 host: institutional
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Journal für die reine und angewandte Mathematik (Crelle's Journal), vol. 384 (1988), 102-152.
 **Source:** https://gdz.sub.uni-goettingen.de/download/pdf/PPN243919689_0384/LOG_0008.pdf — direct PDF download from the Göttinger Digitalisierungszentrum (SUB Göttingen). Fetched and verified: HTTP 200, application/pdf, 52 pages, author/title metadata confirmed via the volume's IIIF manifest.
+**Reading copy:** `scratchpad/ocr-text/strassen__the-asymptotic-spectrum-of-tensors.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 Note: the Phase 1/2 stub listed this as "The Asymptotic Spectrum of Tensors and the Exponent of Matrix Multiplication (1988, FOCS)" — that conflates two related items. The actual FOCS extended abstract ("...and the Exponent of Matrix Multiplication") ran in FOCS 1986 (IEEE SFCS '86, pp. 49-54, DOI 10.1109/SFCS.1986.52) and sits behind the IEEE Xplore paywall with no public copy found. The full journal treatment, titled simply "The Asymptotic Spectrum of Tensors," appeared in Crelle's Journal in 1988 and is the version linked here.
 
@@ -34,4 +35,3 @@ This work needs the deterministic OCR batch.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
-_OCR-HOLD -- no text layer; deferred pending explicit go-ahead_

@@ -7,7 +7,7 @@ subdomains: [operating-systems-and-systems-programming]
 year: 1965
 url: https://www.cs.auckland.ac.nz/courses/compsci703s1c/resources/Wilkes.pdf
 survey_pages: 2
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** IEEE Transactions on Electronic Computers, Vol. EC-14, No. 2, April 1965, pp. 270-271.
 **Source:** https://www.cs.auckland.ac.nz/courses/compsci703s1c/resources/Wilkes.pdf — University of Auckland course-materials mirror (also mirrored on other university course pages, e.g. ETH Zurich); content verified by rendering and visually confirming the scanned pages match the published paper.
+**Reading copy:** `scratchpad/ocr-text/wilkes__slave-memories-and-dynamic-storage-allocation.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

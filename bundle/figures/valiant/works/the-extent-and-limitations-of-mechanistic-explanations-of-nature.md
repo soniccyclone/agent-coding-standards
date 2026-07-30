@@ -6,6 +6,7 @@ description: Valiant's 2010 ACM Turing Award lecture, arguing that computational
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 year: 2010
 url: https://www.youtube.com/watch?v=F-boZa-n6Mo
+survey_text_layer: none
 access: public
 host: institutional
 tags: [work]
@@ -18,3 +19,4 @@ tags: [work]
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
+_SOURCE-UNOBTAINABLE — see phase4-flags.md H.7. Do not attempt; the URL does not serve the text. Needs a source decision from Nathan._

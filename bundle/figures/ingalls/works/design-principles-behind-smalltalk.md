@@ -7,7 +7,7 @@ subdomains: [programming-languages-and-semantics, programming-environments-and-o
 year: 1981
 url: https://worrydream.com/refs/Ingalls_1981_-_Design_Principles_Behind_Smalltalk.pdf
 survey_pages: 8
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 5
 access: public
 host: third-party-rehost
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Byte Magazine, Vol. 6, No. 8, August 1981, pp. 286-298.
 **Source:** https://worrydream.com/refs/Ingalls_1981_-_Design_Principles_Behind_Smalltalk.pdf — live PDF, rehosted on Bret Victor's worrydream.com reference archive. Verified 200 OK, application/pdf, 8 pages. Also mirrored at gwern.net/doc/cs/1981-ingalls.pdf (verified 200 OK) if the worrydream copy ever goes down.
+**Reading copy:** `scratchpad/ocr-text/ingalls__design-principles-behind-smalltalk.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

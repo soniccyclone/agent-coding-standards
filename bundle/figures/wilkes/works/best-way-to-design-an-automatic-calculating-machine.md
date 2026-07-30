@@ -7,7 +7,7 @@ subdomains: [operating-systems-and-systems-programming]
 year: 1951
 url: https://www.cs.princeton.edu/courses/archive/fall10/cos375/BestWay.pdf
 survey_pages: 4
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Report of the Manchester University Computer Inaugural Conference, July 1951, pp. 16-18; reprinted in "The Early British Computer Conferences" (Charles Babbage Institute Reprint Series, Vol. 14), pp. 182-184.
 **Source:** https://www.cs.princeton.edu/courses/archive/fall10/cos375/BestWay.pdf — Princeton course-materials mirror of the Charles Babbage Institute reprint; content verified by rendering and visually confirming the scanned pages (byline "By M. V. Wilkes, M.A., Ph.D., F.R.A.S.", running head "Manchester University Computer").
+**Reading copy:** `scratchpad/ocr-text/wilkes__best-way-to-design-an-automatic-calculating-machine.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

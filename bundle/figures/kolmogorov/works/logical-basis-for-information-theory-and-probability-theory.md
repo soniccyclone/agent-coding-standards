@@ -6,6 +6,7 @@ description: A short program-setting paper arguing that both probability theory 
 subdomains: [foundations-of-computation]
 year: 1968
 url: https://www.mathnet.ru/eng/ppi1805
+survey_text_layer: none
 access: public
 host: institutional
 tags: [work]
@@ -18,3 +19,4 @@ tags: [work]
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
+_SOURCE-UNOBTAINABLE — see phase4-flags.md H.7. Do not attempt; the URL does not serve the text. Needs a source decision from Nathan._

@@ -7,7 +7,7 @@ subdomains: [programming-environments-and-object-systems]
 year: 1990
 url: https://tinlizzie.org/VPRIPapers/hc_user_interface.pdf
 survey_pages: 14
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 3
 access: public
 host: self-archived
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** In Brenda Laurel (ed.), *The Art of Human-Computer Interface Design*, Addison-Wesley, 1990, pp. 191-207.
 **Source:** https://tinlizzie.org/VPRIPapers/hc_user_interface.pdf — live PDF, self-archived on the Viewpoints Research Institute papers archive. Verified 200 OK. Originally flagged `paywalled` (book chapter); resolved via Kay's own institute mirror.
+**Reading copy:** `scratchpad/ocr-text/kay__user-interface-a-personal-view.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

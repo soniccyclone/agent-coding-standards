@@ -6,6 +6,8 @@ description: Church's graduate textbook synthesizing three decades of his own an
 subdomains: [foundations-of-computation]
 year: 1956
 url: https://archive.org/details/dli.ernet.449121
+survey_text_layer: ocr
+survey_pages: 378
 access: public
 host: third-party-rehost
 tags: [work]
@@ -15,6 +17,7 @@ tags: [work]
 
 **Venue/year:** Princeton Mathematical Series no. 17, Princeton University Press, 1956 (Volume I; no further volumes were published).
 **Source:** https://archive.org/details/dli.ernet.449121 — full freely-downloadable scan (PDF/EPUB/full text, no lending restriction) hosted by the Internet Archive under the Digital Library of India collection.
+**Reading copy:** `scratchpad/ocr-text/church__introduction-to-mathematical-logic.txt` — the Internet Archive's own OCR of this scan (167,804 words, high quality: 37% of tokens are common English function words). Read that file rather than the 181MB PDF. This is a full-length textbook, so read it in sequential chunks. As with any OCR, the prose is reliable but the logical notation is not — Church's formalism will not have survived, so ground every lesson in his prose argument about method, not in a formula.
 
 ## Lessons
 - [Choosing a notation is choosing a theory of the domain, and surface similarity is no evidence of shared structure](../lessons/choosing-a-notation-is-choosing-a-theory.md)

@@ -7,7 +7,7 @@ subdomains: [foundations-of-computation]
 year: 1965
 url: http://alexander.shen.free.fr/library/Kolmogorov65_Three-Approaches-to-Information.pdf
 survey_pages: 7
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Problemy Peredachi Informatsii [Problems of Information Transmission], vol. 1, no. 1, pp. 3-11, 1965.
 **Source:** http://alexander.shen.free.fr/library/Kolmogorov65_Three-Approaches-to-Information.pdf — direct PDF, hosted on the personal academic site of Alexander Shen (co-author of the standard Kolmogorov-complexity textbook), verified resolving (200 OK, valid PDF, 7 pp.). Third-party rehost, not the author's own site or the original journal.
+**Reading copy:** `scratchpad/ocr-text/kolmogorov__three-approaches-to-the-quantitative-definition-of-information.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

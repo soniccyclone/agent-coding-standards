@@ -7,7 +7,7 @@ subdomains: [formal-methods-and-verification, software-engineering-and-architect
 year: 1980
 url: http://homepages.cs.ncl.ac.uk/cliff.jones/publications/Books/SDRA.pdf
 survey_pages: 400
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 89
 access: public
 host: self-archived
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Prentice Hall International, 1980.
 **Source:** http://homepages.cs.ncl.ac.uk/cliff.jones/publications/Books/SDRA.pdf — full scanned book self-archived on Jones's own Newcastle homepage, linked directly from his publications list (HTTP 200, confirmed live). Phase 1 had flagged this `paywalled`; a legitimate open copy exists on the author's own site.
+**Reading copy:** `scratchpad/ocr-text/jones__software-development-a-rigorous-approach.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

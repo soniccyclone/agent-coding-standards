@@ -6,6 +6,7 @@ description: Wilkes's 1967 Turing Award lecture, a retrospective on the two deca
 subdomains: [operating-systems-and-systems-programming, programming-languages-and-semantics]
 year: 1967
 url: https://chsasank.com/classic_papers/maurice-wilkes-computers-then-and-now.html
+survey_text_layer: full
 access: public
 host: third-party-rehost
 tags: [work]
@@ -15,6 +16,7 @@ tags: [work]
 
 **Venue/year:** 1967 ACM Turing Award Lecture, presented at the ACM 20th Anniversary Conference, Washington, D.C., August 1967; published in Journal of the ACM 15(1), 1968, p. 1; reprinted in "ACM Turing Award Lectures: The First Twenty Years," ACM Press, 1987, p. 197.
 **Source:** https://chsasank.com/classic_papers/maurice-wilkes-computers-then-and-now.html — full text hosted on a personal "classic papers" reading-list blog; page confirmed live and displaying the complete lecture text. (Note: a scanned PDF of the same lecture is also mirrored at rkka21.ru, but that domain's root site is unrelated and looks illegitimate, so it was not used as the citation.)
+**Reading copy:** full text is served as HTML, not PDF (~4,152 words). Fetch the URL and read the HTML directly; `pdftotext` on it returns nothing, which is what made earlier surveys record this as having no text layer.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

@@ -6,6 +6,7 @@ description: A short technical paper proving that Turing's own notion of a compu
 subdomains: [foundations-of-computation, programming-languages-and-semantics]
 year: 1937
 url: https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-11
+survey_text_layer: none
 access: public
 host: institutional
 tags: [work]
@@ -31,3 +32,4 @@ different open copy of the 1937 offprint.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
+_SOURCE-UNOBTAINABLE — see phase4-flags.md H.7. Do not attempt; the URL does not serve the text. Needs a source decision from Nathan._

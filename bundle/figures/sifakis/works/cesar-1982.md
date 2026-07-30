@@ -7,7 +7,7 @@ subdomains: [formal-methods-and-verification]
 year: 1982
 url: https://web.archive.org/web/20251109074827/http://www-verimag.imag.fr/~sifakis/RECH/queille_sifakis.pdf
 survey_pages: 15
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: self-archived
@@ -21,6 +21,7 @@ tags: [work]
 **Venue/year:** 5th International Symposium on Programming (Turin), LNCS 137, pp. 337-352, Springer, 1982
 
 **Source:** Self-archived by Sifakis at his Verimag/CNRS Grenoble faculty page (www-verimag.imag.fr/~sifakis/RECH/queille_sifakis.pdf). The live link now 404s; recovered via a Wayback Machine snapshot from 2025-11-09, which counts as the public copy per the standing Wayback-fallback rule for dead self-archived links.
+**Reading copy:** `scratchpad/ocr-text/sifakis__cesar-1982.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

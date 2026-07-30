@@ -7,7 +7,7 @@ subdomains: [programming-languages-and-semantics]
 year: 1978
 url: https://www.research-collection.ethz.ch/server/api/core/bitstreams/289cc859-94e5-4758-8786-ac05437780a2/content
 survey_pages: 47
-survey_text_layer: partial
+survey_text_layer: full
 survey_fetch_mb: 9
 access: public
 host: institutional

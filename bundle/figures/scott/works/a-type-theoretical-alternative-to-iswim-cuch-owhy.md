@@ -7,7 +7,7 @@ subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1969/1993
 url: https://www.cs.cmu.edu/~kw/scans/scott93tcs.pdf
 survey_pages: 30
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 2
 access: public
 host: third-party-rehost
@@ -18,6 +18,7 @@ tags: [work]
 
 **Venue/year:** Theoretical Computer Science 121(1&2), 1993, pp. 411-440 (manuscript written October 1969, circulated privately, published with a new preface in 1993).
 **Source:** https://www.cs.cmu.edu/~kw/scans/scott93tcs.pdf — scanned copy hosted on a CMU faculty page (personal rehost of the Elsevier-copyrighted article). The original Elsevier/ScienceDirect version is paywalled. Title page and 1993 preface confirmed by direct render.
+**Reading copy:** `scratchpad/ocr-text/scott__a-type-theoretical-alternative-to-iswim-cuch-owhy.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

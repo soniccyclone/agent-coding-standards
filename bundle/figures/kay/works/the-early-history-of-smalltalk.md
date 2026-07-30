@@ -6,6 +6,7 @@ description: Kay's own retrospective, written for ACM's second History of Progra
 subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
 year: 1993
 url: https://worrydream.com/EarlyHistoryOfSmalltalk/
+survey_text_layer: full
 access: public
 host: third-party-rehost
 tags: [work]
@@ -15,6 +16,7 @@ tags: [work]
 
 **Venue/year:** ACM SIGPLAN Notices / HOPL-II (Second ACM SIGPLAN History of Programming Languages Conference), April 1993, pp. 69-95.
 **Source:** https://worrydream.com/EarlyHistoryOfSmalltalk/ — live HTML transcription of the full paper (including references), rehosted on Bret Victor's worrydream.com. Verified 200 OK; full text confirmed present through the closing section and references.
+**Reading copy:** full text is served as HTML, not PDF (~25,133 words). Fetch the URL and read the HTML directly; `pdftotext` on it returns nothing, which is what made earlier surveys record this as having no text layer.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

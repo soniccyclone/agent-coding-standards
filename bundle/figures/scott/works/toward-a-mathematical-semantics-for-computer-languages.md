@@ -7,7 +7,7 @@ subdomains: [programming-languages-and-semantics, foundations-of-computation]
 year: 1971
 url: https://www.cs.cmu.edu/~crary/819-f09/Scott71.pdf
 survey_pages: 28
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 8
 access: public
 host: third-party-rehost
@@ -19,6 +19,7 @@ tags: [work]
 **Author(s):** Dana Scott and Christopher Strachey
 **Venue/year:** Proceedings of the Symposium on Computers and Automata, Polytechnic Institute of Brooklyn, April 1971, pp. 19-46 (originally Oxford PRG Technical Monograph PRG-6, August 1971).
 **Source:** https://www.cs.cmu.edu/~crary/819-f09/Scott71.pdf — scanned copy hosted on a CMU graduate course page (course-mirror rehost); verified against the CMU/CiteSeerX access flag already noted in the figure stub. Title page confirmed by direct render.
+**Reading copy:** `scratchpad/ocr-text/scott__toward-a-mathematical-semantics-for-computer-languages.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_

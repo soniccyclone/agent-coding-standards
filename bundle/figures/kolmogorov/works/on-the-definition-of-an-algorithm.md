@@ -6,6 +6,7 @@ description: Kolmogorov and Uspensky propose a formal model of "algorithm" built
 subdomains: [foundations-of-computation]
 year: 1958
 url: https://www.mathnet.ru/eng/rm7453
+survey_text_layer: none
 access: public
 host: institutional
 tags: [work]
@@ -19,3 +20,4 @@ tags: [work]
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
+_SOURCE-UNOBTAINABLE — see phase4-flags.md H.7. Do not attempt; the URL does not serve the text. Needs a source decision from Nathan._
