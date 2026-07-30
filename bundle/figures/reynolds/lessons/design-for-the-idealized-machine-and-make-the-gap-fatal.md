@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Design against an idealized machine, then insist the real one turn every deviation into a hard failure"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [cognitive-load, hardware-affinity, verifiability]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Design against an idealized machine, then insist the real one turn every deviation into a hard failure
+
+**Lesson:** Every real machine is finite in ways the problem is not: numbers have a largest magnitude, memory has a last cell, time has a deadline. The temptation is to admit all of that into the design at once, and the result is a program in which the interesting argument and the resource bookkeeping are interleaved so thoroughly that neither can be checked. The better order is to write for an idealized machine — unbounded arithmetic, unbounded storage — and to take the real limits into account only qualitatively: avoid magnitudes larger than you need, avoid storage you have no use for, but do not encode the bounds. You then have one artifact whose correctness you can actually establish. The justification is not laziness about the hardware. It is that the scarcest resource in the whole enterprise is the programmer's capacity to hold a problem in mind, and dividing the problem is the only known way to spend it well.
+
+The idealization is only safe if the gap between ideal and real is guaranteed to announce itself. A program written as though arithmetic were unbounded is acceptable when overflow stops the computation with an error, and unacceptable when overflow wraps around and keeps going, because in the first case you get no answer and in the second you get a wrong one — and a missing answer is nearly always the cheaper failure. So the demand on the environment is specific and non-negotiable: every point where the real machine departs from the ideal one you designed against must be detected and must be fatal. Silent truncation, silent wraparound, an out-of-range index that quietly reads a neighbor: each of these converts a design decision you made deliberately into an unbounded liability.
+
+Two boundaries on the technique deserve marking. First, when a limit is not merely inconvenient but intrinsically too small for the problem, no amount of care in the abstract program helps and you must deliberately translate it into a concrete one that represents the large thing in terms of many small ones — a separate exercise in data representation, done once, with the abstract program as its specification. Second, when failure to produce an answer is as bad as a wrong answer, as under a hard deadline, the qualitative treatment is not enough: you still start from the idealized program, but you must then derive genuine bounds on time, space and magnitude and show they fit. Deriving those bounds is a different discipline from proving correctness, using different techniques, and folding it into the correctness argument makes both intractable. Keep them as two obligations rather than one.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 1.6.2 on programming for an idealized computer, which argues for pretending all integers are representable while avoiding unnecessarily large magnitudes, notes that failure to produce an answer is usually much less serious than producing a wrong one, identifies the finiteness of the programmer's mind as the severest real limitation, demands an environment in which overflow and storage exhaustion are always detected as errors, and separates the deduction of resource bounds from proofs of correctness.

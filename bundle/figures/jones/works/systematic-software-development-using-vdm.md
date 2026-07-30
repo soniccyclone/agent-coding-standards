@@ -31,3 +31,5 @@ tags: [work]
 - [Check that what you are asking for is possible at all, and demote the check when it costs as much as building](../lessons/check-that-what-you-ask-for-is-possible-at-all.md)
 - [Write down how a representation is to be read, then check every value you promised can be read out of it](../lessons/write-the-interpretation-and-check-it-covers-everything.md)
 - [Read the architecture off the state, because whatever the state does not say gets scattered everywhere else](../lessons/read-the-architecture-off-the-state.md)
+- [Spend the confidence a better method buys you on making the same systems safer, not on attempting harder ones](../lessons/spend-the-dividend-of-rigour-on-safety-not-ambition.md)
+- [Describing a type by laws instead of a model does not escape the model, it just stops you choosing it](../lessons/equations-do-not-escape-a-model-they-hide-which-one.md)

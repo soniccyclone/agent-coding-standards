@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Keep the narrow form so that reaching for the general one is a signal"
+figure: wirth
+works: [modula-2]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Keep the narrow form so that reaching for the general one is a signal
+
+**Lesson:** Once you have a fully general construct, every specialized one it subsumes looks like clutter that a minimality argument should remove. Resist that in the cases where the specialized form states something the general one cannot. A repetition governed by a condition tested before the body, one governed by a condition tested after it, and one driven by a progression of values are all expressible as an unconditional repetition containing a single departure — the general form is strictly more powerful and each specialization is redundant relative to it. But the specializations are not merely shorter. Each one, by its shape, commits its author to a particular reason the repetition will end, and puts that reason in a fixed place a reader knows to look at. The general form makes no such commitment, which is exactly why it can express the cases the others cannot, and exactly why it tells a reader nothing.
+
+Keeping both, and recommending the narrow ones for the situations they cover, buys a property that neither form has alone: the choice of construct becomes a message. A reader encountering a specialized repetition knows the termination argument is of a standard shape and where to find it. A reader encountering the general form knows something unusual is true here — most usefully, that there may be no termination argument at all, because the activity is meant to cycle indefinitely, which is a legitimate and common situation in a system that services devices and which the specialized forms cannot state without lying. The general construct has been reduced from the default to a marker. That is a better outcome than either eliminating it, which makes the cyclic case inexpressible, or making it the only form, which erases the distinction between a loop with a simple exit condition and one without.
+
+The generalizable rule concerns what a design's vocabulary is for. Counting irreducible primitives is one measure and it matters, but a construct that is derivable is not thereby worthless: its value can lie entirely in what its presence tells a reader about the code, and the value is realized only if the alternatives coexist and their use is conventional. So when deciding whether to collapse several forms into one, ask what information the distinction was carrying, and whether the collapse destroys it. Note the honest cost as well — the departure statement inside a general repetition is bound to the repetition it sits in by context rather than by anything visible in the grammar, so this arrangement trades a small, acknowledged irregularity for the signalling property, and knowing which irregularities are worth that trade is the actual skill.
+
+**Source:** [MODULA-2](../works/modula-2.md) — section 9.9's remark that while, repeat and for statements can each be expressed by a loop statement containing a single exit statement, that their use is nevertheless recommended because they characterize the most frequently occurring situations where termination depends on a single condition at the beginning or end of the sequence or on reaching the limit of an arithmetic progression, that the loop statement is necessary to express continuous repetition of cyclic processes where no termination is specified, and that exit statements are bound to their enclosing loop contextually although not syntactically.

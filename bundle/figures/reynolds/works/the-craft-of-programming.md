@@ -29,3 +29,6 @@ tags: [work]
 - [When the uniform algorithm fails at one edge, try extending the definition before adding a branch](../lessons/extend-the-definition-instead-of-branching-on-the-edge-case.md)
 - [Locality is something you discover in the contract, not something you decide when declaring](../lessons/read-a-variables-scope-off-its-contract.md)
 - [If renaming a component's internal names can change what it means, you have no encapsulation](../lessons/if-renaming-can-change-meaning-you-have-no-encapsulation.md)
+- [Design against an idealized machine, then insist the real one turn every deviation into a hard failure](../lessons/design-for-the-idealized-machine-and-make-the-gap-fatal.md)
+- [When two guards are equivalent inside the contract, choose by what they do outside it](../lessons/choose-among-equivalent-guards-by-behavior-outside-the-contract.md)
+- [Reasoning that feels hard is often only unfamiliar, so build the vocabulary the domain is missing](../lessons/difficulty-that-is-only-unfamiliarity-is-fixed-by-building-vocabulary.md)

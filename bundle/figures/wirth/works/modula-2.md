@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 9
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -25,3 +26,6 @@ tags: [work]
 - [Confine the unsafe capability to a named region, and make requesting it visible in the text](../lessons/confine-the-unsafe-capability-and-make-requesting-it-visible.md)
 - [Publish which parts of the design you do not yet believe, and name them individually](../lessons/publish-which-parts-of-the-design-you-do-not-yet-believe.md)
 - [Write the definition to settle disputes, not to teach, and put the same artifact between independent implementors](../lessons/write-the-definition-to-settle-disputes-not-to-teach.md)
+- [Make the set of interleaving points enumerable by construction, and hang the exclusion on the boundary](../lessons/make-the-set-of-interleaving-points-enumerable-by-construction.md)
+- [Find the notion the hardware event already is, instead of adding machinery to describe it](../lessons/find-the-notion-the-hardware-event-already-is.md)
+- [Keep the narrow form so that reaching for the general one is a signal](../lessons/keep-the-narrow-form-so-that-reaching-for-the-general-one-is-a-signal.md)
