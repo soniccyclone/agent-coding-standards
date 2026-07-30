@@ -57,12 +57,20 @@ tags: [work]
 - [Two organizations can share one coherent system while nobody anywhere understands all of it](../lessons/integrate-through-shared-models-so-nobody-holds-the-whole.md)
 - [Introduce the expensive notation last, and prefer redesigning the thing so you never need it](../lessons/defer-the-notation-whose-cost-is-volume.md)
 
+- [Known confusion is safe; it is the undetected mismatch that destroys projects](../lessons/undetected-agreement-is-the-dangerous-state.md)
+- [What matters most about how work gets done is what nobody thinks to mention](../lessons/the-most-important-facts-are-the-ones-nobody-mentions.md)
+- [Before integrating two groups' data, separate their words from their concepts](../lessons/separate-the-term-from-the-concept-before-integrating.md)
+- [The channel you are automating is also carrying the social and teaching traffic](../lessons/a-work-channel-carries-social-and-training-traffic-too.md)
+- [Permit a dependency only in the direction of the thing that changes more slowly](../lessons/allow-coupling-only-toward-what-changes-more-slowly.md)
+
 _PARTIAL EXTRACTION — updated 2026-07-29. Read in full so far: preface, chapter 1
 (The main ideas), all of chapter 2 (Role Modeling), and **all of chapter 3 (Role
 model synthesis, lines 4483-6286 — synthesis operation, aggregation kinds,
 attributes and message parameters, safe vs unsafe synthesis, and the notation
-across all seven views)**. **Chapters 0-6 are now read in full** (through line 10524, book page 244 of 497).
-Next unread line is 10525, the start of chapter 7 — the first of the four case studies of the `pdftotext -layout` extraction held at
+across all seven views)**. **Chapters 0-6 read in full, plus chapter 7 sections 7.0-7.2.3** (through line
+11524, book page ~267 of 497). Next unread line is 11525, mid chapter 7 section
+7.2.3 — remaining in ch7: the rest of the Information model and all of section 7.3
+(the Task/Tool/Service model) of the `pdftotext -layout` extraction held at
 `scratchpad/reenskaug/ooram-slim.txt`.
 
 NOT yet read: chapter 6 (additional views and notation),
