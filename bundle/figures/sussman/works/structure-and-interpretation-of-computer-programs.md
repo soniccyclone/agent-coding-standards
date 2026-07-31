@@ -145,6 +145,9 @@ tags: [work]
 - [A gap between two levels can be closed from either end, and the end you move decides whether execution stays legible or gets fast](../lessons/close-a-level-gap-from-either-end-and-you-choose-what-stays-visible.md)
 - [Measure a port by the size of the part that cannot be written in the system's own language, and spend your design effort shrinking that part](../lessons/shrink-the-hand-written-kernel-by-writing-the-system-in-itself.md)
 - [With no reference answer available, test that two independent routes to the same artifact produce the same artifact](../lessons/with-no-oracle-test-that-two-routes-to-the-same-artifact-agree.md)
+- [The cost of a safety check varies per site, so settling it with a global default of off converts an optimization into an unlocatable absence](../lessons/a-per-site-cost-argument-must-not-be-settled-by-a-global-default-of-off.md)
+- [Bracket a general mechanism between what it replaced and what a hand-built special case achieves, and check the ratio is even defined before quoting it](../lessons/bracket-a-general-mechanism-between-two-baselines-and-check-the-ratio-exists.md)
+- [A unit built separately cannot name anything outside itself, so every cross-boundary reference has to arrive as a value someone installs](../lessons/a-separately-built-unit-cannot-name-anything-outside-itself.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

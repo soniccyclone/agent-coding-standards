@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "\"Is this for me\" and \"is this the one I am waiting for\" are different questions"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, cognitive-load, parallelizability]
+subdomains: [distributed-systems-and-concurrency, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# "Is this for me" and "is this the one I am waiting for" are different questions
+
+**Lesson:** A component that receives things from a shared source has two entirely separate admission tests to apply, and conflating them produces a class of bug that is hard to see because both tests pass most of the time. The first test is about addressing: of everything on the medium, which items are directed at this component at all. It has one right answer for the lifetime of the component, depends on no history, and can be evaluated by anything that knows one constant. The second test is about expectation: given that this component is in the middle of a particular exchange with a particular counterpart, is this item the continuation of that exchange. Its answer changes from moment to moment, depends entirely on the component's own state, and cannot be evaluated by anything that does not know that state.
+
+Because the answers have different lifetimes, the tests belong in different places. The addressing test should be pushed as low as it can go, since anything it rejects costs nothing further. The expectation test cannot be pushed anywhere: it lives with the code that holds the conversation, it must run on everything the first test admitted, and it must be applied even when — especially when — the arriving item is perfectly well-formed and addressed correctly. That is the case people forget. A reply from the right kind of party at the wrong time, or from a party you were not talking to, or belonging to an exchange that timed out and was abandoned, is indistinguishable from the awaited reply on every criterion except the one the receiving state machine is uniquely able to check.
+
+So the discipline is to write down, for each waiting point, the full predicate that identifies an acceptable arrival — who it must be from, which exchange it belongs to, where in that exchange it falls — and to make the receive operation reject and discard anything failing it, rather than accepting it and hoping. Discarding is the right response rather than erroring, because the unexpected arrival is usually not a fault at all but a straggler from something that has already been resolved, and treating stragglers as errors makes a working system look broken. The cost is that a waiting point must also be prepared for nothing acceptable ever arriving, which is the same deadline the loss case already demanded. Two filters, at two levels, answering two questions, each doing the part the other cannot: the low one removes what was never yours, the high one removes what is yours but no longer relevant.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 10.4's description of the receive-header procedure, which receives packets and discards them until one arrives from the partner it is expecting, described explicitly as an input filter in addition to the one provided by the hardware and as discriminating on the basis of the packet's source address where the hardware filter discriminates on the destination address, returning a distinguished type code if nothing acceptable arrives within the allotted time; together with the companion procedure that checks the sequence numbers of incoming data packets and, on detecting an incorrect number, returns an acknowledgement carrying the previous number to request retransmission.

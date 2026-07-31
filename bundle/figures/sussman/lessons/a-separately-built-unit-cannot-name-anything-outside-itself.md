@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A unit built separately cannot name anything outside itself, so every cross-boundary reference has to arrive as a value someone installs"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [expressiveness, cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# A unit built separately cannot name anything outside itself, so every cross-boundary reference has to arrive as a value someone installs
+
+**Lesson:** The moment you decide that two parts of a system are prepared independently, you have decided that neither can mention a name defined in the other. This is not a limitation of any particular tool. It follows from what preparing a unit means: the step that turns names into references consults only what is present, so a name with no local definition is an error, not a deferred lookup. Every scheme for resolving names ahead of time has this property, and the boundaries it creates are exactly the boundaries of what was present when the resolution ran.
+
+The consequence is that a reference crossing such a boundary cannot be a name at all. It has to become a value — something placed in an agreed location before use and read from that location at the point of the reference. The static mention becomes a dynamic fetch, and the loss is real: what was checkable at preparation time is now checkable only when it is used, and the failure mode changes from "this does not build" to "this location was empty when we got here". You buy independence and you pay in verification.
+
+The part usually underestimated is that the indirection creates an ordering obligation that did not exist before. Somebody must fill the location, and every path into the referencing code must run after that filling. With a resolved name there was nothing to sequence; with a value there is, and the sequencing constraint is invisible in the referencing code, which just reads a location. That is why systems built this way accumulate initialization phases, why the order of those phases becomes load-bearing and undocumented, and why the characteristic bug of the pattern is an entry point that was reached before the wiring was done. The discipline that follows is to make the filling happen at exactly one place, as early as possible, on every path that can reach the unit, and to treat any second place that fills the same location as a defect rather than as flexibility.
+
+Recognizing the shape lets you see it as one thing in places that look unrelated: a table of addresses filled in when a library is loaded, a handler registered by a plugin before a dispatcher can call it, a service address supplied through the environment, a callback passed in because the callee is not allowed to know the caller. All of them are the same trade — a name that could not cross a preparation boundary, converted into a value, with the checking moved to run time and an initialization order created as a side effect.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) — chapter 5, Exercise 5.47, on extending the compiler so that compiled procedures can call interpreted ones: it observes that the code must jump to the evaluator's entry point for applying compound procedures, that this label cannot be referenced directly from the object code because the assembler requires every label referenced by the code it is assembling to be defined within that code, and therefore adds a register to the evaluator machine to hold that entry point together with an instruction that initializes the register to the label, placed before the branch at the machine's start. Related is section 5.5.7's arrangement for starting the machine at a second entry point, where the machine begins with a conditional branch on a flag register and the footnote consequently requires the flag to be initialized on every start, including the ordinary one.

@@ -135,3 +135,6 @@ section are where the extractable lessons are.
 - [Break a retry tie with an identifier you already have](../lessons/break-a-retry-tie-with-an-identifier-you-already-have.md)
 - [Code that compensates for a defect below will look wrong, and should be labelled rather than beautified](../lessons/code-that-compensates-for-a-lower-layer-will-look-wrong.md)
 - [Do not hide a difference in kind behind a uniform interface](../lessons/do-not-hide-a-difference-in-cost-behind-a-uniform-interface.md)
+- [When a requirement seems to break the global model, look for the one module that can absorb it](../lessons/absorb-the-violation-in-one-module-rather-than-abandon-the-model.md)
+- [Refine a protocol by naming what the current version cannot survive](../lessons/refine-a-protocol-by-naming-what-the-current-version-cannot-survive.md)
+- ["Is this for me" and "is this the one I am waiting for" are different questions](../lessons/is-this-for-me-and-is-this-the-one-i-am-waiting-for-are-different-questions.md)

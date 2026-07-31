@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 7510** — Chapters 1 (from 1.5),
-2 and 3 read in full; Chapter 4 read through 4.4.4.
+pass died immediately. Current position: **line 7940** — Chapters 1 (from 1.5),
+2 and 3 read in full; Chapter 4 read through 4.5.1.
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -85,3 +85,4 @@ pass died immediately. Current position: **line 7510** — Chapters 1 (from 1.5)
 - [Define a fault-masking layer's correctness as indistinguishability from the ideal component it imitates](../lessons/define-a-masking-layer-by-the-ideal-component-it-imitates.md)
 - [Design in nested layers, deploy as two stacks, and let associativity be what licenses the regrouping](../lessons/design-in-nested-layers-deploy-as-stacks-and-let-associativity-license-it.md)
 - [Multiplexing independent streams couples them, buffering only postpones the coupling, and per-stream backpressure is the only cure](../lessons/multiplexing-couples-independent-streams-and-only-backpressure-uncouples-them.md)
+- [A recursively subordinated process and an unbounded data structure are one construction, held together by local naming](../lessons/a-recursively-subordinated-process-is-an-unbounded-data-structure.md)

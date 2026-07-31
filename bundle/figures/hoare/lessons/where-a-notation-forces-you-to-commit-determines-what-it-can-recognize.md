@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Where a notation forces you to commit is what determines the class of things it can recognize"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [expressiveness, cognitive-load, hardware-affinity]
+subdomains: [programming-languages-and-semantics, foundations-of-computation]
+tags: [lesson]
+---
+# Where a notation forces you to commit is what determines the class of things it can recognize
+
+**Lesson:** A recognizer built from three constructs — do this next, choose among these, refer to yourself — looks open-ended, and its exact power turns out to be fixed by one seemingly minor requirement: the alternatives of a choice must be distinguishable by their very first occurrence. That rule is what allows the choice to be settled at the moment it is reached, with no lookahead and no revisiting, and it is therefore also the thing that caps what can be recognized. Anything demanding that you see further before committing falls outside — not because a feature is missing but because the commitment point was placed at the first symbol. The principle generalizes past parsing: a notation's expressive class is set by where it forces a decision, not by how many constructs it offers.
+
+The diagnosis is confirmed by watching the obvious escapes fail. Relaxing the rule so that alternatives may share a first occurrence does not help, because the selection then becomes an internal one: the machine picks a branch, the branch turns out to be the wrong one, and it seizes up partway through input that the other branch would have accepted happily. What is genuinely needed is to carry the alternatives forward together until the input distinguishes them — which is the deferral strategy, with the cost already established, namely maintaining every option for as long as they remain indistinguishable. So the expressiveness boundary and the efficiency trade are one boundary seen twice, and a notation offering the extra power without the cost is not on the menu.
+
+The practical reading is for anyone designing an input format or a wire protocol, not only for people building parsers. If you can arrange that the first token of every alternative is distinct, you obtain a reader that is trivially implementable, needs no buffering of undecided input, reports an error at the exact position where it occurs, and cannot degrade into backtracking. That is a large bundle of properties bought with a constraint on the format rather than cleverness in the reader — and it is available only while the format is still being designed. A format that requires lookahead imposes it on every reader anyone will ever write for it, permanently, which is an extravagant price for saving one keyword.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the introduction to the sequential processes chapter, which defines the language accepted by a process as the sequences after which it terminates successfully, gives grammar-shaped definitions for a toy language, and then states that the method is as powerful as regular expressions and gains some of the power of context-free grammars through recursion but not all, because the choice operator requires the first event of each alternative to differ from the others, so only languages parsable left to right without backtracking or lookahead can be defined; with the accompanying observation that using the general choice operator would not help since it introduces nondeterminism and a wrong selection deadlocks before the end of the input, and that what is required is a choice operator providing angelic nondeterminism, running both alternatives concurrently until the environment settles the matter.
