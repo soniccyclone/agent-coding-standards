@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 10540** — Chapters 1 (from 1.5),
-2, 3, 4 and 5 read in full; Chapter 6 read through 6.5 (mid).
+pass died immediately. Current position: **line 10980** — Chapters 1 (from 1.5),
+2, 3, 4, 5 and 6 read in full; Chapter 7 read through 7.2.4 (start).
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -99,3 +99,6 @@ pass died immediately. Current position: **line 10540** — Chapters 1 (from 1.5
 - [Let the act of acquiring an anonymous instance bind the identity of the one you got](../lessons/let-acquisition-bind-the-identity-of-what-you-got.md)
 - [Enforce a discipline through an interface so pleasant that nobody wants an escape hatch](../lessons/enforce-discipline-through-an-interface-nobody-wants-to-bypass.md)
 - [Make the degree of concurrency a parameter that leaves the specification unchanged](../lessons/make-the-degree-of-concurrency-a-spec-preserving-parameter.md)
+- [You cannot schedule what you cannot see waiting: split the atomic acquire into a request and a grant](../lessons/you-cannot-schedule-what-you-cannot-see-waiting.md)
+- [Measure modularity by listing prospective changes and counting the modules each touches — including the ones that come out badly](../lessons/measure-modularity-by-listing-changes-and-counting-modules.md)
+- [An access restriction is what turns polling into event-driven re-evaluation](../lessons/an-access-restriction-turns-polling-into-event-driven-reevaluation.md)

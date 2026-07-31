@@ -157,3 +157,6 @@ section are where the extractable lessons are.
 - [Keep what lets you check, not what lets you act](../lessons/keep-what-lets-you-check-not-what-lets-you-act.md)
 - [Admission and ownership are two different protections, and only one of them changes the data model](../lessons/admission-and-ownership-are-two-different-protections.md)
 - [Price protection against a stated motive, and write the premise down](../lessons/price-protection-against-a-stated-motive.md)
+- [Removing the prize beats defending it](../lessons/removing-the-prize-beats-defending-it.md)
+- [When a system sits between two things that vary independently, partition by which side each part depends on](../lessons/partition-by-which-side-each-part-depends-on.md)
+- [A layer holds when the layer above never names the vocabulary below](../lessons/a-layer-holds-when-the-layer-above-cannot-name-what-is-below.md)
