@@ -136,6 +136,8 @@ tags: [work]
 - [Compute from the smaller side when both sides share the answer](../lessons/compute-from-the-smaller-side-when-both-sides-share-the-answer.md)
 - [A greedy discard rule is optimal only against one error measure](../lessons/a-greedy-discard-rule-is-optimal-only-against-one-error-measure.md)
 - [An optimal transform that destroys sparsity is not a bargain](../lessons/an-optimal-transform-that-destroys-sparsity-is-not-a-bargain.md)
+- [Bias the sample toward what matters, then undo the bias in the weights](../lessons/bias-the-sample-toward-what-matters-then-undo-the-bias-in-the-weights.md)
+- [Weaken the law only where it cannot hold](../lessons/weaken-the-law-only-where-it-cannot-hold.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -177,7 +179,12 @@ above — from the two-valued-distance critique through betweenness, complete
 bipartite subgraphs, spectral partitioning, affiliation models, Simrank, triangle
 counting, transitive closure, SCC collapse and ANF._
 
-_Remaining: ch11 dimensionality reduction (20377), ch12 large-scale ML (21980),
+_Chapter 11 (dimensionality reduction, lines 20377-21937) was read in full on
+2026-07-31, yielding the ten lessons in the block above (power iteration and
+deflation, canonical forms, the two Gram matrices, truncation criteria, CUR and
+sparsity, importance sampling, the pseudoinverse)._
+
+_Remaining: ch12 large-scale ML (21980),
 ch13 neural nets (24693). Chapters 2-4 should also get a hand re-read at the same
 depth as chapter 1 before this work is attested. `extraction: complete`
 deliberately withheld._
