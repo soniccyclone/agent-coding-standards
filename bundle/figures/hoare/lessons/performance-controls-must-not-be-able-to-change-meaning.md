@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Performance controls should be annotations that cannot change meaning, so they can be tuned by experiment"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [hardware-affinity, verifiability, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Performance controls should be annotations that cannot change meaning, so they can be tuned by experiment
+
+**Lesson:** Systems need knobs for response time — which work is favoured when there is not enough machine to go round. Design those knobs so that they cannot possibly alter what the system computes, only when. The payoff is a clean division of labour that is otherwise unobtainable: correctness is established once, by argument, and never revisited; timing is settled empirically, by measurement on the actual hardware, or simply by buying different hardware. Neither activity contaminates the other. Turn a knob and no proof needs re-checking; change the logic and no tuning is invalidated. That property is worth designing for explicitly, because it does not arise by accident — it requires that the control be incapable of affecting which outcomes are possible, not merely unlikely to.
+
+The discipline this imposes is to keep such controls out of the semantics entirely, as annotations attached to a program rather than constructs within it, and to resist every proposal to let one of them decide something. The moment a priority setting can determine which of two outcomes occurs rather than which occurs sooner, it has become part of the program, and every correctness claim now carries an unwritten dependency on a number that operations is free to change at three in the morning. The same test applies to timeouts, weights, pool sizes and retry limits: ask whether changing this value can make a previously impossible outcome possible. If yes, it is not a performance control, whatever it is called, and it belongs in the specification.
+
+The counterexample is instructive and worth naming. A system that otherwise communicates through disciplined, checkable interactions but also permits participants to touch shared variables directly has undone the whole arrangement — and it becomes worse still when the compiler is permitted to delay, reorder or coalesce those updates exactly as if the variable were private, since now the observable outcome depends jointly on a scheduler and an optimizer that were never told they were collaborating. One unconstrained escape hatch is enough to move a system from "reasoned about once" to "characterized by experiment", which is the transition the annotation discipline exists to prevent.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the Ada subsection of the discussion chapter's shared storage section, which describes fixed task priorities determining which tasks are neglected when processors are scarce, notes that the priority of a rendezvous is the higher of the two participants', and observes that the indication of priority is a pragma intended to improve critical response times without affecting the logical behaviour of the program — calling this an excellent idea because it separates concern for abstract logical correctness from problems of real time response, which can more easily be solved by experiment or by judicious selection of hardware; together with the same section's remark that tasks may also access and update shared variables, whose effect is made even more unpredictable by compilers being allowed to delay, reorder or amalgamate such updates as if the variable were not shared.

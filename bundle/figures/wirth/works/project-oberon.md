@@ -29,7 +29,8 @@ forward toward line 22864. Current position recorded below; if this file still s
 **Current position: line 11709 — chapter 9 complete and mined (9.1-9.4, including the
 serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
 read and mined in full including the module Net listing (pure Oberon source, no prose);
-chapter 11 read and mined through section 11.5's prose (to line 13345). Earlier state, still true:
+chapter 11 read and mined in full; chapter 12 read and mined through section 12.2's opening
+(to line 13764). Earlier state, still true:
 chapter 5 prose complete through section 5.5 (text frames,
 font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
 complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
@@ -160,3 +161,5 @@ section are where the extractable lessons are.
 - [Removing the prize beats defending it](../lessons/removing-the-prize-beats-defending-it.md)
 - [When a system sits between two things that vary independently, partition by which side each part depends on](../lessons/partition-by-which-side-each-part-depends-on.md)
 - [A layer holds when the layer above never names the vocabulary below](../lessons/a-layer-holds-when-the-layer-above-cannot-name-what-is-below.md)
+- [Name the exact non-locality that forces a shared structure](../lessons/name-the-non-locality-that-forces-the-shared-structure.md)
+- [Tabulate the intended output before writing the thing that produces it](../lessons/tabulate-the-intended-output-before-writing-the-producer.md)
