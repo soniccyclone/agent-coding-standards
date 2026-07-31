@@ -8,6 +8,7 @@ year: 1972
 url: https://www.cs.cornell.edu/courses/cs4860/2018fa/lectures/Notes-on-Data-Structuring_Hoare.pdf
 survey_pages: 92
 survey_text_layer: full
+extraction: complete
 survey_fetch_mb: 4
 access: public
 host: third-party-rehost
@@ -40,3 +41,5 @@ tags: [work]
 - [Sort the requirements by what each one mentions, and the decomposition falls out](../lessons/sort-requirements-by-scope-to-find-the-decomposition.md)
 - [A constraint that growing can never repair is worth more than one that merely rejects: it prunes, and it shrinks the alternatives too](../lessons/a-constraint-that-cannot-be-repaired-by-growing-prunes-the-search.md)
 - [Size the problem before choosing representations, and treat each proved invariant as a licence for a cheaper one](../lessons/an-invariant-you-proved-is-a-licence-for-a-cheaper-representation.md)
+- [When users can define new things, axiomatize the forms of definition, not the things](../lessons/axiomatize-the-construction-forms-not-the-constructs.md)
+- [Recognize an entrenched practice as your abstraction implemented on unsympathetic hardware](../lessons/recognize-entrenched-practice-as-your-abstraction-on-hostile-hardware.md)

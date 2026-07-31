@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A name invented solely to be mentioned once is a defect of the notation, and the fix must be eliminable"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A name invented solely to be mentioned once is a defect of the notation, and the fix must be eliminable
+
+**Lesson:** If a language can only hand behaviour around by name, then every piece of behaviour used exactly once still has to be christened, declared somewhere, and then referred to from the single place it matters. The cost is not the identifier; it is the distance. The definition ends up at a point remote from its only use, so a reader following the call has to travel to find out what was actually passed, and the writer has to invent a name whose sole purpose is to survive that trip. The right diagnosis is that the notation lacks a way to write the thing where it is used, not that the programmer chose badly.
+
+The remedy is an expression form that denotes behaviour directly, with the parameters bound in the expression itself, so the behaviour appears in the argument position it is destined for. What makes this a safe addition rather than a new primitive to reckon with is that it can be removed again mechanically: replace the expression by a fresh identifier and lift a declaration outward to an enclosing region. That translation is the proof that nothing has been added to the language's power — only to its convenience — and knowing the translation is also what tells you the one thing you must be careful about, since the region you lift into has to be small enough to still lie inside the scope of everything the behaviour refers to.
+
+The same construct then pays a second time, in reasoning rather than in writing. Because it is an ordinary phrase, it can be substituted for identifiers of the corresponding kind wherever a rule quantifies over them, and because applying it to arguments means the same thing as performing the substitution, that application step is itself a valid inference. You can move in either direction: collapse an application to see what it does, or manufacture one in reverse to expose a piece of a statement as a function of some part of it. Notation that is eliminable by translation, and whose elimination step doubles as an inference, is the kind worth adding; notation that grows the set of things you must reason about primitively is not.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 3.3.11 on lambda expressions, which calls the absence of any way to denote a procedure without naming it a significant shortcoming, particularly painful for procedures passed as arguments, and observes of the array-summing example that the procedure's only use is in one call yet it must be named and its meaning defined at a point remote from that use; the syntax assigning the expression a procedural phrase type according to whether its body is a statement, an expression or an assertion; beta reduction explained as the meaning-preserving replacement of an application by the substituted body; the elimination procedure replacing an expression by a fresh identifier with a declaration inserted in an enclosing block, with the caution that the block must be small enough to fall within the scope of all binders of the identifiers occurring globally in the body; and the observation that since reduction preserves meaning it serves as a rule of inference which can also be run backwards to create an application.

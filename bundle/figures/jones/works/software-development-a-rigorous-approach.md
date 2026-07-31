@@ -38,3 +38,6 @@ tags: [work]
 - [Support the form people actually write, and buy back the simplicity with a discipline on how it is used](../lessons/support-the-form-people-write-and-buy-simplicity-with-a-usage-discipline.md)
 - [A correspondence established operation by operation never has to be executed](../lessons/a-correspondence-proved-per-operation-is-never-executed.md)
 - [The abstract description is the instrument you use to collect what the representation decision requires](../lessons/the-abstract-model-is-the-instrument-for-gathering-what-the-representation-decision-needs.md)
+- [Impose an arbitrary order on the elements and cycles stop being something you check for](../lessons/impose-an-arbitrary-order-to-make-cycles-impossible.md)
+- [Separate what a thing means from how it is written, and watch the notation improve the thing](../lessons/separate-what-a-command-means-from-how-it-is-written.md)
+- [Two things with identical contents are not the same thing, so let the construction carry the distinction](../lessons/identical-contents-are-not-the-same-thing-so-carry-the-tag.md)

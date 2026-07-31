@@ -61,6 +61,9 @@ tags: [work]
 - [A test's guarantee covers only what the test actually examined](../lessons/a-tests-guarantee-covers-only-what-the-test-examined.md)
 - [Independent filters sharing one budget have an interior optimum, not a monotone one](../lessons/independent-filters-sharing-one-budget-have-an-interior-optimum.md)
 - [Make the cheap stage err in the direction the expensive stage can repair](../lessons/make-the-cheap-stage-err-in-the-direction-the-expensive-stage-can-fix.md)
+- [Find the pigeonhole that makes a local test a complete filter for a global property](../lessons/find-the-pigeonhole-that-makes-a-local-test-a-complete-global-filter.md)
+- [Certify that you missed nothing by counting the boundary of what you accepted](../lessons/certify-completeness-by-counting-the-boundary.md)
+- [An update rule that can only demote needs a separate discovery path](../lessons/an-update-rule-that-only-demotes-needs-a-separate-discovery-path.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -80,8 +83,10 @@ the min-hashing chapter._
 _Chapter 5 (link analysis, lines 8703-10453) was read in full on 2026-07-31,
 yielding the eleven lessons below the second divider._
 
-_Next unread line is **10454**, the start of chapter 6. Remaining:
-ch6 frequent itemsets, ch7 clustering, ch8 advertising, ch9 recommendation systems,
+_Chapter 6 (frequent itemsets, lines 10454-12231) was read in full on 2026-07-31._
+
+_Next unread line is **12232**, the start of chapter 7. Remaining:
+ch7 clustering, ch8 advertising, ch9 recommendation systems,
 ch10 social-network graphs, ch11 dimensionality reduction, ch12 large-scale ML,
 ch13 neural nets. Chapters 2-4 should also get a hand re-read at the same depth as
 chapter 1 before this work is attested. `extraction: complete` deliberately

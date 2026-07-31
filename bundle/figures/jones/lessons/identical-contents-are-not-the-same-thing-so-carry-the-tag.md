@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Two things with identical contents are not the same thing, so let the construction carry the distinction"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [expressiveness, verifiability]
+subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# Two things with identical contents are not the same thing, so let the construction carry the distinction
+
+**Lesson:** Describe a family of alternatives — kinds of command, kinds of event, kinds of record — and you will quickly hit a case where two of the alternatives hold exactly the same pieces of exactly the same types. If identity is decided purely by contents, those two alternatives have collapsed into one, and no description you write afterwards can tell them apart or dispatch between them. This is not an edge case. It is the ordinary situation in any command set where several operations take the same arguments and only the name distinguishes what is meant, and in any protocol where the same payload means different things depending on which message it arrived as.
+
+The fix is to make how a value was built part of what it is. A composite value is not merely the tuple of its parts; it is that tuple together with the identity of the thing that assembled it. Two values are equal only if they were built by the same constructor from equal parts. With that in place, a description can list several alternatives that are indistinguishable by contents, and it remains completely determinate which alternative any given value belongs to. The apparent ambiguity was only ever an artifact of deciding identity the wrong way.
+
+This is worth recognizing as a general choice rather than a notational detail, because the same fork appears wherever types are involved. Deciding sameness by shape is convenient — anything of the right shape fits — and it silently merges concepts that happen to be shaped alike, which is exactly the failure above; a length in metres and a length in feet are both a number. Deciding sameness by name keeps distinctions the designer intended and costs a little conversion at the boundaries. Neither is universally right, but the question to ask is specific: are there, or will there be, two things in this family that carry the same data and mean different things? If yes, shape-based identity will lose the distinction, and you want the name.
+
+Two smaller consequences follow from the same commitment. If construction determines identity, then decomposition is available too — you can always ask which alternative a value is and take it apart into the parts it was built from, and that is what makes case analysis over the family total. And naming the parts becomes optional rather than structural: the labels help readers and can be added or changed without altering what set of values you have described, because the identity was never in the labels.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 14's "Notation" section, on rules that introduce structured objects: the statement that elements of such a set are like fixed-length lists but are considered to have been created by a constructor function, that the role of the constructor is essentially to distinguish otherwise similar elements and can be thought of as adding a flag for that purpose; the worked example of a family of four alternatives, two of which are built from the same pair of underlying sets, with the observation that despite the seemingly ambiguous description it remains decidable which alternative any given object belongs to, and the note that this is very useful in a system definition where commands contain the same information and only the keyword distinguishes the required function; the formal uniqueness property stating that two constructed values are equal only when both the constructor and every component agree; and the closing remark that selector names are entirely optional and that supplying them defines the same class of objects as omitting them.

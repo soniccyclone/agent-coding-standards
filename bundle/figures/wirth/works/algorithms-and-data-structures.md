@@ -47,3 +47,5 @@ tags: [work]
 - [Worst case decides admissibility; expected case decides the choice](../lessons/worst-case-decides-admissibility-expected-case-decides-choice.md)
 - [Optimality is relative to an access model, and the misses belong in it](../lessons/optimality-is-relative-to-an-access-model-and-the-misses-count.md)
 - [Every speedup is bought with a claim; name the claim and notice when you stop proving it](../lessons/every-speedup-is-bought-with-a-claim-name-the-claim.md)
+- [Match the structure's granularity to the transfer unit, then re-derive the cost](../lessons/match-the-structures-granularity-to-the-transfer-unit.md)
+- [Same shape is not same meaning: keep roles distinct even when the picture collapses them](../lessons/same-shape-is-not-same-meaning.md)

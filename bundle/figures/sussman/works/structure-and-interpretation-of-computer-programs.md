@@ -72,6 +72,8 @@ tags: [work]
 - [State you thread by hand infects every signature it passes through, and kills the general combinator](../lessons/state-you-thread-explicitly-infects-every-signature-it-passes-through.md)
 - [Sameness and change are each defined in terms of the other, so neither can be settled by observation alone](../lessons/sameness-and-change-are-defined-in-terms-of-each-other.md)
 - [Assignment converts choices that were free into commitments nothing writes down](../lessons/assignment-turns-free-choices-into-commitments.md)
+- [No expression carries its own meaning; a context supplies it, and there is no privileged context](../lessons/no-expression-carries-its-own-meaning.md)
+- [An object turns out to be shared code plus a frame that outlived the call that made it](../lessons/an-object-is-shared-code-plus-a-frame-that-outlived-its-call.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -84,6 +86,9 @@ language with stratified design, symbolic data and quotation, symbolic
 differentiation, set representations, Huffman encoding trees, multiple
 representations and type tags, data-directed programming and message passing,
 generic arithmetic, coercion, type towers, and symbolic algebra / polynomial
-arithmetic including the rational-function extended exercise. Next unread line is
-**10941** (chapter 3, section 3.1 Assignment and Local State). Chapters 4 and 5 are
-entirely unread. `extraction: complete` withheld until all five chapters are read._
+arithmetic including the rational-function extended exercise. Chapter 3 read
+through the end of 3.2.3 (lines 10941-12340) - local state variables, benefits and
+costs of assignment, sameness and change, and the environment model of evaluation.
+Next unread line is **12341** (chapter 3, section 3.2.4 Internal Definitions).
+Chapters 4 and 5 are entirely unread. `extraction: complete` withheld until all
+five chapters are read._
