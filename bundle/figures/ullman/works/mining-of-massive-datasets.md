@@ -120,6 +120,8 @@ tags: [work]
 - [Hold some back to damp an oscillating propagation](../lessons/hold-some-back-to-damp-an-oscillating-propagation.md)
 - [An answer defined as a time average licenses any processing order](../lessons/an-answer-defined-as-a-time-average-licenses-any-order.md)
 - [Split the input where two opposite-cost strategies cross](../lessons/split-the-input-where-two-opposite-cost-strategies-cross.md)
+- [Deduplicate with a canonical order, not with a memory](../lessons/deduplicate-with-a-canonical-order-not-with-a-memory.md)
+- [A lower bound from one extreme instance must be stretched across the range](../lessons/a-lower-bound-from-one-extreme-instance-must-be-stretched-across-the-range.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
