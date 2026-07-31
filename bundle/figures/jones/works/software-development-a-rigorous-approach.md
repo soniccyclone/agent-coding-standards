@@ -60,3 +60,4 @@ tags: [work]
 - [A property names a thing only when it pins the thing down, so find out which parts of the structure it leaves free](../lessons/a-property-names-a-thing-only-when-it-pins-it-down.md)
 - [An unenforced boundary still pays, so pick the strength of enforcement you can actually afford](../lessons/an-unenforced-boundary-still-pays-so-pick-the-enforcement-you-can-afford.md)
 - [Re-enter a change at the level where the decision was made, because a design record left stale is worse than no record](../lessons/re-enter-a-change-at-the-level-that-decided-it-and-a-stale-record-is-worse-than-none.md)
+- [An invariant is a promise at the boundaries, not a claim about every instant](../lessons/an-invariant-is-a-promise-at-the-boundaries-not-at-every-instant.md)
