@@ -24,3 +24,6 @@ tags: [work]
 ## Lessons
 - [Decide a property by trying to build the thing, not by searching for the forbidden shape](../lessons/decide-by-attempting-to-construct-not-by-searching-for-the-forbidden-shape.md)
 - [Make the unit of work the set of decisions that are forced to move together](../lessons/make-the-unit-of-work-the-set-of-decisions-that-move-together.md)
+- [Order the work so the items nest, and the bookkeeping collapses to a stack](../lessons/order-the-work-so-it-nests-and-a-stack-is-enough.md)
+- [Give a subcomputation its own view of shared mutable state with a boundary marker and a proof that the older entries cannot matter](../lessons/scope-shared-mutable-state-with-a-marker-and-an-irrelevance-proof.md)
+- [Extract the constraint graph, and a yes/no procedure starts producing the witness](../lessons/extract-the-constraint-graph-so-the-decision-yields-a-witness.md)

@@ -24,3 +24,5 @@ tags: [work]
 - [A scarce resource delegated to an automatic mechanism has no owner, and nobody will count it](../lessons/a-scarce-resource-delegated-to-a-mechanism-has-no-owner.md)
 - [Read the shape of the optimization curve, not the size of the last gain](../lessons/read-the-shape-of-the-optimization-curve-as-a-verdict.md)
 - [A trap-laden substrate destroys compositional reasoning, which is why reliability is the one property money cannot buy](../lessons/a-trap-laden-substrate-destroys-compositional-reasoning.md)
+- [A process that can only add produces designs whose defects are invisible rather than absent](../lessons/a-process-that-can-only-add-hides-defects-rather-than-removing-them.md)
+- [A shared base is the intersection of its uses, not their union — if you forbid subsets you must make it small](../lessons/a-shared-base-is-the-intersection-of-its-uses-not-the-union.md)

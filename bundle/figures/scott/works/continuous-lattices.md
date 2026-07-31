@@ -20,4 +20,4 @@ tags: [work]
 **Source:** https://raw.githubusercontent.com/CMU-HoTT/scott/main/pdfs/1972-continuous-lattices.pdf — from the "Selected Papers of Dana S. Scott" archive maintained by the CMU-HoTT GitHub organization, a curated academic rehost. Title, author, and abstract confirmed by direct render.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Characterize a class both by what its members do for you and by what they are made of](../lessons/characterize-a-class-both-by-what-it-does-and-by-what-it-is.md)

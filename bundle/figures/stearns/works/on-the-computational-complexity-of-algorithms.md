@@ -12,6 +12,7 @@ survey_fetch_mb: 1
 access: public
 host: institutional
 tags: [work]
+extraction: complete
 ---
 
 # On the Computational Complexity of Algorithms
@@ -28,3 +29,9 @@ tags: [work]
 - [When you give up names, the whole emulation cost collapses into deciding identity](../lessons/emulation-cost-is-the-cost-of-deciding-identity.md)
 - [Stop choosing between methods with incomparable costs and race them, because the pointwise minimum is nearly free](../lessons/race-incomparable-methods-the-minimum-is-nearly-free.md)
 - [Pay for every convenience in a definition with a theorem bounding what it cost you](../lessons/pay-for-definitional-conveniences-with-a-bounded-error-theorem.md)
+- [Forbid retraction if you want per-item cost to mean anything](../lessons/forbid-retraction-to-make-incremental-cost-mean-something.md)
+- [State your ignorance as precisely as your knowledge, and map which unknown carries the others](../lessons/map-the-dependency-structure-of-what-you-dont-know.md)
+- [A cost measure earns trust by the invariances it turns into theorems](../lessons/invariances-a-measure-must-make-into-theorems.md)
+- [A budget nothing can lay out inside itself is not a budget](../lessons/a-budget-nobody-can-lay-out-is-not-a-budget.md)
+- [Toggle one structural freedom at a time to learn which one owns the limit](../lessons/toggle-one-structural-freedom-at-a-time.md)
+- [Check which direction your formalism can assert in before setting a goal it cannot state](../lessons/know-which-direction-your-formalism-can-assert.md)

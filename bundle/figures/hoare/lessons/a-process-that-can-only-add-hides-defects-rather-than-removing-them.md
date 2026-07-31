@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A process that can only add produces designs whose defects are invisible rather than absent"
+figure: hoare
+works: [the-emperors-old-clothes]
+axes: [cognitive-load, primitive-count, verifiability]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# A process that can only add produces designs whose defects are invisible rather than absent
+
+**Lesson:** There are two ways to arrive at a design nobody can point to a flaw in. One is to make it simple enough that the absence of flaws is apparent. The other is to make it complicated enough that no flaw is apparent. These are opposite achievements that produce the same review outcome, which is why "the experts examined it and raised no objection" is worth nothing until you know which of the two you are looking at. The first way is far harder: it demands the kind of insight that finds the simple law under complicated phenomena, plus a willingness to accept objectives bounded by real constraints and to compromise where objectives conflict. Nothing in a review process supplies either.
+
+Group design processes systematically produce the second kind, and the reason is structural rather than a matter of the participants' quality. Invite each member to contribute the improvement they consider most important and every contribution has an advocate, while the act of removal has none; the procedure has a mechanism for addition and no mechanism for accepting limits. Under those rules the assembly of individually defensible suggestions is the expected output, and even a group of the best-informed people available will pass over a coherent modest design in favor of an ambitious opaque one — precisely because the opaque one has not yet been understood well enough for anyone's objection to be concrete. This is also why the pressure to add peaks just before a design is frozen, which is the worst possible moment: an omitted feature can always be added later once its implications are understood, while a feature admitted before it is understood can never be taken out again.
+
+The useful part is the set of diagnostics, all observable without understanding the design itself. Watch the description across revisions: if each successive version is longer, thicker, and full of errors corrected at the last minute, the effort is diverging, and the fixed completion horizon that keeps being restated is a ritual rather than a forecast. Watch what happens to dissent — a recorded minority objection that is quietly suppressed tells you the process has stopped being able to receive negative information. Watch whether anyone can state the whole thing. And when you are the one raising warnings that go unheeded, understand that the design's momentum comes from its sponsorship rather than its merits, so continued technical argument is not the lever; the lever is the specific, checkable claim about where it must not be deployed.
+
+**Source:** [The Emperor's Old Clothes](../works/the-emperors-old-clothes.md) — the ALGOL X and ALGOL 68 narrative: the working group's afternoon of soliciting each member's favorite improvement, its decision to set aside the commissioned draft in favor of a short and incomprehensible one, the two ways of constructing a software design and why the simple way is the harder and one no committee will take until too late, the repeated three-month promises accompanied by longer and thicker documents full of last-minute corrections, the late demand for still more features before standardization, and the suppression of the minority report.

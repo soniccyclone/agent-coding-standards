@@ -2,7 +2,7 @@
 type: lesson
 title: "Toggle one structural freedom at a time to learn which one owns the limit"
 figure: stearns
-works: [hierarchies-of-memory-limited-computations]
+works: [hierarchies-of-memory-limited-computations, on-the-computational-complexity-of-algorithms]
 axes: [primitive-count, hardware-affinity, expressiveness]
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 tags: [lesson]
@@ -15,4 +15,4 @@ The payoff is not just tidiness. Attribution is what makes a result actionable, 
 
 The transferable habit is to distrust any performance or capability claim stated about a system as a whole, and to reflexively ask what the smallest set of independent design choices is that could have produced it. Then build the grid. The cost is that you analyse the same problem several times over, which feels wasteful; the return is that each cell of the grid constrains the others, one cell often falls out trivially from the analysis of another, and a surprising cell — two very different designs sharing the same floor — is itself a discovery, because it says the two designs are equivalent with respect to the resource in question and that the intuition separating them was wrong.
 
-**Source:** [Hierarchies of Memory Limited Computations](../works/hierarchies-of-memory-limited-computations.md) — the machine-models section, which defines four machines by independently varying whether the input may be re-scanned and whether storage is unrestricted or restricted to one end, and the summary section, which tabulates a distinct minimal growth rate for each of the four and identifies which combination alone has a maximal class.
+**Source:** [Hierarchies of Memory Limited Computations](../works/hierarchies-of-memory-limited-computations.md) — the machine-models section, which defines four machines by independently varying whether the input may be re-scanned and whether storage is unrestricted or restricted to one end, and the summary section, which tabulates a distinct minimal growth rate for each of the four and identifies which combination alone has a maximal class. The companion survey in [On the Computational Complexity of Algorithms](../works/on-the-computational-complexity-of-algorithms.md) runs the same programme over a different set of freedoms — extra heads per band, long-range jumps to marked positions, higher-dimensional storage, band count — and sorts each into either no change to the classification or a fixed polynomial penalty.
