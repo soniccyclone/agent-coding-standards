@@ -86,3 +86,5 @@ tags: [work]
 - [To change a representation, run both levels at once under a stated invariant, then delete the upper one](../lessons/run-both-levels-together-under-a-stated-invariant-then-delete-the-upper-one.md)
 - [Split an operation by what the caller already knows, because that knowledge is worth an order of magnitude](../lessons/split-an-operation-by-what-the-caller-already-knows.md)
 - [There is no best representation, only a best fit to a frequency profile you have to measure first](../lessons/count-how-often-each-primitive-runs-before-choosing-how-data-is-stored.md)
+- [A choice you make for local efficiency may be deciding a global property nobody was choosing](../lessons/a-local-efficiency-choice-can-secretly-be-a-global-semantic-one.md)
+- [To hide how something is stored when the use of it is a traversal, the boundary has to take a function](../lessons/hiding-a-traversal-forces-a-higher-order-boundary.md)

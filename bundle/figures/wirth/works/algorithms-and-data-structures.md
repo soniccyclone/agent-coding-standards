@@ -65,3 +65,5 @@ tags: [work]
 - [Classify an unmet condition as a caller's error, an implementation's limit, or a wait — before you choose how to report it](../lessons/classify-an-unmet-condition-before-choosing-how-to-report-it.md)
 - [An idle participant that polls is competing with the one making progress](../lessons/an-idle-participant-that-polls-is-competing-with-the-one-making-progress.md)
 - [You can write by naming the type, but you cannot read by naming it](../lessons/you-can-write-by-naming-the-type-but-you-cannot-read-by-naming-it.md)
+- [A condition that fires once should not be tested on every step](../lessons/a-condition-that-fires-once-should-not-be-tested-every-step.md)
+- [Keep the redundancy that exhibits the correspondence to the algorithm you already trust](../lessons/keep-the-redundancy-that-exhibits-the-correspondence.md)

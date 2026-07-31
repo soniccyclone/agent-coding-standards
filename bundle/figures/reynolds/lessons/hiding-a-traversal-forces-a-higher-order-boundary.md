@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "To hide how something is stored when the use of it is a traversal, the boundary has to take a function"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [expressiveness, cognitive-load, hardware-affinity]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# To hide how something is stored when the use of it is a traversal, the boundary has to take a function
+
+**Lesson:** The standard move for isolating a storage decision is to funnel every use of the data through one named operation, so the decision can be revisited without reading the rest of the program. The move works cleanly when the uses are queries — ask a question, get an answer, layout stays hidden. It fails when the use is *visiting everything*, because a loop that walks the structure is written in terms of how the structure is laid out, and if the loop stays in the caller the layout has leaked into the caller no matter how many accessor functions you wrapped around it. The only way to move the walk inside the boundary is to hand the boundary the work to be done at each element. So the interface that hides a traversable representation is necessarily higher-order: it takes a piece of behaviour as an argument. This is not a stylistic preference for functional programming; it is what information hiding costs when the operation being hidden is iteration.
+
+Getting this right buys more than tidiness, because iteration is where representations differ most violently. A layout that answers membership questions instantly can still be catastrophic to walk — if the structure records a yes-or-no for every possible element, visiting the ones that are present means examining the ones that are absent too, so the walk costs the size of the universe rather than the size of the contents. A layout that lists only what is present walks in time proportional to what is there. Same abstract operation, same guaranteed results, and a difference that moves an entire algorithm between two complexity classes. The interface conceals this completely.
+
+That is the warning attached to the technique. An abstraction boundary preserves meaning and does not preserve cost, so the operations you publish need a stated cost shape alongside their stated behaviour — in particular, whether a traversal is proportional to what it yields or to some larger space it searches. Without that, a caller who reasons about performance by counting calls to your interface will be exactly wrong, and the error will not be visible at either side of the boundary: your implementation is correct, their call count is correct, and the program is quadratic. Publish the shape of the cost or the encapsulation is only half done.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 5.1.5, which localizes the reachability program's dependence on the successor function by defining a procedure that iterates over a node's successors applying a supplied procedure to each, notes that this encapsulation of an iterative construct is necessarily higher-order and parallels the earlier encapsulation of the counting for-statement, then compares two realizations: an adjacency matrix, under which each call must test every node and so costs on the order of the node count regardless of how few successors exist, versus concatenated duplicate-free segments delimited by lower and upper index arrays, under which each call costs on the order of the number of successors — the difference that yields an overall running time proportional to nodes plus edges.

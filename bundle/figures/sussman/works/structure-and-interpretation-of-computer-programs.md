@@ -90,6 +90,8 @@ tags: [work]
 - [Reify the whole trajectory and improving the convergence becomes an ordinary program](../lessons/reify-the-whole-trajectory-and-improvements-to-convergence-become-ordinary-programs.md)
 - [An enumeration of an unbounded space is correct only if every element has a finite arrival position](../lessons/an-enumeration-is-only-correct-if-every-element-has-a-finite-arrival-time.md)
 - [A component that must see all its input before emitting anything cannot be placed in a loop](../lessons/a-component-that-needs-all-its-input-before-emitting-anything-forbids-feedback.md)
+- [Whether a system has state is a fact about where the observer stands, not about the system](../lessons/whether-a-system-has-state-depends-on-where-the-observer-stands.md)
+- [The ordering constraint is imposed from outside the program, so no programming style can remove it](../lessons/the-ordering-constraint-comes-from-outside-the-program-so-no-style-removes-it.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -110,6 +112,14 @@ mutable list structure, sharing and identity, queues, tables, memoization, the
 digital-circuit simulator and its agenda, and the start of constraint propagation.
 Chapter 3 further read through the start of 3.5.1 (lines 14441-15840) - the rest of
 constraint propagation, all of 3.4 Concurrency (nature of time, serializers,
-mutexes, deadlock, communication), and the opening of 3.5 Streams. Next unread line
-is **15841** (rest of 3.5.1 onward). Chapters 4 and 5 are entirely unread.
+mutexes, deadlock, communication), and the opening of 3.5 Streams.
+**Chapter 3 is now complete (lines 15841-17639)** - the rest of 3.5.1 (delay/force
+and memoization), 3.5.2 infinite streams and implicit definitions, 3.5.3 exploiting
+the stream paradigm (iterations as stream processes, sequence acceleration and the
+tableau, infinite streams of pairs, interleaving and weighted merge, streams as
+signals), 3.5.4 streams and delayed evaluation (feedback loops, the delayed
+integrand, normal-order evaluation), and 3.5.5 modularity of functional programs
+versus modularity of objects (stream Monte Carlo, the functional view of time, the
+joint-account merge problem). Next unread line is **17804** (start of chapter 4).
+Chapters 4 and 5 are entirely unread.
 `extraction: complete` withheld until all five chapters are read._
