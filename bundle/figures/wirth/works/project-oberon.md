@@ -47,11 +47,12 @@ Loader); chapter 7 (The File System); chapter 8 (Storage Layout and Management);
 (The Compiler); chapter 13 (A Graphics Editor); chapter 14 (Building and Maintenance
 Tools); and appendix A (Ten Years After: From Objects to Components).
 
-**Resume at line 3532** of the extracted text — the `5. The Text System` heading.
-Everything above that line has been read, including the complete listings of modules
-Viewers, MenuViewers and the display section of System at lines 2917–3504, which are
-source code and yielded no lesson beyond what the chapter-4 prose already gave.
-Regenerate the text with: `pdftotext -layout ProjectOberon1992.pdf PO.txt`.
+**Resume at line 3991** of the extracted text — inside procedure `SplitPiece`, part way
+through section 5.2's implementation walkthrough. Everything above that line has been
+read, including the complete listings of modules Viewers, MenuViewers and the display
+section of System at lines 2917–3504, which are source code and yielded no lesson beyond
+what the chapter-4 prose already gave. Regenerate the text with:
+`pdftotext -layout ProjectOberon1992.pdf PO.txt`.
 
 Chapter start lines in the extracted text, for planning a resumed pass: ch. 5 at 3532,
 ch. 6 at 7049, ch. 7 at 7696, ch. 8 at 9747, ch. 14 at 22341 (chapters 9–13 fall between
