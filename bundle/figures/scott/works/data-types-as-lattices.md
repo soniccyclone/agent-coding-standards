@@ -19,6 +19,7 @@ tags: [work]
 
 **Venue/year:** SIAM Journal on Computing 5(3), September 1976, pp. 522-587. Also issued as Oxford University Computing Laboratory, Programming Research Group, Technical Monograph PRG-5.
 **Source:** https://www.cs.ox.ac.uk/files/3287/PRG05.pdf — Oxford Department of Computer Science's official publications page (publication3764-abstract.html) links this file directly; institutional archive, reprint of the SIAM article. The SIAM version itself remains paywalled (epubs.siam.org); this self-hosted Oxford reprint is the public copy. Title page confirmed by direct render.
+**Reading copy:** fetch the URL normally — but be aware the PDF's text layer is itself an OCR layer over a scan of the SIAM reprint, not born-digital text. Running prose extracts reliably; mathematical and logical notation (subscripts, arrows, lattice operators, table entries) comes through mangled, the same failure mode the works marked `survey_text_layer: ocr` warn about. Ground lessons in the prose argument and do not transcribe a formula from it. Recorded as `full` because extraction succeeds without a separate OCR pass; the caveat is the point.
 
 ## Lessons
 - [Two accounts agreeing is evidence in proportion to how far apart they are](../lessons/agreement-between-two-accounts-is-evidence-in-proportion-to-their-distance.md)
