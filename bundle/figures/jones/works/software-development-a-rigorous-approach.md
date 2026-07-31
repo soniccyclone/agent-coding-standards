@@ -48,3 +48,4 @@ tags: [work]
 - [Change the representation or the control flow, never both in one step, and do representation first](../lessons/change-the-representation-or-the-control-flow-never-both-at-once.md)
 - [Make the control state explicit data and the order of work becomes yours to choose](../lessons/make-the-implicit-control-state-explicit-and-order-becomes-free.md)
 - [Split a program into input, process, and output so the part worth reasoning about is a relation](../lessons/split-input-process-output-so-the-core-can-be-described-as-a-relation.md)
+- [Write down every interpretation you had to make, because each one is a question you are answering for someone else](../lessons/write-down-every-interpretation-you-had-to-make.md)

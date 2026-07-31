@@ -82,6 +82,8 @@ tags: [work]
 - [A subscriber to changes learns nothing about the present, so joining must deliver a synthetic first event](../lessons/a-change-feed-tells-a-late-subscriber-nothing.md)
 - [Concurrency correctness is a graded scale; pick the weakest rung the application can live with](../lessons/pick-the-weakest-correctness-criterion-the-application-can-live-with.md)
 - [When the space of behaviours is combinatorial, shrink the space instead of checking it](../lessons/do-not-enumerate-the-interleavings-shrink-the-space-they-live-in.md)
+- [The unit of atomicity belongs to the transaction, not the object, so no object can encapsulate its own concurrency control](../lessons/atomicity-belongs-to-the-transaction-not-the-object.md)
+- [Every synchronization scheme bottoms out in a primitive you were given, and the bottom has physical limits](../lessons/every-synchronization-scheme-bottoms-out-in-something-given.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

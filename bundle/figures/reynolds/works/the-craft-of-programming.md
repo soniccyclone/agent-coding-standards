@@ -78,3 +78,5 @@ tags: [work]
 - [A rule sound for several readings proves only what they agree on, and needing the stronger one is a warning](../lessons/needing-the-stronger-rule-means-you-depend-on-a-distinction-you-should-not.md)
 - [A convenient special case quietly becomes the only shape you can imagine, so learn the general one first](../lessons/a-convenient-special-case-narrows-what-you-can-imagine.md)
 - [Give every jump destination a precondition, and a non-local exit becomes an ordinary obligation](../lessons/put-the-obligation-of-a-jump-at-its-destination.md)
+- [Package the operations so the invariant never breaks, then design the control forgetting the invariant exists](../lessons/make-the-invariant-continuous-then-forget-it.md)
+- [Enumerate the states of knowledge, and the control structure writes itself](../lessons/enumerate-the-states-of-knowledge-and-the-control-writes-itself.md)

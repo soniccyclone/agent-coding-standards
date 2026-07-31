@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Enumerate the states of knowledge, and the control structure writes itself"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, algorithms-and-complexity]
+tags: [lesson]
+---
+# Enumerate the states of knowledge, and the control structure writes itself
+
+**Lesson:** Once correctness has been discharged into a set of operations with stated preconditions, what is left to design is not really flow of control — it is the management of *information*. At each point in the computation you know some things about the state and not others, and every step either uses what you know to justify doing something, or spends a test to learn something you do not know. Framing it this way turns a design problem into an enumeration. List the conditions that appear in the operations' preconditions. Form the combinations of those conditions and their negations. Throw out the ones that no state can satisfy, merge the ones that no state can distinguish, and what remains is a short list — short enough to handle exhaustively rather than by inspiration.
+
+Each surviving combination is a state of knowledge and becomes a point in the program. At a point where what you know already entails some operation's precondition, perform that operation and move to the point describing what you know afterwards — which is often more than you started with, because the operation's own effect may guarantee something, so it is worth strengthening each operation's postcondition before you start. At a point where nothing is entailed, you have no choice but to test, and the test's two outcomes lead to the two points describing the two things you might learn. The structure emerges from the table; you are not inventing it.
+
+The reason to bother is that this construction is what eliminates redundant work, and it explains what redundant work *is*. A test executed at a point where the answer was already determined is a symptom that the control structure discarded information the computation had already paid for; a step performed when the goal was already reached is the same disease. Conventional nested loops and conditionals lose information at every join, because arriving at a join from two directions collapses what the two directions knew. Naming the knowledge states explicitly is how you stop losing it — and it is precisely why the general jump mechanism is sometimes the right tool, since it is the construct that lets each state of knowledge route directly to the state that follows it.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 4.2.5's redevelopment of fast exponentiation, motivated by two earlier versions whose deficiencies are unnecessary executions of a parity test and an unnecessary final halving that can cause avoidable overflow; the determination of the exact precondition under which each invariant-preserving operation should run, followed by strengthening each operation's consequent; the instruction to forget the invariant and concentrate on the remaining conditions, with the key point that the variety of relevant conjunctions is small enough to reason about exhaustively; the enumeration of nine composite assertions reduced to six by discarding the impossible one and merging the equivalent pairs; the assignment of one label to each; and the completion of the program by attaching an operation at each label whose assertion implies a precondition, and a test at each label where the assertion implies none.

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Package the operations so the invariant never breaks, then design the control forgetting the invariant exists"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Package the operations so the invariant never breaks, then design the control forgetting the invariant exists
+
+**Lesson:** The usual picture of an invariant is a property that is restored at certain checkpoints and may be false between them, which forces you to think about the relation and the control flow simultaneously. There is a stronger arrangement available, and it changes the character of the work. Identify the small set of operations that each carry the relation from one holding state to another, treat each of them as a single indivisible action, and the relation then holds *continuously* at that level of description — not at checkpoints, everywhere. Once that is true, you can put the relation away entirely and design the flow of control using only the other conditions that appear in the operations' preconditions. The correctness argument has been separated from the control argument, and each is much smaller than the combination was.
+
+What makes this legitimate is being explicit that "indivisible" is a claim about a level of abstraction, not about the machine. Inside the packaged operation there are moments when the relation is plainly false, and the discipline is worthless if you forget that and let something else observe those moments. So mark the regions in which the relation may lapse, and treat those marks as a promise: nothing outside may look in, and nothing inside may do anything but complete the operation. The same convention scales down naturally — an operation implemented in terms of finer operations that preserve a finer relation, and so on — and it is exactly the accounting that concurrency, interrupt handling and crash consistency will later demand of you.
+
+The payoff is that the remaining problem is small enough to solve exhaustively rather than cleverly. Everything about correctness has been discharged into "use only these operations, only where their preconditions hold, and add nothing else that touches the state." Whatever control structure you then build is correct by construction, which means you are free to optimize it — for fewer tests, for fewer wasted steps, for whatever the situation rewards — without any of that optimization putting the correctness at risk. That freedom is the real product: separating the two concerns is what lets you push hard on one without endangering the other.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 4.2.5's redevelopment of fast exponentiation, which fixes an invariant, identifies the two invariant-preserving operations with their preconditions, strengthens their consequents, then states that these specifications encapsulate all one needs to know about the invariant, that at the level of abstraction where the two operations are considered indivisible the invariant holds continuously, and names such a relation a general invariant; the convention that an assertion marked as a general invariant must hold continuously from its occurrence to the end of the enclosing block; and the closing convention whereby expanding the operations into blocks drops below that level, so each such block is subscripted with the invariant's name to record that the invariant may be momentarily falsified inside it and that the block must be regarded as an indivisible action.

@@ -72,6 +72,9 @@ tags: [work]
 - [When you cannot justify a level, watch the rate of change instead](../lessons/watch-the-rate-of-change-when-you-cannot-set-a-level.md)
 - [Double until you overshoot, then bisect — searching for an unbounded unknown](../lessons/double-until-you-overshoot-then-bisect.md)
 - [For coverage, greedily maximize the minimum — not the total](../lessons/for-coverage-maximize-the-minimum-not-the-total.md)
+- [Make dimensions commensurable before you combine them, and set the threshold in meaningful units](../lessons/make-dimensions-commensurable-before-you-combine-them.md)
+- [A single-point summary smuggles in an assumption about shape](../lessons/a-single-point-summary-smuggles-in-a-shape-assumption.md)
+- [Let the decisions you will face decide what the summary keeps](../lessons/let-the-decisions-you-will-face-decide-what-the-summary-keeps.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

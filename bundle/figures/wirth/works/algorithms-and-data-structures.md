@@ -57,3 +57,5 @@ tags: [work]
 - [Partition the key space, not the data, and the structure stops depending on its history](../lessons/partition-the-key-space-not-the-data.md)
 - [Measure the whole task, not the operation you benchmarked](../lessons/measure-the-whole-task-not-the-operation-you-benchmarked.md)
 - [Uniformity is a property of the function and the population together](../lessons/uniformity-is-a-property-of-the-function-and-the-population-together.md)
+- [Find the ratio that governs behaviour, not the magnitude](../lessons/find-the-ratio-that-governs-behaviour-not-the-magnitude.md)
+- [A computed location is a hypothesis, not an answer](../lessons/a-computed-location-is-a-hypothesis-not-an-answer.md)
