@@ -59,10 +59,10 @@ example onward, all of chapter 18 *Earley's Recognizer, opening of chapter 19),
 "Programs and Their Data"), and the 19071-19194 gap between the third session's
 recorded spans.
 
-**Current position: line 15402** — starting the fourth session's first substantive
-span here. This number is updated as the read advances, so whatever it says is the
-resume point.
-Position log: 341 -> 14254 (span complete) -> 15402 (fourth session start).
+**Current position: line 16636** — read 15402-16636 (end of chapter 17, all of
+chapter 18 *Earley's Recognizer through the Program section). This number is updated
+as the read advances, so whatever it says is the resume point.
+Position log: 341 -> 14254 (span complete) -> 15402 -> 16636.
 
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)
@@ -122,3 +122,5 @@ Position log: 341 -> 14254 (span complete) -> 15402 (fourth session start).
 - [A housekeeping operation is exactly one that is the identity when viewed through the abstraction, and proving that buys you everything else](../lessons/a-housekeeping-operation-is-one-that-is-invisible-through-the-abstraction.md)
 - [A published algorithm arrives already partway down the development chain, so work out which step it is](../lessons/a-published-algorithm-arrives-partway-down-the-chain.md)
 - [The first design step is to restate the check as a construction, before any representation or ordering is chosen](../lessons/the-first-design-step-is-to-restate-the-check-as-a-construction.md)
+- [Bound an accumulating structure from both sides, and you have characterised a family of algorithms rather than checked one](../lessons/bound-a-structure-from-both-sides-to-characterise-a-family.md)
+- [Put a penultimate level between the abstraction and the machine: target shape, reasoning notation](../lessons/put-a-penultimate-level-between-the-abstraction-and-the-machine.md)

@@ -197,6 +197,9 @@ tags: [work]
 <!-- chapters 2-4 hand re-read, sixth pass -->
 - [A task that finished is not a result that survives](../lessons/a-finished-task-is-not-a-durable-result.md)
 - [Size work units between the overhead below and the variance above](../lessons/size-work-units-between-overhead-below-and-variance-above.md)
+- [Grouping erases where a value came from, so make origin part of the value](../lessons/grouping-erases-origin-so-carry-origin-as-data.md)
+- [When you push a global operation earlier, name the residue it cannot remove](../lessons/name-the-residue-a-local-pass-cannot-remove.md)
+- [Find the established algebra your problem is already in](../lessons/find-the-established-algebra-your-problem-is-already-in.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -276,5 +279,5 @@ until this re-read reaches line 7233._
 _**READ IN PROGRESS (2026-07-31, sixth agent pass).** Resuming the chapters 2-4
 hand re-read; the fifth pass left no evidence of advancing past its start line,
 so this pass restarts at line **1647** (chapter 2, MapReduce). Currently at line
-**1647**. This line is updated in place as the read advances; if it names a line
+**2515**. This line is updated in place as the read advances; if it names a line
 below 7233, the agent died there and that is the genuine resume point._

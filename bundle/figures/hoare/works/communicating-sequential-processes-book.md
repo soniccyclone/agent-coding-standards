@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -19,29 +20,17 @@ tags: [work]
 **Venue/year:** Originally Prentice Hall International, 1985. Revised electronic edition maintained by Hoare (with Jim Davies) through at least 2015.
 **Source:** http://web.archive.org/web/20250104082500/http://www.usingcsp.com/cspbook.pdf — the live site (usingcsp.com) is currently unresolvable (DNS failure at time of check), so this is a Wayback Machine snapshot from January 2025. Content verified by decompressing the PDF's text streams directly: title page reads "Communicating Sequential Processes / C. A. R. Hoare," and a copyright page states "© C. A. R. Hoare, 1985–2022. This document is an electronic version of..." confirming it as Hoare's own authorized free distribution (self-archived, not a third party's copy).
 
-**Coverage note (partial extraction — NOT exhausted):** A 260-page book; one Phase 4
-pass could not reach the end. Read in full and mined: the foreword and preface, and
-Chapter 1 (Processes) sections 1.1 (introduction, prefix, recursion, choice, mutual
-recursion), 1.2 (pictures), 1.3 (laws), and 1.4 (implementation of processes) up to
-the interactive-explorer function. **Not read at all:** the remainder of Chapter 1
-(1.5 traces onward, 1.6-1.10 including specifications and the `sat` proof rules),
-and Chapters 2-7 in their entirety — concurrency, nondeterminism, communication,
-sequential processes, shared resources, and discussion. That is roughly 85% of the
-book.
-
-To resume, use `pdftotext -layout` on the URL above and **start at line 1540** of the
-resulting text (mid-section 1.4, just after the `interact` function is introduced).
-Page markers are absent; the text runs to line 12215. Chapter 2 (Concurrency) begins
-around line 2830 — locate chapter and section boundaries by grepping the running
-heads and section numbers (e.g. `2   Concurrency`, `^2\.3`), since the PDF's own page
-numbers appear inline in those running heads.
-
-**READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
-the `pdftotext -layout` output (12215 lines total) and is working forward
-sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 11780** — Chapters 1 (from 1.5),
-2, 3, 4, 5 and 6 read in full; Chapter 7 read through 7.4.1 (CCS comparison,
-partway).
+**Coverage note (COMPLETE — read across three Phase 4 passes):** A 260-page book,
+worked from `pdftotext -layout` output totalling 12215 lines. Pass 1 read the
+foreword, preface and Chapter 1 through mid-§1.4 (to line 1540). Pass 2 read §1.5
+through the end of Chapter 6 and into Chapter 7 as far as §7.3.2 (to roughly line
+11400), though its own coverage note stopped being updated at line 10980. Pass 3
+(2026-07-31) read §7.2.4 to the end — the remainder of the discussion chapter
+(monitors, nested monitors, Ada, communication, pipes, buffered channels,
+functional networks, unbuffered communication, the earlier CSP proposal, occam,
+mathematical models and the CCS comparison), finishing at the bibliography and
+index at line 12215. Every chapter has now been read; `extraction: complete` is
+set on that basis.
 
 **Data defect found and repaired (2026-07-31):** three lessons already existed
 citing this work but were missing from the Lessons list below — `performance-controls-must-not-be-able-to-change-meaning`,

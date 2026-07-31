@@ -184,4 +184,7 @@ section are where the extractable lessons are.
 - [Compare the artifact, not the meaning — and check which way the test errs](../lessons/compare-the-artifact-not-the-meaning-and-check-which-way-it-errs.md)
 - [Publish the obligation without publishing the name](../lessons/publish-the-obligation-without-publishing-the-name.md)
 - [A faster structure that cannot retire the old one is an addition, not a replacement](../lessons/a-faster-structure-that-cannot-retire-the-old-one-is-an-addition.md)
+- [Precompute only what you can also precompute the failure of](../lessons/precompute-only-what-you-can-also-precompute-the-failure-of.md)
+- [Thread the list of pending holes through the holes themselves](../lessons/thread-the-list-of-pending-holes-through-the-holes.md)
+- [Keep the description unmaterialized until a step cannot be absorbed](../lessons/keep-the-description-unmaterialized-until-a-step-cannot-be-absorbed.md)
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)
