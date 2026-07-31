@@ -90,6 +90,8 @@ tags: [work]
 
 - [Absence is not a value — keep 'unknown' distinct from 'lowest'](../lessons/absence-is-not-a-value-keep-unknown-distinct-from-zero.md)
 - [Removing a constraint removes the work the constraint was silently doing](../lessons/removing-a-constraint-removes-the-work-it-was-doing.md)
+- [State the weakest output that would satisfy the use, then choose the method](../lessons/state-the-weakest-output-that-would-satisfy-the-use.md)
+- [The properties you can compute from an artifact are not the ones that matter about it](../lessons/computable-properties-of-an-artifact-are-not-its-meaningful-ones.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

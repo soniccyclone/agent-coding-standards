@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When the algorithm needs lookahead, extend the access mechanism rather than the algorithm"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, expressiveness, verifiability]
+subdomains: [software-engineering-and-architecture, algorithms-and-complexity]
+tags: [lesson]
+---
+# When the algorithm needs lookahead, extend the access mechanism rather than the algorithm
+
+**Lesson:** An access discipline that exposes exactly one element at a time collides with any algorithm that has to recognize a boundary, because a boundary is a relation between two neighbouring elements and only one of them is visible. The temptation is to fix this inside the algorithm: hold the previous element in a local, compare it against the current one, and thread that extra variable through everything. It works, and it costs more than it looks like. The comparison logic now appears at every site that advances the stream, the algorithm's own text is interleaved with stream bookkeeping, and the boundary condition — which is the interesting concept — has no name anywhere; it exists only as an expression recomputed in several places.
+
+The better move is to put the lookahead where the access already lives. Define an access mechanism that maintains one element of anticipation and publishes the boundary as a property you can ask about, alongside the end-of-input property it already publishes. Note the symmetry that justifies this: end-of-input is itself a lookahead-derived fact, already accepted as belonging to the access mechanism rather than to the caller, and the run boundary is the same kind of fact one step less extreme. Once it is there, the algorithm reads as a statement about runs instead of a statement about elements plus a comparison, and the buffer that makes it possible is invisible to the algorithm, which is the point — the caller never learns that anticipation is happening.
+
+Two design consequences generalize. First, prefer extending the existing access abstraction to defining a parallel one: the extension keeps every operation the base offered, so code written against the base still works and the new property is additive rather than a new vocabulary to learn. A layer that replaces its predecessor forces callers to choose; a layer that extends it does not. Second, this is a specific instance of a broader rule for deciding where a piece of state belongs — state that is a function of the stream's contents and position, rather than of what the caller intends to do, belongs to whatever owns the position. Applying that test early prevents the common shape where several algorithms over the same source each reimplement the same anticipation slightly differently, and each has its own off-by-one at the final element.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 2.4.2's development of natural merging, where determining the end of a run requires comparing two consecutive keys while a sequence makes only one element immediately accessible; the conclusion that lookahead is unavoidable and requires a buffer holding the first element still to be read, described as a window sliding over the file; and the decision not to program this mechanism explicitly into the algorithm but to define a further level of abstraction — a rider type extending the base rider, which accepts all of the base's operations and additionally reports the end of a run and the first element of the remainder, with the end-of-run field defined as a result of a copy operation in analogy to end-of-file having been defined as a result of a read.

@@ -97,6 +97,7 @@ tags: [work]
 - [An implementation answers questions its own text never addressed, by silently borrowing the host's answers](../lessons/an-implementation-answers-questions-its-text-never-addressed.md)
 - [Universality is cheap in a medium where machines are describable as data](../lessons/universality-is-cheap-when-the-machine-is-describable-as-data.md)
 - [A boundary between two worlds can pass data across, but not behaviour](../lessons/a-boundary-between-two-worlds-passes-data-but-not-behaviour.md)
+- [Working code is not evidence that you implemented the rule you meant](../lessons/working-code-is-not-evidence-that-you-implemented-the-rule-you-meant.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

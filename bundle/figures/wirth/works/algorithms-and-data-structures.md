@@ -71,3 +71,6 @@ tags: [work]
 - [Two optimizations that each win do not compose into a win](../lessons/two-optimizations-that-each-win-do-not-compose-into-a-win.md)
 - [Monotone access is a separate deliverable from the cost bound](../lessons/monotone-access-is-a-separate-deliverable-from-the-cost-bound.md)
 - [Choose passes that preserve each other's work — and that overlap](../lessons/choose-passes-that-preserve-each-others-work-and-that-overlap.md)
+- [Find the phase that moves data without changing the invariant, and fuse it away](../lessons/find-the-phase-that-moves-data-without-changing-the-invariant.md)
+- [If you need one part of the answer, descend into one part only](../lessons/if-you-need-one-part-of-the-answer-descend-into-one-part-only.md)
+- [When the algorithm needs lookahead, extend the access mechanism rather than the algorithm](../lessons/when-the-algorithm-needs-lookahead-extend-the-access-mechanism-not-the-algorithm.md)

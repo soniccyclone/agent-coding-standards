@@ -58,3 +58,4 @@ tags: [work]
 - [Make the skeleton formal and leave the leaves soft, so precision can be bought one place at a time](../lessons/make-the-skeleton-formal-and-leave-the-leaves-soft.md)
 - [Among models that describe the same thing, pick the one that entails the properties you would otherwise have to maintain](../lessons/among-faithful-models-pick-the-one-that-entails-what-you-would-have-to-maintain.md)
 - [A property names a thing only when it pins the thing down, so find out which parts of the structure it leaves free](../lessons/a-property-names-a-thing-only-when-it-pins-it-down.md)
+- [An unenforced boundary still pays, so pick the strength of enforcement you can actually afford](../lessons/an-unenforced-boundary-still-pays-so-pick-the-enforcement-you-can-afford.md)

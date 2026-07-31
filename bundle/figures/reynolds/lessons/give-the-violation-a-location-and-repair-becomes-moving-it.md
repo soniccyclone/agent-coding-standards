@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Give the violation a location, and repair becomes the act of moving it until it disappears"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Give the violation a location, and repair becomes the act of moving it until it disappears
+
+**Lesson:** Once a structural property is stated so that it can fail at a single identifiable place, you gain a concept most people never name: the structure is intact *except at here*. Make that a first-class notion — a defect with an address — and every question about repairing the structure turns into a question about that address. Does the defect at this position disappear on its own, given what holds around it? If not, is there an operation that relocates it to a neighbouring position without creating a second one? Answer those two and the repair procedure is already written: loop while the defect persists, each step moving it one place, terminating because the places form a finite chain. The loop invariant is not something you have to search for; it is the statement that there is exactly one defect and it is at the current position.
+
+The leverage comes from the fact that every operation on the structure can now be phrased in the same vocabulary. Adding something creates a defect at the new location. Removing something creates one where the removed thing was. Changing a value in place creates one there. Each of these is a two-line construction — establish the defect at a known position, then run the repair — instead of a bespoke algorithm with its own correctness argument. Better, the direction of repair is determined by which of the local conditions you can still guarantee: if the surroundings above are known good, the defect can only travel downward, and vice versa, so the caller's knowledge selects the procedure rather than the procedure having to rediscover it.
+
+The general habit is to stop treating a broken invariant as an undifferentiated bad state. A system in violation is not simply wrong; it is right everywhere except in a describable region, and the size and shape of that region is the thing worth engineering. Structures where a modification breaks the property globally admit no incremental repair and force wholesale rebuilds. Structures where it breaks at one point admit a repair whose cost is the length of a path. So when you design the invariant, design for a small, locatable failure mode — that property is not a nicety of the proof, it is what determines whether maintenance is logarithmic or linear.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 5.2.3's development of the heap, where the condition that the structure is a heap everywhere except one position is read as a heap with a hole at that position; Theorem 1 giving the condition under which the hole vanishes; Theorem 3 showing that exchanging weights with the father, or with the appropriate son, moves the hole to that neighbour while preserving the corresponding one-sided goodness; the resulting pair of ascending and descending procedures whose loop invariants assert the hole's presence at the current position and whose termination follows from a finite set of positions containing no infinite path; and the subsequent transformation of the minimum-distance program's deletion, insertion, and decrease operations, each of which is expressed as establishing a hole at a known position followed by the appropriate repair.

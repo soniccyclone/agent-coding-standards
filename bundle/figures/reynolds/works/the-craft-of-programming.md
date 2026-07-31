@@ -19,7 +19,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). The current pass resumes at line 13698 (Chapter 5, Data Representation Structuring). Sections read so far this pass: 5.1.1 through 5.2.2 (lines 13698-15178).
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). The current pass resumes at line 13698 (Chapter 5, Data Representation Structuring). Sections read so far this pass: 5.1.1 through 5.2.4 (lines 13698-15977).
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
@@ -93,3 +93,6 @@ tags: [work]
 - [Narrowing a choice you deliberately left open inherits the whole proof for free](../lessons/narrowing-an-open-choice-inherits-the-entire-proof.md)
 - [Ship the reader alongside an implicit representation, and expect its direction to dictate the reader's shape](../lessons/ship-the-reader-with-an-implicit-representation.md)
 - [Let a physical story generate your state variables, then refuse to let it justify anything](../lessons/let-a-physical-story-generate-the-state-then-refuse-to-let-it-justify-anything.md)
+- [Restate a global invariant as a neighbour check plus a theorem, or you cannot repair anything incrementally](../lessons/restate-a-global-invariant-as-a-neighbour-check-plus-a-theorem.md)
+- [Give the violation a location, and repair becomes the act of moving it until it disappears](../lessons/give-the-violation-a-location-and-repair-becomes-moving-it.md)
+- [Spend leftover freedom to stay inside a cheaper encoding, and collect the structural guarantee it implies](../lessons/spend-leftover-freedom-to-stay-inside-a-cheaper-encoding.md)

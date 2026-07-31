@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "An unenforced boundary still pays, so pick the strength of enforcement you can actually afford"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [cognitive-load, hardware-affinity, verifiability]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# An unenforced boundary still pays, so pick the strength of enforcement you can actually afford
+
+**Lesson:** Hiding a representation behind a set of named operations is worth doing for reasons that have nothing to do with whether anything stops you from peeking. The value is that all the knowledge of the layout is collected in one small place, so a later change to the layout is a bounded edit rather than an unbounded search. Enforcement is a separate question, and it comes in grades with different prices.
+
+The strongest grade is a language construct that makes the representation genuinely unreachable and checks the types at compile time. It is the best answer when available, and often it is not: the language may have no way to export a set of operation names from a scope, and the call mechanism may cost more per access than the operations themselves do. Below that sit workable approximations — an existing scoping feature bent into the shape, or textual substitution that inlines the accesses and therefore costs nothing at run time. These give up guaranteed security: nothing prevents a determined caller from reaching around, and mechanically generated names can collide with the caller's own, so a convention has to substitute for a check. The instinct at that point is to say the boundary is worthless because it can be violated. That is wrong, and it is wrong in a way that costs real money, because the cheap grade applies exactly where the expensive one cannot — hot paths, old languages, insulation from a layout you were handed rather than chose.
+
+The reason it still pays is that the failure mode you are guarding against is not usually malice or even carelessness; it is a maintainer years from now who genuinely does not know the layout is supposed to be private. A convention that puts every access in one place tells them. Evidence for this is the kind you only get by waiting: a project insulated from its record layouts by nothing stronger than a macro convention, whose author claimed for years that the layouts could be changed without disturbing the system, and who eventually learned from a successor that the change had in fact been made, long after he left, without incident.
+
+So treat the boundary and its enforcement as two decisions. Draw the boundary always — the discipline is what buys the change. Then choose enforcement by what the situation can bear, and where you land on a weak grade, spend the saved effort on making the convention legible rather than on arguing that the boundary was not worth having.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 17's "Language Support for Abstract Data Types" section: the class-like construct sketched for PL/I with its local representation, exported operation names and compile-time type checking, and the survey of languages embodying such constructs; the observation that most languages cannot export the operation names and the described use of secondary entry points with based variables to simulate the effect; the note that procedures and classes alike may carry performance penalties and the resulting proposal of a macro language, which yields better performance at the cost of absolute security of representations while being more generally applicable, including for simple insulation from control block layouts; the named danger of name clashes and the naming convention offered against it; and the author's report of a project insulated by macros in which the control block representations were, years later and after his departure, in fact changed without touching the basic system.
