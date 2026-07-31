@@ -19,7 +19,7 @@ implicitly through many call sites).
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-1562 lessons from 94 figures.
+1573 lessons from 94 figures.
 
 **abiteboul** (7)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -1401,22 +1401,29 @@ No lessons scored on this axis yet.
 - [When the general relation is out of reach, restrict the allowed moves rather than relax the goal](../figures/strassen/lessons/restrict-the-moves-instead-of-relaxing-the-goal.md)
 - [Where an inequality turns into an equality tells you what kind of function you are holding](../figures/strassen/lessons/where-an-inequality-becomes-an-equality-tells-you-what-the-function-is.md)
 
-**sussman** (31)
+**sussman** (42)
 - [A convenient notation is a compression that presupposes a restriction, so work in the ugly explicit form until you know what the surface must express](../figures/sussman/lessons/a-convenient-notation-is-a-compression-that-presupposes-a-restriction.md)
 - [A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable](../figures/sussman/lessons/a-model-that-copies-can-never-talk-about-sharing.md)
 - [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
+- [Abstraction has an optimum, not a maximum](../figures/sussman/lessons/abstraction-has-an-optimum-not-a-maximum.md)
+- [Adopt a model you have already decided to outgrow, and say where it will break](../figures/sussman/lessons/adopt-a-model-you-have-already-decided-to-outgrow.md)
+- [An abstraction boundary is a claim that a whole class of implementations is interchangeable](../figures/sussman/lessons/an-abstraction-boundary-is-a-claim-about-an-equivalence-class.md)
 - [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../figures/sussman/lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
 - [Any obligation that comes due after a transfer of control forces a frame, so undo-on-exit features quietly forbid unbounded looping](../figures/sussman/lessons/any-obligation-after-a-transfer-forbids-the-transfer-being-a-jump.md)
+- [Ask whether you could stop and resume from the named state; that is the test for whether the state is complete](../figures/sussman/lessons/resumability-is-the-test-for-whether-your-state-is-complete.md)
 - [Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table](../figures/sussman/lessons/dispatch-is-a-matrix-and-every-design-picks-a-slicing.md)
+- [Being able to compute a thing and being able to express the concept are different powers](../figures/sussman/lessons/computing-a-thing-and-expressing-the-concept-are-different-powers.md)
 - [Bookkeeping attached to an aggregate can never be finer than the aggregate, and its errors are silent because the answers stay right](../figures/sussman/lessons/metadata-is-only-as-precise-as-the-unit-it-is-attached-to.md)
 - [Build the algorithm's smallest local element and let the known global algorithm emerge, so neither side has to represent the other's problem](../figures/sussman/lessons/build-the-local-element-and-let-the-known-algorithm-emerge.md)
 - [Carry each conclusion's grounds with it, and inconsistency stops being fatal because consistency becomes local](../figures/sussman/lessons/carry-the-grounds-and-inconsistency-stops-being-fatal.md)
 - [Check whether a clever encoding is secretly parasitic on the evaluation rule you were about to change](../figures/sussman/lessons/an-encoding-can-be-parasitic-on-the-rule-you-are-replacing.md)
+- [Choose a measure for what it refuses to distinguish, not for its accuracy](../figures/sussman/lessons/a-crude-measure-is-useful-because-of-what-it-refuses-to-see.md)
 - [Choose among candidate primitives by which one explains the others, since one-way definability is the only asymmetry that carries information](../figures/sussman/lessons/pick-a-primitive-by-which-candidate-explains-the-others.md)
 - [Classify a process by what accumulates as it runs, not by what the source text looks like](../figures/sussman/lessons/classify-a-process-by-what-accumulates-not-by-how-it-looks.md)
 - [Deferred work is retained state, so a demand-driven discipline cannot express a loop no matter how the loop is written](../figures/sussman/lessons/deferred-work-is-retained-state.md)
 - [Demand-driven evaluation silently assumes one producer and a final answer; drop either and pulling has no definition until interest itself becomes data](../figures/sussman/lessons/demand-is-undefined-when-a-place-has-many-sources.md)
 - [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../figures/sussman/lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
+- [Distinguish a cost you incurred by transcribing the definition from a cost the problem actually has](../figures/sussman/lessons/distinguish-naive-transcription-from-inherent-difficulty.md)
 - [Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited](../figures/sussman/lessons/give-a-new-mode-to-an-existing-mechanism-and-audit-what-it-inherits.md)
 - [Find the assumption too basic to be stated, negate it, and follow the consequences — that is where new models come from](../figures/sussman/lessons/negate-the-assumption-nobody-writes-down.md)
 - [Never implement a mechanism out of the host's version of that same mechanism, or you inherit every limit the host imposed on it](../figures/sussman/lessons/never-build-a-mechanism-out-of-the-hosts-version-of-itself.md)
@@ -1427,11 +1434,15 @@ No lessons scored on this axis yet.
 - [Removing a construct does not remove the practice; supply a better alternative or watch the omission get patched back in](../figures/sussman/lessons/invent-better-constructs-instead-of-forbidding-bad-ones.md)
 - [Replace control flow with a topology and a base case becomes a starvation condition, so recursion has to be built as growth gated on arrival](../figures/sussman/lessons/a-base-case-becomes-a-starvation-condition.md)
 - [Represent a choice as a manufactured assumption rather than performing it, and undo becomes reasoning you already have instead of machinery you have to build](../figures/sussman/lessons/represent-a-choice-as-a-manufactured-assumption-not-an-action.md)
+- [Scope exists so that strangers can both use the obvious name](../figures/sussman/lessons/scope-exists-so-strangers-can-both-use-the-obvious-name.md)
 - [Treat a name as something a quantity acquires, not something a location holds, and the whole storage question changes shape](../figures/sussman/lessons/name-the-quantity-not-the-location.md)
 - [Try to encode a feature in your core, and let the locality of the encoding tell you whether it belongs there](../figures/sussman/lessons/encode-a-feature-to-learn-whether-it-is-really-primitive.md)
 - [Turn the machinery the implementation passes behind your back into an ordinary argument, then hide it again in the notation](../figures/sussman/lessons/reify-the-hidden-argument-then-suppress-it-in-notation.md)
+- [What you may freely rename is exactly what you do not depend on](../figures/sussman/lessons/what-you-may-rename-is-exactly-what-you-do-not-depend-on.md)
 - [When a cost is believed to grow with runtime behaviour, look for the semantic rule that pins it to a static property of the text](../figures/sussman/lessons/find-the-static-bound-hiding-inside-a-supposedly-dynamic-cost.md)
+- [When an iteration oscillates instead of converging, damp the step rather than abandoning the formulation](../figures/sussman/lessons/when-an-iteration-oscillates-damp-it-toward-the-previous-value.md)
 - [When you cannot tell whether two ideas differ, implement both in one substrate and see whether the artifacts coincide](../figures/sussman/lessons/build-it-to-find-out-whether-two-ideas-are-the-same.md)
+- [When you see the same shape three times, write the template and turn its holes into parameters](../figures/sussman/lessons/let-repetition-hand-you-the-abstraction-by-templating-it.md)
 - [When you wrap a value in a richer representation the operations complain but the total predicates lie, so audit the tests that cannot fail](../figures/sussman/lessons/when-you-enrich-a-type-the-total-predicates-lie.md)
 
 **sutherland** (17)

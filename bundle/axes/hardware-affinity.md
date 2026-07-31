@@ -21,7 +21,7 @@ programming, but the axis that scores the compilation step itself.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-415 lessons from 84 figures.
+418 lessons from 84 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -464,18 +464,21 @@ No lessons scored on this axis yet.
 - [In a self-applicable construction, only the operations that recurse set the growth rate — spend freely on the ones that do not](../figures/strassen/lessons/eliminate-the-operation-that-recurses.md)
 - [Separate improvements that exploit today's cost table from improvements that change the growth law](../figures/strassen/lessons/separate-improvements-that-exploit-the-cost-table-from-those-that-change-the-growth-law.md)
 
-**sussman** (11)
+**sussman** (14)
 - [A layer meant to be shared by everything must be low in concept count, not close to the machine — those are different kinds of low](../figures/sussman/lessons/a-common-layer-must-be-low-in-concepts-not-close-to-the-machine.md)
 - [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
 - [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../figures/sussman/lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
 - [Any obligation that comes due after a transfer of control forces a frame, so undo-on-exit features quietly forbid unbounded looping](../figures/sussman/lessons/any-obligation-after-a-transfer-forbids-the-transfer-being-a-jump.md)
+- [Ask whether you could stop and resume from the named state; that is the test for whether the state is complete](../figures/sussman/lessons/resumability-is-the-test-for-whether-your-state-is-complete.md)
 - [Classify a process by what accumulates as it runs, not by what the source text looks like](../figures/sussman/lessons/classify-a-process-by-what-accumulates-not-by-how-it-looks.md)
+- [Compare your algorithm's error rate against the machine's, not against zero](../figures/sussman/lessons/compare-your-error-rate-against-the-substrate-not-against-zero.md)
 - [Deferred work is retained state, so a demand-driven discipline cannot express a loop no matter how the loop is written](../figures/sussman/lessons/deferred-work-is-retained-state.md)
 - [Every cache asserts that nothing observable has changed; if you cannot witness that, the optimization is a semantic change](../figures/sussman/lessons/caching-is-a-claim-about-invariance-and-needs-a-witness.md)
 - [Never implement a mechanism out of the host's version of that same mechanism, or you inherit every limit the host imposed on it](../figures/sussman/lessons/never-build-a-mechanism-out-of-the-hosts-version-of-itself.md)
 - [No representation is more efficient than another absolutely; ask which lifetimes make it win, or you have not stated a claim](../figures/sussman/lessons/no-representation-is-more-efficient-without-a-usage-model.md)
 - [Treat a name as something a quantity acquires, not something a location holds, and the whole storage question changes shape](../figures/sussman/lessons/name-the-quantity-not-the-location.md)
 - [When a cost is believed to grow with runtime behaviour, look for the semantic rule that pins it to a static property of the text](../figures/sussman/lessons/find-the-static-bound-hiding-inside-a-supposedly-dynamic-cost.md)
+- [When an iteration oscillates instead of converging, damp the step rather than abandoning the formulation](../figures/sussman/lessons/when-an-iteration-oscillates-damp-it-toward-the-previous-value.md)
 
 **sutherland** (7)
 - [A projection is only usable if it carries the way back to the node that made it](../figures/sutherland/lessons/a-projection-must-carry-its-way-back-to-the-node.md)

@@ -34,12 +34,19 @@ tags: [work]
 - [Compare your algorithm's error rate against the machine's, not against zero](../lessons/compare-your-error-rate-against-the-substrate-not-against-zero.md)
 - [Repeating a test buys confidence only if you have proved the failures are independent](../lessons/repetition-buys-confidence-only-if-failures-are-independent.md)
 
+- [Being able to compute a thing and being able to express the concept are different powers](../lessons/computing-a-thing-and-expressing-the-concept-are-different-powers.md)
+- [When you see the same shape three times, write the template and turn its holes into parameters](../lessons/let-repetition-hand-you-the-abstraction-by-templating-it.md)
+- [When an iteration oscillates instead of converging, damp the step rather than abandoning the formulation](../lessons/when-an-iteration-oscillates-damp-it-toward-the-previous-value.md)
+- [First-class status is a checklist you can audit, not a compliment](../lessons/first-class-is-a-checklist-not-a-compliment.md)
+- [Abstraction has an optimum, not a maximum](../lessons/abstraction-has-an-optimum-not-a-maximum.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: chapter 1 sections 1.1 and 1.2 complete (lines 784-3378)** — the
-elements of programming, black-box abstraction, block structure and lexical
-scoping; then linear recursion versus iteration, tree recursion, orders of growth,
-exponentiation, Euclid's algorithm and the primality tests. Next unread line is
-**3379** (section 1.3, Formulating Abstractions with Higher-Order Procedures). `extraction: complete` withheld until all five chapters are read._
+**Read so far: ALL OF CHAPTER 1 (lines 784-4488)** — the elements of programming,
+black-box abstraction, block structure and lexical scoping; linear recursion versus
+iteration, tree recursion, orders of growth, exponentiation, Euclid's algorithm and
+the primality tests; and higher-order procedures, lambda, let, general methods and
+first-class status. Next unread line is **4489** (chapter 2, Building Abstractions
+with Data). `extraction: complete` withheld until all five chapters are read._

@@ -20,7 +20,7 @@ subdomain is organized around.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-1323 lessons from 94 figures.
+1330 lessons from 94 figures.
 
 **abiteboul** (7)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -1238,17 +1238,24 @@ No lessons scored on this axis yet.
 - [When a quantity only matters up to a bounded factor, replace its operational definition with an algebraic one](../figures/strassen/lessons/swap-the-operational-definition-for-an-invariant-that-is-robust-to-constants.md)
 - [When the general relation is out of reach, restrict the allowed moves rather than relax the goal](../figures/strassen/lessons/restrict-the-moves-instead-of-relaxing-the-goal.md)
 
-**sussman** (12)
+**sussman** (19)
+- [A definition that lets you recognize the answer is not one that produces it](../figures/sussman/lessons/a-definition-that-identifies-is-not-a-definition-that-produces.md)
 - [A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable](../figures/sussman/lessons/a-model-that-copies-can-never-talk-about-sharing.md)
+- [Adopt a model you have already decided to outgrow, and say where it will break](../figures/sussman/lessons/adopt-a-model-you-have-already-decided-to-outgrow.md)
 - [Bookkeeping attached to an aggregate can never be finer than the aggregate, and its errors are silent because the answers stay right](../figures/sussman/lessons/metadata-is-only-as-precise-as-the-unit-it-is-attached-to.md)
 - [Carry each conclusion's grounds with it, and inconsistency stops being fatal because consistency becomes local](../figures/sussman/lessons/carry-the-grounds-and-inconsistency-stops-being-fatal.md)
+- [Choose a measure for what it refuses to distinguish, not for its accuracy](../figures/sussman/lessons/a-crude-measure-is-useful-because-of-what-it-refuses-to-see.md)
 - [Classify a process by what accumulates as it runs, not by what the source text looks like](../figures/sussman/lessons/classify-a-process-by-what-accumulates-not-by-how-it-looks.md)
+- [Compare your algorithm's error rate against the machine's, not against zero](../figures/sussman/lessons/compare-your-error-rate-against-the-substrate-not-against-zero.md)
+- [Distinguish a cost you incurred by transcribing the definition from a cost the problem actually has](../figures/sussman/lessons/distinguish-naive-transcription-from-inherent-difficulty.md)
 - [Every cache asserts that nothing observable has changed; if you cannot witness that, the optimization is a semantic change](../figures/sussman/lessons/caching-is-a-claim-about-invariance-and-needs-a-witness.md)
 - [If updates only ever add information, order stops mattering — and the single operation that takes information away costs you that freedom everywhere](../figures/sussman/lessons/one-retraction-costs-you-the-whole-schedule-freedom.md)
 - [No representation is more efficient than another absolutely; ask which lifetimes make it win, or you have not stated a claim](../figures/sussman/lessons/no-representation-is-more-efficient-without-a-usage-model.md)
 - [Put failure in the infrastructure and make it name its causes; a dead end that knows why it failed eliminates a region instead of a point](../figures/sussman/lessons/make-failure-informative-instead-of-encoding-around-it.md)
+- [Repeating a test buys confidence only if you have proved the failures are independent](../figures/sussman/lessons/repetition-buys-confidence-only-if-failures-are-independent.md)
 - [Replace control flow with a topology and a base case becomes a starvation condition, so recursion has to be built as growth gated on arrival](../figures/sussman/lessons/a-base-case-becomes-a-starvation-condition.md)
 - [Represent a choice as a manufactured assumption rather than performing it, and undo becomes reasoning you already have instead of machinery you have to build](../figures/sussman/lessons/represent-a-choice-as-a-manufactured-assumption-not-an-action.md)
+- [What you may freely rename is exactly what you do not depend on](../figures/sussman/lessons/what-you-may-rename-is-exactly-what-you-do-not-depend-on.md)
 - [When a cost is believed to grow with runtime behaviour, look for the semantic rule that pins it to a static property of the text](../figures/sussman/lessons/find-the-static-bound-hiding-inside-a-supposedly-dynamic-cost.md)
 - [When you wrap a value in a richer representation the operations complain but the total predicates lie, so audit the tests that cannot fail](../figures/sussman/lessons/when-you-enrich-a-type-the-total-predicates-lie.md)
 

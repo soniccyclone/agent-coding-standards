@@ -17,7 +17,7 @@ primarily here.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-774 lessons from 75 figures.
+782 lessons from 75 figures.
 
 **abiteboul** (4)
 - [Declarative and procedural is not a dichotomy; ask instead where the control lives](../figures/abiteboul/lessons/declarative-is-a-question-of-where-control-lives.md)
@@ -786,14 +786,17 @@ No works or lessons tagged with this subdomain yet.
 - [When a feature breaks a property, split the notion rather than abandon the property](../figures/strachey/lessons/when-a-feature-breaks-a-property-split-the-notion-not-the-property.md)
 - [When a requirement is impossible over everything, shrink everything](../figures/strachey/lessons/when-a-requirement-is-impossible-over-everything-shrink-everything.md)
 
-**sussman** (30)
+**sussman** (38)
+- [A construct that looks essential may only be compensating for an implementation defect](../figures/sussman/lessons/a-feature-that-looks-essential-may-be-compensating-for-a-defect.md)
 - [A convenient notation is a compression that presupposes a restriction, so work in the ugly explicit form until you know what the surface must express](../figures/sussman/lessons/a-convenient-notation-is-a-compression-that-presupposes-a-restriction.md)
 - [A layer meant to be shared by everything must be low in concept count, not close to the machine — those are different kinds of low](../figures/sussman/lessons/a-common-layer-must-be-low-in-concepts-not-close-to-the-machine.md)
 - [A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable](../figures/sussman/lessons/a-model-that-copies-can-never-talk-about-sharing.md)
 - [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
+- [Adopt a model you have already decided to outgrow, and say where it will break](../figures/sussman/lessons/adopt-a-model-you-have-already-decided-to-outgrow.md)
 - [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../figures/sussman/lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
 - [Any obligation that comes due after a transfer of control forces a frame, so undo-on-exit features quietly forbid unbounded looping](../figures/sussman/lessons/any-obligation-after-a-transfer-forbids-the-transfer-being-a-jump.md)
 - [Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table](../figures/sussman/lessons/dispatch-is-a-matrix-and-every-design-picks-a-slicing.md)
+- [Being able to compute a thing and being able to express the concept are different powers](../figures/sussman/lessons/computing-a-thing-and-expressing-the-concept-are-different-powers.md)
 - [Check whether a clever encoding is secretly parasitic on the evaluation rule you were about to change](../figures/sussman/lessons/an-encoding-can-be-parasitic-on-the-rule-you-are-replacing.md)
 - [Choose among candidate primitives by which one explains the others, since one-way definability is the only asymmetry that carries information](../figures/sussman/lessons/pick-a-primitive-by-which-candidate-explains-the-others.md)
 - [Classify a process by what accumulates as it runs, not by what the source text looks like](../figures/sussman/lessons/classify-a-process-by-what-accumulates-not-by-how-it-looks.md)
@@ -802,7 +805,9 @@ No works or lessons tagged with this subdomain yet.
 - [Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited](../figures/sussman/lessons/give-a-new-mode-to-an-existing-mechanism-and-audit-what-it-inherits.md)
 - [Every cache asserts that nothing observable has changed; if you cannot witness that, the optimization is a semantic change](../figures/sussman/lessons/caching-is-a-claim-about-invariance-and-needs-a-witness.md)
 - [Find the assumption too basic to be stated, negate it, and follow the consequences — that is where new models come from](../figures/sussman/lessons/negate-the-assumption-nobody-writes-down.md)
+- [First-class status is a checklist you can audit, not a compliment](../figures/sussman/lessons/first-class-is-a-checklist-not-a-compliment.md)
 - [If updates only ever add information, order stops mattering — and the single operation that takes information away costs you that freedom everywhere](../figures/sussman/lessons/one-retraction-costs-you-the-whole-schedule-freedom.md)
+- [Judge a system by its primitives, its means of combination, and its means of abstraction](../figures/sussman/lessons/judge-a-system-by-its-three-mechanisms-not-its-features.md)
 - [Never implement a mechanism out of the host's version of that same mechanism, or you inherit every limit the host imposed on it](../figures/sussman/lessons/never-build-a-mechanism-out-of-the-hosts-version-of-itself.md)
 - [No representation is more efficient than another absolutely; ask which lifetimes make it win, or you have not stated a claim](../figures/sussman/lessons/no-representation-is-more-efficient-without-a-usage-model.md)
 - [Push a conjectured symmetry until it predicts something you have not noticed, then go looking for it](../figures/sussman/lessons/use-a-conjectured-symmetry-to-predict-the-missing-piece.md)
@@ -811,11 +816,14 @@ No works or lessons tagged with this subdomain yet.
 - [Removing a construct does not remove the practice; supply a better alternative or watch the omission get patched back in](../figures/sussman/lessons/invent-better-constructs-instead-of-forbidding-bad-ones.md)
 - [Replace control flow with a topology and a base case becomes a starvation condition, so recursion has to be built as growth gated on arrival](../figures/sussman/lessons/a-base-case-becomes-a-starvation-condition.md)
 - [Represent a choice as a manufactured assumption rather than performing it, and undo becomes reasoning you already have instead of machinery you have to build](../figures/sussman/lessons/represent-a-choice-as-a-manufactured-assumption-not-an-action.md)
+- [Scope exists so that strangers can both use the obvious name](../figures/sussman/lessons/scope-exists-so-strangers-can-both-use-the-obvious-name.md)
 - [Treat a name as something a quantity acquires, not something a location holds, and the whole storage question changes shape](../figures/sussman/lessons/name-the-quantity-not-the-location.md)
 - [Try to encode a feature in your core, and let the locality of the encoding tell you whether it belongs there](../figures/sussman/lessons/encode-a-feature-to-learn-whether-it-is-really-primitive.md)
 - [Turn the machinery the implementation passes behind your back into an ordinary argument, then hide it again in the notation](../figures/sussman/lessons/reify-the-hidden-argument-then-suppress-it-in-notation.md)
+- [What you may freely rename is exactly what you do not depend on](../figures/sussman/lessons/what-you-may-rename-is-exactly-what-you-do-not-depend-on.md)
 - [When a cost is believed to grow with runtime behaviour, look for the semantic rule that pins it to a static property of the text](../figures/sussman/lessons/find-the-static-bound-hiding-inside-a-supposedly-dynamic-cost.md)
 - [When you cannot tell whether two ideas differ, implement both in one substrate and see whether the artifacts coincide](../figures/sussman/lessons/build-it-to-find-out-whether-two-ideas-are-the-same.md)
+- [When you see the same shape three times, write the template and turn its holes into parameters](../figures/sussman/lessons/let-repetition-hand-you-the-abstraction-by-templating-it.md)
 - [When you wrap a value in a richer representation the operations complain but the total predicates lie, so audit the tests that cannot fail](../figures/sussman/lessons/when-you-enrich-a-type-the-total-predicates-lie.md)
 
 **sutherland** (3)

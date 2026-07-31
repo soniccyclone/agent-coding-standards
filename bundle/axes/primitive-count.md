@@ -22,7 +22,7 @@ stylistic preference.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-705 lessons from 94 figures.
+709 lessons from 94 figures.
 
 **abiteboul** (2)
 - [The class of computations is the real object; notations and semantics are viewpoints on it](../figures/abiteboul/lessons/the-computation-class-is-the-object-syntaxes-are-viewpoints.md)
@@ -757,14 +757,18 @@ No lessons scored on this axis yet.
 - [Turn the question around: besides what an object costs to build, ask what can be extracted from it](../figures/strassen/lessons/turn-the-question-around-ask-what-can-be-extracted.md)
 - [When a quantity only matters up to a bounded factor, replace its operational definition with an algebraic one](../figures/strassen/lessons/swap-the-operational-definition-for-an-invariant-that-is-robust-to-constants.md)
 
-**sussman** (10)
+**sussman** (14)
+- [A construct that looks essential may only be compensating for an implementation defect](../figures/sussman/lessons/a-feature-that-looks-essential-may-be-compensating-for-a-defect.md)
 - [A layer meant to be shared by everything must be low in concept count, not close to the machine — those are different kinds of low](../figures/sussman/lessons/a-common-layer-must-be-low-in-concepts-not-close-to-the-machine.md)
 - [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
 - [Check whether a clever encoding is secretly parasitic on the evaluation rule you were about to change](../figures/sussman/lessons/an-encoding-can-be-parasitic-on-the-rule-you-are-replacing.md)
 - [Choose among candidate primitives by which one explains the others, since one-way definability is the only asymmetry that carries information](../figures/sussman/lessons/pick-a-primitive-by-which-candidate-explains-the-others.md)
 - [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../figures/sussman/lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
 - [Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited](../figures/sussman/lessons/give-a-new-mode-to-an-existing-mechanism-and-audit-what-it-inherits.md)
+- [First-class status is a checklist you can audit, not a compliment](../figures/sussman/lessons/first-class-is-a-checklist-not-a-compliment.md)
+- [Judge a system by its primitives, its means of combination, and its means of abstraction](../figures/sussman/lessons/judge-a-system-by-its-three-mechanisms-not-its-features.md)
 - [Put a procedure where a value goes, and you gain control over when, whether, and how often it is computed](../figures/sussman/lessons/put-a-procedure-where-a-value-goes.md)
+- [Scope exists so that strangers can both use the obvious name](../figures/sussman/lessons/scope-exists-so-strangers-can-both-use-the-obvious-name.md)
 - [Try to encode a feature in your core, and let the locality of the encoding tell you whether it belongs there](../figures/sussman/lessons/encode-a-feature-to-learn-whether-it-is-really-primitive.md)
 - [Turn the machinery the implementation passes behind your back into an ordinary argument, then hide it again in the notation](../figures/sussman/lessons/reify-the-hidden-argument-then-suppress-it-in-notation.md)
 - [When you cannot tell whether two ideas differ, implement both in one substrate and see whether the artifacts coincide](../figures/sussman/lessons/build-it-to-find-out-whether-two-ideas-are-the-same.md)

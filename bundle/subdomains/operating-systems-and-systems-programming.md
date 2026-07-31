@@ -17,7 +17,7 @@ philosophy here, it's the actual subject matter.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-361 lessons from 53 figures.
+362 lessons from 54 figures.
 
 **abrial** (1)
 - [Every guarantee has an edge; state where it is and cover the outside with a mechanism of a different kind](../figures/abrial/lessons/name-the-edge-of-your-guarantee.md)
@@ -366,6 +366,9 @@ No works or lessons tagged with this subdomain yet.
 - [Put the power to change a guard out of reach of what it guards](../figures/strachey/lessons/put-the-power-to-change-a-guard-out-of-reach-of-what-it-guards.md)
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
 - [Treat your outermost level as a stand-in for a layer you did not model](../figures/strachey/lessons/treat-your-outermost-level-as-a-stand-in-for-a-layer-you-did-not-model.md)
+
+**sussman** (1)
+- [Ask whether you could stop and resume from the named state; that is the test for whether the state is complete](../figures/sussman/lessons/resumability-is-the-test-for-whether-your-state-is-complete.md)
 
 **tarjan** (4)
 - [Adaptivity turns reads into writes, and that is the bill you are actually paying](../figures/tarjan/lessons/adaptivity-turns-reads-into-writes-and-that-is-the-real-bill.md)

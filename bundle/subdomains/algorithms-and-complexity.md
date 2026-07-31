@@ -16,7 +16,7 @@ its correctness or expressiveness.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-398 lessons from 55 figures.
+403 lessons from 55 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -341,9 +341,14 @@ No works or lessons tagged with this subdomain yet.
 - [When the general relation is out of reach, restrict the allowed moves rather than relax the goal](../figures/strassen/lessons/restrict-the-moves-instead-of-relaxing-the-goal.md)
 - [Where an inequality turns into an equality tells you what kind of function you are holding](../figures/strassen/lessons/where-an-inequality-becomes-an-equality-tells-you-what-the-function-is.md)
 
-**sussman** (2)
+**sussman** (7)
 - [Build the algorithm's smallest local element and let the known global algorithm emerge, so neither side has to represent the other's problem](../figures/sussman/lessons/build-the-local-element-and-let-the-known-algorithm-emerge.md)
+- [Choose a measure for what it refuses to distinguish, not for its accuracy](../figures/sussman/lessons/a-crude-measure-is-useful-because-of-what-it-refuses-to-see.md)
+- [Compare your algorithm's error rate against the machine's, not against zero](../figures/sussman/lessons/compare-your-error-rate-against-the-substrate-not-against-zero.md)
+- [Distinguish a cost you incurred by transcribing the definition from a cost the problem actually has](../figures/sussman/lessons/distinguish-naive-transcription-from-inherent-difficulty.md)
 - [Put failure in the infrastructure and make it name its causes; a dead end that knows why it failed eliminates a region instead of a point](../figures/sussman/lessons/make-failure-informative-instead-of-encoding-around-it.md)
+- [Repeating a test buys confidence only if you have proved the failures are independent](../figures/sussman/lessons/repetition-buys-confidence-only-if-failures-are-independent.md)
+- [When an iteration oscillates instead of converging, damp the step rather than abandoning the formulation](../figures/sussman/lessons/when-an-iteration-oscillates-damp-it-toward-the-previous-value.md)
 
 **sutherland** (3)
 - [Keep the slow general method underneath the fast special one](../figures/sutherland/lessons/keep-the-general-slow-method-under-the-fast-special-one.md)

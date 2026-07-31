@@ -18,7 +18,7 @@ its own sake.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-539 lessons from 74 figures.
+540 lessons from 74 figures.
 
 **abiteboul** (5)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -653,9 +653,10 @@ No works or lessons tagged with this subdomain yet.
 - [To discard the part of a structure you do not want, assign weights that make it strictly more expensive, then scale](../figures/strassen/lessons/assign-weights-so-the-unwanted-terms-carry-a-cost-and-vanish.md)
 - [When the general relation is out of reach, restrict the allowed moves rather than relax the goal](../figures/strassen/lessons/restrict-the-moves-instead-of-relaxing-the-goal.md)
 
-**sussman** (3)
+**sussman** (4)
 - [Bookkeeping attached to an aggregate can never be finer than the aggregate, and its errors are silent because the answers stay right](../figures/sussman/lessons/metadata-is-only-as-precise-as-the-unit-it-is-attached-to.md)
 - [Carry each conclusion's grounds with it, and inconsistency stops being fatal because consistency becomes local](../figures/sussman/lessons/carry-the-grounds-and-inconsistency-stops-being-fatal.md)
+- [Repeating a test buys confidence only if you have proved the failures are independent](../figures/sussman/lessons/repetition-buys-confidence-only-if-failures-are-independent.md)
 - [Represent a choice as a manufactured assumption rather than performing it, and undo becomes reasoning you already have instead of machinery you have to build](../figures/sussman/lessons/represent-a-choice-as-a-manufactured-assumption-not-an-action.md)
 
 **turing** (2)

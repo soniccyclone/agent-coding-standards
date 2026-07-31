@@ -18,7 +18,7 @@ mechanisms rather than deriving new primitives.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-1040 lessons from 90 figures.
+1056 lessons from 90 figures.
 
 **abiteboul** (5)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -1017,23 +1017,39 @@ No works or lessons tagged with this subdomain yet.
 - [Publish the dependency map of your own argument, marking which parts are load-bearing for which conclusion](../figures/strassen/lessons/publish-the-dependency-map-of-your-own-argument.md)
 - [Require each part to belong to a class, not to be a copy of a fixed one](../figures/strassen/lessons/require-each-part-to-be-in-a-class-not-to-be-a-copy.md)
 
-**sussman** (16)
+**sussman** (32)
+- [A construct that looks essential may only be compensating for an implementation defect](../figures/sussman/lessons/a-feature-that-looks-essential-may-be-compensating-for-a-defect.md)
 - [A convenient notation is a compression that presupposes a restriction, so work in the ugly explicit form until you know what the surface must express](../figures/sussman/lessons/a-convenient-notation-is-a-compression-that-presupposes-a-restriction.md)
+- [A definition that lets you recognize the answer is not one that produces it](../figures/sussman/lessons/a-definition-that-identifies-is-not-a-definition-that-produces.md)
 - [A layer meant to be shared by everything must be low in concept count, not close to the machine — those are different kinds of low](../figures/sussman/lessons/a-common-layer-must-be-low-in-concepts-not-close-to-the-machine.md)
+- [Abstraction has an optimum, not a maximum](../figures/sussman/lessons/abstraction-has-an-optimum-not-a-maximum.md)
+- [Adopt a model you have already decided to outgrow, and say where it will break](../figures/sussman/lessons/adopt-a-model-you-have-already-decided-to-outgrow.md)
+- [An abstraction boundary is a claim that a whole class of implementations is interchangeable](../figures/sussman/lessons/an-abstraction-boundary-is-a-claim-about-an-equivalence-class.md)
 - [Any obligation that comes due after a transfer of control forces a frame, so undo-on-exit features quietly forbid unbounded looping](../figures/sussman/lessons/any-obligation-after-a-transfer-forbids-the-transfer-being-a-jump.md)
+- [Ask whether you could stop and resume from the named state; that is the test for whether the state is complete](../figures/sussman/lessons/resumability-is-the-test-for-whether-your-state-is-complete.md)
+- [Being able to compute a thing and being able to express the concept are different powers](../figures/sussman/lessons/computing-a-thing-and-expressing-the-concept-are-different-powers.md)
 - [Bookkeeping attached to an aggregate can never be finer than the aggregate, and its errors are silent because the answers stay right](../figures/sussman/lessons/metadata-is-only-as-precise-as-the-unit-it-is-attached-to.md)
 - [Build the algorithm's smallest local element and let the known global algorithm emerge, so neither side has to represent the other's problem](../figures/sussman/lessons/build-the-local-element-and-let-the-known-algorithm-emerge.md)
 - [Carry each conclusion's grounds with it, and inconsistency stops being fatal because consistency becomes local](../figures/sussman/lessons/carry-the-grounds-and-inconsistency-stops-being-fatal.md)
+- [Choose a measure for what it refuses to distinguish, not for its accuracy](../figures/sussman/lessons/a-crude-measure-is-useful-because-of-what-it-refuses-to-see.md)
+- [Compare your algorithm's error rate against the machine's, not against zero](../figures/sussman/lessons/compare-your-error-rate-against-the-substrate-not-against-zero.md)
 - [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../figures/sussman/lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
+- [Distinguish a cost you incurred by transcribing the definition from a cost the problem actually has](../figures/sussman/lessons/distinguish-naive-transcription-from-inherent-difficulty.md)
 - [Every cache asserts that nothing observable has changed; if you cannot witness that, the optimization is a semantic change](../figures/sussman/lessons/caching-is-a-claim-about-invariance-and-needs-a-witness.md)
 - [Find the assumption too basic to be stated, negate it, and follow the consequences — that is where new models come from](../figures/sussman/lessons/negate-the-assumption-nobody-writes-down.md)
+- [First-class status is a checklist you can audit, not a compliment](../figures/sussman/lessons/first-class-is-a-checklist-not-a-compliment.md)
+- [Judge a system by its primitives, its means of combination, and its means of abstraction](../figures/sussman/lessons/judge-a-system-by-its-three-mechanisms-not-its-features.md)
 - [Never implement a mechanism out of the host's version of that same mechanism, or you inherit every limit the host imposed on it](../figures/sussman/lessons/never-build-a-mechanism-out-of-the-hosts-version-of-itself.md)
 - [No representation is more efficient than another absolutely; ask which lifetimes make it win, or you have not stated a claim](../figures/sussman/lessons/no-representation-is-more-efficient-without-a-usage-model.md)
 - [Put failure in the infrastructure and make it name its causes; a dead end that knows why it failed eliminates a region instead of a point](../figures/sussman/lessons/make-failure-informative-instead-of-encoding-around-it.md)
 - [Put the combining rule in the shared place rather than in the producers, and directions of flow you never enumerated become available](../figures/sussman/lessons/put-the-combining-rule-in-the-shared-place.md)
 - [Removing a construct does not remove the practice; supply a better alternative or watch the omission get patched back in](../figures/sussman/lessons/invent-better-constructs-instead-of-forbidding-bad-ones.md)
+- [Scope exists so that strangers can both use the obvious name](../figures/sussman/lessons/scope-exists-so-strangers-can-both-use-the-obvious-name.md)
 - [Treat a name as something a quantity acquires, not something a location holds, and the whole storage question changes shape](../figures/sussman/lessons/name-the-quantity-not-the-location.md)
+- [What you may freely rename is exactly what you do not depend on](../figures/sussman/lessons/what-you-may-rename-is-exactly-what-you-do-not-depend-on.md)
 - [When a cost is believed to grow with runtime behaviour, look for the semantic rule that pins it to a static property of the text](../figures/sussman/lessons/find-the-static-bound-hiding-inside-a-supposedly-dynamic-cost.md)
+- [When an iteration oscillates instead of converging, damp the step rather than abandoning the formulation](../figures/sussman/lessons/when-an-iteration-oscillates-damp-it-toward-the-previous-value.md)
+- [When you see the same shape three times, write the template and turn its holes into parameters](../figures/sussman/lessons/let-repetition-hand-you-the-abstraction-by-templating-it.md)
 
 **sutherland** (16)
 - [A projection is only usable if it carries the way back to the node that made it](../figures/sutherland/lessons/a-projection-must-carry-its-way-back-to-the-node.md)

@@ -19,7 +19,7 @@ built-in vocabulary while staying easy to write against.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-1008 lessons from 92 figures.
+1016 lessons from 92 figures.
 
 **abiteboul** (9)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -974,13 +974,18 @@ No lessons scored on this axis yet.
 - [Turn the question around: besides what an object costs to build, ask what can be extracted from it](../figures/strassen/lessons/turn-the-question-around-ask-what-can-be-extracted.md)
 - [Where an inequality turns into an equality tells you what kind of function you are holding](../figures/strassen/lessons/where-an-inequality-becomes-an-equality-tells-you-what-the-function-is.md)
 
-**sussman** (27)
+**sussman** (35)
+- [A construct that looks essential may only be compensating for an implementation defect](../figures/sussman/lessons/a-feature-that-looks-essential-may-be-compensating-for-a-defect.md)
 - [A convenient notation is a compression that presupposes a restriction, so work in the ugly explicit form until you know what the surface must express](../figures/sussman/lessons/a-convenient-notation-is-a-compression-that-presupposes-a-restriction.md)
+- [A definition that lets you recognize the answer is not one that produces it](../figures/sussman/lessons/a-definition-that-identifies-is-not-a-definition-that-produces.md)
 - [A layer meant to be shared by everything must be low in concept count, not close to the machine — those are different kinds of low](../figures/sussman/lessons/a-common-layer-must-be-low-in-concepts-not-close-to-the-machine.md)
 - [A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable](../figures/sussman/lessons/a-model-that-copies-can-never-talk-about-sharing.md)
+- [Abstraction has an optimum, not a maximum](../figures/sussman/lessons/abstraction-has-an-optimum-not-a-maximum.md)
+- [An abstraction boundary is a claim that a whole class of implementations is interchangeable](../figures/sussman/lessons/an-abstraction-boundary-is-a-claim-about-an-equivalence-class.md)
 - [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../figures/sussman/lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
 - [Any obligation that comes due after a transfer of control forces a frame, so undo-on-exit features quietly forbid unbounded looping](../figures/sussman/lessons/any-obligation-after-a-transfer-forbids-the-transfer-being-a-jump.md)
 - [Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table](../figures/sussman/lessons/dispatch-is-a-matrix-and-every-design-picks-a-slicing.md)
+- [Being able to compute a thing and being able to express the concept are different powers](../figures/sussman/lessons/computing-a-thing-and-expressing-the-concept-are-different-powers.md)
 - [Build the algorithm's smallest local element and let the known global algorithm emerge, so neither side has to represent the other's problem](../figures/sussman/lessons/build-the-local-element-and-let-the-known-algorithm-emerge.md)
 - [Carry each conclusion's grounds with it, and inconsistency stops being fatal because consistency becomes local](../figures/sussman/lessons/carry-the-grounds-and-inconsistency-stops-being-fatal.md)
 - [Check whether a clever encoding is secretly parasitic on the evaluation rule you were about to change](../figures/sussman/lessons/an-encoding-can-be-parasitic-on-the-rule-you-are-replacing.md)
@@ -990,6 +995,8 @@ No lessons scored on this axis yet.
 - [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../figures/sussman/lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
 - [Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited](../figures/sussman/lessons/give-a-new-mode-to-an-existing-mechanism-and-audit-what-it-inherits.md)
 - [Find the assumption too basic to be stated, negate it, and follow the consequences — that is where new models come from](../figures/sussman/lessons/negate-the-assumption-nobody-writes-down.md)
+- [First-class status is a checklist you can audit, not a compliment](../figures/sussman/lessons/first-class-is-a-checklist-not-a-compliment.md)
+- [Judge a system by its primitives, its means of combination, and its means of abstraction](../figures/sussman/lessons/judge-a-system-by-its-three-mechanisms-not-its-features.md)
 - [Never implement a mechanism out of the host's version of that same mechanism, or you inherit every limit the host imposed on it](../figures/sussman/lessons/never-build-a-mechanism-out-of-the-hosts-version-of-itself.md)
 - [Push a conjectured symmetry until it predicts something you have not noticed, then go looking for it](../figures/sussman/lessons/use-a-conjectured-symmetry-to-predict-the-missing-piece.md)
 - [Put a procedure where a value goes, and you gain control over when, whether, and how often it is computed](../figures/sussman/lessons/put-a-procedure-where-a-value-goes.md)
@@ -1001,6 +1008,7 @@ No lessons scored on this axis yet.
 - [Treat a name as something a quantity acquires, not something a location holds, and the whole storage question changes shape](../figures/sussman/lessons/name-the-quantity-not-the-location.md)
 - [Try to encode a feature in your core, and let the locality of the encoding tell you whether it belongs there](../figures/sussman/lessons/encode-a-feature-to-learn-whether-it-is-really-primitive.md)
 - [Turn the machinery the implementation passes behind your back into an ordinary argument, then hide it again in the notation](../figures/sussman/lessons/reify-the-hidden-argument-then-suppress-it-in-notation.md)
+- [When you see the same shape three times, write the template and turn its holes into parameters](../figures/sussman/lessons/let-repetition-hand-you-the-abstraction-by-templating-it.md)
 - [When you wrap a value in a richer representation the operations complain but the total predicates lie, so audit the tests that cannot fail](../figures/sussman/lessons/when-you-enrich-a-type-the-total-predicates-lie.md)
 
 **sutherland** (14)

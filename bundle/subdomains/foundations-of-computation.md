@@ -19,7 +19,7 @@ corpus retains alongside it, not a rejected alternative.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-406 lessons from 46 figures.
+407 lessons from 46 figures.
 
 **abiteboul** (3)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -433,7 +433,8 @@ No works or lessons tagged with this subdomain yet.
 - [When a quantity only matters up to a bounded factor, replace its operational definition with an algebraic one](../figures/strassen/lessons/swap-the-operational-definition-for-an-invariant-that-is-robust-to-constants.md)
 - [Where an inequality turns into an equality tells you what kind of function you are holding](../figures/strassen/lessons/where-an-inequality-becomes-an-equality-tells-you-what-the-function-is.md)
 
-**sussman** (8)
+**sussman** (9)
+- [A definition that lets you recognize the answer is not one that produces it](../figures/sussman/lessons/a-definition-that-identifies-is-not-a-definition-that-produces.md)
 - [A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable](../figures/sussman/lessons/a-model-that-copies-can-never-talk-about-sharing.md)
 - [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
 - [Check whether a clever encoding is secretly parasitic on the evaluation rule you were about to change](../figures/sussman/lessons/an-encoding-can-be-parasitic-on-the-rule-you-are-replacing.md)
