@@ -24,3 +24,5 @@ tags: [work]
 - [Put everything in one universal domain and recover the specific types as subspaces of it](../lessons/put-everything-in-one-universal-domain-and-define-the-rest-as-subspaces.md)
 - [Prefer the class closed under composition over the simpler class inside it](../lessons/prefer-the-class-that-is-closed-under-composition-to-the-simpler-one.md)
 - [Pick the structure whose weakness is exactly what buys the guarantee you need](../lessons/pick-the-structure-whose-weakness-buys-the-guarantee-you-need.md)
+- [An axiom your model refutes may be one you are better off without](../lessons/an-axiom-your-model-refutes-may-be-one-you-are-better-off-without.md)
+- [A model validates laws your rule set cannot reach, and those are the rules you are missing](../lessons/a-model-validates-laws-your-rule-set-cannot-reach.md)

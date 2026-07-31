@@ -23,3 +23,7 @@ tags: [work]
 ## Lessons
 - [Keep a runnable statement of what the system means, separate from everything that makes it fast, and require it to run with the speed removed](../lessons/keep-meaning-separate-from-optimization.md)
 - [Treat the size of an existing solution as an unanswered empirical question, and answer it by building a small one](../lessons/treat-the-size-of-the-current-solution-as-an-open-question.md)
+- [Find the one mechanism your whole stack is secretly made of, and pick the element that stays meaningful at every level](../lessons/find-the-one-mechanism-the-whole-stack-is-made-of.md)
+- [When a domain already has a picture everyone explains it with, make that picture the program](../lessons/make-the-explanation-be-the-program.md)
+- [Name the part you do not know how to do, build inward from both ends, and treat the models as instruments to be discarded](../lessons/name-the-part-you-cannot-do-yet-and-build-inward.md)
+- [Anything precise enough to be worth writing will contain mistakes, so make it run rather than making it a specification](../lessons/anything-worth-stating-precisely-must-be-runnable.md)
