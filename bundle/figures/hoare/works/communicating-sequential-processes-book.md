@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 8800** — Chapters 1 (from 1.5),
-2, 3 and 4 read in full; Chapter 5 read through 5.4.5.
+pass died immediately. Current position: **line 9660** — Chapters 1 (from 1.5),
+2, 3, 4 and 5 read in full; Chapter 6 read through 6.2.
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -89,3 +89,8 @@ pass died immediately. Current position: **line 8800** — Chapters 1 (from 1.5)
 - [Where a notation forces you to commit is what determines the class of things it can recognize](../lessons/where-a-notation-forces-you-to-commit-determines-what-it-can-recognize.md)
 - [Run independent constraint-checkers side by side and you enforce conjunctions no single traversal can](../lessons/run-independent-checkers-side-by-side-to-enforce-conjunctions.md)
 - [Make restart, rollback and task-switching operators over a component that knows nothing about them](../lessons/make-recovery-an-operator-over-a-component-that-knows-nothing-about-it.md)
+- [Choose between two adequate models by the laws you need to hold, not by which can mimic the behaviour](../lessons/choose-between-adequate-models-by-the-laws-you-need.md)
+- [Declare each participant's read and write sets; their disjointness is what licenses moving code across the concurrency boundary](../lessons/declare-read-and-write-sets-and-disjointness-licenses-code-motion.md)
+- [Partial operations invalidate the laws you rewrite with, so carry a definedness condition rather than pretending undefined is a value](../lessons/partial-operations-invalidate-your-laws-so-guard-each-law-with-definedness.md)
+- [Derive a loop's termination precondition by parameterizing on "finishes within n" — the union over n is exactly the precondition](../lessons/derive-the-termination-precondition-rather-than-assuming-it.md)
+- [Check a general framework by what it degenerates to, and charge its extra notation only to the general case](../lessons/check-a-generalization-by-what-it-degenerates-to.md)

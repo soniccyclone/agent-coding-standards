@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Derive a loop's termination precondition by parameterizing on 'finishes within n' — the union over n is exactly the precondition"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Derive a loop's termination precondition by parameterizing on "finishes within n" — the union over n is exactly the precondition
+
+**Lesson:** The usual way to prove a repetition correct is to state a precondition under which it works, then argue. That gets the order backwards and invites the standard error of asserting a precondition slightly weaker than the truth, which nothing in the proof catches because the proof was conducted under the assumption. Turn it around. Define a family of conditions indexed by a number: the condition on the starting state under which the repetition is certain to finish in fewer than n passes. Prove, for every n, that starting in such a state gives the intended result. Then observe that the family's union — there exists some n for which the condition holds — is not merely sufficient for the conclusion but is precisely the set of starting states from which the repetition finishes at all. You did not choose the precondition. You computed it, and no stronger claim about this repetition can be true.
+
+Two structural features make the scheme work and are worth recognizing elsewhere. The base case is free: no repetition can finish in fewer than zero passes, so the zero-indexed condition is false, and an implication with a false antecedent holds without argument. That is why the induction can be started at all without a separate termination argument. And the step is entirely ordinary — assume the property for a body that finishes within n, prove it for one further pass — so the intricate part of the reasoning, which is invariably the algebra of the loop body, is untouched by the machinery around it. The technique adds a parameter and takes nothing away.
+
+The transferable habit is broader than loops: when a claim is contingent on a condition you would have to guess, look for a natural quantity that grades the claim, prove the graded version for all values, and let the union of the grades supply the condition. You get the strongest true statement rather than the strongest one you happened to think of, and — this is the part that matters in practice — you find out what the actual precondition is, which is frequently more interesting than the theorem. A repetition whose derived precondition turns out to be narrower than anyone assumed has just told you where the system will hang, before it does.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the specifications subsection of the assignment section in the sequential processes chapter, which proves loops using the rule for unguarded recursion by constructing a predicate describing the initial states from which the loop is certain to terminate in fewer than a given number of repetitions, notes that this predicate is false at zero so the base case holds trivially, derives the conclusion that the loop satisfies its intended specification under the existential closure of that predicate, and observes that no stronger specification can possibly be met because the existential closure is precisely the precondition under which the loop terminates in some finite number of iterations; illustrated on long division by repeated subtraction, where the derived precondition reduces to the divisor being positive.

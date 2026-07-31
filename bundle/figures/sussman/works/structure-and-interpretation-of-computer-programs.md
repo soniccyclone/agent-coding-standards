@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 7
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
