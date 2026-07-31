@@ -46,6 +46,7 @@ bibliography, the index and a colophon; none of it is lesson-bearing.
 **Third session (in progress).** Started reading at line 341 and is working forward
 sequentially through the unread spans below. **Current position: line 341** — this
 number is updated as the read advances, so whatever it says is the resume point.
+Position log: 341 -> 1740.
 
 **Not read in either recorded session, resume here:** lines 341-14254 — chapters 1
 through 14 entire, i.e. Part A (Programs Which Manipulate Numbers) and Part B (Data
@@ -103,3 +104,4 @@ then attested them, so exhaustion cannot be claimed for them.
 - [A value invented to satisfy the machinery is indistinguishable from a requirement once it is written down](../lessons/a-value-invented-to-please-the-machinery-reads-as-a-requirement.md)
 - [Encoding a new kind of thing into machinery you already have costs you exactly the property that made it a new kind of thing](../lessons/encoding-a-new-thing-into-old-machinery-costs-you-the-property-that-made-it-new.md)
 - [Justify a step against its nearest predecessor, and when several predecessors would do, pick whichever makes the argument shortest](../lessons/justify-each-step-against-its-cheapest-predecessor-not-against-the-origin.md)
+- [What outgrew your methods is the interaction surface, not the size of your program](../lessons/what-grew-is-the-interaction-surface-not-your-program.md)

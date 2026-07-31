@@ -97,3 +97,5 @@ tags: [work]
 - [Give the violation a location, and repair becomes the act of moving it until it disappears](../lessons/give-the-violation-a-location-and-repair-becomes-moving-it.md)
 - [Spend leftover freedom to stay inside a cheaper encoding, and collect the structural guarantee it implies](../lessons/spend-leftover-freedom-to-stay-inside-a-cheaper-encoding.md)
 - [When a chain of moves keeps rewriting the same slot, lift that slot's value out of the structure and put the exception in the invariant](../lessons/a-value-that-keeps-being-rewritten-belongs-outside-the-structure.md)
+- [Two things whose live regions grow and shrink in step can share one store, and the whole argument is a footprint check](../lessons/overlay-two-things-whose-live-extents-are-complementary.md)
+- [A design method cannot supply the invention, only the retrospective explanation — and that is still worth having](../lessons/a-method-buys-retrospective-explanation-not-invention.md)

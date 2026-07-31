@@ -103,6 +103,9 @@ tags: [work]
 - [Structure can be computed without content, which is why constructors are the things worth making non-strict](../lessons/structure-can-be-computed-without-content-so-constructors-should-be-non-strict.md)
 - [A duplicated API is the symptom of a property missing one level down](../lessons/a-duplicated-api-is-the-symptom-of-a-property-missing-one-level-down.md)
 
+- [Whether a description counts as a program is a fact about the evaluator, not about the description](../lessons/the-line-between-describing-and-computing-belongs-to-the-evaluator.md)
+- [The constraints commute; their costs do not, so place each one where its inputs first exist](../lessons/constraints-commute-but-their-costs-do-not.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.

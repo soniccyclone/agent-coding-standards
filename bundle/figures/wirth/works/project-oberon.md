@@ -83,3 +83,5 @@ section are where the extractable lessons are.
 - [A self-inverse operation needs no saved copy and no precondition](../lessons/a-self-inverse-operation-needs-no-saved-copy.md)
 - [Let each level transform requests for the level below it, and never reach past a child](../lessons/let-each-level-transform-requests-for-the-level-below-it.md)
 - [Edit the description, not the contents](../lessons/edit-the-description-not-the-contents.md)
+- [An indirection relocates cost into demands on the layer below](../lessons/an-indirection-relocates-cost-into-demands-on-the-layer-below.md)
+- [Attach state to the level you want to have several of](../lessons/attach-state-to-the-level-you-want-several-of.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Make an operation distribute over composition and you need only define it on the atoms"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# Make an operation distribute over composition and you need only define it on the atoms
+
+**Lesson:** Suppose your data is built by one associative combining operation from indivisible pieces, and you want to define a transformation on it. You have a choice that looks like a mere stylistic preference and is not. If the transformation is arranged so that its result on a combination is the combination of its results on the parts, then specifying it on the indivisible pieces alone specifies it everywhere: the value on any structure whatever is recoverable by pushing it down to the atoms and reassembling. An unbounded specification has collapsed into a finite table plus one algebraic promise. Everything else follows mechanically, including the evaluation strategy, since the same promise read left to right is a rewriting rule an implementation can just apply.
+
+The payoff is not only brevity. Being structure-preserving is a subscription rather than a purchase: a raft of properties arrive as consequences instead of needing separate proofs. Preserving composition forces preserving the empty case, because the empty structure is the unit of the combining operation and must map to something that acts as a unit. It forces respect for the prefix ordering, because whatever extends a structure extends its image too. These are exactly the properties later arguments lean on, so an operation defined this way slots into subsequent reasoning with nothing owed. The habit worth forming is to check, at the moment of introducing any operation over a composite type, whether it can be made to distribute — and if a small change to its definition would buy that, to make the change.
+
+The negative case is equally informative and should not be papered over. If an operation's value on a combination genuinely is not determined by its values on the parts, it is context-sensitive, and saying so out loud is more useful than hiding the fact behind a recursive definition that happens to work. Every proof about it will need induction over entire structures rather than a case per atom; every implementation will need to carry state across the traversal; every attempt to parallelize it will hit the same wall. Notice, too, that distributivity can hold in one argument of a two-argument operation and fail in the other — appending is well-behaved on the right and not on the left — so the honest statement is per-argument, and treating a half-distributive operation as fully distributive is a common and quiet source of wrong laws.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the operations-on-traces section of the chapter on processes: the laws making catenation associative with the empty trace as unit, the definitions of strict and distributive functions on traces with the observation that all distributive functions are strict, the remark that a distributive function is uniquely determined by its effect on one-element sequences with the worked expansion of a restriction over a three-element trace, the definition of restriction by its behaviour on single symbols, and the later monotonicity discussion noting that all distributive functions are monotonic and that catenation is monotonic in its second argument but not its first.

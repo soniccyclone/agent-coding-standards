@@ -169,6 +169,10 @@ tags: [work]
 - [Count your free parameters against your observations](../lessons/count-your-free-parameters-against-your-observations.md)
 - [Posit a few hidden causes and fit them, so the model fills in what was never observed](../lessons/posit-few-hidden-causes-and-fit-them-to-fill-what-was-never-observed.md)
 
+<!-- Chapter 13 (neural nets and deep learning) -->
+- [Impose a known invariance as shared parameters, don't hope the fit rediscovers it](../lessons/impose-a-known-invariance-as-shared-parameters.md)
+- [The search method you commit to gets a veto over every component](../lessons/the-search-method-you-commit-to-vetoes-your-components.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in
@@ -228,6 +232,6 @@ should also get a hand re-read at the same depth as chapter 1 before this work i
 attested. `extraction: complete` deliberately withheld._
 
 _**READ IN PROGRESS (2026-07-31, fifth agent pass).** Started chapter 13 at line
-**24693**, reading forward in sequential chunks toward line 27631. This line
+**25092**, reading forward in sequential chunks toward line 27631. This line
 number is updated in place as the read advances; if this note still says a line
 below 27631, the agent died there and that is the genuine resume point._
