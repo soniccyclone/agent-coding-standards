@@ -97,6 +97,9 @@ tags: [work]
 - [Compare on the side of the relation whose entities are not mixtures](../lessons/compare-on-the-side-of-the-relation-whose-entities-are-not-mixtures.md)
 - [When nothing co-occurs, manufacture overlap by lowering resolution a little on each side](../lessons/manufacture-overlap-by-lowering-resolution-a-little-on-both-sides.md)
 
+- [A two-valued measure makes a greedy algorithm choose at random](../lessons/a-two-valued-measure-makes-a-greedy-algorithm-choose-at-random.md)
+- [Projecting a ternary fact onto pairs loses which went with which](../lessons/projecting-a-ternary-fact-onto-pairs-loses-which-went-with-which.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in

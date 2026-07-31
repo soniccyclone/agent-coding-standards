@@ -61,3 +61,5 @@ tags: [work]
 - [An unenforced boundary still pays, so pick the strength of enforcement you can actually afford](../lessons/an-unenforced-boundary-still-pays-so-pick-the-enforcement-you-can-afford.md)
 - [Re-enter a change at the level where the decision was made, because a design record left stale is worse than no record](../lessons/re-enter-a-change-at-the-level-that-decided-it-and-a-stale-record-is-worse-than-none.md)
 - [An invariant is a promise at the boundaries, not a claim about every instant](../lessons/an-invariant-is-a-promise-at-the-boundaries-not-at-every-instant.md)
+- [A formal notation removes ambiguity but not incompleteness or self-contradiction, so bring a discipline that tells you when you have said enough](../lessons/formality-removes-ambiguity-not-incompleteness-or-contradiction.md)
+- [Run the over-specification check before there is an implementation to hide it, because the first builder never feels the cost and the second cannot avoid it](../lessons/run-the-over-specification-check-before-there-is-an-implementation-to-hide-it.md)

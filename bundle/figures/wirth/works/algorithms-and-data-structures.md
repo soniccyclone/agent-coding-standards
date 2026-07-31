@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 2
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -76,3 +77,5 @@ tags: [work]
 - [When the algorithm needs lookahead, extend the access mechanism rather than the algorithm](../lessons/when-the-algorithm-needs-lookahead-extend-the-access-mechanism-not-the-algorithm.md)
 - [Prefer a design whose correctness does not depend on a count you cannot reliably track](../lessons/prefer-a-design-whose-correctness-does-not-depend-on-a-count.md)
 - [When both halves want to be the caller, neither should be](../lessons/when-both-halves-want-to-be-the-caller-neither-should-be.md)
+- [Enumerate cases until they cover the precondition, and only then decide their order](../lessons/enumerate-cases-until-they-cover-the-precondition-then-order-them.md)
+- [Write both admissibility tests first; they tell you what state to carry](../lessons/write-both-admissibility-tests-first-they-name-the-state-to-carry.md)
