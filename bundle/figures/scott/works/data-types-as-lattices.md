@@ -9,6 +9,7 @@ url: https://www.cs.ox.ac.uk/files/3287/PRG05.pdf
 survey_pages: 68
 survey_text_layer: full
 survey_fetch_mb: 2
+extraction: complete
 access: public
 host: institutional
 tags: [work]
