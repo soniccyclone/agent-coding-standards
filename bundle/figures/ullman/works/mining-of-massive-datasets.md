@@ -146,6 +146,8 @@ tags: [work]
 - [Absorb a special parameter as an ordinary dimension](../lessons/absorb-a-special-parameter-as-an-ordinary-dimension.md)
 - [Stop on the quantity you want, not on the loop's own convergence](../lessons/stop-on-the-quantity-you-want-not-on-the-loops-own-convergence.md)
 - [Match the update's arithmetic to the parameter's geometry](../lessons/match-the-updates-arithmetic-to-the-parameters-geometry.md)
+- [Two values of the same type can need different layouts](../lessons/two-values-of-the-same-type-can-need-different-layouts.md)
+- [Change coordinates until the boundary is trivial](../lessons/change-coordinates-until-the-boundary-is-trivial.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
