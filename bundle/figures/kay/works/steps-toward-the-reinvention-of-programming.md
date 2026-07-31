@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 4
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -27,3 +28,5 @@ tags: [work]
 - [When a domain already has a picture everyone explains it with, make that picture the program](../lessons/make-the-explanation-be-the-program.md)
 - [Name the part you do not know how to do, build inward from both ends, and treat the models as instruments to be discarded](../lessons/name-the-part-you-cannot-do-yet-and-build-inward.md)
 - [Anything precise enough to be worth writing will contain mistakes, so make it run rather than making it a specification](../lessons/anything-worth-stating-precisely-must-be-runnable.md)
+- [A widely adopted middle layer stops being neutral and starts dictating the layers on both sides of it](../lessons/a-popular-intermediate-layer-stops-being-neutral.md)
+- [Neither commands nor names scale, so let modules notice conditions and carry a runnable model of what they need](../lessons/neither-commands-nor-names-scale.md)

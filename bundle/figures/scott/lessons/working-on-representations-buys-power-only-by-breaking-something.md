@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Working on representations buys extra power only by breaking effectiveness or respect for meaning"
+figure: scott
+works: [data-types-as-lattices]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [programming-languages-and-semantics, foundations-of-computation, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Working on representations buys extra power only by breaking effectiveness or respect for meaning
+
+**Lesson:** There is a persistent intuition that dropping down to manipulate the *descriptions* of things — source text, encodings, index numbers, serialized forms — gives you reach that operating on the things themselves does not. You can inspect the shape of a definition, count its parts, branch on how it was written. Surely something can be defined that way which could not be defined directly. Scott's reading of the Myhill-Shepherdson result says no, and says it sharply: a transformation on descriptions that is both mechanically carried out and blind to which description was used for a given value is already a transformation on values in disguise, and a corresponding value-level operation is guaranteed to exist. Any attempt to define something new by a clever mapping over encodings is bound to fail as long as those two conditions hold.
+
+So the two conditions are where the entire question lives, and they are worth checking before you build anything that works at the representation level. Give up effectiveness — allow yourself to decide something no procedure could decide, such as whether two descriptions denote the same value — and yes, you gain power, but you have left the realm of things you can run. Give up blindness to the description — let the answer depend on how a value was spelled — and you also gain power, genuinely, and you have simultaneously built something whose behavior is not a function of meaning at all. That is a real capability with a real cost: two fragments that behave identically everywhere else now behave differently under your machinery, and every equational reasoning step anyone applies near it becomes unsound. Neither trade is illegitimate. What is illegitimate is making the trade without noticing, and then being surprised at which reasoning principles stopped working.
+
+The mechanism behind the collapse is the part worth carrying furthest. The proof turns on showing that any such description-level mapping must be continuous — must commit to part of its answer on the basis of finitely much of its input — and continuity is exactly the condition characterizing well-behaved value-level operations. That is why the value-level counterpart exists at all. Read generally: the constraint of having to answer from finite evidence is a strong one, and imposing it on any layer forces that layer into the same shape as every other layer where it holds. When you find yourself hoping that a lower or more reflective level will escape a limit, ask first whether the limit came from the level or from the finiteness of what any level has to work with.
+
+**Source:** [Data Types as Lattices](../works/data-types-as-lattices.md) — Section 3's completeness theorem for definability, which states that a total, extensional, definable mapping on Gödel numbers has a definable counterpart acting directly on values, together with Scott's gloss that any attempt to define something new by a strange mapping on Gödel numbers must fail while it remains effective and extensional, and his note that the bulk of the argument goes into showing such mappings are continuous, which is why the counterpart exists.

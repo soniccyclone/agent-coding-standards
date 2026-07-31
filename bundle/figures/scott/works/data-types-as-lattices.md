@@ -26,3 +26,5 @@ tags: [work]
 - [Pick the structure whose weakness is exactly what buys the guarantee you need](../lessons/pick-the-structure-whose-weakness-buys-the-guarantee-you-need.md)
 - [An axiom your model refutes may be one you are better off without](../lessons/an-axiom-your-model-refutes-may-be-one-you-are-better-off-without.md)
 - [A model validates laws your rule set cannot reach, and those are the rules you are missing](../lessons/a-model-validates-laws-your-rule-set-cannot-reach.md)
+- [Working on representations buys extra power only by breaking effectiveness or respect for meaning](../lessons/working-on-representations-buys-power-only-by-breaking-something.md)
+- [Audit afterward which part of a borrowed theory you actually used](../lessons/audit-afterward-which-part-of-the-borrowed-theory-you-actually-used.md)
