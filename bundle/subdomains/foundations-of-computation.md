@@ -19,7 +19,7 @@ corpus retains alongside it, not a rejected alternative.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-407 lessons from 46 figures.
+435 lessons from 48 figures.
 
 **abiteboul** (3)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -50,9 +50,14 @@ No works or lessons tagged with this subdomain yet.
 - [The size of the source is not the amount you said](../figures/chaitin/lessons/notation-you-enjoy-writing-is-not-a-measure-of-content.md)
 - [When every consequence needs a correction term, the definition is wrong](../figures/chaitin/lessons/awkward-consequences-indict-the-definition.md)
 
-**church** (24)
+**church** (34)
+- [A definition by recursion on structure is only a function if the structure decomposes exactly one way, so unique readability is a proof obligation and not a formatting concern](../figures/church/lessons/a-recursive-definition-is-only-a-function-if-the-decomposition-is-unique.md)
+- [A mapping that only preserves the answer is free by counting, so the content of an equivalence lives entirely in the structural conditions you also demand](../figures/church/lessons/a-mapping-that-only-preserves-the-answer-is-free-by-counting.md)
+- [A property you must assert separately at every site is a symptom of not being able to quantify over the sites; gain that power and the whole family collapses into a definition](../figures/church/lessons/an-assertion-repeated-at-every-site-means-you-cannot-quantify-over-the-sites.md)
 - [A restriction you can evade by restating the problem in the permitted form is not a restriction at all](../figures/church/lessons/a-restriction-you-can-restate-around-is-not-a-restriction.md)
+- [A rule can pin the answer down to exactly one thing and still give you no way to get it, so state whether a specification is a definition or a procedure](../figures/church/lessons/a-rule-that-determines-a-unique-answer-need-not-let-you-compute-it.md)
 - [A rule set does not determine its own consequences: the same axioms under a stronger surrounding logic are a different subject entirely](../figures/church/lessons/the-rules-plus-the-inference-machinery-are-the-theory.md)
+- [A rule that repeated expert attempts fail to state correctly is composite, not merely hard, and the right primitive decomposes it into pieces that are each obviously right](../figures/church/lessons/a-rule-nobody-can-state-correctly-is-composite-not-difficult.md)
 - [Added vocabulary is not added power: if its laws can be hypotheses and its names variables, the base language already had it](../figures/church/lessons/added-vocabulary-is-not-added-power.md)
 - [Analyze only as deep as the argument needs, and remember that which things you treat as atomic is a choice with no canonical answer](../figures/church/lessons/analyze-only-as-deep-as-the-argument-needs.md)
 - [Any notation you can actually write in names only countably much, so the expressive ceiling is arithmetic, not a failure of cleverness](../figures/church/lessons/a-notation-can-only-name-countably-much.md)
@@ -69,10 +74,15 @@ No works or lessons tagged with this subdomain yet.
 - [Make the system an object that a weaker tool can inspect from outside](../figures/church/lessons/make-the-system-an-object-a-weaker-tool-can-inspect.md)
 - [Minimizing a basis and factoring it by concern are opposite goals, and only the factored one lets you vary a part](../figures/church/lessons/minimize-the-basis-or-factor-it-but-know-which-you-chose.md)
 - [Names and binding are a convenience layer, not part of the computational content](../figures/church/lessons/names-are-a-layer-above-the-computation.md)
+- [Price an assumption by everything it rules out, not by whether it delivers what you wanted, and do not assume a weakest sufficient assumption exists](../figures/church/lessons/price-an-assumption-by-everything-it-excludes-and-expect-no-weakest-one.md)
 - [Reduction bottoms out at the act of combining, and a regress that reappears one level up is a floor rather than a step](../figures/church/lessons/reduction-bottoms-out-at-the-act-of-combining.md)
+- [Refute a whole family of approximations at once by attacking the parameter they share, not the design of any one of them](../figures/church/lessons/refute-a-whole-family-of-models-by-attacking-the-parameter-they-share.md)
 - [Track which assumption buys which capability, and prove one is needed by exhibiting the world where it fails](../figures/church/lessons/know-which-assumption-buys-which-capability.md)
 - [Treat a function as the rule you can run, not as the pairs it happens to relate](../figures/church/lessons/a-function-is-a-rule-not-a-table.md)
+- [Two problems shown equivalent are equivalent only in the property the reduction actually carries, and the ones it drops are usually constructivity and cost](../figures/church/lessons/equivalent-problems-are-equivalent-only-in-the-property-the-reduction-carries.md)
+- [What a general system may assume is the intersection over everything it claims to support, so each configuration you add silently deletes leverage rather than breaking anything](../figures/church/lessons/what-you-may-assume-is-the-intersection-over-everything-you-claim-to-support.md)
 - [When a construction repeats at every level, make the pattern the artifact and let instantiation cover the infinite family](../figures/church/lessons/prove-the-pattern-not-the-instances.md)
+- [When a guarantee is provably unreachable, widening what counts as success is a legitimate move and an illegitimate one, and the difference is whether the wider target was what you wanted](../figures/church/lessons/when-the-goal-is-unreachable-widening-the-target-is-legitimate-only-if-you-say-so.md)
 - [When a second theory would duplicate the first step for step, collapse the two concepts — then state the law the collapse breaks](../figures/church/lessons/collapse-the-duplicate-concept-then-name-what-the-collapse-costs.md)
 - [You can dissolve a bad case by declining to assume it means anything, instead of forbidding anyone to write it](../figures/church/lessons/refuse-to-assume-every-expression-means-something.md)
 
@@ -188,6 +198,10 @@ No works or lessons tagged with this subdomain yet.
 - [To find out whether an assumption is load-bearing, build the world where it fails](../figures/hilbert/lessons/build-the-world-where-the-assumption-fails.md)
 - [Turn the reasoning itself into an inspectable object, and questions about the system become questions about data](../figures/hilbert/lessons/make-the-derivation-itself-an-object-of-computation.md)
 - [When something resists being built, go prove it cannot be built under the assumptions you made](../figures/hilbert/lessons/an-impossibility-proof-is-a-result.md)
+
+**hoare** (2)
+- [Run independent constraint-checkers side by side and you enforce conjunctions no single traversal can](../figures/hoare/lessons/run-independent-checkers-side-by-side-to-enforce-conjunctions.md)
+- [Where a notation forces you to commit is what determines the class of things it can recognize](../figures/hoare/lessons/where-a-notation-forces-you-to-commit-determines-what-it-can-recognize.md)
 
 **karp** (6)
 - [Ask how hard the answer is to check before asking how hard it is to find](../figures/karp/lessons/separate-the-cost-of-checking-from-the-cost-of-finding.md)
@@ -433,16 +447,24 @@ No works or lessons tagged with this subdomain yet.
 - [When a quantity only matters up to a bounded factor, replace its operational definition with an algebraic one](../figures/strassen/lessons/swap-the-operational-definition-for-an-invariant-that-is-robust-to-constants.md)
 - [Where an inequality turns into an equality tells you what kind of function you are holding](../figures/strassen/lessons/where-an-inequality-becomes-an-equality-tells-you-what-the-function-is.md)
 
-**sussman** (9)
+**sussman** (17)
 - [A definition that lets you recognize the answer is not one that produces it](../figures/sussman/lessons/a-definition-that-identifies-is-not-a-definition-that-produces.md)
+- [A manipulation that goes through is not thereby meaningful, so validity must be established outside the symbols](../figures/sussman/lessons/a-manipulation-that-goes-through-is-not-thereby-meaningful.md)
 - [A model whose basic move is copying has no vocabulary for identity, so anything that depends on sharing is not hard in it but unsayable](../figures/sussman/lessons/a-model-that-copies-can-never-talk-about-sharing.md)
 - [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
+- [A space guarantee in the implementation decides which constructs the language needs at all](../figures/sussman/lessons/a-space-guarantee-decides-which-language-constructs-are-necessary.md)
+- [Algebraically equivalent formulas stop being equivalent once the values carry uncertainty](../figures/sussman/lessons/rearranging-a-formula-is-not-safe-when-values-carry-uncertainty.md)
 - [Check whether a clever encoding is secretly parasitic on the evaluation rule you were about to change](../figures/sussman/lessons/an-encoding-can-be-parasitic-on-the-rule-you-are-replacing.md)
 - [Choose among candidate primitives by which one explains the others, since one-way definability is the only asymmetry that carries information](../figures/sussman/lessons/pick-a-primitive-by-which-candidate-explains-the-others.md)
 - [Classify a process by what accumulates as it runs, not by what the source text looks like](../figures/sussman/lessons/classify-a-process-by-what-accumulates-not-by-how-it-looks.md)
 - [Deferred work is retained state, so a demand-driven discipline cannot express a loop no matter how the loop is written](../figures/sussman/lessons/deferred-work-is-retained-state.md)
+- [No expression carries its own meaning; a context supplies it, and there is no privileged context](../figures/sussman/lessons/no-expression-carries-its-own-meaning.md)
 - [Push a conjectured symmetry until it predicts something you have not noticed, then go looking for it](../figures/sussman/lessons/use-a-conjectured-symmetry-to-predict-the-missing-piece.md)
+- [Structure can be computed without content, which is why constructors are the things worth making non-strict](../figures/sussman/lessons/structure-can-be-computed-without-content-so-constructors-should-be-non-strict.md)
+- [The power to mention your own expressions costs you the right to substitute equals for equals](../figures/sussman/lessons/the-power-to-mention-costs-you-substitution-of-equals.md)
 - [Try to encode a feature in your core, and let the locality of the encoding tell you whether it belongs there](../figures/sussman/lessons/encode-a-feature-to-learn-whether-it-is-really-primitive.md)
+- [Universality is cheap in a medium where machines are describable as data](../figures/sussman/lessons/universality-is-cheap-when-the-machine-is-describable-as-data.md)
+- [Whether a description counts as a program is a fact about the evaluator, not about the description](../figures/sussman/lessons/the-line-between-describing-and-computing-belongs-to-the-evaluator.md)
 
 **turing** (20)
 - [A guarantee whose precondition is as hard as the original problem has relocated the work, not removed it](../figures/turing/lessons/a-guarantee-whose-precondition-is-as-hard-as-the-problem-has-moved-the-work.md)
@@ -466,8 +488,14 @@ No works or lessons tagged with this subdomain yet.
 - [When a requirement is stated in words nobody can check, replace it with a test that has an outcome](../figures/turing/lessons/swap-an-undecidable-requirement-for-an-observable-test.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (2)
+**ullman** (8)
+- [An exact identity leaves you a free parameter — spend it on staying in range](../figures/ullman/lessons/an-exact-identity-leaves-you-a-free-parameter-spend-it-on-range.md)
+- [Check that your measure still discriminates at the scale you will use it](../figures/ullman/lessons/check-that-your-measure-still-discriminates-at-your-scale.md)
+- [Don't reject a measure for lacking a property your problem has no use for](../figures/ullman/lessons/dont-demand-a-property-your-problem-has-no-use-for.md)
+- [Double until you overshoot, then bisect — searching for an unbounded unknown](../figures/ullman/lessons/double-until-you-overshoot-then-bisect.md)
+- [Find the closure property that turns exhaustive search into frontier expansion](../figures/ullman/lessons/find-the-closure-property-that-turns-search-into-frontier-expansion.md)
 - [Learn to recognize your algorithm being performed without a computer](../figures/ullman/lessons/learn-to-see-your-algorithm-being-performed-without-a-computer.md)
+- [Name the settings at which your generalization becomes the old thing](../figures/ullman/lessons/name-the-settings-at-which-your-generalization-becomes-the-old-thing.md)
 - [When the exact question is provably unaffordable, change the question](../figures/ullman/lessons/when-the-exact-question-is-unaffordable-change-the-question.md)
 
 **valiant** (13)
@@ -510,6 +538,10 @@ No works or lessons tagged with this subdomain yet.
 - [Let self-interpretation decide what belongs in the core](../figures/von-thun/lessons/let-self-interpretation-decide-what-belongs-in-the-core.md)
 - [Make the algebra of your notation match the algebra of its meaning](../figures/von-thun/lessons/make-the-algebra-of-your-notation-match-the-algebra-of-its-meaning.md)
 - [Never settle for existence — ask for the uniform constructor](../figures/von-thun/lessons/never-settle-for-existence-ask-for-the-uniform-constructor.md)
+
+**wirth** (2)
+- [Buy detection by representing a critical value sparsely](../figures/wirth/lessons/buy-detection-by-representing-a-critical-value-sparsely.md)
+- [Prefer the base structure whose shape needs no separate encoding](../figures/wirth/lessons/prefer-the-base-structure-whose-shape-needs-no-separate-encoding.md)
 
 **yao** (7)
 - [Calibrate your standard for a good abstraction on a field that already has good ones](../figures/yao/lessons/calibrate-your-standard-for-a-theory-on-a-field-that-already-has-good-ones.md)

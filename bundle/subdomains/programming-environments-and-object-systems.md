@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-245 lessons from 33 figures.
+266 lessons from 35 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -137,6 +137,9 @@ No works or lessons tagged with this subdomain yet.
 - [Treat human cognition as the fixed constraint and the machine as the adjustable side, then design to the whole span between them](../figures/ingalls/lessons/treat-the-human-side-as-the-fixed-point.md)
 - [Treat the order of a bootstrap as a design artifact: make every stage observable, and deliberately under-build whatever that stage cannot stress](../figures/ingalls/lessons/sequence-a-bootstrap-and-underbuild-what-cannot-be-stressed-yet.md)
 - [When you control how names are handed out, put the information in the name instead of in the thing named](../figures/ingalls/lessons/put-the-information-in-the-name-not-the-thing-named.md)
+
+**jones** (1)
+- [Make the control state explicit data and the order of work becomes yours to choose](../figures/jones/lessons/make-the-implicit-control-state-explicit-and-order-becomes-free.md)
 
 **kay** (21)
 - [A replacement must not be worse than the incumbent in any way its users care about, and must not stop at imitating it](../figures/kay/lessons/match-what-you-replace-before-you-transcend-it.md)
@@ -265,10 +268,18 @@ No works or lessons tagged with this subdomain yet.
 - [A model you can rename into your rival's is your rival's model](../figures/stonebraker/lessons/a-model-you-can-rename-into-your-rival-s-is-your-rival-s-model.md)
 - [The seam between two languages is where the cost collects](../figures/stonebraker/lessons/the-seam-between-two-languages-is-where-the-cost-collects.md)
 
-**sussman** (5)
+**sussman** (13)
+- [A hierarchy earns its keep by making one path unique, not by classifying things](../figures/sussman/lessons/a-hierarchy-earns-its-keep-by-making-the-path-unique.md)
 - [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../figures/sussman/lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
+- [An abstraction is unfinished until it supplies its own way of being looked at](../figures/sussman/lessons/an-abstraction-owes-you-a-way-of-being-looked-at.md)
+- [An interaction between two modules has no natural owner, and that is the cost, not the code](../figures/sussman/lessons/an-interaction-between-two-modules-has-no-natural-owner.md)
+- [An object turns out to be shared code plus a frame that outlived the call that made it](../figures/sussman/lessons/an-object-is-shared-code-plus-a-frame-that-outlived-its-call.md)
 - [Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table](../figures/sussman/lessons/dispatch-is-a-matrix-and-every-design-picks-a-slicing.md)
+- [Combine your parts with the generic operation and the data, not the author, decides how deep the structure goes](../figures/sussman/lessons/call-the-generic-operation-and-the-data-decides-the-recursion.md)
 - [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../figures/sussman/lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
+- [Let the new part announce itself to the old part, never the reverse](../figures/sussman/lessons/let-the-new-part-announce-itself-to-the-old-part.md)
+- [Objects are the right decomposition only when the state actually clusters](../figures/sussman/lessons/the-object-view-is-earned-by-clustered-state-not-chosen.md)
+- [The argument for generic operations is organizational, not aesthetic: nobody can agree in advance](../figures/sussman/lessons/the-case-for-genericity-is-that-agreement-is-impossible.md)
 - [When you cannot tell whether two ideas differ, implement both in one substrate and see whether the artifacts coincide](../figures/sussman/lessons/build-it-to-find-out-whether-two-ideas-are-the-same.md)
 - [When you wrap a value in a richer representation the operations complain but the total predicates lie, so audit the tests that cannot fail](../figures/sussman/lessons/when-you-enrich-a-type-the-total-predicates-lie.md)
 
@@ -329,3 +340,17 @@ No works or lessons tagged with this subdomain yet.
 
 **wilkes** (1)
 - [A user's overreaction to a demonstration is wrong about the solution and right about the need](../figures/wilkes/lessons/an-overreaction-still-carries-real-information.md)
+
+**wirth** (12)
+- [A self-inverse operation needs no saved copy and no precondition](../figures/wirth/lessons/a-self-inverse-operation-needs-no-saved-copy.md)
+- [Ask the population instead of maintaining a registry](../figures/wirth/lessons/ask-the-population-instead-of-maintaining-a-registry.md)
+- [Attach state to the level you want to have several of](../figures/wirth/lessons/attach-state-to-the-level-you-want-several-of.md)
+- [Choose the arrangement whose undo is simple, not the one whose forward move is free](../figures/wirth/lessons/choose-the-arrangement-whose-undo-is-simple.md)
+- [Export the default and the parts it was assembled from](../figures/wirth/lessons/export-the-default-and-the-parts-it-was-assembled-from.md)
+- [Let each level transform requests for the level below it, and never reach past a child](../figures/wirth/lessons/let-each-level-transform-requests-for-the-level-below-it.md)
+- [Make the container and the contained the same kind of thing, and global policy becomes a local default](../figures/wirth/lessons/make-the-container-and-the-contained-the-same-kind-of-thing.md)
+- [Prefer the state that is already visible as the interface between steps](../figures/wirth/lessons/prefer-the-state-that-is-already-visible-as-the-interface.md)
+- [Price a metaphor by the actions it actually produces](../figures/wirth/lessons/price-a-metaphor-by-the-actions-it-actually-produces.md)
+- [Re-read a specialized notion as a pair, and discover the general case is already built](../figures/wirth/lessons/reread-a-specialized-notion-as-a-pair-and-the-general-case-is-already-built.md)
+- [Root a tree of requests instead of fixing a set of operations](../figures/wirth/lessons/root-a-tree-of-requests-instead-of-fixing-a-set-of-methods.md)
+- [Test an extension point by rebuilding something already built in](../figures/wirth/lessons/test-an-extension-point-by-rebuilding-something-already-built-in.md)

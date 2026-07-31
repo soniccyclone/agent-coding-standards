@@ -176,3 +176,5 @@ section are where the extractable lessons are.
 - [Recoverability after a bad input is a property of the input language](../lessons/recoverability-after-a-bad-input-is-a-property-of-the-input-language.md)
 - [An unresolvable reference needs a placeholder and a named expiry moment](../lessons/an-unresolvable-reference-needs-a-placeholder-and-a-named-expiry.md)
 - [Enumerate your rule violations and grade them by what they constrain](../lessons/enumerate-your-rule-violations-and-grade-them-by-what-they-constrain.md)
+- [Accept the general form, then classify against a closed set](../lessons/accept-the-general-form-then-classify-against-a-closed-set.md)
+- [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)
