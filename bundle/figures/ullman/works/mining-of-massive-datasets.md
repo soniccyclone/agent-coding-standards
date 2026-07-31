@@ -111,6 +111,10 @@ tags: [work]
 - [A series of mutually exclusive solutions degrades by construction](../lessons/a-series-of-mutually-exclusive-solutions-degrades-by-construction.md)
 - [Never let one unexplained observation annihilate a score](../lessons/never-let-one-unexplained-observation-annihilate-a-score.md)
 - [Model independently sufficient causes by the chance that none of them fired](../lessons/model-independently-sufficient-causes-by-the-chance-that-none-fired.md)
+- [A mixed discrete/continuous search costs you an outer loop — buy it out](../lessons/a-mixed-discrete-continuous-search-costs-you-an-outer-loop.md)
+- [Optimize any monotone transform of your objective](../lessons/optimize-any-monotone-transform-of-your-objective.md)
+- [Your move set, not your objective, decides what you can reach](../lessons/your-move-set-not-your-objective-decides-what-you-can-reach.md)
+- [Find the support of a change and evaluate only that](../lessons/find-the-support-of-a-change-and-evaluate-only-that.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
