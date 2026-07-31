@@ -21,6 +21,7 @@ tags: [work]
 **Source:** http://infolab.stanford.edu/~ullman/mmds/book0n.pdf — live, self-archived full-book PDF (603 pp.) on Ullman's own Stanford InfoLab page, linked from the book's own site http://www.mmds.org (verified 200 via direct fetch).
 
 ## Lessons
+- [Half of an indivisible dependency is worth nothing at all](../lessons/a-fraction-of-an-indivisible-dependency-is-pure-waste.md)
 - [Compute what randomness alone would hand you, before you trust any discovery](../lessons/compute-what-randomness-alone-would-hand-you.md)
 - [Learn only the part of the problem you cannot state yourself](../lessons/learn-only-what-you-cannot-state-yourself.md)
 - [Restartability is a shape you keep, not a feature you add](../lessons/restartability-is-a-shape-not-a-feature.md)
@@ -284,6 +285,12 @@ until this re-read reaches line 7233._
 
 _**READ IN PROGRESS (2026-07-31, sixth agent pass).** Resuming the chapters 2-4
 hand re-read; the fifth pass left no evidence of advancing past its start line,
-so this pass restarts at line **1647** (chapter 2, MapReduce). Currently at line
-**3374**. This line is updated in place as the read advances; if it names a line
-below 7233, the agent died there and that is the genuine resume point._
+so this pass restarts at line **1647** (chapter 2, MapReduce). Reached line
+**3374**._
+
+_**READ IN PROGRESS (2026-07-31, seventh agent pass).** Resuming the chapters 2-4
+hand re-read at line **3374** (chapter 2, complexity theory for MapReduce), the
+point the sixth pass recorded. Target is line 7233 (start of chapter 4, which is
+already read). Currently at line **3374**. This line is updated in place as the
+read advances; if it names a line below 7233, the agent died there and that is
+the genuine resume point._

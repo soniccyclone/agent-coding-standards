@@ -71,6 +71,19 @@ so whatever it says is the resume point.
 Position log: 341 -> 14254 (span complete) -> 15402 -> 16835 (span complete)
 -> 17700 -> 18199 (span complete).
 
+**Fifth session (IN PROGRESS — note written before reading).** Closing the two
+remaining spans: lines 1-340 (title pages, table of contents) and 19071-19194
+(the gap between the fourth session's recorded spans). Starting at line 1.
+Nothing else in the file is unread. If this session dies, resume at whichever
+line the "Fifth-session position" line below names.
+**Fifth-session position: lines 1-340 and 19071-19194 both read in full — no
+lessons in either (front matter, publisher series list, contents and list of
+illustrations; then the tail of appendix D's detailed proofs and the opening of
+the glossary, both already-covered material restated formally). Identity
+confirmed on the title page: Jones, *Software Development: A Rigorous
+Approach*, Prentice-Hall International 1980, Hoare's series. Now re-verifying
+the 19604-20771 tail, which an earlier session sampled rather than read.**
+
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)
 - [A prohibition does not travel; a discipline that tells you what to do next does](../lessons/a-prohibition-does-not-travel-a-constructive-discipline-does.md)
