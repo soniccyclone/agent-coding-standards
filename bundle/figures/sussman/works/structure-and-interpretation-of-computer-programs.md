@@ -129,6 +129,9 @@ tags: [work]
 - [Information arriving from outside your model can be squeezed into an ordinary value; effects leaving it cannot](../lessons/effects-that-leave-your-boundary-need-their-own-category.md)
 - [A dispatch whose arms grow with the number of callers means the caller should have passed the answer, not a token for it](../lessons/a-dispatch-that-grows-with-callers-means-the-caller-should-have-passed-the-answer.md)
 - [Preserving more than is live is always correct, which is exactly why the waste never announces itself](../lessons/preserving-more-than-is-live-is-correct-and-therefore-invisible.md)
+- [Derive a system's resource requirements from the system, and instrument it rather than reasoning about its cost](../lessons/derive-a-systems-requirements-from-the-system-rather-than-declaring-them.md)
+- [Identity can stand in for equality only if something guarantees canonicity at construction time](../lessons/identity-can-stand-in-for-equality-only-if-you-manufacture-canonicity.md)
+- [Replace an undecidable question about the future with a decidable question about the graph](../lessons/replace-an-undecidable-question-about-the-future-with-reachability-from-roots.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -198,7 +201,11 @@ label-in-a-register solution. Read 24550-25110 — the rest of 5.1.3, 5.1.4 usin
 a stack to implement recursion (factorial and the double recursion for
 Fibonacci), 5.1.5 instruction summary, 5.2 the register-machine simulator, and
 5.2.1 the machine model through registers, the stack and the basic machine.
-**Next unread line is 25110.** Currently
+Read 25110-26230 — 5.2.2 the assembler, 5.2.3 generating execution procedures,
+5.2.4 monitoring machine performance, 5.3 storage allocation, 5.3.1 memory as
+vectors (typed pointers, interning, implementing the primitive list operations
+and the stack), and 5.3.2 through the introduction of stop-and-copy. **Next
+unread line is 26230.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

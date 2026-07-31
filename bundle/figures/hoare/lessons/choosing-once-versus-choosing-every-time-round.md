@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Choosing once and choosing every time round are different systems, and the loop is exactly where distribution fails"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Choosing once and choosing every time round are different systems, and the loop is exactly where distribution fails
+
+**Lesson:** In a well-built notation nearly every operation distributes over an unresolved choice: doing something and then choosing is the same as choosing and then doing it, so a choice may be pushed inward or outward at will without changing anything. That is convenient, it quickly becomes reflex, and the reflex is wrong at exactly one construct — repetition. Something that chooses afresh on each pass is not the same as a single choice, made once, between something that always goes one way and something that always goes the other. The first admits mixed histories; the second admits only pure ones. The relation between them is containment rather than equality, which makes the error asymmetric and therefore nastier: hoisting a choice out of a loop silently narrows the set of possible behaviours, so every conclusion you then draw is a conclusion about a system that is not the one you have.
+
+The distinction is easy to lose because ordinary language describes both with the same phrase — it picks a replica, it retries with backoff, it reads the configuration — and the whole difference lies in whether the picking sits inside or outside the repetition. It is doubly easy to lose because the two agree on any single pass and diverge only in the relationship between successive passes, which is precisely what a one-iteration example cannot exhibit. So make it a rule that whenever a choice appears anywhere near a loop, which side of the loop boundary it falls on is written down as part of the specification, not left to the implementation. A retry that re-resolves its target every attempt and one that pins its target on the first are different products with different failure modes under different conditions, and neither one is a bug fix for the other.
+
+The structural reason is worth keeping, because it tells you where else this bites. An operation distributes over a choice when the *timing* of the choice is invisible to it — when a decision taken before and a decision taken after are indistinguishable from where it stands. Repetition is the construct that can consult a decision more than once, and consulting twice is what makes the timing observable. So the rule is not that recursion is a special case but that any construct capable of consulting a decision more than once will distinguish when the decision was made, and those are exactly the places where pushing choices around stops being free. Caching, memoization and every form of sharing are members of the same family, which is why "is this computed once or per use" turns out to be this same question in different dress.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the laws for nondeterministic choice in the nondeterminism chapter: the idempotence, symmetry and associativity of the operator, the laws showing prefixing, general choice, parallel composition and symbol change all distributing through it, and the immediately following observation that recursion does not, illustrated by the process which chooses independently on each iteration against the one which chooses once between two invariable behaviours, with a mixed trace belonging to the first and not the second and the second's traces contained in the first's.

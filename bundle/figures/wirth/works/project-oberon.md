@@ -31,8 +31,10 @@ font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
 complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
 Edit) checked for prose and confirmed to be pure Oberon source with no explanatory
 paragraphs; chapter 6 complete and mined (6.1-6.5, including the loader toolbox and the
-object file format); chapter 7 read and mined through section 7.3's opening discussion of
-buffering.**
+object file format); chapter 7 read and mined in full (7.1 files and riders, 7.2 files on a
+random-access store, 7.3 files on a disk plus the trailing commentary, 7.4 the B-tree
+directory, 7.5 the file utility toolbox and the chapter's literature list). Chapter 7's
+interleaved module listings were checked for prose and are pure Oberon source.**
 
 Read against `pdftotext -layout` output of the 2005 edition PDF (441 pages → 22864 lines
 of extracted text). Identity verified: title page and preface name N. Wirth and J.
@@ -112,3 +114,5 @@ section are where the extractable lessons are.
 - [A hint is a cache that owes nothing to coherence](../lessons/a-hint-is-a-cache-that-owes-nothing-to-coherence.md)
 - [Nesting a searchable set costs you unless the nesting factors out a shared attribute](../lessons/nesting-a-searchable-set-costs-you-unless-it-factors-a-shared-attribute.md)
 - [An optimization that holds durable state in volatile store is a correctness change](../lessons/an-optimization-that-holds-durable-state-in-volatile-store-is-a-correctness-change.md)
+- [Obtaining a handle to something external is a lookup, not an allocation](../lessons/obtaining-a-handle-to-something-external-is-a-lookup-not-an-allocation.md)
+- [Buy detection by representing a critical value sparsely](../lessons/buy-detection-by-representing-a-critical-value-sparsely.md)
