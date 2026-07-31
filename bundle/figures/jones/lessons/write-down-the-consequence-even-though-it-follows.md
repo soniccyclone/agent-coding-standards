@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Write down the consequence even though it already follows, because derivable is not the same as available"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# Write down the consequence even though it already follows, because derivable is not the same as available
+
+**Lesson:** There is a strong instinct against recording anything a reader could work out, on the grounds that it is redundant and will rot. The instinct is right about pure restatement and wrong about consequences. A fact that follows from a body of definitions is available to anyone willing to read all of them and reason; it is not available to someone reading one page, and it is not available at all to a tool or a reviewer who does not know to look. Redundancy of derivation is not the same as redundancy of content. If a property is load-bearing for someone downstream, the cost of them re-deriving it is charged every time, and the cost of you writing it once is charged once.
+
+The case that makes this vivid is a restriction that no single definition states but that all of them jointly guarantee — two collections that never overlap, a field that can never exceed another, a structure that is always connected. Nobody wrote it as a rule. It is nonetheless true of every state the system can ever reach, and it is exactly the kind of fact a representation decision leans on. Someone choosing to hold that state as a single flag per item is relying entirely on the two collections being disjoint; if they were not, the representation could not express the situation at all. Expecting that person to discover the guarantee by reading every operation and noticing that none of them violates it is expecting them to redo an analysis you already did. Worse, they may reach the same conclusion by intuition rather than by argument, in which case the representation rests on a belief nobody checked.
+
+The second reason is about time rather than about audience. A description that gets extended is a description whose new operations were written by someone who did not write the old ones. A guarantee that lives only in the collective behaviour of the original operations is invisible to an extender, so the first new operation that breaks it does so silently, and everything built on the guarantee fails somewhere far away. Written down, it becomes a thing the new operation is checked against — a cheap, mechanical check that catches the violation at the point of change. This is the difference between an assumption and a stated constraint: the same content, but only one of them is testable.
+
+So the rule is not "avoid redundancy" but "record the consequences other work depends on, and only those." Write the fact; note that it follows rather than that it is imposed; and check each operation against it, which is usually immediate precisely because the fact was true all along. What you have bought is not new knowledge — it is knowledge in a place where the people who need it will find it, at the moment they need it.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 10 on data type invariants: the observation that the disjointness of the two name collections in the student-exercises example is already implied by the operations, followed by the explicit question of why it should therefore be recorded at all, and the two answers given — that the discovery of appropriate models during refinement is greatly facilitated by having the invariant on record, illustrated by a bit-per-student representation whose designer must rely on no student having both properties, and that a specification should be extendable while careless extension could destroy the original author's intent, which recording the invariant is a way of documenting; together with the accompanying rule that each operation be checked to preserve the invariant and the observation that such checks are immediate.

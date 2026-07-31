@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 2830** — Chapter 1 now read in
-full (1.5 through 1.10); starting Chapter 2 (Concurrency).
+pass died immediately. Current position: **line 3270** — Chapter 1 now read in
+full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.3.
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -58,3 +58,4 @@ full (1.5 through 1.10); starting Chapter 2 (Concurrency).
 - [A specification made only of prohibitions is satisfied by doing nothing, and no amount of tightening fixes that](../lessons/a-specification-made-only-of-prohibitions-is-satisfied-by-doing-nothing.md)
 - [Make coupling a parameter of the participants, not a choice of construct](../lessons/make-coupling-a-parameter-not-a-construct.md)
 - [Composition intersects possibilities, so a stuck system need not contain a faulty part](../lessons/composition-intersects-possibilities-so-stuckness-has-no-owner.md)
+- [Refuse to distinguish a component from its environment, and make the joining operator closed, symmetric and associative](../lessons/refuse-to-distinguish-a-component-from-its-environment.md)

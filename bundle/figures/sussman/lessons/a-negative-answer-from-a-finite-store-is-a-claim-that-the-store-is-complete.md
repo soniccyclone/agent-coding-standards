@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Any negative answer computed from a finite store is secretly a claim that the store is complete"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Any negative answer computed from a finite store is secretly a claim that the store is complete
+
+**Lesson:** A system that holds a body of recorded facts can answer positive questions honestly: it looked, it found something, the something is there. Negative questions are a different matter, and the difference is routinely papered over. When such a system reports that something is not the case, what it has actually determined is that the thing could not be derived from what it holds. Turning that into a claim about the world requires an extra premise — that everything relevant is present in the store — and that premise is almost never checked, usually never written down, and frequently false.
+
+The consequences are easy to underrate until you see the class of conclusions it licenses. A store of employment records will cheerfully report that a given employee is not a baseball fan, that it is not raining, and that two and two are not four, with exactly the same confidence and by exactly the same mechanism that it correctly reports someone is not a programmer. Nothing distinguishes those cases internally. The system does not know that its subject matter is employment; it knows only that a query failed, and query failure is indistinguishable from the subject being outside its scope entirely.
+
+The engineering response is not to eliminate negative answers, which are genuinely useful, but to be deliberate about the completeness premise: know for which regions of the domain your store is authoritative, restrict negative conclusions to those regions, and make the boundary explicit rather than implicit in what happens to be recorded. This is worth doing because the premise silently degrades. A store that really was complete when the negative logic was written stops being complete the moment a new category of fact exists that nobody thought to record, and nothing about the system's behaviour changes to announce it — the negative answers just quietly begin being wrong, in the direction of confidently denying things that are true.
+
+The pattern is far more widespread than logic databases, and recognizing it is most of the value. An access check that denies because no grant was found, a monitor that reports health because no alarm arrived, a dependency scan that reports clean because no known vulnerability matched, a cache miss treated as absence, a feature check that concludes unsupported from a missing entry: each is an inference from failure-to-find to not-there, each is sound only if the store is exhaustive, and each fails in the direction that looks like a correct answer. When you see code branch on the emptiness of a result set, the question to ask is what would make that set empty besides the fact being false.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) — chapter 4 section 4.4.3, the discussion under "Problems with not" of the more serious way in which the query language's negation differs from that of mathematical logic: that in logic the negation of a proposition means the proposition is not true, whereas in the query system it means the proposition is not deducible from the knowledge in the data base, so that the system given a personnel data base will happily deduce that a particular employee is not a baseball fan, that it is not raining outside, and that two plus two is not four; and the identification of this as the closed-world assumption that all relevant information has been included in the data base, together with the footnote tracing exactly how the empty frame survives the filter for an unrecorded proposition and is returned as an affirmative answer to the negated query.

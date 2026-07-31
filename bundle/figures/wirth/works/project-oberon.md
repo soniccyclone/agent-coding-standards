@@ -26,10 +26,12 @@ tags: [work]
 line 22864. Current position recorded below; if this file still says "in progress" the
 session died and the position line is the truth.**
 
-**Current position: line 4900 — chapter 5 prose complete through section 5.5 (text frames,
-font machinery, edit toolbox) and the chapter-5 literature list. Remaining below this
-line in chapter 5 is the complete-implementations listing (modules Fonts, Texts,
-TextFrames, Edit) which is source code.**
+**Current position: line 7500 — chapter 5 prose complete through section 5.5 (text frames,
+font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
+complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
+Edit) checked for prose and confirmed to be pure Oberon source with no explanatory
+paragraphs; chapter 6 prose complete (6.1 linking and loading, 6.2 module representation,
+6.3 the linking loader) and mined.**
 
 Read against `pdftotext -layout` output of the 2005 edition PDF (441 pages → 22864 lines
 of extracted text). Identity verified: title page and preface name N. Wirth and J.
@@ -97,3 +99,5 @@ section are where the extractable lessons are.
 - [Split a description where the cheap half answers most of the questions](../lessons/split-a-description-where-the-cheap-half-answers-most-questions.md)
 - [A proposed extra stage is evidence of an undiagnosed cost](../lessons/a-proposed-extra-stage-is-evidence-of-an-undiagnosed-cost.md)
 - [Indirect when references outnumber referents, and count before deciding](../lessons/indirect-when-references-outnumber-referents.md)
+- [An interface should publish an ordinal, not a fact about the implementation](../lessons/an-interface-should-publish-an-ordinal-not-a-fact-about-the-implementation.md)
+- [Ship what the compiler knew, and let the transport carry it uninterpreted](../lessons/ship-what-the-compiler-knew-and-let-the-transport-carry-it-uninterpreted.md)

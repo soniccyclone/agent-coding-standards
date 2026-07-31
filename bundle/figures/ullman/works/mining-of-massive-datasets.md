@@ -184,6 +184,8 @@ tags: [work]
 - [Independent-looking knobs with an arithmetic relation are not independent](../lessons/independent-looking-knobs-with-an-arithmetic-relation-are-not-independent.md)
 - [A compact description says nothing about the cost of running it](../lessons/a-compact-description-says-nothing-about-the-cost-of-running-it.md)
 - [Insert a lossy step to declare what the answer must not depend on](../lessons/insert-a-lossy-step-to-declare-what-the-answer-must-not-depend-on.md)
+- [Quantize variable size into a few classes, then pad within each](../lessons/quantize-variable-size-into-a-few-classes.md)
+- [A quantity carried through a product of stages has no stable middle](../lessons/a-quantity-carried-through-a-product-of-stages-has-no-stable-middle.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
