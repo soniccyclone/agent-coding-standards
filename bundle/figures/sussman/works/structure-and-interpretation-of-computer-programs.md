@@ -21,4 +21,18 @@ tags: [work]
 **Source:** https://web.mit.edu/6.001/6.037/sicp.pdf — live PDF hosted on MIT's own web.mit.edu domain under the 6.001/6.037 course materials.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Judge a system by its primitives, its means of combination, and its means of abstraction](../lessons/judge-a-system-by-its-three-mechanisms-not-its-features.md)
+- [A definition that lets you recognize the answer is not one that produces it](../lessons/a-definition-that-identifies-is-not-a-definition-that-produces.md)
+- [Adopt a model you have already decided to outgrow, and say where it will break](../lessons/adopt-a-model-you-have-already-decided-to-outgrow.md)
+- [An abstraction boundary is a claim that a whole class of implementations is interchangeable](../lessons/an-abstraction-boundary-is-a-claim-about-an-equivalence-class.md)
+- [What you may freely rename is exactly what you do not depend on](../lessons/what-you-may-rename-is-exactly-what-you-do-not-depend-on.md)
+- [Scope exists so that strangers can both use the obvious name](../lessons/scope-exists-so-strangers-can-both-use-the-obvious-name.md)
+
+_EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
+`scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
+offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
+
+**Read so far: chapter 1 section 1.1 in full (lines 784-2103)** — the elements of
+programming, through procedures as black-box abstractions and block structure.
+Next unread line is **2104** (section 1.2, Procedures and the Processes They
+Generate). `extraction: complete` withheld until all five chapters are read._
