@@ -55,3 +55,5 @@ argument were both already covered and are deliberately not restated here.
 - [A recursive definition does not pick its own meaning — you do](../lessons/a-recursive-definition-does-not-pick-its-own-meaning.md)
 - [What crosses each cut sets the size of your representation](../lessons/what-crosses-each-cut-sets-the-size-of-your-representation.md)
 - [A correct encoding is onto, not minimal](../lessons/a-correct-encoding-is-onto-not-minimal.md)
+- [An iteration costs what changes, not what it contains](../lessons/an-iteration-costs-what-changes-not-what-it-contains.md)
+- [A heuristic win obliges you to name the class — and its complement](../lessons/a-heuristic-win-obliges-you-to-name-the-class.md)
