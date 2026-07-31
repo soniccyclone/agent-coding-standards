@@ -99,6 +99,8 @@ tags: [work]
 
 - [A two-valued measure makes a greedy algorithm choose at random](../lessons/a-two-valued-measure-makes-a-greedy-algorithm-choose-at-random.md)
 - [Projecting a ternary fact onto pairs loses which went with which](../lessons/projecting-a-ternary-fact-onto-pairs-loses-which-went-with-which.md)
+- [Pick the formal target that your observable statistic actually guarantees](../lessons/pick-the-formal-target-that-your-observable-statistic-guarantees.md)
+- [Prove something exists by beating the average, evaluated at its worst arrangement](../lessons/prove-something-exists-by-beating-the-average-at-its-worst-arrangement.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
