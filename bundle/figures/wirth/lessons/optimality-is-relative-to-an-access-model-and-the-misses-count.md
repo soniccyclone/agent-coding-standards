@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Optimality is relative to an access model, and the misses belong in it"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, verifiability, hardware-affinity]
+subdomains: [algorithms-and-complexity, databases-and-data-management]
+tags: [lesson]
+---
+# Optimality is relative to an access model, and the misses belong in it
+
+**Lesson:** Structural ideals like balance are not properties of a structure alone; they are conclusions from an assumption about how the structure will be used. Balance is optimal exactly when every element is equally likely to be wanted, which is the right default when nothing is known, and which stops being right the moment something is. Once weights are attached to elements, the quantity to minimize is the cost of a lookup averaged against those weights, and the arrangement that minimizes it can be one the unweighted criterion would call maximally bad — a completely lopsided arrangement can beat the perfectly even one when the weight is concentrated near the top of it. Treat "which shape is best" as a question that cannot be answered without the distribution, and treat any received answer about shape as carrying an unstated distribution inside it.
+
+The part that is most often left out of the model is the failures. In many real uses, most lookups do not find anything: a lookup that decides whether a word is one of a fixed reserved set will mostly decide that it is not. Those lookups traverse the structure and cost exactly as much as successful ones, so leaving them out of the weighting does not simplify the model, it biases it — and the optimal arrangement computed with them included can differ substantially from the one computed without. The general form is that a search space partitions into the things you can find and the gaps between them, and both partitions are hit with measurable frequency. Instrument both. The gaps have no names, which is why they get forgotten, and why an implementation should represent them explicitly enough to have counters attached.
+
+Two practical consequences. Frequencies should come from measurement rather than from estimate, which means the technique applies where the population is stable and observable — a fixed vocabulary, a workload you can profile — and should be distrusted where the distribution drifts. And there is no reason to convert observed counts into probabilities before optimizing: the arrangement that minimizes the weighted total is the same one that minimizes the weighted average, so the normalization step buys nothing and costs exactness, since integer counts can be compared without rounding. That is a small point with a general shape worth keeping: before dividing by a total, check whether the quantity you are about to compare is invariant under the division, and if it is, skip the division and stay in exact arithmetic.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 4.6's introduction of weighted path length with per-node access probabilities, the worked three-key example in which the degenerate tree rather than the perfectly balanced one turns out to be optimal, the generalization to unsuccessful searches by treating the intervals between keys as external nodes with their own probabilities and the note that this information may considerably change the structure of the optimal tree, the compiler-scanner example in which a word being a keyword is the exception, the observation that the probabilities need not sum to one and that raw frequency counts allow the computation to proceed in integers, and the program's deliberate computation and display of both the optimal tree and the optimal tree ignoring the non-key frequencies.

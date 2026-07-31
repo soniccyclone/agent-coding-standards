@@ -68,6 +68,11 @@ tags: [work]
 - [Combine your parts with the generic operation and the data, not the author, decides how deep the structure goes](../lessons/call-the-generic-operation-and-the-data-decides-the-recursion.md)
 - [Distort the input to stay inside the domain you can compute in, when the consumer cancels the distortion](../lessons/accept-a-wrong-answer-the-consumer-will-cancel.md)
 
+- [Objects are the right decomposition only when the state actually clusters](../lessons/the-object-view-is-earned-by-clustered-state-not-chosen.md)
+- [State you thread by hand infects every signature it passes through, and kills the general combinator](../lessons/state-you-thread-explicitly-infects-every-signature-it-passes-through.md)
+- [Sameness and change are each defined in terms of the other, so neither can be settled by observation alone](../lessons/sameness-and-change-are-defined-in-terms-of-each-other.md)
+- [Assignment converts choices that were free into commitments nothing writes down](../lessons/assignment-turns-free-choices-into-commitments.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.

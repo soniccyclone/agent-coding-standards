@@ -64,3 +64,6 @@ tags: [work]
 - [Belonging to the type is not obeying the law, so name the law separately](../lessons/some-things-of-the-right-type-still-break-the-law.md)
 - [Carry each claim's assumption set with it and compose by union, or the assumptions get lost](../lessons/ship-the-assumption-set-with-the-claim-and-compose-by-union.md)
 - [A name can only do harm from a position that acts, so compute dependencies by position, not by presence](../lessons/a-name-can-only-do-harm-from-a-position-that-acts.md)
+- [A declaration is a settlement point: it grants a fixed set of facts and pays off exactly the debts naming it](../lessons/a-declaration-is-where-the-debts-get-settled.md)
+- [Recursion forces you to write the contract before you can check the body](../lessons/recursion-forces-the-contract-to-be-written-before-the-body.md)
+- [Compare two implementations by implication between their contracts, and read the difference as the calls that distinguish them](../lessons/compare-implementations-by-implication-between-their-contracts.md)

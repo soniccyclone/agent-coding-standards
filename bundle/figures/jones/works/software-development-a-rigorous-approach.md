@@ -37,3 +37,4 @@ tags: [work]
 - [Put the proven artifact above the level where arbitrary commitments live, so one argument covers a family](../lessons/put-the-proven-artifact-above-the-level-where-arbitrary-commitments-live.md)
 - [Support the form people actually write, and buy back the simplicity with a discipline on how it is used](../lessons/support-the-form-people-write-and-buy-simplicity-with-a-usage-discipline.md)
 - [A correspondence established operation by operation never has to be executed](../lessons/a-correspondence-proved-per-operation-is-never-executed.md)
+- [The abstract description is the instrument you use to collect what the representation decision requires](../lessons/the-abstract-model-is-the-instrument-for-gathering-what-the-representation-decision-needs.md)

@@ -45,3 +45,5 @@ tags: [work]
 - [Move the contents to a position where the operation is easy](../lessons/move-the-contents-to-a-position-where-the-operation-is-easy.md)
 - [Small bookkeeping is charged at the layout's rate, not at its size](../lessons/small-bookkeeping-is-charged-at-the-layouts-rate.md)
 - [Worst case decides admissibility; expected case decides the choice](../lessons/worst-case-decides-admissibility-expected-case-decides-choice.md)
+- [Optimality is relative to an access model, and the misses belong in it](../lessons/optimality-is-relative-to-an-access-model-and-the-misses-count.md)
+- [Every speedup is bought with a claim; name the claim and notice when you stop proving it](../lessons/every-speedup-is-bought-with-a-claim-name-the-claim.md)

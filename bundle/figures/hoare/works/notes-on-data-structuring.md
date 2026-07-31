@@ -38,3 +38,5 @@ tags: [work]
 - [Acyclicity is not an implementation convenience: it is what buys you induction over the structure](../lessons/acyclicity-is-what-buys-you-induction.md)
 - [Find the smallest projection of the input your algorithm actually needs, compute it once, and work only from that](../lessons/find-the-smallest-projection-of-the-input-the-algorithm-needs.md)
 - [Sort the requirements by what each one mentions, and the decomposition falls out](../lessons/sort-requirements-by-scope-to-find-the-decomposition.md)
+- [A constraint that growing can never repair is worth more than one that merely rejects: it prunes, and it shrinks the alternatives too](../lessons/a-constraint-that-cannot-be-repaired-by-growing-prunes-the-search.md)
+- [Size the problem before choosing representations, and treat each proved invariant as a licence for a cheaper one](../lessons/an-invariant-you-proved-is-a-licence-for-a-cheaper-representation.md)

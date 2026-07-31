@@ -54,6 +54,7 @@ tags: [work]
 - [A property you must assert separately at every site is a symptom of not being able to quantify over the sites; gain that power and the whole family collapses into a definition](../lessons/an-assertion-repeated-at-every-site-means-you-cannot-quantify-over-the-sites.md)
 - [When a guarantee is provably unreachable, widening what counts as success is a legitimate move and an illegitimate one, and the difference is whether the wider target was what you wanted](../lessons/when-the-goal-is-unreachable-widening-the-target-is-legitimate-only-if-you-say-so.md)
 - [Price an assumption by everything it rules out, not by whether it delivers what you wanted, and do not assume a weakest sufficient assumption exists](../lessons/price-an-assumption-by-everything-it-excludes-and-expect-no-weakest-one.md)
+- [A restriction plus an escape hatch that undoes it is worse than either extreme: you keep the whole cost of the discipline and lose the property it was for](../lessons/a-restriction-plus-an-escape-hatch-is-dominated-by-both-endpoints.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes._
 

@@ -58,6 +58,9 @@ tags: [work]
 - [The intervention you plan decides which correlation measure is the right one](../lessons/the-intervention-you-plan-decides-which-correlation-measure-is-right.md)
 - [Find the closure property that turns exhaustive search into frontier expansion](../lessons/find-the-closure-property-that-turns-search-into-frontier-expansion.md)
 - [Spend a phase's idle capacity on evidence the next phase can use](../lessons/spend-a-phases-idle-capacity-on-evidence-the-next-phase-can-use.md)
+- [A test's guarantee covers only what the test actually examined](../lessons/a-tests-guarantee-covers-only-what-the-test-examined.md)
+- [Independent filters sharing one budget have an interior optimum, not a monotone one](../lessons/independent-filters-sharing-one-budget-have-an-interior-optimum.md)
+- [Make the cheap stage err in the direction the expensive stage can repair](../lessons/make-the-cheap-stage-err-in-the-direction-the-expensive-stage-can-fix.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
