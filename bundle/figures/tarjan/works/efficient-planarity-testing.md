@@ -22,4 +22,5 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/tarjan__efficient-planarity-testing.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Decide a property by trying to build the thing, not by searching for the forbidden shape](../lessons/decide-by-attempting-to-construct-not-by-searching-for-the-forbidden-shape.md)
+- [Make the unit of work the set of decisions that are forced to move together](../lessons/make-the-unit-of-work-the-set-of-decisions-that-move-together.md)

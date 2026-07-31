@@ -21,3 +21,6 @@ tags: [work]
 
 ## Lessons
 - [Comprehension is a project's real capacity limit: build nothing the accountable person cannot follow](../lessons/comprehension-is-the-real-capacity-limit-of-a-project.md)
+- [A scarce resource delegated to an automatic mechanism has no owner, and nobody will count it](../lessons/a-scarce-resource-delegated-to-a-mechanism-has-no-owner.md)
+- [Read the shape of the optimization curve, not the size of the last gain](../lessons/read-the-shape-of-the-optimization-curve-as-a-verdict.md)
+- [A trap-laden substrate destroys compositional reasoning, which is why reliability is the one property money cannot buy](../lessons/a-trap-laden-substrate-destroys-compositional-reasoning.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A trap-laden substrate destroys compositional reasoning, which is why reliability is the one property money cannot buy"
+figure: hoare
+works: [the-emperors-old-clothes]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A trap-laden substrate destroys compositional reasoning, which is why reliability is the one property money cannot buy
+
+**Lesson:** The usual complaint about a complicated base language, library or platform is that it is hard to learn. The real damage is worse and more precise: when features interact through defaults, implicit conversions, side effects and out-of-band condition handling, the correctness of any one part of your program becomes conditional on every other part having avoided the traps. That is the loss of compositionality, and it is fatal to the only reasoning method that scales. Establishing something about a component and then relying on it elsewhere is what makes large programs tractable; a substrate with pervasive interaction effects withdraws that permission, so every local claim carries an unstated global hypothesis nobody can discharge. The same reasoning applies one level down, to the people implementing the substrate: past a certain complexity, a wholly reliable implementation of it cannot be written either, so the guarantees your local claim depends on are not being delivered from below.
+
+This is the mechanism behind the observation that almost anything in software can be implemented, sold and used if enough determination and money are applied to it, with exactly one exception. Funding buys features, ports, tooling, documentation, training and market position; each of those can be produced by adding work. Reliability cannot be produced by adding work, because it is a property of the whole and every addition enlarges the space of interactions that must come out right. Money can therefore make a technically unsound thing succeed commercially — the project is doomed to success — while leaving the one property it needed unattainable. Notice the direction of the perverse incentive: the better resourced the effort, the more features it can afford, and the further out of reach reliability moves.
+
+The practical use of this is as a criterion when adopting or building a foundation. Ask whether a claim proved about one part of a program written against it stays true irrespective of what the rest of the program does. Where the answer is no, name the specific mechanism responsible — the silent default, the coercion, the nonlocal transfer of control, the feature whose behavior depends on distant declarations — because those mechanisms, not the raw count of features, are what convert additive complexity into multiplicative complexity. And treat the demand for reliability as a demand for subtraction: the price of it is the pursuit of the utmost simplicity, which is a bill paid in features removed rather than in effort added, and therefore hardest to pay for whoever has the most resources to spend.
+
+**Source:** [The Emperor's Old Clothes](../works/the-emperors-old-clothes.md) — the account of the PL/I standardization effort, where Hoare argues that a wholly reliable compiler for a language of that complexity could not be written and neither could a wholly reliable program, since the correctness of each part depends on every other part having avoided the language's traps and pitfalls; together with the conclusion that a technically unsound project can be doomed to success because determination and money buy everything except reliability, whose price is the pursuit of utmost simplicity.

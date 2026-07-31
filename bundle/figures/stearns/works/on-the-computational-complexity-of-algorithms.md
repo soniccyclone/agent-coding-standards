@@ -26,3 +26,5 @@ tags: [work]
 - [The invariance you demanded is what makes the question undecidable](../lessons/the-invariance-you-demanded-is-what-makes-it-undecidable.md)
 - [To prove something impossible, count what can be remembered against what must be distinguished](../lessons/count-what-can-be-remembered-against-what-must-be-distinguished.md)
 - [When you give up names, the whole emulation cost collapses into deciding identity](../lessons/emulation-cost-is-the-cost-of-deciding-identity.md)
+- [Stop choosing between methods with incomparable costs and race them, because the pointwise minimum is nearly free](../lessons/race-incomparable-methods-the-minimum-is-nearly-free.md)
+- [Pay for every convenience in a definition with a theorem bounding what it cost you](../lessons/pay-for-definitional-conveniences-with-a-bounded-error-theorem.md)

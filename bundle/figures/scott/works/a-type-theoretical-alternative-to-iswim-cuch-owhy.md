@@ -9,6 +9,7 @@ url: https://www.cs.cmu.edu/~kw/scans/scott93tcs.pdf
 survey_pages: 30
 survey_text_layer: ocr
 survey_fetch_mb: 2
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -27,3 +28,5 @@ tags: [work]
 - [State what a data type must satisfy instead of defining it as one representation](../lessons/give-a-theory-of-a-data-type-not-a-definition-of-it.md)
 - [Read your proof rule off the construction, and do not settle for its convenient instances](../lessons/take-the-proof-rule-from-the-construction.md)
 - [A symmetric operator is a claim about the execution model, not just a truth table](../lessons/a-symmetric-operator-is-a-claim-about-the-execution-model.md)
+- [When the general completeness question is closed, find the narrow one you actually need](../lessons/when-general-completeness-is-closed-ask-the-narrow-question.md)
+- [Build a special-purpose system so it reads as a fragment of a general one you already believe](../lessons/build-your-special-purpose-system-as-a-fragment-of-a-general-one.md)

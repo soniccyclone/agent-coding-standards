@@ -2,7 +2,7 @@
 type: lesson
 title: "A budget nothing can lay out inside itself is not a budget"
 figure: stearns
-works: [hierarchies-of-memory-limited-computations]
+works: [hierarchies-of-memory-limited-computations, on-the-computational-complexity-of-algorithms]
 axes: [verifiability, primitive-count]
 subdomains: [algorithms-and-complexity, foundations-of-computation]
 tags: [lesson]
