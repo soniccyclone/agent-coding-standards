@@ -21,4 +21,4 @@ tags: [work]
 **Source:** http://web.archive.org/web/20120313180518/http://www.cs.albany.edu/~res/gsp.pdf — Wayback Machine capture of a PDF Stearns self-archived on his University at Albany faculty page. The live page now returns 404, but this snapshot — and two earlier snapshots from 2006, all with an identical file digest — serve the file directly with HTTP 200.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Let the proof tell you what the interface is: the abstraction is exactly the laws the argument consumed](../lessons/let-the-proof-tell-you-what-the-interface-is.md)

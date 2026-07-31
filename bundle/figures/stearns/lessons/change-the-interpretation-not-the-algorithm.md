@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Change the interpretation, not the algorithm, and absorb variants instead of building parallel theories"
+figure: stearns
+works: [an-algebraic-model-for-combinatorial-problems]
+axes: [expressiveness, primitive-count, cognitive-load]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Change the interpretation, not the algorithm, and absorb variants instead of building parallel theories
+
+**Lesson:** Five questions that the literature treats as separate problems with separate names and separate complexity classes — is there a solution, how many are there, is that count odd or even, how many constraints can be satisfied at once, is the solution unique — turn out to be one problem asked over five different algebras. The instance is bit-for-bit the same in each case; what varies is only which set the terms map into and what the two combining operators mean there. Once the algorithm is written against the operators rather than against truth values, these stop being five algorithms. And because the instance is unchanged, every piece of structural work done for one question is already done for all of them: a technique that exploits structure to answer one answers all five, which is an enormous return on a single insight.
+
+The same move runs in the other direction, against variants that appear to demand their own theory. A version of the problem where only some assignments are eligible looks like it needs a constrained framework; instead, map the eligibility test's outcomes into the value algebra so that an ineligible assignment contributes the annihilating element, and the constrained problem is an ordinary one. A version that asks for the best assignment rather than an aggregate value looks like a different subject; instead, show the ordered structure and the algebraic one are interchangeable in both directions, and every existing result applies. Prefer an embedding to a parallel development, always, because the embedding inherits results for free and a parallel development inherits nothing. The diagnostic for a faithful embedding is that the structural skeleton is untouched — if the incidence structure of the transformed instance is identical, every structural theorem transfers verbatim, and the only thing you must re-examine is which parts of the instance the skeleton now has to span.
+
+One caveat has to be carried explicitly or the whole picture misleads. Identical structure means an identical count of operations, not an identical amount of work, because the operations themselves differ in cost: combining truth values is not combining integers wide enough to hold a solution count, and the gap widens dramatically when the instance is itself given compressed. So keep two ledgers — how many operations the structure forces, and what each operation costs in this interpretation — and never let a result about the first be quoted as a result about the second.
+
+**Source:** [An Algebraic Model for Combinatorial Problems](../works/an-algebraic-model-for-combinatorial-problems.md) — the Boolean-satisfiability section with its table assigning a different algebra to each of the five questions, and the surrounding argument that the instances have identical incidence structure and therefore equal cost in operations counted, together with the explicit warning that operation costs differ; plus the constrained-problems section, which transforms constrained instances back into ordinary ones by reinterpreting the constraint outcomes, and the optimization section, which establishes interchangeability between the ordered and algebraic formulations in both directions.

@@ -20,4 +20,6 @@ tags: [work]
 **Source:** http://web.archive.org/web/20220619233139/https://lya.fciencias.unam.mx/jloa/Articulos/CARHoareMonitors.pdf — Wayback Machine snapshot of a course-materials mirror hosted by the Facultad de Ciencias, UNAM (Universidad Nacional Autónoma de México), for a concurrent-programming course. The live UNAM host currently refuses connections on this path, so the Wayback snapshot is used per the dead-link fallback policy. The PDF is owner-password-protected (no open-password required) which prevented direct text-stream extraction; filename, byte size, and hosting context (dedicated concurrent-programming course page) are consistent with the genuine paper.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Draw the encapsulation boundary so the discipline you need becomes a textual property a machine can check](../lessons/put-the-discipline-where-a-textual-scan-can-enforce-it.md)
+- [Decide who establishes a condition, and hand the guarantee over atomically instead of making the waiter re-derive it](../lessons/hand-off-a-guarantee-instead-of-making-the-waiter-re-derive-it.md)
+- [Every point where an operation can block is a public boundary, so the invariant must hold there too](../lessons/every-point-where-you-can-block-is-a-public-boundary.md)

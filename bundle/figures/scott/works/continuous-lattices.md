@@ -25,3 +25,6 @@ tags: [work]
 - [Repairing a shared lemma is not done until every use of it has been rechecked individually](../lessons/repairing-a-shared-lemma-means-revisiting-every-use-of-it.md)
 - [Solving an equation by iteration does not name a unique answer; the starting point is part of the design](../lessons/an-equation-does-not-name-a-unique-solution-the-seed-does.md)
 - [Turn your subobjects into elements, and questions of existence become fixed-point equations](../lessons/make-your-subobjects-into-elements-so-existence-becomes-a-fixed-point.md)
+- [Say whether a reformulation shortens the work or only explains it, and value both honestly](../lessons/say-whether-a-reformulation-shortens-the-work-or-explains-it.md)
+- [Look for the one tiny object that generates the entire class you care about](../lessons/find-the-one-tiny-object-that-generates-the-whole-class.md)
+- [Mark the boundary of what you know at the exact point where it stops](../lessons/mark-the-boundary-of-what-you-know-at-the-point-it-stops.md)

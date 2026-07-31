@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Let the proof tell you what the interface is: the abstraction is exactly the laws the argument consumed"
+figure: stearns
+works: [an-algebraic-model-for-combinatorial-problems]
+axes: [primitive-count, expressiveness, cognitive-load]
+subdomains: [algorithms-and-complexity, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Let the proof tell you what the interface is: the abstraction is exactly the laws the argument consumed
+
+**Lesson:** The usual way to pick an abstraction is to survey the intended implementations and generalise over them, which produces something either too weak to reason with or cluttered with operations nobody needs. There is a better procedure, and it runs backwards. Prove the thing you actually care about — here, that the value of a whole decomposes into values of its independent parts — and then go through the proof line by line noting every property of the operands it appealed to. That list is the interface. In this case the decomposition argument reaches for commutativity, associativity and distributivity, plus identity elements to make empty sums and products well defined, and nothing else. So the abstraction is a structure with two such operators and their identities. It was not chosen for elegance and it was not borrowed from algebra by analogy; it was read off the argument, and the paper says as much.
+
+An interface derived this way has two properties you cannot get any other way. It is minimal, because every requirement in it is discharged by a specific step of the proof — nothing is there speculatively. And it is maximal in what it admits, because any structure satisfying those laws is a legal implementation whether or not you had it in mind, which is how the same machinery ends up covering truth values, counts, parities and minima without being designed for them. Over-specified interfaces are the common failure: demand an ordering when nothing in the proof compares, demand an inverse when nothing subtracts, and you have silently excluded implementations for no return. Under-specification is the rarer and louder failure, because the proof breaks immediately.
+
+The practical payoff is that the algorithms can then be written against uninterpreted operators — ordinary pseudo-code in which the arithmetic is a hole. That turns implementing the operations into a genuinely separable concern, one that a different person can work on, on a different schedule, with results that apply to everything the framework covers rather than to one instance. The general test for whether a decomposition into concerns is real rather than cosmetic is exactly this: can each concern be worked in isolation, and does its result apply across the whole spectrum? Interfaces extracted from proofs pass that test by construction, because the proof already established that nothing else about the operands matters.
+
+**Source:** [An Algebraic Model for Combinatorial Problems](../works/an-algebraic-model-for-combinatorial-problems.md) — the decomposition theorem in the structure-trees section, whose proof invokes the commutative, associative and distributive laws together with two identities and is followed by the explicit remark that this is why commutative semirings are the natural algebraic object for the model; the requirement in the model's definition that identity elements exist so that empty sums and products are well defined; and the introduction's characterisation of the algorithms as generic pseudo-code over uninterpreted operators, with the implementation of those operators listed as one of the four independently studiable concerns.
