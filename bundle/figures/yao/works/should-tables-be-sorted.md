@@ -22,3 +22,4 @@ tags: [work]
 
 ## Lessons
 - [Permission to store a function of your data is a different power from permission to store the data](../lessons/storing-a-function-of-your-data-is-a-different-power-than-storing-it.md)
+- [You cannot analyze an arbitrary implementation, so force it onto inputs where it must behave uniformly](../lessons/force-an-arbitrary-opponent-into-a-case-you-already-understand.md)

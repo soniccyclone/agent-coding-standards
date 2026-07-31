@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "To discard the part of a structure you do not want, assign weights that make it strictly more expensive, then scale"
+figure: strassen
+works: [relative-bilinear-complexity-and-matrix-multiplication]
+axes: [verifiability, expressiveness]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification]
+tags: [lesson]
+---
+# To discard the part of a structure you do not want, assign weights that make it strictly more expensive, then scale
+
+**Lesson:** You have a large object with a regular part buried inside a mess, and you want the regular part alone. Deleting the rest by hand is not allowed — deletion is not one of your legal operations, and the object is only useful to you as a whole. The move that works instead is arithmetic. Assign a numeric weight to every coordinate of every factor, so that each elementary term of the object acquires a total weight equal to the sum of the weights it touches. Choose the weights so that every term you want to keep has total weight exactly zero and every term you want gone has total weight strictly positive. Now apply the family of scalings that multiplies each coordinate by a parameter raised to its weight. The terms you wanted are untouched; the others are multiplied by positive powers of the parameter and slide to zero as it does. The limit of legal operations is the object you wanted, and you never had to be allowed to delete anything.
+
+Two things about this are worth separating from the specific setting. First, the burden of the whole argument has moved into a small numerical feasibility question: does an assignment of weights exist with those signs on those index sets? That is a finite question about a system of linear inequalities, and it either has a solution you can print or a dual certificate proving it does not — so a mechanism that started out as an infinite limiting process becomes something you can settle by inspection. Second, the same construction reads in reverse as a statement about layered structures: if you can grade a structure so that combining a level-*i* thing with a level-*j* thing lands at level *i+j* or higher, then the purely graded version — the one that keeps only the exact-sum interactions and forgets every bit of slack — is automatically a limit of the original. Anything the graded model can do, the real structure can do. A layering is therefore not just an aid to reading; it is a license to reason with the decoupled model and transfer the conclusions back.
+
+Generalized, this is the habit of converting a structural wish into a weight function. When you want to argue that some awkward cross-term or interaction is inessential, look for a measure under which that term is strictly heavier than the ones you keep, and then look for the parameterized family that punishes weight. If you cannot find the measure, that failure is informative: the interaction you wanted to dismiss is load-bearing, and the dual object that blocks your weights tells you which combination of terms cannot be separated. Either way you leave with a certificate rather than an intuition.
+
+**Source:** [Relative Bilinear Complexity and Matrix Multiplication](../works/relative-bilinear-complexity-and-matrix-multiplication.md) — the combinatorial characterization of monomial degeneration in section 6, which reduces the whole relation to the existence of three real weight vectors positive off the retained support, together with the propositions that follow it: the filtered-to-graded degeneration, whose weights come straight from the filtration indices, and the short-exact-sequence case, where the sub-object and quotient taken independently are recovered as a limit of the whole.

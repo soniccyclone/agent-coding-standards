@@ -39,3 +39,4 @@ This work needs the deterministic OCR batch.
 - [Let a solution be approximate when the error is repaid by scale](../lessons/let-a-solution-be-approximate-when-the-error-is-repaid-by-scale.md)
 - [Keep several equivalent encodings of the same object, and switch to whichever exposes the structure you need](../lessons/keep-several-equivalent-encodings-and-switch-to-whichever-exposes-the-structure.md)
 - [Keep the plausible assumption out of the load path, even when everyone believes it](../lessons/keep-the-plausible-assumption-out-of-the-load-path.md)
+- [When the general relation is out of reach, restrict the allowed moves rather than relax the goal](../lessons/restrict-the-moves-instead-of-relaxing-the-goal.md)

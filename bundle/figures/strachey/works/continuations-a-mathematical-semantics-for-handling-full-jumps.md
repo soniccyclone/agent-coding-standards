@@ -6,6 +6,7 @@ description: Extends denotational semantics to cover unrestricted control transf
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1974
 url: https://www.cs.ox.ac.uk/files/3233/PRG11.pdf
+extraction: complete
 survey_pages: 31
 survey_text_layer: full
 survey_fetch_mb: 0
@@ -25,3 +26,6 @@ tags: [work]
 - [Test a formalism against the feature you would ban](../lessons/test-a-formalism-against-the-feature-you-would-ban.md)
 - [Say what happens and stay silent about the bookkeeping](../lessons/say-what-happens-and-stay-silent-about-the-bookkeeping.md)
 - [Judge a semantics by the equalities it lets you prove](../lessons/judge-a-semantics-by-the-equalities-it-lets-you-prove.md)
+- [Treat your outermost level as a stand-in for a layer you did not model](../lessons/treat-your-outermost-level-as-a-stand-in-for-a-layer-you-did-not-model.md)
+- [Don't widen a domain to house machinery its definition excluded](../lessons/dont-widen-a-domain-to-house-machinery-its-definition-excluded.md)
+- [Spend notation on the distinctions a reader cannot recover](../lessons/spend-notation-on-the-distinctions-a-reader-cannot-recover.md)

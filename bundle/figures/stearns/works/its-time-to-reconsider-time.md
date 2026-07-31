@@ -20,4 +20,4 @@ tags: [work]
 **Source:** http://web.archive.org/web/20120313180620/http://www.cs.albany.edu/~res/turing.pdf — Wayback Machine capture of a PDF Stearns self-archived on his University at Albany faculty page. The live page now returns 404, but this snapshot — matching an earlier 2006 capture by file digest — serves the file directly with HTTP 200.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Ask how well the model fits before asking how hard the theorem was](../lessons/ask-how-well-the-model-fits-first.md)
