@@ -26,9 +26,10 @@ tags: [work]
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 11309 — chapter 9 complete and mined (9.1-9.4, including the
+**Current position: line 11709 — chapter 9 complete and mined (9.1-9.4, including the
 serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
-read and mined through section 10.4's prose to line 11309. Earlier state, still true:
+read and mined in full including the module Net listing (pure Oberon source, no prose);
+chapter 11 read and mined through section 11.1. Earlier state, still true:
 chapter 5 prose complete through section 5.5 (text frames,
 font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
 complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
@@ -144,3 +145,5 @@ section are where the extractable lessons are.
 - [Who starts an exchange need not be who paces it](../lessons/who-starts-the-exchange-need-not-be-who-paces-it.md)
 - [Derive each timeout from the one beneath it, and stay until the other side can no longer ask](../lessons/derive-each-timeout-from-the-one-beneath-it.md)
 - [Join peers through a structure neither of them owns](../lessons/join-peers-through-a-structure-neither-of-them-owns.md)
+- [Name which of the reasons to centralize applies, or keep the function where it is](../lessons/name-which-of-the-reasons-to-centralize-applies.md)
+- [Write down what the thing is not for; the fixed limits then stop being defects](../lessons/write-down-what-the-thing-is-not-for.md)

@@ -149,6 +149,8 @@ tags: [work]
 - [Bracket a general mechanism between what it replaced and what a hand-built special case achieves, and check the ratio is even defined before quoting it](../lessons/bracket-a-general-mechanism-between-two-baselines-and-check-the-ratio-exists.md)
 - [A unit built separately cannot name anything outside itself, so every cross-boundary reference has to arrive as a value someone installs](../lessons/a-separately-built-unit-cannot-name-anything-outside-itself.md)
 - [A second implementation of an abstraction is paid for in the private conventions underneath it, which nobody wrote down because nothing had crossed them](../lessons/a-second-implementation-is-paid-for-in-the-conventions-beneath-the-interface.md)
+- [A separate phase is a scheduling convention, not a property of the transformation, and keeping the transformer callable is what lets you collapse a level](../lessons/a-build-phase-is-a-scheduling-choice-not-a-property-of-the-transformation.md)
+- [Give any mechanism that works by omission a mode that omits nothing, because the diff against that mode is the only complete record of what it decided](../lessons/give-an-omitting-mechanism-a-mode-that-omits-nothing.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -238,7 +240,7 @@ sequences, lambda expressions and bodies), 5.5.3 compiling combinations
 and the tail-call linkage), and 5.5.4 through the sequential combiner. **Next
 unread line is 28510.**
 
-**READ IN PROGRESS (bucket 310, second session):** resumed at line 28510.
+**READ COMPLETE (bucket 310, second session):** resumed at line 28510.
 Read 28510-29628 — the rest of 5.5.4 (the tack-on and parallel sequence
 combiners), 5.5.5 the worked compilation of the recursive factorial definition
 with its exercises including open coding of primitives, 5.5.6 lexical addressing
@@ -246,10 +248,17 @@ and the compile-time environment, and 5.5.7 interfacing compiled code to the
 evaluator (the third procedure kind at apply-dispatch, the external entry point
 and flag register, compile-and-go, the stack-usage comparison, the
 interpretation-versus-compilation discussion, porting and bootstrapping, and
-Exercises 5.45-5.48). Note: two lessons covering 5.5.6 and Exercises 5.38/5.44
-already existed on disk unlinked from this file — a prior agent died between
-writing them and linking them; links restored in this session.
-**Next unread line is 29628.** Reading forward toward the index at ~29990. This line is updated as
-chunks are finished — if this note still says a line below 29990 and there is no
-`extraction: complete`, that number is the true resume point.
-`extraction: complete` withheld until all five chapters are read._
+Exercises 5.45-5.48). Read 29628-29675 — the closing Exercises 5.49-5.52
+(read-compile-execute-print loop, compiling the metacircular evaluator,
+implementing Scheme in a low-level language two ways). **The body of the book
+ends at line 29675**; lines 29676-30343 are the reference list, the lists of
+exercises and figures, the index, and the colophon, all inspected and containing
+no extractable prose. All five chapters are now read to the end and the work is
+attested `extraction: complete`.
+
+Note for a human: two lessons covering 5.5.6 and Exercises 5.38/5.44
+(`a-static-scoping-rule-is-what-converts-a-runtime-search-into-an-offset.md`
+and `specialize-on-the-binding-not-on-the-name.md`) already existed on disk
+unlinked from this file — a prior agent died between writing them and updating
+the Lessons section, and had not advanced the resume line past them either.
+Links restored in this session._

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Name which of the reasons to centralize applies, or keep the function where it is"
+figure: wirth
+works: [project-oberon]
+axes: [cognitive-load, verifiability, hardware-affinity]
+subdomains: [distributed-systems-and-concurrency, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Name which of the reasons to centralize applies, or keep the function where it is
+
+**Lesson:** In a population of equal, autonomous units, moving a function to a single shared instance is a real loss — the shared instance becomes something everyone depends on and nobody controls, and its failure is everyone's failure. That does not make centralization wrong; it makes it a purchase, which means it needs a stated reason. The useful discipline is that the reasons are few, distinguishable, and checkable, so the question "why is this central?" always has a short answer or the arrangement should be reconsidered.
+
+The first reason is that the thing must have exactly one value. Anything that is copied to each unit will diverge, and the divergence is not a hazard to be managed but a certainty over time, so consistency itself is the justification and one authoritative copy is what is being bought. The second is economic: some capability costs more to provide and maintain than its usage per unit warrants, and this is strongest precisely when the usage is infrequent, since rarity is what makes per-unit provision absurd. The third is availability across the units' own lifecycles: if something must be reachable when the unit that owns it is switched off, it cannot live on that unit, and no amount of engineering on the unit changes this. The fourth is that a shared frame of reference — an agreed time, an agreed ordering, an agreed identity space — exists only if somebody holds it, and it is not derivable from the units independently.
+
+Two habits keep this honest. Check the reason against the actual candidate rather than the category: many functions that feel like they need centralizing are wanted centrally only for convenience, and convenience is served better by a decentralized query than by an authority whose contents someone must then maintain. And notice that the reason implies obligations. If the reason is availability across power cycles, the central instance must be continuously operational, and that is a commitment about staffing and hardware, not a property of the software. If the reason is consistency, the central copy must be the one everyone actually reads, or local copies reappear and the divergence returns with the cost of the server still being paid. Recording which reason applies is what allows the decision to be revisited when the reason stops being true — the case in which a central service continues to exist purely because it always has.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 11.1's enumeration of the services worth centralizing in a system of loosely coupled workstations: a common file store justified on the grounds that a common repository avoids the inconsistencies inevitable when local copies are made, even though every station has its own disk; a printing service justified because the equipment's cost and servicing would not warrant acquisition for every station, particularly given infrequent use; a mail repository justified because it must inherently be central and each user's mailbox must be accessible even when its owner's workstation is switched off; and a time service allowing a station's clock to be synchronized with a central one — set against the section's statement that every user has full control over his own station including the right to switch it off at any time, while the central server is continuously operational.

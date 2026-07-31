@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Partial operations invalidate the laws you rewrite with, so carry a definedness condition rather than pretending undefined is a value"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# Partial operations invalidate the laws you rewrite with, so carry a definedness condition rather than pretending undefined is a value
+
+**Lesson:** Admit operations that are undefined on some of their arguments — division, subtraction on quantities that cannot go negative, indexing, any lookup that may find nothing — and a set of laws that looked unimpeachable quietly stops holding. The casualties are not exotic. Choosing between two identical alternatives is no longer the same as taking that alternative, because evaluating the test can fail where the alternative would have succeeded. Composing two updates into one is no longer sound, because the intermediate expression may be undefined at a point where the combined expression is not. These are precisely the rewritings everyone performs without noticing, which is what makes partiality expensive out of proportion to how rarely the undefined case arises.
+
+The repair is not to invent a value meaning "undefined" and let it flow through the arithmetic, because that only postpones the question of what the laws say about it and usually answers it wrongly. The honest treatment is to decide that the outcome of evaluating an undefined expression is entirely unconstrained — anything at all may follow — and then to attach to every law an explicit condition asserting that the expressions involved are defined. The laws become slightly heavier and become true. Two details make the scheme work: the definedness condition is itself an ordinary expression built compositionally from the operators, and it must be total, so that asking whether something is defined can never itself be undefined. Without that second requirement the regress does not terminate.
+
+The wider lesson is about where partiality's cost actually lands. It is tempting to treat an operation's domain restriction as a small local matter handled by a check at the call site. It is not local: it propagates into every algebraic property of every construct that can contain such an expression, and therefore into every transformation a compiler, an optimizer or a person might apply. So the question to ask when introducing a partial operation is not "who validates the argument" but "which of my rewriting rules just acquired a side condition". If the answer is most of them, that is a strong argument for making the operation total by construction — narrowing its argument type until nothing outside the domain can be written — rather than by checking.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the laws subsection of the assignment section in the sequential processes chapter, which first states the assignment and conditional laws under the assumption that all expressions always yield a result, then introduces a definedness predicate built compositionally over the operators, insists that this predicate is itself always defined, deliberately leaves the result of evaluating an undefined expression completely unspecified by equating it with the chaotic process, and restates the affected laws — including the collapse of a conditional with identical branches and the composition of successive assignments — with the definedness condition attached.
