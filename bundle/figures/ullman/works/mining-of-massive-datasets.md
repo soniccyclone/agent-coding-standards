@@ -103,6 +103,9 @@ tags: [work]
 - [Prove something exists by beating the average, evaluated at its worst arrangement](../lessons/prove-something-exists-by-beating-the-average-at-its-worst-arrangement.md)
 - [Impose the precondition your method needs by splitting at random](../lessons/impose-the-precondition-your-method-needs-by-splitting-at-random.md)
 - [Score the connection by the traffic it must carry, not by its endpoints](../lessons/score-the-connection-by-the-traffic-it-must-carry.md)
+- [A boundary metric exiles the members who span the boundary](../lessons/a-boundary-metric-exiles-the-members-who-span-the-boundary.md)
+- [Decompose the exact computation before you approximate it](../lessons/decompose-the-exact-computation-before-you-approximate-it.md)
+- [A degenerate optimum means your objective is missing a term, not a filter](../lessons/a-degenerate-optimum-means-your-objective-is-missing-a-term.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

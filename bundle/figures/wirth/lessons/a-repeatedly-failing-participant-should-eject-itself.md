@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A participant that can fail should be removed before it runs, not after"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# A participant that can fail should be removed before it runs, not after
+
+**Lesson:** A scheduler that repeatedly activates a registered participant has a failure mode more damaging than any single failure: a participant that fails will be activated again, fail again, and keep doing so at the scheduler's own frequency. The obvious defence is to catch the failure and unregister the offender, which does work but has to be right in the hardest place — inside the recovery path, after control has already been disturbed, at exactly the moment when the least is known about the state of things. The better construction inverts the order. Remove the participant from the ready set *before* handing control to it, and put it back only on normal return. Nothing has to be done on the failure path at all, because the failure path simply never reaches the reinstatement. Ejection is the default and survival is what must be earned.
+
+The general principle is that a guarantee is cheapest when it is a consequence of ordering rather than of cleanup. Cleanup code runs in the damaged state and is therefore the code least likely to be correct and least likely to have been exercised; ordering runs in the healthy state, is on the normal path, and gets tested every time anything works. Wherever you are tempted to write "and if it fails, undo the registration", check whether you can instead deregister first and re-register on success. The two are equivalent when everything works and are very different when it does not.
+
+Two refinements keep this from being a blunt instrument. First, the policy should be a property of the participant, not of the scheduler: some participants are foundational enough that the system is worse off without them, and they should be able to declare that they are to survive a failure — which also makes the exceptional cases visible in a list rather than buried in a special case. Second, the discipline applies where reactivation is automatic and therefore unbounded. Where reactivation is driven by a human choosing to try again, no such precaution is needed, because a person who sees the same failure twice will stop; the runaway only exists when the loop has no one in it. So the question to ask of any retry structure is not "does it handle failure" but "who decides whether it runs again" — and if the answer is the machine, arrange for a failure to be self-limiting by construction.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 3.2's task scheduler, in which the current background task is removed from the ring before the continue message is sent and assured back in the ring afterwards, with the accompanying explanation that unsafe tasks are eliminated automatically after failing and that this is an effective precaution against cascades of repeated failures; the accompanying note that no such precaution is necessary for interactive tasks because their reactivation is under the control of the system user; and section 3.1.2's declaration of a task descriptor carrying a flag distinguishing safe tasks, which in contrast to potentially unsafe ones are not cancelled automatically after a program trap, together with the observation that the ring is guaranteed never to be empty because the garbage collector is installed as a safe task at system loading time.

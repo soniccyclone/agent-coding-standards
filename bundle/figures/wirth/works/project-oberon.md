@@ -25,3 +25,6 @@ tags: [work]
 - [Pick the switching granularity first; the protection machinery follows from it](../lessons/pick-the-switching-granularity-first-the-protection-follows-from-it.md)
 - [Root a tree of requests instead of fixing a set of operations](../lessons/root-a-tree-of-requests-instead-of-fixing-a-set-of-methods.md)
 - [Prefer the state that is already visible as the interface between steps](../lessons/prefer-the-state-that-is-already-visible-as-the-interface.md)
+- [A participant that can fail should be removed before it runs, not after](../lessons/a-repeatedly-failing-participant-should-eject-itself.md)
+- [Price a metaphor by the actions it actually produces](../lessons/price-a-metaphor-by-the-actions-it-actually-produces.md)
+- [Bind at the latest moment, so each part exists exactly once](../lessons/bind-at-the-latest-moment-so-each-part-exists-once.md)

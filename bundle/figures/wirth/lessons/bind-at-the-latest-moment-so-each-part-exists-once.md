@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Bind at the latest moment, so each part exists exactly once"
+figure: wirth
+works: [project-oberon]
+axes: [primitive-count, hardware-affinity]
+subdomains: [operating-systems-and-systems-programming, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Bind at the latest moment, so each part exists exactly once
+
+**Lesson:** A build step that combines components into a self-contained deliverable looks like a service and is actually a duplicator. Every deliverable that needs a shared component gets its own copy of it, so the total storage occupied grows with the number of combinations rather than with the number of distinct parts, and the same code sits on the machine many times over in slightly different pre-resolved forms. The alternative is to delay combination until the moment of use: resolve a component's references against what is present when it is brought in, and never before. Then the invariant is one copy per component — one in the working store, one in the backing store — regardless of how many things depend on it.
+
+The gain is not only space. A combined deliverable is a snapshot of a dependency graph, and snapshots go stale: replacing a shared part requires rebuilding everything that absorbed it, and the version actually running in each deliverable is whatever was current when that deliverable was built. Under late binding there is nothing to rebuild, because nothing absorbed anything. It also makes conditional dependence real: a component that is needed only in some situations can be brought in when the situation arises rather than being carried always, which is the difference between a system that costs what it uses and one that costs what it could possibly use. That, in turn, is what makes extensibility a property of the running system rather than a claim in the documentation — an extension is loadable on demand precisely because nothing was pre-combined.
+
+The cost is honest and should be named. Binding at use means the resolution work happens at run time rather than once ahead of time, so the first use of a component pays for it, and the mechanism doing the resolving is now part of the system and must be correct. It also means the system must be able to answer, at run time, what is already present, which requires keeping a registry of loaded components — modest machinery, but machinery. Where the set of components is fixed, small, and never partially used, pre-combining is fine. Where it is open-ended and each user needs a different subset, pre-combining is a tax charged to everyone for the convenience of the build process.
+
+The general form: when a step in your pipeline produces an artifact that contains copies of things that exist elsewhere, ask what the step is actually buying. Often it is buying an assumption — that the set of dependencies is known in advance — which you can drop, and dropping it collapses both the duplication and the staleness at once.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 2.2.6's statement that the system features no separate linker, that a module is linked with its imports when it is loaded and never before, that as a consequence every module is present only once in main store as linked and on backing store as unlinked file, that avoiding the generation of multiple copies in different linked object files is the key to storage economy, and that prelinked mega-files do not occur so every module is freely reusable; together with the same section's argument that modules must be loadable on demand for a successful realization of genuine extensibility, illustrated by a document editor loading a graphics package only when a graphic element appears in the processed document, and section 2.2.5's requirement that extensibility must also reduce the system to those facilities currently and actually used, with the assessment that the staggering consumption of memory space by many widely used systems is due to violation of such rules and its reason is none other than inadequate extensibility.
