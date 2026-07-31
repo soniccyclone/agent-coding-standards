@@ -22,11 +22,13 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
-**READ IN PROGRESS (2026-07-31 session, third agent): resumed at line 13764, working
-forward toward line 22864. Current position recorded below; if this file still says
-"in progress" the session died and the position line is the truth.**
+**READ IN PROGRESS (2026-07-31 session, fourth agent): resumed at line 18598, working
+forward toward line 22864 (the end). Current position recorded below; if this file still
+says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 18598 — third agent has read and mined chapter 12 through
+**Current position: line 18598 — fourth agent starting here.**
+
+**Third agent's handoff: had read and mined chapter 12 through
 section 12.8's prose (code patterns 1-15; Object/Item/Struct; the OCS/OCE/OCH interfaces;
 12.4 parser, 12.5 scanner, 12.6 symbol table and symbol files, 12.7 code selection incl.
 the OCH statement/call/case commentary at 17902-17958, 12.8 code generation incl. the

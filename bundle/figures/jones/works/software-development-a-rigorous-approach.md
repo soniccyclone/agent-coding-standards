@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 89
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -22,8 +23,10 @@ tags: [work]
 
 ## Coverage
 
-**Not yet attested — partial read across two sessions.** Line numbers below refer to
-the OCR reading copy named above. PDF page = book page + 12.
+**Attested complete as of the fifth session.** Line numbers below refer to
+the OCR reading copy named above. PDF page = book page + 12. The history is kept
+rather than collapsed, because it records which spans were read under which
+conditions and by whom.
 
 An earlier session extracted 39 lessons whose source lines cite chapters 1-14, 17,
 18, 19, 21 and 22, but left no coverage note and no attestation; it appears to have
