@@ -23,3 +23,6 @@ tags: [work]
 
 ## Lessons
 - [A transformation that preserves the property you are asking about cannot answer the question](../lessons/a-transformation-that-preserves-a-property-cannot-answer-questions-about-it.md)
+- [Narrowing a specification to well-behaved inputs buys nothing until you show the hard inputs cannot be smuggled in](../lessons/restricting-a-spec-to-well-behaved-inputs-need-not-make-it-easier.md)
+- [When failure is one-sided and checkable, an unknown parameter costs you retries rather than a redesign](../lessons/one-sided-failure-makes-blind-guessing-affordable.md)
+- [To manipulate a collection you cannot see, find an operation whose aggregate effect is the same on every collection](../lessons/act-on-a-hidden-set-through-an-operation-with-a-uniform-aggregate-effect.md)

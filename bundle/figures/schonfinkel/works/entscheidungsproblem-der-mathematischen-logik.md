@@ -35,4 +35,5 @@ host-provided-text channel is genuinely unavailable rather than unattempted.
 This work needs the deterministic OCR batch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [A family of checks is not a check until the family is bounded](../lessons/a-family-of-checks-is-not-a-check-until-the-family-is-bounded.md)
+- [What you cannot distinguish, you do not have to keep](../lessons/what-you-cannot-distinguish-you-do-not-have-to-keep.md)

@@ -20,4 +20,5 @@ tags: [work]
 **Source:** https://www.kyotoprize.org/wp-content/uploads/2022/10/2021_yao_en.pdf — hosted on the Kyoto Prize's own site (Inamori Foundation), the official publisher of this lecture. Verified by rendering page 1, which shows the Foundation's metadata table (title, author, event, publisher, pages 1-7).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Turn a which-is-better question into a game between the two answers, and read off the equivalence](../lessons/turn-a-which-is-better-question-into-a-game-between-the-two-answers.md)
+- [When the deployment shape changes, re-pick the resource you count before re-tuning anything](../lessons/measure-the-resource-that-became-scarce-not-the-one-you-inherited.md)

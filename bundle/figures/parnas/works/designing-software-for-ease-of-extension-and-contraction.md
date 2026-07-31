@@ -24,3 +24,4 @@ tags: [work]
 - [Find the smallest thing that could possibly run, and treat that as a requirement](../lessons/find-the-smallest-thing-that-could-run-before-designing-the-whole.md)
 - [When two parts seem to need each other, one of them is really two parts](../lessons/when-two-parts-need-each-other-one-of-them-is-two-parts.md)
 - [Generality and flexibility are two different purchases, paid for at different times](../lessons/generality-and-flexibility-are-bought-in-different-currencies.md)
+- [Permission to depend has to be earned in both directions](../lessons/permission-to-depend-must-be-earned-in-both-directions.md)
