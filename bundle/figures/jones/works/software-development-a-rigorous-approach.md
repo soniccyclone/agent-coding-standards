@@ -71,18 +71,23 @@ so whatever it says is the resume point.
 Position log: 341 -> 14254 (span complete) -> 15402 -> 16835 (span complete)
 -> 17700 -> 18199 (span complete).
 
-**Fifth session (IN PROGRESS — note written before reading).** Closing the two
-remaining spans: lines 1-340 (title pages, table of contents) and 19071-19194
-(the gap between the fourth session's recorded spans). Starting at line 1.
-Nothing else in the file is unread. If this session dies, resume at whichever
-line the "Fifth-session position" line below names.
-**Fifth-session position: lines 1-340 and 19071-19194 both read in full — no
-lessons in either (front matter, publisher series list, contents and list of
-illustrations; then the tail of appendix D's detailed proofs and the opening of
-the glossary, both already-covered material restated formally). Identity
-confirmed on the title page: Jones, *Software Development: A Rigorous
-Approach*, Prentice-Hall International 1980, Hoare's series. Now re-verifying
-the 19604-20771 tail, which an earlier session sampled rather than read.**
+**Fifth session (COMPLETE — closes the file).** Read lines 1-340 (title pages,
+Prentice-Hall series list, contents, list of illustrations), lines 19071-19194
+(the remaining gap: the tail of appendix D's worked proof of the do-while rule
+and the opening glossary entries), and lines 19604-20771 in full rather than by
+sampling, since the fourth session had only structurally confirmed what that
+span contained. That tail is answers to selected exercises (notation drill, no
+prose argument), the bibliography, the index, and a colophon about the
+typesetting system. None of the three spans is lesson-bearing.
+
+Identity confirmed on the title page: Cliff B. Jones, *Software Development: A
+Rigorous Approach*, Prentice-Hall International 1980, in Hoare's series.
+
+**Coverage is now contiguous from line 1 to line 20771 across the five
+sessions**, so the book is read end to end and the attestation in the
+frontmatter is earned. Position log for the record: 341 -> 14254, 14255 ->
+15401, 15402 -> 16835, 16783 -> 17740, 17700 -> 18199, 18190 -> 19070, 19195 ->
+19603 (earlier sessions); 1 -> 340, 19071 -> 19194, 19604 -> 20771 (fifth).
 
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)

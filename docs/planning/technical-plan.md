@@ -54,6 +54,23 @@ read a source: `survey_pages` (PDF page count), `survey_text_layer`
 characters recovered per page over the first ten pages), and
 `survey_fetch_mb`. A failed fetch records `survey_fetch: FAILED` instead.
 
+**2026-07-31 — a fourth `survey_text_layer` value: `ocr`.** When the OCR
+quarantine was cleared, 36 works whose text layer was unusable were rasterised
+and recognised locally with tesseract, and a `**Reading copy:**` line was added
+to each pointing at the resulting text. Those works read `survey_text_layer: ocr`,
+meaning: *the source itself has no usable text layer, but a prepared transcript
+exists and an agent should read that rather than the original.* This value was
+introduced in practice before it was written down here — a reynolds extraction
+agent caught the omission by noticing that three work files carried a value the
+schema did not define, which would silently fail any tooling that routed on the
+field. Recorded now.
+
+The caveat that travels with `ocr`: prose recognises reliably and **notation does
+not**, so lessons from those works must be grounded in the prose argument and must
+never transcribe or rely on a formula. Note also that `full` does not imply
+born-digital text — some PDFs carry an OCR layer produced by someone else, with
+the same notation-mangling property and no marker in the frontmatter.
+
 Reason: Phase 4 lost several agent-days to sources whose cost was invisible
 until an agent was already hours into one. The decisive variable turned out not
 to be page count alone but page count *times* extractability — a 400-page PDF
