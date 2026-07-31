@@ -62,3 +62,6 @@ tags: [work]
 - [A structure is defined by its selectors, not by the set of values it can hold](../lessons/a-structure-is-defined-by-its-selectors.md)
 - [Name the gap between the type and the reality, and say who is holding it](../lessons/name-the-gap-between-the-type-and-the-reality.md)
 - [A buffer absorbs variance, not a difference in rate](../lessons/a-buffer-absorbs-variance-not-a-difference-in-rate.md)
+- [Classify an unmet condition as a caller's error, an implementation's limit, or a wait — before you choose how to report it](../lessons/classify-an-unmet-condition-before-choosing-how-to-report-it.md)
+- [An idle participant that polls is competing with the one making progress](../lessons/an-idle-participant-that-polls-is-competing-with-the-one-making-progress.md)
+- [You can write by naming the type, but you cannot read by naming it](../lessons/you-can-write-by-naming-the-type-but-you-cannot-read-by-naming-it.md)

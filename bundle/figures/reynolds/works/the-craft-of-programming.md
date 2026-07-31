@@ -19,7 +19,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697).
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). The current pass resumes at line 13698 (Chapter 5, Data Representation Structuring). Sections read so far this pass: 5.1.1 through 5.1.4 (lines 13698-14379).
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
@@ -83,3 +83,6 @@ tags: [work]
 - [Leave a choice unmade when it cannot affect correctness, and require every resolution of it to work](../lessons/leave-the-choice-open-and-demand-every-resolution-be-correct.md)
 - [An operation that names two abstractions at once forces their representations to be chosen together](../lessons/an-operation-naming-two-abstractions-chains-their-representations.md)
 - [State that nothing reads is scaffolding, and the criterion for removing it is purely syntactic](../lessons/state-that-nothing-reads-is-scaffolding-you-can-delete.md)
+- [To change a representation, run both levels at once under a stated invariant, then delete the upper one](../lessons/run-both-levels-together-under-a-stated-invariant-then-delete-the-upper-one.md)
+- [Split an operation by what the caller already knows, because that knowledge is worth an order of magnitude](../lessons/split-an-operation-by-what-the-caller-already-knows.md)
+- [There is no best representation, only a best fit to a frequency profile you have to measure first](../lessons/count-how-often-each-primitive-runs-before-choosing-how-data-is-stored.md)

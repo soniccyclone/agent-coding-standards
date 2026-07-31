@@ -87,6 +87,9 @@ tags: [work]
 - [Shared state is not a thing that exists but an agreement communication produces, so questions about it between agreements can be meaningless](../lessons/shared-state-is-an-agreement-produced-by-communication.md)
 - [A changing quantity and a fixed history are two descriptions of one thing; choosing the second deletes state without deleting the phenomenon](../lessons/a-changing-quantity-and-a-fixed-history-are-the-same-thing.md)
 - [A thing may be defined in terms of itself whenever consumption provably lags production](../lessons/a-definition-may-use-itself-if-consumption-lags-production.md)
+- [Reify the whole trajectory and improving the convergence becomes an ordinary program](../lessons/reify-the-whole-trajectory-and-improvements-to-convergence-become-ordinary-programs.md)
+- [An enumeration of an unbounded space is correct only if every element has a finite arrival position](../lessons/an-enumeration-is-only-correct-if-every-element-has-a-finite-arrival-time.md)
+- [A component that must see all its input before emitting anything cannot be placed in a loop](../lessons/a-component-that-needs-all-its-input-before-emitting-anything-forbids-feedback.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

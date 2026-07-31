@@ -78,6 +78,10 @@ tags: [work]
 - [An approximate model needs both a repair path and a coarsening path](../lessons/an-approximate-model-needs-a-repair-path-and-a-coarsening-path.md)
 - [Keep history at geometrically decaying resolution](../lessons/keep-history-at-geometrically-decaying-resolution.md)
 
+- [An estimate that decides what you observe will confirm itself](../lessons/an-estimate-that-decides-what-you-observe-will-confirm-itself.md)
+- [Grade a procedure that must decide now against what hindsight could have done](../lessons/grade-irreversible-decisions-against-hindsight.md)
+- [Close a guarantee from both sides, with a witness above and a structural argument below](../lessons/close-a-guarantee-from-both-sides-with-different-kinds-of-argument.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in
