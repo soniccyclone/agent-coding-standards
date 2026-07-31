@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 10100** — Chapters 1 (from 1.5),
-2, 3, 4 and 5 read in full; Chapter 6 read through 6.4 (mid).
+pass died immediately. Current position: **line 10540** — Chapters 1 (from 1.5),
+2, 3, 4 and 5 read in full; Chapter 6 read through 6.5 (mid).
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)

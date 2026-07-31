@@ -29,7 +29,7 @@ forward toward line 22864. Current position recorded below; if this file still s
 **Current position: line 11709 — chapter 9 complete and mined (9.1-9.4, including the
 serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
 read and mined in full including the module Net listing (pure Oberon source, no prose);
-chapter 11 read and mined through section 11.3's prose (to line 12926). Earlier state, still true:
+chapter 11 read and mined through section 11.5's prose (to line 13345). Earlier state, still true:
 chapter 5 prose complete through section 5.5 (text frames,
 font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
 complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
@@ -155,3 +155,5 @@ section are where the extractable lessons are.
 - [Justify a partition by the change it must absorb, and name the change](../lessons/justify-a-partition-by-the-change-it-must-absorb-and-name-the-change.md)
 - [Cut a long job where its resource demand changes, and let each piece name its successor](../lessons/cut-a-long-job-where-its-resource-demand-changes.md)
 - [Keep what lets you check, not what lets you act](../lessons/keep-what-lets-you-check-not-what-lets-you-act.md)
+- [Admission and ownership are two different protections, and only one of them changes the data model](../lessons/admission-and-ownership-are-two-different-protections.md)
+- [Price protection against a stated motive, and write the premise down](../lessons/price-protection-against-a-stated-motive.md)

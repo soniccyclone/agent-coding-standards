@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "You cannot schedule what you cannot see waiting: split the atomic acquire into a request and a grant"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, parallelizability, hardware-affinity]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# You cannot schedule what you cannot see waiting: split the atomic acquire into a request and a grant
+
+**Lesson:** So long as taking a resource is one indivisible act, there is no such thing as a waiting user — a user is either holding the resource or not, and the set of parties who would like it does not exist anywhere in the system. That is why unmediated contention produces arbitrary service: at each release the next holder is chosen from whoever happens to be asking at that instant, and a newcomer is as eligible as someone who has been trying for an hour. No policy can improve this, because there is nothing for a policy to range over. The prerequisite for any scheduling at all is therefore a representational change: split acquisition into a request that announces interest and a grant that confers possession. The interval between them is precisely the wait, which makes the wait an object — observable, orderable, and measurable — rather than an absence.
+
+Once that split exists, useful policy becomes cheap. Serving in order of request needs only that each request take a strictly increasing number and each grant serve the lowest outstanding one, which is implementable with three counters and no queue structure at all, and which yields a bound: everyone ahead of you must be served before you, so your wait is bounded by their number rather than by luck. The invariant to enforce is smaller than it looks — that there is never simultaneously an idle resource and a waiting requester — and everything else follows. Note what has actually been purchased: not shorter waits, which no scheduler creates, but predictable ones, and predictability is usually the thing people wanted when they asked for speed.
+
+Two honest limits belong with this. Scheduling cannot manufacture capacity; a resource under sustained heavy load can only be fixed by providing more of it, rationing it, or pricing it, and any policy discussion that skips this is a discussion about how to distribute a shortfall. And a resource that is lightly loaded on average will still have peaks, which is exactly when the ordering discipline earns its keep — so the argument for building it is not the average case, and the load figure that justifies it is the peak. Prefer knowing you will be served within the hour to not knowing whether it will be a minute or a day.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the scheduling section of the shared resources chapter, which observes that with nondeterministic choice among waiters a newly arrived process may be chosen repeatedly and some processes delayed indefinitely; states that the only solutions for a consistently overloaded resource are more of it, rationing, or heavy charges, that averages conceal peaks, and that consistent predictable delay is what matters; concludes that acquisition can no longer be a single atomic event and must be split into a request signal and a signal accompanying actual allocation, with the interval between them being the wait; and gives Lamport's bakery algorithm, keeping counts of requests, grants and releases, whose stated main task is to ensure there is never simultaneously a free resource and a waiting customer.

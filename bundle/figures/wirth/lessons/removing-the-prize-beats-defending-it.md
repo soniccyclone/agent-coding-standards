@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Removing the prize beats defending it"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, primitive-count, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Removing the prize beats defending it
+
+**Lesson:** A feature that seems obviously worth having — administer the system from anywhere, run arbitrary extensions on it, reach every function through the same channel — can turn out to be the single decision that determines how much protection machinery the whole design must carry. Convenience of that kind creates a privileged path, a privileged path requires a privileged identity, a privileged identity requires levels, and levels require a mechanism for deciding who is at which. None of that apparatus exists for the sake of the feature; it exists because the feature created something worth taking. The apparatus then becomes the thing under attack, and its complexity is itself the attack surface.
+
+So before designing a defence, consider deleting the thing being defended. If the privileged operations are performed rarely and by one person, requiring that person to be physically at the machine costs almost nothing and removes the privileged remote path entirely, along with everything the path implied — no distinguished super-identity, no escalation to attempt, no gradations to get subtly wrong. This is a genuine trade, not a dodge: you are exchanging an operational inconvenience for the removal of a category of design, and the exchange is favourable exactly when the inconvenience is small and the category is large. It usually is, because protection machinery is not merely code but a permanent obligation to reason about every future feature's interaction with it.
+
+The same reasoning applies to what a component is capable of, not just to who can reach it. A machine that will accept and run arbitrary submitted programs must, from then on, defend against everything such a program could attempt, which is an unbounded set. A machine that accepts only data and performs only its own fixed repertoire of operations has a bounded set of things that can go wrong, and the bound comes from the design rather than from vigilance. Constraining what may be requested is therefore a stronger move than constraining who may request it. The general heuristic: when a protection requirement starts growing, look upstream for the capability that created it, and price removing that capability against defending it — the removal is often both cheaper and more certain, and it is the only one of the two whose correctness does not have to be re-argued every time the system changes.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — the passage closing section 11.5, which anticipates the reader wondering why a more advanced administration allowing the human administrator to operate the server remotely was not chosen, and answers that the consequences of this widely used approach would require substantial additions, would inflate the issue of security and protection beyond what is justified for a local system, and would begin with a differentiation among levels of protection in which the administrator becomes a super-user with extra privileges such as changing the user table, at which point the game of trying to break the protection measures becomes an interesting challenge; and the stated alternative of assuming that physical access to the server station is reserved to the administrator, together with the closing observation that the impossibility of activating users' programs on the server station significantly reduces the possibilities for inflicting damage from outside.
