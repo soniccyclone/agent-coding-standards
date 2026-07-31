@@ -17,7 +17,7 @@ single-machine formalisms don't have to account for.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-303 lessons from 58 figures.
+343 lessons from 65 figures.
 
 **abiteboul** (4)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -183,6 +183,16 @@ No works or lessons tagged with this subdomain yet.
 **hilbert** (1)
 - [When something resists being built, go prove it cannot be built under the assumptions you made](../figures/hilbert/lessons/an-impossibility-proof-is-a-result.md)
 
+**hoare** (8)
+- [Aim to avoid persistently pessimal states rather than to reach optimal ones, because locally fair rules are globally unfair](../figures/hoare/lessons/avoid-the-pessimal-rather-than-chase-the-optimal.md)
+- [Decide who establishes a condition, and hand the guarantee over atomically instead of making the waiter re-derive it](../figures/hoare/lessons/hand-off-a-guarantee-instead-of-making-the-waiter-re-derive-it.md)
+- [Define an unbounded facility as the limit of bounded ones, so no run needs semantics the bounded language lacks](../figures/hoare/lessons/define-the-unbounded-case-as-the-limit-of-bounded-ones.md)
+- [Never let correctness rest on a courtesy the implementation was never obliged to provide](../figures/hoare/lessons/never-let-correctness-rest-on-a-courtesy.md)
+- [Prove a construct is missing with a closure property, not with an appeal to symmetry](../figures/hoare/lessons/prove-a-construct-is-missing-with-a-closure-property.md)
+- [Test a candidate primitive by re-deriving the constructs it should replace, then keep them anyway](../figures/hoare/lessons/re-derive-the-constructs-to-test-a-primitive-then-keep-them.md)
+- [Under overload a dynamic allocator must fall back toward a static regime, so design the floors before the flexibility](../figures/hoare/lessons/under-overload-a-dynamic-scheme-must-fall-back-toward-static-reservation.md)
+- [When two candidate primitives can each define the other, the tiebreak has to come from outside the algebra](../figures/hoare/lessons/interderivable-features-need-a-tiebreak-from-outside.md)
+
 **jones** (10)
 - [Choose the property that must hold at every intermediate moment before you design the parts that run](../figures/jones/lessons/choose-the-property-that-holds-mid-flight-first.md)
 - [Constrain shared state to move in one direction, and a stale read becomes merely conservative](../figures/jones/lessons/make-shared-state-move-in-one-direction.md)
@@ -198,6 +208,14 @@ No works or lessons tagged with this subdomain yet.
 **karp** (2)
 - [When decisions are irrevocable and the future is unknown, redefine quality as a ratio to an oracle, then prove the ceiling so you know when to stop trying](../figures/karp/lessons/judge-irrevocable-decisions-against-an-oracle-and-prove-the-ceiling.md)
 - [Where you inject randomness matters more than how much: one hidden commitment held consistently beats a fresh coin flip per decision](../figures/karp/lessons/commit-to-one-random-choice-instead-of-re-rolling-each-decision.md)
+
+**kolmogorov** (6)
+- [A guarantee about one trial says nothing about many, and one about many says nothing about any](../figures/kolmogorov/lessons/guarantees-do-not-transport-across-quantifier-scope.md)
+- [Aggregation composes for free along refinements, and for nothing else without a hypothesis](../figures/kolmogorov/lessons/aggregate-in-stages-along-refinements-and-nowhere-else-for-free.md)
+- [An aggregate is predictable when no single input has much influence, not when it has many inputs](../figures/kolmogorov/lessons/small-per-input-influence-is-what-makes-an-aggregate-predictable.md)
+- [Checking every pair is not checking the whole, and the constraint count tells you how much you skipped](../figures/kolmogorov/lessons/checking-every-pair-is-not-checking-the-whole.md)
+- [Define an unbounded object by all its finite views plus the requirement that they agree](../figures/kolmogorov/lessons/specify-the-unbounded-object-by-its-finite-views.md)
+- [If no bounded observation can move a belief, the matter is already settled and you are only ignorant](../figures/kolmogorov/lessons/if-no-finite-observation-moves-it-it-is-already-decided.md)
 
 **lamport** (9)
 - [Correct parts do not make a correct whole; name the composition condition and price it](../figures/lamport/lessons/local-correctness-does-not-compose.md)
@@ -367,6 +385,20 @@ No works or lessons tagged with this subdomain yet.
 - [When a technique cannot express a requirement, suspect the requirement: use the failure as a probe](../figures/schneider/lessons/an-unimplementable-condition-indicts-the-specification.md)
 - [When an ideal is unbuildable, keep its interface and make the gap a parameter](../figures/schneider/lessons/index-an-unreachable-abstraction-by-its-breaking-point.md)
 
+**scott** (1)
+- [A symmetric operator is a claim about the execution model, not just a truth table](../figures/scott/lessons/a-symmetric-operator-is-a-claim-about-the-execution-model.md)
+
+**sifakis** (6)
+- [An analysis only scales if it distributes over the operator that builds the system, and that is a theorem with fine print](../figures/sifakis/lessons/ask-whether-the-analysis-distributes-over-composition.md)
+- [Give up on the general theory: specialize the argument to one property and one architecture](../figures/sifakis/lessons/narrow-the-guarantee-until-it-becomes-cheap.md)
+- [Reasoning at the level where structure is still visible beats translating everything down to one composition primitive](../figures/sifakis/lessons/do-not-flatten-architecture-into-one-primitive.md)
+- [The claim you most need about a running system is that a way forward still exists](../figures/sifakis/lessons/some-properties-are-about-what-remains-possible.md)
+- [When a coarse model kills the property you wanted, change what counts as a single step](../figures/sifakis/lessons/redefine-what-counts-as-a-step.md)
+- [\"Can it happen?\" and \"must it always hold?\" need approximations that err in opposite directions](../figures/sifakis/lessons/existential-and-universal-questions-need-opposite-approximations.md)
+
+**stearns** (1)
+- [Stop choosing between methods with incomparable costs and race them, because the pointwise minimum is nearly free](../figures/stearns/lessons/race-incomparable-methods-the-minimum-is-nearly-free.md)
+
 **steele** (3)
 - [A dynamic phenomenon cannot be governed by a construct with lexical scope, and shipping one anyway is worse than shipping nothing](../figures/steele/lessons/a-dynamic-phenomenon-cannot-be-controlled-by-a-lexical-construct.md)
 - [A model that works by copying can never express sharing, so its blind spots tell you which features are really primitive](../figures/steele/lessons/a-semantic-model-that-copies-cannot-express-sharing.md)
@@ -386,10 +418,11 @@ No works or lessons tagged with this subdomain yet.
 - [Preserve the programmer's indifference to order](../figures/strachey/lessons/preserve-the-programmers-indifference-to-order.md)
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
 
-**sussman** (3)
+**sussman** (4)
 - [Demand-driven evaluation silently assumes one producer and a final answer; drop either and pulling has no definition until interest itself becomes data](../figures/sussman/lessons/demand-is-undefined-when-a-place-has-many-sources.md)
 - [Encode a new ambient mode inside a mechanism you already have, then audit the laws it just inherited](../figures/sussman/lessons/give-a-new-mode-to-an-existing-mechanism-and-audit-what-it-inherits.md)
 - [If updates only ever add information, order stops mattering — and the single operation that takes information away costs you that freedom everywhere](../figures/sussman/lessons/one-retraction-costs-you-the-whole-schedule-freedom.md)
+- [Replace control flow with a topology and a base case becomes a starvation condition, so recursion has to be built as growth gated on arrival](../figures/sussman/lessons/a-base-case-becomes-a-starvation-condition.md)
 
 **sutherland** (1)
 - [Let stages negotiate locally instead of scheduling them globally](../figures/sutherland/lessons/let-stages-negotiate-locally-instead-of-scheduling-them-globally.md)
@@ -420,20 +453,41 @@ No works or lessons tagged with this subdomain yet.
 - [Restartability is a shape you keep, not a feature you add](../figures/ullman/lessons/restartability-is-a-shape-not-a-feature.md)
 - [The dependency between inputs and outputs bounds what any parallel version can cost](../figures/ullman/lessons/what-each-output-needs-bounds-what-parallelism-can-cost.md)
 
-**vardi** (3)
+**valiant** (1)
+- [Name the resource your guarantee assumes but cannot control, then notice that starving it is itself a mechanism](../figures/valiant/lessons/name-the-resource-your-guarantee-assumes-but-does-not-control.md)
+
+**vardi** (6)
 - [A broadcast is not n messages: the mode of delivery, not the payload, is what a group can build on](../figures/vardi/lessons/a-broadcast-is-not-n-messages.md)
 - [A group's knowledge is its own object, above and below the sum of its members'](../figures/vardi/lessons/a-groups-knowledge-is-its-own-object.md)
+- [A message's content is fixed by the messages it was chosen from, not by how much it narrows anyone's uncertainty](../figures/vardi/lessons/a-messages-content-is-fixed-by-the-messages-it-was-chosen-from.md)
+- [Model learning as cutting links in a fixed space, not as deleting candidates from it](../figures/vardi/lessons/model-learning-as-cutting-links-not-as-deleting-candidates.md)
 - [Represent ignorance as the set of alternatives you cannot rule out, and let knowledge be what survives across all of them](../figures/vardi/lessons/represent-ignorance-as-the-set-of-alternatives-you-cannot-rule-out.md)
+- [Separate the predicate you reason with from the predicate a component can evaluate](../figures/vardi/lessons/separate-the-predicate-you-reason-with-from-the-one-a-component-can-evaluate.md)
 
 **von-thun** (1)
 - [Notation that over-specifies order hides independence you already have](../figures/von-thun/lessons/notation-that-over-specifies-order-hides-independence-you-already-have.md)
 
-**wilkes** (5)
+**wilkes** (8)
 - [Compare two mechanisms by counting how many of their properties have to be exactly right](../figures/wilkes/lessons/count-how-many-things-have-to-be-exactly-right.md)
+- [Give one copy exclusive authority for a bounded interval instead of keeping two copies in step](../figures/wilkes/lessons/give-one-copy-exclusive-authority-instead-of-keeping-two-in-step.md)
+- [Hang deferred reconciliation on a transition the system already makes, and carry the smallest per-entry state that makes deferring safe](../figures/wilkes/lessons/reconcile-at-a-transition-the-system-already-makes.md)
 - [Judge a parallel design by its utilization on the problems you did not have in mind](../figures/wilkes/lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)
 - [Leaving a rule unenforced needs an argument about who could break it, not about how likely breakage is](../figures/wilkes/lessons/an-unenforced-rule-needs-a-bounded-set-of-violators.md)
 - [Specify what a component requires from its environment, not only what it offers, and the call-versus-message choice becomes reversible](../figures/wilkes/lessons/specify-the-environment-a-component-needs.md)
+- [When a cheap check gates an expensive fallback, start both at once and abandon the loser — if abandoning leaves nothing behind](../figures/wilkes/lessons/issue-the-slow-path-alongside-the-check-if-you-can-abandon-it.md)
 - [Whoever saves your state holds your secrets, so look for leaks in the suspend mechanism and not in the interface](../figures/wilkes/lessons/whoever-saves-your-state-holds-your-secrets.md)
 
 **wirth** (1)
 - [Make the set of interleaving points enumerable by construction, and hang the exclusion on the boundary](../figures/wirth/lessons/make-the-set-of-interleaving-points-enumerable-by-construction.md)
+
+**yao** (10)
+- [A model earns its keep by making impossibility sayable, not by making solutions prettier](../figures/yao/lessons/a-model-earns-its-keep-by-making-impossibility-sayable.md)
+- [An audit that requires opening the box destroys the property it was protecting; buy tunable doubt instead](../figures/yao/lessons/an-audit-that-opens-the-box-is-not-an-audit.md)
+- [Concede the deviation you cannot prevent, then define correctness as that deviation being the only one available](../figures/yao/lessons/concede-the-attack-you-cannot-prevent-and-make-it-the-only-one.md)
+- [Make abandonment a first-class correctness property, and specify it as a recovery procedure the injured party can run](../figures/yao/lessons/correctness-must-cover-the-party-who-walks-away.md)
+- [Price a new guarantee as a ratio to the unconstrained baseline, so you learn whether the cost belongs to the guarantee or to the problem](../figures/yao/lessons/price-a-guarantee-against-the-unconstrained-baseline.md)
+- [State a privacy requirement as an equality with what the answer already implies, quantified over what an adversary can compute](../figures/yao/lessons/state-privacy-as-an-equality-with-what-the-answer-implies.md)
+- [When a goal is proved unreachable, vary the goal's shape rather than reaching for stronger tools](../figures/yao/lessons/when-a-goal-is-impossible-vary-the-goal-not-the-tools.md)
+- [When the deployment shape changes, re-pick the resource you count before re-tuning anything](../figures/yao/lessons/measure-the-resource-that-became-scarce-not-the-one-you-inherited.md)
+- [When the protocol cannot be strengthened, strengthen what participants must arrive holding — and pick the arrival format that lets stages chain](../figures/yao/lessons/change-the-entry-contract-to-buy-a-stronger-guarantee.md)
+- [When two incomparable things must change hands, stop balancing the trade and build one gate that opens for both](../figures/yao/lessons/stop-balancing-the-trade-and-build-a-shared-gate.md)

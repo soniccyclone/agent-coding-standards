@@ -20,7 +20,7 @@ units of work.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-201 lessons from 71 figures.
+224 lessons from 79 figures.
 
 **abiteboul** (2)
 - [How you schedule the steps is part of what the program means](../figures/abiteboul/lessons/how-you-schedule-the-rules-is-part-of-what-they-mean.md)
@@ -168,6 +168,19 @@ No lessons scored on this axis yet.
 - [Separate the part that must be correct from the part that must be tuned, and let only the tuned part be replaceable](../figures/herlihy/lessons/separate-the-mechanism-that-is-correct-from-the-policy-that-makes-progress.md)
 - [Shrink what you hold before getting clever about arbitrating collisions](../figures/herlihy/lessons/shrink-the-window-before-arbitrating-the-collisions.md)
 
+**hoare** (8)
+- [Aim to avoid persistently pessimal states rather than to reach optimal ones, because locally fair rules are globally unfair](../figures/hoare/lessons/avoid-the-pessimal-rather-than-chase-the-optimal.md)
+- [Decide who establishes a condition, and hand the guarantee over atomically instead of making the waiter re-derive it](../figures/hoare/lessons/hand-off-a-guarantee-instead-of-making-the-waiter-re-derive-it.md)
+- [Draw the encapsulation boundary so the discipline you need becomes a textual property a machine can check](../figures/hoare/lessons/put-the-discipline-where-a-textual-scan-can-enforce-it.md)
+- [Every point where an operation can block is a public boundary, so the invariant must hold there too](../figures/hoare/lessons/every-point-where-you-can-block-is-a-public-boundary.md)
+- [Never let correctness rest on a courtesy the implementation was never obliged to provide](../figures/hoare/lessons/never-let-correctness-rest-on-a-courtesy.md)
+- [Prove a construct is missing with a closure property, not with an appeal to symmetry](../figures/hoare/lessons/prove-a-construct-is-missing-with-a-closure-property.md)
+- [Splitting a global optimization into independent modules is a hypothesis you must earn, not a structural default](../figures/hoare/lessons/decomposing-a-global-optimization-is-a-hypothesis-to-be-earned.md)
+- [Under overload a dynamic allocator must fall back toward a static regime, so design the floors before the flexibility](../figures/hoare/lessons/under-overload-a-dynamic-scheme-must-fall-back-toward-static-reservation.md)
+
+**ingalls** (1)
+- [A drawn cycle is not a causal one: classify each link by what triggers it, and keep repetition at the boundary of an acyclic region](../figures/ingalls/lessons/classify-edges-by-trigger-and-put-repetition-at-the-boundary.md)
+
 **jones** (8)
 - [Choose the property that must hold at every intermediate moment before you design the parts that run](../figures/jones/lessons/choose-the-property-that-holds-mid-flight-first.md)
 - [Constrain shared state to move in one direction, and a stale read becomes merely conservative](../figures/jones/lessons/make-shared-state-move-in-one-direction.md)
@@ -180,6 +193,12 @@ No lessons scored on this axis yet.
 
 **karp** (1)
 - [Stop optimizing the single step; find the batch of non-interfering steps and bound how many batches there are](../figures/karp/lessons/batch-non-interfering-improvements-into-phases.md)
+
+**kolmogorov** (4)
+- [Aggregation composes for free along refinements, and for nothing else without a hypothesis](../figures/kolmogorov/lessons/aggregate-in-stages-along-refinements-and-nowhere-else-for-free.md)
+- [An aggregate is predictable when no single input has much influence, not when it has many inputs](../figures/kolmogorov/lessons/small-per-input-influence-is-what-makes-an-aggregate-predictable.md)
+- [Before assuming you need a global pass, check whether local adaptation reaches the same bound](../figures/kolmogorov/lessons/reach-the-global-optimum-without-a-global-pass.md)
+- [Checking every pair is not checking the whole, and the constraint count tells you how much you skipped](../figures/kolmogorov/lessons/checking-every-pair-is-not-checking-the-whole.md)
 
 **lamport** (5)
 - [Correct parts do not make a correct whole; name the composition condition and price it](../figures/lamport/lessons/local-correctness-does-not-compose.md)
@@ -292,6 +311,16 @@ No lessons scored on this axis yet.
 - [Make every distributed decision rule immune to learning more, and interference disappears](../figures/schneider/lessons/decisions-that-later-news-cannot-falsify.md)
 - [The cost of coordination is set by the size of its audience, so shrink the audience before tuning the protocol](../figures/schneider/lessons/shrink-the-audience-before-optimizing-the-protocol.md)
 
+**scott** (2)
+- [A symmetric operator is a claim about the execution model, not just a truth table](../figures/scott/lessons/a-symmetric-operator-is-a-claim-about-the-execution-model.md)
+- [When meaning depends on context, make the context an argument rather than a hidden table](../figures/scott/lessons/make-the-context-an-argument-not-a-hidden-table.md)
+
+**sifakis** (1)
+- [An analysis only scales if it distributes over the operator that builds the system, and that is a theorem with fine print](../figures/sifakis/lessons/ask-whether-the-analysis-distributes-over-composition.md)
+
+**stearns** (1)
+- [Stop choosing between methods with incomparable costs and race them, because the pointwise minimum is nearly free](../figures/stearns/lessons/race-incomparable-methods-the-minimum-is-nearly-free.md)
+
 **steele** (4)
 - [A dynamic phenomenon cannot be governed by a construct with lexical scope, and shipping one anyway is worse than shipping nothing](../figures/steele/lessons/a-dynamic-phenomenon-cannot-be-controlled-by-a-lexical-construct.md)
 - [A model that works by copying can never express sharing, so its blind spots tell you which features are really primitive](../figures/steele/lessons/a-semantic-model-that-copies-cannot-express-sharing.md)
@@ -313,12 +342,16 @@ No lessons scored on this axis yet.
 - [Preserve the programmer's indifference to order](../figures/strachey/lessons/preserve-the-programmers-indifference-to-order.md)
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
 
-**sussman** (2)
+**sussman** (3)
+- [Build the algorithm's smallest local element and let the known global algorithm emerge, so neither side has to represent the other's problem](../figures/sussman/lessons/build-the-local-element-and-let-the-known-algorithm-emerge.md)
 - [If updates only ever add information, order stops mattering — and the single operation that takes information away costs you that freedom everywhere](../figures/sussman/lessons/one-retraction-costs-you-the-whole-schedule-freedom.md)
 - [Put the combining rule in the shared place rather than in the producers, and directions of flow you never enumerated become available](../figures/sussman/lessons/put-the-combining-rule-in-the-shared-place.md)
 
 **sutherland** (1)
 - [Let stages negotiate locally instead of scheduling them globally](../figures/sutherland/lessons/let-stages-negotiate-locally-instead-of-scheduling-them-globally.md)
+
+**tarjan** (1)
+- [Adaptivity turns reads into writes, and that is the bill you are actually paying](../figures/tarjan/lessons/adaptivity-turns-reads-into-writes-and-that-is-the-real-bill.md)
 
 **thompson** (3)
 - [A primitive that carries no state has handed that state to every caller](../figures/thompson/lessons/a-primitive-that-carries-no-state-hands-its-state-to-every-caller.md)
@@ -343,24 +376,30 @@ No lessons scored on this axis yet.
 **ungar** (1)
 - [Start the likely case and check the assumption alongside it, rather than checking first](../figures/ungar/lessons/assume-the-common-case-and-verify-it-concurrently.md)
 
-**vardi** (4)
+**vardi** (5)
 - [A broadcast is not n messages: the mode of delivery, not the payload, is what a group can build on](../figures/vardi/lessons/a-broadcast-is-not-n-messages.md)
 - [A group's knowledge is its own object, above and below the sum of its members'](../figures/vardi/lessons/a-groups-knowledge-is-its-own-object.md)
+- [A message's content is fixed by the messages it was chosen from, not by how much it narrows anyone's uncertainty](../figures/vardi/lessons/a-messages-content-is-fixed-by-the-messages-it-was-chosen-from.md)
 - [Finitize one dimension and evaluation stops being computation, becoming recognition](../figures/vardi/lessons/finitize-one-dimension-and-evaluation-becomes-recognition.md)
 - [Replace an inner recomputation with a guess you can check, and a product of costs becomes a sum](../figures/vardi/lessons/replace-inner-recomputation-with-a-guess-you-can-check.md)
 
 **von-thun** (1)
 - [Notation that over-specifies order hides independence you already have](../figures/von-thun/lessons/notation-that-over-specifies-order-hides-independence-you-already-have.md)
 
-**wilkes** (6)
+**wilkes** (7)
 - [A deliberately simple model at the user's level is what allows sophistication to be stacked above it](../figures/wilkes/lessons/one-thing-at-a-time-is-what-lets-abstraction-stack.md)
 - [Compare two mechanisms by counting how many of their properties have to be exactly right](../figures/wilkes/lessons/count-how-many-things-have-to-be-exactly-right.md)
 - [Judge a parallel design by its utilization on the problems you did not have in mind](../figures/wilkes/lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)
 - [Specify what a component requires from its environment, not only what it offers, and the call-versus-message choice becomes reversible](../figures/wilkes/lessons/specify-the-environment-a-component-needs.md)
 - [State crash safety as ordering invariants, then defer every write the invariants do not pin down](../figures/wilkes/lessons/state-the-ordering-invariants-then-defer-freely.md)
+- [When a cheap check gates an expensive fallback, start both at once and abandon the loser — if abandoning leaves nothing behind](../figures/wilkes/lessons/issue-the-slow-path-alongside-the-check-if-you-can-abandon-it.md)
 - [Whoever saves your state holds your secrets, so look for leaks in the suspend mechanism and not in the interface](../figures/wilkes/lessons/whoever-saves-your-state-holds-your-secrets.md)
 
 **wirth** (3)
 - [Make the set of interleaving points enumerable by construction, and hang the exclusion on the boundary](../figures/wirth/lessons/make-the-set-of-interleaving-points-enumerable-by-construction.md)
 - [Pick the representation that turns the operations into machine primitives, then bound the abstraction to keep it](../figures/wirth/lessons/pick-the-representation-that-turns-the-operations-into-machine-primitives.md)
 - [Separate the structure from the position in it, and give the position its own invariant](../figures/wirth/lessons/separate-the-structure-from-the-position-in-it.md)
+
+**yao** (2)
+- [Make abandonment a first-class correctness property, and specify it as a recovery procedure the injured party can run](../figures/yao/lessons/correctness-must-cover-the-party-who-walks-away.md)
+- [When the deployment shape changes, re-pick the resource you count before re-tuning anything](../figures/yao/lessons/measure-the-resource-that-became-scarce-not-the-one-you-inherited.md)

@@ -21,7 +21,7 @@ programming, but the axis that scores the compilation step itself.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-338 lessons from 75 figures.
+408 lessons from 84 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -209,8 +209,30 @@ No lessons scored on this axis yet.
 **hilbert** (1)
 - [Nothing you actually run is infinite; every guarantee has to be cashed out against the finite mechanism](../figures/hilbert/lessons/cash-out-the-idealization-against-the-finite-machine.md)
 
-**hoare** (1)
+**hoare** (12)
+- [A scarce resource delegated to an automatic mechanism has no owner, and nobody will count it](../figures/hoare/lessons/a-scarce-resource-delegated-to-a-mechanism-has-no-owner.md)
+- [A shared base is the intersection of its uses, not their union — if you forbid subsets you must make it small](../figures/hoare/lessons/a-shared-base-is-the-intersection-of-its-uses-not-the-union.md)
+- [Aim to avoid persistently pessimal states rather than to reach optimal ones, because locally fair rules are globally unfair](../figures/hoare/lessons/avoid-the-pessimal-rather-than-chase-the-optimal.md)
+- [Define an unbounded facility as the limit of bounded ones, so no run needs semantics the bounded language lacks](../figures/hoare/lessons/define-the-unbounded-case-as-the-limit-of-bounded-ones.md)
 - [Don't pre-spend your users' efficiency budget, and make any optimization visible in their own terms](../figures/hoare/lessons/dont-pre-spend-your-users-efficiency-budget.md)
+- [Never let correctness rest on a courtesy the implementation was never obliged to provide](../figures/hoare/lessons/never-let-correctness-rest-on-a-courtesy.md)
+- [Quality is a balance among incompatible criteria, and what a delivery crunch destroys is the balancing](../figures/hoare/lessons/quality-is-a-balance-of-incompatible-criteria-and-the-balancing-is-what-crunch-destroys.md)
+- [Read the shape of the optimization curve, not the size of the last gain — it tells you whether the design or the code is wrong](../figures/hoare/lessons/read-the-shape-of-the-optimization-curve-as-a-verdict.md)
+- [Scope a guarantee to what you can actually discharge, and push the residue somewhere it can be detected](../figures/hoare/lessons/scope-the-guarantee-and-name-the-residue.md)
+- [Under overload a dynamic allocator must fall back toward a static regime, so design the floors before the flexibility](../figures/hoare/lessons/under-overload-a-dynamic-scheme-must-fall-back-toward-static-reservation.md)
+- [Underspecify on purpose: a specification should name the choices it refuses to make](../figures/hoare/lessons/underspecify-on-purpose-and-make-the-choice-explicit.md)
+- [When two candidate primitives can each define the other, the tiebreak has to come from outside the algebra](../figures/hoare/lessons/interderivable-features-need-a-tiebreak-from-outside.md)
+
+**ingalls** (9)
+- [Cheat in the implementation but stay undetectable: guard the frequent case and fall through to the general one](../figures/ingalls/lessons/cheat-in-the-implementation-but-never-be-detectable.md)
+- [Compile a propagation structure by enumerating the places a change can enter and emitting one straight-line path for each](../figures/ingalls/lessons/compile-one-path-per-place-a-change-can-enter.md)
+- [Concentrate the whole system's contact with hardware into a few primitives, then spend all your optimization there](../figures/ingalls/lessons/concentrate-contact-with-technology-into-few-primitives.md)
+- [Judge an automatic mechanism by how its cost is distributed and how it behaves near exhaustion, then delegate the cases it cannot cover to whoever creates them](../figures/ingalls/lessons/judge-a-mechanism-by-its-timing-profile-and-delegate-its-gaps.md)
+- [Measure the cost your architecture exists to avoid — the avoidance machinery is often the more expensive half, and deleting it deletes a family of problems](../figures/ingalls/lessons/measure-the-cost-you-built-an-architecture-to-avoid.md)
+- [Never write the low-level system in the low-level language: write it in a subset of your good language shaped like the target, and translate](../figures/ingalls/lessons/write-the-low-level-system-in-a-target-shaped-subset-and-translate.md)
+- [Once the working set has to be swapped, density is speed — so encode by census and frequency, and keep the encoding invertible](../figures/ingalls/lessons/density-is-speed-once-the-working-set-swaps.md)
+- [Portability is a countable surface, and only a stranger can test it: concentrate the host-specific part, and refuse host facilities to keep behavior identical everywhere](../figures/ingalls/lessons/portability-is-a-countable-surface-tested-only-by-strangers.md)
+- [When you control how names are handed out, put the information in the name instead of in the thing named](../figures/ingalls/lessons/put-the-information-in-the-name-not-the-thing-named.md)
 
 **jones** (7)
 - [Admit a range of acceptable outcomes deliberately, because that is how a decision gets deferred to whoever should make it](../figures/jones/lessons/describe-a-range-of-outcomes-to-defer-the-decision.md)
@@ -227,12 +249,21 @@ No lessons scored on this axis yet.
 - [Refinement never repairs a growth rate, and a working demo on small inputs is not evidence](../figures/karp/lessons/refinement-never-repairs-a-growth-rate.md)
 - [Trust only the distinctions that survive a change of machine and a change of representation](../figures/karp/lessons/trust-only-classifications-that-survive-a-change-of-machine.md)
 
+**kay** (3)
+- [Convert the one non-negotiable requirement into a numeric budget, and let the budget eliminate whole option classes](../figures/kay/lessons/turn-the-hard-requirement-into-a-budget-that-eliminates.md)
+- [Measure quality where output is received, and design into the consumer's processing instead of around it](../figures/kay/lessons/design-into-the-receivers-transfer-function.md)
+- [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../figures/kay/lessons/response-inside-the-loop-of-thought.md)
+
 **kleene** (1)
 - [Canonical form buys you the proof, not the artifact — and the compiled shape follows the shape you wrote](../figures/kleene/lessons/canonical-forms-buy-proofs-not-artifacts.md)
 
 **knuth** (2)
 - [Find the state that makes already-consumed input unnecessary, and a scan becomes a stream](../figures/knuth/lessons/find-the-state-that-makes-the-consumed-input-unnecessary.md)
 - [Write the form you can prove, then transform it into the form that runs — they are different artifacts of one algorithm](../figures/knuth/lessons/write-the-provable-form-first-then-transform-it.md)
+
+**kolmogorov** (2)
+- [Before assuming you need a global pass, check whether local adaptation reaches the same bound](../figures/kolmogorov/lessons/reach-the-global-optimum-without-a-global-pass.md)
+- [The shortest description and the affordable one are different things, so carry the time budget in the definition](../figures/kolmogorov/lessons/the-shortest-description-is-not-the-affordable-one.md)
 
 **lamport** (2)
 - [Correct parts do not make a correct whole; name the composition condition and price it](../figures/lamport/lessons/local-correctness-does-not-compose.md)
@@ -287,12 +318,18 @@ No lessons scored on this axis yet.
 - [Separate the structure that is in the system from the structure your model imposes on it](../figures/mcmillan/lessons/separate-structure-in-the-system-from-structure-your-model-imposes.md)
 - [Systems are only well behaved where they can actually go](../figures/mcmillan/lessons/systems-are-only-well-behaved-where-they-can-actually-go.md)
 
+**naur** (3)
+- [Fix the defining form for human understanding, and let every machine encoding be a transliteration of it](../figures/naur/lessons/one-defining-representation-many-encodings.md)
+- [Mark every hole in a definition deliberately, and say who is obliged to fill it](../figures/naur/lessons/name-the-holes-and-name-who-fills-them.md)
+- [Restate each structural rule in the vocabulary of execution, then read the static restrictions off it](../figures/naur/lessons/restate-the-rule-in-the-vocabulary-of-execution.md)
+
 **nygaard** (1)
 - [Constrain What A Pointer May Denote, And Check At Runtime What You Cannot Prove](../figures/nygaard/lessons/qualified-references-bound-wrong-assumptions.md)
 
-**parnas** (3)
+**parnas** (4)
 - [A module is an assignment of responsibility, not a unit of the running program](../figures/parnas/lessons/modules-are-responsibility-assignments-not-runtime-objects.md)
 - [A program can be entirely correct and still have decayed into worthlessness](../figures/parnas/lessons/a-correct-program-can-still-lose-all-its-value.md)
+- [Build the richer mechanism on top of the plainer one, never inside it](../figures/parnas/lessons/build-the-richer-mechanism-on-top-of-the-plainer-one.md)
 - [Write down where your dividing criterion goes fuzzy, and name the arbiter that settles it](../figures/parnas/lessons/name-the-places-your-criterion-breaks-down.md)
 
 **pike** (4)
@@ -361,8 +398,26 @@ No lessons scored on this axis yet.
 - [The cost of coordination is set by the size of its audience, so shrink the audience before tuning the protocol](../figures/schneider/lessons/shrink-the-audience-before-optimizing-the-protocol.md)
 - [When an ideal is unbuildable, keep its interface and make the gap a parameter](../figures/schneider/lessons/index-an-unreachable-abstraction-by-its-breaking-point.md)
 
-**scott** (1)
+**scott** (6)
+- [A symmetric operator is a claim about the execution model, not just a truth table](../figures/scott/lessons/a-symmetric-operator-is-a-claim-about-the-execution-model.md)
 - [A theory of meaning is unfinished until every level from concept down to machine is bridged](../figures/scott/lessons/a-theory-is-unfinished-until-it-descends-to-the-machine.md)
+- [Knowing something can be computed is a different state of knowledge from knowing how](../figures/scott/lessons/knowing-a-thing-is-computable-is-not-knowing-how.md)
+- [Make realizability a predicate over a clean structure, not a restriction built into it](../figures/scott/lessons/make-effectiveness-a-predicate-over-a-clean-structure.md)
+- [Only an account of meaning that owes nothing to the implementation can judge the implementation](../figures/scott/lessons/an-independent-account-of-meaning-is-what-makes-correctness-checkable.md)
+- [State what a data type must satisfy instead of defining it as one representation](../figures/scott/lessons/give-a-theory-of-a-data-type-not-a-definition-of-it.md)
+
+**sifakis** (3)
+- [Everything you prove is about the model; the whole guarantee rests on how the model was derived](../figures/sifakis/lessons/a-model-is-worth-only-its-link-to-the-artifact.md)
+- [Prefer the algorithm that behaves well on the instances you get, not the one with the better bound](../figures/sifakis/lessons/worst-case-bounds-are-guarantees-not-forecasts.md)
+- [When an exhaustive method stalls, attack the representation before the algorithm](../figures/sifakis/lessons/when-search-saturates-change-the-representation.md)
+
+**stearns** (6)
+- [A cost measure earns trust by the invariances it turns into theorems](../figures/stearns/lessons/invariances-a-measure-must-make-into-theorems.md)
+- [An equivalence proved at one resolution licenses nothing at a finer one](../figures/stearns/lessons/an-equivalence-at-one-resolution-licenses-nothing-finer.md)
+- [Classifying by reduction throws away the one number you wanted, so track the size of the mapping](../figures/stearns/lessons/classification-by-reduction-discards-the-magnitude.md)
+- [Find the floor before mapping the slope, because extra resource can buy exactly nothing](../figures/stearns/lessons/find-the-floor-before-mapping-the-slope.md)
+- [Toggle one structural freedom at a time to learn which one owns the limit](../figures/stearns/lessons/toggle-one-structural-freedom-at-a-time.md)
+- [When you give up names, the whole emulation cost collapses into deciding identity](../figures/stearns/lessons/emulation-cost-is-the-cost-of-deciding-identity.md)
 
 **steele** (10)
 - [A description of a thing is not the thing; specify a constructor by the behaviour it must yield, never by the form it must produce](../figures/steele/lessons/specify-a-constructor-by-the-behaviour-it-must-yield-not-the-form.md)
@@ -398,6 +453,10 @@ No lessons scored on this axis yet.
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
 - [Say what happens and stay silent about the bookkeeping](../figures/strachey/lessons/say-what-happens-and-stay-silent-about-the-bookkeeping.md)
 
+**strassen** (2)
+- [In a self-applicable construction, only the operations that recurse set the growth rate — spend freely on the ones that do not](../figures/strassen/lessons/eliminate-the-operation-that-recurses.md)
+- [Separate improvements that exploit today's cost table from improvements that change the growth law](../figures/strassen/lessons/separate-improvements-that-exploit-the-cost-table-from-those-that-change-the-growth-law.md)
+
 **sussman** (11)
 - [A layer meant to be shared by everything must be low in concept count, not close to the machine — those are different kinds of low](../figures/sussman/lessons/a-common-layer-must-be-low-in-concepts-not-close-to-the-machine.md)
 - [A procedure call is a jump that carries bindings; the stack exists only because you wanted a value back](../figures/sussman/lessons/a-call-is-a-jump-that-carries-bindings.md)
@@ -420,17 +479,28 @@ No lessons scored on this axis yet.
 - [Rank candidate methods by how they grow, then cut what still will not fit](../figures/sutherland/lessons/rank-candidates-by-how-they-grow-not-how-they-look-today.md)
 - [Trade unstructured noise for an ambiguity you can compute away](../figures/sutherland/lessons/trade-unstructured-noise-for-an-ambiguity-you-can-compute-away.md)
 
-**tarjan** (10)
+**tarjan** (21)
+- [Adaptivity turns reads into writes, and that is the bill you are actually paying](../figures/tarjan/lessons/adaptivity-turns-reads-into-writes-and-that-is-the-real-bill.md)
+- [An adaptive process that is cheap overall must pass through states worth keeping, so you can stop adapting and harvest one](../figures/tarjan/lessons/an-adaptive-process-worth-running-passes-through-states-worth-keeping.md)
 - [Evaluate mitigations in combination, and prefer ones that cover different failure modes](../figures/tarjan/lessons/measure-mitigations-in-combination-not-one-at-a-time.md)
 - [Find the floor before you climb, so you know when optimizing is finished](../figures/tarjan/lessons/find-the-floor-so-you-know-when-to-stop-optimizing.md)
 - [Find the regime where the bad bound actually bites, because outside it the cheap analysis holds](../figures/tarjan/lessons/find-the-regime-where-the-bad-bound-actually-bites.md)
+- [Fit the measurement to the shape you claimed, and find out which resource actually binds](../figures/tarjan/lessons/fit-the-measurement-to-the-claimed-shape-and-find-which-resource-binds.md)
+- [Give a subcomputation its own view of shared mutable state with a boundary marker and a proof that the older entries cannot matter](../figures/tarjan/lessons/scope-shared-mutable-state-with-a-marker-and-an-irrelevance-proof.md)
 - [Know which machine your claim needs, and don't let a convenience strengthen the assumption](../figures/tarjan/lessons/know-which-machine-your-claim-needs.md)
+- [Make the unit of work the set of decisions that are forced to move together](../figures/tarjan/lessons/make-the-unit-of-work-the-set-of-decisions-that-move-together.md)
+- [Measure the improvement against inputs that actually occur, and publish the result even when it goes against you](../figures/tarjan/lessons/measure-your-improvement-against-the-inputs-that-actually-occur.md)
+- [Narrow the input in cheap front passes so the core algorithm may assume more, and the bound simplifies with it](../figures/tarjan/lessons/narrow-the-input-before-you-start-so-the-core-can-assume-more.md)
 - [Optimize for the caller's operation mix, and let an abstract operation set spread the gain](../figures/tarjan/lessons/optimize-for-the-callers-operation-mix-not-per-operation-symmetry.md)
+- [Order the work so the items nest, and the bookkeeping collapses to a stack](../figures/tarjan/lessons/order-the-work-so-it-nests-and-a-stack-is-enough.md)
 - [Park a pending transformation at the top of the aggregate and resolve it on the way down](../figures/tarjan/lessons/park-a-pending-transformation-at-the-root-and-resolve-it-on-descent.md)
 - [Price out what foresight is worth; when the ratio will not close, buy slack instead](../figures/tarjan/lessons/price-out-foresight-then-buy-slack-instead.md)
 - [Push what the outer layer knows about access frequency down into the inner structure](../figures/tarjan/lessons/push-the-access-distribution-down-into-the-lower-layer.md)
 - [Size each round to the unavoidable floor, then reduce the whole analysis to counting rounds](../figures/tarjan/lessons/size-each-round-to-the-unavoidable-floor-then-count-rounds.md)
+- [Specify in the form that proves easily, implement in the form that fuses the passes, and keep the equivalence explicit](../figures/tarjan/lessons/specify-in-the-form-that-proves-implement-in-the-form-that-fuses.md)
+- [Speed an algorithm up by re-hosting its bookkeeping, not by rewriting its logic](../figures/tarjan/lessons/speed-up-an-algorithm-by-re-hosting-its-bookkeeping-not-rewriting-it.md)
 - [Tolerate a bounded amount of damage before repairing, and let the accounting pick the threshold](../figures/tarjan/lessons/let-the-accounting-choose-the-repair-threshold.md)
+- [Trigger maintenance on the gap between predicted and observed cost, and reject any tuning rule that needs the answer up front](../figures/tarjan/lessons/trigger-maintenance-on-the-gap-between-predicted-and-observed-cost.md)
 
 **thompson** (7)
 - [Absorb hardware variety at the lowest boundary so nothing above it has to know](../figures/thompson/lessons/absorb-variety-at-the-lowest-boundary.md)
@@ -475,26 +545,37 @@ No lessons scored on this axis yet.
 - [When a population's behavior is sharply split, find the cheap observable that separates it and stop treating it uniformly](../figures/ungar/lessons/stratify-a-population-by-a-cheap-predictor.md)
 - [Your cost model is the style guide people actually obey; make the good structure the cheap one](../figures/ungar/lessons/your-cost-model-is-a-style-guide-people-actually-obey.md)
 
+**valiant** (3)
+- [Bound the size of the answer first; that bound tells you how many narrow views you need to reconstruct it](../figures/valiant/lessons/bound-the-answer-first-then-assemble-it-from-narrow-views.md)
+- [Coarsen the question until a forbidden move becomes legal, and let the precision you need cap the correction terms](../figures/valiant/lessons/coarsen-the-question-until-the-forbidden-move-becomes-legal.md)
+- [Name the resource your guarantee assumes but cannot control, then notice that starving it is itself a mechanism](../figures/valiant/lessons/name-the-resource-your-guarantee-assumes-but-does-not-control.md)
+
 **vardi** (2)
 - [A broadcast is not n messages: the mode of delivery, not the payload, is what a group can build on](../figures/vardi/lessons/a-broadcast-is-not-n-messages.md)
 - [Length is cheap, simultaneity is not: reuse names to keep the working set narrow](../figures/vardi/lessons/length-is-cheap-simultaneity-is-not-reuse-your-names.md)
 
-**wilkes** (15)
+**wilkes** (21)
 - [Ask what your fixed part is a special case of, then price the version where it varies](../figures/wilkes/lessons/a-fixed-table-is-a-writable-one-with-a-constraint.md)
 - [Borrow the problem from an existing solution, never the mechanism, when the materials differ](../figures/wilkes/lessons/borrow-the-problem-not-the-mechanism.md)
 - [Choose a representation by what the management operations must iterate over, not by which is conceptually cleaner](../figures/wilkes/lessons/keep-together-what-must-be-managed-together.md)
 - [Choose the representation the problem needs first, and treat a notation as a commitment to a representation](../figures/wilkes/lessons/choosing-a-language-is-choosing-a-data-structure.md)
 - [Compare two mechanisms by counting how many of their properties have to be exactly right](../figures/wilkes/lessons/count-how-many-things-have-to-be-exactly-right.md)
 - [Expect a long, demoralizing gap between demonstrating a principle and exploiting the technology behind it](../figures/wilkes/lessons/the-trough-between-demonstration-and-full-engineering.md)
+- [Give one copy exclusive authority for a bounded interval instead of keeping two copies in step](../figures/wilkes/lessons/give-one-copy-exclusive-authority-instead-of-keeping-two-in-step.md)
 - [Judge a parallel design by its utilization on the problems you did not have in mind](../figures/wilkes/lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)
 - [Keep building things that are not meant to become products, especially when the unit of composition changes](../figures/wilkes/lessons/builds-that-are-not-products-are-how-a-field-learns.md)
 - [Learn to recognize the efficiency objection that is valid and still loses](../figures/wilkes/lessons/the-efficiency-objection-is-usually-valid-and-usually-loses.md)
+- [Let claimants collide in one pool with an ownership tag rather than carving the resource up, because partitioning exports an allocation problem upward](../figures/wilkes/lessons/share-by-tagging-owners-not-by-partitioning.md)
 - [Make the substrate-independent form the authoritative one, not a translation you produce on demand](../figures/wilkes/lessons/make-the-portable-form-the-authoritative-one.md)
 - [Put a number on how much extra you would pay for uniformity, so the trade stops being a matter of taste](../figures/wilkes/lessons/name-the-exchange-rate-you-would-pay-for-uniformity.md)
 - [Refuse to build a craft around a constraint you expect the technology to remove](../figures/wilkes/lessons/dont-build-a-craft-around-a-constraint-you-expect-to-disappear.md)
 - [The cost of crossing a boundary decides how much ends up inside it](../figures/wilkes/lessons/the-cost-of-crossing-decides-what-ends-up-inside.md)
+- [The unit you move data in is a consequence of where the cost sits, so re-derive it whenever a new tier changes the cost shape](../figures/wilkes/lessons/re-derive-the-transfer-unit-when-the-cost-shape-changes.md)
+- [When a cheap check gates an expensive fallback, start both at once and abandon the loser — if abandoning leaves nothing behind](../figures/wilkes/lessons/issue-the-slow-path-alongside-the-check-if-you-can-abandon-it.md)
 - [When a design problem has unstable solutions, keep reviewing the considerations instead of studying the artifacts](../figures/wilkes/lessons/when-the-solution-is-unstable-keep-reviewing-the-considerations.md)
 - [When accountability fights speed, split the mechanism at the frequency boundary rather than picking one policy](../figures/wilkes/lessons/split-a-mechanism-at-the-frequency-boundary.md)
+- [When you cannot predict which data a computation will touch, build the mechanism that lets the touching itself decide](../figures/wilkes/lessons/let-the-reference-stream-define-the-working-set.md)
+- [When you index by a lossy function of a key, store the part you discarded so a hit can be told from a coincidence](../figures/wilkes/lessons/keep-the-bits-you-discarded-to-index-cheaply.md)
 
 **wirth** (13)
 - [Admit to the foundation only what one representation can serve for nearly everyone](../figures/wirth/lessons/admit-to-the-foundation-only-what-one-representation-can-serve.md)
@@ -510,3 +591,10 @@ No lessons scored on this axis yet.
 - [Pay for speed with derived state, but price the exchange before you buy](../figures/wirth/lessons/pay-for-speed-with-derived-state-and-price-it-first.md)
 - [Pick the representation that turns the operations into machine primitives, then bound the abstraction to keep it](../figures/wirth/lessons/pick-the-representation-that-turns-the-operations-into-machine-primitives.md)
 - [Restructure the candidate space before you optimize the search through it](../figures/wirth/lessons/restructure-the-candidate-space-before-searching-it.md)
+
+**yao** (5)
+- [Permission to store a function of your data is a different power from permission to store the data](../figures/yao/lessons/storing-a-function-of-your-data-is-a-different-power-than-storing-it.md)
+- [Price a new guarantee as a ratio to the unconstrained baseline, so you learn whether the cost belongs to the guarantee or to the problem](../figures/yao/lessons/price-a-guarantee-against-the-unconstrained-baseline.md)
+- [To get a claim that outlives the hardware, let the machine-dependent quantity diverge instead of fixing a plausible value](../figures/yao/lessons/let-the-machine-dependent-quantity-diverge-instead-of-picking-a-plausible-value.md)
+- [When both extremes of a parameter are easy for opposite reasons, the hard case is the middle](../figures/yao/lessons/when-both-extremes-are-easy-the-difficulty-lives-in-the-middle.md)
+- [When the deployment shape changes, re-pick the resource you count before re-tuning anything](../figures/yao/lessons/measure-the-resource-that-became-scarce-not-the-one-you-inherited.md)

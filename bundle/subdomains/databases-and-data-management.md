@@ -18,7 +18,7 @@ the implementation-mapping layer.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-190 lessons from 26 figures.
+196 lessons from 29 figures.
 
 **abiteboul** (12)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -150,6 +150,10 @@ No works or lessons tagged with this subdomain yet.
 **jones** (1)
 - [State is history divided by what still matters, and keeping the history instead is the lazy answer](../figures/jones/lessons/state-is-history-quotiented-by-what-still-matters.md)
 
+**kolmogorov** (2)
+- [A \"given that\" answer is fixed by the family the condition came from, not by the condition](../figures/kolmogorov/lessons/a-conditional-answer-belongs-to-the-partition-not-the-condition.md)
+- [Aggregation composes for free along refinements, and for nothing else without a hypothesis](../figures/kolmogorov/lessons/aggregate-in-stages-along-refinements-and-nowhere-else-for-free.md)
+
 **liskov** (6)
 - [A consistency guarantee ends where information flow leaves your interface](../figures/liskov/lessons/your-guarantee-ends-where-information-flow-leaves-your-api.md)
 - [Consistency strength belongs to the operation, not to the system](../figures/liskov/lessons/consistency-strength-is-a-per-operation-choice.md)
@@ -183,6 +187,9 @@ No works or lessons tagged with this subdomain yet.
 
 **ritchie** (1)
 - [Pick the representation whose global invariant is cheap to check, not the one that reads best](../figures/ritchie/lessons/pick-representations-whose-invariants-are-cheap-to-check.md)
+
+**scott** (1)
+- [Give conflict its own value, and never confuse conflicting with merely unrelated](../figures/scott/lessons/give-conflict-a-value-and-keep-it-distinct-from-unrelated.md)
 
 **stonebraker** (29)
 - [A closed set of programs turns runtime decisions into design-time ones](../figures/stonebraker/lessons/a-closed-set-of-programs-turns-runtime-decisions-into-design-time-ones.md)
@@ -261,3 +268,8 @@ No works or lessons tagged with this subdomain yet.
 **wilkes** (2)
 - [Choose a representation by what the management operations must iterate over, not by which is conceptually cleaner](../figures/wilkes/lessons/keep-together-what-must-be-managed-together.md)
 - [State crash safety as ordering invariants, then defer every write the invariants do not pin down](../figures/wilkes/lessons/state-the-ordering-invariants-then-defer-freely.md)
+
+**yao** (3)
+- [Permission to store a function of your data is a different power from permission to store the data](../figures/yao/lessons/storing-a-function-of-your-data-is-a-different-power-than-storing-it.md)
+- [Say which question your fast path actually answers, because the cheap one and the useful one are rarely the same](../figures/yao/lessons/say-which-question-your-fast-path-actually-answers.md)
+- [When both extremes of a parameter are easy for opposite reasons, the hard case is the middle](../figures/yao/lessons/when-both-extremes-are-easy-the-difficulty-lives-in-the-middle.md)

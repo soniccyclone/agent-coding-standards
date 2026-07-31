@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Treat the size of an existing solution as an unanswered empirical question, and answer it by building a small one"
+figure: kay
+works: [steps-toward-the-reinvention-of-programming]
+axes: [cognitive-load, expressiveness, primitive-count]
+subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Treat the size of an existing solution as an unanswered empirical question, and answer it by building a small one
+
+**Lesson:** The amount of code a working system currently takes is normally read as a measurement of how hard the problem is. It is nothing of the kind. It is a measurement of how the problem was attacked, by whom, with which tools, under what schedule, accumulated over decades — and none of those terms is the problem itself. The useful question is therefore not "how do we manage this much code" but "how much of this is actually demanded by the functionality." That question has an honest answer that nobody knows in advance, and the range of plausible answers spans several orders of magnitude, which is the tell that it has never been asked seriously. Two things follow from asking it. Complaining about the incumbents becomes pointless, since the interesting fact is not that they are bloated but what fraction of the bloat is intrinsic. And the phrasing turns into something checkable: name a target size, then find out whether the functionality fits.
+
+The way to answer it is to build, because the argument cannot be settled by reasoning. What the building produces is knowledge, not necessarily an artifact — most of the small models are worth constructing even if they are thrown away afterward, because the residue is a calibrated sense of how much irreducible content a subarea really has. Do this on the parts where a conventional implementation would consume an implausible share of the whole budget: those are where the answer matters most and where the conventional formulation is most likely to be an accident. When a subsystem that normally runs to tens of thousands of lines turns out to have a couple of hundred lines of content once restated, you have learned something about the subsystem; when it does not shrink, you have also learned something, and it is equally load-bearing for the design. Either result narrows the space, which is more than any amount of arguing about it does.
+
+The reason this discipline holds is that a whole-system size target refuses to be met by local improvement. If the total is fixed and small, no single component can be allowed its customary cost, so the only available move is to change the formulation of the component rather than to tighten its code — and that is exactly the pressure under which reformulations get found. Absent the total, each component is negotiated on its own and every one of them is defensible, which is how systems arrive at a size nobody chose. Fix the total first, and the components have to become interesting.
+
+**Source:** [STEPS Toward the Reinvention of Programming](../works/steps-toward-the-reinvention-of-programming.md) — the motivation section, which poses whether personal computing is intrinsically billions of lines or thousands as a scientific question to be settled by building a working model rather than argued, explicitly declines to make it a complaint about any vendor, and sets a whole-system target that makes the customary size of a single subsystem such as a network stack visibly unaffordable; together with the research-activities section describing experiments run to calibrate how much irreducible content various parts of the problem hold.

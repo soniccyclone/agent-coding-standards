@@ -17,7 +17,7 @@ philosophy here, it's the actual subject matter.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-319 lessons from 49 figures.
+357 lessons from 53 figures.
 
 **abrial** (1)
 - [Every guarantee has an edge; state where it is and cover the outside with a mechanism of a different kind](../figures/abrial/lessons/name-the-edge-of-your-guarantee.md)
@@ -147,8 +147,32 @@ No works or lessons tagged with this subdomain yet.
 **hilbert** (1)
 - [Nothing you actually run is infinite; every guarantee has to be cashed out against the finite mechanism](../figures/hilbert/lessons/cash-out-the-idealization-against-the-finite-machine.md)
 
+**hoare** (9)
+- [A scarce resource delegated to an automatic mechanism has no owner, and nobody will count it](../figures/hoare/lessons/a-scarce-resource-delegated-to-a-mechanism-has-no-owner.md)
+- [Aim to avoid persistently pessimal states rather than to reach optimal ones, because locally fair rules are globally unfair](../figures/hoare/lessons/avoid-the-pessimal-rather-than-chase-the-optimal.md)
+- [Decide who establishes a condition, and hand the guarantee over atomically instead of making the waiter re-derive it](../figures/hoare/lessons/hand-off-a-guarantee-instead-of-making-the-waiter-re-derive-it.md)
+- [Draw the encapsulation boundary so the discipline you need becomes a textual property a machine can check](../figures/hoare/lessons/put-the-discipline-where-a-textual-scan-can-enforce-it.md)
+- [Every point where an operation can block is a public boundary, so the invariant must hold there too](../figures/hoare/lessons/every-point-where-you-can-block-is-a-public-boundary.md)
+- [Read the shape of the optimization curve, not the size of the last gain — it tells you whether the design or the code is wrong](../figures/hoare/lessons/read-the-shape-of-the-optimization-curve-as-a-verdict.md)
+- [Splitting a global optimization into independent modules is a hypothesis you must earn, not a structural default](../figures/hoare/lessons/decomposing-a-global-optimization-is-a-hypothesis-to-be-earned.md)
+- [To replace an established primitive, owe two reductions in opposite directions — then admit only refinements that leave the reasoning rules untouched](../figures/hoare/lessons/two-reductions-and-a-neutrality-test-for-a-replacement-primitive.md)
+- [Under overload a dynamic allocator must fall back toward a static regime, so design the floors before the flexibility](../figures/hoare/lessons/under-overload-a-dynamic-scheme-must-fall-back-toward-static-reservation.md)
+
+**ingalls** (7)
+- [Concentrate the whole system's contact with hardware into a few primitives, then spend all your optimization there](../figures/ingalls/lessons/concentrate-contact-with-technology-into-few-primitives.md)
+- [Judge an automatic mechanism by how its cost is distributed and how it behaves near exhaustion, then delegate the cases it cannot cover to whoever creates them](../figures/ingalls/lessons/judge-a-mechanism-by-its-timing-profile-and-delegate-its-gaps.md)
+- [Measure the cost your architecture exists to avoid — the avoidance machinery is often the more expensive half, and deleting it deletes a family of problems](../figures/ingalls/lessons/measure-the-cost-you-built-an-architecture-to-avoid.md)
+- [Once the working set has to be swapped, density is speed — so encode by census and frequency, and keep the encoding invertible](../figures/ingalls/lessons/density-is-speed-once-the-working-set-swaps.md)
+- [Portability is a countable surface, and only a stranger can test it: concentrate the host-specific part, and refuse host facilities to keep behavior identical everywhere](../figures/ingalls/lessons/portability-is-a-countable-surface-tested-only-by-strangers.md)
+- [Treat everything that does not fit your framework as a defect in the framework's reach, not as a separate layer to live with](../figures/ingalls/lessons/anything-outside-the-framework-is-a-defect-in-its-reach.md)
+- [When you control how names are handed out, put the information in the name instead of in the thing named](../figures/ingalls/lessons/put-the-information-in-the-name-not-the-thing-named.md)
+
 **jones** (1)
 - [To get something existing under intellectual control, describe the idealized version first and relate the real one back to it](../figures/jones/lessons/describe-the-idealized-version-first-then-relate-the-real-one.md)
+
+**kay** (2)
+- [Collapse a system's categories when they differ only by rate, and delete the subsystems the distinction required](../figures/kay/lessons/collapse-system-categories-into-one-concept.md)
+- [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../figures/kay/lessons/response-inside-the-loop-of-thought.md)
 
 **knuth** (2)
 - [Find the state that makes already-consumed input unnecessary, and a scan becomes a stream](../figures/knuth/lessons/find-the-state-that-makes-the-consumed-input-unnecessary.md)
@@ -208,14 +232,22 @@ No works or lessons tagged with this subdomain yet.
 **milner** (1)
 - [Transmit access, not the thing itself, and make duplication an explicit act](../figures/milner/lessons/transmit-access-not-the-thing-itself.md)
 
-**parnas** (8)
+**parnas** (16)
 - [A dependency is a claim about correctness, not a record of who calls whom](../figures/parnas/lessons/a-dependency-is-a-correctness-claim-not-a-call.md)
 - [A discipline validated on small examples can invert at scale, and the fix is the missing piece, not the retreat](../figures/parnas/lessons/a-technique-that-works-small-can-invert-at-scale.md)
 - [A module is an assignment of responsibility, not a unit of the running program](../figures/parnas/lessons/modules-are-responsibility-assignments-not-runtime-objects.md)
+- [A privileged core is the coarsest hierarchy you can build, and it freezes whatever you put inside](../figures/parnas/lessons/a-privileged-core-is-the-coarsest-hierarchy-you-can-build.md)
+- [Any structure can be forced to work, so compare structures by what comes out cleanly](../figures/parnas/lessons/any-structure-can-be-forced-to-work-so-compare-them-on-removal.md)
+- [Build the richer mechanism on top of the plainer one, never inside it](../figures/parnas/lessons/build-the-richer-mechanism-on-top-of-the-plainer-one.md)
+- [Climbing a hierarchy buys simplicity, never power — so say convenience and mean it](../figures/parnas/lessons/climbing-a-hierarchy-buys-simplicity-never-power.md)
 - [Find the smallest thing that could possibly run, and treat that as a requirement](../figures/parnas/lessons/find-the-smallest-thing-that-could-run-before-designing-the-whole.md)
+- [How many of a thing there are is itself a secret, and leaking it blocks removal as hard as addition](../figures/parnas/lessons/how-many-of-a-thing-there-are-is-itself-a-secret.md)
 - [Keep structural virtues separate: layering and clean boundaries are independent, and each buys something different](../figures/parnas/lessons/dont-let-one-structural-virtue-stand-in-for-another.md)
 - [Misuse is the caller's problem, and a refused operation must leave no trace](../figures/parnas/lessons/misuse-is-the-callers-problem-and-a-refused-call-must-leave-no-trace.md)
+- [Modules and levels are two independent structures over the same parts, and expecting them to coincide is what forces the splitting](../figures/parnas/lessons/modules-and-levels-are-two-independent-structures.md)
+- [Permission to depend has to be earned in both directions](../figures/parnas/lessons/permission-to-depend-must-be-earned-in-both-directions.md)
 - [When two parts seem to need each other, one of them is really two parts](../figures/parnas/lessons/when-two-parts-need-each-other-one-of-them-is-two-parts.md)
+- [Who is allowed to reuse what is a structural decision, not a local one](../figures/parnas/lessons/who-may-reuse-what-is-not-a-local-decision.md)
 - [Write down where your dividing criterion goes fuzzy, and name the arbiter that settles it](../figures/parnas/lessons/name-the-places-your-criterion-breaks-down.md)
 
 **pike** (15)
@@ -308,6 +340,9 @@ No works or lessons tagged with this subdomain yet.
 - [The cost of coordination is set by the size of its audience, so shrink the audience before tuning the protocol](../figures/schneider/lessons/shrink-the-audience-before-optimizing-the-protocol.md)
 - [When an ideal is unbuildable, keep its interface and make the gap a parameter](../figures/schneider/lessons/index-an-unreachable-abstraction-by-its-breaking-point.md)
 
+**stearns** (1)
+- [When you give up names, the whole emulation cost collapses into deciding identity](../figures/stearns/lessons/emulation-cost-is-the-cost-of-deciding-identity.md)
+
 **steele** (3)
 - [Separate the values a type denotes from the representations a machine may use for it, and let code declare whether it wants the latitude](../figures/steele/lessons/separate-the-values-a-type-denotes-from-the-representation-permitted-at-runtime.md)
 - [The features that move a proof obligation onto the programmer are the ones that need the most formal precision, not the least](../figures/steele/lessons/an-unsafe-escape-hatch-needs-more-formal-precision-than-a-safe-feature.md)
@@ -319,17 +354,20 @@ No works or lessons tagged with this subdomain yet.
 - [Never schedule the cleanup below the work that depends on it](../figures/stonebraker/lessons/never-schedule-the-cleanup-below-the-work-that-depends-on-it.md)
 - [The boundaries between components are inherited, not derived](../figures/stonebraker/lessons/the-boundaries-between-components-are-inherited-not-derived.md)
 
-**strachey** (6)
+**strachey** (7)
 - [Hand each user a whole smaller machine, not a slice of yours](../figures/strachey/lessons/hand-each-user-a-whole-smaller-machine.md)
 - [Keep what is settled by context apart from what is settled by history](../figures/strachey/lessons/keep-what-is-settled-by-context-apart-from-what-is-settled-by-history.md)
 - [Let a program do the organising, and hardware only what a program cannot](../figures/strachey/lessons/let-a-program-do-the-organising-and-hardware-only-what-a-program-cannot.md)
 - [Make the expected cost part of the request](../figures/strachey/lessons/make-the-expected-cost-part-of-the-request.md)
 - [Put the power to change a guard out of reach of what it guards](../figures/strachey/lessons/put-the-power-to-change-a-guard-out-of-reach-of-what-it-guards.md)
 - [Rank urgency by what cannot be made to wait](../figures/strachey/lessons/rank-urgency-by-what-cannot-be-made-to-wait.md)
+- [Treat your outermost level as a stand-in for a layer you did not model](../figures/strachey/lessons/treat-your-outermost-level-as-a-stand-in-for-a-layer-you-did-not-model.md)
 
-**tarjan** (2)
+**tarjan** (4)
+- [Adaptivity turns reads into writes, and that is the bill you are actually paying](../figures/tarjan/lessons/adaptivity-turns-reads-into-writes-and-that-is-the-real-bill.md)
 - [Choose the cost measure before the algorithm, because the measure decides the answer](../figures/tarjan/lessons/choose-the-cost-measure-before-the-algorithm.md)
 - [Price out what foresight is worth; when the ratio will not close, buy slack instead](../figures/tarjan/lessons/price-out-foresight-then-buy-slack-instead.md)
+- [Trigger maintenance on the gap between predicted and observed cost, and reject any tuning rule that needs the answer up front](../figures/tarjan/lessons/trigger-maintenance-on-the-gap-between-predicted-and-observed-cost.md)
 
 **thompson** (20)
 - [A closed interface vocabulary is what lets every newcomer inherit the ecosystem](../figures/thompson/lessons/a-closed-vocabulary-lets-newcomers-inherit-the-ecosystem.md)
@@ -389,7 +427,7 @@ No works or lessons tagged with this subdomain yet.
 - [Whatever dimension your metric leaves out is the dimension your design will quietly spend](../figures/ungar/lessons/a-metric-that-omits-a-dimension-gets-spent-there.md)
 - [When a population's behavior is sharply split, find the cheap observable that separates it and stop treating it uniformly](../figures/ungar/lessons/stratify-a-population-by-a-cheap-predictor.md)
 
-**wilkes** (34)
+**wilkes** (42)
 - [A convenience pool of ambient authority is invisible overprivilege, and its harmlessness is relative to a model you may change](../figures/wilkes/lessons/ambient-convenience-authority-is-invisible-overprivilege.md)
 - [A deliberately simple model at the user's level is what allows sophistication to be stacked above it](../figures/wilkes/lessons/one-thing-at-a-time-is-what-lets-abstraction-stack.md)
 - [A design principle earns its keep by settling the hundreds of small decisions nobody could argue individually](../figures/wilkes/lessons/a-principle-that-settles-the-arbitrary-cases.md)
@@ -403,11 +441,14 @@ No works or lessons tagged with this subdomain yet.
 - [Design the principled version first so that every economy you take afterwards has a visible price](../figures/wilkes/lessons/keep-the-principled-layout-as-the-yardstick-for-every-economy.md)
 - [Expect a long, demoralizing gap between demonstrating a principle and exploiting the technology behind it](../figures/wilkes/lessons/the-trough-between-demonstration-and-full-engineering.md)
 - [Find the corner of the design still being done ad hoc, and recast it as a program over a small set of primitive moves](../figures/wilkes/lessons/turn-the-ad-hoc-corner-of-a-design-into-a-program.md)
+- [Give one copy exclusive authority for a bounded interval instead of keeping two copies in step](../figures/wilkes/lessons/give-one-copy-exclusive-authority-instead-of-keeping-two-in-step.md)
+- [Hang deferred reconciliation on a transition the system already makes, and carry the smallest per-entry state that makes deferring safe](../figures/wilkes/lessons/reconcile-at-a-transition-the-system-already-makes.md)
 - [Hierarchy is right for organizing control and wrong for organizing authority](../figures/wilkes/lessons/hierarchy-fits-control-flow-not-authority.md)
 - [Judge a parallel design by its utilization on the problems you did not have in mind](../figures/wilkes/lessons/judge-parallelism-by-utilisation-on-problems-you-did-not-foresee.md)
 - [Keep building things that are not meant to become products, especially when the unit of composition changes](../figures/wilkes/lessons/builds-that-are-not-products-are-how-a-field-learns.md)
 - [Let a fixed core enforce distinctions whose meaning it cannot interpret](../figures/wilkes/lessons/enforce-distinctions-you-cannot-interpret.md)
 - [Let a request escalate along the call chain until it meets enough authority, instead of asking who has it](../figures/wilkes/lessons/let-a-request-escalate-until-it-meets-authority.md)
+- [Let claimants collide in one pool with an ownership tag rather than carving the resource up, because partitioning exports an allocation problem upward](../figures/wilkes/lessons/share-by-tagging-owners-not-by-partitioning.md)
 - [Let the requirement for privilege, not functional cohesion, draw your module boundaries](../figures/wilkes/lessons/let-the-privilege-requirement-draw-the-boundary.md)
 - [Make the substrate-independent form the authoritative one, not a translation you produce on demand](../figures/wilkes/lessons/make-the-portable-form-the-authoritative-one.md)
 - [Prefer restrictions that make the forbidden thing unnameable over restrictions that merely catch the attempt](../figures/wilkes/lessons/make-the-forbidden-unnameable.md)
@@ -419,10 +460,15 @@ No works or lessons tagged with this subdomain yet.
 - [The cost of crossing a boundary decides how much ends up inside it](../figures/wilkes/lessons/the-cost-of-crossing-decides-what-ends-up-inside.md)
 - [The metaphor you adopt for a primitive fixes which operations are cheap and which become impossible](../figures/wilkes/lessons/the-metaphor-you-pick-fixes-what-is-affordable.md)
 - [The return on minimum privilege is inspectable blast radius, and it is paid mostly in development and change](../figures/wilkes/lessons/least-privilege-pays-in-inspectability.md)
+- [The unit you move data in is a consequence of where the cost sits, so re-derive it whenever a new tier changes the cost shape](../figures/wilkes/lessons/re-derive-the-transfer-unit-when-the-cost-shape-changes.md)
 - [To control an operation, guard the values it accepts instead of the actors allowed to perform it](../figures/wilkes/lessons/guard-the-value-not-only-the-actor.md)
 - [Trade repeated work for the absence of state: abandon and retry instead of recursing](../figures/wilkes/lessons/trade-repeated-work-for-the-absence-of-state.md)
 - [Two mechanisms maintained for different reasons that must agree somewhere give you a free oracle](../figures/wilkes/lessons/two-mechanisms-that-must-agree-are-an-oracle.md)
+- [What a transparent duplicate of state really costs is the set of freedoms you decline to withdraw from its clients](../figures/wilkes/lessons/the-freedom-you-decline-to-withdraw-prices-the-duplicate.md)
+- [When a cheap check gates an expensive fallback, start both at once and abandon the loser — if abandoning leaves nothing behind](../figures/wilkes/lessons/issue-the-slow-path-alongside-the-check-if-you-can-abandon-it.md)
 - [When accountability fights speed, split the mechanism at the frequency boundary rather than picking one policy](../figures/wilkes/lessons/split-a-mechanism-at-the-frequency-boundary.md)
+- [When you cannot predict which data a computation will touch, build the mechanism that lets the touching itself decide](../figures/wilkes/lessons/let-the-reference-stream-define-the-working-set.md)
+- [When you index by a lossy function of a key, store the part you discarded so a hit can be told from a coincidence](../figures/wilkes/lessons/keep-the-bits-you-discarded-to-index-cheaply.md)
 - [Whoever saves your state holds your secrets, so look for leaks in the suspend mechanism and not in the interface](../figures/wilkes/lessons/whoever-saves-your-state-holds-your-secrets.md)
 
 **wirth** (9)

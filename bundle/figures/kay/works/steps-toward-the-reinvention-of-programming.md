@@ -22,3 +22,4 @@ tags: [work]
 
 ## Lessons
 - [Keep a runnable statement of what the system means, separate from everything that makes it fast, and require it to run with the speed removed](../lessons/keep-meaning-separate-from-optimization.md)
+- [Treat the size of an existing solution as an unanswered empirical question, and answer it by building a small one](../lessons/treat-the-size-of-the-current-solution-as-an-open-question.md)

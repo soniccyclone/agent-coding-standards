@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-199 lessons from 30 figures.
+239 lessons from 33 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -113,6 +113,48 @@ No works or lessons tagged with this subdomain yet.
 - [When a concept keeps showing up only in explanations, promote it to a thing the program can hold](../figures/goldberg/lessons/give-an-object-to-the-thing-you-keep-explaining-in-comments.md)
 - [When you cannot know what will be built, build the substrate and hand the specification job to whoever has the problem](../figures/goldberg/lessons/design-the-substrate-not-the-feature-list.md)
 
+**ingalls** (23)
+- [A drawn cycle is not a causal one: classify each link by what triggers it, and keep repetition at the boundary of an acyclic region](../figures/ingalls/lessons/classify-edges-by-trigger-and-put-repetition-at-the-boundary.md)
+- [A self-describing system needs a floor: make it a couple of operations, name where the discipline stops, and keep a readable model beside the fast one](../figures/ingalls/lessons/a-self-describing-system-needs-a-small-named-floor.md)
+- [Before building the general mechanism, check whether the feature people want is shorthand for something you already have](../figures/ingalls/lessons/check-whether-the-hard-feature-is-shorthand-for-one-you-have.md)
+- [Cheat in the implementation but stay undetectable: guard the frequent case and fall through to the general one](../figures/ingalls/lessons/cheat-in-the-implementation-but-never-be-detectable.md)
+- [Compile a propagation structure by enumerating the places a change can enter and emitting one straight-line path for each](../figures/ingalls/lessons/compile-one-path-per-place-a-change-can-enter.md)
+- [Concentrate the whole system's contact with hardware into a few primitives, then spend all your optimization there](../figures/ingalls/lessons/concentrate-contact-with-technology-into-few-primitives.md)
+- [Design a language by building real applications in the version you already have, then redesigning from the scar tissue](../figures/ingalls/lessons/design-the-language-by-being-its-user-first.md)
+- [Design representations so the cheap conversion is the correct one, quantize the parameter you cannot afford exactly, and perform each operation in the space where its algebra actually holds](../figures/ingalls/lessons/make-representations-nest-and-operate-where-the-algebra-holds.md)
+- [Give the output medium a closed generative basis instead of a catalogue, and make input ride the same transforms backwards](../figures/ingalls/lessons/give-the-output-medium-a-generative-basis-not-a-catalogue.md)
+- [Give user-defined things exactly the standing of built-in ones, or people will model their domain in primitives](../figures/ingalls/lessons/give-user-defined-things-the-same-standing-as-built-ins.md)
+- [Make every shortcut and every packaging step a reversible view on the canonical structure, never a one-way door](../figures/ingalls/lessons/every-shortcut-must-emit-into-the-canonical-form.md)
+- [Make reference uniform, so a variable can hold anything and no caller has to plan for what it holds](../figures/ingalls/lessons/make-reference-uniform-so-generality-costs-nothing-per-use.md)
+- [Make the authoring medium incapable of producing malformed work, and refuse the bad join while the author's hand is still on it](../figures/ingalls/lessons/make-the-authoring-medium-incapable-of-malformed-results.md)
+- [Never write the low-level system in the low-level language: write it in a subset of your good language shaped like the target, and translate](../figures/ingalls/lessons/write-the-low-level-system-in-a-target-shaped-subset-and-translate.md)
+- [Pick one metaphor and make it hold at every scale, so the vocabulary learned at the bottom still works at the top](../figures/ingalls/lessons/one-metaphor-applied-at-every-scale.md)
+- [Put each capability at the one place where the most things inherit it, and let protocol rather than type set the reach](../figures/ingalls/lessons/put-each-capability-where-it-is-amplified.md)
+- [Set the size of the whole system by what one person can master, and pay for it by deleting special cases](../figures/ingalls/lessons/one-person-must-be-able-to-hold-the-whole-system.md)
+- [State what you want, never how it is done, because dependencies grow quadratically and only the request is safe to share](../figures/ingalls/lessons/ask-for-intent-and-let-the-receiver-choose-the-method.md)
+- [Treat a dispatch as one degree of type-uncertainty removed, and chain as many as the problem has variable terms](../figures/ingalls/lessons/each-dispatch-removes-one-degree-of-polymorphism.md)
+- [Treat everything that does not fit your framework as a defect in the framework's reach, not as a separate layer to live with](../figures/ingalls/lessons/anything-outside-the-framework-is-a-defect-in-its-reach.md)
+- [Treat human cognition as the fixed constraint and the machine as the adjustable side, then design to the whole span between them](../figures/ingalls/lessons/treat-the-human-side-as-the-fixed-point.md)
+- [Treat the order of a bootstrap as a design artifact: make every stage observable, and deliberately under-build whatever that stage cannot stress](../figures/ingalls/lessons/sequence-a-bootstrap-and-underbuild-what-cannot-be-stressed-yet.md)
+- [When you control how names are handed out, put the information in the name instead of in the thing named](../figures/ingalls/lessons/put-the-information-in-the-name-not-the-thing-named.md)
+
+**kay** (15)
+- [A replacement must not be worse than the incumbent in any way its users care about, and must not stop at imitating it](../figures/kay/lessons/match-what-you-replace-before-you-transcend-it.md)
+- [A representation people internalize becomes invisible and reshapes their thinking, so judge it by the thinking it installs](../figures/kay/lessons/a-medium-reshapes-whoever-internalizes-it.md)
+- [A theory is a filter for judging design candidates, not a source of them, and past its range it suppresses the obvious answer](../figures/kay/lessons/theory-judges-ideas-it-does-not-generate-them.md)
+- [An environment people get good in offers early subgoals, many stances, no penalty for being wrong, and compounding results](../figures/kay/lessons/environments-that-grow-skill.md)
+- [Convert the one non-negotiable requirement into a numeric budget, and let the budget eliminate whole option classes](../figures/kay/lessons/turn-the-hard-requirement-into-a-budget-that-eliminates.md)
+- [Design for several distinct reasoning faculties that compete, and give each one work it is good at](../figures/kay/lessons/several-reasoners-not-one.md)
+- [Every capability should be equally reachable by hand and by program, and every object equally open to inspection](../figures/kay/lessons/nothing-reachable-only-by-hand.md)
+- [Look for the shared process beneath surface-different domains, then split the score from the performer](../figures/kay/lessons/one-vocabulary-for-domains-that-only-look-different.md)
+- [Measure quality where output is received, and design into the consumer's processing instead of around it](../figures/kay/lessons/design-into-the-receivers-transfer-function.md)
+- [Name the thing before the operation, at every layer, so the thing itself can answer what may be done to it](../figures/kay/lessons/name-the-thing-before-the-operation.md)
+- [People hold knowledge as ad hoc procedures, not consistent axioms, so build on the models they already have](../figures/kay/lessons/fit-abstractions-to-operational-models.md)
+- [Remove a mode by generalizing the representation until the competing operations become one, usually by admitting the degenerate case](../figures/kay/lessons/kill-modes-by-admitting-the-degenerate-case.md)
+- [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../figures/kay/lessons/response-inside-the-loop-of-thought.md)
+- [When the users' needs are genuinely unbounded, ship a medium plus exemplars instead of enumerating features](../figures/kay/lessons/design-a-medium-not-a-feature-set.md)
+- [Write the story of someone using the thing before you specify it, and let the story generate the requirements](../figures/kay/lessons/write-the-use-story-before-the-spec.md)
+
 **knuth** (1)
 - [Agreement between a program and its explanation has to be structural, because discipline does not hold it](../figures/knuth/lessons/consistency-between-code-and-explanation-must-be-structural.md)
 
@@ -203,6 +245,9 @@ No works or lessons tagged with this subdomain yet.
 - [What a language has no word for, its programs cannot govern](../figures/reenskaug/lessons/what-a-language-cannot-name-it-cannot-manage.md)
 - [When automatic derivation fails, require a declaration and mechanically audit it for completeness](../figures/reenskaug/lessons/when-derivation-fails-require-a-declaration-you-can-audit.md)
 
+**sifakis** (1)
+- [Name the one step that cannot be automated, then shrink it and mechanize everything around it](../figures/sifakis/lessons/name-the-step-that-resists-automation-then-shrink-it.md)
+
 **steele** (5)
 - [Count your primitives by asking how much every tool that reads programs will be forced to hardcode](../figures/steele/lessons/size-the-primitive-set-by-what-every-program-reading-program-must-know.md)
 - [Let a contradictory configuration exist and fail only where it is actually depended on, and never let coincidental agreement resolve an ambiguity](../figures/steele/lessons/ambiguity-is-about-how-many-declarations-exist-not-whether-they-agree.md)
@@ -214,11 +259,12 @@ No works or lessons tagged with this subdomain yet.
 - [A model you can rename into your rival's is your rival's model](../figures/stonebraker/lessons/a-model-you-can-rename-into-your-rival-s-is-your-rival-s-model.md)
 - [The seam between two languages is where the cost collects](../figures/stonebraker/lessons/the-seam-between-two-languages-is-where-the-cost-collects.md)
 
-**sussman** (4)
+**sussman** (5)
 - [An abstraction costs what it costs because of when its dispatch resolves, not because of how it was expressed](../figures/sussman/lessons/an-abstractions-cost-is-set-by-when-its-dispatch-resolves.md)
 - [Behaviour is a table indexed by operation and operand; every language feature for organizing it is just a choice of how to slice that table](../figures/sussman/lessons/dispatch-is-a-matrix-and-every-design-picks-a-slicing.md)
 - [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../figures/sussman/lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
 - [When you cannot tell whether two ideas differ, implement both in one substrate and see whether the artifacts coincide](../figures/sussman/lessons/build-it-to-find-out-whether-two-ideas-are-the-same.md)
+- [When you wrap a value in a richer representation the operations complain but the total predicates lie, so audit the tests that cannot fail](../figures/sussman/lessons/when-you-enrich-a-type-the-total-predicates-lie.md)
 
 **sutherland** (21)
 - [A projection is only usable if it carries the way back to the node that made it](../figures/sutherland/lessons/a-projection-must-carry-its-way-back-to-the-node.md)
