@@ -22,3 +22,4 @@ tags: [work]
 ## Lessons
 - [Two accounts agreeing is evidence in proportion to how far apart they are](../lessons/agreement-between-two-accounts-is-evidence-in-proportion-to-their-distance.md)
 - [Put everything in one universal domain and recover the specific types as subspaces of it](../lessons/put-everything-in-one-universal-domain-and-define-the-rest-as-subspaces.md)
+- [Prefer the class closed under composition over the simpler class inside it](../lessons/prefer-the-class-that-is-closed-under-composition-to-the-simpler-one.md)
