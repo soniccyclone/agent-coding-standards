@@ -154,6 +154,9 @@ tags: [work]
 - [Let satisfied cases stop pulling](../lessons/let-satisfied-cases-stop-pulling.md)
 - [A surprising result is usually a faithful reading of your trade-off](../lessons/a-surprising-result-is-usually-a-faithful-reading-of-your-tradeoff.md)
 - [Name a technique's decision points so you can search the family](../lessons/name-a-techniques-decision-points-so-you-can-search-the-family.md)
+- [If you must scan everything, shrink what you scan](../lessons/if-you-must-scan-everything-shrink-what-you-scan.md)
+- [The result inherits the properties of the weighting you chose](../lessons/the-result-inherits-the-properties-of-the-weighting-you-chose.md)
+- [Each level of a recursive split rests on less evidence](../lessons/each-level-of-a-recursive-split-rests-on-less-evidence.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
