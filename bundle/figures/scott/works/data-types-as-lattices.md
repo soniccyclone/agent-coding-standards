@@ -38,3 +38,4 @@ tags: [work]
 - [Prefer working modulo an equivalence to picking a canonical representative](../lessons/prefer-working-modulo-an-equivalence-to-picking-a-canonical-form.md)
 - [Every level of abstraction adds a quantifier to any guarantee you want about it](../lessons/every-level-of-abstraction-adds-a-quantifier-to-guarantees-about-it.md)
 - [A requirement that must hold for every interpretation pins down what testing against yours cannot](../lessons/a-requirement-quantified-over-all-interpretations-pins-down-what-testing-cannot.md)
+- [Condemning an approach obliges you to supply the alternative](../lessons/condemning-an-approach-obliges-you-to-supply-the-alternative.md)
