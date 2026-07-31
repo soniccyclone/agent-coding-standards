@@ -9,6 +9,7 @@ url: https://softwarepreservation.computerhistory.org/ALGOL/report/Algol60_revis
 survey_pages: 17
 survey_text_layer: full
 survey_fetch_mb: 1
+extraction: complete
 access: public
 host: institutional
 tags: [work]
@@ -31,3 +32,6 @@ tags: [work]
 - [Index by role: separate where a thing is defined from where it is used](../lessons/index-by-role-defining-site-versus-use-site.md)
 - [Declare which parts of the notation the machine ignores](../lessons/declare-which-notation-the-machine-ignores.md)
 - [Enumerate every case an operation can be in, and split the operator when the cases disagree](../lessons/split-the-operator-rather-than-overload-the-signature.md)
+- [State the part of the contract the signature cannot carry, at the definition](../lessons/state-the-contract-the-signature-cannot-carry.md)
+- [Collect the union of everyone's concepts, but ratify only the intersection of their agreements](../lessons/ratify-the-intersection-of-agreements.md)
+- [Restate each structural rule in the vocabulary of execution, then read the static restrictions off it](../lessons/restate-the-rule-in-the-vocabulary-of-execution.md)

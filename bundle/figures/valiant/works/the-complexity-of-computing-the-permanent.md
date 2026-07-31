@@ -9,6 +9,7 @@ url: https://www.math.cmu.edu/~af1p/Teaching/MCC17/Papers/permanent.pdf
 survey_pages: 13
 survey_text_layer: full
 survey_fetch_mb: 1
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -23,3 +24,5 @@ tags: [work]
 - [How many is a different question from whether any, and the two costs can diverge without limit](../lessons/counting-is-a-different-question-from-existence.md)
 - [Two expressions can be one symbol apart and worlds apart in cost, which condemns every measure read off their shape](../lessons/a-measure-read-off-syntax-must-separate-near-identical-texts.md)
 - [Let the unwanted cases cancel instead of preventing them, and specify the piece that does it by its obligations alone](../lessons/let-the-unwanted-cases-cancel-and-specify-the-gadget-by-its-obligations.md)
+- [Coarsen the question until a forbidden move becomes legal, and let the precision you need cap the correction terms](../lessons/coarsen-the-question-until-the-forbidden-move-becomes-legal.md)
+- [Bound the size of the answer first; that bound tells you how many narrow views you need to reconstruct it](../lessons/bound-the-answer-first-then-assemble-it-from-narrow-views.md)

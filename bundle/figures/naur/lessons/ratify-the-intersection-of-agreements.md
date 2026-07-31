@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Collect the union of everyone's concepts, but ratify only the intersection of their agreements"
+figure: naur
+works: [revised-report-on-the-algorithmic-language-algol-60]
+axes: [verifiability, cognitive-load]
+subdomains: [software-engineering-and-architecture]
+tags: [lesson]
+---
+# Collect the union of everyone's concepts, but ratify only the intersection of their agreements
+
+**Lesson:** When a definition has to be produced by a group, two failure modes wait at either end. Ratify the union of what people believe and you ship contradictions that only surface as incompatible implementations. Ratify only what everyone thought of independently and you ship something too thin to use. The workable split is asymmetric: gather concepts by union, so any participant can put a construct on the table, and gather commitments by intersection, so nothing enters the definition that the group cannot agree on item by item. What makes the intersection tractable is procedural, not diplomatic — one person drafts a complete document first, from the prior material and the preparatory work, and the group then works for agreement on each item of that draft. A draft converts an open argument into a finite list of decisions.
+
+The same asymmetry governs revision, and there the temptation is worse, because a revision meeting has every unresolved question in front of it and a natural urge to settle them all. Bound the scope up front and say what is out: correct known errors, remove apparent ambiguities, clarify, and consider no extensions. Then apply a second, sharper filter to what remains — publish only those points the group unanimously judged could be stated clearly and unambiguously, on the explicit ground that a hastily settled subtle point is likely to introduce fresh ambiguity, which is a worse outcome than leaving the original question open. A revision that fixes eight things cleanly is better than one that fixes twelve and quietly creates three.
+
+What happens to the residue is the part that makes the whole scheme honest. Do not let unresolved questions dissolve back into folklore: list them, by name, in the revised document — these specific interactions, this specific ambiguity about whether a construct is static or dynamic, this specific conflict between two ways of declaring the same thing — and name the standing body that inherits them, with a stated expectation of where the resolution will come from. Then transfer the responsibility explicitly, so that authorship of the definition and stewardship of its future are separate, acknowledged roles. Anyone reading later can tell exactly which parts of the definition were settled, which were consciously deferred, and who owes the answer, which is the only condition under which a shared definition can keep evolving without being relitigated from scratch.
+
+**Source:** [Revised Report on the Algorithmic Language ALGOL 60](../works/revised-report-on-the-algorithmic-language-algol-60.md) — the introduction's account of the January 1960 conference, where a complete new draft was prepared in advance, the conference worked for agreement on each item, and the result is characterised as the union of the committee's concepts and the intersection of its agreements; and the April 1962 section, which bounds its own scope to correction, disambiguation and clarification with extensions excluded, states the decision to report only points unanimously statable clearly rather than risk hastily drawn conclusions creating new ambiguities, enumerates the five areas left open, and records the transfer of collective responsibility to the standing working group.

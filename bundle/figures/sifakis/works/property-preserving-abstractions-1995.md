@@ -33,3 +33,6 @@ tags: [work]
 - [Define the best possible version of the thing you are approximating, even when you intend to ship something worse](../lessons/define-the-optimum-you-will-not-compute.md)
 - [An analysis only scales if it distributes over the operator that builds the system, and that is a theorem with fine print](../lessons/ask-whether-the-analysis-distributes-over-composition.md)
 - [When a coarse model kills the property you wanted, change what counts as a single step](../lessons/redefine-what-counts-as-a-step.md)
+- [Before assuming a two-way result needs the strongest relation, try proving the one-way result twice in opposite directions](../lessons/get-the-two-way-result-by-proving-the-one-way-result-twice.md)
+- [Audit each assumption twice: drop what the argument never uses, adopt what is free in practice and collapses cases](../lessons/audit-every-hypothesis-for-whether-it-earns-its-place.md)
+- [Name the one step that cannot be automated, then shrink it and mechanize everything around it](../lessons/name-the-step-that-resists-automation-then-shrink-it.md)

@@ -24,3 +24,6 @@ tags: [work]
 - [To found a new field on an existing theory, first strip that theory of the setting it was born in](../lessons/strip-the-borrowed-theory-of-its-birthplace.md)
 - [Record why the rules are right somewhere nothing downstream depends on](../lessons/keep-the-justification-out-of-the-dependency-graph.md)
 - [Show your rules admit at least one thing, then make sure they do not pin down only one](../lessons/show-your-rules-admit-one-thing-and-not-only-one.md)
+- [Put the assumption you cannot justify in one named place, introduced only where it is needed](../lessons/isolate-the-assumption-you-cannot-justify.md)
+- [Reason through objects that do not exist, provided every conclusion lands back where they do](../lessons/reason-through-ideal-objects-but-land-back-in-the-real-part.md)
+- [A guarantee about one trial says nothing about many, and one about many says nothing about any](../lessons/guarantees-do-not-transport-across-quantifier-scope.md)

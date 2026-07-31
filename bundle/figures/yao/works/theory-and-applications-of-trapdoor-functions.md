@@ -23,3 +23,6 @@ tags: [work]
 ## Lessons
 - [To rebuild a theory under a resource bound, promote one of its theorems into the new definition](../lessons/promote-a-theorem-into-a-definition-to-relativize-a-theory-to-a-resource-bound.md)
 - [Test a new definition by whether the old theory's invariants survive where nothing forces them to](../lessons/test-a-new-definition-by-whether-the-old-invariants-survive-unforced.md)
+- [Replace a growing checklist of tests with one quantification over every test the checker could run](../lessons/quantify-over-the-whole-class-of-tests-instead-of-collecting-tests.md)
+- [When you generalize a theory, the invariant that breaks is where the new power lives](../lessons/the-symmetry-that-breaks-is-where-the-new-power-lives.md)
+- [Assume only a sliver of the guarantee you need, then build the amplifier that makes it total](../lessons/amplify-a-sliver-of-a-guarantee-instead-of-assuming-a-strong-one.md)

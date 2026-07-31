@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -33,3 +34,4 @@ tags: [work]
 - [Replace control flow with a topology and a base case becomes a starvation condition, so recursion has to be built as growth gated on arrival](../lessons/a-base-case-becomes-a-starvation-condition.md)
 - [A convenient notation is a compression that presupposes a restriction, so work in the ugly explicit form until you know what the surface must express](../lessons/a-convenient-notation-is-a-compression-that-presupposes-a-restriction.md)
 - [Represent a choice as a manufactured assumption rather than performing it, and undo becomes reasoning you already have instead of machinery you have to build](../lessons/represent-a-choice-as-a-manufactured-assumption-not-an-action.md)
+- [When you wrap a value in a richer representation the operations complain but the total predicates lie, so audit the tests that cannot fail](../lessons/when-you-enrich-a-type-the-total-predicates-lie.md)

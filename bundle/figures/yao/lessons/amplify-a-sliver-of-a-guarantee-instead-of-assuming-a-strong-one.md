@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Assume only a sliver of the guarantee you need, then build the amplifier that makes it total"
+figure: yao
+works: [theory-and-applications-of-trapdoor-functions]
+axes: [verifiability, primitive-count]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Assume only a sliver of the guarantee you need, then build the amplifier that makes it total
+
+**Lesson:** There are two ways to obtain a strong property. Assume a component that already has it, or assume a component with a barely perceptible version of it and add construction that concentrates the weak version into the strong one. The first is easier to write and worse in every other respect, because the assumption is a permanent liability: it is the thing most likely to be false, it cannot be checked, and if it is ever weakened by someone's improved technique the whole edifice falls at once. The second costs an amplification argument and buys a foundation that is far more likely to be true. So the design question to ask about any assumption is not whether it is plausible but whether it is the weakest form of itself that your construction could possibly work from — and if it is not, the gap between what you assumed and what you needed is engineering you skipped.
+
+The amplification is possible because a small quantity that is guaranteed nonzero behaves entirely differently from a small quantity that is merely small. A shortfall which cannot be closed within the adversary's budget, however slight, can be replicated across many independent instances and then aggregated so that the aggregate depends on all of them — the classic form being to represent a single decision by a long collection whose combination, not any member, carries the answer. Each member is then almost transparent to the adversary and the combination is opaque, because near-certainty about every part accumulates into no confidence at all about a parity-like function of the whole. The engineering condition is that the replication cost stay inside your own budget while the accumulated doubt exceeds the adversary's, which is exactly the asymmetry the construction exists to manufacture.
+
+Two habits follow. First, when tempted to strengthen a premise to make a proof go through, look instead for an aggregation that dilutes what the premise has to promise; strengthening the premise moves the difficulty out of view rather than solving it. Second, mistrust the reflex that treats a small margin as no margin. Margins that are structurally guaranteed are raw material, and a construction that turns a reliably tiny edge into a decisive one is worth more than any component you could have assumed, because it applies to every future component with the same tiny edge.
+
+**Source:** [Theory and Applications of Trapdoor Functions](../works/theory-and-applications-of-trapdoor-functions.md) — the "what makes the trapdoor work" section of Part 2, which observes that the eavesdropper's residual uncertainty may be only an inverse-polynomial fraction of a unit yet is non-negligible against polynomial-time computation, and transposes the situation onto the classical wiretap-channel result to show a single decision encoded across a long random string with a parity condition leaves the eavesdropper confident about each position and helpless about the aggregate; together with the discussion questions asking whether the field's existing intractability assumptions can be weakened from resisting solution on almost all instances to resisting it on half, and the generator built by combining several quasi-random strings.

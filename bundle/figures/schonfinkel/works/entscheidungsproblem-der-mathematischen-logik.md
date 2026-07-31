@@ -6,6 +6,7 @@ description: Co-authored with Paul Bernays, this paper isolates special cases of
 subdomains: [foundations-of-computation, formal-methods-and-verification]
 year: 1928
 url: https://gdz.sub.uni-goettingen.de/download/pdf/PPN235181684_0099/LOG_0022.pdf
+extraction: complete
 survey_pages: 32
 survey_text_layer: ocr
 survey_fetch_mb: 2
@@ -44,3 +45,4 @@ This work needs the deterministic OCR batch.
 - [Find the smallest case where the hard feature is really present](../lessons/find-the-smallest-case-where-the-hard-feature-is-really-present.md)
 - [When two problems are dual, work whichever side is cheaper each time](../lessons/when-two-problems-are-dual-work-whichever-side-is-cheaper-each-time.md)
 - [An abstraction that drops information usually only holds above a threshold](../lessons/an-abstraction-that-drops-information-usually-only-holds-above-a-threshold.md)
+- [A unique representation turns a property into arithmetic](../lessons/a-unique-representation-turns-a-property-into-arithmetic.md)

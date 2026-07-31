@@ -21,4 +21,6 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/wilkes__slave-memories-and-dynamic-storage-allocation.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [The unit you move data in is a consequence of where the cost sits, so re-derive it whenever a new tier changes the cost shape](../lessons/re-derive-the-transfer-unit-when-the-cost-shape-changes.md)
+- [When you cannot predict which data a computation will touch, build the mechanism that lets the touching itself decide](../lessons/let-the-reference-stream-define-the-working-set.md)
+- [When you index by a lossy function of a key, store the part you discarded so a hit can be told from a coincidence](../lessons/keep-the-bits-you-discarded-to-index-cheaply.md)

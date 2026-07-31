@@ -6,6 +6,7 @@ description: Treats extensibility and the ability to strip a system down to a sm
 subdomains: [software-engineering-and-architecture]
 year: 1979
 url: https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/1c68d0f98909a126ec5eb6a0ff358ec7_parnas_ease.pdf
+extraction: complete
 survey_pages: 14
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -32,3 +33,5 @@ tags: [work]
 - [The right layering absorbs the tools you would otherwise have to build alongside it](../lessons/the-right-layering-makes-your-support-tooling-unnecessary.md)
 - [Any structure can be forced to work, so compare structures by what comes out cleanly](../lessons/any-structure-can-be-forced-to-work-so-compare-them-on-removal.md)
 - [Modules and levels are two independent structures over the same parts, and expecting them to coincide is what forces the splitting](../lessons/modules-and-levels-are-two-independent-structures.md)
+- [A structure of deliverable subsets is insurance against your own schedule](../lessons/deliverable-subsets-are-insurance-against-your-own-schedule.md)
+- [Build the richer mechanism on top of the plainer one, never inside it](../lessons/build-the-richer-mechanism-on-top-of-the-plainer-one.md)
