@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Uniformity is a property of the function and the population together"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [hardware-affinity, verifiability, cognitive-load]
+subdomains: [algorithms-and-complexity, databases-and-data-management]
+tags: [lesson]
+---
+# Uniformity is a property of the function and the population together
+
+**Lesson:** When a design's performance rests on a mapping spreading its inputs evenly, the temptation is to evaluate the mapping in isolation and conclude that it spreads evenly across all possible inputs. That is the wrong test. What matters is how it behaves on the inputs you will actually receive, and real input populations are never uniform — they cluster in whatever way the domain clusters, sharing prefixes, differing in a character or two, occupying a thin band of a vast space of possibilities. A mapping that is provably even over the entire input space can be catastrophically uneven over the small structured region your data occupies, and the failure is silent: everything works, just slowly, and the cause is a property of your data rather than a defect in your code.
+
+The characteristic trap is that the cheapest implementation is usually the one most sensitive to structure in the input. Reducing a value modulo a power of two is a masking operation and costs almost nothing, and it works by keeping some digits and discarding the rest — which means any two inputs agreeing on the kept digits collide, and inputs that differ only in the discarded positions are exactly what a structured population produces in bulk. Reducing modulo a value with no common factors with the representation's base costs a real division, and in exchange the result depends on every digit, so structure in one part of the input cannot survive into the result. That is the trade in general form: cheap reductions preserve some of the input's structure, and preserving structure is precisely the thing you were trying not to do.
+
+Two habits follow. First, when a design needs a mapping to destroy structure, say so explicitly, because it inverts the usual instinct — everywhere else in a system you preserve structure, and here you are paying to obliterate it, so that the arrangement of results carries no trace of the arrangement of inputs. Second, be suspicious of clever cheap mixing built from a few bit operations. Such constructions often behave well on the cases their designer imagined and fail badly on populations with a different shape, and because the failure mode is degraded performance rather than an incorrect answer, nobody finds out until the data changes. Prefer a mapping whose evenness you can argue for from a property of the arithmetic rather than one you have only observed to work.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 5.2's requirement that the transformation distribute keys as evenly as possible and that it be desirable for the distribution to appear entirely random, the naming of the technique after the act of chopping the argument up; the presentation of reduction modulo the table size as the obvious and efficiently computable choice, the warning that the case where the table size is a power of two must be avoided when keys are sequences of letters because the assumption that all keys are equally likely is then mistaken and words differing in only a few characters map onto identical indices; the recommendation to use a prime table size with its acknowledged cost of a full division; and the note that hash functions built from logical operations on parts of the key may be faster but sometimes fail spectacularly to distribute keys evenly.

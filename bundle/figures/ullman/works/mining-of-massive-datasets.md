@@ -69,6 +69,9 @@ tags: [work]
 - [When the stopping rule comes from outside, return the whole trajectory](../lessons/return-the-whole-trajectory-when-the-stopping-rule-is-external.md)
 - [Store the form that composes, and derive the form you report](../lessons/store-the-form-that-composes-not-the-form-you-report.md)
 - [Give observations tiers of commitment instead of forcing one decision](../lessons/give-observations-tiers-of-commitment-instead-of-one-decision.md)
+- [When you cannot justify a level, watch the rate of change instead](../lessons/watch-the-rate-of-change-when-you-cannot-set-a-level.md)
+- [Double until you overshoot, then bisect — searching for an unbounded unknown](../lessons/double-until-you-overshoot-then-bisect.md)
+- [For coverage, greedily maximize the minimum — not the total](../lessons/for-coverage-maximize-the-minimum-not-the-total.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

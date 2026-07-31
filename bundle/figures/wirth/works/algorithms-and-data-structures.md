@@ -55,3 +55,5 @@ tags: [work]
 - [An attribute of a connection can live at either end; pick the end with fewer connections](../lessons/store-an-edges-attribute-at-the-endpoint-with-fewer-edges.md)
 - [Every invariant spends the freedom that performance was buying](../lessons/every-invariant-spends-the-freedom-performance-was-buying.md)
 - [Partition the key space, not the data, and the structure stops depending on its history](../lessons/partition-the-key-space-not-the-data.md)
+- [Measure the whole task, not the operation you benchmarked](../lessons/measure-the-whole-task-not-the-operation-you-benchmarked.md)
+- [Uniformity is a property of the function and the population together](../lessons/uniformity-is-a-property-of-the-function-and-the-population-together.md)

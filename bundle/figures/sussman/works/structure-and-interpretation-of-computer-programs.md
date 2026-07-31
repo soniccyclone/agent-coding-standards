@@ -80,6 +80,8 @@ tags: [work]
 - [Wrapping a function optimizes only the calls that go through the wrapper, which the inner calls usually do not](../lessons/an-optimization-at-the-boundary-does-nothing-unless-the-recursion-routes-through-it.md)
 - [Make time an explicit data structure, then decide what simultaneity means inside it](../lessons/make-time-a-data-structure-you-schedule-against.md)
 - [A subscriber to changes learns nothing about the present, so joining must deliver a synthetic first event](../lessons/a-change-feed-tells-a-late-subscriber-nothing.md)
+- [Concurrency correctness is a graded scale; pick the weakest rung the application can live with](../lessons/pick-the-weakest-correctness-criterion-the-application-can-live-with.md)
+- [When the space of behaviours is combinatorial, shrink the space instead of checking it](../lessons/do-not-enumerate-the-interleavings-shrink-the-space-they-live-in.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -95,6 +97,9 @@ generic arithmetic, coercion, type towers, and symbolic algebra / polynomial
 arithmetic including the rational-function extended exercise. Chapter 3 read
 through the end of 3.2.3 (lines 10941-12340) - local state variables, benefits and
 costs of assignment, sameness and change, and the environment model of evaluation.
-Next unread line is **12341** (chapter 3, section 3.2.4 Internal Definitions).
-Chapters 4 and 5 are entirely unread. `extraction: complete` withheld until all
-five chapters are read._
+Chapter 3 further read through 3.3.5 (lines 12341-14440) - internal definitions,
+mutable list structure, sharing and identity, queues, tables, memoization, the
+digital-circuit simulator and its agenda, and the start of constraint propagation.
+Next unread line is **14441** (rest of 3.3.5, then 3.4 Concurrency). Chapters 4 and
+5 are entirely unread. `extraction: complete` withheld until all five chapters are
+read._

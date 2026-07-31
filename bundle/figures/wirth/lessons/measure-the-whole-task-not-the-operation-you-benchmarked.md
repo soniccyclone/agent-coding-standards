@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Measure the whole task, not the operation you benchmarked"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, hardware-affinity]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Measure the whole task, not the operation you benchmarked
+
+**Lesson:** A structure chosen because it is fastest at the operation you counted will often lose on the job you were actually doing, because the job includes steps that the discarded alternative supplied for free. The classic shape is an organization that scatters its contents deliberately in order to make lookup cheap. Lookup does get cheap, cheaper than any ordered arrangement can manage. But if the finished product has to come out in order, the ordering that the discarded arrangement maintained as a side effect of its own invariant now has to be manufactured — a sorting pass at the end, and possibly an auxiliary chain threaded through the entries during insertion just to know which slots are occupied and in what order they arrived. Those costs belong in the comparison. Left out, they turn a genuine improvement into a wash or worse.
+
+The general discipline is to write down every step between the input and the deliverable, and to evaluate candidate designs against that whole list rather than against the step that looked like the interesting one. Structures earn their keep partly through by-products: an invariant maintained for one reason usually makes some other question cheap to answer, and that second benefit is invisible in a benchmark of the first. Enumerate the by-products you are relying on before replacing something, because they are exactly what a replacement will silently take away — an ordered traversal, a bounded worst case, the ability to enumerate what is present, a cheap size query.
+
+The same audit surfaces the qualitative limits that no timing number will show. A fixed-capacity arrangement requires an estimate of the eventual population before it is built, which the problem may simply not provide, and it degrades or fails outright when the estimate is wrong. An arrangement in which removal is awkward is disqualified for any workload that shrinks, regardless of how fast lookup is. So the honest comparison ends up being a small table of properties rather than a single ratio: speed of the frequent operation, the operations that become expensive or impossible, and the assumptions about population size and volatility. When the volume is unknown or variable, the structure that grows and shrinks gracefully stays preferable even at a real cost in the operation you were originally optimizing.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 5.3's rewriting of the cross-reference generator with a hash table in place of the tree, where the method is noted as more efficient than tree organizations for the retrieval itself, followed by the observation that the words must ultimately be tabulated in alphabetical order, that this was straightforward with the ordered search tree, that the table printout must now be preceded by a sort and that it becomes advantageous to link inserted keys together explicitly in a list, so that the superior retrieval performance is partly offset by the additional operations required to complete the full task; and section 5.4's stated drawbacks that the table size is fixed and cannot be adjusted to demand so an a priori estimate is mandatory and should be deliberately generous, that deletion is extremely cumbersome without separate chaining, and that tree organizations are therefore still preferable when the volume of data is largely unknown, strongly variable, or decreasing.

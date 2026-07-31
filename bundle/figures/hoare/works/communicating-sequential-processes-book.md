@@ -19,6 +19,23 @@ tags: [work]
 **Venue/year:** Originally Prentice Hall International, 1985. Revised electronic edition maintained by Hoare (with Jim Davies) through at least 2015.
 **Source:** http://web.archive.org/web/20250104082500/http://www.usingcsp.com/cspbook.pdf — the live site (usingcsp.com) is currently unresolvable (DNS failure at time of check), so this is a Wayback Machine snapshot from January 2025. Content verified by decompressing the PDF's text streams directly: title page reads "Communicating Sequential Processes / C. A. R. Hoare," and a copyright page states "© C. A. R. Hoare, 1985–2022. This document is an electronic version of..." confirming it as Hoare's own authorized free distribution (self-archived, not a third party's copy).
 
+**Coverage note (partial extraction — NOT exhausted):** A 260-page book; one Phase 4
+pass could not reach the end. Read in full and mined: the foreword and preface, and
+Chapter 1 (Processes) sections 1.1 (introduction, prefix, recursion, choice, mutual
+recursion), 1.2 (pictures), 1.3 (laws), and 1.4 (implementation of processes) up to
+the interactive-explorer function. **Not read at all:** the remainder of Chapter 1
+(1.5 traces onward, 1.6-1.10 including specifications and the `sat` proof rules),
+and Chapters 2-7 in their entirety — concurrency, nondeterminism, communication,
+sequential processes, shared resources, and discussion. That is roughly 85% of the
+book.
+
+To resume, use `pdftotext -layout` on the URL above and **start at line 1540** of the
+resulting text (mid-section 1.4, just after the `interact` function is introduced).
+Page markers are absent; the text runs to line 12215. Chapter 2 (Concurrency) begins
+around line 2830 — locate chapter and section boundaries by grepping the running
+heads and section numbers (e.g. `2   Concurrency`, `^2\.3`), since the PDF's own page
+numbers appear inline in those running heads.
+
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
 - [Make the awkward question unaskable rather than answering it carefully: drop time, keep order](../lessons/make-the-question-unaskable-rather-than-answering-it-carefully.md)
@@ -26,3 +43,5 @@ tags: [work]
 - [Model an interaction by who holds the choice: input and output differ in nothing else](../lessons/model-an-interaction-by-who-holds-the-choice.md)
 - [Refuse the syntax that would let nonsense be written, then find the one general form the rest are special cases of](../lessons/deny-the-syntax-that-would-let-you-write-nonsense.md)
 - [Find the form every term reduces to: it is what makes the laws few and the implementation direct](../lessons/a-normal-form-is-what-makes-laws-and-implementation-cheap.md)
+- [Pictures build intuition but cannot carry an argument, and they fail exactly where the system gets interesting](../lessons/pictures-build-intuition-but-cannot-carry-an-argument.md)
+- [Attack an intractable problem with a model too small to be fair to it, then add back only what proves necessary](../lessons/attack-an-intractable-problem-with-a-model-too-small-to-be-fair.md)

@@ -73,3 +73,8 @@ tags: [work]
 - [A rule cluttered with conditions about substitution should be restated over a function instead](../lessons/hoist-the-substitution-machinery-into-one-mechanism.md)
 - [Independence analysis works at the granularity of names, so buy finer granularity with laws about selectors](../lessons/buy-back-granularity-inside-an-aggregate-with-laws-about-selectors.md)
 - [A pure function's contract is an equation; a state-changing procedure's contract is a theorem you must prove](../lessons/a-pure-functions-contract-is-an-equation-not-a-theorem.md)
+- [Define a construct by translation into what you already have, and let each correction name a design decision](../lessons/let-the-corrections-to-a-naive-translation-enumerate-the-design-space.md)
+- [Index the invariant by the set of work already done, not by the counter](../lessons/index-the-invariant-by-the-work-done-not-by-the-counter.md)
+- [A rule sound for several readings proves only what they agree on, and needing the stronger one is a warning](../lessons/needing-the-stronger-rule-means-you-depend-on-a-distinction-you-should-not.md)
+- [A convenient special case quietly becomes the only shape you can imagine, so learn the general one first](../lessons/a-convenient-special-case-narrows-what-you-can-imagine.md)
+- [Give every jump destination a precondition, and a non-local exit becomes an ordinary obligation](../lessons/put-the-obligation-of-a-jump-at-its-destination.md)

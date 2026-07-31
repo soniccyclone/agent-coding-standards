@@ -46,3 +46,5 @@ tags: [work]
 - [The decisions that actually decide performance are only visible once the detail is stripped away](../lessons/the-decisions-that-decide-performance-are-only-visible-with-detail-removed.md)
 - [Narrow the boundary to a system you do not control, even when it costs you capability](../lessons/narrow-the-boundary-to-a-foreign-system-even-at-the-cost-of-capability.md)
 - [Change the representation or the control flow, never both in one step, and do representation first](../lessons/change-the-representation-or-the-control-flow-never-both-at-once.md)
+- [Make the control state explicit data and the order of work becomes yours to choose](../lessons/make-the-implicit-control-state-explicit-and-order-becomes-free.md)
+- [Split a program into input, process, and output so the part worth reasoning about is a relation](../lessons/split-input-process-output-so-the-core-can-be-described-as-a-relation.md)
