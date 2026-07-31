@@ -70,3 +70,4 @@ tags: [work]
 - [When an optimization forces two loops together, give each advance its own guard](../lessons/when-an-optimization-forces-two-loops-together-give-each-advance-its-own-guard.md)
 - [Two optimizations that each win do not compose into a win](../lessons/two-optimizations-that-each-win-do-not-compose-into-a-win.md)
 - [Monotone access is a separate deliverable from the cost bound](../lessons/monotone-access-is-a-separate-deliverable-from-the-cost-bound.md)
+- [Choose passes that preserve each other's work — and that overlap](../lessons/choose-passes-that-preserve-each-others-work-and-that-overlap.md)

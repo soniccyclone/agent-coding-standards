@@ -88,6 +88,9 @@ tags: [work]
 - [Partitioning the channel is a proxy for knowing the requester](../lessons/partitioning-the-channel-is-a-proxy-for-knowing-the-requester.md)
 - [The risk in derived personal data sits at the exit from automation, not at its collection](../lessons/the-risk-in-derived-personal-data-is-at-the-exit-from-automation.md)
 
+- [Absence is not a value — keep 'unknown' distinct from 'lowest'](../lessons/absence-is-not-a-value-keep-unknown-distinct-from-zero.md)
+- [Removing a constraint removes the work the constraint was silently doing](../lessons/removing-a-constraint-removes-the-work-it-was-doing.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in

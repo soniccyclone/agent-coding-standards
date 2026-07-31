@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Let a physical story generate your state variables, then refuse to let it justify anything"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [cognitive-load, verifiability]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Let a physical story generate your state variables, then refuse to let it justify anything
+
+**Lesson:** Some algorithms are far easier to invent as descriptions of a physical process than as manipulations of data. Imagine something spreading outward at uniform speed and branching at every junction; the first arrival at a junction obviously came by the shortest route, since nothing that started later or travelled further can overtake it at equal speed. That sentence is a complete design. It is worth noticing precisely what it produced, because the yield is more specific than "an idea". Ask what you would need in order to record the instantaneous condition of that process and step it forward event by event, and the answer *is* the program's variable list: what has been reached, what is en route, and the arrival time associated with each. Ask what the next event is, and the answer is the loop body. Ask when the process is over, and the answer is the loop test. The story hands you the state, the transition and the termination condition, which is most of the program.
+
+The discipline is in what happens next. The story is a generator, never a warrant. You want minimum distances; you have simulated an imaginary race; the link between the two is intuitive and intuition is exactly the thing that is wrong in the cases that matter. So the next step is to write the properties down as assertions and prove them — that recorded values never understate the true distance, that the recorded values of settled items never exceed those of unsettled ones, that the item with the smallest pending value can be settled — and to notice which of them quietly depend on a feature of the story you might have discarded as colour. Uniform speed is what makes a first arrival unbeatable; drop it, allow one edge to be traversed at negative cost, and the intuition still reads convincingly while the algorithm becomes wrong.
+
+The lasting value of the story is elsewhere anyway. It survives as the explanation of *why* the invariants are what they are, which is the part of a program that documentation almost never captures and that maintainers most need. Keep it, use it to onboard people, and keep it strictly separated from the argument — one paragraph that says how to picture this, and a set of stated conditions that say what is actually guaranteed. Programs that mix the two produce maintainers who reason about the picture and change the code accordingly.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 5.2.2, which introduces the single-source minimum-distance algorithm by way of a race of amoebas that travel at fixed speed and fission at each node, characterizes the state of the race by four variables that become the program's variables, derives the loop body from the next state-changing event and the termination test from the absence of anything en route, notes that the losing amoebas can never catch up precisely because all travel at the same speed, and then states that since the real goal is minimum distances rather than simulated amoebas and the connection between them is only intuitive, it is desirable to buttress the intuition with assertions — followed by the numbered invariants about the distance array and their inductive justifications.
