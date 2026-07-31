@@ -121,3 +121,5 @@ coverage note recorded (10980) and died before back-linking. Links restored.
 - [A feature added to make a hoped-for proof method work has to be re-examined the moment that method is abandoned](../lessons/a-feature-added-to-serve-a-proof-method-must-be-re-examined-when-the-method-is-dropped.md)
 - [Building the formal model is how you find the design questions you never realized you had left open](../lessons/a-semantics-exposes-the-design-questions-you-never-knew-you-left-open.md)
 - [A model that guarantees determinism pays for it in storage it cannot bound and in questions it cannot ask about arrival order](../lessons/guaranteed-determinism-costs-you-arrival-order-and-bounded-storage.md)
+- [Give each operator exactly one concept, and treat the simplicity of its laws as the evidence that the concepts really were separate](../lessons/one-concept-per-operator-and-simple-laws-are-the-evidence-of-separation.md)
+- [A proof system whose rules follow the shape of the specification cannot be compositional, and negation is where it gives itself away](../lessons/a-proof-system-structured-on-the-specification-cannot-be-compositional.md)

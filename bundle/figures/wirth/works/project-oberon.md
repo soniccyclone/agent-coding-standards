@@ -177,4 +177,5 @@ section are where the extractable lessons are.
 - [An unresolvable reference needs a placeholder and a named expiry moment](../lessons/an-unresolvable-reference-needs-a-placeholder-and-a-named-expiry.md)
 - [Enumerate your rule violations and grade them by what they constrain](../lessons/enumerate-your-rule-violations-and-grade-them-by-what-they-constrain.md)
 - [Accept the general form, then classify against a closed set](../lessons/accept-the-general-form-then-classify-against-a-closed-set.md)
+- [A tag that trails its payload forces the reader to buffer](../lessons/a-tag-that-trails-its-payload-forces-the-reader-to-buffer.md)
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)
