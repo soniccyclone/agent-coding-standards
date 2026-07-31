@@ -18,7 +18,7 @@ its own sake.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-529 lessons from 73 figures.
+539 lessons from 74 figures.
 
 **abiteboul** (5)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -309,6 +309,9 @@ No works or lessons tagged with this subdomain yet.
 **karp** (1)
 - [Prove you dominate a deliberately crippled version of yourself, then study the crippled version instead](../figures/karp/lessons/analyze-a-crippled-version-you-can-prove-you-dominate.md)
 
+**kay** (1)
+- [Anything precise enough to be worth writing will contain mistakes, so make it run rather than making it a specification](../figures/kay/lessons/anything-worth-stating-precisely-must-be-runnable.md)
+
 **kleene** (8)
 - [A component correct in steady state can be wrong before it has observed anything, and which specifications are startup-safe is decidable in advance](../figures/kleene/lessons/startup-state-belongs-in-the-specification.md)
 - [A notation general enough to express all computation must admit texts you cannot certify are meaningful — that is a proof of adequacy, not a defect](../figures/kleene/lessons/a-truly-general-notation-must-admit-programs-you-cannot-certify.md)
@@ -423,9 +426,12 @@ No works or lessons tagged with this subdomain yet.
 - [The defining equation is the specification: if two programs satisfy the same recursion, they are the same program](../figures/mccarthy/lessons/the-defining-equation-is-the-specification.md)
 - [Turn the mutable environment into a single value with stated laws, and imperative code becomes reasonable by the same means as functional code](../figures/mccarthy/lessons/make-the-mutable-environment-a-value-with-laws.md)
 
-**mcmillan** (14)
+**mcmillan** (19)
 - [A concrete witness outranks a proof, because it does not inherit your assumptions](../figures/mcmillan/lessons/a-witness-outranks-a-proof.md)
+- [A correct encoding is onto, not minimal](../figures/mcmillan/lessons/a-correct-encoding-is-onto-not-minimal.md)
 - [A failed search leaves behind a reusable argument, not just a verdict](../figures/mcmillan/lessons/a-failed-search-leaves-behind-a-reusable-argument.md)
+- [A heuristic win obliges you to name the class — and its complement](../figures/mcmillan/lessons/a-heuristic-win-obliges-you-to-name-the-class.md)
+- [A recursive definition does not pick its own meaning — you do](../figures/mcmillan/lessons/a-recursive-definition-does-not-pick-its-own-meaning.md)
 - [Buy tractability with deliberate imprecision, then pay for it with a convergence argument](../figures/mcmillan/lessons/buy-tractability-with-imprecision-then-pay-for-it-with-a-convergence-argument.md)
 - [Change the representation underneath your algorithms, not the algorithms](../figures/mcmillan/lessons/change-the-representation-under-the-algorithms-not-the-algorithms.md)
 - [Let cost track the description's structure, not the population it describes](../figures/mcmillan/lessons/let-cost-track-structure-not-size.md)
@@ -437,6 +443,8 @@ No works or lessons tagged with this subdomain yet.
 - [Spend human judgement where search is expensive and machine effort where it is cheap](../figures/mcmillan/lessons/spend-human-judgement-where-search-is-expensive.md)
 - [Systems are only well behaved where they can actually go](../figures/mcmillan/lessons/systems-are-only-well-behaved-where-they-can-actually-go.md)
 - [To generalise over sizes, compare with an ordering rather than an equivalence](../figures/mcmillan/lessons/pick-an-ordering-not-an-equivalence.md)
+- [What crosses each cut sets the size of your representation](../figures/mcmillan/lessons/what-crosses-each-cut-sets-the-size-of-your-representation.md)
+- [When a condition touches every case, find the one object it factors through](../figures/mcmillan/lessons/find-the-object-a-pervasive-condition-factors-through.md)
 - [Where you cut the problem fixes the vocabulary the answer can use](../figures/mcmillan/lessons/where-you-cut-the-problem-fixes-the-vocabulary-of-the-answer.md)
 
 **milner** (11)
@@ -568,12 +576,16 @@ No works or lessons tagged with this subdomain yet.
 - [What you cannot distinguish, you do not have to keep](../figures/schonfinkel/lessons/what-you-cannot-distinguish-you-do-not-have-to-keep.md)
 - [When two problems are dual, work whichever side is cheaper each time](../figures/schonfinkel/lessons/when-two-problems-are-dual-work-whichever-side-is-cheaper-each-time.md)
 
-**scott** (8)
+**scott** (12)
+- [A model validates laws your rule set cannot reach, and those are the rules you are missing](../figures/scott/lessons/a-model-validates-laws-your-rule-set-cannot-reach.md)
+- [A requirement that must hold for every interpretation pins down what testing against yours cannot](../figures/scott/lessons/a-requirement-quantified-over-all-interpretations-pins-down-what-testing-cannot.md)
 - [Build a special-purpose system so it reads as a fragment of a general one you already believe](../figures/scott/lessons/build-your-special-purpose-system-as-a-fragment-of-a-general-one.md)
+- [Every level of abstraction adds a quantifier to any guarantee you want about it](../figures/scott/lessons/every-level-of-abstraction-adds-a-quantifier-to-guarantees-about-it.md)
 - [Mark the boundary of what you know at the exact point where it stops](../figures/scott/lessons/mark-the-boundary-of-what-you-know-at-the-point-it-stops.md)
 - [Order your assumptions by how the ideas arise, not by logical minimality](../figures/scott/lessons/order-assumptions-by-motivation-not-by-logical-minimality.md)
 - [Read your proof rule off the construction, and do not settle for its convenient instances](../figures/scott/lessons/take-the-proof-rule-from-the-construction.md)
 - [Repairing a shared lemma is not done until every use of it has been rechecked individually](../figures/scott/lessons/repairing-a-shared-lemma-means-revisiting-every-use-of-it.md)
+- [The shape of a defining condition is a measurement of how it can be tested](../figures/scott/lessons/the-shape-of-a-defining-condition-measures-how-it-can-be-tested.md)
 - [Two accounts agreeing is evidence in proportion to how far apart they are](../figures/scott/lessons/agreement-between-two-accounts-is-evidence-in-proportion-to-their-distance.md)
 - [When the general completeness question is closed, find the narrow one you actually need](../figures/scott/lessons/when-general-completeness-is-closed-ask-the-narrow-question.md)
 - [When the motivation for an approach collapses, its machinery is usually still the valuable part](../figures/scott/lessons/a-superseded-motivation-does-not-supersede-the-machinery.md)

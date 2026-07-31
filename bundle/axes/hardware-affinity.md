@@ -21,7 +21,7 @@ programming, but the axis that scores the compilation step itself.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-408 lessons from 84 figures.
+415 lessons from 84 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -249,9 +249,13 @@ No lessons scored on this axis yet.
 - [Refinement never repairs a growth rate, and a working demo on small inputs is not evidence](../figures/karp/lessons/refinement-never-repairs-a-growth-rate.md)
 - [Trust only the distinctions that survive a change of machine and a change of representation](../figures/karp/lessons/trust-only-classifications-that-survive-a-change-of-machine.md)
 
-**kay** (3)
+**kay** (7)
+- [A widely adopted middle layer stops being neutral and starts dictating the layers on both sides of it](../figures/kay/lessons/a-popular-intermediate-layer-stops-being-neutral.md)
+- [Buy the common case with a cheap approximate mechanism and let the rare case be slow, rather than paying bookkeeping on every operation](../figures/kay/lessons/buy-the-common-case-cheaply-and-degrade-gracefully.md)
 - [Convert the one non-negotiable requirement into a numeric budget, and let the budget eliminate whole option classes](../figures/kay/lessons/turn-the-hard-requirement-into-a-budget-that-eliminates.md)
 - [Measure quality where output is received, and design into the consumer's processing instead of around it](../figures/kay/lessons/design-into-the-receivers-transfer-function.md)
+- [Progress is the history of moving decisions later, and generality costs nothing if the common case runs full speed and only the exception traps](../figures/kay/lessons/progress-is-moving-decisions-later.md)
+- [Treat a processing chain as concurrent stages joined by queues, then reshape the data so decision points do not stall it](../figures/kay/lessons/shape-the-representation-so-the-pipeline-never-guesses.md)
 - [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../figures/kay/lessons/response-inside-the-loop-of-thought.md)
 
 **kleene** (1)
@@ -311,12 +315,15 @@ No lessons scored on this axis yet.
 - [When an abstraction cannot be uniformly cheap, expose its cost tiers as declarations rather than picking one price and hiding it](../figures/mccarthy/lessons/make-the-cost-tier-a-declaration-instead-of-a-hidden-uniform-choice.md)
 - [When the machine forecloses an option, check whether what survived is cleaner before you mourn the loss](../figures/mccarthy/lessons/let-the-machine-prune-your-primitives.md)
 
-**mcmillan** (5)
+**mcmillan** (8)
+- [A heuristic win obliges you to name the class — and its complement](../figures/mcmillan/lessons/a-heuristic-win-obliges-you-to-name-the-class.md)
+- [An iteration costs what changes, not what it contains](../figures/mcmillan/lessons/an-iteration-costs-what-changes-not-what-it-contains.md)
 - [Let cost track the description's structure, not the population it describes](../figures/mcmillan/lessons/let-cost-track-structure-not-size.md)
 - [Measure the exponent of a parameterised family, not the runtime of a benchmark](../figures/mcmillan/lessons/measure-the-exponent-not-the-benchmark.md)
 - [Never assemble the object you only need to interrogate; the peak intermediate is your real limit](../figures/mcmillan/lessons/the-peak-intermediate-is-the-real-limit.md)
 - [Separate the structure that is in the system from the structure your model imposes on it](../figures/mcmillan/lessons/separate-structure-in-the-system-from-structure-your-model-imposes.md)
 - [Systems are only well behaved where they can actually go](../figures/mcmillan/lessons/systems-are-only-well-behaved-where-they-can-actually-go.md)
+- [What crosses each cut sets the size of your representation](../figures/mcmillan/lessons/what-crosses-each-cut-sets-the-size-of-your-representation.md)
 
 **naur** (3)
 - [Fix the defining form for human understanding, and let every machine encoding be a transliteration of it](../figures/naur/lessons/one-defining-representation-many-encodings.md)

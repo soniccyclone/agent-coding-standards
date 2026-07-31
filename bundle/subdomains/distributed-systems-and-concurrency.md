@@ -17,7 +17,7 @@ single-machine formalisms don't have to account for.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-343 lessons from 65 figures.
+345 lessons from 66 figures.
 
 **abiteboul** (4)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -208,6 +208,10 @@ No works or lessons tagged with this subdomain yet.
 **karp** (2)
 - [When decisions are irrevocable and the future is unknown, redefine quality as a ratio to an oracle, then prove the ceiling so you know when to stop trying](../figures/karp/lessons/judge-irrevocable-decisions-against-an-oracle-and-prove-the-ceiling.md)
 - [Where you inject randomness matters more than how much: one hidden commitment held consistently beats a fresh coin flip per decision](../figures/karp/lessons/commit-to-one-random-choice-instead-of-re-rolling-each-decision.md)
+
+**kay** (2)
+- [A standing condition should be evaluated when its inputs change, along the changed path only, and you should know what that costs](../figures/kay/lessons/turn-standing-conditions-into-notifications-along-the-changed-path.md)
+- [Neither commands nor names scale, so let modules notice conditions and carry a runnable model of what they need](../figures/kay/lessons/neither-commands-nor-names-scale.md)
 
 **kolmogorov** (6)
 - [A guarantee about one trial says nothing about many, and one about many says nothing about any](../figures/kolmogorov/lessons/guarantees-do-not-transport-across-quantifier-scope.md)

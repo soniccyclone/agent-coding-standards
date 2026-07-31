@@ -22,7 +22,7 @@ stylistic preference.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-689 lessons from 94 figures.
+705 lessons from 94 figures.
 
 **abiteboul** (2)
 - [The class of computations is the real object; notations and semantics are viewpoints on it](../figures/abiteboul/lessons/the-computation-class-is-the-object-syntaxes-are-viewpoints.md)
@@ -354,11 +354,20 @@ No lessons scored on this axis yet.
 - [Solve a new problem by translating it into one whose difficulty you already know](../figures/karp/lessons/translate-the-new-problem-into-one-you-already-understand.md)
 - [Trust only the distinctions that survive a change of machine and a change of representation](../figures/karp/lessons/trust-only-classifications-that-survive-a-change-of-machine.md)
 
-**kay** (5)
+**kay** (14)
+- [A widely adopted middle layer stops being neutral and starts dictating the layers on both sides of it](../figures/kay/lessons/a-popular-intermediate-layer-stops-being-neutral.md)
+- [Buy the common case with a cheap approximate mechanism and let the rare case be slow, rather than paying bookkeeping on every operation](../figures/kay/lessons/buy-the-common-case-cheaply-and-degrade-gracefully.md)
 - [Collapse a system's categories when they differ only by rate, and delete the subsystems the distinction required](../figures/kay/lessons/collapse-system-categories-into-one-concept.md)
+- [Find the one mechanism your whole stack is secretly made of, and pick the element that stays meaningful at every level](../figures/kay/lessons/find-the-one-mechanism-the-whole-stack-is-made-of.md)
 - [Look for the shared process beneath surface-different domains, then split the score from the performer](../figures/kay/lessons/one-vocabulary-for-domains-that-only-look-different.md)
+- [Make the hardest thing you need your one primitive, and judge a small basis by its slope rather than its size](../figures/kay/lessons/build-from-the-hardest-thing-and-judge-a-basis-by-its-slope.md)
 - [Name the thing before the operation, at every layer, so the thing itself can answer what may be done to it](../figures/kay/lessons/name-the-thing-before-the-operation.md)
+- [Never divide a system into kinds of thing weaker than the whole; make every part carry the whole system's power](../figures/kay/lessons/never-divide-a-system-into-things-weaker-than-itself.md)
+- [Progress is the history of moving decisions later, and generality costs nothing if the common case runs full speed and only the exception traps](../figures/kay/lessons/progress-is-moving-decisions-later.md)
+- [Relating one name to another is a spectrum of distinct commitments, not a single operation called assignment](../figures/kay/lessons/relating-two-names-is-a-spectrum-not-a-binary.md)
 - [Remove a mode by generalizing the representation until the competing operations become one, usually by admitting the degenerate case](../figures/kay/lessons/kill-modes-by-admitting-the-degenerate-case.md)
+- [The exceptions to a system's central claim are where the next design lives, so invert the default instead of encoding around them](../figures/kay/lessons/the-exceptions-to-your-central-claim-are-the-design.md)
+- [Treat the size of an existing solution as an unanswered empirical question, and answer it by building a small one](../figures/kay/lessons/treat-the-size-of-the-current-solution-as-an-open-question.md)
 - [When the users' needs are genuinely unbounded, ship a medium plus exemplars instead of enumerating features](../figures/kay/lessons/design-a-medium-not-a-feature-set.md)
 
 **kleene** (8)
@@ -459,10 +468,12 @@ No lessons scored on this axis yet.
 - [Two formalisms of identical power can still be unequal designs: judge a basis by which operations it makes elementary](../figures/mccarthy/lessons/equal-power-is-not-equal-structure.md)
 - [When the machine forecloses an option, check whether what survived is cleaner before you mourn the loss](../figures/mccarthy/lessons/let-the-machine-prune-your-primitives.md)
 
-**mcmillan** (4)
+**mcmillan** (6)
+- [A correct encoding is onto, not minimal](../figures/mcmillan/lessons/a-correct-encoding-is-onto-not-minimal.md)
 - [Change the representation underneath your algorithms, not the algorithms](../figures/mcmillan/lessons/change-the-representation-under-the-algorithms-not-the-algorithms.md)
 - [Never assemble the object you only need to interrogate; the peak intermediate is your real limit](../figures/mcmillan/lessons/the-peak-intermediate-is-the-real-limit.md)
 - [Refuse to decide what nobody asked you to decide](../figures/mcmillan/lessons/refuse-to-decide-what-you-were-not-asked.md)
+- [When a condition touches every case, find the one object it factors through](../figures/mcmillan/lessons/find-the-object-a-pervasive-condition-factors-through.md)
 - [Where you cut the problem fixes the vocabulary the answer can use](../figures/mcmillan/lessons/where-you-cut-the-problem-fixes-the-vocabulary-of-the-answer.md)
 
 **milner** (7)
@@ -636,18 +647,23 @@ No lessons scored on this axis yet.
 - [Widen what a value can be and arity stops mattering](../figures/schonfinkel/lessons/widen-what-a-value-can-be-and-arity-stops-mattering.md)
 - [Your primitives are the moves your notation cannot make silently](../figures/schonfinkel/lessons/your-primitives-are-the-moves-your-notation-cannot-make-silently.md)
 
-**scott** (12)
+**scott** (17)
+- [A representation is abstract exactly when only distinguishability is required of it](../figures/scott/lessons/abstract-means-only-distinguishability-is-required.md)
 - [A symmetric operator is a claim about the execution model, not just a truth table](../figures/scott/lessons/a-symmetric-operator-is-a-claim-about-the-execution-model.md)
 - [An impossibility result indicts one of your background assumptions, not the thing you wanted](../figures/scott/lessons/an-impossibility-result-indicts-an-assumption-not-your-goal.md)
+- [Audit afterward which part of a borrowed theory you actually used](../figures/scott/lessons/audit-afterward-which-part-of-the-borrowed-theory-you-actually-used.md)
 - [Before accepting a restriction, find out whether it is forced by the mathematics or inherited as caution](../figures/scott/lessons/test-whether-a-restriction-is-mathematics-or-inherited-caution.md)
 - [Being forced to store a representation instead of the thing is a report of a missing structure](../figures/scott/lessons/storing-a-representation-instead-of-the-thing-is-a-missing-structure.md)
 - [Build a special-purpose system so it reads as a fragment of a general one you already believe](../figures/scott/lessons/build-your-special-purpose-system-as-a-fragment-of-a-general-one.md)
+- [Close the tower, so statements about your system become statements in it](../figures/scott/lessons/close-the-tower-so-theorems-about-the-system-become-formulas-in-it.md)
 - [Keep the apparatus you reason with out of the domain you are modeling](../figures/scott/lessons/keep-the-apparatus-you-reason-with-out-of-the-domain-you-model.md)
 - [Look for the one tiny object that generates the entire class you care about](../figures/scott/lessons/find-the-one-tiny-object-that-generates-the-whole-class.md)
 - [Make undefinedness an ordinary value ordered by how much it tells you, not a hole outside the type](../figures/scott/lessons/make-undefinedness-a-value-not-an-exception.md)
+- [Pick the structure whose weakness is exactly what buys the guarantee you need](../figures/scott/lessons/pick-the-structure-whose-weakness-buys-the-guarantee-you-need.md)
 - [Put everything in one universal domain and recover the specific types as subspaces of it](../figures/scott/lessons/put-everything-in-one-universal-domain-and-define-the-rest-as-subspaces.md)
 - [Separate the fixed skeleton from the pluggable primitives, so one account covers a whole class of models](../figures/scott/lessons/parameterize-over-a-class-of-models-not-one.md)
 - [Solve the closure problem once, and each specific design collapses into an equation](../figures/scott/lessons/solve-the-closure-problem-once-so-designs-become-equations.md)
+- [The operators you provide decide what your variables can range over](../figures/scott/lessons/the-operators-you-provide-decide-what-your-variables-can-range-over.md)
 - [Two accounts agreeing is evidence in proportion to how far apart they are](../figures/scott/lessons/agreement-between-two-accounts-is-evidence-in-proportion-to-their-distance.md)
 
 **sifakis** (5)

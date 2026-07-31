@@ -17,7 +17,7 @@ philosophy here, it's the actual subject matter.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-357 lessons from 53 figures.
+361 lessons from 53 figures.
 
 **abrial** (1)
 - [Every guarantee has an edge; state where it is and cover the outside with a mechanism of a different kind](../figures/abrial/lessons/name-the-edge-of-your-guarantee.md)
@@ -170,8 +170,12 @@ No works or lessons tagged with this subdomain yet.
 **jones** (1)
 - [To get something existing under intellectual control, describe the idealized version first and relate the real one back to it](../figures/jones/lessons/describe-the-idealized-version-first-then-relate-the-real-one.md)
 
-**kay** (2)
+**kay** (6)
+- [A widely adopted middle layer stops being neutral and starts dictating the layers on both sides of it](../figures/kay/lessons/a-popular-intermediate-layer-stops-being-neutral.md)
+- [Buy the common case with a cheap approximate mechanism and let the rare case be slow, rather than paying bookkeeping on every operation](../figures/kay/lessons/buy-the-common-case-cheaply-and-degrade-gracefully.md)
 - [Collapse a system's categories when they differ only by rate, and delete the subsystems the distinction required](../figures/kay/lessons/collapse-system-categories-into-one-concept.md)
+- [Progress is the history of moving decisions later, and generality costs nothing if the common case runs full speed and only the exception traps](../figures/kay/lessons/progress-is-moving-decisions-later.md)
+- [Treat a processing chain as concurrent stages joined by queues, then reshape the data so decision points do not stall it](../figures/kay/lessons/shape-the-representation-so-the-pipeline-never-guesses.md)
 - [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../figures/kay/lessons/response-inside-the-loop-of-thought.md)
 
 **knuth** (2)

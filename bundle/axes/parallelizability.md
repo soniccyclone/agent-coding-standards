@@ -20,7 +20,7 @@ units of work.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-224 lessons from 79 figures.
+227 lessons from 80 figures.
 
 **abiteboul** (2)
 - [How you schedule the steps is part of what the program means](../figures/abiteboul/lessons/how-you-schedule-the-rules-is-part-of-what-they-mean.md)
@@ -193,6 +193,11 @@ No lessons scored on this axis yet.
 
 **karp** (1)
 - [Stop optimizing the single step; find the batch of non-interfering steps and bound how many batches there are](../figures/karp/lessons/batch-non-interfering-improvements-into-phases.md)
+
+**kay** (3)
+- [A standing condition should be evaluated when its inputs change, along the changed path only, and you should know what that costs](../figures/kay/lessons/turn-standing-conditions-into-notifications-along-the-changed-path.md)
+- [Neither commands nor names scale, so let modules notice conditions and carry a runnable model of what they need](../figures/kay/lessons/neither-commands-nor-names-scale.md)
+- [Treat a processing chain as concurrent stages joined by queues, then reshape the data so decision points do not stall it](../figures/kay/lessons/shape-the-representation-so-the-pipeline-never-guesses.md)
 
 **kolmogorov** (4)
 - [Aggregation composes for free along refinements, and for nothing else without a hypothesis](../figures/kolmogorov/lessons/aggregate-in-stages-along-refinements-and-nowhere-else-for-free.md)

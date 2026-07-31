@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-239 lessons from 33 figures.
+245 lessons from 33 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -138,7 +138,7 @@ No works or lessons tagged with this subdomain yet.
 - [Treat the order of a bootstrap as a design artifact: make every stage observable, and deliberately under-build whatever that stage cannot stress](../figures/ingalls/lessons/sequence-a-bootstrap-and-underbuild-what-cannot-be-stressed-yet.md)
 - [When you control how names are handed out, put the information in the name instead of in the thing named](../figures/ingalls/lessons/put-the-information-in-the-name-not-the-thing-named.md)
 
-**kay** (15)
+**kay** (21)
 - [A replacement must not be worse than the incumbent in any way its users care about, and must not stop at imitating it](../figures/kay/lessons/match-what-you-replace-before-you-transcend-it.md)
 - [A representation people internalize becomes invisible and reshapes their thinking, so judge it by the thinking it installs](../figures/kay/lessons/a-medium-reshapes-whoever-internalizes-it.md)
 - [A theory is a filter for judging design candidates, not a source of them, and past its range it suppresses the obvious answer](../figures/kay/lessons/theory-judges-ideas-it-does-not-generate-them.md)
@@ -146,12 +146,18 @@ No works or lessons tagged with this subdomain yet.
 - [Convert the one non-negotiable requirement into a numeric budget, and let the budget eliminate whole option classes](../figures/kay/lessons/turn-the-hard-requirement-into-a-budget-that-eliminates.md)
 - [Design for several distinct reasoning faculties that compete, and give each one work it is good at](../figures/kay/lessons/several-reasoners-not-one.md)
 - [Every capability should be equally reachable by hand and by program, and every object equally open to inspection](../figures/kay/lessons/nothing-reachable-only-by-hand.md)
+- [Every convenient default is an absent designer's guess about you, so make the guess visible and replaceable at every scope](../figures/kay/lessons/every-convenient-default-is-an-absent-designers-guess.md)
 - [Look for the shared process beneath surface-different domains, then split the score from the performer](../figures/kay/lessons/one-vocabulary-for-domains-that-only-look-different.md)
 - [Measure quality where output is received, and design into the consumer's processing instead of around it](../figures/kay/lessons/design-into-the-receivers-transfer-function.md)
+- [Name the part you do not know how to do, build inward from both ends, and treat the models as instruments to be discarded](../figures/kay/lessons/name-the-part-you-cannot-do-yet-and-build-inward.md)
 - [Name the thing before the operation, at every layer, so the thing itself can answer what may be done to it](../figures/kay/lessons/name-the-thing-before-the-operation.md)
+- [Never divide a system into kinds of thing weaker than the whole; make every part carry the whole system's power](../figures/kay/lessons/never-divide-a-system-into-things-weaker-than-itself.md)
 - [People hold knowledge as ad hoc procedures, not consistent axioms, so build on the models they already have](../figures/kay/lessons/fit-abstractions-to-operational-models.md)
+- [Read the previous generation as almost a new thing, take an extreme position to force the new one out, and be willing to burn what already works](../figures/kay/lessons/read-the-previous-generation-as-almost-a-new-thing.md)
 - [Remove a mode by generalizing the representation until the competing operations become one, usually by admitting the degenerate case](../figures/kay/lessons/kill-modes-by-admitting-the-degenerate-case.md)
 - [Treat response time as a first-class requirement, because latency decides what kind of thing you have built](../figures/kay/lessons/response-inside-the-loop-of-thought.md)
+- [Treat the size of an existing solution as an unanswered empirical question, and answer it by building a small one](../figures/kay/lessons/treat-the-size-of-the-current-solution-as-an-open-question.md)
+- [When capable people fail at a task you think is easy, count the non-obvious ideas it contains](../figures/kay/lessons/count-the-nonobvious-ideas-in-the-task.md)
 - [When the users' needs are genuinely unbounded, ship a medium plus exemplars instead of enumerating features](../figures/kay/lessons/design-a-medium-not-a-feature-set.md)
 - [Write the story of someone using the thing before you specify it, and let the story generate the requirements](../figures/kay/lessons/write-the-use-story-before-the-spec.md)
 

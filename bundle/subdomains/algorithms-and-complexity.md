@@ -16,7 +16,7 @@ its correctness or expressiveness.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-394 lessons from 55 figures.
+398 lessons from 55 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -218,15 +218,19 @@ No works or lessons tagged with this subdomain yet.
 **manna** (1)
 - [Define the shape of a counterexample first; the proof and the checking algorithm are both readings of it](../figures/manna/lessons/the-counterexample-is-the-object-the-proof-is-its-shadow.md)
 
-**mcmillan** (8)
+**mcmillan** (12)
 - [A failed search leaves behind a reusable argument, not just a verdict](../figures/mcmillan/lessons/a-failed-search-leaves-behind-a-reusable-argument.md)
+- [A heuristic win obliges you to name the class — and its complement](../figures/mcmillan/lessons/a-heuristic-win-obliges-you-to-name-the-class.md)
+- [An iteration costs what changes, not what it contains](../figures/mcmillan/lessons/an-iteration-costs-what-changes-not-what-it-contains.md)
 - [Buy tractability with deliberate imprecision, then pay for it with a convergence argument](../figures/mcmillan/lessons/buy-tractability-with-imprecision-then-pay-for-it-with-a-convergence-argument.md)
 - [Change the representation underneath your algorithms, not the algorithms](../figures/mcmillan/lessons/change-the-representation-under-the-algorithms-not-the-algorithms.md)
 - [Let cost track the description's structure, not the population it describes](../figures/mcmillan/lessons/let-cost-track-structure-not-size.md)
+- [Make the trigger a shape you can see, and defend the shape with a survey](../figures/mcmillan/lessons/make-the-trigger-a-shape-you-can-see.md)
 - [Measure the exponent of a parameterised family, not the runtime of a benchmark](../figures/mcmillan/lessons/measure-the-exponent-not-the-benchmark.md)
 - [Never assemble the object you only need to interrogate; the peak intermediate is your real limit](../figures/mcmillan/lessons/the-peak-intermediate-is-the-real-limit.md)
 - [Refuse to decide what nobody asked you to decide](../figures/mcmillan/lessons/refuse-to-decide-what-you-were-not-asked.md)
 - [Systems are only well behaved where they can actually go](../figures/mcmillan/lessons/systems-are-only-well-behaved-where-they-can-actually-go.md)
+- [What crosses each cut sets the size of your representation](../figures/mcmillan/lessons/what-crosses-each-cut-sets-the-size-of-your-representation.md)
 
 **peter** (1)
 - [To prove one level stronger than another, make it enumerate the weaker one](../figures/peter/lessons/separate-two-levels-of-power-by-making-the-higher-enumerate-the-lower.md)

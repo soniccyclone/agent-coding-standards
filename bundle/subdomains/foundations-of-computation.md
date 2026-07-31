@@ -19,7 +19,7 @@ corpus retains alongside it, not a rejected alternative.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-384 lessons from 45 figures.
+406 lessons from 46 figures.
 
 **abiteboul** (3)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -197,6 +197,11 @@ No works or lessons tagged with this subdomain yet.
 - [Solve a new problem by translating it into one whose difficulty you already know](../figures/karp/lessons/translate-the-new-problem-into-one-you-already-understand.md)
 - [Trust only the distinctions that survive a change of machine and a change of representation](../figures/karp/lessons/trust-only-classifications-that-survive-a-change-of-machine.md)
 
+**kay** (3)
+- [Make the hardest thing you need your one primitive, and judge a small basis by its slope rather than its size](../figures/kay/lessons/build-from-the-hardest-thing-and-judge-a-basis-by-its-slope.md)
+- [Relating one name to another is a spectrum of distinct commitments, not a single operation called assignment](../figures/kay/lessons/relating-two-names-is-a-spectrum-not-a-binary.md)
+- [The exceptions to a system's central claim are where the next design lives, so invert the default instead of encoding around them](../figures/kay/lessons/the-exceptions-to-your-central-claim-are-the-design.md)
+
 **kleene** (12)
 - [A bounded machine cannot store its history, only a fixed finite classification of it — so design the digest, do not scale the record](../figures/kleene/lessons/bounded-memory-forces-history-into-a-fixed-finite-classification.md)
 - [A notation general enough to express all computation must admit texts you cannot certify are meaningful — that is a proof of adequacy, not a defect](../figures/kleene/lessons/a-truly-general-notation-must-admit-programs-you-cannot-certify.md)
@@ -250,7 +255,9 @@ No works or lessons tagged with this subdomain yet.
 - [Treat undefinedness as a first-class semantic outcome, and let evaluation order be part of the meaning rather than an implementation detail](../figures/mccarthy/lessons/undefinedness-belongs-in-the-semantics.md)
 - [Two formalisms of identical power can still be unequal designs: judge a basis by which operations it makes elementary](../figures/mccarthy/lessons/equal-power-is-not-equal-structure.md)
 
-**mcmillan** (1)
+**mcmillan** (3)
+- [A correct encoding is onto, not minimal](../figures/mcmillan/lessons/a-correct-encoding-is-onto-not-minimal.md)
+- [A recursive definition does not pick its own meaning — you do](../figures/mcmillan/lessons/a-recursive-definition-does-not-pick-its-own-meaning.md)
 - [Change the representation underneath your algorithms, not the algorithms](../figures/mcmillan/lessons/change-the-representation-under-the-algorithms-not-the-algorithms.md)
 
 **peter** (9)
@@ -321,18 +328,30 @@ No works or lessons tagged with this subdomain yet.
 - [Widen what a value can be and arity stops mattering](../figures/schonfinkel/lessons/widen-what-a-value-can-be-and-arity-stops-mattering.md)
 - [Your primitives are the moves your notation cannot make silently](../figures/schonfinkel/lessons/your-primitives-are-the-moves-your-notation-cannot-make-silently.md)
 
-**scott** (32)
+**scott** (49)
 - [A construction closed enough to solve your equation will admit objects you did not intend](../figures/scott/lessons/a-closed-construction-admits-objects-you-did-not-intend.md)
 - [A counterexample to your law is often a function with an argument you forgot to declare](../figures/scott/lessons/a-counterexample-to-your-law-may-be-a-suppressed-argument.md)
+- [A gap can persist because nobody holds both vocabularies, not because a piece is missing](../figures/scott/lessons/a-gap-can-persist-because-nobody-holds-both-vocabularies.md)
+- [A model validates laws your rule set cannot reach, and those are the rules you are missing](../figures/scott/lessons/a-model-validates-laws-your-rule-set-cannot-reach.md)
+- [A requirement that must hold for every interpretation pins down what testing against yours cannot](../figures/scott/lessons/a-requirement-quantified-over-all-interpretations-pins-down-what-testing-cannot.md)
 - [A symmetric operator is a claim about the execution model, not just a truth table](../figures/scott/lessons/a-symmetric-operator-is-a-claim-about-the-execution-model.md)
+- [A total repair always returns something; only good input comes back unchanged](../figures/scott/lessons/a-total-repair-always-returns-something-only-good-input-comes-back.md)
+- [An axiom your model refutes may be one you are better off without](../figures/scott/lessons/an-axiom-your-model-refutes-may-be-one-you-are-better-off-without.md)
 - [An impossibility result indicts one of your background assumptions, not the thing you wanted](../figures/scott/lessons/an-impossibility-result-indicts-an-assumption-not-your-goal.md)
+- [Audit afterward which part of a borrowed theory you actually used](../figures/scott/lessons/audit-afterward-which-part-of-the-borrowed-theory-you-actually-used.md)
 - [Before accepting a restriction, find out whether it is forced by the mathematics or inherited as caution](../figures/scott/lessons/test-whether-a-restriction-is-mathematics-or-inherited-caution.md)
 - [Build a special-purpose system so it reads as a fragment of a general one you already believe](../figures/scott/lessons/build-your-special-purpose-system-as-a-fragment-of-a-general-one.md)
 - [Calibrate a critique to whether you failed to find something or proved it cannot exist](../figures/scott/lessons/calibrate-a-critique-to-whether-you-searched-or-proved.md)
 - [Characterize a class both by what its members do for you and by what they are made of](../figures/scott/lessons/characterize-a-class-both-by-what-it-does-and-by-what-it-is.md)
+- [Choose an encoding by the law you need it to satisfy, not by which one looks natural](../figures/scott/lessons/choose-an-encoding-by-the-law-you-need-it-to-satisfy.md)
+- [Close the tower, so statements about your system become statements in it](../figures/scott/lessons/close-the-tower-so-theorems-about-the-system-become-formulas-in-it.md)
+- [Condemning an approach obliges you to supply the alternative](../figures/scott/lessons/condemning-an-approach-obliges-you-to-supply-the-alternative.md)
 - [Demote your special machinery to a technique and let the standard setting carry the story](../figures/scott/lessons/demote-your-special-machinery-to-a-technique-and-start-from-the-standard-setting.md)
 - [Earn the right to infinite objects by building them as limits of finite ones](../figures/scott/lessons/earn-infinite-objects-as-limits-of-finite-ones.md)
+- [Existence without uniqueness is a construction, not the abstraction you wanted](../figures/scott/lessons/existence-without-uniqueness-is-not-the-abstraction-you-wanted.md)
 - [Formalize the property that carries the weight, not the one that happens to be true](../figures/scott/lessons/formalize-the-property-that-carries-the-weight.md)
+- [Get existence from a general principle first, then find out what you built](../figures/scott/lessons/get-existence-from-a-general-principle-then-find-out-what-you-built.md)
+- [Judge an observation by what it reorganizes, not by whether it shortens the proof in front of you](../figures/scott/lessons/judge-an-observation-by-what-it-reorganizes-not-by-the-proof-in-front-of-you.md)
 - [Keep the apparatus you reason with out of the domain you are modeling](../figures/scott/lessons/keep-the-apparatus-you-reason-with-out-of-the-domain-you-model.md)
 - [Keep the notation and the thing it denotes apart, because equivalence is a question about meanings](../figures/scott/lessons/keep-the-notation-and-the-thing-it-denotes-apart.md)
 - [Knowing something can be computed is a different state of knowledge from knowing how](../figures/scott/lessons/knowing-a-thing-is-computable-is-not-knowing-how.md)
@@ -340,7 +359,9 @@ No works or lessons tagged with this subdomain yet.
 - [Make realizability a predicate over a clean structure, not a restriction built into it](../figures/scott/lessons/make-effectiveness-a-predicate-over-a-clean-structure.md)
 - [Make undefinedness an ordinary value ordered by how much it tells you, not a hole outside the type](../figures/scott/lessons/make-undefinedness-a-value-not-an-exception.md)
 - [Mark the boundary of what you know at the exact point where it stops](../figures/scott/lessons/mark-the-boundary-of-what-you-know-at-the-point-it-stops.md)
+- [Pick the structure whose weakness is exactly what buys the guarantee you need](../figures/scott/lessons/pick-the-structure-whose-weakness-buys-the-guarantee-you-need.md)
 - [Prefer the class closed under composition over the simpler class inside it](../figures/scott/lessons/prefer-the-class-that-is-closed-under-composition-to-the-simpler-one.md)
+- [Prefer working modulo an equivalence to picking a canonical representative](../figures/scott/lessons/prefer-working-modulo-an-equivalence-to-picking-a-canonical-form.md)
 - [Put everything in one universal domain and recover the specific types as subspaces of it](../figures/scott/lessons/put-everything-in-one-universal-domain-and-define-the-rest-as-subspaces.md)
 - [Read your proof rule off the construction, and do not settle for its convenient instances](../figures/scott/lessons/take-the-proof-rule-from-the-construction.md)
 - [Repairing a shared lemma is not done until every use of it has been rechecked individually](../figures/scott/lessons/repairing-a-shared-lemma-means-revisiting-every-use-of-it.md)
@@ -348,12 +369,15 @@ No works or lessons tagged with this subdomain yet.
 - [Solving an equation by iteration does not name a unique answer; the starting point is part of the design](../figures/scott/lessons/an-equation-does-not-name-a-unique-solution-the-seed-does.md)
 - [State what a data type must satisfy instead of defining it as one representation](../figures/scott/lessons/give-a-theory-of-a-data-type-not-a-definition-of-it.md)
 - [The case you dismissed as pathological is usually already load-bearing somewhere ordinary](../figures/scott/lessons/the-pathological-case-is-usually-already-load-bearing.md)
+- [The operators you provide decide what your variables can range over](../figures/scott/lessons/the-operators-you-provide-decide-what-your-variables-can-range-over.md)
+- [The shape of a defining condition is a measurement of how it can be tested](../figures/scott/lessons/the-shape-of-a-defining-condition-measures-how-it-can-be-tested.md)
 - [Turn your subobjects into elements, and questions of existence become fixed-point equations](../figures/scott/lessons/make-your-subobjects-into-elements-so-existence-becomes-a-fixed-point.md)
 - [Two accounts agreeing is evidence in proportion to how far apart they are](../figures/scott/lessons/agreement-between-two-accounts-is-evidence-in-proportion-to-their-distance.md)
 - [When a construction stalls, try strengthening the maps rather than the objects](../figures/scott/lessons/when-a-construction-stalls-strengthen-the-maps-not-the-objects.md)
 - [When a definition is circular, its meaning is the least thing that satisfies it](../figures/scott/lessons/a-circular-definition-means-the-least-thing-that-satisfies-it.md)
 - [When the general completeness question is closed, find the narrow one you actually need](../figures/scott/lessons/when-general-completeness-is-closed-ask-the-narrow-question.md)
 - [When the motivation for an approach collapses, its machinery is usually still the valuable part](../figures/scott/lessons/a-superseded-motivation-does-not-supersede-the-machinery.md)
+- [Working on representations buys extra power only by breaking effectiveness or respect for meaning](../figures/scott/lessons/working-on-representations-buys-power-only-by-breaking-something.md)
 
 **sifakis** (5)
 - [Ask whether this one structure satisfies the formula, not whether some structure does](../figures/sifakis/lessons/check-the-model-you-have-not-every-model.md)
