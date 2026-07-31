@@ -157,6 +157,9 @@ tags: [work]
 - [If you must scan everything, shrink what you scan](../lessons/if-you-must-scan-everything-shrink-what-you-scan.md)
 - [The result inherits the properties of the weighting you chose](../lessons/the-result-inherits-the-properties-of-the-weighting-you-chose.md)
 - [Each level of a recursive split rests on less evidence](../lessons/each-level-of-a-recursive-split-rests-on-less-evidence.md)
+- [Keep the per-step choice tiny and recover power by composition](../lessons/keep-the-per-step-choice-tiny-and-recover-power-by-composition.md)
+- [Find the order in which the best answer is a prefix](../lessons/find-the-order-in-which-the-best-answer-is-a-prefix.md)
+- [Inherently serial usually means nobody looked for the regrouping](../lessons/inherently-serial-usually-means-nobody-looked-for-the-regrouping.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
