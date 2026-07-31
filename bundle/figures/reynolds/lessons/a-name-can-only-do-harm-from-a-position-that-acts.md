@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A name can only do harm from a position that acts, so compute dependencies by position, not by presence"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# A name can only do harm from a position that acts, so compute dependencies by position, not by presence
+
+**Lesson:** Start from the principle that nothing can reach out and disturb something else anonymously: every possible avenue of disturbance is reached through some name that appears in the text. That principle turns a question about behaviour into a question about occurrences, which is enormous progress — you can now bound what a fragment might affect by looking at the identifiers it mentions rather than at what it does. But the crude form of the bound, "collect every name that occurs free," is too pessimistic to be usable, and the reason is instructive. A name that occurs only in a position from which no action is possible cannot be a channel of disturbance, however alarming its presence looks.
+
+So the right unit of analysis is the *occurrence in its context*, not the name. Work outward from the occurrence through every enclosing phrase and ask whether all of them are of a kind that can perform an action. If any enclosing phrase is purely a computation of a value, then whatever happens at the occurrence is confined to producing a value, and the occurrence drops out of the disturbance set. The same name may occur twice in one fragment, once in an acting position and once in a computing one, and the two occurrences deserve completely different treatment. Any tool or habit that works from a flat set of mentioned names will over-report, and over-reporting is not a safe failure: an analysis that flags everything gets ignored, and then it flags nothing.
+
+The transferable move is to classify positions before you classify things. Decide, for each kind of phrase in your setting, whether appearing there means "this may change the world" or only "this may look at the world," and then let an occurrence inherit the most restrictive classification along its enclosing chain. This is what makes it possible to say the useful things: that reading a shared name is harmless while writing it is not, that a value passed to a component is not thereby a component's to modify, and that a component's true reach is determined by the subset of its free names that appear somewhere they could act. It also explains why some phrase kinds must be classified twice — a mutable cell both denotes a value and admits a write, so it counts as acting and as computing depending on where it turns up.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 3.3.5's rule for decomposing left-side non-interference, prefaced by the statement that the essential idea is that everything which can cause interference is named by an identifier, followed by the observation that the naive decomposition over all free identifiers needs strengthening because an identifier occurring only on the right of an assignment sits in a context that is not statement-like and therefore cannot describe any action causing interference; together with the definition of a statement-like occurrence as one all of whose enclosing subphrases have statement-like type, phrased in terms of the path from the root of a derivation tree, and Section 3.3.4's table classifying phrase types as statement-like or expression-like with simple and array variables counted as both.

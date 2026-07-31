@@ -43,3 +43,5 @@ tags: [work]
 - [Compute the distance to the ideal first; it is the entire budget for the fix](../lessons/compute-the-distance-to-the-ideal-it-is-the-budget-for-the-fix.md)
 - [Weaken the invariant until restoring it is cheap, but not past the point where it still bounds the worst case](../lessons/weaken-the-invariant-until-restoring-it-is-cheap.md)
 - [Move the contents to a position where the operation is easy](../lessons/move-the-contents-to-a-position-where-the-operation-is-easy.md)
+- [Small bookkeeping is charged at the layout's rate, not at its size](../lessons/small-bookkeeping-is-charged-at-the-layouts-rate.md)
+- [Worst case decides admissibility; expected case decides the choice](../lessons/worst-case-decides-admissibility-expected-case-decides-choice.md)

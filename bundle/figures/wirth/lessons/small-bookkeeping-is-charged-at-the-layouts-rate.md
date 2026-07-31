@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Small bookkeeping is charged at the layout's rate, not at its size"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [hardware-affinity, cognitive-load]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Small bookkeeping is charged at the layout's rate, not at its size
+
+**Lesson:** An algorithm that maintains an invariant needs somewhere to record what it knows, and the amount is often tiny — a couple of bits per element, negligible next to the payload. That negligibility is an illusion produced by counting the wrong thing. What the bookkeeping costs is not the space it occupies but the price of touching it, and that price is fixed by how the surrounding data is laid out. If elements are stored one to a natural transfer unit, the extra field is free to read and write. If elements are packed to reclaim space, every access to the field becomes an address computation plus an extraction, paid on every step of every operation that consults it — and the invariant exists precisely so that it can be consulted constantly. An analysis conducted in comparisons and pointer updates will not see any of this, and will confidently recommend the elaborate structure over the simple one on grounds that the machine does not honour.
+
+The underlying trade is old and general: space is reclaimed by packing several things into one addressable unit, and the reclamation is paid for with arithmetic at every access, plus larger code at every site that performs one. Which side wins is not a matter of taste; it turns on how much space packing actually saves and how often the packed field is touched. The characteristic failure is to decide the two questions in different places — the layout chosen by whoever cared about storage economy, the algorithm chosen by whoever cared about operation counts — with nobody responsible for the interaction. The result is an implementation whose measured behaviour matches neither analysis.
+
+Two habits fall out of this. First, when adding auxiliary state to make an algorithm smarter, price the access to that state under the layout you will actually ship, not under the convenient assumption that a field is a field. Second, treat "the elaborate method loses its advantage under packing" as an expected outcome rather than a surprise, and keep the simple method available, because the simple method's advantage is that it consults nothing and therefore cannot be taxed. A structure that maintains no derived information is remarkably hard to beat once the derived information has to be dug out of a word.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 1.6.1's treatment of mapping arrays onto a store, its storage utilization factor, the listed considerations that padding decreases utilization while omitting it necessitates inefficient partial word access and expands the compiled code enough to counteract the gain, the resulting note that compilers pad automatically, and the description of packing with its per-access division and remainder computation; together with section 4.5.1's closing assessment that the complexity of the balancing operations means balanced trees pay only when retrievals greatly outnumber insertions, that the nodes of such search trees are usually implemented as densely packed records to economize storage, that the speed of accessing and updating the two-bit balance factors is therefore often decisive, and that empirical evaluation shows balanced trees losing much of their appeal when tight record packing is mandatory.

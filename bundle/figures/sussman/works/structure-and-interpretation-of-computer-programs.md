@@ -66,17 +66,19 @@ tags: [work]
 - [Decide whether a value really belongs to the simpler type by round-tripping the lossy conversion](../lessons/decide-membership-by-round-tripping-the-lossy-conversion.md)
 - [When a question about your objects has no affordable answer, redefine the objects so it cannot be asked](../lessons/decide-what-your-object-is-so-the-unanswerable-question-cannot-arise.md)
 - [Combine your parts with the generic operation and the data, not the author, decides how deep the structure goes](../lessons/call-the-generic-operation-and-the-data-decides-the-recursion.md)
+- [Distort the input to stay inside the domain you can compute in, when the consumer cancels the distortion](../lessons/accept-a-wrong-answer-the-consumer-will-cancel.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: all of chapter 1, plus chapter 2 through the start of 2.5.3 (lines
-784-10250)** - data abstraction, what data means, interval arithmetic, closure,
-sequences, hierarchical structures, sequences as conventional interfaces, the
-picture language with stratified design, symbolic data and quotation, symbolic
+**Read so far: all of chapter 1 and all of chapter 2 (lines 784-10940)** - data
+abstraction, what data means, interval arithmetic, closure, sequences,
+hierarchical structures, sequences as conventional interfaces, the picture
+language with stratified design, symbolic data and quotation, symbolic
 differentiation, set representations, Huffman encoding trees, multiple
 representations and type tags, data-directed programming and message passing,
-generic arithmetic, coercion, and type towers. Next unread line is **10251**
-(inside 2.5.3, symbolic algebra / polynomial arithmetic). Chapters 3, 4 and 5 are
+generic arithmetic, coercion, type towers, and symbolic algebra / polynomial
+arithmetic including the rational-function extended exercise. Next unread line is
+**10941** (chapter 3, section 3.1 Assignment and Local State). Chapters 4 and 5 are
 entirely unread. `extraction: complete` withheld until all five chapters are read._

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Worst case decides admissibility; expected case decides the choice"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [verifiability, cognitive-load]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification]
+tags: [lesson]
+---
+# Worst case decides admissibility; expected case decides the choice
+
+**Lesson:** Two analyses of the same operation answer two different questions, and confusing them produces confident wrong decisions in both directions. The worst case answers whether an operation is admissible at all — whether there exists an input that makes it unacceptably slow, which is what you need to know before exposing it to an adversary or to an unlucky order of events. It does not answer which of two admissible operations is cheaper in practice, and using it that way is a mistake, because the ranking by worst case can be the exact reverse of the ranking by expected cost. An operation whose worst case is a single unit of repair per call can easily require repair more often than one whose worst case is repair at every level, and the second operation can be the cheaper one on real workloads by a wide margin.
+
+The reason this inversion is common rather than freakish is that worst cases are usually conjunctions. To attain one, several independent things must all go maximally wrong at once: the structure must be in its most fragile admissible shape, and the operation must be applied at the one position where that fragility propagates furthest. Each condition alone is unusual; together they are far more unusual still, and the bound derived from them describes a corner of the input space that a realistic workload may never visit. Recognizing a worst case as a conjunction is also the fastest way to sanity-check a pessimistic analysis: enumerate the conditions it required, ask whether they are independent, and you will often find you have been budgeting for a coincidence.
+
+So run both analyses and use each for its own purpose. Establish the worst-case bound first, and if it is within the growth rate you can accept, stop treating it as a comparison and set it aside as a guarantee. Then choose between the surviving candidates on expected behaviour, measured where the analysis is intractable — which it often is for exactly the algorithms worth using, since the interesting ones resist closed-form treatment. And notice that a measurement can overturn an intuition that felt like a theorem: the expectation that a structurally more awkward operation must also be more expensive in practice is a guess about frequencies, and frequencies are the one thing analysis of the extremes tells you nothing about.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 4.5.2's comparison of insertion and deletion in balanced trees, noting that insertion of a single key causes at most one rotation while deletion may require a rotation at every node along the search path, that attaining this requires both the minimal-node tree of a given height and the removal of its rightmost node, described as the worst choice of node in the worst case of a balanced tree and an unlucky combination of chances, followed by the empirical result that a rotation is invoked about once in every two insertions but only once in every five deletions, and the conclusion that deletion is about as easy as insertion; together with section 4.5.1's statement that mathematical analysis of the insertion algorithm remains an open problem and that the expected height and rebalancing frequency are known only from empirical tests.

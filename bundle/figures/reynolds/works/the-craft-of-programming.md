@@ -61,3 +61,6 @@ tags: [work]
 - [You need two separate maps — names to things, things to values — before aliasing is even expressible](../lessons/two-levels-of-map-are-needed-before-aliasing-is-even-expressible.md)
 - [Move the side condition inside the claim, and instantiation can no longer produce a falsehood](../lessons/move-the-side-condition-inside-the-claim.md)
 - [Give the metavariables real types and the rule schema collapses into an ordinary statement](../lessons/give-your-metavariables-real-types-and-the-schema-becomes-a-statement.md)
+- [Belonging to the type is not obeying the law, so name the law separately](../lessons/some-things-of-the-right-type-still-break-the-law.md)
+- [Carry each claim's assumption set with it and compose by union, or the assumptions get lost](../lessons/ship-the-assumption-set-with-the-claim-and-compose-by-union.md)
+- [A name can only do harm from a position that acts, so compute dependencies by position, not by presence](../lessons/a-name-can-only-do-harm-from-a-position-that-acts.md)

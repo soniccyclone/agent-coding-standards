@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Acyclicity is not an implementation convenience: it is what buys you induction over the structure"
+figure: hoare
+works: [notes-on-data-structuring]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Acyclicity is not an implementation convenience: it is what buys you induction over the structure
+
+**Lesson:** When a structure is defined in terms of itself, the whole apparatus for reasoning about it — proving a property of every instance by proving it of the smallest and proving it preserved by each way of building a larger one — rests on one fact: no instance is a component of itself. Take that away and the argument collapses, because there is no smallest case to start from and no descending chain to terminate the reasoning. It is worth being precise about who is entitled to what. A pointer that leads back into a structure it belongs to would make that structure equal to one of its own parts, which is possible only for something infinite, and infinite objects are outside the domain the induction principle covers. So a cycle does not merely make traversal awkward or reclamation harder. It removes the licence to reason about the structure inductively at all, which is the licence that every recursive procedure over it was implicitly relying on.
+
+The practical form of this is a rule about levels. Sharing a part among several structures is a matter of representation only — a way to spend less time and space — and the model above it must continue to say that every value is entirely disjoint from every other. If the program can detect how much sharing happened, the model has leaked and the representation has become semantics. That is the real reason sharing is safe under one condition and catastrophic otherwise: no observer can distinguish a shared part from a duplicated one unless something updates it in place, at which point the model's claim of disjointness is false and nothing built on it survives.
+
+Generalize this to any structure that can name others of its kind: entity graphs, dependency graphs, configurations that include other configurations, components that hold components. Ask early whether cycles are permitted, and if the answer is yes, understand that you have not gained expressive power for free — you have given up termination-by-descent for every traversal, structural induction for every proof, and a well-defined notion of the size of a value. Where a cycle is genuinely part of the domain, the right move is usually to keep the recursive structure acyclic and represent the back-edge as a name resolved against a separate table, so the reasoning principle survives and the cyclic reference becomes something explicit that traversal code can see and handle.
+
+**Source:** [Notes on Data Structuring](../works/notes-on-data-structuring.md) — the representation section of the chapter on recursive data structures, which states that sharing of recursive substructures is purely a saving of time and storage with no effect on the running program, that all values are in principle entirely disjoint and the programmer can neither know nor care how far structures are shared, that sharing must be avoided wherever a shared substructure might be selectively updated through one of its owners, and that no pointer can be made to point back to a structure of which it is a component, since only an infinite structure could be identical to one of its own components and such structures fail the axiom of exclusion underlying induction over recursive structures.

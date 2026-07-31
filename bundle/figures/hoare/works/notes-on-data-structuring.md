@@ -35,3 +35,6 @@ tags: [work]
 - [Buffering absorbs variance, never a rate deficit — past two or three, extra buffers only delay the diagnosis](../lessons/buffers-absorb-variance-not-a-rate-deficit.md)
 - [Name a structure by what it forbids: the restriction is the asset, and it must be fixed before the data is written](../lessons/name-a-structure-by-what-it-forbids.md)
 - [Give a value one representation for processing and another for transport, and make the conversion an explicit phase](../lessons/one-value-two-representations-processing-and-transport.md)
+- [Acyclicity is not an implementation convenience: it is what buys you induction over the structure](../lessons/acyclicity-is-what-buys-you-induction.md)
+- [Find the smallest projection of the input your algorithm actually needs, compute it once, and work only from that](../lessons/find-the-smallest-projection-of-the-input-the-algorithm-needs.md)
+- [Sort the requirements by what each one mentions, and the decomposition falls out](../lessons/sort-requirements-by-scope-to-find-the-decomposition.md)

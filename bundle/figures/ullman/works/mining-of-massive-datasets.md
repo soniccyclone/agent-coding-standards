@@ -56,6 +56,8 @@ tags: [work]
 - [Let the consumer's capacity to act set the threshold, then build on that assumption](../lessons/let-the-consumers-capacity-to-act-set-the-threshold.md)
 - [Your bookkeeping, not your input, sets the problem size you can handle](../lessons/your-bookkeeping-not-your-input-sets-the-problem-size-you-can-handle.md)
 - [The intervention you plan decides which correlation measure is the right one](../lessons/the-intervention-you-plan-decides-which-correlation-measure-is-right.md)
+- [Find the closure property that turns exhaustive search into frontier expansion](../lessons/find-the-closure-property-that-turns-search-into-frontier-expansion.md)
+- [Spend a phase's idle capacity on evidence the next phase can use](../lessons/spend-a-phases-idle-capacity-on-evidence-the-next-phase-can-use.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
