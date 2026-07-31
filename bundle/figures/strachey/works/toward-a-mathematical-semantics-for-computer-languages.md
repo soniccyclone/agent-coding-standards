@@ -27,3 +27,5 @@ tags: [work]
 - [Judge a definition by what its explaining side need not know](../lessons/judge-a-definition-by-what-its-explaining-side-need-not-know.md)
 - [When a requirement is impossible over everything, shrink everything](../lessons/when-a-requirement-is-impossible-over-everything-shrink-everything.md)
 - [A computation is only a value if making it does nothing](../lessons/a-computation-is-only-a-value-if-making-it-does-nothing.md)
+- [Attach meaning to the structure, not to the text](../lessons/attach-meaning-to-the-structure-not-to-the-text.md)
+- [Let the application tell you which foundation you need](../lessons/let-the-application-tell-you-which-foundation-you-need.md)

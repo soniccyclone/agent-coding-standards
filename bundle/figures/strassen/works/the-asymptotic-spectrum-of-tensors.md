@@ -35,3 +35,6 @@ This work needs the deterministic OCR batch.
 
 ## Lessons
 - [One number cannot represent an order; a family of numbers can represent it exactly](../lessons/one-number-cannot-represent-an-order-a-family-of-numbers-can.md)
+- [Where an inequality turns into an equality tells you what kind of function you are holding](../lessons/where-an-inequality-becomes-an-equality-tells-you-what-the-function-is.md)
+- [Pass to the asymptotic version of a relation: distinctions you could not settle dissolve, and the algebra you needed appears](../lessons/pass-to-the-asymptotic-version-and-the-unresolvable-distinctions-dissolve.md)
+- [Isolate the axioms your argument actually used, then find out whose theory you have landed in](../lessons/isolate-the-axioms-your-argument-used-and-find-whose-theory-you-are-in.md)

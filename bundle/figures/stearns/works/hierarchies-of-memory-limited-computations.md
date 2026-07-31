@@ -12,6 +12,7 @@ survey_fetch_mb: 0
 access: public
 host: self-archived
 tags: [work]
+extraction: complete
 ---
 
 # Hierarchies of Memory Limited Computations
@@ -25,3 +26,7 @@ tags: [work]
 - [Prefer the measure you can reason about, and say out loud what fidelity you traded for it](../lessons/prefer-the-measure-you-can-reason-about.md)
 - [Toggle one structural freedom at a time to learn which one owns the limit](../lessons/toggle-one-structural-freedom-at-a-time.md)
 - [Find the floor before mapping the slope, because extra resource can buy exactly nothing](../lessons/find-the-floor-before-mapping-the-slope.md)
+- [A budget nothing can lay out inside itself is not a budget](../lessons/a-budget-nobody-can-lay-out-is-not-a-budget.md)
+- [Make self-simulation safe by reserving the budget first and giving surrender a definite answer](../lessons/reserve-the-budget-then-define-giving-up.md)
+- [A cost measure earns trust by the invariances it turns into theorems](../lessons/invariances-a-measure-must-make-into-theorems.md)
+- [What you refuse to charge for decides how finely you can see](../lessons/what-you-refuse-to-charge-for-sets-your-resolution.md)

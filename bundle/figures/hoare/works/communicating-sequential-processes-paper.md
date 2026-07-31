@@ -23,3 +23,4 @@ tags: [work]
 ## Lessons
 - [Test a candidate primitive by re-deriving the constructs it should replace, then keep them anyway](../lessons/re-derive-the-constructs-to-test-a-primitive-then-keep-them.md)
 - [Never let correctness rest on a courtesy the implementation was never obliged to provide](../lessons/never-let-correctness-rest-on-a-courtesy.md)
+- [When two candidate primitives can each define the other, the tiebreak has to come from outside the algebra](../lessons/interderivable-features-need-a-tiebreak-from-outside.md)

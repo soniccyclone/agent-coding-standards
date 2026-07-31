@@ -20,4 +20,5 @@ tags: [work]
 **Reading copy:** full text is served as HTML, not PDF (~7,964 words). Fetch the URL and read the HTML directly; `pdftotext` on it returns nothing, which is what made earlier surveys record this as having no text layer.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Never write the low-level system in the low-level language: write it in a subset of your good language shaped like the target, and translate](../lessons/write-the-low-level-system-in-a-target-shaped-subset-and-translate.md)
+- [Treat the order of a bootstrap as a design artifact: make every stage observable, and deliberately under-build whatever that stage cannot stress](../lessons/sequence-a-bootstrap-and-underbuild-what-cannot-be-stressed-yet.md)

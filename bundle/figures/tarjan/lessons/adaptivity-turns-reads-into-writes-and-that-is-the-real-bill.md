@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Adaptivity turns reads into writes, and that is the bill you are actually paying"
+figure: tarjan
+works: [self-adjusting-binary-search-trees]
+axes: [hardware-affinity, parallelizability, cognitive-load]
+subdomains: [algorithms-and-complexity, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Adaptivity turns reads into writes, and that is the bill you are actually paying
+
+**Lesson:** The introduction lays out the trade for self-adjusting structures as a balance sheet with entries on both sides, and the entry most often forgotten is stated first among the disadvantages: a structure that reorganizes itself in response to usage must reorganize during lookups, whereas a structure held to an explicit shape constraint only reorganizes when something is actually modified. A pure query becomes a mutation. Everything downstream of that fact follows from it and none of it appears in the cost analysis. Concurrent readers can no longer proceed without exclusive access. A shared copy cannot be shared. Pages that would have stayed clean now need writing back. A snapshot taken during a read may not match a snapshot taken during the next one. The asymptotic bound is untouched by every one of these consequences, which is exactly why the trade has to be recorded separately from the bound.
+
+The other side of the sheet is real and worth the same precision. Dropping the explicit constraint removes the per-node bookkeeping the constraint needed, so the structure is smaller. It removes the case analysis that maintaining the constraint required, so the code is shorter and easier to get right — the paper's restructuring rule fits in a few lines against pages of rebalancing logic. And because the structure follows usage rather than defending against all usage equally, a skewed workload gets served better than any fixed shape could serve it. Set against that, individual operations can be arbitrarily expensive even though the total is bounded, which the authors flag as a problem specifically for systems with timing obligations.
+
+The reusable habit is to evaluate a self-organizing design on the axes the complexity bound does not cover, and to do it before adopting one. Ask who else touches this data: if the answer is one thread doing one thing at a time, the read-becomes-write cost is free and you should take the space and simplicity win. If the answer involves concurrent readers, replicas, memory-mapped sharing, an immutable-snapshot discipline, or a read path you were counting on being cheap on cold caches, then the same design that is strictly better on paper is a serialization point in practice. The same reasoning applies well beyond search trees: adaptive caches that reorder on hit, indexes that rebuild on query, and JIT tiering all convert observation into mutation, and each buys its adaptivity with the same currency. Name that currency when you decide, because the running-time analysis will never mention it.
+
+**Source:** [Self-Adjusting Binary Search Trees](../works/self-adjusting-binary-search-trees.md) — the introduction's enumerated advantages of self-adjusting structures over explicitly constrained ones, namely never being much worse in an amortized sense while adapting to skewed usage, needing less space because no balance information is stored, and having conceptually simple algorithms; and its two enumerated disadvantages, that they require local adjustments during lookups where explicitly constrained structures adjust only during updates, and that individual operations within a sequence can be expensive, which may be a drawback in real-time applications.

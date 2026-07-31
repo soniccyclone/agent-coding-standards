@@ -9,6 +9,7 @@ url: https://www.york.ac.uk/depts/maths/histstat/kolmogorov_foundations.pdf
 survey_pages: 47
 survey_text_layer: ocr
 survey_fetch_mb: 3
+extraction: complete
 access: public
 host: institutional
 tags: [work]

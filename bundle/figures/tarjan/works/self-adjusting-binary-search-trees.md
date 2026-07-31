@@ -21,4 +21,6 @@ tags: [work]
 **Source:** https://www.cs.cmu.edu/~sleator/papers/self-adjusting.pdf — live page, self-archived by co-author Daniel Sleator on his CMU faculty site.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Keep the tuning parameter in the analysis, not in the algorithm, and a blind mechanism will satisfy every instantiation at once](../lessons/keep-the-tuning-parameter-in-the-analysis-not-the-algorithm.md)
+- [Adaptivity turns reads into writes, and that is the bill you are actually paying](../lessons/adaptivity-turns-reads-into-writes-and-that-is-the-real-bill.md)
+- [A heuristic cannot be simplified by inspection: two nearly identical rules can differ by an order of magnitude](../lessons/a-heuristic-cannot-be-simplified-by-inspection.md)

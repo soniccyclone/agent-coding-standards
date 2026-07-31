@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -20,6 +21,8 @@ tags: [work]
 **Venue/year:** The MIT Press, Cambridge, Massachusetts / London, England, 1995 (paperback reprint 2003).
 **Source:** https://www.cs.rice.edu/~vardi/papers/book.pdf — verified live (HTTP 200, application/pdf, ~356KB), self-archived on Vardi's own Rice University papers page; title page and copyright block extracted directly from the PDF confirm it matches the published book. Note the file appears to be a chapter-length excerpt (~75 pages of dense possible-worlds-semantics proof content, no table of contents/preface/index found) rather than the full text.
 **Host:** self-archived — author's own site.
+
+**Coverage:** Read end to end (all 75 pages / 2555 extracted lines). Correcting the survey note above: the PDF *does* contain the front matter — dedications, full 11-chapter table of contents, and preface — followed by Chapter 1 (Introduction and Overview), Chapter 2 (A Model for Knowledge, all five sections plus exercises and notes), and Chapter 3 (Completeness and Complexity) up to and including the statement of the single-agent collapse proposition in Section 3.1, where the file stops mid-proof. So it is the opening ~60 pages of the published book, not an arbitrary chapter-length excerpt. `extraction: complete` attests that this artifact is fully mined. Chapters 3.2 onward through 11 — decidability and complexity results, multi-agent systems, protocols and programs, coordinated attack and Byzantine agreement, knowledge-based programming, evolving knowledge, logical omniscience, knowledge and computation, and the approximations-of-common-knowledge material — are **not in this file at all** and remain unmined. Sourcing the full text would be a separate acquisition task; the topics listed in the frontmatter description (coordinated attack, Byzantine agreement) live in those absent chapters.
 
 ## Lessons
 - [Represent ignorance as the set of alternatives you cannot rule out, and let knowledge be what survives across all of them](../lessons/represent-ignorance-as-the-set-of-alternatives-you-cannot-rule-out.md)
@@ -34,3 +37,4 @@ tags: [work]
 - [A message's content is fixed by the messages it was chosen from, not by how much it narrows anyone's uncertainty](../lessons/a-messages-content-is-fixed-by-the-messages-it-was-chosen-from.md)
 - [A law can hold by accident: quantify over interpretations before inferring the structure](../lessons/a-law-can-hold-by-accident-quantify-over-interpretations-before-inferring-structure.md)
 - [Not every derivation can be discharged into an implication — check which steps read the whole space](../lessons/not-every-derivation-can-be-discharged-into-an-implication.md)
+- [Stronger invariants can delete a field rather than add one](../lessons/stronger-invariants-can-delete-a-field-rather-than-add-one.md)
