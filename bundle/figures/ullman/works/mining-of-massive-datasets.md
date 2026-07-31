@@ -124,9 +124,14 @@ hierarchical stopping rules, BFR, CURE, GRGPF and stream clustering all cite it 
 section. Verified by auditing every lesson's `**Source:**` line against the chapter
 map. Next genuinely unread line is **14092**, the start of chapter 8._
 
-_Next unread line was recorded as **12232**, the start of chapter 7. Remaining:
-ch8 advertising, ch9 recommendation systems,
-ch10 social-network graphs, ch11 dimensionality reduction, ch12 large-scale ML,
-ch13 neural nets. Chapters 2-4 should also get a hand re-read at the same depth as
-chapter 1 before this work is attested. `extraction: complete` deliberately
-withheld._
+_Correction (2026-07-31, third agent pass): the resume line was stale again.
+Audited every lesson's `**Source:**` line against the chapter map: chapters 8
+(advertising — Balance, competitive ratio, spam-mass targeting, adwords matching)
+and 9 (recommendation systems — long tail, content-based, collaborative filtering,
+UV decomposition) are both already covered by existing lessons. The genuinely
+unread span begins at line **16919**, the start of chapter 10._
+
+_Remaining: ch10 social-network graphs (16919), ch11 dimensionality reduction
+(20377), ch12 large-scale ML (21980), ch13 neural nets (24693). Chapters 2-4
+should also get a hand re-read at the same depth as chapter 1 before this work is
+attested. `extraction: complete` deliberately withheld._
