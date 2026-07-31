@@ -59,13 +59,17 @@ example onward, all of chapter 18 *Earley's Recognizer, opening of chapter 19),
 "Programs and Their Data"), and the 19071-19194 gap between the third session's
 recorded spans.
 
-**Current position: line 17740** — span 15402-16835 read in full (balance of chapter
-17 from the class-construct example through "Limitations", all of chapter 18
-*Earley's Recognizer including Modifications, Summary and exercises, and the opening
-of chapter 19 Input/Output Statements through the start of its Proofs section).
-Moving to the next unread span, 17740-18189. This number is updated as the read
-advances, so whatever it says is the resume point.
-Position log: 341 -> 14254 (span complete) -> 15402 -> 16835 (span complete) -> 17740.
+**Current position: line 18199** — spans 15402-16835 and 17700-18199 both read in
+full. The first covered the balance of chapter 17 from the class-construct example
+through "Limitations", all of chapter 18 *Earley's Recognizer including Modifications,
+Summary and exercises, and the opening of chapter 19 Input/Output Statements through
+the start of its Proofs section. The second covered the balance of chapter 21
+Telegram Analysis (interpretations, both development steps, summary and exercises)
+and the opening of chapter 22 On Design through "Variables and Flow". Remaining:
+lines 1-340 and the 19071-19194 gap. This number is updated as the read advances,
+so whatever it says is the resume point.
+Position log: 341 -> 14254 (span complete) -> 15402 -> 16835 (span complete)
+-> 17700 -> 18199 (span complete).
 
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)
@@ -131,3 +135,6 @@ Position log: 341 -> 14254 (span complete) -> 15402 -> 16835 (span complete) -> 
 - [If the algorithm did not change, you simulated the description rather than implemented it](../lessons/if-the-algorithm-did-not-change-you-simulated-rather-than-refined.md)
 - [A change you anticipated is not evidence your design absorbs change](../lessons/a-change-you-anticipated-is-not-evidence-your-design-absorbs-change.md)
 - [A first-entry flag is a resumption point in disguise, so name the thing it is imitating](../lessons/a-first-entry-flag-is-a-resumption-point-in-disguise.md)
+- [An internal representation choice can narrow what your system accepts, and the mapping is where you see it](../lessons/an-internal-representation-choice-can-narrow-what-you-accept.md)
+- [Sketch the representation early to generate the questions, not to commit to the answer](../lessons/sketch-the-representation-early-to-generate-questions-not-to-commit.md)
+- [Theory pays off mostly in how it makes you carve the work, not in the proofs you write](../lessons/theory-pays-off-in-how-you-carve-the-work-not-in-the-proofs.md)

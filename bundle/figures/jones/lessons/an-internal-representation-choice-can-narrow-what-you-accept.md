@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An internal representation choice can narrow what your system accepts, and the mapping is where you see it"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# An internal representation choice can narrow what your system accepts, and the mapping is where you see it
+
+**Lesson:** Deciding how something will be held is supposed to be an internal matter — the outside world asked for a behaviour, you chose a structure, nobody outside should care. That expectation quietly fails in one direction. A representation carries its own requirements about what a well-formed instance looks like, and those requirements propagate outward as demands on whatever supplies the data. Encode a sequence of groups as a flat stream with separators and you have implicitly required a trailing separator, or forbidden empty groups, or fixed what a doubled separator means. None of that was in the behaviour you were asked for. It is now part of what you demand, and a caller who does not meet it gets nonsense rather than a refusal.
+
+The detection method is worth having as a reflex. Write the function that reads the concrete form back as the abstract one, and ask where that function is undefined. Every input it cannot interpret is an input your program has silently stopped supporting. This is a cheap check and it is nearly the only one that finds this class of problem, because from inside the code the newly required property looks like an ordinary assumption — the loop simply relies on eventually seeing the separator, and nothing marks that reliance as new. The abstract description will not flag it either, since the property cannot even be stated in the abstract vocabulary.
+
+Having found one, treat it as a decision rather than a discovery. Three responses are available and they are not equivalent: change the representation so the requirement disappears, keep the representation and widen it so the awkward cases are representable, or keep both and add the check that turns a silently wrong answer into a reported one. What is not available is leaving it implicit. A requirement on your input that no one wrote down will be violated, and the failure will present as a bug in the processing rather than as what it is, which is a boundary condition the design acquired several steps below the level where anyone was thinking about boundaries.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 21's first development step for the telegram analysis problem, where the input is refined from a sequence of telegrams to a flat sequence of words with a delimiting word between them: the retrieve function written to relate the two, the observation that for it to be defined there must be a terminating empty telegram and that the program requires a similar pre-condition, the explicit statement that the abstract program has no need of this requirement and that it has been acquired in moving closer to the representation, and the accompanying remark that this acquired pre-condition appears to be dangerous, with the absence of data checking tolerated only to permit comparison with other published solutions; together with the second step's further acquired assumptions, that words are not required to be terminated by the end of a buffer and that every block contains at least one character, both noted as being made explicit only by the rigorous development style.

@@ -205,6 +205,7 @@ tags: [work]
 - [A synchronization barrier can be what pays for batching](../lessons/a-barrier-can-be-what-pays-for-batching.md)
 - [How precisely you recover is set by a ratio, not by principle](../lessons/recovery-precision-is-set-by-a-ratio-not-by-principle.md)
 - [Replicate each item along the axes its key leaves undetermined](../lessons/replicate-along-the-axes-your-key-leaves-free.md)
+- [Be correct for the possible inputs and sized for the actual ones](../lessons/be-correct-for-the-possible-and-sized-for-the-actual.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
