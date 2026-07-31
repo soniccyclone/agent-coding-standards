@@ -46,12 +46,14 @@ tags: [work]
 - [A means of combination that cannot consume its own output cannot build hierarchy](../lessons/a-combiner-that-cannot-consume-its-own-output-cannot-build-hierarchy.md)
 - [An abstraction that changes nothing about execution can still be the whole point](../lessons/an-abstraction-can-change-nothing-about-execution-and-still-be-the-point.md)
 
+- [Two programs can share a deep structure that neither one exhibits](../lessons/the-shared-structure-may-be-real-and-still-absent-from-the-text.md)
+- [Modularity comes from agreeing on one interchange representation, not from splitting code into modules](../lessons/modularity-comes-from-agreeing-on-one-interchange-representation.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: all of chapter 1, plus chapter 2 sections 2.1 and 2.2 through the
-start of 2.2.3 (lines 784-6161)** — data abstraction, abstraction barriers, what
-data means, interval arithmetic; then closure, sequences, mapping and hierarchical
-structures. Next unread line is **6162** (rest of 2.2.3, Sequences as Conventional
-Interfaces). `extraction: complete` withheld until all five chapters are read._
+**Read so far: all of chapter 1, plus chapter 2 through the end of 2.2.3 (lines
+784-6781)** — data abstraction, what data means, interval arithmetic, closure,
+sequences, hierarchical structures and sequences as conventional interfaces. Next
+unread line is **6782** (section 2.2.4, the picture language). `extraction: complete` withheld until all five chapters are read._
