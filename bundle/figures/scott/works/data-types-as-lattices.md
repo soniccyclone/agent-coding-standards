@@ -20,4 +20,5 @@ tags: [work]
 **Source:** https://www.cs.ox.ac.uk/files/3287/PRG05.pdf — Oxford Department of Computer Science's official publications page (publication3764-abstract.html) links this file directly; institutional archive, reprint of the SIAM article. The SIAM version itself remains paywalled (epubs.siam.org); this self-hosted Oxford reprint is the public copy. Title page confirmed by direct render.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Two accounts agreeing is evidence in proportion to how far apart they are](../lessons/agreement-between-two-accounts-is-evidence-in-proportion-to-their-distance.md)
+- [Put everything in one universal domain and recover the specific types as subspaces of it](../lessons/put-everything-in-one-universal-domain-and-define-the-rest-as-subspaces.md)

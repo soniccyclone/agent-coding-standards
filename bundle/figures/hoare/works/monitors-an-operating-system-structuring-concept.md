@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -26,3 +27,4 @@ tags: [work]
 - [Aim to avoid persistently pessimal states rather than to reach optimal ones](../lessons/avoid-the-pessimal-rather-than-chase-the-optimal.md)
 - [Under overload a dynamic allocator must fall back toward a static regime, so design the floors before the flexibility](../lessons/under-overload-a-dynamic-scheme-must-fall-back-toward-static-reservation.md)
 - [Splitting a global optimization into independent modules is a hypothesis you must earn, not a structural default](../lessons/decomposing-a-global-optimization-is-a-hypothesis-to-be-earned.md)
+- [To replace an established primitive, owe two reductions in opposite directions](../lessons/two-reductions-and-a-neutrality-test-for-a-replacement-primitive.md)

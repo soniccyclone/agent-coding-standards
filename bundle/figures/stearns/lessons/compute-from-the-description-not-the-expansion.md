@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Compute from the description, not from what it expands to, and return the answer in description form"
+figure: stearns
+works: [an-algebraic-model-for-combinatorial-problems]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [algorithms-and-complexity, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Compute from the description, not from what it expands to, and return the answer in description form
+
+**Lesson:** Large artifacts are usually described rather than enumerated: a specification composed of reusable templates, each invoked many times, denotes an object exponentially larger than the specification itself. The default handling is to expand the description and then work on the expansion, and this throws away real information. The repetition in the description is not a stylistic economy, it is the assertion that the same substructure occurs in many places, which is precisely the kind of fact a computation can exploit. Expanding first destroys it and then leaves you doing the same work repeatedly with no way to notice.
+
+The enabling move is a change of reading rather than a new algorithm. Stop treating the description as an abbreviation for an object and read it as a sequence of function definitions, each template becoming a function from its parameters to a value. Under that reading, each template is evaluated once into a table indexed by its parameter assignments, later templates consult earlier tables, and the total cost is bounded by the size and internal structure of the description rather than of the expansion. Both readings are needed and their agreement is the whole crux: the theorem that the object-view and the function-view yield the same answer is what licenses working in the cheap one. That obligation attends every such shift — whenever you replace working-on-the-expansion with working-on-the-description, the equivalence of the two readings is the thing that must actually be proved, and skipping it is how compressed computations silently become wrong.
+
+The same discipline applies to the output. Some answers are necessarily as large as the expansion — a value for every single component of the expanded object cannot be written down more briefly than the object — and demanding one throws away everything you just gained. The right response is to return the answer in description form too: a table per template recording the local answer for each parameter assignment, plus an answer for the base, from which any individual component's value can be recovered on demand. That is not a partial answer or a compromise; it is the complete answer at the same level of abstraction as the question, and it keeps the whole pipeline inside the compressed representation. A computation that accepts a compressed input, works compressed, and then insists on materialising its result has thrown away its own advantage at the last step.
+
+**Source:** [An Algebraic Model for Combinatorial Problems](../works/an-algebraic-model-for-combinatorial-problems.md) — the hierarchically-specified-formulas section, which observes that a specification can denote something exponentially larger, proves that the specification can equivalently be regarded as defining an object or as defining a sequence of functions, and derives a cost bound in terms of the specification rather than the expansion; together with the passage in the optimization section noting that printing an assignment for the expanded object could take time exponential in the specification and proposing instead a per-template table plus a base assignment from which any individual value is recoverable.
