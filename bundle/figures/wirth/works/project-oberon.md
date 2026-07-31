@@ -26,8 +26,11 @@ tags: [work]
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 14570 — third agent has read and mined chapter 12 through
-section 12.3 (code patterns 1-15, then the internal data structures: Object, Item, Struct). Everything below this line describes what earlier
+**Current position: line 14970 — third agent has read and mined chapter 12 through
+section 12.4's prose (code patterns 1-15; internal data structures Object/Item/Struct;
+the OCS/OCE/OCH interfaces; the parser's design, error recovery, target-dependence,
+procedure variants, forward references and the with statement). Now in the module
+Compiler listing, which is Oberon source. Everything below this line describes what earlier
 agents banked.**
 
 **Earlier: chapter 9 complete and mined (9.1-9.4, including the
@@ -171,3 +174,5 @@ section are where the extractable lessons are.
 - [An extension mechanism is a bet that the variant set is still open](../lessons/an-extension-mechanism-is-a-bet-that-the-variant-set-is-open.md)
 - [A translator's case count is set by the destination's variety, not the source's](../lessons/a-translators-case-count-is-set-by-the-destinations-variety.md)
 - [Recoverability after a bad input is a property of the input language](../lessons/recoverability-after-a-bad-input-is-a-property-of-the-input-language.md)
+- [An unresolvable reference needs a placeholder and a named expiry moment](../lessons/an-unresolvable-reference-needs-a-placeholder-and-a-named-expiry.md)
+- [Enumerate your rule violations and grade them by what they constrain](../lessons/enumerate-your-rule-violations-and-grade-them-by-what-they-constrain.md)

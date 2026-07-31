@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An unresolvable reference needs a placeholder and a named expiry moment"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# An unresolvable reference needs a placeholder and a named expiry moment
+
+**Lesson:** Any process that consumes input once, in order, will meet references to things not yet defined. The instinct is to treat this as a reason for a second pass, but a second pass is a large price for a small ambiguity, and there is a cheaper arrangement. When a reference cannot be resolved, record a provisional entry standing for the promised thing, attach the dependents to it, and continue. What makes this work is not the placeholder but the second half: naming, in advance, the exact moment at which the promise expires, and sweeping for placeholders still unfulfilled at that moment. Without the sweep the placeholder is a hole; with it, the arrangement is complete and the failure is caught.
+
+The expiry moment is not one moment. It is the end of the region in which a fulfilling definition could still legally appear, and that region differs by what is being promised — a thing declarable only at the outermost level expires at the end of the whole input, while one declarable within a nested region expires when that region closes. Getting this right is what keeps the check both sound and prompt: sweep too early and you reject a legitimate late definition, sweep too late and the error surfaces far from anything that explains it. Each kind of promise deserves its own sweep at its own point rather than one catch-all at the end.
+
+The design question underneath is whether the promise has to be announced. An announced forward reference — the author marks it explicitly — lets the process create a real entry immediately and report a broken promise as a broken promise. An unannounced one has to be inferred from the failure to find a definition, and that inference is ambiguous: an unknown name might be a promise or might be a mistake, and there is no way to tell at the point of encounter. The whole cost of not requiring the announcement is paid there — the diagnosis moves away from the place where the mistake was made and reappears later, attached to a sweep rather than to a line. Convenience for the author of correct input, worse locality for the author of incorrect input. Whichever you choose, when the real definition does arrive it must be reconciled against the placeholder rather than merely replacing it: a placeholder is a claim about what was promised, and the point of keeping it is that the claim can be compared with what actually turned up.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 12.4's treatment of forward references in a single-pass compiler, distinguishing explicitly marked forward procedure declarations (where the table is searched at each procedure declaration and, on finding a matching entry with no body, the association is made and the parameter lists compared) from forward references to pointer base types, which carry no explicit indication and must be assumed automatically when the base type is not found, generating a premature entry of undefined mode linked to the pointer type; together with the statement that undefined forward references are checked when the declaration scope is closed, at the end of compilation for procedures because only global ones may be declared forward, and at the end of the declaration sequence for pointer types.

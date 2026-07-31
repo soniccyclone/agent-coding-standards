@@ -39,9 +39,9 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 11400** — Chapters 1 (from 1.5),
-2, 3, 4, 5 and 6 read in full; Chapter 7 read through 7.3.2 (multiple buffered
-channels).
+pass died immediately. Current position: **line 11780** — Chapters 1 (from 1.5),
+2, 3, 4, 5 and 6 read in full; Chapter 7 read through 7.4.1 (CCS comparison,
+partway).
 
 **Data defect found and repaired (2026-07-31):** three lessons already existed
 citing this work but were missing from the Lessons list below — `performance-controls-must-not-be-able-to-change-meaning`,
@@ -118,3 +118,6 @@ coverage note recorded (10980) and died before back-linking. Links restored.
 - [A feature's real meaning is whatever the optimizer is permitted to assume about it, not what its syntax suggests](../lessons/a-features-meaning-is-what-the-optimizer-is-permitted-to-assume-about-it.md)
 - [Give a construct its meaning by mechanical expansion into something simpler, then make sure nobody ever has to read the expansion](../lessons/define-by-mechanical-expansion-but-never-make-anyone-read-the-expansion.md)
 - [Name the connection, not the counterparty: addressing your partner by name buys a free safety property and costs you the library](../lessons/name-the-connection-not-the-counterparty-or-nothing-goes-in-a-library.md)
+- [A feature added to make a hoped-for proof method work has to be re-examined the moment that method is abandoned](../lessons/a-feature-added-to-serve-a-proof-method-must-be-re-examined-when-the-method-is-dropped.md)
+- [Building the formal model is how you find the design questions you never realized you had left open](../lessons/a-semantics-exposes-the-design-questions-you-never-knew-you-left-open.md)
+- [A model that guarantees determinism pays for it in storage it cannot bound and in questions it cannot ask about arrival order](../lessons/guaranteed-determinism-costs-you-arrival-order-and-bounded-storage.md)
