@@ -27,12 +27,16 @@ tags: [work]
 - [An abstraction boundary is a claim that a whole class of implementations is interchangeable](../lessons/an-abstraction-boundary-is-a-claim-about-an-equivalence-class.md)
 - [What you may freely rename is exactly what you do not depend on](../lessons/what-you-may-rename-is-exactly-what-you-do-not-depend-on.md)
 - [Scope exists so that strangers can both use the obvious name](../lessons/scope-exists-so-strangers-can-both-use-the-obvious-name.md)
+- [Ask whether you could stop and resume from the named state; that is the test for whether the state is complete](../lessons/resumability-is-the-test-for-whether-your-state-is-complete.md)
+- [A construct that looks essential may only be compensating for an implementation defect](../lessons/a-feature-that-looks-essential-may-be-compensating-for-a-defect.md)
+- [Choose a measure for what it refuses to distinguish, not for its accuracy](../lessons/a-crude-measure-is-useful-because-of-what-it-refuses-to-see.md)
+- [Distinguish a cost you incurred by transcribing the definition from a cost the problem actually has](../lessons/distinguish-naive-transcription-from-inherent-difficulty.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: chapter 1 section 1.1 in full (lines 784-2103)** — the elements of
-programming, through procedures as black-box abstractions and block structure.
-Next unread line is **2104** (section 1.2, Procedures and the Processes They
-Generate). `extraction: complete` withheld until all five chapters are read._
+**Read so far: chapter 1 sections 1.1 and 1.2 through 1.2.4 (lines 784-2853)** —
+the elements of programming, black-box abstraction, block structure and lexical
+scoping; then linear recursion versus iteration, tree recursion, orders of growth
+and exponentiation. Next unread line is **2854** (rest of 1.2: GCD and primality). `extraction: complete` withheld until all five chapters are read._
