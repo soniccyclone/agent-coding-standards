@@ -19,7 +19,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: 3.1.6 through 3.3.12 (lines 8101-11642).
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697).
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
@@ -80,3 +80,4 @@ tags: [work]
 - [Give every jump destination a precondition, and a non-local exit becomes an ordinary obligation](../lessons/put-the-obligation-of-a-jump-at-its-destination.md)
 - [Package the operations so the invariant never breaks, then design the control forgetting the invariant exists](../lessons/make-the-invariant-continuous-then-forget-it.md)
 - [Enumerate the states of knowledge, and the control structure writes itself](../lessons/enumerate-the-states-of-knowledge-and-the-control-writes-itself.md)
+- [Leave a choice unmade when it cannot affect correctness, and require every resolution of it to work](../lessons/leave-the-choice-open-and-demand-every-resolution-be-correct.md)

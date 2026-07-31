@@ -84,6 +84,8 @@ tags: [work]
 - [When the space of behaviours is combinatorial, shrink the space instead of checking it](../lessons/do-not-enumerate-the-interleavings-shrink-the-space-they-live-in.md)
 - [The unit of atomicity belongs to the transaction, not the object, so no object can encapsulate its own concurrency control](../lessons/atomicity-belongs-to-the-transaction-not-the-object.md)
 - [Every synchronization scheme bottoms out in a primitive you were given, and the bottom has physical limits](../lessons/every-synchronization-scheme-bottoms-out-in-something-given.md)
+- [Shared state is not a thing that exists but an agreement communication produces, so questions about it between agreements can be meaningless](../lessons/shared-state-is-an-agreement-produced-by-communication.md)
+- [A changing quantity and a fixed history are two descriptions of one thing; choosing the second deletes state without deleting the phenomenon](../lessons/a-changing-quantity-and-a-fixed-history-are-the-same-thing.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -102,6 +104,8 @@ costs of assignment, sameness and change, and the environment model of evaluatio
 Chapter 3 further read through 3.3.5 (lines 12341-14440) - internal definitions,
 mutable list structure, sharing and identity, queues, tables, memoization, the
 digital-circuit simulator and its agenda, and the start of constraint propagation.
-Next unread line is **14441** (rest of 3.3.5, then 3.4 Concurrency). Chapters 4 and
-5 are entirely unread. `extraction: complete` withheld until all five chapters are
-read._
+Chapter 3 further read through the start of 3.5.1 (lines 14441-15840) - the rest of
+constraint propagation, all of 3.4 Concurrency (nature of time, serializers,
+mutexes, deadlock, communication), and the opening of 3.5 Streams. Next unread line
+is **15841** (rest of 3.5.1 onward). Chapters 4 and 5 are entirely unread.
+`extraction: complete` withheld until all five chapters are read._

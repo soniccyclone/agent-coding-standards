@@ -59,3 +59,4 @@ tags: [work]
 - [Uniformity is a property of the function and the population together](../lessons/uniformity-is-a-property-of-the-function-and-the-population-together.md)
 - [Find the ratio that governs behaviour, not the magnitude](../lessons/find-the-ratio-that-governs-behaviour-not-the-magnitude.md)
 - [A computed location is a hypothesis, not an answer](../lessons/a-computed-location-is-a-hypothesis-not-an-answer.md)
+- [A structure is defined by its selectors, not by the set of values it can hold](../lessons/a-structure-is-defined-by-its-selectors.md)

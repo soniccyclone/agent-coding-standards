@@ -75,6 +75,8 @@ tags: [work]
 - [Make dimensions commensurable before you combine them, and set the threshold in meaningful units](../lessons/make-dimensions-commensurable-before-you-combine-them.md)
 - [A single-point summary smuggles in an assumption about shape](../lessons/a-single-point-summary-smuggles-in-a-shape-assumption.md)
 - [Let the decisions you will face decide what the summary keeps](../lessons/let-the-decisions-you-will-face-decide-what-the-summary-keeps.md)
+- [An approximate model needs both a repair path and a coarsening path](../lessons/an-approximate-model-needs-a-repair-path-and-a-coarsening-path.md)
+- [Keep history at geometrically decaying resolution](../lessons/keep-history-at-geometrically-decaying-resolution.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
