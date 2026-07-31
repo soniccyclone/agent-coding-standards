@@ -125,6 +125,8 @@ tags: [work]
 - [Iterate on the increment, because old facts are already spent](../lessons/iterate-on-the-increment-because-old-facts-are-already-spent.md)
 - [Buying fewer rounds is paid for in work and in what you must hold](../lessons/buying-fewer-rounds-is-paid-for-in-work-and-materialization.md)
 - [Deduplicating derivations is not deduplicating conclusions](../lessons/deduplicating-derivations-is-not-deduplicating-conclusions.md)
+- [Collapse the equivalence your question cannot distinguish](../lessons/collapse-the-equivalence-your-question-cannot-distinguish.md)
+- [A uniform probe finds the large groups first](../lessons/a-uniform-probe-finds-the-large-groups-first.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
