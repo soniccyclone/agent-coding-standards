@@ -25,3 +25,5 @@ tags: [work]
 - [Order things by how much they tell you](../lessons/order-things-by-how-much-they-tell-you.md)
 - [Give undefinedness a value instead of a hole](../lessons/give-undefinedness-a-value-instead-of-a-hole.md)
 - [Judge a definition by what its explaining side need not know](../lessons/judge-a-definition-by-what-its-explaining-side-need-not-know.md)
+- [When a requirement is impossible over everything, shrink everything](../lessons/when-a-requirement-is-impossible-over-everything-shrink-everything.md)
+- [A computation is only a value if making it does nothing](../lessons/a-computation-is-only-a-value-if-making-it-does-nothing.md)

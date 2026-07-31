@@ -23,3 +23,5 @@ tags: [work]
 
 ## Lessons
 - [Prefer the measure you can reason about, and say out loud what fidelity you traded for it](../lessons/prefer-the-measure-you-can-reason-about.md)
+- [Toggle one structural freedom at a time to learn which one owns the limit](../lessons/toggle-one-structural-freedom-at-a-time.md)
+- [Find the floor before mapping the slope, because extra resource can buy exactly nothing](../lessons/find-the-floor-before-mapping-the-slope.md)

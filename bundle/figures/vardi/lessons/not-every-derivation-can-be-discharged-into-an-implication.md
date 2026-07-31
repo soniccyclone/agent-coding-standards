@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Not every derivation can be discharged into an implication — check which steps read the whole space"
+figure: vardi
+works: [reasoning-about-knowledge]
+axes: [verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Not every derivation can be discharged into an implication — check which steps read the whole space
+
+**Lesson:** The most automatic move in technical argument is hypothetical reasoning: assume the thing, work forward, and conclude that the thing implies wherever you got to. It is so automatic that few people notice it is a contingent theorem about a particular proof system rather than a law of thought, and Vardi flags the moment it stops holding. Add a knowledge operator to propositional logic and the move breaks: from an assumed statement you can derive that every participant knows it, yet you cannot derive that the statement implies anyone knows it, and that implication is plainly false — things are true without being known all the time. Nothing about the hypothesis changed. What changed is the inventory of steps available inside the derivation.
+
+The diagnosis is worth more than the example, because it names two things that read alike and are not alike. One rule says that if something holds at every point of the system, then so does the claim that a participant knows it; this is a statement about facts already established everywhere, and it is sound. The other would say that at the point where you are standing, whatever is true is known; this is a statement about one point, and it is false. Discharging a hypothesis is exactly the operation of demoting an assumption you introduced globally into a local premise, and it is licensed only when every step you used preserves truth at a point rather than merely preserving validity throughout. A step that reads the whole space cannot be run under a hypothesis that fixes only where you are standing. Note how sharp the failure is: it does not cast vague doubt over the argument, it identifies the single offending rule.
+
+The two levels turn up everywhere in engineering and get conflated everywhere. "This function never returns null anywhere in the program" and "this call does not return null here" are different claims, and an optimization licensed by the first cannot be reached from the second's reasoning without an argument bridging them. An invariant that holds by construction across all reachable states is not a premise you may assume inside a branch that has already broken it. A whole-program analysis result is void the instant code is loaded that the analysis did not see, and the reason is identical: the conclusion quantified over everything and got used as though it were about here. The habit to build is cheap. When an argument opens by assuming something, scan its steps for any that quantify over more than the assumption pins down. If one does, what you have proved is a rule about your system rather than a fact inside it, and it will not survive being moved across an implication arrow.
+
+**Source:** [Reasoning About Knowledge](../works/reasoning-about-knowledge.md) — chapter three's observation that the deduction theorem, valid for the standard axiomatizations of propositional and first-order logic, fails for the minimal system of knowledge, demonstrated by deriving that a participant knows an assumed formula while the corresponding implication remains unprovable and untrue, with the Knowledge Generalization Rule identified as the cause; and chapter two's earlier warning that this rule, which lifts formulas valid throughout a structure, is a very different thing from the formula asserting that whatever is true is known.

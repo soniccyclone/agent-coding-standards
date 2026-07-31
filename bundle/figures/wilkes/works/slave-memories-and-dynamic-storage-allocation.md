@@ -6,8 +6,9 @@ description: A two-page note proposing that a small, fast core memory sit in fro
 subdomains: [operating-systems-and-systems-programming]
 year: 1965
 url: https://www.cs.auckland.ac.nz/courses/compsci703s1c/resources/Wilkes.pdf
+extraction: complete
 survey_pages: 2
-survey_text_layer: ocr
+survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
@@ -18,7 +19,9 @@ tags: [work]
 
 **Venue/year:** IEEE Transactions on Electronic Computers, Vol. EC-14, No. 2, April 1965, pp. 270-271.
 **Source:** https://www.cs.auckland.ac.nz/courses/compsci703s1c/resources/Wilkes.pdf — University of Auckland course-materials mirror (also mirrored on other university course pages, e.g. ETH Zurich); content verified by rendering and visually confirming the scanned pages match the published paper.
-**Reading copy:** `scratchpad/ocr-text/wilkes__slave-memories-and-dynamic-storage-allocation.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
+**Reading copy:** `scratchpad/ocr-text/wilkes__slave-memories-and-dynamic-storage-allocation.txt` — **replaced 2026-07-31 with an embedded publisher text layer; no OCR involved.** The earlier tesseract pass over the Auckland mirror produced unusable garbage, and re-OCR cannot fix it: that PDF embeds the page scan at only 784x1000 pixels for a full two-column journal page, so the body text is a few pixels per line and no rendering resolution recovers it. The IEEE Xplore copy mirrored by ETH Zurich at `https://safari.ethz.ch/digitaltechnik/spring2022/lib/exe/fetch.php?media=wilkes.pdf` carries a genuine text layer (`pdftotext -layout`) plus 600dpi page images, and is the correct source for this work. Prefer it over the `url` above for any future reading.
+
+**A note on reading it:** page 270 is shared with the tail of an unrelated article, so the two-column extraction interleaves Wilkes's summary and introduction with another author's equations. The Wilkes text starts at the byline partway down the page; the stray formulas near the top belong to the preceding paper and are not his.
 
 ## Lessons
 - [The unit you move data in is a consequence of where the cost sits, so re-derive it whenever a new tier changes the cost shape](../lessons/re-derive-the-transfer-unit-when-the-cost-shape-changes.md)

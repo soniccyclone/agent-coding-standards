@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Toggle one structural freedom at a time to learn which one owns the limit"
+figure: stearns
+works: [hierarchies-of-memory-limited-computations]
+axes: [primitive-count, hardware-affinity, expressiveness]
+subdomains: [algorithms-and-complexity, foundations-of-computation]
+tags: [lesson]
+---
+# Toggle one structural freedom at a time to learn which one owns the limit
+
+**Lesson:** When you find a threshold — a point below which a machine can do nothing interesting — the finding is almost never a fact about computation in general. It is a fact about one particular bundle of structural permissions, and until you decompose the bundle you do not know which permission the threshold belongs to. The way to find out is to enumerate the independent freedoms and vary them one at a time, holding the rest fixed: may the reader go back over material it has already seen, or only forward? Is storage addressable anywhere, or reachable only at one end? Crossing two such choices gives four models, and running the same analysis over all four turns a single mysterious number into a table that attributes each threshold to a specific permission. Losing the ability to re-read the input, it turns out, raises the floor enormously; losing addressable storage costs nothing while you can re-read, and is catastrophic once you cannot.
+
+The payoff is not just tidiness. Attribution is what makes a result actionable, because you cannot buy or sell "computation" but you can buy and sell individual permissions. Knowing that a limit is caused by the one-pass restriction rather than by the storage discipline tells you exactly which constraint to relax when you need more power and which you can keep for free. It also tells you where the ceilings are: some permission combinations have a maximum as well as a minimum, so no amount of additional resource buys anything beyond a certain point, and the same one-at-a-time comparison is what reveals that the ceiling belongs to the restricted storage discipline rather than to the machine as a whole.
+
+The transferable habit is to distrust any performance or capability claim stated about a system as a whole, and to reflexively ask what the smallest set of independent design choices is that could have produced it. Then build the grid. The cost is that you analyse the same problem several times over, which feels wasteful; the return is that each cell of the grid constrains the others, one cell often falls out trivially from the analysis of another, and a surprising cell — two very different designs sharing the same floor — is itself a discovery, because it says the two designs are equivalent with respect to the resource in question and that the intuition separating them was wrong.
+
+**Source:** [Hierarchies of Memory Limited Computations](../works/hierarchies-of-memory-limited-computations.md) — the machine-models section, which defines four machines by independently varying whether the input may be re-scanned and whether storage is unrestricted or restricted to one end, and the summary section, which tabulates a distinct minimal growth rate for each of the four and identifies which combination alone has a maximal class.

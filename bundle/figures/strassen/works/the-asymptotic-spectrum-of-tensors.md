@@ -34,4 +34,4 @@ host-provided-text channel is genuinely unavailable rather than unattempted.
 This work needs the deterministic OCR batch.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [One number cannot represent an order; a family of numbers can represent it exactly](../lessons/one-number-cannot-represent-an-order-a-family-of-numbers-can.md)

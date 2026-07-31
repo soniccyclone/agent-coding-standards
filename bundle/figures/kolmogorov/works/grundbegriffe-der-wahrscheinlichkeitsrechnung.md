@@ -36,3 +36,6 @@ tags: [work]
 - [An aggregate is predictable when no single input has much influence, not when it has many inputs](../lessons/small-per-input-influence-is-what-makes-an-aggregate-predictable.md)
 - [Judge a proposed generalization by which laws it keeps, not by how much more it covers](../lessons/a-generalization-that-drops-a-law-you-were-using-is-not-one.md)
 - [A sufficient condition is unfinished work until you have tried to weaken it and failed on purpose](../lessons/a-sufficient-condition-is-unfinished-until-you-try-to-weaken-it.md)
+- [When no formula is available, define the thing by the constraint every observation of it must satisfy](../lessons/define-by-the-constraint-every-observation-must-satisfy.md)
+- [Aggregation composes for free along refinements, and for nothing else without a hypothesis](../lessons/aggregate-in-stages-along-refinements-and-nowhere-else-for-free.md)
+- [Reducing a subject to a general framework does not explain it; name the specialization that makes it generative](../lessons/the-general-framework-is-not-the-field-name-the-specialization.md)

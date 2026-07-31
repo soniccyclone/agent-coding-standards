@@ -32,3 +32,5 @@ tags: [work]
 - [Separate the predicate you reason with from the predicate a component can evaluate](../lessons/separate-the-predicate-you-reason-with-from-the-one-a-component-can-evaluate.md)
 - [Model learning as cutting links in a fixed space, not as deleting candidates from it](../lessons/model-learning-as-cutting-links-not-as-deleting-candidates.md)
 - [A message's content is fixed by the messages it was chosen from, not by how much it narrows anyone's uncertainty](../lessons/a-messages-content-is-fixed-by-the-messages-it-was-chosen-from.md)
+- [A law can hold by accident: quantify over interpretations before inferring the structure](../lessons/a-law-can-hold-by-accident-quantify-over-interpretations-before-inferring-structure.md)
+- [Not every derivation can be discharged into an implication — check which steps read the whole space](../lessons/not-every-derivation-can-be-discharged-into-an-implication.md)

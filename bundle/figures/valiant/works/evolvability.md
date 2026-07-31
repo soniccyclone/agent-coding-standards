@@ -9,6 +9,7 @@ url: https://people.seas.harvard.edu/~valiant/evolvability-2008.pdf
 survey_pages: 19
 survey_text_layer: full
 survey_fetch_mb: 0
+extraction: complete
 access: public
 host: self-archived
 tags: [work]
@@ -27,3 +28,7 @@ tags: [work]
 - [Engineer progress to arrive in quanta bigger than your measurement error, and give the comparator a neutral band](../lessons/engineer-progress-into-quanta-larger-than-your-measurement-error.md)
 - [The improving path may have to run through states holding pieces that belong nowhere in the answer](../lessons/the-improving-path-may-run-through-states-that-contain-nothing-of-the-answer.md)
 - [Carry an inactive record alongside the active state, because which moves are reachable depends on what the state remembers](../lessons/carry-an-inactive-record-because-reachable-moves-depend-on-what-the-state-remembers.md)
+- [No step may be justified by a later payoff, so complexity has to arrive as a ladder of targets each worth reaching on its own](../lessons/no-step-may-be-justified-by-a-later-payoff.md)
+- [Name the resource your guarantee assumes but cannot control, then notice that starving it is itself a mechanism](../lessons/name-the-resource-your-guarantee-assumes-but-does-not-control.md)
+- [Classify which kind of barrier you hit, because only some kinds can be engineered around](../lessons/classify-which-kind-of-barrier-you-hit-before-deciding-what-to-change.md)
+- [Choose a vocabulary wide enough to say what you need and narrow enough to search, and accept the modularity that follows](../lessons/choose-a-vocabulary-wide-enough-to-say-it-and-narrow-enough-to-search.md)
