@@ -20,6 +20,39 @@ tags: [work]
 **Source:** http://homepages.cs.ncl.ac.uk/cliff.jones/publications/Books/SDRA.pdf — full scanned book self-archived on Jones's own Newcastle homepage, linked directly from his publications list (HTTP 200, confirmed live). Phase 1 had flagged this `paywalled`; a legitimate open copy exists on the author's own site.
 **Reading copy:** `scratchpad/ocr-text/jones__software-development-a-rigorous-approach.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
+## Coverage
+
+**Not yet attested — partial read across two sessions.** Line numbers below refer to
+the OCR reading copy named above. PDF page = book page + 12.
+
+An earlier session extracted 39 lessons whose source lines cite chapters 1-14, 17,
+18, 19, 21 and 22, but left no coverage note and no attestation; it appears to have
+died at the end without recording where it had been. Chapters 15, 16 and 20 and the
+appendices carried no lessons at all, which is what the second session targeted.
+
+Read in the second session (lines 14255-14926, 14927-15401, 16783-17740,
+18190-19070, 19195-19603): the tail of chapter 14, all of chapter 15 (*On Being
+Sufficiently Abstract), all of chapter 16 (*Implicit Definition of Data Types), the
+Part C preamble, chapter 17 through "Language Support for Abstract Data Types", the
+close of chapter 19 (Input/Output Statements) with its proof rules, all of chapter
+20 (Josephus Rings), the opening of chapter 21, the close of chapter 22 from
+"Anticipating Change" through "Environment Independence", appendix A (*Language
+Definition), appendices B and C (rule and operator reference tables — no prose to
+mine), the start of appendix D (*Selected Detailed Proofs — formal proof, no prose),
+and the glossary in full. The tail from line 19604 to the end of file (20771) was
+structurally sampled and confirmed to be answers to selected exercises, the
+bibliography, the index and a colophon; none of it is lesson-bearing.
+
+**Not read in either recorded session, resume here:** lines 341-14254 — chapters 1
+through 14 entire, i.e. Part A (Programs Which Manipulate Numbers) and Part B (Data
+Types in Program Development). Also unread this session: lines 15402-16782 (the
+balance of chapter 17 from the class-construct example onward, all of chapter 18
+*Earley's Recognizer, and the opening of chapter 19) and lines 17740-18189 (the
+balance of chapter 21 Telegram Analysis and the opening of chapter 22 through
+"Programs and Their Data"). All three of those spans are cited by lessons the first
+session wrote, so they were mined once; they have simply not been read by anyone who
+then attested them, so exhaustion cannot be claimed for them.
+
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)
 - [A prohibition does not travel; a discipline that tells you what to do next does](../lessons/a-prohibition-does-not-travel-a-constructive-discipline-does.md)

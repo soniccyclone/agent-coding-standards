@@ -106,6 +106,9 @@ tags: [work]
 - [A boundary metric exiles the members who span the boundary](../lessons/a-boundary-metric-exiles-the-members-who-span-the-boundary.md)
 - [Decompose the exact computation before you approximate it](../lessons/decompose-the-exact-computation-before-you-approximate-it.md)
 - [A degenerate optimum means your objective is missing a term, not a filter](../lessons/a-degenerate-optimum-means-your-objective-is-missing-a-term.md)
+- [Relax the discrete choice, solve exactly, then round](../lessons/relax-the-discrete-choice-solve-exactly-then-round.md)
+- [Rewrite a global objective as a sum of local terms to see what it rewards](../lessons/rewrite-a-global-objective-as-a-sum-of-local-terms.md)
+- [A series of mutually exclusive solutions degrades by construction](../lessons/a-series-of-mutually-exclusive-solutions-degrades-by-construction.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
