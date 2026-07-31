@@ -287,3 +287,65 @@ Tier 2 also includes Liskov's 7 works and the 38 works in knuth, landin,
 lampson, mccarthy and lynch if they were stamped in a later cleanup commit
 rather than by a reading agent — check those against the hash test above rather
 than assuming.
+
+## Phase 4 status — 2026-07-31
+
+Recorded here because the numbers in `bd` and in commit messages drift, and this
+is the file a later reader will trust.
+
+| | |
+|---|---|
+| figures with every work attested | **85 / 95** |
+| lessons | **2,075** |
+| works attested `extraction: complete` | **432 / 450** |
+| works with no obtainable source | 4 (flags H.7) |
+
+Phase 4 began this session at 1,344 lessons and 70 complete figures.
+
+### What remains, and why it is split
+
+**Agent-sized — 5 works, 201 pages, 3 figures.** `mcmillan`, `scott` and `kay`.
+In progress at time of writing.
+
+**Book-sized — 9 works, 3,568 pages, 7 figures.** Reserved for the main-loop
+orchestrator, not for subagents:
+
+| pages | work |
+|---|---|
+| 883 | `sussman` / structure-and-interpretation-of-computer-programs |
+| 603 | `ullman` / mining-of-massive-datasets |
+| 449 | `reynolds` / the-craft-of-programming |
+| 441 | `wirth` / project-oberon |
+| 400 | `jones` / software-development-a-rigorous-approach |
+| 378 | `church` / introduction-to-mathematical-logic |
+| 260 | `hoare` / communicating-sequential-processes-book |
+| 212 | `wirth` / algorithms-and-data-structures |
+| 92 | `hoare` / notes-on-data-structuring |
+
+### Why books do not go to subagents
+
+Measured, not assumed. A wave aimed at six of these books produced **4 lessons
+from 12 agents over 6 hours** (~928k tokens per lesson); waves aimed at short
+papers produced 320 and 136 lessons at ~19k and ~28k tokens per lesson. Reading a
+book takes longer than the harness will wait for one step, so the agent registers
+as stalled and is retried from scratch. The extraction prompt now hard-caps agents
+at `survey_pages < 250` and tells them to report anything larger as reserved.
+
+For contrast, the one book read this way — Reenskaug's *OOram*, 497 pages, read
+chapter by chapter in the main loop with a commit after each — yielded **87
+lessons**. On that rate the 3,568 remaining pages are plausibly worth 400-600
+lessons, which is why this tail matters far more than its work count suggests.
+
+### Rollup coverage
+
+Consumer-facing `## Lessons` rollups exist for every complete figure except
+`kay`, `scott` and `mcmillan` (mid-extraction). Rollups for `hoare`, `jones`,
+`reynolds`, `sussman` and `wirth` are deliberately deferred until their books are
+read, since a synthesis written now would have to be discarded.
+
+### Standing constraints
+
+- Phases 5, 6 and 7 and all axis/subdomain/root rollup prose are **on hold**
+  pending Nathan's explicit go-ahead.
+- No `git commit --amend`. Corrections to the record go in a new commit or in the
+  planning docs — see flags H.8, which corrects `c51d354`'s own message.
