@@ -64,6 +64,8 @@ tags: [work]
 - [Find the pigeonhole that makes a local test a complete filter for a global property](../lessons/find-the-pigeonhole-that-makes-a-local-test-a-complete-global-filter.md)
 - [Certify that you missed nothing by counting the boundary of what you accepted](../lessons/certify-completeness-by-counting-the-boundary.md)
 - [An update rule that can only demote needs a separate discovery path](../lessons/an-update-rule-that-only-demotes-needs-a-separate-discovery-path.md)
+- [Check that your measure still discriminates at the scale you will use it](../lessons/check-that-your-measure-still-discriminates-at-your-scale.md)
+- [Whether you can synthesize a summary is a property of the space, not of your algorithm](../lessons/whether-you-can-synthesize-a-summary-is-a-property-of-the-space.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

@@ -41,3 +41,5 @@ tags: [work]
 - [Impose an arbitrary order on the elements and cycles stop being something you check for](../lessons/impose-an-arbitrary-order-to-make-cycles-impossible.md)
 - [Separate what a thing means from how it is written, and watch the notation improve the thing](../lessons/separate-what-a-command-means-from-how-it-is-written.md)
 - [Two things with identical contents are not the same thing, so let the construction carry the distinction](../lessons/identical-contents-are-not-the-same-thing-so-carry-the-tag.md)
+- [Name the separable parts explicitly, so that what remains is the coupling you actually have to solve](../lessons/name-the-separable-parts-so-the-inseparable-one-is-what-you-work-on.md)
+- [A language cannot pick your representation for you, because it cannot see how the operations will be used](../lessons/a-language-cannot-pick-the-representation-because-it-cannot-see-the-profile.md)

@@ -74,6 +74,9 @@ tags: [work]
 - [Assignment converts choices that were free into commitments nothing writes down](../lessons/assignment-turns-free-choices-into-commitments.md)
 - [No expression carries its own meaning; a context supplies it, and there is no privileged context](../lessons/no-expression-carries-its-own-meaning.md)
 - [An object turns out to be shared code plus a frame that outlived the call that made it](../lessons/an-object-is-shared-code-plus-a-frame-that-outlived-its-call.md)
+- [Adding one operation can promote an invisible property into the interface and void every equivalence you relied on](../lessons/adding-an-operation-can-promote-an-invisible-property-into-the-interface.md)
+- [Give a mutable aggregate a handle that never moves, and hold the facts its operations would otherwise recompute](../lessons/give-a-mutable-aggregate-a-handle-that-never-moves.md)
+- [An abstraction is unfinished until it supplies its own way of being looked at](../lessons/an-abstraction-owes-you-a-way-of-being-looked-at.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

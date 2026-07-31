@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Give a mutable aggregate a handle that never moves, and hold the facts its operations would otherwise recompute"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [hardware-affinity, cognitive-load]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Give a mutable aggregate a handle that never moves, and hold the facts its operations would otherwise recompute
+
+**Lesson:** Two small structural decisions recur in every mutable collection the chapter builds, and both are worth naming because they look like implementation trivia and are actually about identity and cost. The first: adding a record to a chain naturally changes which cell is the front, so every holder of a reference to the old front is now holding something stale, and the insert operation is forced to hand back a new head that everyone must adopt. The fix is a cell at the front that holds nothing real and never moves. Callers keep pointing at it, insertion mutates through it, and the collection acquires a stable identity independent of its contents.
+
+That is the general principle, and it is not about lists. A mutable aggregate needs some part of itself that does not change when the contents do, or it cannot be referred to. Otherwise every mutation is really a replacement, and every holder of a reference has to be told. The sentinel cell, the handle, the object header, the stable primary key, the identifier that survives a rewrite — these all exist for the same reason: to separate the thing from its current value so that the thing can be shared.
+
+The second decision is dual. Making a queue out of a plain chain costs a linear scan per insertion, and the authors are precise about why: the chain gives you a pointer to the front and no accessible pointer to the end. The cost is not inherent to insertion; it comes from a fact the structure declines to remember. Keeping a rear pointer alongside makes the operation constant-time. Whenever an operation is slow, it is worth asking what it is recomputing that could simply have been retained — and whenever you add such a field, you have added an invariant that every mutator must now maintain, which is the price.
+
+The queue implementation then does something with that invariant worth noticing, because it looks like a bug and is a considered decision. Delete the last item and the rear pointer is left dangling at a removed cell. It is not repaired, because emptiness is decided by looking at the front pointer alone, so no reachable operation can observe the stale value. That is a real technique — a derived field only has to be correct where something reads it — and also a real hazard, since the reasoning is invalidated the moment somebody adds an operation that reads it. If you take that shortcut, the obligation is to write down which observations the invariant is being maintained against, because the next person will have no way to distinguish a deliberate gap from an oversight.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) - chapter 3 sections 3.3.2 and 3.3.3, which represent a queue as a pair of front and rear pointers into an ordinary chain, explain that the linear cost of the plain-list representation comes from the chain providing a pointer to the beginning but no accessible pointer to the end and that adding the rear pointer makes insertion take a number of steps independent of length, note in a footnote that after deleting the final item the rear pointer still points at the deleted cell and need not be updated because the emptiness test looks only at the front pointer; and the table section's headed list, whose leading backbone pair holds a dummy record so there is a fixed location to modify when inserting, with the footnote observing that this first pair is the object representing the table itself and that without the arrangement insert! would have to return a new value for the start of the table.

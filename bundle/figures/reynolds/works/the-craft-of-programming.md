@@ -19,7 +19,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: 3.1.6 through 3.3.3 (lines 8101-9973).
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: 3.1.6 through 3.3.12 (lines 8101-11642).
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
@@ -67,3 +67,9 @@ tags: [work]
 - [A declaration is a settlement point: it grants a fixed set of facts and pays off exactly the debts naming it](../lessons/a-declaration-is-where-the-debts-get-settled.md)
 - [Recursion forces you to write the contract before you can check the body](../lessons/recursion-forces-the-contract-to-be-written-before-the-body.md)
 - [Compare two implementations by implication between their contracts, and read the difference as the calls that distinguish them](../lessons/compare-implementations-by-implication-between-their-contracts.md)
+- [A control abstraction demands a specification of its behaviour argument and yields the inference rule for the construct](../lessons/what-a-control-abstraction-demands-is-a-specification-and-what-it-yields-is-a-rule.md)
+- [If an argument's value moves with something else, name the function it secretly is](../lessons/if-an-argument-changes-with-something-name-the-function.md)
+- [A name invented solely to be mentioned once is a defect of the notation, and the fix must be eliminable](../lessons/a-name-that-exists-only-to-be-mentioned-once-is-a-notation-defect.md)
+- [A rule cluttered with conditions about substitution should be restated over a function instead](../lessons/hoist-the-substitution-machinery-into-one-mechanism.md)
+- [Independence analysis works at the granularity of names, so buy finer granularity with laws about selectors](../lessons/buy-back-granularity-inside-an-aggregate-with-laws-about-selectors.md)
+- [A pure function's contract is an equation; a state-changing procedure's contract is a theorem you must prove](../lessons/a-pure-functions-contract-is-an-equation-not-a-theorem.md)

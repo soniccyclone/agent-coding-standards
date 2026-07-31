@@ -20,4 +20,6 @@ tags: [work]
 **Source:** http://web.archive.org/web/20250104082500/http://www.usingcsp.com/cspbook.pdf — the live site (usingcsp.com) is currently unresolvable (DNS failure at time of check), so this is a Wayback Machine snapshot from January 2025. Content verified by decompressing the PDF's text streams directly: title page reads "Communicating Sequential Processes / C. A. R. Hoare," and a copyright page states "© C. A. R. Hoare, 1985–2022. This document is an electronic version of..." confirming it as Hoare's own authorized free distribution (self-archived, not a third party's copy).
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
+- [Make the awkward question unaskable rather than answering it carefully: drop time, keep order](../lessons/make-the-question-unaskable-rather-than-answering-it-carefully.md)
+- [A self-referential definition means something only if it commits to an observable step before referring to itself](../lessons/a-self-referential-definition-must-commit-to-a-step-first.md)

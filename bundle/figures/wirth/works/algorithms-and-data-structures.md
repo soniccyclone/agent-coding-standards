@@ -49,3 +49,6 @@ tags: [work]
 - [Every speedup is bought with a claim; name the claim and notice when you stop proving it](../lessons/every-speedup-is-bought-with-a-claim-name-the-claim.md)
 - [Match the structure's granularity to the transfer unit, then re-derive the cost](../lessons/match-the-structures-granularity-to-the-transfer-unit.md)
 - [Same shape is not same meaning: keep roles distinct even when the picture collapses them](../lessons/same-shape-is-not-same-meaning.md)
+- [When a repair forces an expensive access, take everything it offers — and check the opposite repair is its mirror](../lessons/pay-once-take-everything-and-keep-repair-symmetric.md)
+- [Examine the degenerate instance, and when you re-represent it keep only the distinction that mattered](../lessons/examine-the-degenerate-instance-and-keep-only-the-distinction.md)
+- [Restate the rule as the property you actually need, and drop the concept you arrived by](../lessons/restate-the-rule-as-the-property-you-need-and-drop-the-scaffolding.md)
