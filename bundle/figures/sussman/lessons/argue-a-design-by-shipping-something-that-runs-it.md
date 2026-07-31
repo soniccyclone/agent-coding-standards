@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Argue a design change by shipping something that runs it, not by describing it"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Argue a design change by shipping something that runs it, not by describing it
+
+**Lesson:** There is a way of conducting a design disagreement that most fields cannot use and this one can. Instead of describing the semantics you propose and waiting for objections, hand over a working thing that has those semantics. The recipient does not evaluate your description; they use the artifact, discover what it is actually like, and reply with a modified artifact. The unit of the conversation is a runnable model, and each turn of the argument is an edit to it. What makes this possible is that the artifact is small — an interpreter is a short program — and that the modification embodying any given proposal is usually confined to a few lines of it.
+
+The reason this is different in kind from prose is that a proposal about how something should behave has consequences its author has not thought about, and those are precisely the consequences that determine whether the proposal is any good. Describing a change surfaces the consequences you already saw. Running one surfaces the rest, and it surfaces them to the skeptic as well as the advocate, which is the part that ends arguments. Notice also what a chain of such exchanges produces: a record where every position anyone held is reproducible, so a claim about behaviour is settled by running it rather than by whose intuition is trusted.
+
+Cheapness is a load-bearing requirement here, not a nicety, and it comes from building the model on top of a rich existing system rather than from scratch. The host supplies the primitives, the storage management, the arithmetic, the whole substrate — everything the experiment does not care about is borrowed rather than built, so the code that exists is exactly the code that expresses the idea under discussion. That has an effect on the quality of the exploration and not just its speed: when the marginal cost of a variant is a few lines, you try the variants you merely suspect might be interesting, which is where the surprises are. A model expensive enough to be precious stops being used for experiments and starts being defended.
+
+The last piece is knowing that a serious implementation is a separate and later project, undertaken only if the design survives — the authors say plainly, only later if ever. This is a real discipline and the hard part of it is not building the model but refusing to grow it into the product. The model exists to answer design questions and its correct end state is usually deletion. Keeping that clear is what prevents the choices made for cheapness — borrowing the host's arithmetic, borrowing its storage behaviour — from silently becoming commitments in a system nobody meant to ship.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) - the introduction to chapter 4 section 4.2, which observes that having the evaluator expressed as a program lets alternative language-design choices be explored by modifying it, that new languages are often invented by first writing an evaluator embedding the new language within an existing high-level language, that a proposed modification can be discussed with another member of the community by supplying an evaluator embodying the change so that the recipient experiments with it and replies with further modifications, that the high-level implementation base makes the evaluator easier to test and debug and lets the designer take features wholesale from the underlying language just as the embedded evaluator uses the underlying primitives and control structure, and that only later if ever need the designer build a complete implementation in a low-level language or in hardware.

@@ -98,6 +98,8 @@ tags: [work]
 - [Universality is cheap in a medium where machines are describable as data](../lessons/universality-is-cheap-when-the-machine-is-describable-as-data.md)
 - [A boundary between two worlds can pass data across, but not behaviour](../lessons/a-boundary-between-two-worlds-passes-data-but-not-behaviour.md)
 - [Working code is not evidence that you implemented the rule you meant](../lessons/working-code-is-not-evidence-that-you-implemented-the-rule-you-meant.md)
+- [Split a computation along the line where its inputs arrive at different times](../lessons/split-a-computation-by-when-its-inputs-arrive.md)
+- [Argue a design change by shipping something that runs it, not by describing it](../lessons/argue-a-design-by-shipping-something-that-runs-it.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

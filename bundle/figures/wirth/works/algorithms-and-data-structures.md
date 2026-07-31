@@ -74,3 +74,4 @@ tags: [work]
 - [Find the phase that moves data without changing the invariant, and fuse it away](../lessons/find-the-phase-that-moves-data-without-changing-the-invariant.md)
 - [If you need one part of the answer, descend into one part only](../lessons/if-you-need-one-part-of-the-answer-descend-into-one-part-only.md)
 - [When the algorithm needs lookahead, extend the access mechanism rather than the algorithm](../lessons/when-the-algorithm-needs-lookahead-extend-the-access-mechanism-not-the-algorithm.md)
+- [Prefer a design whose correctness does not depend on a count you cannot reliably track](../lessons/prefer-a-design-whose-correctness-does-not-depend-on-a-count.md)

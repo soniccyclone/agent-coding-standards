@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Prefer a design whose correctness does not depend on a count you cannot reliably track"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [verifiability, cognitive-load]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Prefer a design whose correctness does not depend on a count you cannot reliably track
+
+**Lesson:** Some quantities in a system are easy to compute and hard to keep true. A count of the pieces you have produced is the classic case: the producing step knows exactly how many it emitted, and then two of them spontaneously coalesce because they happened to be adjacent and compatible, and the count is now wrong with nothing having gone wrong. The important question is not how to prevent the drift — often you cannot, because the coalescing is a benign consequence of the data — but whether your algorithm's correctness rests on the number. If it does not, the drift is a variation in performance and can be ignored entirely. If it does, you have just acquired an obligation to detect and account for every occasion of it, and that obligation will not stay small.
+
+That gives a design criterion you can apply early, before the mechanism exists. For each derived quantity your control flow consults, ask: if this were off by a few, would the result be wrong or merely suboptimal? Arrange, where you have the choice, for the answer to be "suboptimal." Terminate on a condition you can observe directly — the sources are exhausted, one sequence remains — rather than on a counter matching a predicted value. A design that stops when it observes it is finished tolerates any amount of miscounting; a design that stops when its arithmetic says it should be finished is only as correct as the arithmetic, and the arithmetic depends on a model of the data that the data does not know about.
+
+The corollary is where the discipline earns its keep. When an optimization genuinely requires exact counts — because it is exploiting a numeric structure in how work is apportioned, and that structure is the whole source of the gain — accept the obligation explicitly rather than hoping the case does not arise. That means retaining enough state to detect the coalescing at the moment it would happen, which usually means remembering the last thing written to each destination, and it means writing down that this is now a correctness dependency rather than a statistic. The general form: an optimization that converts a performance-sensitive quantity into a correctness-sensitive one has a hidden cost that is not in its complexity analysis, and comparing it against the simpler method on speed alone systematically undercounts what it will take to get right.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 2.4.2's discovery that distributing consecutive runs to alternating destinations may produce fewer runs than were consumed, because the first item of one run can exceed the last item of an earlier one so that two runs merge automatically, together with the consequence that the numbers of runs on the two destinations may differ significantly; and section 2.4.4's explicit contrast, which states that by devising the sort so that its correctness does not depend on the number of runs the side effect can safely be ignored, whereas the polyphase method is particularly concerned with keeping track of the exact number of runs on each file, cannot afford to overlook a coincidental merge, and therefore incurs an unavoidable additional complication requiring the last key written on each sequence to be retained.
