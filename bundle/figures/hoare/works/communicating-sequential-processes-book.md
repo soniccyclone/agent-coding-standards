@@ -65,3 +65,6 @@ full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.8 (mid-2.8.3).
 - [When state is a participant, reading it is a forced case analysis — and if reading requires acting, a repair obligation too](../lessons/reading-state-as-a-case-analysis-and-a-repair-obligation.md)
 - [When you know a generalization is coming, refuse to state the laws it will break](../lessons/dont-state-the-laws-your-planned-generalization-will-break.md)
 - [Existence and uniqueness of a solution are bought by different properties — know which one you actually need](../lessons/existence-and-uniqueness-are-bought-by-different-properties.md)
+- [A law about a specification constrains the set of permitted implementations, not any single one](../lessons/a-law-about-a-specification-constrains-the-set-of-implementations.md)
+- [Replace "eventually" with a bound, because no finite observation can ever refute an unbounded promise](../lessons/replace-eventually-with-a-bound-you-can-observe.md)
+- [Deferring a choice costs the upkeep of every option you kept open, for as long as they stay indistinguishable](../lessons/deferring-a-choice-costs-the-upkeep-of-every-option.md)

@@ -110,3 +110,5 @@ section are where the extractable lessons are.
 - [Place an operation by who may call it, not by what it touches](../lessons/place-an-operation-by-who-may-call-it-not-by-what-it-touches.md)
 - [An unwinnable argument about a constant means it should not be one constant](../lessons/an-unwinnable-argument-about-a-constant-means-it-should-not-be-one.md)
 - [A hint is a cache that owes nothing to coherence](../lessons/a-hint-is-a-cache-that-owes-nothing-to-coherence.md)
+- [Nesting a searchable set costs you unless the nesting factors out a shared attribute](../lessons/nesting-a-searchable-set-costs-you-unless-it-factors-a-shared-attribute.md)
+- [An optimization that holds durable state in volatile store is a correctness change](../lessons/an-optimization-that-holds-durable-state-in-volatile-store-is-a-correctness-change.md)

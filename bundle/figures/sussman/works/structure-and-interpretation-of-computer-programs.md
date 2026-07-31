@@ -128,6 +128,7 @@ tags: [work]
 - [A notation that resembles a more powerful one will be used as though it were that one](../lessons/a-borrowed-syntax-borrows-expectations-it-cannot-meet.md)
 - [Information arriving from outside your model can be squeezed into an ordinary value; effects leaving it cannot](../lessons/effects-that-leave-your-boundary-need-their-own-category.md)
 - [A dispatch whose arms grow with the number of callers means the caller should have passed the answer, not a token for it](../lessons/a-dispatch-that-grows-with-callers-means-the-caller-should-have-passed-the-answer.md)
+- [Preserving more than is live is always correct, which is exactly why the waste never announces itself](../lessons/preserving-more-than-is-live-is-correct-and-therefore-invisible.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -193,7 +194,11 @@ preamble and the opening of 5.1 designing register machines. **Next unread line
 Read 23990-24550 — 5.1 designing register machines (data paths and controller
 for the gcd machine), 5.1.1 the register-machine language and its two notations,
 actions, 5.1.2 abstraction in machine design, and 5.1.3 subroutines through the
-label-in-a-register solution. **Next unread line is 24550.** Currently
+label-in-a-register solution. Read 24550-25110 — the rest of 5.1.3, 5.1.4 using
+a stack to implement recursion (factorial and the double recursion for
+Fibonacci), 5.1.5 instruction summary, 5.2 the register-machine simulator, and
+5.2.1 the machine model through registers, the stack and the basic machine.
+**Next unread line is 25110.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

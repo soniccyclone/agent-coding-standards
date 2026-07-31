@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A law about a specification constrains the set of permitted implementations, not any single one"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# A law about a specification constrains the set of permitted implementations, not any single one
+
+**Lesson:** Introduce a construct meaning "either of these, chosen on grounds this document declines to state," and you will immediately notice something that looks like an inconsistency. The construct obeys a symmetry law — the two operands may be written in either order — yet the obvious way to implement it is to always take the first, which is plainly not symmetric. Nothing is wrong. The law is not a claim about any realization; it is a claim about the *collection* of realizations the two expressions permit, and those collections are equal even though their members are individually lopsided. Once you see that, a whole family of apparent contradictions dissolves, and a common category error becomes visible: reading a property of a specification as an obligation on each implementation of it.
+
+The error is worth naming because it runs in both directions and both are expensive. Reading a specification's property onto an implementation makes people demand things nobody needs — that an implementation be symmetric because the spec is, that it be stateless because the spec mentions no state, that it evaluate in the order the spec was written. Reading an implementation's property back onto the specification is worse: someone observes what the shipped code actually does, comes to depend on it, and has a defensible-feeling complaint when a later build exercises a different permitted choice. Both are prevented by being explicit that the meaning of an underspecified construct is a *set*, and that anything true of one member and not all members is not part of the contract.
+
+Two practical consequences. First, the right test of a claimed law is whether the two sides admit the same set of realizations, which is a different and often easier check than comparing behaviours, and it is the check that stays valid as new realization strategies are invented. Second, the construct earns its keep precisely by keeping the set large: the reason to write "either of these" rather than picking one is to preserve a symmetry in the description while allowing an implementation that is fast and asymmetric — you get the clean law and the efficient artifact, which choosing an operand up front would have cost you. This is the general argument for underspecifying deliberately rather than as a failure of nerve: the choice being left open is exactly what lets the description have properties the implementation cannot afford.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the nondeterministic-choice section of the nondeterminism chapter: the observation that the operator is not intended for implementation but for specification, allowing the implementor to decide on grounds such as cost, response time or delivery date that the specification deliberately ignores; the three given implementations, two selecting an operand outright and one deferring to the environment; and the discussion of the asymmetry of the first two, which notes that this does not violate the symmetry law because the laws apply to processes rather than to any particular implementation, asserting the identity of the entire set of implementations of each side, with the two sets displayed as equal.
