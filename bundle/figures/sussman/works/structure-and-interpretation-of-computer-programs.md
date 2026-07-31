@@ -148,6 +148,7 @@ tags: [work]
 - [The cost of a safety check varies per site, so settling it with a global default of off converts an optimization into an unlocatable absence](../lessons/a-per-site-cost-argument-must-not-be-settled-by-a-global-default-of-off.md)
 - [Bracket a general mechanism between what it replaced and what a hand-built special case achieves, and check the ratio is even defined before quoting it](../lessons/bracket-a-general-mechanism-between-two-baselines-and-check-the-ratio-exists.md)
 - [A unit built separately cannot name anything outside itself, so every cross-boundary reference has to arrive as a value someone installs](../lessons/a-separately-built-unit-cannot-name-anything-outside-itself.md)
+- [A second implementation of an abstraction is paid for in the private conventions underneath it, which nobody wrote down because nothing had crossed them](../lessons/a-second-implementation-is-paid-for-in-the-conventions-beneath-the-interface.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -237,8 +238,18 @@ sequences, lambda expressions and bodies), 5.5.3 compiling combinations
 and the tail-call linkage), and 5.5.4 through the sequential combiner. **Next
 unread line is 28510.**
 
-**READ IN PROGRESS (bucket 310, second session):** resumed at line 28510,
-reading forward toward the index at ~29990. This line is updated as
+**READ IN PROGRESS (bucket 310, second session):** resumed at line 28510.
+Read 28510-29628 — the rest of 5.5.4 (the tack-on and parallel sequence
+combiners), 5.5.5 the worked compilation of the recursive factorial definition
+with its exercises including open coding of primitives, 5.5.6 lexical addressing
+and the compile-time environment, and 5.5.7 interfacing compiled code to the
+evaluator (the third procedure kind at apply-dispatch, the external entry point
+and flag register, compile-and-go, the stack-usage comparison, the
+interpretation-versus-compilation discussion, porting and bootstrapping, and
+Exercises 5.45-5.48). Note: two lessons covering 5.5.6 and Exercises 5.38/5.44
+already existed on disk unlinked from this file — a prior agent died between
+writing them and linking them; links restored in this session.
+**Next unread line is 29628.** Reading forward toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.
 `extraction: complete` withheld until all five chapters are read._

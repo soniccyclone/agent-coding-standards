@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 7940** — Chapters 1 (from 1.5),
-2 and 3 read in full; Chapter 4 read through 4.5.1.
+pass died immediately. Current position: **line 8370** — Chapters 1 (from 1.5),
+2, 3 and 4 read in full; Chapter 5 read through 5.2.
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -86,3 +86,6 @@ pass died immediately. Current position: **line 7940** — Chapters 1 (from 1.5)
 - [Design in nested layers, deploy as two stacks, and let associativity be what licenses the regrouping](../lessons/design-in-nested-layers-deploy-as-stacks-and-let-associativity-license-it.md)
 - [Multiplexing independent streams couples them, buffering only postpones the coupling, and per-stream backpressure is the only cure](../lessons/multiplexing-couples-independent-streams-and-only-backpressure-uncouples-them.md)
 - [A recursively subordinated process and an unbounded data structure are one construction, held together by local naming](../lessons/a-recursively-subordinated-process-is-an-unbounded-data-structure.md)
+- [Where a notation forces you to commit is what determines the class of things it can recognize](../lessons/where-a-notation-forces-you-to-commit-determines-what-it-can-recognize.md)
+- [Run independent constraint-checkers side by side and you enforce conjunctions no single traversal can](../lessons/run-independent-checkers-side-by-side-to-enforce-conjunctions.md)
+- [Make restart, rollback and task-switching operators over a component that knows nothing about them](../lessons/make-recovery-an-operator-over-a-component-that-knows-nothing-about-it.md)

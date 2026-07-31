@@ -26,7 +26,10 @@ tags: [work]
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 10480 — chapter 5 prose complete through section 5.5 (text frames,
+**Current position: line 11309 — chapter 9 complete and mined (9.1-9.4, including the
+serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
+read and mined through section 10.4's prose to line 11309. Earlier state, still true:
+chapter 5 prose complete through section 5.5 (text frames,
 font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
 complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
 Edit) checked for prose and confirmed to be pure Oberon source with no explanatory
@@ -138,3 +141,6 @@ section are where the extractable lessons are.
 - [When a requirement seems to break the global model, look for the one module that can absorb it](../lessons/absorb-the-violation-in-one-module-rather-than-abandon-the-model.md)
 - [Refine a protocol by naming what the current version cannot survive](../lessons/refine-a-protocol-by-naming-what-the-current-version-cannot-survive.md)
 - ["Is this for me" and "is this the one I am waiting for" are different questions](../lessons/is-this-for-me-and-is-this-the-one-i-am-waiting-for-are-different-questions.md)
+- [Who starts an exchange need not be who paces it](../lessons/who-starts-the-exchange-need-not-be-who-paces-it.md)
+- [Derive each timeout from the one beneath it, and stay until the other side can no longer ask](../lessons/derive-each-timeout-from-the-one-beneath-it.md)
+- [Join peers through a structure neither of them owns](../lessons/join-peers-through-a-structure-neither-of-them-owns.md)
