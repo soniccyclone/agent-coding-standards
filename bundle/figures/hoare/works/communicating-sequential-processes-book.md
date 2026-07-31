@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 3670** — Chapter 1 now read in
-full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.5.
+pass died immediately. Current position: **line 4110** — Chapter 1 now read in
+full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.6.
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -61,3 +61,5 @@ full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.5.
 - [Refuse to distinguish a component from its environment, and make the joining operator closed, symmetric and associative](../lessons/refuse-to-distinguish-a-component-from-its-environment.md)
 - [Express a global policy as an extra participant that adds no actions of its own and can therefore only forbid](../lessons/express-a-global-policy-as-a-participant-that-only-forbids.md)
 - [Before betting on exhaustive search, work out whether you would be enumerating configurations or histories](../lessons/enumerating-configurations-versus-enumerating-histories.md)
+- [Where interaction is by name-matching, two copies of a thing are one thing until you rename them](../lessons/naming-is-wiring-so-instantiation-is-renaming.md)
+- [When state is a participant, reading it is a forced case analysis — and if reading requires acting, a repair obligation too](../lessons/reading-state-as-a-case-analysis-and-a-repair-obligation.md)

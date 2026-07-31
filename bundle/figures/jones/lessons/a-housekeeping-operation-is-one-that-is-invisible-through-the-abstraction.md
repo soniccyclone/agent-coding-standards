@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A housekeeping operation is exactly one that is the identity when viewed through the abstraction, and proving that buys you everything else"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [verifiability, parallelizability, hardware-affinity]
+subdomains: [software-engineering-and-architecture, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# A housekeeping operation is exactly one that is the identity when viewed through the abstraction, and proving that buys you everything else
+
+**Lesson:** Most long-lived systems accumulate a second class of operation alongside the ones users ask for: compaction, rebalancing, reclamation, index rebuilding, cache repair. These get treated as a grubby operational concern, scheduled by superstition and reasoned about badly, because they seem to sit outside the system's real behaviour. There is a precise way to characterize them that turns the intuition into something checkable. A housekeeping operation is one that changes the concrete state and leaves the abstract state it stands for exactly as it was. Write the mapping from concrete to abstract, apply the operation, and show the abstract value before and after is the same value. That single obligation is what "this is only maintenance" actually means.
+
+The reason to bother proving it is that a great many properties you would otherwise argue for separately fall out of it at once. If the operation does not change what the state means, then it does not matter whether you run it. It does not matter when you run it, or how often, or on which part of the structure. It can be abandoned half-finished, because a partially completed sequence of identity-preserving changes is still identity-preserving. It can run alongside the operations that do real work without any interference argument, because there is nothing about the meaning for it to interfere with. Each of those would be a laborious thing to establish on its own; together they are the single claim that the operation is invisible from above.
+
+That in turn changes how you schedule such work. Maintenance whose safety is a matter of judgement has to be run in a window when nothing else is happening, which is exactly when the pressure to skip it is highest. Maintenance proved invisible can be run opportunistically — in the gaps, as a background activity, interrupted whenever something more urgent arrives, resumed or not. The performance benefit becomes something you take when it is cheap rather than something you schedule an outage for. Notice this also settles the question of whether it is safe to have several such repairs in flight, or to have one interrupted by another: they all reduce to the same identity claim.
+
+The design instruction, then, is to separate work that changes what is true from work that changes only how it is held, and to hold them to different obligations. The first kind must be shown to produce the right new meaning. The second kind must be shown to produce no new meaning at all — which is a strictly easier thing to prove and a strictly more useful thing to know. If you find an operation you thought was housekeeping but which cannot be shown to preserve meaning, you have found a bug or a misclassification, and either way you found it before it corrupted anything.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 13's "Cleaning up Forests" section: the specification of an operation that reduces the depth of the tree structures used to hold equivalence classes, the demonstration that it preserves the data type invariant, the separate and explicit proof by three cases that it leaves the retrieved abstract value unchanged, and the immediately following observation that such a procedure could therefore be run as a cooperating process alongside the main operations and be interrupted very easily without causing them any delay; together with the preceding remark that the shape of the trees, and hence the cost of the main operations, depends on the order in which the equating requests happened to arrive.

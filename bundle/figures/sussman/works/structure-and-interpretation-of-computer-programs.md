@@ -120,6 +120,8 @@ tags: [work]
 - [A derivation engine hands you proofs, not facts, so anything you count over its output counts derivations](../lessons/a-derivation-engine-returns-proofs-not-facts-so-never-aggregate-its-output.md)
 - [Adding a true statement can break a system that reads statements procedurally](../lessons/adding-a-true-statement-can-break-a-system-that-reads-statements-procedurally.md)
 - [Design by choosing the weakest formalism that still says what you need, because weakness is what buys mechanical treatment](../lessons/choose-the-weakest-formalism-that-still-says-what-you-need.md)
+- [A manipulation that goes through is not thereby meaningful, so validity must be established outside the symbols](../lessons/a-manipulation-that-goes-through-is-not-thereby-meaningful.md)
+- [Where there is no scope there must be freshening, because a template used twice will otherwise constrain itself](../lessons/without-scope-you-must-freshen-names-at-every-instantiation.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -174,7 +176,11 @@ unification and its partial solutions, applying rules and the analogy to
 procedure application, the query evaluator and driver loop), all of 4.4.3 (is
 logic programming mathematical logic — infinite loops, problems with negation,
 the closed-world assumption), and the start of 4.4.4 implementation. **Next
-unread line is 22870.** Currently
+Read 22870-23430 — 4.4.4.1 driver loop and instantiation, 4.4.4.2 the evaluator
+(simple queries, conjoin/disjoin, the negation and host-predicate filters),
+4.4.4.3 finding assertions by pattern matching, 4.4.4.4 rules and unification
+(variable renaming, the unifier, the occurs check), and the start of 4.4.4.5
+maintaining the data base. **Next unread line is 23430.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

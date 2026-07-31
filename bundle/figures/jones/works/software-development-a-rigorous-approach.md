@@ -43,20 +43,28 @@ and the glossary in full. The tail from line 19604 to the end of file (20771) wa
 structurally sampled and confirmed to be answers to selected exercises, the
 bibliography, the index and a colophon; none of it is lesson-bearing.
 
-**Third session (in progress).** Started reading at line 341 and is working forward
-sequentially through the unread spans below. **Current position: line 341** — this
-number is updated as the read advances, so whatever it says is the resume point.
-Position log: 341 -> 12327.
+**Third session (in progress).** Reading forward sequentially through the spans left
+unread by the first two sessions.
 
-**Not read in either recorded session, resume here:** lines 341-14254 — chapters 1
-through 14 entire, i.e. Part A (Programs Which Manipulate Numbers) and Part B (Data
-Types in Program Development). Also unread this session: lines 15402-16782 (the
-balance of chapter 17 from the class-construct example onward, all of chapter 18
-*Earley's Recognizer, and the opening of chapter 19) and lines 17740-18189 (the
-balance of chapter 21 Telegram Analysis and the opening of chapter 22 through
-"Programs and Their Data"). All three of those spans are cited by lessons the first
-session wrote, so they were mined once; they have simply not been read by anyone who
-then attested them, so exhaustion cannot be claimed for them.
+**Done this session:** lines 341-14254 read in full and sequentially — the front
+matter and preface, chapter 1 (Introduction), all of Part A (chapters 2-6: Specifying
+Functions, Proofs About Functions, Specifying Programs, Proofs in Program Development,
+Other Issues) and all of Part B (chapters 7-14: On Data Types, Set Notation, List
+Notation, Data Type Invariants, Data Refinement, Mapping Notation, *Theories of Data
+Types, Abstract Syntax). This was the span the coverage note previously flagged as
+never read by anyone.
+
+**Current position: line 15402** — moving to the next unread span. This number is
+updated as the read advances, so whatever it says is the resume point.
+Position log: 341 -> 14254 (span complete) -> resuming at 15402.
+
+**Still unread by anyone who then attested it:** lines 15402-16782 (the balance of
+chapter 17 from the class-construct example onward, all of chapter 18 *Earley's
+Recognizer, and the opening of chapter 19) and lines 17740-18189 (the balance of
+chapter 21 Telegram Analysis and the opening of chapter 22 through "Programs and
+Their Data"). Both spans are cited by lessons the first session wrote, so they were
+mined once; they have simply not been read by anyone who then attested them, so
+exhaustion cannot be claimed for them.
 
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)
@@ -113,3 +121,4 @@ then attested them, so exhaustion cannot be claimed for them.
 - [Find the right abstraction by looking at the implementations you would consider and keeping only what they agree on](../lessons/find-the-abstraction-by-abstracting-over-the-implementations-you-would-consider.md)
 - [Write down the consequence even though it already follows, because derivable is not the same as available](../lessons/write-down-the-consequence-even-though-it-follows.md)
 - [Do not let the formalism you must store things in be the vocabulary you describe them in](../lessons/do-not-let-the-storage-formalism-be-your-description-language.md)
+- [A housekeeping operation is exactly one that is the identity when viewed through the abstraction, and proving that buys you everything else](../lessons/a-housekeeping-operation-is-one-that-is-invisible-through-the-abstraction.md)

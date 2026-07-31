@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "State that duplicates a shared fact belongs to the shared thing, not to the accessor"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, parallelizability, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# State that duplicates a shared fact belongs to the shared thing, not to the accessor
+
+**Lesson:** Once a design admits several independent accessors onto one underlying thing, every piece of auxiliary state has to be placed on one side or the other, and there is a criterion that decides it rather than taste. Ask what the state *is*. If it is an intention — a designation, a position, a preference that only makes sense within one act of access — it belongs to the accessor, and having one per accessor is the point. If it is a *copy* of something the underlying thing already holds, it belongs to the underlying thing, and having one per accessor is a defect, because two accessors near each other will hold two copies of the same fact and a write through one will not be seen by the other. Intentions may be plural without contradiction; copies may not, because a copy has a truth condition and duplicates of a truth diverge.
+
+Attaching the copy to the shared object rather than to the accessor is not merely tidier — it lets the uniqueness be stated as an invariant rather than hoped for. Hold the copies in a structure owned by the shared object, key each one by the region of the underlying thing it stands for, and maintain that no two of them stand for the same region. Now coherence is not a matter of accessors coordinating with one another; it is impossible to violate without violating an invariant of a single structure, and any accessor that wants a region either finds the existing copy or causes the only one to be created. Notice that the correct placement is the *opposite* of the one that first suggests itself: the state exists to make one accessor's traversal fast, so it feels like it belongs to that accessor, and following the feeling produces exactly the incoherence.
+
+The second, less obvious return is that once the copies are owned collectively they can be reasoned about as a policy rather than as an accident. How many to keep, when to add one, when to discard one, are questions with an owner and a place to be answered — and the answer can be tuned for a case a per-accessor design cannot even express, such as a single accessor that repeatedly moves between a few distant regions and benefits from several copies at once. Placement first, count second: decide who owns the auxiliary state on the duplication criterion, and only then decide how much of it there should be.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 7.3's argument about buffering when files reside on a disk, which begins from the observation that several riders may be placed on one file and moved independently, notes the initial appeal of giving each rider its own buffer, and rejects it because riders at neighbouring positions referring to the same sector would hold duplicates that can readily become inconsistent; the conclusion that buffers must be associated with the file rather than with the rider, with the file descriptor holding the head of a linked list of buffers, each identified by its position in the file, and the stated system invariant that no two buffers represent the same sector; and the following remark that even with a single rider several buffers can be advantageous when the rider is repositioned frequently, making the number of buffers and the moment of allocating a new one a question of strategy and heuristics.

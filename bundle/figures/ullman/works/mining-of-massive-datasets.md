@@ -189,6 +189,10 @@ tags: [work]
 - [Separate the proposal from the decision to admit it](../lessons/separate-the-proposal-from-the-decision-to-admit-it.md)
 - [Name the settings at which your generalization becomes the old thing](../lessons/name-the-settings-at-which-your-generalization-becomes-the-old-thing.md)
 - [An inverted name taxes every reader forever](../lessons/an-inverted-name-taxes-every-reader-forever.md)
+- [Hold back along the axis your data is dependent on](../lessons/hold-back-along-the-axis-your-data-is-dependent-on.md)
+- [The shape of the tie-breaking term decides the answer's character](../lessons/the-shape-of-the-tie-breaking-term-decides-the-answers-character.md)
+- [Build under randomized loss so nothing can depend on any one part](../lessons/build-under-randomized-loss-so-nothing-can-depend-on-any-one-part.md)
+- [State domain knowledge as more evidence, not only as more structure](../lessons/state-domain-knowledge-as-more-evidence-not-only-as-more-structure.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -248,7 +252,19 @@ LSTMs, and regularization. Resume at line **24693** (section 13.1). Chapters 2-4
 should also get a hand re-read at the same depth as chapter 1 before this work is
 attested. `extraction: complete` deliberately withheld._
 
-_**READ IN PROGRESS (2026-07-31, fifth agent pass).** Started chapter 13 at line
-**26746**, reading forward in sequential chunks toward line 27631. This line
-number is updated in place as the read advances; if this note still says a line
-below 27631, the agent died there and that is the genuine resume point._
+_**Chapter 13 (neural nets and deep learning) was read in full on 2026-07-31
+(fifth agent pass)**, lines 24693-26997 — the introduction and consecutive-1s
+example, dense feedforward networks and activation functions, loss functions,
+compute graphs and backpropagation, tensors, convolutional and pooling layers
+and CNN architecture, recurrent networks, BPTT, vanishing/exploding gradients
+and LSTM, and regularization (norm penalties, dropout, early stopping, dataset
+augmentation) through the chapter summary and references. Lines 26998-27631 are
+the book's index, which carries no lessons. **All thirteen chapters are now
+read.** Yield: the nineteen lessons in the chapter-13 block above._
+
+_**READ IN PROGRESS (2026-07-31, fifth agent pass, second half).** Hand re-read
+of chapters 2-4 at the depth chapter 1 got, per the outstanding note above.
+Started at line **1647** (chapter 2). This line number is updated in place as
+the read advances; if this note names a line below 7233, the agent died there
+and that is the genuine resume point. `extraction: complete` stays withheld
+until this re-read reaches line 7233._

@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 33
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -19,7 +20,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). An earlier pass covered Chapter 5 from line 13698 through 15977 (5.1.1 through 5.2.4). **A read is in progress now, resuming at line 15978.** Sections read so far this pass: 5.3 to end of Chapter 5, all of Appendix A, and into Appendix B (lines 15978-18077). Chapter 5 ends at line 17437; Appendix A (BNF notation) spans 17438-17954; Appendix B (Algol W syntax tables) spans 17955-18854; Appendix C (input/output) spans 18855-19122; References begin at 19124. Read through line 19427.
+**Coverage note (complete).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. The book was read to its end across four passes: preface through Section 3.1.5 (call by value and result); 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697); Chapter 5 sections 5.1.1 through 5.2.4 (lines 13698-15977); and Section 5.3 through the end of the volume (lines 15978-19912). Structural landmarks in the reading copy: Chapter 5 ends at 17437, Appendix A (BNF notation) spans 17438-17954, Appendix B (Algol W syntax) 17955-18854, Appendix C (input/output) 18855-19122, references 19124-19467, index 19468-19912.
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)

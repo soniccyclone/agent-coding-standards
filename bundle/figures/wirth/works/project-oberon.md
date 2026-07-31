@@ -102,3 +102,6 @@ section are where the extractable lessons are.
 - [An interface should publish an ordinal, not a fact about the implementation](../lessons/an-interface-should-publish-an-ordinal-not-a-fact-about-the-implementation.md)
 - [Ship what the compiler knew, and let the transport carry it uninterpreted](../lessons/ship-what-the-compiler-knew-and-let-the-transport-carry-it-uninterpreted.md)
 - [A reference count counts only the references your mechanism can see](../lessons/a-reference-count-counts-only-the-references-your-mechanism-can-see.md)
+- [State that duplicates a shared fact belongs to the shared thing, not to the accessor](../lessons/state-that-duplicates-a-shared-fact-belongs-to-the-shared-thing.md)
+- [Schedule the global analysis for the moment its input is simplest](../lessons/schedule-the-global-analysis-for-the-moment-its-input-is-simplest.md)
+- [Prefer the base structure whose shape needs no separate encoding](../lessons/prefer-the-base-structure-whose-shape-needs-no-separate-encoding.md)
