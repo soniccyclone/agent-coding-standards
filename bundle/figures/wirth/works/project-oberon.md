@@ -127,3 +127,4 @@ section are where the extractable lessons are.
 - [Argue correctness as a state-to-state transition at an arbitrary element](../lessons/argue-correctness-as-a-state-transition-at-an-arbitrary-element.md)
 - [Store how far you got, not whether you have been](../lessons/store-how-far-you-got-not-whether-you-have-been.md)
 - [Enforce a policy by what the tool cannot express](../lessons/enforce-a-policy-by-what-the-tool-cannot-express.md)
+- [Simultaneous claims cannot be encoded, so the population is bounded by the width](../lessons/simultaneous-claims-cannot-be-encoded-so-population-is-bounded-by-width.md)

@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 6230** — Chapters 1 (from 1.5),
-2 and 3 read in full; starting Chapter 4 (Communication).
+pass died immediately. Current position: **line 6650** — Chapters 1 (from 1.5),
+2 and 3 read in full; Chapter 4 sections 4.1–4.2 read.
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -76,3 +76,5 @@ pass died immediately. Current position: **line 6230** — Chapters 1 (from 1.5)
 - [Pooling interchangeable units buys capacity and spends addressability, in one transaction](../lessons/pooling-buys-capacity-and-spends-addressability.md)
 - [To prove something cannot happen, build a model in which it can](../lessons/to-prove-something-cannot-happen-model-it-happening.md)
 - [Define "better" as "more predictable", and let implementation be a walk up that order](../lessons/define-better-as-more-predictable-and-implement-upward.md)
+- [When the latency is waiting, widen what you are willing to accept — speed cannot help you](../lessons/when-latency-is-waiting-widen-what-you-accept.md)
+- [Specify a stream component as a relation between its channel histories, plus a bound on how far behind it may fall](../lessons/specify-a-stream-component-by-history-relation-plus-lag-bound.md)
