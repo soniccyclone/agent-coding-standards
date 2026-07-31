@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Refuse the caller assertion you can neither check nor survive"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Refuse the caller assertion you can neither check nor survive
+
+**Lesson:** Interfaces routinely ask the caller to assert something. Some assertions are checkable, and then the interface is safe whatever the caller believes. Some are not checkable but have bounded consequences when wrong — an error, a wasted operation, a degraded result. And some are neither checkable nor bounded: if the caller is wrong the system does something arbitrary later, at a place unrelated to the call, with no way to trace back. That third category deserves a standing rule, which is to leave the operation out of the interface entirely rather than to offer it with a warning. Not because callers are careless, but because an unverifiable claim whose falsity is catastrophic and untraceable does not become safe by being documented.
+
+The argument for offering such an operation is always that the caller sometimes knows more than the system does, and it deserves an answer rather than a dismissal. The answer has two parts. First, examine whether the caller actually knows: for a claim about whether anything anywhere still refers to a thing, a single component's local view is exactly the wrong instrument, since the fact is global and the caller's knowledge is not. Second, and this is the decisive part, weigh what a wrong assertion buys against what it costs. Being right saves a little space or a little time. Being wrong lets the resource be handed out twice, so two unrelated parts of the system write over each other with no indication that anything happened. An exchange with a small upside and an unbounded, undetectable downside should not be offered at all, and certainly not offered as a routine convenience.
+
+Notice that this is a judgement about frequency and consequence together, not a blanket prohibition on trusting callers — the same system may legitimately expose a comparable operation elsewhere with its precondition spelled out, when the operation is rare, deliberate, invoked by someone with a whole-system view, and needed to cover a case the automatic mechanism genuinely cannot. What distinguishes the two is not the danger, which is identical, but whether the operation sits on a path taken constantly by ordinary code. A hazardous escape hatch used once at the edge of the system is a supported tool; the same hazard offered as an everyday operation is a design defect, because the frequency guarantees someone will eventually be wrong, and the consequence guarantees nobody will know who.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 8.3's explanation of why no explicit deallocation procedure is provided for heap variables: the first reason given being that a programmer usually would not know when to call it, and the second that such a hint could not be taken as trustworthy, since an erroneous deallocation performed while references to the object still exist could lead to the same space being allocated more than once with disastrous consequences, from which the section concludes that it is wiser to rely entirely on system management to determine which areas of the store are genuinely reusable; read against the same book's section 7.2, where an explicitly requested purge operation for files is nonetheless provided for deployments that are rarely reinitialized, with the caller made responsible for guaranteeing that no references remain and the consequence of violating that precondition stated plainly.

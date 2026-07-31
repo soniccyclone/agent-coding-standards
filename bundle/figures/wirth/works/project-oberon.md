@@ -34,7 +34,8 @@ paragraphs; chapter 6 complete and mined (6.1-6.5, including the loader toolbox 
 object file format); chapter 7 read and mined in full (7.1 files and riders, 7.2 files on a
 random-access store, 7.3 files on a disk plus the trailing commentary, 7.4 the B-tree
 directory, 7.5 the file utility toolbox and the chapter's literature list). Chapter 7's
-interleaved module listings were checked for prose and are pure Oberon source.**
+interleaved module listings were checked for prose and are pure Oberon source. Chapter 8
+read and mined through section 8.3's pointer-inversion traversal (to line 10100).**
 
 Read against `pdftotext -layout` output of the 2005 edition PDF (441 pages → 22864 lines
 of extracted text). Identity verified: title page and preface name N. Wirth and J.
@@ -119,3 +120,5 @@ section are where the extractable lessons are.
 - [Two growing consumers of one resource need no boundary; three do](../lessons/two-consumers-of-one-resource-need-no-boundary-three-do.md)
 - [An algorithm triggered by exhaustion may not consume the resource it was called about](../lessons/an-algorithm-triggered-by-exhaustion-may-not-consume-the-resource.md)
 - [Re-audit a mechanism against the requirement that introduced it](../lessons/re-audit-a-mechanism-against-the-requirement-that-introduced-it.md)
+- [Refuse the caller assertion you can neither check nor survive](../lessons/refuse-the-assertion-you-cannot-check-and-cannot-survive.md)
+- [Metadata lives as long as the longest-lived thing it describes](../lessons/metadata-lives-as-long-as-the-longest-lived-thing-it-describes.md)

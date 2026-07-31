@@ -74,6 +74,7 @@ tags: [work]
 - [When no single quantity decreases at every step, rank the steps by two quantities in order — and the real work is defining the tie-breaker precisely enough to actually fall](../lessons/when-no-single-quantity-decreases-order-two-of-them.md)
 - [To prove a part is load-bearing, distort the system rather than delete the part: build a self-map that keeps everything else sound and breaks only the thing in question](../lessons/prove-a-part-necessary-by-distortion-not-by-deletion.md)
 - [When an inner thing's dependence on an outer thing blocks a reordering, invent a name for the dependence; the reordering then costs you substitutability, not correctness of the answer](../lessons/name-the-dependency-to-unblock-the-reordering.md)
+- [When two problems are mirror images under some self-inverse operation, do not write the second procedure — sandwich the first between two applications of the mirror](../lessons/get-the-dual-operation-by-conjugating-with-the-involution.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes. Note that the substantive text ends at line ~25500 of the reading copy; everything after that is the Index of Definitions._
 

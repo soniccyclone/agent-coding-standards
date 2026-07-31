@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "If a property is inexpressible, enrich what you observe rather than reaching for a second logic"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# If a property is inexpressible, enrich what you observe rather than reaching for a second logic
+
+**Lesson:** You have a specification language and a property you cannot state in it — most often the property that the thing must not simply do nothing. The natural conclusion is that your language covers one class of requirement and a different apparatus is needed for the other. Frequently the real cause is narrower and much cheaper to repair: the vocabulary of observations is too poor, and once it is enriched, the stubborn property becomes an ordinary predicate in the language you already had. Add "what this may decline when offered" alongside "what this has done", and the requirement not to stop is just the statement that the whole set of possibilities is never among the things it may decline — written in the same notation as everything else, conjoined with the other requirements in the usual way, discharged by the same proof rules with one more clause each.
+
+The price is honest and modest: proofs carry a second variable and every construct's rule grows a case. What comes back is a family of requirements that were previously unsayable and are exactly the ones people care about in practice — that a machine must not refuse payment while it owes nothing, must not refuse delivery while it owes something, must accept several in a row when they are offered. Notice that all of these are conditional on history. That is precisely what a coarser vocabulary cannot express and why the enrichment matters: an obligation to be *willing* is almost never unconditional, so stating it requires speaking about willingness and about the past in a single breath. A language that can only describe one of the two will always feel like it needs a second logic bolted on.
+
+Look deliberately for the other dividend, which is easy to walk past. Enriching a vocabulary often collapses obligations you had been holding apart. A system that has halted and a system lost in unproductive internal churn become, under the new observation, the same thing — both decline everything on offer — so one proof discharges what you thought were two separate verification problems. That collapse is the usual sign that you found the right observable rather than merely another one: the reward is not only that more can be said, but that things previously treated as distinct turn out to be one thing seen from two angles. An enrichment that yields no such collapse is worth a second look before you pay for it.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the specifications section of the nondeterminism chapter, which revises the satisfaction relation to quantify over refusal sets as well as traces, gives specifications forbidding a vending machine to refuse a chocolate when it owes one and to refuse a coin when it owes nothing, offers variants bounding and requiring the number accepted in a row, states the never-stopping requirement as the alphabet not being a refusal, remarks that this is perhaps the most important of the newly expressible properties and that the advantage is bought with slightly increased complexity in the proof rules, and then observes that the same predicate is a sufficient condition for absence of divergence, so that the two proofs are one.
