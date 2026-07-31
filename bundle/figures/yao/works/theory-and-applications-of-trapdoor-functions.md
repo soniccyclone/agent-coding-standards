@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 1
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -26,3 +27,4 @@ tags: [work]
 - [Replace a growing checklist of tests with one quantification over every test the checker could run](../lessons/quantify-over-the-whole-class-of-tests-instead-of-collecting-tests.md)
 - [When you generalize a theory, the invariant that breaks is where the new power lives](../lessons/the-symmetry-that-breaks-is-where-the-new-power-lives.md)
 - [Assume only a sliver of the guarantee you need, then build the amplifier that makes it total](../lessons/amplify-a-sliver-of-a-guarantee-instead-of-assuming-a-strong-one.md)
+- [Hardness is a resource: a proof that something is impossible can be spent to buy a capability elsewhere](../lessons/hardness-is-a-resource-spend-a-lower-bound-to-buy-an-upper-bound.md)

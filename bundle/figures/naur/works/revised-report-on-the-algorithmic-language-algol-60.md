@@ -20,6 +20,7 @@ tags: [work]
 **Author(s):** J. W. Backus, F. L. Bauer, J. Green, C. Katz, J. McCarthy, P. Naur (editor), A. J. Perlis, H. Rutishauser, K. Samelson, B. Vauquois, J. H. Wegstein, A. van Wijngaarden, M. Woodger.
 **Venue/year:** Communications of the ACM 6(1), January 1963, pp. 1-17 (also published concurrently in Numerische Mathematik and The Computer Journal).
 **Source:** https://softwarepreservation.computerhistory.org/ALGOL/report/Algol60_revised_report_CACM.pdf — live PDF, hosted by the Software Preservation Group / Computer History Museum's ALGOL archive.
+**Reading note:** `survey_text_layer: full` overstates the case. The PDF does carry a text layer, but it is an unproofed OCR of a two-column scan: running prose is mostly legible in the early pages and degrades badly from about page 7 onward, and every mathematical and logical symbol (operators, relations, subscripted ten, the metalinguistic brackets) comes through mangled or dropped. Extraction was done against the PDF for identity and structure plus a faithful full transcription of the same edition (masswerk.at/algol60/report.htm) for the prose and section numbering; symbols there are lossy too. **Ground every lesson in the prose argument — do not transcribe a formula, a precedence list or a truth table from either text.**
 
 ## Lessons
 - [Build the notation for describing the thing before you describe the thing](../lessons/build-the-metalanguage-before-the-language.md)

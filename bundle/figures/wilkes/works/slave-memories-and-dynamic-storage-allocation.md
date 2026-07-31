@@ -24,3 +24,5 @@ tags: [work]
 - [The unit you move data in is a consequence of where the cost sits, so re-derive it whenever a new tier changes the cost shape](../lessons/re-derive-the-transfer-unit-when-the-cost-shape-changes.md)
 - [When you cannot predict which data a computation will touch, build the mechanism that lets the touching itself decide](../lessons/let-the-reference-stream-define-the-working-set.md)
 - [When you index by a lossy function of a key, store the part you discarded so a hit can be told from a coincidence](../lessons/keep-the-bits-you-discarded-to-index-cheaply.md)
+- [What a transparent duplicate of state really costs is the set of freedoms you decline to withdraw from its clients](../lessons/the-freedom-you-decline-to-withdraw-prices-the-duplicate.md)
+- [Let claimants collide in one pool with an ownership tag rather than carving the resource up, because partitioning exports an allocation problem upward](../lessons/share-by-tagging-owners-not-by-partitioning.md)

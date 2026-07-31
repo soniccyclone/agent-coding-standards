@@ -27,3 +27,6 @@ tags: [work]
 - [Put the assumption you cannot justify in one named place, introduced only where it is needed](../lessons/isolate-the-assumption-you-cannot-justify.md)
 - [Reason through objects that do not exist, provided every conclusion lands back where they do](../lessons/reason-through-ideal-objects-but-land-back-in-the-real-part.md)
 - [A guarantee about one trial says nothing about many, and one about many says nothing about any](../lessons/guarantees-do-not-transport-across-quantifier-scope.md)
+- [Checking every pair is not checking the whole, and the constraint count tells you how much you skipped](../lessons/checking-every-pair-is-not-checking-the-whole.md)
+- [Define an unbounded object by all its finite views plus the requirement that they agree](../lessons/specify-the-unbounded-object-by-its-finite-views.md)
+- [When the framework cannot express the question, change how the problem is indexed](../lessons/re-index-the-problem-until-the-questions-are-expressible.md)

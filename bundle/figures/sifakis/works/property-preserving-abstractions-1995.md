@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -21,6 +22,8 @@ tags: [work]
 **Venue/year:** Formal Methods in System Design, vol. 6, 1995
 
 **Source:** Self-archived by co-author Susanne Graf on her Verimag/CNRS Grenoble faculty page (www-verimag.imag.fr/~graf/PAPERS/LGBBS94.pdf).
+
+**Reading copy:** the `url` copy above fetches fine but is **not machine-readable**: it embeds four Type 3 bitmap subfonts with custom encodings and no ToUnicode maps, so `pdftotext` returns a consistent-looking but undecodable substitution cipher. `survey_text_layer: full` is therefore misleading for that URL. Use Sifakis's own second self-archive of the same article instead — `http://www-verimag.imag.fr/~sifakis/RECH/PTY_PR/PropertyPreserving-FM.pdf` (the GREEN open-access location Semantic Scholar records for DOI 10.1007/BF01384313). Same 35-page Kluwer typesetting, same five authors, but its Type 3 fonts carry ToUnicode maps, so plain `pdftotext` yields clean running prose. Formulas still come out mangled in both; ground lessons in the prose.
 
 **Correction note:** The Phase 1/2 stub cited this work as "(1992, with Clarke, Grumberg, Long)." That citation is mistaken — Clarke, Grumberg, and Long wrote a related but distinct paper, "Model Checking and Abstraction" (ACM TOPLAS 16(5), 1994), which is not co-authored with Sifakis. The paper actually bearing this exact title is this one, published in Formal Methods in System Design in 1995 (with an earlier CAV'92 precursor, "Property Preserving Simulations," by Bensalem/Bouajjani/Loiseaux/Sifakis without Graf). The index.md top-10 entry has been corrected to reflect the verified authorship and year.
 

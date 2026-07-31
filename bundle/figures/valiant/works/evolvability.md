@@ -20,4 +20,4 @@ tags: [work]
 **Source:** https://people.seas.harvard.edu/~valiant/evolvability-2008.pdf — self-archived PDF on Leslie Valiant's own Harvard faculty page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Stop speculating about the shape of the search space and classify which objectives induce a navigable one](../lessons/ask-which-objectives-induce-a-navigable-space-not-what-spaces-look-like.md)

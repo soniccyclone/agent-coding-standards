@@ -23,3 +23,5 @@ tags: [work]
 ## Lessons
 - [Before building the general mechanism, check whether the feature people want is shorthand for something you already have](../lessons/check-whether-the-hard-feature-is-shorthand-for-one-you-have.md)
 - [Make the authoring medium incapable of producing malformed work, and refuse the bad join while the author's hand is still on it](../lessons/make-the-authoring-medium-incapable-of-malformed-results.md)
+- [Compile a propagation structure by enumerating the places a change can enter and emitting one straight-line path for each](../lessons/compile-one-path-per-place-a-change-can-enter.md)
+- [Make every shortcut and every packaging step a reversible view on the canonical structure, never a one-way door](../lessons/every-shortcut-must-emit-into-the-canonical-form.md)
