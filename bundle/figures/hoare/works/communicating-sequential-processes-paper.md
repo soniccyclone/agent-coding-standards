@@ -24,3 +24,6 @@ tags: [work]
 - [Test a candidate primitive by re-deriving the constructs it should replace, then keep them anyway](../lessons/re-derive-the-constructs-to-test-a-primitive-then-keep-them.md)
 - [Never let correctness rest on a courtesy the implementation was never obliged to provide](../lessons/never-let-correctness-rest-on-a-courtesy.md)
 - [When two candidate primitives can each define the other, the tiebreak has to come from outside the algebra](../lessons/interderivable-features-need-a-tiebreak-from-outside.md)
+- [Define an unbounded facility as the limit of bounded ones, so no run needs semantics the bounded language lacks](../lessons/define-the-unbounded-case-as-the-limit-of-bounded-ones.md)
+- [Prove a construct is missing with a closure property, not with an appeal to symmetry](../lessons/prove-a-construct-is-missing-with-a-closure-property.md)
+- [Rate a convenience by what retreating from it would cost, and ship the restrictive version first](../lessons/rate-a-convenience-by-the-cost-of-retreating-from-it.md)

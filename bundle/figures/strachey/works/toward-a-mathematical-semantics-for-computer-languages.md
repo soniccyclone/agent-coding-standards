@@ -6,6 +6,7 @@ description: The founding paper of denotational semantics, written with Dana Sco
 subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
 year: 1971
 url: https://www.cs.ox.ac.uk/files/3228/PRG06.pdf
+extraction: complete
 survey_pages: 49
 survey_text_layer: full
 survey_fetch_mb: 1
@@ -29,3 +30,4 @@ tags: [work]
 - [A computation is only a value if making it does nothing](../lessons/a-computation-is-only-a-value-if-making-it-does-nothing.md)
 - [Attach meaning to the structure, not to the text](../lessons/attach-meaning-to-the-structure-not-to-the-text.md)
 - [Let the application tell you which foundation you need](../lessons/let-the-application-tell-you-which-foundation-you-need.md)
+- [Keep a description short enough that you would actually calculate with it](../lessons/keep-a-description-short-enough-that-you-would-actually-calculate-with-it.md)

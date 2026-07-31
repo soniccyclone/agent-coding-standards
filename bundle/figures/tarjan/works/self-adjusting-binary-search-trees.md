@@ -24,3 +24,6 @@ tags: [work]
 - [Keep the tuning parameter in the analysis, not in the algorithm, and a blind mechanism will satisfy every instantiation at once](../lessons/keep-the-tuning-parameter-in-the-analysis-not-the-algorithm.md)
 - [Adaptivity turns reads into writes, and that is the bill you are actually paying](../lessons/adaptivity-turns-reads-into-writes-and-that-is-the-real-bill.md)
 - [A heuristic cannot be simplified by inspection: two nearly identical rules can differ by an order of magnitude](../lessons/a-heuristic-cannot-be-simplified-by-inspection.md)
+- [Specify in the form that proves easily, implement in the form that fuses the passes, and keep the equivalence explicit](../lessons/specify-in-the-form-that-proves-implement-in-the-form-that-fuses.md)
+- [An adaptive process that is cheap overall must pass through states worth keeping, so you can stop adapting and harvest one](../lessons/an-adaptive-process-worth-running-passes-through-states-worth-keeping.md)
+- [Trigger maintenance on the gap between predicted and observed cost, and reject any tuning rule that needs the answer up front](../lessons/trigger-maintenance-on-the-gap-between-predicted-and-observed-cost.md)

@@ -21,4 +21,5 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/scott__a-type-theoretical-alternative-to-iswim-cuch-owhy.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Calibrate a critique to whether you failed to find something or proved it cannot exist](../lessons/calibrate-a-critique-to-whether-you-searched-or-proved.md)
+- [When the motivation for an approach collapses, its machinery is usually still the valuable part](../lessons/a-superseded-motivation-does-not-supersede-the-machinery.md)
