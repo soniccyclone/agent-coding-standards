@@ -131,6 +131,9 @@ tags: [work]
 - [Prefer a summary whose merge is idempotent](../lessons/prefer-a-summary-whose-merge-is-idempotent.md)
 
 - [A tolerance that is fine for a final answer is not fine for a recycled one](../lessons/a-tolerance-that-is-fine-for-a-final-answer-is-not-fine-for-a-recycled-one.md)
+- [Turn a find-the-best solver into a find-them-all solver by subtraction](../lessons/turn-a-find-the-best-solver-into-a-find-them-all-solver-by-subtraction.md)
+- [Pin down the freedom a representation leaves you](../lessons/pin-down-the-freedom-a-representation-leaves-you.md)
+- [Compute from the smaller side when both sides share the answer](../lessons/compute-from-the-smaller-side-when-both-sides-share-the-answer.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
