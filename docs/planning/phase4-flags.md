@@ -525,3 +525,50 @@ titles are reused, especially for survey and textbook treatments of a famous
 result. The existing `url-sweep.sh` classifies by HTTP status and byte count,
 which would have passed this file as `OK`.
 
+
+### H.8 92 lessons were adopted by backlink repair, not by verification
+
+Commit `c51d354` repaired work files whose `## Lessons` sections did not reference
+lesson files that existed on disk — the second failure direction from killed
+agents. The repair was mechanical and correct in what it did, but it created a
+class of lesson worth flagging, and **its own commit message gets the numbers
+wrong**, which is why this entry exists.
+
+**Corrected counts, read from the diff rather than the message:**
+
+| | commit message claims | diff actually shows |
+|---|---|---|
+| work files touched | 16 | **30** |
+| distinct lessons adopted | 36 | **92** |
+| link lines added | — | 101 |
+
+(101 links across 92 distinct lessons because nine lessons are cited by more than
+one work.) All 92 still exist on disk. The seven figures are `chamberlin`,
+`church`, `lampson`, `landin`, `liskov`, `lynch`, `mccarthy`. Regenerate the exact
+list with:
+
+```
+git show c51d354 -- 'bundle/figures/*/works/*.md' | grep -E '^\+\- \[' \
+  | grep -oE '\.\./lessons/[a-z0-9-]+\.md' | sed 's|../lessons/||;s|\.md||' | sort -u
+```
+
+Per Nathan's standing instruction the message is **not** being amended — history
+rewriting is his call. The correction lives here instead.
+
+**The epistemic caveat, which is the actual point.** Each link was reconstructed
+from the lesson's own `works: [...]` frontmatter. That is deterministic and
+reproducible, but it is the *lesson's own testimony* about which work it came
+from. Nobody re-opened the source to confirm it. If a dying agent wrote a lesson
+with a wrong `works:` value, the repair propagated that error faithfully and the
+result looks identical to a correct link. So these 92 sit in a third tier,
+distinct from both agent-attested and bulk-stamped work:
+
+- Tier 1 — agent read the source and wrote the link in the same pass.
+- Tier 2 — bulk-stamped `extraction: complete` at commit `443703b`, unverified.
+- **Tier 3 — link adopted from lesson frontmatter after the writing agent died.**
+
+Nothing here is known to be wrong, and spot-checking is cheap: for any of the 92,
+open the named work and confirm the lesson's Source line describes a passage that
+is actually in it. Worth doing for a sample during the Phase 6 lint pass rather
+than as a blocking task now.
+
