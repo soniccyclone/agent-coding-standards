@@ -26,12 +26,13 @@ tags: [work]
 line 22864. Current position recorded below; if this file still says "in progress" the
 session died and the position line is the truth.**
 
-**Current position: line 7500 — chapter 5 prose complete through section 5.5 (text frames,
+**Current position: line 8150 — chapter 5 prose complete through section 5.5 (text frames,
 font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
 complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
 Edit) checked for prose and confirmed to be pure Oberon source with no explanatory
-paragraphs; chapter 6 prose complete (6.1 linking and loading, 6.2 module representation,
-6.3 the linking loader) and mined.**
+paragraphs; chapter 6 complete and mined (6.1-6.5, including the loader toolbox and the
+object file format); chapter 7 read and mined through section 7.3's opening discussion of
+buffering.**
 
 Read against `pdftotext -layout` output of the 2005 edition PDF (441 pages → 22864 lines
 of extracted text). Identity verified: title page and preface name N. Wirth and J.
@@ -105,3 +106,6 @@ section are where the extractable lessons are.
 - [State that duplicates a shared fact belongs to the shared thing, not to the accessor](../lessons/state-that-duplicates-a-shared-fact-belongs-to-the-shared-thing.md)
 - [Schedule the global analysis for the moment its input is simplest](../lessons/schedule-the-global-analysis-for-the-moment-its-input-is-simplest.md)
 - [Prefer the base structure whose shape needs no separate encoding](../lessons/prefer-the-base-structure-whose-shape-needs-no-separate-encoding.md)
+- [State the instruction budget for the frequent case before choosing a representation](../lessons/state-the-instruction-budget-for-the-frequent-case-before-choosing-a-representation.md)
+- [Place an operation by who may call it, not by what it touches](../lessons/place-an-operation-by-who-may-call-it-not-by-what-it-touches.md)
+- [An unwinnable argument about a constant means it should not be one constant](../lessons/an-unwinnable-argument-about-a-constant-means-it-should-not-be-one.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An unwinnable argument about a constant means it should not be one constant"
+figure: wirth
+works: [project-oberon]
+axes: [hardware-affinity, cognitive-load, expressiveness]
+subdomains: [operating-systems-and-systems-programming, algorithms-and-complexity]
+tags: [lesson]
+---
+# An unwinnable argument about a constant means it should not be one constant
+
+**Lesson:** Certain design parameters produce arguments that never converge, and the shape is always the same: one requirement pushes the value up, another pushes it down, both are legitimate, and every proposed number is refuted by someone with a real case. Set the size of a preallocated table small and you impose a ceiling that some application will hit and cannot work around. Set it large and every instance carries overhead it will never use, and most instances are small. The mistake is to treat this as a search for the least-bad number. The disagreement is not noise to be settled by judgement; it is evidence that a single value is being asked to serve two populations with different needs, and the design error is the singularity, not the choice.
+
+The resolution is to make the parameter tiered. Provide a direct level sized so the overwhelmingly common case fits entirely within it, and an indirect level reached only when the direct level is exhausted, whose own entries point at further blocks of capacity. The ceiling rises to the product of the two levels rather than to one of them, and the overhead of the second level is borne only by the minority of instances that reach it. Both original requirements are now satisfied, and — worth noticing — they are satisfied by *different* parts of the structure, which is generally what happens when an unwinnable argument dissolves: nobody compromised, the structure grew a joint.
+
+Two calibrations turn the technique into a good design rather than merely a correct one. Size the direct level against measured practice rather than symmetry, and be willing to make it deliberately lopsided — if instances are overwhelmingly small, the direct level should be generous and the indirect level need be no more than a handful of entries, even though that looks unbalanced on a diagram. And check the smallest instance explicitly: it should cost the minimum allocatable unit and no more, with the descriptive part and the payload sharing that one unit rather than the description occupying a unit of its own. A tiering scheme that behaves well in the middle and badly at the bottom has missed the population it was built for, since the whole argument started from the observation that most instances are tiny.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 7.2's discussion of how a file's sectors are located, which rejects contiguous allocation because length is not fixed and rejects a linked list of individual elements because the links would outweigh the elements, settles on lists of fixed-size blocks, and then addresses the indexed sector table: the observation that a fixed table length for all files is controversial because too small a choice imposes an unacceptable limit on file length while too large a choice wastes space, that experience shows most files in practice are short, and that the dilemma is avoided by a table of tables; together with the specific arrangement chosen to favour short files, a primary table of sixty-four direct sector entries plus twelve extension entries each addressing an index sector of two hundred and fifty-six further pointers, and the resulting note that the header occupies part of the first sector with the remainder used for data so that truly short files occupy a single sector.

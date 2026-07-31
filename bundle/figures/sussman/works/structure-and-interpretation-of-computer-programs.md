@@ -122,6 +122,8 @@ tags: [work]
 - [Design by choosing the weakest formalism that still says what you need, because weakness is what buys mechanical treatment](../lessons/choose-the-weakest-formalism-that-still-says-what-you-need.md)
 - [A manipulation that goes through is not thereby meaningful, so validity must be established outside the symbols](../lessons/a-manipulation-that-goes-through-is-not-thereby-meaningful.md)
 - [Where there is no scope there must be freshening, because a template used twice will otherwise constrain itself](../lessons/without-scope-you-must-freshen-names-at-every-instantiation.md)
+- [Every joining operator has two dual implementations, and selectivity decides which one you want](../lessons/every-joining-operator-has-a-dual-implementation-and-selectivity-picks.md)
+- [When an operation's precondition is not met yet, attach it to the data as a pending obligation rather than running or failing](../lessons/turn-an-unsatisfiable-precondition-into-an-obligation-carried-by-the-data.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -180,7 +182,11 @@ Read 22870-23430 — 4.4.4.1 driver loop and instantiation, 4.4.4.2 the evaluato
 (simple queries, conjoin/disjoin, the negation and host-predicate filters),
 4.4.4.3 finding assertions by pattern matching, 4.4.4.4 rules and unification
 (variable renaming, the unifier, the occurs check), and the start of 4.4.4.5
-maintaining the data base. **Next unread line is 23430.** Currently
+maintaining the data base. Read 23430-23990 — **all of chapter 4 is now
+complete** (4.4.4.5 through 4.4.4.8: the index, stream operations, query syntax
+procedures, frames and bindings, and the closing exercises) — plus the chapter 5
+preamble and the opening of 5.1 designing register machines. **Next unread line
+is 23990.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

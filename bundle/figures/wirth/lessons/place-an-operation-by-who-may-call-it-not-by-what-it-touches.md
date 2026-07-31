@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Place an operation by who may call it, not by what it touches"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, cognitive-load]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Place an operation by who may call it, not by what it touches
+
+**Lesson:** The default rule for assigning an operation to a component is that it goes with the data it manipulates. That rule is right most of the time and it is not the only consideration, because a component boundary does two jobs at once: it groups related things, and it controls who can reach them. When those two jobs disagree, the second should usually win, and the reason is asymmetric consequence. Putting an operation in the wrong group costs a little navigational awkwardness for readers. Putting it behind the wrong gate either denies it to callers who legitimately need it, or hands a dangerous capability to callers who should not have it — and the second is not recoverable by documentation.
+
+The concrete pattern is to split a subsystem into two components along the line of who is entitled to call, rather than along the line of what the code is about, and then to publish the description of one and withhold the description of the other. The withheld component holds the representations and the operations that are safe only in the hands of someone who understands the whole subsystem — traversals that expose internal ordering, structures whose invariants a caller could break, operations whose preconditions cannot be checked. The published component holds everything ordinary callers need. Then an operation that ordinary callers legitimately want, but which happens to act on the withheld component's data, is exported from the *published* component: it is placed by its audience, and it reaches through to do its work. What has been achieved is a graded interface with two tiers, using only the module facility already present, without inventing a permission system.
+
+Two things keep this from being an excuse for arbitrary placement. The gate must be real rather than conventional — the restriction has to be enforced by what is actually distributed, so that reaching the privileged operations requires having been given something, not merely knowing a name. And the split has to be stated as a rule about audiences, so that the next person deciding where an operation goes asks the same question rather than reverting to grouping by subject matter and quietly relocating something across the boundary. The lasting form of this idea is that "public" is not one thing: a system generally has at least a client tier and a maintainer tier, and deciding which tier each operation serves is a design activity in its own right, not a consequence of where the data happened to be declared.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 7.1's explanation of why the rename and delete operations, which affect only the directory, are exported from the file module rather than from the directory module: that the existence of two modules jointly forming the file system is also used to separate the interface into a public and a semi-public part, that the directory module's definition is not intended to be freely available but restricted to system programmers, and that this permits exporting sensitive data such as file headers and sensitive procedures such as directory enumeration without risking misuse by inadvertent users; together with the same section's separate insistence that files as a data structure with access facilities and file naming with directory management are independent notions which the two-module implementation underscores.
