@@ -56,3 +56,5 @@ tags: [work]
 - [A proof covers your reasoning, not the substrate underneath it, so keep a cheap check at run time](../lessons/a-proof-covers-your-reasoning-not-your-substrate.md)
 - [The reason a design is believed correct is an output of designing it, and nobody downstream can reconstruct it](../lessons/the-reason-is-an-output-of-design-and-nobody-else-can-reconstruct-it.md)
 - [Make the skeleton formal and leave the leaves soft, so precision can be bought one place at a time](../lessons/make-the-skeleton-formal-and-leave-the-leaves-soft.md)
+- [Among models that describe the same thing, pick the one that entails the properties you would otherwise have to maintain](../lessons/among-faithful-models-pick-the-one-that-entails-what-you-would-have-to-maintain.md)
+- [A property names a thing only when it pins the thing down, so find out which parts of the structure it leaves free](../lessons/a-property-names-a-thing-only-when-it-pins-it-down.md)

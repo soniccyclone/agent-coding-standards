@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Monotone access is a separate deliverable from the cost bound"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [hardware-affinity, expressiveness, verifiability]
+subdomains: [algorithms-and-complexity, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Monotone access is a separate deliverable from the cost bound
+
+**Lesson:** An algorithm is normally advertised by a count — how many comparisons, how many moves, how it grows. That number says nothing about the shape of the accesses, and the shape is a second property that decides an entirely different question: not how expensive the algorithm is, but where it can run at all. A method whose read position only ever moves forward can consume its input as it arrives, from a pipe, a tape, a network connection, a device that physically cannot rewind. A method that revisits earlier positions requires the input to be sitting somewhere addressable, and if it is not, you must either store the whole input first or arrange a window large enough to cover every backward reach. Two methods with identical cost bounds can differ absolutely on this, and the difference will not appear anywhere in the analysis that produced the bounds.
+
+The failure mode is a specific one and it is worth naming, because it does not show up in testing. If you cope with backward access by buffering, the program works for every input whose backward reach happens to fall inside the window, and fails on the inputs where it does not — inputs that are typically rare, adversarial, or simply large. That is a defect with no natural test case, discovered in production, and the only sound fix is either an unbounded buffer or a different algorithm. So the question "how far back can this reach, and is that distance bounded by anything I control" belongs in the design review, alongside the cost. If the answer is "bounded by the size of the input," the algorithm has silently required the whole input in memory and should be described that way.
+
+Two habits follow. When choosing among algorithms, list the access pattern as a column beside the complexity, and treat forward-only as a real advantage that can outweigh a worse constant. When designing one, notice that monotone access is often obtainable at a small price by changing what the indices mean rather than what the algorithm does — keeping a position that only advances and tracking the alignment separately, instead of a position that jumps back on every failure — and that this restatement costs nothing at run time while converting an array algorithm into a stream algorithm. The general form: properties of the access pattern are earned by choosing the right state variables, and they are worth going looking for before you conclude that a problem requires random access.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 1.9.2's restatement of the string-search state so that the scanning index marks the comparison point rather than the pattern's alignment position, with the alignment then derived as a difference; the accompanying observation that the comparison point is thereby never moved backwards; and the closing analysis, which credits this as a welcome property distinct from the comparison count, noting that straight string search restarts at the first pattern character after a mismatch and may therefore rescan characters already examined, that this causes awkward problems when the string is read from secondary storage where backing up is costly, and that even with buffered input the pattern may be such that the backing up extends beyond the buffer contents.

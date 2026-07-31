@@ -67,3 +67,6 @@ tags: [work]
 - [You can write by naming the type, but you cannot read by naming it](../lessons/you-can-write-by-naming-the-type-but-you-cannot-read-by-naming-it.md)
 - [A condition that fires once should not be tested on every step](../lessons/a-condition-that-fires-once-should-not-be-tested-every-step.md)
 - [Keep the redundancy that exhibits the correspondence to the algorithm you already trust](../lessons/keep-the-redundancy-that-exhibits-the-correspondence.md)
+- [When an optimization forces two loops together, give each advance its own guard](../lessons/when-an-optimization-forces-two-loops-together-give-each-advance-its-own-guard.md)
+- [Two optimizations that each win do not compose into a win](../lessons/two-optimizations-that-each-win-do-not-compose-into-a-win.md)
+- [Monotone access is a separate deliverable from the cost bound](../lessons/monotone-access-is-a-separate-deliverable-from-the-cost-bound.md)

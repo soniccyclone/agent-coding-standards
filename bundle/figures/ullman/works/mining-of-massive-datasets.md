@@ -83,6 +83,10 @@ tags: [work]
 - [Close a guarantee from both sides, with a witness above and a structural argument below](../lessons/close-a-guarantee-from-both-sides-with-different-kinds-of-argument.md)
 - [Spend from the deepest reserve, so the future still has someone who can serve it](../lessons/spend-from-the-deepest-reserve-to-keep-the-future-servable.md)
 - [An ignored factor with no bound destroys a guarantee rather than degrading it](../lessons/an-ignored-unbounded-factor-destroys-a-guarantee-rather-than-degrading-it.md)
+- [A worst-case guarantee is priced against an adversary — say who it is before you pay for it](../lessons/a-worst-case-guarantee-is-priced-against-an-adversary-name-them.md)
+- [When the queries outlive the data, index the queries instead](../lessons/when-the-queries-outlive-the-data-index-the-queries.md)
+- [Partitioning the channel is a proxy for knowing the requester](../lessons/partitioning-the-channel-is-a-proxy-for-knowing-the-requester.md)
+- [The risk in derived personal data sits at the exit from automation, not at its collection](../lessons/the-risk-in-derived-personal-data-is-at-the-exit-from-automation.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

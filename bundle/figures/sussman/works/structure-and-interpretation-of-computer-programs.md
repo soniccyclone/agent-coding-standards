@@ -93,6 +93,9 @@ tags: [work]
 - [Whether a system has state is a fact about where the observer stands, not about the system](../lessons/whether-a-system-has-state-depends-on-where-the-observer-stands.md)
 - [The ordering constraint is imposed from outside the program, so no programming style can remove it](../lessons/the-ordering-constraint-comes-from-outside-the-program-so-no-style-removes-it.md)
 
+- [Put the notation behind predicates and selectors, and the rules of meaning outlive any notation](../lessons/put-the-notation-behind-predicates-and-selectors-and-the-meaning-outlives-it.md)
+- [An implementation answers questions its own text never addressed, by silently borrowing the host's answers](../lessons/an-implementation-answers-questions-its-text-never-addressed.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
