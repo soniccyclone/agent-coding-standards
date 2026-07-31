@@ -34,3 +34,5 @@ tags: [work]
 - [An exhaustive search still has a preference, and it belongs to whoever drives the outer loop](../lessons/an-exhaustive-search-still-has-a-preference.md)
 - [Find the data counterpart of every control construct, then carry the discipline across with it](../lessons/find-the-data-counterpart-of-every-control-construct.md)
 - [Sharing is only observable under update, which is exactly why it has to be sayable](../lessons/sharing-is-only-observable-under-update-so-make-it-sayable.md)
+- [Guarantee the answer exists, then ask where it was found](../lessons/guarantee-the-answer-exists-then-ask-where-it-was-found.md)
+- [A gain that grows with size is marking the structure's ceiling, not raising it](../lessons/a-gain-that-grows-with-size-is-marking-the-structures-ceiling.md)

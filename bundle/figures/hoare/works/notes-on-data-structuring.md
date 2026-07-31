@@ -25,3 +25,6 @@ tags: [work]
 - [An operation belongs in the primitive set exactly when its efficiency depends on the representation](../lessons/an-operation-is-primitive-when-its-cost-depends-on-the-representation.md)
 - [Claim only the structure your problem actually has: unasserted properties are freedom the implementer gets to spend](../lessons/claim-only-the-structure-your-problem-has.md)
 - [Choose a modelling apparatus for the cost profile of the models it yields, then write down the fidelity gap](../lessons/choose-the-modelling-apparatus-for-its-cost-profile-not-its-fidelity.md)
+- [If safety demands a check at every use, redesign the notation so the fact is established once and carried by scope](../lessons/establish-a-fact-once-and-let-scope-carry-it.md)
+- [Carry provenance in the value, because an error of interpretation produces results outside your model entirely](../lessons/carry-provenance-in-the-value-not-in-the-readers-head.md)
+- [Sharing one copy is an optimization licensed only by immutability, and the licence must travel with the technique](../lessons/sharing-is-an-optimization-licensed-only-by-immutability.md)

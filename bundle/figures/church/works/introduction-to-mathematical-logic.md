@@ -46,6 +46,8 @@ tags: [work]
 - [Promoting a derived shortcut into a primitive buys naturalness and spends the property that every step is locally checkable](../lessons/promoting-a-derived-shortcut-to-a-primitive-changes-what-a-step-is.md)
 - [A special case only counts as solved if membership in the special case is itself decidable, or the hard problem has merely moved into the precondition](../lessons/a-fast-path-is-only-real-if-entry-to-it-is-decidable.md)
 - [The order fixed in a normalization procedure exists to make the answer unique, not because it is the right order; when you have a target form, steer toward it](../lessons/a-canonical-order-is-a-tie-breaker-not-a-law.md)
+- [Two problems shown equivalent are equivalent only in the property the reduction actually carries, and the ones it drops are usually constructivity and cost](../lessons/equivalent-problems-are-equivalent-only-in-the-property-the-reduction-carries.md)
+- [Holding at every finite size is not holding in the limit, so an exhaustive check over all bounded cases can be complete and still prove the wrong thing](../lessons/holding-at-every-finite-size-is-not-holding-in-the-limit.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes._
 

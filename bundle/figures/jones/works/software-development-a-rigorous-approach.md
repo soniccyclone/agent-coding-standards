@@ -26,3 +26,6 @@ tags: [work]
 - [Borrow a notation that already has a discipline behind it, and treat it as shorthand rather than as ceremony](../lessons/borrow-a-notation-that-already-has-a-discipline-behind-it.md)
 - [Say what you want by naming the check the answer must pass, ideally using an operation you already have](../lessons/specify-with-the-inverse-you-already-have.md)
 - [Split cases at the point the branch appears, and expand whichever term occurs least](../lessons/split-the-cases-where-they-appear-and-expand-what-occurs-once.md)
+- [Guard the partial term rather than teaching every operator about failure](../lessons/guard-the-partial-term-rather-than-teaching-every-operator-about-failure.md)
+- [Minimize the basis you justify things against, then refuse to make anyone work in it](../lessons/minimize-the-basis-but-do-not-make-people-work-in-it.md)
+- [Into a description you may borrow anything that denotes, and nothing that sequences](../lessons/borrow-things-that-denote-never-things-that-sequence.md)

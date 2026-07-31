@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Guarantee the answer exists, then ask where it was found"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, verifiability, hardware-affinity]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Guarantee the answer exists, then ask where it was found
+
+**Lesson:** A search that may fail has to ask two questions on every step: have I found it, and have I run out. That compound test is not merely slower, it is structurally worse, because the two terms are not independent — the "have I found it" term inspects a place that only exists when the "have I run out" term says no. The guard therefore carries a hidden precondition in the form of an evaluation order that cannot be changed without breaking the program, and nothing in the expression itself announces this. Documenting the order is the weak fix. The strong fix is to make the second question unnecessary.
+
+You do that by editing the data rather than the code: extend the structure with a manufactured element that is not part of the collection, positioned exactly where the boundary was, and carrying whatever value makes the remaining test succeed there. The search now always terminates by finding something, so the loop condition collapses to a single term with no ordering dependency and no reference to anything that might not exist. What was a decision inside the loop becomes a single question after it — did I stop at a real element or at the one I planted — asked once instead of once per step. The same move applies at the other end of a structure: a manufactured head element removes the empty-collection special case from insertion, because there is always a predecessor to link through. In both directions the trade is one unit of storage and one initialization against a case analysis that would otherwise appear in every operation and in every proof about them.
+
+The generalizable form is worth stating separately from lists, because it recurs everywhere: when an operation is partial, look for a way to make the failing case impossible rather than a way to detect it. Extending the domain with an artificial value that satisfies the operation by construction converts a partial function into a total one, and totality is what lets the surrounding code stop branching. Two cautions come with it. The artificial element is real storage that real code can reach, so every traversal has to know the convention or it will report a value nobody stored — which is why the convention belongs to the structure's definition, not to one procedure that happens to use it. And when the planted value depends on the current query, as it does when the boundary element is loaded with the key being sought, the structure is no longer safe to share across concurrent searches; the speedup was bought by making the container carry per-search state.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 4.3.1's list search whose while condition is a conjunction of a non-nil test and a key comparison, with the explicit note that the pointer being nil makes the field access undefined so the order of the two terms is essential; section 4.3.2's replacement of that search with one using a dummy element at the end of the list whose key is assigned the sought value before the scan, reducing the loop condition to a single comparison and deferring the found-or-not question to a single test afterwards; the same section's introduction of a dummy element at the list head so that insertion need not distinguish the empty list; and the subsequent remark that in the reordering search the sentinel not only speeds up the search but also simplifies the program.

@@ -57,13 +57,18 @@ tags: [work]
 - [An invariant on the representation lets you conclude things about data you never looked at](../lessons/an-invariant-lets-you-conclude-things-about-data-you-never-looked-at.md)
 - [Design the encoding so boundaries are unambiguous, rather than marking them](../lessons/make-the-stream-self-delimiting-instead-of-adding-separators.md)
 - [Consume the statistics into the structure so the runtime never needs them](../lessons/consume-the-statistics-into-the-structure.md)
+- [The argument for generic operations is organizational, not aesthetic: nobody can agree in advance](../lessons/the-case-for-genericity-is-that-agreement-is-impossible.md)
+- [Deferring a decision and turning it into data are different moves, and the second costs you self-evident meaning](../lessons/deferring-a-choice-and-turning-it-into-data-are-different-moves.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: all of chapter 1, plus chapter 2 through the end of 2.2.4 (lines
-784-7390)** - data abstraction, what data means, interval arithmetic, closure,
-sequences, hierarchical structures, sequences as conventional interfaces, and the
-picture language with stratified design. Next unread line is **7391** (section 2.3,
-Symbolic Data). Chapters 3, 4 and 5 are entirely unread. `extraction: complete` withheld until all five chapters are read._
+**Read so far: all of chapter 1, plus chapter 2 through the end of 2.3.4 (lines
+784-8450)** - data abstraction, what data means, interval arithmetic, closure,
+sequences, hierarchical structures, sequences as conventional interfaces, the
+picture language with stratified design, symbolic data and quotation, symbolic
+differentiation, set representations, and Huffman encoding trees. Next unread line
+is **8451** (still inside 2.3.4, the Huffman tree construction code and exercises).
+Chapters 3, 4 and 5 are entirely unread. `extraction: complete` withheld until all
+five chapters are read._

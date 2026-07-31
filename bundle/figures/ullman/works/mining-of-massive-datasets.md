@@ -45,6 +45,8 @@ tags: [work]
 - [Give a feedback process an exit that ignores its own structure](../lessons/give-the-process-an-exit-that-ignores-its-own-structure.md)
 - [Store only what an invariant cannot recompute for you](../lessons/store-only-what-an-invariant-cannot-recompute.md)
 - [Partition so that both ends of an update stay resident, and resend the cheap side](../lessons/partition-so-both-ends-of-the-update-stay-resident.md)
+- [When per-entity customization is unaffordable, pick a basis and store coordinates](../lessons/when-per-entity-customization-is-unaffordable-pick-a-basis.md)
+- [The constant you hardcoded is usually where the whole family of algorithms lives](../lessons/the-constant-you-hardcoded-is-where-the-family-lives.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

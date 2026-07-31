@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Guard the partial term rather than teaching every operator about failure"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [primitive-count, cognitive-load, verifiability]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Guard the partial term rather than teaching every operator about failure
+
+**Lesson:** Some operations do not produce an answer for every input in their nominal domain — a division whose divisor is zero, a lookup with no matching entry, a recursion outside the range it was defined for. The problem is not the operation itself, which everyone knows about; it is what happens when its result becomes an operand of something else. Now the surrounding combinator has to mean something when handed a non-answer, and the question propagates outward until every operator in the language owes you a story about failure.
+
+There are two ways out and they are worth distinguishing sharply, because they cost differently. One is to extend the meaning of every combining operator so that it copes with the missing case. That is coherent, it can be done well, and it is genuinely more honest about programs that really are partial — but it changes everything at once, and every reader of any expression now has to hold the extended meanings in their head. The other is to leave the operators exactly as they were and instead arrange that a partial term is never reached unless something already established that it has a value. You do this with a construct whose unused branch is not evaluated, so a test can stand guard over the term whose definedness that test guarantees. The guarded form is well-defined even though a subexpression of it is not, and nothing else in the system has to change.
+
+The second route is the cheaper one when partiality is occasional rather than pervasive, and the choice is worth making explicitly rather than by default. Notice the general shape, which recurs far outside logic: given a construct that misbehaves in some situation, you can either enlarge every rule that touches it, or you can find a single place where a precondition can be established and make that place the only route in. Enlarging the rules distributes the complexity over everything; establishing the precondition concentrates it in one visible spot. The same technique is why a bounded quantifier is safer than an unbounded one — the range constraint is doing exactly this job, keeping the body from ever being applied where it makes no sense — and why the fix for a scattered family of defensive checks is usually a narrower entry point rather than more checks.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — the "*More on Logic" section of chapter 3: the setup showing that division by zero and factorial of a negative argument leave the surrounding implication without an obvious meaning; the survey of the alternatives, namely extending every logical operator to a third undefined value as in the earlier Vienna work, or specially distinguishing the operators that need the extended meaning as in Dijkstra's; the decision taken here to instead use logical conditional expressions so that propositional operators are never applied to undefined terms, with the accompanying observation that the conditional's value is defined even when its unused arm is not; and the earlier remark in the same section that careful use of the constraint part of a bounded quantifier avoids many of these problems by making the expansion a conjunction whose terms are all defined.

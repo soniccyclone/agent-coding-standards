@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A gain that grows with size is marking the structure's ceiling, not raising it"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, hardware-affinity]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A gain that grows with size is marking the structure's ceiling, not raising it
+
+**Lesson:** When a local improvement to a data structure is measured at two problem sizes and the improvement factor is several times larger at the bigger size, the natural reading is that the technique is even better than hoped. The more useful reading is the opposite. A refinement that helps proportionally more as the input grows is telling you the unmodified structure degrades faster than the workload does, and it is doing so in exactly the region where a different structure — one whose cost grows more slowly by construction — becomes the correct answer. The refinement is therefore most valuable precisely where you should no longer be using the thing it refines. Measure at two scales, look at the trend in the ratio rather than at the ratio, and treat a growing one as a boundary marker.
+
+Distinguishing the two kinds of improvement is what makes this actionable. Some changes lift the ceiling: they alter the relationship between input size and cost, so the structure survives into a regime it previously could not enter. Others raise the floor beneath the ceiling: they cut a constant, exploit a statistical property of the input such as repeated access to the same items, or shorten the average path while leaving the worst case and the growth law untouched. The second kind is worth having and is often nearly free, but it buys headroom, not a new regime, and headroom is consumed by growth. Before adopting one, say out loud which kind it is; if you cannot, you do not yet know what you bought.
+
+The same discipline applies to the version of the improvement that looks like it comes free. Keeping a collection in order costs nothing extra when insertion is already cheap, so it is tempting to adopt on the grounds that it cannot hurt. But an ordering only pays where the operations can exploit it, and a structure that must be traversed one link at a time cannot use an ordering to skip ahead — the ordering buys an early exit on unsuccessful lookups and nothing else. Under a workload dominated by repeat access to items already present, that is close to no gain at all. The general rule: an ordering, an index, or any other invariant you decide to maintain is only an asset to the extent that some operation's cost is defined in terms of it, so identify that operation first. If the answer is that no operation can take advantage of the invariant given the access primitives available, you are paying maintenance for a property nothing reads.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 4.3.2's analysis of the ordered list search, which observes that the gain from ordering is nil once all words are listed if all occur with equal frequency, that the gain arises only on insertion where on average half the list is scanned instead of all of it, and that even in ordered lists no equivalent of the binary search of arrays is available; and the same section's empirical comparison of linear-ordering against reordering search on a short and a long text, showing an improvement factor of roughly 1.4 on 53 distinct keys and 4.7 on 582, followed directly by the remark that the improvement is greatest when a different data organization is needed anyway, and by the assessment that these list examples are suitable primarily as programming exercises rather than for practical applications.
