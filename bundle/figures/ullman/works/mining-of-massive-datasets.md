@@ -122,6 +122,9 @@ tags: [work]
 - [Split the input where two opposite-cost strategies cross](../lessons/split-the-input-where-two-opposite-cost-strategies-cross.md)
 - [Deduplicate with a canonical order, not with a memory](../lessons/deduplicate-with-a-canonical-order-not-with-a-memory.md)
 - [A lower bound from one extreme instance must be stretched across the range](../lessons/a-lower-bound-from-one-extreme-instance-must-be-stretched-across-the-range.md)
+- [Iterate on the increment, because old facts are already spent](../lessons/iterate-on-the-increment-because-old-facts-are-already-spent.md)
+- [Buying fewer rounds is paid for in work and in what you must hold](../lessons/buying-fewer-rounds-is-paid-for-in-work-and-materialization.md)
+- [Deduplicating derivations is not deduplicating conclusions](../lessons/deduplicating-derivations-is-not-deduplicating-conclusions.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
