@@ -30,3 +30,6 @@ tags: [work]
 - [Bind at the latest moment, so each part exists exactly once](../lessons/bind-at-the-latest-moment-so-each-part-exists-once.md)
 - [Choose the arrangement whose undo is simple, not the one whose forward move is free](../lessons/choose-the-arrangement-whose-undo-is-simple.md)
 - [Ask the population instead of maintaining a registry](../lessons/ask-the-population-instead-of-maintaining-a-registry.md)
+- [Make the container and the contained the same kind of thing, and global policy becomes a local default](../lessons/make-the-container-and-the-contained-the-same-kind-of-thing.md)
+- [A self-inverse operation needs no saved copy and no precondition](../lessons/a-self-inverse-operation-needs-no-saved-copy.md)
+- [Let each level transform requests for the level below it, and never reach past a child](../lessons/let-each-level-transform-requests-for-the-level-below-it.md)

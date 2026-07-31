@@ -109,6 +109,8 @@ tags: [work]
 - [Relax the discrete choice, solve exactly, then round](../lessons/relax-the-discrete-choice-solve-exactly-then-round.md)
 - [Rewrite a global objective as a sum of local terms to see what it rewards](../lessons/rewrite-a-global-objective-as-a-sum-of-local-terms.md)
 - [A series of mutually exclusive solutions degrades by construction](../lessons/a-series-of-mutually-exclusive-solutions-degrades-by-construction.md)
+- [Never let one unexplained observation annihilate a score](../lessons/never-let-one-unexplained-observation-annihilate-a-score.md)
+- [Model independently sufficient causes by the chance that none of them fired](../lessons/model-independently-sufficient-causes-by-the-chance-that-none-fired.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
