@@ -572,3 +572,61 @@ open the named work and confirm the lesson's Source line describes a passage tha
 is actually in it. Worth doing for a sample during the Phase 6 lint pass rather
 than as a blocking task now.
 
+
+### H.9 Findings from the final agent waves (2026-07-31)
+
+Resolved in place, recorded because each names a failure mode worth recognising.
+
+**A work can quarantine itself.** `mcmillan/symbolic-model-checking` bounced
+between `survey_text_layer: full` and `none` three times. The PDF has an embedded
+text layer and `pdftotext` returns ~103k characters, so my OCR enumeration scored
+it readable and I set `full` — and told Nathan it had been held behind an OCR
+marker over "98K characters of perfectly extractable text." Wrong. The characters
+are a Type-3 bitmap substitution cipher (Ghostscript 6.01 out of DVI, no ToUnicode
+map) and read as `!#"%$&')(*'+-,`. **This is the exact false-positive class already
+written up in H.5, and the enumeration script used the very character-count
+heuristic H.5 warns against.** An extraction agent opened the file, saw nonsense,
+and correctly reverted the field to `none` — after which every later agent skipped
+it by rule, including one dispatched straight at it, which returned after seven
+tool calls having done nothing. It looked like an agent failure and was a
+self-inflicted quarantine. Now genuinely OCR'd (33pp, 10,922 words, 0.326
+common-word ratio) with a reading-copy note that spells out the trap.
+
+The general rule: **an agent's downgrade of a survey field is evidence, not
+vandalism.** It is the only signal in the system produced by something that
+actually opened the document. When a field flips back, believe the flip and go
+look.
+
+**A correcting note is not a correction.** `kay/the-early-history-of-smalltalk`
+claimed its source carried "full text ... through the closing section and
+references." False — the worrydream HTML stops after the Coda; references and
+Appendices I-V are linked but absent. The agent found this and appended an
+accurate coverage note while leaving the false claim in place, so the file
+contradicted itself and whichever a reader hit first decided what they believed.
+Fixed at the source. Worth telling agents explicitly: correct the wrong statement,
+do not merely annotate around it.
+
+**`survey_text_layer: full` does not mean born-digital.**
+`scott/data-types-as-lattices` extracts cleanly enough to need no OCR pass, but its
+text layer is itself an OCR layer over a scan of the SIAM reprint: prose reliable,
+notation mangled. The field was accurate and the file still misled, because `full`
+answers "can I extract this?" and not "can I trust a formula I read from it?" A
+caution line now says so. Any work whose PDF predates about 1995 deserves the same
+question asked.
+
+**Coverage-note discipline is not reliably followed.**
+`kay/steps-toward-the-reinvention-of-programming` carried one lesson and no
+coverage note — a prior agent wrote a lesson and died without recording where it
+stopped, which is indistinguishable from a work that yielded exactly one lesson.
+The re-reading agent had to redo it from the start to be safe. Cheap to prevent,
+expensive to detect.
+
+**Two lessons were deliberately not written**, and the reasoning is worth keeping.
+Reading Kay's *Reactive Engine*, the agent judged its prefix-versus-postfix
+evaluation-order argument to reduce to the same claim as the existing
+`replace-assignment-with-goals`, and its files-as-frozen-globals material to be
+covered by `collapse-system-categories-into-one-concept`. Both would have been
+duplicates under new names. The open item: those two existing lessons arguably
+should cite `the-reactive-engine` in their `works:` arrays, which the agent could
+not do because editing existing lesson files was forbidden. A human should decide.
+
