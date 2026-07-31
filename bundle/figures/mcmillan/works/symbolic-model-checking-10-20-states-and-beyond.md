@@ -29,9 +29,12 @@ exactly the way McMillan's thesis PDF is: `pdfinfo` reports the producer as
 Aladdin Ghostscript 6.01 converting a DVI file, and `pdffonts` shows the body set
 entirely in ~35 embedded Type-3 bitmap fonts with custom encodings and no
 ToUnicode map. `pdftotext` in both `-layout` and `-raw` modes therefore returns a
-per-font substitution cipher, not text. The flag has been changed to `none` so
-future passes route this through the deterministic OCR batch instead of retrying
-the fetch.
+per-font substitution cipher, not text. The flag was set to `none` at the time,
+which routed this through the deterministic OCR batch rather than another futile
+fetch. **That has since happened** — the tesseract pass landed on 2026-07-31 and the
+flag is now `ocr`, with the reading copy named above. Kept as a record of why the
+field moved, and as the standing warning against re-classifying this work on
+character count.
 
 Alternate readable copies were searched and none is anonymously obtainable:
 `cs.cmu.edu/~emc` paths 404; `theory.stanford.edu/~dill` 403; ScienceDirect
