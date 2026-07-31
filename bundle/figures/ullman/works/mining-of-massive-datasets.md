@@ -148,6 +148,9 @@ tags: [work]
 - [Match the update's arithmetic to the parameter's geometry](../lessons/match-the-updates-arithmetic-to-the-parameters-geometry.md)
 - [Two values of the same type can need different layouts](../lessons/two-values-of-the-same-type-can-need-different-layouts.md)
 - [Change coordinates until the boundary is trivial](../lessons/change-coordinates-until-the-boundary-is-trivial.md)
+- [Freeze the state, compute every delta against it, then combine](../lessons/freeze-the-state-compute-every-delta-against-it-then-combine.md)
+- [Ask for distance from the constraint, not satisfaction of it](../lessons/ask-for-distance-from-the-constraint-not-satisfaction-of-it.md)
+- [An objective with a symmetry has no optimum along it](../lessons/an-objective-with-a-symmetry-has-no-optimum-along-it.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -194,7 +197,16 @@ _Chapter 11 (dimensionality reduction, lines 20377-21937) was read in full on
 deflation, canonical forms, the two Gram matrices, truncation criteria, CUR and
 sparsity, importance sampling, the pseudoinverse)._
 
-_Remaining: ch12 large-scale ML (21980),
+_Chapter 12 (large-scale machine learning) is PARTIALLY read as of 2026-07-31.
+Sections 12.1 (the ML model), 12.2 (perceptrons, all subsections including the
+parallel implementation) and 12.3.1-12.3.3 (SVM mechanics, normalizing the
+hyperplane, the soft-margin objective through the start of the penalty
+discussion) were read in full, lines 21980-23193, yielding the twelve lessons in
+the block above. **Resume at line 23193**, mid-section 12.3.3, at the explanation
+of the penalty term in the SVM objective._
+
+_Remaining: rest of ch12 from line 23193 (SVM gradient descent, k-nearest
+neighbours, decision trees, comparison of learning methods),
 ch13 neural nets (24693). Chapters 2-4 should also get a hand re-read at the same
 depth as chapter 1 before this work is attested. `extraction: complete`
 deliberately withheld._
