@@ -87,3 +87,6 @@ section are where the extractable lessons are.
 - [Attach state to the level you want to have several of](../lessons/attach-state-to-the-level-you-want-several-of.md)
 - [Export the default and the parts it was assembled from](../lessons/export-the-default-and-the-parts-it-was-assembled-from.md)
 - [A requirement that lets later input revise earlier output costs you a whole pass](../lessons/a-requirement-that-lets-later-input-revise-earlier-output-costs-a-pass.md)
+- [A cache is a question about its two neighbours, not about itself](../lessons/a-cache-is-a-question-about-its-two-neighbours.md)
+- [Privacy in the module graph is not privacy in time](../lessons/privacy-in-the-module-graph-is-not-privacy-in-time.md)
+- [Re-read a specialized notion as a pair, and discover the general case is already built](../lessons/reread-a-specialized-notion-as-a-pair-and-the-general-case-is-already-built.md)

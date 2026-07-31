@@ -58,6 +58,8 @@ tags: [work]
 - [Which direction a result transfers across environment sizes is fixed by its quantifier shape, so pick the environment that makes your evidence travel the way you need](../lessons/which-direction-a-result-transfers-is-fixed-by-its-quantifier-shape.md)
 - [Assuming something about a parameter revokes your right to instantiate it, and the revocation has to be enforced at the rule, not remembered by the reasoner](../lessons/assuming-something-about-a-parameter-revokes-your-right-to-instantiate-it.md)
 - [A definition by recursion on structure is only a function if the structure decomposes exactly one way, so unique readability is a proof obligation and not a formatting concern](../lessons/a-recursive-definition-is-only-a-function-if-the-decomposition-is-unique.md)
+- [A requirement stated in terms of what you meant fans out into several checkable criteria that come apart, so name the one you are claiming and prove each separately](../lessons/a-motivating-requirement-fans-out-into-several-checkable-criteria-that-come-apart.md)
+- [A method can only discriminate along the dimension it varies, so a component that survives everything your technique can change needs a different invariant, not a bigger search](../lessons/a-method-is-blind-to-whatever-it-holds-fixed.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes. Note that the substantive text ends at line ~25500 of the reading copy; everything after that is the Index of Definitions._
 

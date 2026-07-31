@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Name a handle for what it does, not for the circumstance that first needed it"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Name a handle for what it does, not for the circumstance that first needed it
+
+**Lesson:** A mechanism gets built because some situation demanded it, and it gets named after that situation. Later the same mechanism turns out to be exactly what a completely different situation needs, and the name actively obstructs seeing it. The clearest example is a handle whose actual content is "abandon where you are and continue exploring from the last unexhausted alternative." That is what is needed when a branch turns out to be unworkable, so it gets called the failure path, and everything about the surrounding code frames it as the sad case. But the same operation is what is needed by a caller who is perfectly satisfied with the answer it just got and would like to see the next one. Nothing about it is failure-shaped; it is a resumption, and it was misnamed because of who happened to call it first.
+
+The practical consequence of the misnaming is duplication. A team that has "the error path" and then needs "get me another result" will build a second mechanism, because the first one is filed under errors and errors are not what is happening. Now there are two ways to re-enter a suspended computation, they drift, and one of them handles some case the other does not. Had the thing been named for its behaviour, the second requirement would have been satisfied by calling it. The general rule is that any name encoding *why* something is invoked rather than *what* it does silently narrows the set of callers who will consider invoking it, and the narrowing is invisible because nobody rejects the mechanism — they simply never think of it.
+
+A useful test at design time is to describe the mechanism entirely in terms of the state transition it performs, with no reference to the condition that triggers it, and then ask who else would want that transition. Discard the current attempt and continue from the most recent unexplored option: wanted by failure, wanted by "next result," wanted by a user asking to see alternatives, wanted by a timeout, wanted by a policy that decided this branch is uninteresting. All of them are the same call. The moment you can enumerate several unrelated callers for one transition, you know the mechanism is more general than its origin story, and you can name it accordingly before the origin story becomes load-bearing in the vocabulary.
+
+The same reasoning applies in reverse and is worth keeping: when you find yourself about to add a mechanism, describe what you need as a state transition and check it against what already exists, ignoring the names. Systems accumulate near-duplicates almost entirely through vocabulary rather than through genuine difference in behaviour, because the search for an existing solution is conducted over names and the names encode circumstances that no longer match.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) — chapter 4 section 4.3.3, the driver loop for the nondeterministic evaluator and the accompanying commentary, which notes that the second argument handed to the success path is ordinarily thought of as the thing to call if the current branch later fails, but that here, having completed a successful evaluation, the loop invokes that same alternative-branch handle in order to search for additional successful evaluations; together with the surrounding design in which a user request for another answer is serviced by triggering the same abandonment machinery that a rejected requirement triggers, and the loop is seeded with an initial handle that reports there is no current problem.

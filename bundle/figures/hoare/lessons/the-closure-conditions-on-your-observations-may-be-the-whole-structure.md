@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Write down the closure conditions your observation-set satisfies; they may turn out to be the whole structure"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [formal-methods-and-verification, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Write down the closure conditions your observation-set satisfies; they may turn out to be the whole structure
+
+**Lesson:** Summarize a richly structured object by the set of observations it can produce and you appear to have thrown information away — a branching thing has become a flat collection of finite records. Before accepting that, write down the conditions such a collection necessarily satisfies. There are usually only two or three and they look too obvious to bother stating: the empty observation is always among them, and any initial portion of a possible observation is itself possible. Then attempt the converse. Does every collection meeting exactly those conditions arise from some object, and from only one? When the answer is yes, the summary was never a summary; it is a second presentation of the same thing, and the handful of dull conditions is a complete characterization of a structure you had been defining by construction.
+
+This is worth chasing whenever the opportunity appears, because the two presentations are good at different jobs. A definition by construction says how to build one and therefore forces every proof into induction over the building operations. A definition by property says what it takes to be one, so a claim about all such objects becomes a claim about all collections satisfying two conditions, and much of the machinery evaporates. It also settles a question that otherwise gets decided by taste: when should two of these objects count as the same? The observation set answers it. Anything the observations cannot distinguish is not a real distinction, and any question the observations cannot answer is a question the construction was never entitled to answer either. Getting equality derived rather than declared is a large gain, because declared equality is where hidden assumptions collect.
+
+The version of this available to someone who will never prove a representation theorem is still worth the effort. Any time you maintain a derived index, log, or projection over a primary structure, state the invariants that derived thing satisfies — not as documentation but as instrumentation. Two capabilities follow. Corruption becomes locally detectable, since a violated closure condition is a defect in the derived structure no matter what the primary one contains, and that check needs no access to the original. And you learn precisely where the projection is lossy: if two distinguishable primaries yield identical projections, you have found either a redundancy in the primary worth removing or a distinction the projection is too coarse to support. Both are important, they demand opposite responses, and you want to know which one you have before anything is built on top.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the traces-of-a-process section, where the trace set is derived from the process, shown to contain the empty trace, to be closed under taking initial segments, and to lie within the sequences over the alphabet; and the immediately following observation that any set satisfying those first two conditions is itself a workable mathematical representation of a tree whose branches from any node carry distinct labels, since each trace names a unique path and every initial subpath is a path.

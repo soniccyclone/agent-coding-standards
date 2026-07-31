@@ -19,7 +19,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). An earlier pass covered Chapter 5 from line 13698 through 15977 (5.1.1 through 5.2.4). **A read is in progress now, resuming at line 15978.** Sections read so far this pass: 5.3 through 5.3.3 (lines 15978-16397).
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). An earlier pass covered Chapter 5 from line 13698 through 15977 (5.1.1 through 5.2.4). **A read is in progress now, resuming at line 15978.** Sections read so far this pass: 5.3 through 5.4.1 (lines 15978-16817).
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
@@ -102,3 +102,5 @@ tags: [work]
 - [A guard that skips already-finished work makes the contract relative, so invent the relativized concept before attempting the proof](../lessons/a-guard-that-skips-finished-work-makes-the-contract-relative.md)
 - [When what you actually want is a quantity passing through, add a variable whose whole job is to keep it unmerged](../lessons/when-the-payload-is-the-trajectory-add-state-to-keep-it-unmerged.md)
 - [Analyse cost against the part refinement will not change, and the answer comes back as a budget the representation has to meet](../lessons/analyse-cost-against-what-refinement-cannot-change.md)
+- [Write the question-begging test into the program on purpose, so the hard invention is isolated to one obligation](../lessons/put-the-question-begging-test-in-the-program-then-discharge-it.md)
+- [In a recursive program you need two tiers of invariant, and which tier one belongs to is read off the names it mentions](../lessons/an-invariants-recursion-scope-is-read-off-the-names-it-mentions.md)

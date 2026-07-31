@@ -46,7 +46,7 @@ bibliography, the index and a colophon; none of it is lesson-bearing.
 **Third session (in progress).** Started reading at line 341 and is working forward
 sequentially through the unread spans below. **Current position: line 341** — this
 number is updated as the read advances, so whatever it says is the resume point.
-Position log: 341 -> 3838.
+Position log: 341 -> 5237.
 
 **Not read in either recorded session, resume here:** lines 341-14254 — chapters 1
 through 14 entire, i.e. Part A (Programs Which Manipulate Numbers) and Part B (Data
@@ -107,3 +107,5 @@ then attested them, so exhaustion cannot be claimed for them.
 - [What outgrew your methods is the interaction surface, not the size of your program](../lessons/what-grew-is-the-interaction-surface-not-your-program.md)
 - [An argument that goes lopsided is telling you the code made a choice it did not have to make](../lessons/an-asymmetric-argument-is-how-a-gratuitous-choice-announces-itself.md)
 - [The cases your argument fails to reach are the inputs your code fails to return on](../lessons/the-cases-your-argument-misses-are-the-inputs-that-diverge.md)
+- [Deciding that a thing has state at all is a design step, and it should not be the first one](../lessons/deciding-that-there-is-state-at-all-is-its-own-step.md)
+- [Fold the awkward global property into what 'meets its description' locally means, and composition stops charging you for it](../lessons/fold-the-global-property-into-the-local-contract.md)

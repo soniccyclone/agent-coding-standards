@@ -174,6 +174,9 @@ tags: [work]
 - [The search method you commit to gets a veto over every component](../lessons/the-search-method-you-commit-to-vetoes-your-components.md)
 - [A region of exactly-zero response is a trap, not a floor](../lessons/a-region-of-exactly-zero-response-is-a-trap-not-a-floor.md)
 - [An exact identity leaves you a free parameter — spend it on staying in range](../lessons/an-exact-identity-leaves-you-a-free-parameter-spend-it-on-range.md)
+- [How fast the penalty grows decides who controls the answer](../lessons/how-fast-the-penalty-grows-decides-who-controls-the-answer.md)
+- [Don't reject a measure for lacking a property your problem has no use for](../lessons/dont-demand-a-property-your-problem-has-no-use-for.md)
+- [Fuse the two stages whose distortions cancel](../lessons/fuse-the-two-stages-whose-distortions-cancel.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -234,6 +237,6 @@ should also get a hand re-read at the same depth as chapter 1 before this work i
 attested. `extraction: complete` deliberately withheld._
 
 _**READ IN PROGRESS (2026-07-31, fifth agent pass).** Started chapter 13 at line
-**25092**, reading forward in sequential chunks toward line 27631. This line
+**25489**, reading forward in sequential chunks toward line 27631. This line
 number is updated in place as the read advances; if this note still says a line
 below 27631, the agent died there and that is the genuine resume point._

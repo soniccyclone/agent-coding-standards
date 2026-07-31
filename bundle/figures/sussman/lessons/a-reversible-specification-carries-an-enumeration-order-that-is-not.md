@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A specification runs in both directions; the search order it inherits does not"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [expressiveness, verifiability]
+subdomains: [programming-languages-and-semantics, algorithms-and-complexity]
+tags: [lesson]
+---
+# A specification runs in both directions; the search order it inherits does not
+
+**Lesson:** A description written as a relation between an input and a legal structure does not privilege either side. State the rules once and the same rules answer two questions: does this thing conform, and what things conform. Turning the checker into a producer can be a startlingly small edit — replace the step that consumes evidence and verifies it with a step that invents evidence and always agrees, and the identical body of rules now emits examples instead of validating them. That is a real and underused property, and it is the honest reason to write rules as relations rather than as procedures: you get the generator, the validator, and often a repairer out of one artifact instead of maintaining three that are supposed to agree.
+
+What does not come along for free is the order. The description says which structures are legal; it says nothing about the sequence in which they should be visited, and that sequence is supplied by whatever search the substrate happens to implement. A depth-first exploration that tries alternatives in written order is entirely reasonable for checking, where the input bounds the work and any order terminates. Run the same rules as a generator and the bound is gone, so the first recursive alternative the search descends into is one it descends into forever. The rules are correct and the enumeration is useless — it produces an infinite sequence of ever-longer variations on one shape and never reaches the rest of the space at all.
+
+The diagnosis generalizes past grammars. Whenever you reuse a specification in a direction it was not exercised in, the meaning transfers and the traversal does not, and the traversal was tuned — usually implicitly, by the order things were written down — for the original direction. Recursive rules that terminate because the input shrinks have nothing making them terminate when the input is being manufactured. So the question to ask of a reversed specification is not whether it is correct but what its enumeration order is and whether every element of the target space has a finite position in it. Frequently the fix is not to the rules but to the search: a strategy that bounds depth and widens, or that weights alternatives, or that interleaves branches, restores coverage while leaving the description untouched.
+
+The design principle underneath is that a set of rules and a strategy for exploring them are separate artifacts that a single implementation usually fuses. Fusing them is what makes the reversed use fail, and it is also what makes the failure look like a defect in the rules when it is not. Keep them distinguishable — even just in your understanding of the system — and reuse in a new direction becomes a matter of supplying a different strategy rather than rewriting a specification that was already right.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) — chapter 4 section 4.3.2, Exercise 4.49, which proposes turning the nondeterministic parser into a sentence generator by changing only the word-matching procedure so that it ignores the input and always succeeds with an appropriate word, leaving the grammar procedures untouched; together with its footnote, which grants that the idea works and is surprisingly simple but reports that the generated sentences are uninteresting because the grammar is highly recursive in many places and the technique falls into one of those recursions and gets stuck, with a forward reference to a later exercise for a way to deal with it; read against the same section's description of the evaluator's fixed depth-first, first-alternative-first strategy.
