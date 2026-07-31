@@ -23,3 +23,6 @@ tags: [work]
 - [Draw the encapsulation boundary so the discipline you need becomes a textual property a machine can check](../lessons/put-the-discipline-where-a-textual-scan-can-enforce-it.md)
 - [Decide who establishes a condition, and hand the guarantee over atomically instead of making the waiter re-derive it](../lessons/hand-off-a-guarantee-instead-of-making-the-waiter-re-derive-it.md)
 - [Every point where an operation can block is a public boundary, so the invariant must hold there too](../lessons/every-point-where-you-can-block-is-a-public-boundary.md)
+- [Aim to avoid persistently pessimal states rather than to reach optimal ones](../lessons/avoid-the-pessimal-rather-than-chase-the-optimal.md)
+- [Under overload a dynamic allocator must fall back toward a static regime, so design the floors before the flexibility](../lessons/under-overload-a-dynamic-scheme-must-fall-back-toward-static-reservation.md)
+- [Splitting a global optimization into independent modules is a hypothesis you must earn, not a structural default](../lessons/decomposing-a-global-optimization-is-a-hypothesis-to-be-earned.md)

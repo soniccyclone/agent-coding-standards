@@ -9,6 +9,7 @@ url: https://raw.githubusercontent.com/CMU-HoTT/scott/main/pdfs/1972-continuous-
 survey_pages: 40
 survey_text_layer: full
 survey_fetch_mb: 1
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -28,3 +29,4 @@ tags: [work]
 - [Say whether a reformulation shortens the work or only explains it, and value both honestly](../lessons/say-whether-a-reformulation-shortens-the-work-or-explains-it.md)
 - [Look for the one tiny object that generates the entire class you care about](../lessons/find-the-one-tiny-object-that-generates-the-whole-class.md)
 - [Mark the boundary of what you know at the exact point where it stops](../lessons/mark-the-boundary-of-what-you-know-at-the-point-it-stops.md)
+- [Demote your special machinery to a technique and let the standard setting carry the story](../lessons/demote-your-special-machinery-to-a-technique-and-start-from-the-standard-setting.md)

@@ -22,3 +22,7 @@ tags: [work]
 
 ## Lessons
 - [Let the proof tell you what the interface is: the abstraction is exactly the laws the argument consumed](../lessons/let-the-proof-tell-you-what-the-interface-is.md)
+- [Change the interpretation, not the algorithm, and absorb variants instead of building parallel theories](../lessons/change-the-interpretation-not-the-algorithm.md)
+- [Make cost depend on the instance in front of you, and pick a representation that keeps its structure visible](../lessons/cost-should-depend-on-the-instance-not-its-class.md)
+- [Expressibility is not leverage: judge an encoding by what structure survives it, and name where it fails](../lessons/expressibility-is-not-leverage.md)
+- [Existence can be enough: price finding the certificate against using it before demanding one](../lessons/existence-can-be-enough-price-the-search-for-the-certificate.md)
