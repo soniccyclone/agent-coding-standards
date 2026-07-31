@@ -20,4 +20,6 @@ tags: [work]
 **Source:** https://www.math.cmu.edu/~af1p/Teaching/MCC17/Papers/permanent.pdf — scanned copy hosted on Alan Frieze's CMU course materials page ("Modern Coding/Complexity" course); third-party rehost of the original TCS paper.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [How many is a different question from whether any, and the two costs can diverge without limit](../lessons/counting-is-a-different-question-from-existence.md)
+- [Two expressions can be one symbol apart and worlds apart in cost, which condemns every measure read off their shape](../lessons/a-measure-read-off-syntax-must-separate-near-identical-texts.md)
+- [Let the unwanted cases cancel instead of preventing them, and specify the piece that does it by its obligations alone](../lessons/let-the-unwanted-cases-cancel-and-specify-the-gadget-by-its-obligations.md)

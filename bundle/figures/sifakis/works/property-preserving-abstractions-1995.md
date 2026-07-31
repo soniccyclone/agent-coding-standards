@@ -32,3 +32,4 @@ tags: [work]
 - [Derive the reduced model by rewriting the description, never by walking the thing described](../lessons/reduce-the-description-not-the-thing-it-describes.md)
 - [Define the best possible version of the thing you are approximating, even when you intend to ship something worse](../lessons/define-the-optimum-you-will-not-compute.md)
 - [An analysis only scales if it distributes over the operator that builds the system, and that is a theorem with fine print](../lessons/ask-whether-the-analysis-distributes-over-composition.md)
+- [When a coarse model kills the property you wanted, change what counts as a single step](../lessons/redefine-what-counts-as-a-step.md)

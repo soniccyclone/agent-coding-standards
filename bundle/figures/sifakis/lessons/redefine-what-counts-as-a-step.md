@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When a coarse model kills the property you wanted, change what counts as a single step"
+figure: sifakis
+works: [property-preserving-abstractions-1995]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency, programming-languages-and-semantics]
+tags: [lesson]
+---
+# When a coarse model kills the property you wanted, change what counts as a single step
+
+**Lesson:** A simplified model built by grouping states and requiring step-for-step correspondence with the original will fail on some questions not because the grouping was too crude but because the *step* was the wrong unit. Collapse a protocol's states into a handful of classes and the resulting abstract machine still has to move one transition at a time, which means every piece of internal bookkeeping the original performed shows up as a separate abstract move. Claims about eventually arriving somewhere then evaporate: they were true of the original because the internal moves always terminated, and false of the abstraction because the abstraction was granted permission to loop among them forever. No amount of refining the state grouping repairs this. What repairs it is deciding that a run of internal, unobservable transitions is not a sequence of steps at all but part of one step, and rebuilding the abstract transition relation over that composite.
+
+Sifakis and co-authors reach for this move twice in the same paper, and it is worth noticing that they present it as a change to the model's arithmetic rather than a change to its resolution. To make existential claims survive abstraction, the transition relation is replaced by an unobservable-step closure followed by an observable step; to lift the whole framework from strict simulation to simulation-with-silent-actions, they lean on the standard observation that weak equivalence is just strong equivalence computed over a modified relation. In both cases the logic, the preservation theorems, and the tooling are left alone. Only the definition of "one move" is edited, upstream of everything, and the edit is what makes properties that were previously unreachable through abstraction come out true.
+
+The transferable habit: when an approximation loses a class of conclusions, separate two possible diagnoses before reacting. One is that you threw away distinctions the conclusion needed, and the fix is a finer partition — expensive, and often unbounded. The other is that the conclusion was never about individual steps in the first place, and the fix is to re-grain the step so the thing the conclusion cares about happens atomically. The second diagnosis is much cheaper when it applies, and it applies more often than people expect, because step boundaries are almost always inherited from an implementation detail — an instruction, a message, a state change in some library — rather than chosen for the reasoning you now want to do. Ask what the smallest unit of change is that anyone outside the system can observe, and consider making that the step.
+
+**Source:** [Property Preserving Abstractions for the Verification of Concurrent Systems](../works/property-preserving-abstractions-1995.md) — section 6.3's remark that to obtain abstract systems on which reachability properties are checkable one must replace the transition relation with a composition of the transitive closure of the stuttering, non-observable steps and the observable ones, together with the conclusion's note that the paper's results extend to preorders with silent actions by computing strong bisimulation over a modified transition relation.

@@ -21,4 +21,5 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/yao__theory-and-applications-of-trapdoor-functions.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [To rebuild a theory under a resource bound, promote one of its theorems into the new definition](../lessons/promote-a-theorem-into-a-definition-to-relativize-a-theory-to-a-resource-bound.md)
+- [Test a new definition by whether the old theory's invariants survive where nothing forces them to](../lessons/test-a-new-definition-by-whether-the-old-invariants-survive-unforced.md)

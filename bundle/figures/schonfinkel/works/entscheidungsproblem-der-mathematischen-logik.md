@@ -41,3 +41,6 @@ This work needs the deterministic OCR batch.
 - [Prove a part of the input cannot matter, and the problem may already be solved](../lessons/prove-a-part-of-the-input-cannot-matter-and-the-problem-may-already-be-solved.md)
 - [Pin down the shape of the answer before you can compute one](../lessons/pin-down-the-shape-of-the-answer-before-you-can-compute-one.md)
 - [A procedure exists when the conditions stop arriving](../lessons/a-procedure-exists-when-the-conditions-stop-arriving.md)
+- [Find the smallest case where the hard feature is really present](../lessons/find-the-smallest-case-where-the-hard-feature-is-really-present.md)
+- [When two problems are dual, work whichever side is cheaper each time](../lessons/when-two-problems-are-dual-work-whichever-side-is-cheaper-each-time.md)
+- [An abstraction that drops information usually only holds above a threshold](../lessons/an-abstraction-that-drops-information-usually-only-holds-above-a-threshold.md)

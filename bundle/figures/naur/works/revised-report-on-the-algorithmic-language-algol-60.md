@@ -28,3 +28,6 @@ tags: [work]
 - [Have one name-binding construct, and make everything that binds names be that construct in disguise](../lessons/one-binding-construct-worn-by-everything.md)
 - [Give every kind of value the same expression shape, jump targets included](../lessons/one-expression-shape-for-every-kind-of-value.md)
 - [Give nothing a name, then route every degenerate case to it](../lessons/give-nothing-a-name-and-route-degenerate-cases-to-it.md)
+- [Index by role: separate where a thing is defined from where it is used](../lessons/index-by-role-defining-site-versus-use-site.md)
+- [Declare which parts of the notation the machine ignores](../lessons/declare-which-notation-the-machine-ignores.md)
+- [Enumerate every case an operation can be in, and split the operator when the cases disagree](../lessons/split-the-operator-rather-than-overload-the-signature.md)

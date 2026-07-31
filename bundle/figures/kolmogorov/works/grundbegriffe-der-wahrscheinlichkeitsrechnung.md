@@ -21,4 +21,6 @@ tags: [work]
 **Reading copy:** `scratchpad/ocr-text/kolmogorov__grundbegriffe-der-wahrscheinlichkeitsrechnung.txt` — OCR of the scanned original by tesseract at 300dpi. Running prose is reliable; **mathematical and logical notation is not** — turnstiles, implication arrows, subscripts and small-caps headings come through mangled. Ground every lesson in the prose argument and do not transcribe or rely on a formula from this text. Page markers `=== page N ===` correspond to PDF pages.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [To found a new field on an existing theory, first strip that theory of the setting it was born in](../lessons/strip-the-borrowed-theory-of-its-birthplace.md)
+- [Record why the rules are right somewhere nothing downstream depends on](../lessons/keep-the-justification-out-of-the-dependency-graph.md)
+- [Show your rules admit at least one thing, then make sure they do not pin down only one](../lessons/show-your-rules-admit-one-thing-and-not-only-one.md)

@@ -28,3 +28,7 @@ tags: [work]
 - [A privileged core is the coarsest hierarchy you can build, and it freezes whatever you put inside](../lessons/a-privileged-core-is-the-coarsest-hierarchy-you-can-build.md)
 - [Climbing a hierarchy buys simplicity, never power — so say convenience and mean it](../lessons/climbing-a-hierarchy-buys-simplicity-never-power.md)
 - [Who is allowed to reuse what is a structural decision, not a local one](../lessons/who-may-reuse-what-is-not-a-local-decision.md)
+- [How many of a thing there are is itself a secret, and leaking it blocks removal as hard as addition](../lessons/how-many-of-a-thing-there-are-is-itself-a-secret.md)
+- [The right layering absorbs the tools you would otherwise have to build alongside it](../lessons/the-right-layering-makes-your-support-tooling-unnecessary.md)
+- [Any structure can be forced to work, so compare structures by what comes out cleanly](../lessons/any-structure-can-be-forced-to-work-so-compare-them-on-removal.md)
+- [Modules and levels are two independent structures over the same parts, and expecting them to coincide is what forces the splitting](../lessons/modules-and-levels-are-two-independent-structures.md)
