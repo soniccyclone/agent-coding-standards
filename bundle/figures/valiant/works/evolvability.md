@@ -21,3 +21,4 @@ tags: [work]
 
 ## Lessons
 - [Stop speculating about the shape of the search space and classify which objectives induce a navigable one](../lessons/ask-which-objectives-induce-a-navigable-space-not-what-spaces-look-like.md)
+- [An optimizer that sees only a scalar score is strictly weaker than one that sees the cases, and the gap is provable](../lessons/a-scalar-score-is-a-weaker-signal-than-labelled-cases-and-provably-so.md)

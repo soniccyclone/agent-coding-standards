@@ -21,4 +21,4 @@ tags: [work]
 **Source:** https://www.cs.umd.edu/users/gasarch/COURSES/858/S13/tables.pdf — course materials page at University of Maryland (William Gasarch's complexity theory course), a standard academic rehost. Verified by rendering page 1: title, "Andrew Chi-Chih Yao, Stanford University," and the JACM 1981 copyright line are all visible.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Permission to store a function of your data is a different power from permission to store the data](../lessons/storing-a-function-of-your-data-is-a-different-power-than-storing-it.md)

@@ -30,3 +30,6 @@ tags: [work]
 - [Checking every pair is not checking the whole, and the constraint count tells you how much you skipped](../lessons/checking-every-pair-is-not-checking-the-whole.md)
 - [Define an unbounded object by all its finite views plus the requirement that they agree](../lessons/specify-the-unbounded-object-by-its-finite-views.md)
 - [When the framework cannot express the question, change how the problem is indexed](../lessons/re-index-the-problem-until-the-questions-are-expressible.md)
+- [A "given that" answer is fixed by the family the condition came from, not by the condition](../lessons/a-conditional-answer-belongs-to-the-partition-not-the-condition.md)
+- [When an object is only defined up to an equivalence, restate every law about it at that coarseness](../lessons/restate-the-laws-at-the-coarseness-the-object-is-defined.md)
+- [If no bounded observation can move a belief, the matter is already settled and you are only ignorant](../lessons/if-no-finite-observation-moves-it-it-is-already-decided.md)

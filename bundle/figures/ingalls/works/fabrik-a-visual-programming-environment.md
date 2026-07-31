@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 1
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -25,3 +26,5 @@ tags: [work]
 - [Make the authoring medium incapable of producing malformed work, and refuse the bad join while the author's hand is still on it](../lessons/make-the-authoring-medium-incapable-of-malformed-results.md)
 - [Compile a propagation structure by enumerating the places a change can enter and emitting one straight-line path for each](../lessons/compile-one-path-per-place-a-change-can-enter.md)
 - [Make every shortcut and every packaging step a reversible view on the canonical structure, never a one-way door](../lessons/every-shortcut-must-emit-into-the-canonical-form.md)
+- [Give the output medium a closed generative basis instead of a catalogue, and make input ride the same transforms backwards](../lessons/give-the-output-medium-a-generative-basis-not-a-catalogue.md)
+- [A drawn cycle is not a causal one: classify each link by what triggers it, and keep repetition at the boundary of an acyclic region](../lessons/classify-edges-by-trigger-and-put-repetition-at-the-boundary.md)

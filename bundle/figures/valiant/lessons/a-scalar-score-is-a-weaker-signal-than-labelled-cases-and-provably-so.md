@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An optimizer that sees only a scalar score is strictly weaker than one that sees the cases, and the gap is provable"
+figure: valiant
+works: [evolvability]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [algorithms-and-complexity, foundations-of-computation]
+tags: [lesson]
+---
+# An optimizer that sees only a scalar score is strictly weaker than one that sees the cases, and the gap is provable
+
+**Lesson:** There is a hierarchy of feedback shapes that an adaptive process can be built on, and it is ordered by how much of the individual case survives into the signal. At the top, the process sees each situation, its own response, and the desired response, and may compute anything it likes from all three. In the middle, it sees only statistics over the population of situations, but may choose which statistic to ask for — including statistics about the descriptions of the situations, not just about whether it got them right. At the bottom, it sees a single number per candidate: how well that candidate did overall. Compute does not substitute across these levels. Moving down a level removes information that no amount of processing recovers, and the resulting loss of power is not a suspicion but a theorem: there are targets findable from labelled cases and provably unfindable from scores alone, in the strong sense that no choice of internal representation and no choice of which variants to try can rescue them.
+
+Two consequences matter for anyone building such a process. First, the level you are on is a design commitment made early and usually by accident. A framework where candidates are scored and the best score wins has silently chosen the bottom level, and it inherits an impossibility that no tuning of the variation operator will remove; if you need targets outside that reach, the fix has to be a richer signal, not a cleverer search. Second, the honest reason to accept the weakest level is opacity: when the path from a candidate's description to its behavior is too tangled for the process to interpret, letting updates depend on the case descriptions would be assuming an understanding the process does not have. Choosing the impoverished feedback is then a modelling decision about what the mechanism is allowed to know, and the resulting negative results are about the mechanism rather than about the world.
+
+The transferable discipline is to write down, for any learning or tuning or search loop you are responsible for, exactly what each iteration is permitted to observe — and then to notice that this is the quantity that bounds what the loop can ever achieve. Systems get built where the only channel from reality back into the design is an aggregate metric, and then people are surprised when whole categories of improvement never appear. The metric is not a lossy version of the information; it is a different, strictly smaller information source, and the categories it cannot express are identifiable in advance.
+
+**Source:** [Evolvability](../works/evolvability.md) — the introduction's comparison of the three feedback regimes, where updates may depend on the examples, on chosen statistics over them including properties of their descriptions, or only on aggregate performance, with the argument that the last is appropriate when the relationship between the representation and the behavior it produces is not understood by the process; together with section 4's result that a class known to be learnable from examples for every distribution is nonetheless unreachable under aggregate-only feedback, whatever representation is used.
