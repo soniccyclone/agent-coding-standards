@@ -7,7 +7,7 @@ subdomains: [formal-methods-and-verification]
 year: 1990
 url: https://mcmil.net/pubs/LICS90.pdf
 survey_pages: 33
-survey_text_layer: none
+survey_text_layer: ocr
 survey_fetch_mb: 0
 access: public
 host: self-archived
@@ -19,6 +19,7 @@ tags: [work]
 **Author(s):** J. R. Burch, E. M. Clarke, K. L. McMillan, D. L. Dill, L. J. Hwang
 **Venue/year:** Proceedings of the Fifth Annual IEEE Symposium on Logic in Computer Science (LICS '90), Philadelphia, June 1990. An extended version appeared in Information and Computation, vol. 98, 1992.
 **Source:** https://mcmil.net/pubs/LICS90.pdf — self-archived PDF on McMillan's own site, live and directly downloadable (HTTP 200, title page confirmed: "Symbolic Model Checking: 10^20 States and Beyond," authors J. R. Burch, E. M. Clarke, K. L. McMillan, D. L. Dill, L. J. Hwang).
+**Reading copy:** `scratchpad/ocr-text/mcmillan__symbolic-model-checking-10-20-states-and-beyond.txt` — OCR of this paper by tesseract at 300dpi (10,922 words, 33% common-word ratio). Read that file, not the PDF. The PDF *does* have an embedded text layer and `pdftotext` returns ~103k characters from it, but every one of them is garbage: the fonts use a custom encoding with no Unicode map, so the output looks like `!#"%$&')(*'+-,`. A character-count check will therefore call this readable when it is not — see flags H.5. As with any OCR the prose is reliable and the notation is not, so ground lessons in the argument rather than in any formula.
 
 **Frontmatter correction (2026-07-31, Phase 4 bucket 104).** This file carried
 `survey_text_layer: full`; that was wrong and cost an extraction attempt. The PDF
@@ -43,7 +44,6 @@ for this one.
 
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
-_OCR-HOLD_ — 33 pages, Ghostscript/Type-3 bitmap fonts, no text recoverable
 without rasterising. Blocked on the OCR batch, not on reading effort. Note when
 it lands: this paper is the direct precursor of
 [the thesis](symbolic-model-checking-an-approach-to-the-state-explosion-problem.md),
