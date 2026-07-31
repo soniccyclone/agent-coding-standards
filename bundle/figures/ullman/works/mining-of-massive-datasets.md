@@ -160,6 +160,9 @@ tags: [work]
 - [Keep the per-step choice tiny and recover power by composition](../lessons/keep-the-per-step-choice-tiny-and-recover-power-by-composition.md)
 - [Find the order in which the best answer is a prefix](../lessons/find-the-order-in-which-the-best-answer-is-a-prefix.md)
 - [Inherently serial usually means nobody looked for the regrouping](../lessons/inherently-serial-usually-means-nobody-looked-for-the-regrouping.md)
+- [Delete the component and measure, to find out whether it earned its place](../lessons/delete-the-component-and-measure-to-find-out-if-it-earned-its-place.md)
+- [Encoding categories as numbers asserts distances you did not mean](../lessons/encoding-categories-as-numbers-asserts-distances-you-did-not-mean.md)
+- [Your components' outputs are a new dataset — learn the combination](../lessons/your-components-outputs-are-a-new-dataset-learn-the-combination.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
