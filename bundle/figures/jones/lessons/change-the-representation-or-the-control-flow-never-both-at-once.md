@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Change the representation or the control flow, never both in one step, and do representation first"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# Change the representation or the control flow, never both in one step, and do representation first
+
+**Lesson:** Two kinds of change move a design toward something runnable. One replaces what is held with something more concrete. The other replaces one action with a sequence of smaller ones. They are different in kind, and the single most useful piece of process advice about them is that a step should do one or the other and never both. When a step changes what is stored *and* the order in which things happen, and the result turns out to be wrong, there is no way to localize the mistake — the two changes interact everywhere, and understanding either requires holding the other in mind simultaneously. Split them and each step has a small enough surface that a reader can check it and a writer can be confident in it.
+
+Given both are available, do the representation first. The reason is asymmetric and worth internalizing: decomposing an action commits you to an order of operations, and that commitment is exactly the sort of thing you should make as late as possible, because which order is right frequently depends on what is stored and how it is reached. Fix the sequence first and you will find you have chosen it in ignorance, then either live with it or unpick it. Fix the representation first and the sequence often becomes obvious. On any sizeable problem you will alternate between the two kinds of step repeatedly; the rule is about the local ordering within each alternation, not a global phase division.
+
+The rule has a converse worth applying as a check. If a step introduces a genuinely new idea about *how* something is computed, stop there and let the data structures stay as they are for now. If a step requires an essential change in what is held, work out what that implies before touching any control flow. In both directions the instruction is the same: keep one of the two variables fixed while you move the other, because that is what makes the result attributable.
+
+The last piece is about the record rather than the work. Since backtracking is inevitable — an earlier decision will eventually be seen to be wrong — a willingness to throw work away is part of the method rather than a sign it failed. But when you revise, you must revise the earlier design record too. A record that no longer describes the artifact is not merely useless; it is worse than having none, because a reader will trust it and be misled by it, and every subsequent decision made on its authority inherits the error. If you are not prepared to keep the history honest, the history is a liability.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 17's "A Top-Down View of the Method" section: the statement that when faced with a choice of which sort of development step to do first it is preferable to give priority to refinement, because decomposition tends to fix the order of operations and this is usually best done after representation questions have been addressed, with the note that large problems tend to alternate between the two kinds of step; the immediately following instruction to avoid trying to do too much in one stage, that a stage requiring an essential change in representation should have its consequences understood before proceeding to decompose operations, and that a stage introducing a new algorithm is more likely to be correct and comprehensible if further refinement of data structures is deferred; and the preceding remarks that the top-down aim does not imply a straitjacket on thought, that preparedness to discard work is essential once an earlier decision is seen to be erroneous, and that proceeding without making the corresponding changes to the earlier design history renders that history less than worthless.

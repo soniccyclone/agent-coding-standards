@@ -52,3 +52,6 @@ tags: [work]
 - [When a repair forces an expensive access, take everything it offers — and check the opposite repair is its mirror](../lessons/pay-once-take-everything-and-keep-repair-symmetric.md)
 - [Examine the degenerate instance, and when you re-represent it keep only the distinction that mattered](../lessons/examine-the-degenerate-instance-and-keep-only-the-distinction.md)
 - [Restate the rule as the property you actually need, and drop the concept you arrived by](../lessons/restate-the-rule-as-the-property-you-need-and-drop-the-scaffolding.md)
+- [An attribute of a connection can live at either end; pick the end with fewer connections](../lessons/store-an-edges-attribute-at-the-endpoint-with-fewer-edges.md)
+- [Every invariant spends the freedom that performance was buying](../lessons/every-invariant-spends-the-freedom-performance-was-buying.md)
+- [Partition the key space, not the data, and the structure stops depending on its history](../lessons/partition-the-key-space-not-the-data.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Refuse the syntax that would let nonsense be written, then find the one general form the rest are special cases of"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [primitive-count, expressiveness, verifiability]
+subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# Refuse the syntax that would let nonsense be written, then find the one general form the rest are special cases of
+
+**Lesson:** When a construct is nearly always meaningful but has a family of degenerate cases with no sensible reading, there are two ways to respond. One is to admit the construct in full generality and rule on the degenerate cases — pick a winner, invent a tie-break, declare it undefined. The other is to shape the notation so those cases cannot be written down at all: make the operator take an event on one side rather than another whole term, or make it an n-ary form over distinguishable alternatives rather than a binary operator that can be nested. The second is the better default early on, because the cost of the restriction is a bit of awkwardness in writing while the cost of the rule is that every subsequent law, proof, and implementation must carry the special case along with it. The specific error being excluded here is instructive: an apparent choice between alternatives that are not actually distinguishable, which looks like a choice on the page and offers none in practice. That is a defect nobody would write deliberately and everybody writes accidentally, and it is precisely the sort a syntax can be made to catch for free.
+
+The complementary move is to look for a single general form of which your other constructs are special cases. Very often what began as three separate primitives — do one thing then continue, offer a choice among several, do nothing ever — turn out to be one construct parameterized by a set, at full generality, at singleton size, and at empty size. Collapsing them is not tidiness. Every law you state about the general form covers all three, every implementation handles all three, and the empty case stops being a special exception and becomes a value of the parameter. That is the same economy that makes an identity element valuable in algebra, applied to notation.
+
+Both moves point the same way, and it is worth seeing that they are not in tension. The restriction removes combinations that mean nothing; the generalization unifies the ones that mean something. What you should not do is the reverse of either: admit everything and patch it with rules, or keep several near-identical primitives because each has a familiar name. And note the sequencing — the restriction can be relaxed later, once the theory can say what the degenerate case means, which is exactly what happens when a richer notion arrives that gives the previously-forbidden form a genuine reading. Prohibitions are cheap to lift; special cases baked into a semantics are not.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the choice section of the chapter on processes, where the choice bar is deliberately not made an operator on processes so that a choice between two identically-labelled branches — which appears to offer a choice of first event but fails to do so — cannot be written, with a note that the problem is solved later at the cost of introducing nondeterminism; and the same section's general form in which a choice ranges over a menu set, with prefixing recovered as the singleton case and the permanently stopped process as the empty case, remarked upon as a great advantage in formulating general laws and in implementation.

@@ -77,6 +77,9 @@ tags: [work]
 - [Adding one operation can promote an invisible property into the interface and void every equivalence you relied on](../lessons/adding-an-operation-can-promote-an-invisible-property-into-the-interface.md)
 - [Give a mutable aggregate a handle that never moves, and hold the facts its operations would otherwise recompute](../lessons/give-a-mutable-aggregate-a-handle-that-never-moves.md)
 - [An abstraction is unfinished until it supplies its own way of being looked at](../lessons/an-abstraction-owes-you-a-way-of-being-looked-at.md)
+- [Wrapping a function optimizes only the calls that go through the wrapper, which the inner calls usually do not](../lessons/an-optimization-at-the-boundary-does-nothing-unless-the-recursion-routes-through-it.md)
+- [Make time an explicit data structure, then decide what simultaneity means inside it](../lessons/make-time-a-data-structure-you-schedule-against.md)
+- [A subscriber to changes learns nothing about the present, so joining must deliver a synthetic first event](../lessons/a-change-feed-tells-a-late-subscriber-nothing.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

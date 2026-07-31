@@ -66,6 +66,9 @@ tags: [work]
 - [An update rule that can only demote needs a separate discovery path](../lessons/an-update-rule-that-only-demotes-needs-a-separate-discovery-path.md)
 - [Check that your measure still discriminates at the scale you will use it](../lessons/check-that-your-measure-still-discriminates-at-your-scale.md)
 - [Whether you can synthesize a summary is a property of the space, not of your algorithm](../lessons/whether-you-can-synthesize-a-summary-is-a-property-of-the-space.md)
+- [When the stopping rule comes from outside, return the whole trajectory](../lessons/return-the-whole-trajectory-when-the-stopping-rule-is-external.md)
+- [Store the form that composes, and derive the form you report](../lessons/store-the-form-that-composes-not-the-form-you-report.md)
+- [Give observations tiers of commitment instead of forcing one decision](../lessons/give-observations-tiers-of-commitment-instead-of-one-decision.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

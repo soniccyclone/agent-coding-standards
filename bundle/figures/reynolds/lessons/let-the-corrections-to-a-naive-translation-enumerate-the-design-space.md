@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Define a construct by translation into what you already have, and let each correction name a design decision"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [primitive-count, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Define a construct by translation into what you already have, and let each correction name a design decision
+
+**Lesson:** The cleanest way to pin down what a new construct means is to say what older construction it abbreviates. Do it in public, starting from the obvious translation and repairing it, because the repairs are the interesting part. Each one marks a place where the obvious reading was wrong, and each such place is a decision that some other designer, working independently, will resolve differently. The list of corrections you were forced to make is therefore a map of the design space — and it explains, better than any survey, why a construct that appears in every language means something slightly different in each of them.
+
+Work an iteration construct through this and three repairs show up. The naive translation gets the *binding* wrong: the control identifier is not the outer variable of the same name but a fresh one whose scope is the construct, so an enclosing declaration of that name is left untouched. It gets *what the body may do* wrong: the body must be unable to assign to the control identifier, which is imposed by classifying its occurrences as a kind of phrase that cannot be assigned to, rather than by a runtime check. And it gets *when the bounds are read* wrong: the limit is evaluated once and stashed, which is not merely an optimization but the thing that stops the body from moving the finish line. Every one of those is a real fork, and every one is settled differently somewhere.
+
+Two things fall out of doing it this way. The first is the guarantee: once the limit is fixed before the first iteration, the number of repetitions is determined in advance, so the construct terminates whenever its body does. That is the whole justification for having a restricted looping form alongside the general one — not brevity, but a property that holds by construction and that no general loop can offer. The second is that the construct is now *provably* not primitive. It is exactly an application of a higher-order procedure to the body, and the two argument-passing modes for that procedure's bounds correspond precisely to the two variants of the construct found in the wild. A translation that reaches that level of precision has done more than define the feature; it has explained the family it belongs to.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 4.1.1, which announces that a correct definition of the for statement as an abbreviation is surprisingly subtle and will be approached through several stages of plausible but inaccurate definitions, remarking that the approach will suggest why analogous constructs in other languages exhibit such diversity; the three successive corrections for binding structure, for the syntactic prohibition on the body affecting the control identifier expressed by giving its free occurrences expression phrase type, and for evaluating the upper bound once into a saved local so that the body cannot alter the interval iterated over; the resulting firm guarantee on the number of executions, called the most important distinction from the while statement; and the closing equivalence of the construct with a call of the higher-order iteration procedure applied to a lambda expression, where calling the bounds by value or by name yields the two variants.

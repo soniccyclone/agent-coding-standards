@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Make time an explicit data structure, then decide what simultaneity means inside it"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [verifiability, parallelizability]
+subdomains: [distributed-systems-and-concurrency, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Make time an explicit data structure, then decide what simultaneity means inside it
+
+**Lesson:** A circuit is a system whose entire interesting behaviour is about delay — signals arrive at different moments, and the authors note that many of the real difficulties in digital design come precisely from that. The simulator does not attempt to reproduce those delays with the machine's own clock or with the order in which procedures happen to run. It builds an agenda: a structure of time segments holding work to be done, with the current time stored in it and advanced only when an item is taken off. Scheduling something "after a delay" means computing a number and filing the work under it. Running the simulation means draining the structure.
+
+The consequence is that model time and execution time become independent, and only one of them matters for correctness. Nothing in the outcome depends on how fast the host is, when the garbage collector runs, or what order two unrelated procedures happened to be called in. That is what makes the simulation reproducible and its results meaningful. The same move is what makes tests deterministic when a clock is injected rather than read, what makes discrete-event simulation possible at all, and what distinguishes a system you can reason about from one whose behaviour is a property of the machine it ran on. Whenever timing matters to a result, the question to ask is whether time is a value in the program or an accident of execution.
+
+Having made time explicit, you inherit a decision that ambient time hides from you: what happens to two things scheduled for the same instant. The authors put this in an exercise, and the answer is that it is not free. Each segment holds its work in a first-in-first-out queue, and it must — trace an and-gate whose two inputs change in opposite directions within one segment, run the pending actions last-in-first-out instead, and the circuit settles on the wrong value. Events sharing a timestamp are not simultaneous in any physical sense; they are a sequence of intermediate states whose last member is the one that persists. The ordering discipline within an instant is part of the semantics, not an implementation choice.
+
+That is the part worth carrying into systems that are not simulators. Anywhere you batch work by timestamp, bucket, or tick — a scheduler, a write-ahead log, a set of updates applied within one transaction, a queue of events with equal priority — "same time" is a fiction imposed by the resolution of your clock, and the underlying order still determines the result. Either the discipline that resolves ties is chosen deliberately and written down, or the system has a correctness property that depends on the insertion order of a data structure nobody documented.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) - chapter 3 section 3.3.4's digital circuit simulator, which describes function boxes whose outputs are delayed by a type-dependent amount and notes that many difficulties in digital circuit design arise from outputs being generated at different times; implements after-delay as adding an action to the agenda at the current simulation time plus the delay, drives the simulation with a propagate loop that runs and removes agenda items until the agenda is empty, structures the agenda as time segments each holding a queue of scheduled procedures with the current time stored at its head and updated whenever an item is extracted; and Exercise 3.32, which asks why a segment's procedures must be run first-in-first-out, tracing an and-gate whose inputs change from 0,1 to 1,0 within one segment and asking how the behaviour would differ under a last-in-first-out discipline.

@@ -43,3 +43,6 @@ tags: [work]
 - [Two things with identical contents are not the same thing, so let the construction carry the distinction](../lessons/identical-contents-are-not-the-same-thing-so-carry-the-tag.md)
 - [Name the separable parts explicitly, so that what remains is the coupling you actually have to solve](../lessons/name-the-separable-parts-so-the-inseparable-one-is-what-you-work-on.md)
 - [A language cannot pick your representation for you, because it cannot see how the operations will be used](../lessons/a-language-cannot-pick-the-representation-because-it-cannot-see-the-profile.md)
+- [The decisions that actually decide performance are only visible once the detail is stripped away](../lessons/the-decisions-that-decide-performance-are-only-visible-with-detail-removed.md)
+- [Narrow the boundary to a system you do not control, even when it costs you capability](../lessons/narrow-the-boundary-to-a-foreign-system-even-at-the-cost-of-capability.md)
+- [Change the representation or the control flow, never both in one step, and do representation first](../lessons/change-the-representation-or-the-control-flow-never-both-at-once.md)
