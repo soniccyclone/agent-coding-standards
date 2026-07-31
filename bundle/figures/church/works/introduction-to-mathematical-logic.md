@@ -42,6 +42,7 @@ tags: [work]
 - [Any set of requirements can be a foundation you build inside or a predicate you quantify over, and the second turns every specific result into a general one](../lessons/requirements-as-a-predicate-you-quantify-over.md)
 - [Minimizing a basis and factoring it by concern are opposite goals, and only the factored one lets you vary a part](../lessons/minimize-the-basis-or-factor-it-but-know-which-you-chose.md)
 - [The step you perform so reflexively that it feels like recognition rather than action is the one your specification will omit](../lessons/the-move-you-make-without-noticing-never-gets-written-down.md)
+- [A constraint that costs its author nothing may be unaffordable to you, because the price is paid by a feature they never use](../lessons/a-fix-that-costs-nothing-to-its-author-may-be-unaffordable-to-you.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes._
 

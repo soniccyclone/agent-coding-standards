@@ -1,0 +1,22 @@
+---
+type: lesson
+title: "A constraint that costs its author nothing may be unaffordable to you, because the price is paid by a feature they never use"
+figure: church
+works: [introduction-to-mathematical-logic]
+axes: [cognitive-load, expressiveness]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A constraint that costs its author nothing may be unaffordable to you, because the price is paid by a feature they never use
+
+Church needs a correct rule for substituting into functional variables, and the only fully correct published statement available to him is Hilbert and Bernays's. He does not adopt it. Their rule is correct only because their formation rules forbid a quantifier from binding a variable that already occurs bound inside its scope, and that restriction has a consequence they never feel: under it, whether an expression is well formed depends on which bound variables happen to occur inside abbreviations you have introduced. Anyone using definitional abbreviation would have to remember, for every defined name, the private variable choices buried in its definition. Church calls that burden intolerable and builds his own rule instead, by splicing together two other statements that were each individually wrong. The reason Hilbert and Bernays could accept the restriction without noticing its price is stated plainly: they do not use abbreviative definition at all.
+
+The structure here is worth extracting because it recurs constantly and is almost never diagnosed correctly. A constraint imposed to make one part of a system tractable does not distribute its cost evenly. It lands on whichever features interact with the thing constrained, and if the author of the constraint does not use those features, the constraint looks free from where they stand. Their system is genuinely fine. Their reasoning is genuinely sound. The rule really is correct in their setting. None of that transfers, because correctness of a rule is a property of the rule together with the invariants of the system it sits in, and you are importing the rule without the invariants.
+
+The specific failure mode is adopting a solution because it is the only known-correct one, without auditing which of the source system's properties the correctness depends on. A locking discipline that is correct because the originating codebase never reenters; a serialization format that round-trips because the producer never emits the case that breaks; an invariant maintained by a validation step you do not run. In each case the borrowed artifact is correct in its home and wrong in yours, and the defect is undetectable by inspecting the artifact, since the missing part is not in it.
+
+Church's response is the right one and it is not the obvious one. He does not adopt the correct rule and accept its consequences, and he does not adopt an incorrect rule for convenience. He identifies precisely which of his own commitments the borrowed rule would destroy — here, that a defined name means the same thing in every context regardless of the variables inside it — decides that commitment outranks the convenience of copying, and pays the real cost, which is doing the work himself. That is the trade to make explicit whenever you find yourself importing a constraint: name the feature it taxes, ask whether you use that feature, and if you do, understand that the published proof of correctness is not evidence about your system.
+
+The abstraction is that a design constraint carries an implicit clause nobody writes down: *given that you also accept everything else here.* The transferable question is not "is this rule correct" but "correct in the presence of what," and the answer usually has to be reconstructed, because the author had no reason to enumerate the assumptions that never cost them anything.
+
+**Source:** [Introduction to Mathematical Logic](../works/introduction-to-mathematical-logic.md) — the historical notes to the chapter on the pure functional calculus of first order, where Church explains why Hilbert and Bernays's correct rule of substitution for functional variables could not be used in this book: its correctness depends on their formation rule barring already-bound variables from a quantifier, which would make abbreviative definition require remembering every definiens's bound variables — a cost Hilbert and Bernays do not incur only because they make no use of abbreviative definition.
