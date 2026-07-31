@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Weaken the invariant until restoring it is cheap, but not past the point where it still bounds the worst case"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [verifiability, cognitive-load, hardware-affinity]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification]
+tags: [lesson]
+---
+# Weaken the invariant until restoring it is cheap, but not past the point where it still bounds the worst case
+
+**Lesson:** An invariant that describes the ideal state is often the wrong invariant to maintain, because the cost of an operation is not the cost of the operation itself but the cost of restoring the invariant afterwards. When restoration turns out to be intricate — a global reorganization triggered by a local change — the response is not to abandon the property and hope, and not to pay the reorganization; it is to look for a weaker property that a local repair can restore. The design question becomes: what is the loosest condition I can state that still implies the guarantee I actually need? Answering it well is the difference between a structure with good behaviour and one with good behaviour you cannot afford.
+
+Two things have to be true of the weakened condition, and they pull in opposite directions. It must be weak enough that restoring it after a local change requires only local work, decided by information available near the point of change rather than by a survey of the whole structure. And it must remain strong enough to imply the bound you were after in the first place — not on average, but in the worst case, since the entire reason for maintaining an invariant rather than trusting the input distribution is to be immune to adversarial or merely unlucky orders. A weakening that only preserves the average has given up the thing that made an invariant worth having. The honest version of this design step therefore comes with a proof obligation attached: exhibit the worst structure the weakened condition permits, and show it still satisfies the bound. Constructing that extremal case explicitly, by asking what the sparsest structure of each size satisfying the condition looks like, is usually the most informative half hour in the whole exercise, because it tells you exactly how much you gave away.
+
+The result is a guarantee with a constant in it — the relaxed structure may be some fixed factor worse than the ideal, and never worse than that, at any size. That shape of statement is worth recognizing as a target when designing anything with a maintained property: bounded degradation independent of scale, purchased with local repair. It is nearly always a better deal than perfection purchased with global repair, and it is available far more often than people look for it, because the search for it requires deliberately asking what to give up rather than what to preserve.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 4.5's opening argument that an insertion procedure always restoring perfect balance has hardly any chance of being profitable since the restoration is intricate, that improvements lie in less strict definitions of balance leading to simpler reorganization at a slight cost in average search performance, and the adoption of the criterion requiring only that the two subtree heights at every node differ by at most one; together with the same section's statement that this admits location, insertion and deletion in logarithmic time even in the worst case, the cited bound that such a tree is never more than about 45% higher than its perfectly balanced counterpart regardless of node count, and the construction of the minimal-node tree of each height that establishes that worst case.

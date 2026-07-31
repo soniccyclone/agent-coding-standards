@@ -40,3 +40,6 @@ tags: [work]
 - [Let the progress counter be the precondition check, and know what it cannot tell you](../lessons/let-the-progress-counter-be-the-precondition-check.md)
 - [Competing notations are usually traversal orders of one structure](../lessons/competing-notations-are-usually-traversal-orders-of-one-structure.md)
 - [Decide whether an operation needs the value or the place, and let the interface say which](../lessons/decide-whether-the-operation-needs-the-value-or-the-place.md)
+- [Compute the distance to the ideal first; it is the entire budget for the fix](../lessons/compute-the-distance-to-the-ideal-it-is-the-budget-for-the-fix.md)
+- [Weaken the invariant until restoring it is cheap, but not past the point where it still bounds the worst case](../lessons/weaken-the-invariant-until-restoring-it-is-cheap.md)
+- [Move the contents to a position where the operation is easy](../lessons/move-the-contents-to-a-position-where-the-operation-is-easy.md)

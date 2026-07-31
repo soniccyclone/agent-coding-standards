@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Name a structure by what it forbids: the restriction is the asset, and it must be fixed before the data is written"
+figure: hoare
+works: [notes-on-data-structuring]
+axes: [hardware-affinity, expressiveness, verifiability]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Name a structure by what it forbids: the restriction is the asset, and it must be fixed before the data is written
+
+**Lesson:** A whole family of familiar structures — the stack, the queue, the double-ended queue, the input file, the output file — is one abstract thing under different restrictions. There is a single underlying notion, an ordered run of items of some type, and what distinguishes the members of the family is not what they contain but which of the update operations you agree not to use. Only take from the end you added to: stack. Only add at one end and take from the other: queue. Only take: input. Only add: output. Seen this way the familiar names are not five structures to learn but one structure plus four promises, and the promise is what carries all the engineering value.
+
+It carries the value because each restriction is what makes a cheap representation legal. If items are only ever added and removed at one end, a single position marker suffices and the links between items need only point one way. If the direction of traversal is fixed, items may be of different sizes with no extra bookkeeping, because a reader stepping in the known direction can be told each item's extent as it arrives. Relax to traversal from both ends and every one of those savings is revoked at once — you now need a link in each direction, or the size of each item recorded redundantly so it can be found from either side. The general form: permissiveness is not free generality, it is the withdrawal of every representation choice that the forbidden operation would have broken. This is why it is fortunate rather than unfortunate that most programs never need the fully permissive member of a family.
+
+Two consequences for practice. First, write the restriction down where the structure is declared, not in a comment about how it happens to be used, because it is a load-bearing part of the design and the next person will otherwise "generalize" it away for free-looking convenience. Second, the restriction must be settled before the data is committed, not after: the layout that exploits it is chosen at the moment of writing, so a decision to permit the extra operation later is not an extension but a change of representation for everything already stored. Deciding what you will never do is therefore an early decision, and the earliest place it can be recorded is the right one.
+
+**Source:** [Notes on Data Structuring](../works/notes-on-data-structuring.md) — the sequence chapter, which treats stacks, queues, deques, strings, files and lists as representations of one abstract sequence notion; the manipulation section, which defines input sequence, output sequence, stack, queue and deque purely by which selective updating operations are permitted, notes that equal efficiency for all four operations requires representational complexity, and states that deciding a representation requires knowing which of the updating operations will be performed; and the representation sections, where single-linked chains suffice when the reading direction is known and variable-length items need no padding provided that direction is known at the time of writing, while reading from both ends forces two links or redundant length information.

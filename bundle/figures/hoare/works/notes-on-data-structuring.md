@@ -33,3 +33,5 @@ tags: [work]
 - [Going from bounded to unbounded is a cliff, not a gradient: stay on the cheap side until the application forces you off](../lessons/the-finite-to-unbounded-step-is-a-cliff-not-a-gradient.md)
 - [The shape of the data dictates the shape of the program: each way of composing data has exactly one matching control structure](../lessons/the-shape-of-the-data-dictates-the-shape-of-the-program.md)
 - [Buffering absorbs variance, never a rate deficit — past two or three, extra buffers only delay the diagnosis](../lessons/buffers-absorb-variance-not-a-rate-deficit.md)
+- [Name a structure by what it forbids: the restriction is the asset, and it must be fixed before the data is written](../lessons/name-a-structure-by-what-it-forbids.md)
+- [Give a value one representation for processing and another for transport, and make the conversion an explicit phase](../lessons/one-value-two-representations-processing-and-transport.md)

@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "When a question about your objects has no affordable answer, redefine the objects so it cannot be asked"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# When a question about your objects has no affordable answer, redefine the objects so it cannot be asked
+
+**Lesson:** Before writing a line of polynomial arithmetic, the authors run into questions with no clean answers. Is a polynomial in x the same object as the identical polynomial in y? Is a polynomial in x whose coefficients are polynomials in y the same as its rearrangement the other way round? Both are legitimate mathematics and both answers are defensible — "yes if you mean the function, no if you mean the form." Rather than pick a side and build machinery to enforce it, they declare what a polynomial *is* in their system: a particular syntactic form, not the mathematical meaning behind it. The questions do not get answered. They stop applying.
+
+The move is a definitional one and it is worth recognizing as a distinct tool. Most engineering effort goes into answering hard questions; some of the highest-leverage effort goes into narrowing the object so that a whole family of hard questions is out of scope by construction. Equality is where this bites most often, because equality on a rich domain is almost never one relation — the same two values are equal as sets and different as sequences, equal as quantities and different as measurements, equal as documents and different as byte streams. A system that promises "equal" without saying which one has taken on an obligation it cannot meet.
+
+Two things make this honest rather than a dodge. First, it is stated, up front, as a decision — not left implicit for a maintainer to discover from behaviour. Second, the narrowing is not free and they say so: they also restrict combination to polynomials with the same indeterminate and signal an error otherwise, which is the visible price of the definition. Later they pay more of it, noting that polynomials in different principal variables have no natural order between them and that forcing a canonical form can expand an expression pointlessly. A restriction adopted deliberately, with its consequences tracked, is engineering. The same restriction adopted silently is a bug waiting for the first user who assumed the other reading.
+
+The general practice: when you find yourself designing machinery to adjudicate whether two things "really" count as the same, stop and ask whether you are entitled to define the domain such that the question is malformed. Often you are, and the resulting system is smaller, faster and easier to reason about — at the cost of a stated boundary you must then defend. The failure mode is the opposite: taking on the general notion because it feels more correct, and shipping an equality that is wrong in a different way for each caller.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) - chapter 2 section 2.5.3's opening on arithmetic on polynomials, which raises whether a polynomial in x equals the same polynomial in y and whether a polynomial in x with coefficients in y should be recognized as equivalent to its rearrangement, observes that a reasonable answer depends on whether one means the mathematical function or the syntactic form, and finesses the questions by deciding that in this system a polynomial is a particular syntactic form and not its underlying mathematical meaning; together with the accompanying restriction that combined polynomials must share an indeterminate, and the later observation under hierarchies of types in symbolic algebra that neither of two polynomials in different variables is naturally above the other and that imposing a canonical form may expand a polynomial unnecessarily.

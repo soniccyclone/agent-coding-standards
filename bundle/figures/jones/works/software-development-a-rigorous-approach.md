@@ -32,3 +32,6 @@ tags: [work]
 - [Most obligations are vacuous, which is exactly what makes checking every one of them affordable](../lessons/most-obligations-are-vacuous-which-is-what-makes-checking-everything-affordable.md)
 - [Give a sub-unit the widest terms it can honour, never the terms its one caller happens to need](../lessons/give-a-sub-unit-the-widest-terms-it-can-honour-not-the-ones-its-caller-needs.md)
 - [Derive the invariant from the goal by putting the progress variable where the target value stands](../lessons/derive-the-invariant-from-the-goal-by-substituting-the-progress-variable.md)
+- [Two descriptions from different viewpoints catch errors because their mistakes do not conspire](../lessons/errors-in-two-descriptions-do-not-conspire.md)
+- [A method cannot be judged on small examples, because the property you are buying is invisible there](../lessons/a-method-cannot-be-judged-on-small-examples.md)
+- [Put the proven artifact above the level where arbitrary commitments live, so one argument covers a family](../lessons/put-the-proven-artifact-above-the-level-where-arbitrary-commitments-live.md)

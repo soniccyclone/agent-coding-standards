@@ -19,7 +19,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: none yet.
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: 3.1.6 through 3.3.3 (lines 8101-9973).
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
@@ -58,3 +58,6 @@ tags: [work]
 - [Derive the cost formula first; it names the one coefficient worth attacking](../lessons/let-the-closed-form-cost-tell-you-which-coefficient-to-attack.md)
 - [The quantity you make shrink is a design choice, and changing it gives a different algorithm with the same shape](../lessons/the-measure-that-shrinks-is-a-design-variable.md)
 - [A rule you validated on closed code can be false the moment a name can be supplied from outside](../lessons/a-rule-valid-in-a-closed-program-can-fail-once-names-come-from-outside.md)
+- [You need two separate maps — names to things, things to values — before aliasing is even expressible](../lessons/two-levels-of-map-are-needed-before-aliasing-is-even-expressible.md)
+- [Move the side condition inside the claim, and instantiation can no longer produce a falsehood](../lessons/move-the-side-condition-inside-the-claim.md)
+- [Give the metavariables real types and the rule schema collapses into an ordinary statement](../lessons/give-your-metavariables-real-types-and-the-schema-becomes-a-statement.md)

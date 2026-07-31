@@ -64,6 +64,8 @@ tags: [work]
 - [Look for the part that depends on fewer things than the whole, and factor along that seam](../lessons/factor-out-the-part-that-depends-on-fewer-things.md)
 - [A hierarchy earns its keep by making one path unique, not by classifying things](../lessons/a-hierarchy-earns-its-keep-by-making-the-path-unique.md)
 - [Decide whether a value really belongs to the simpler type by round-tripping the lossy conversion](../lessons/decide-membership-by-round-tripping-the-lossy-conversion.md)
+- [When a question about your objects has no affordable answer, redefine the objects so it cannot be asked](../lessons/decide-what-your-object-is-so-the-unanswerable-question-cannot-arise.md)
+- [Combine your parts with the generic operation and the data, not the author, decides how deep the structure goes](../lessons/call-the-generic-operation-and-the-data-decides-the-recursion.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

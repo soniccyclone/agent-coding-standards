@@ -52,6 +52,10 @@ tags: [work]
 - [Trust attaches to a channel, not to the entity that owns it](../lessons/trust-attaches-to-a-channel-not-to-an-entity.md)
 - [When one score conflates two kinds of value, define them by mutual reference](../lessons/split-a-conflated-score-into-mutually-defining-roles.md)
 - [Eliminating the intermediate can destroy the structure that made it cheap](../lessons/algebraic-simplification-can-destroy-the-structure-that-made-it-cheap.md)
+- [The roles in a relation are the least constrained part of your model — try swapping them](../lessons/the-roles-in-a-relation-are-the-least-constrained-part-of-your-model.md)
+- [Let the consumer's capacity to act set the threshold, then build on that assumption](../lessons/let-the-consumers-capacity-to-act-set-the-threshold.md)
+- [Your bookkeeping, not your input, sets the problem size you can handle](../lessons/your-bookkeeping-not-your-input-sets-the-problem-size-you-can-handle.md)
+- [The intervention you plan decides which correlation measure is the right one](../lessons/the-intervention-you-plan-decides-which-correlation-measure-is-right.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

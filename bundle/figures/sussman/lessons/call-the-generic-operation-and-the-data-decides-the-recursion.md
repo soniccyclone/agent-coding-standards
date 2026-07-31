@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Combine your parts with the generic operation and the data, not the author, decides how deep the structure goes"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [expressiveness, primitive-count]
+subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Combine your parts with the generic operation and the data, not the author, decides how deep the structure goes
+
+**Lesson:** The polynomial package adds two polynomials by adding coefficients of matching order. There is a single choice buried in that sentence that determines the entire reach of the system: whether the coefficients are combined with primitive addition or with the generic addition. The authors flag it as the most important point in the procedure, and then show the consequence. Because the coefficients are combined generically, and because polynomials are themselves installed as a type the generic operations know about, coefficients may be polynomials — and multiplying two polynomials in x whose coefficients are polynomials in y works, unplanned, with no code written for the multivariate case. The recursion goes as many levels as the data has, not as many as anyone anticipated.
+
+Call the general phenomenon what it is: the depth of the structure a component can handle is set by what it calls to combine parts, not by what it was designed for. Reaching for the concrete operation pins the component to one level. Reaching for the dispatching one makes the component a rule about *shape* — combine parts of like kind — that happens to be instantiated at whatever depth the value in front of it goes. This is why a small polynomial package covers multivariate polynomials, and why an evaluator written against generic application covers programs it was never shown.
+
+The practical version of the advice is uncomfortable, because the generic call always looks like unnecessary indirection when the only coefficients you have ever seen are numbers. It is the same line of code, slower, harder to trace, buying capability you cannot presently demonstrate. The test that makes the decision non-arbitrary: ask whether the thing being combined could ever be an instance of the aggregate you are defining. If a polynomial's coefficient could be a polynomial, a list's element could be a list, a document's field could be a document, then the concrete call has quietly imposed a depth limit — and depth limits imposed by a call site are the kind you discover from a type error three years later, with no local fix.
+
+There is a caveat the authors put in a footnote and it generalizes just as well. For the recursion to close smoothly, the simple cases must be reachable from the general one: adding a plain number to a polynomial coefficient requires that a number can be seen as a degree-zero polynomial. Self-similar structure only composes freely if the leaves can be promoted into the interior. When you build something recursive, the piece to check is not the recursive step, which usually works — it is whether the base values live in the same universe as the compound ones, or in a separate one you will spend the rest of the project bridging.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) - chapter 2 section 2.5.3's arithmetic on polynomials, where add-terms combines coefficients of equal order using the generic add and the text calls this the most important point to note; the following observation that because terms are combined with generic add and mul the package automatically handles any coefficient type the generic arithmetic knows, including complex and rational coefficients under coercion; the worked example of multiplying polynomials in x whose coefficients are polynomials in y, described as a data-directed recursion in which mul-poly calls mul-poly and would continue through as many levels as the data dictates; and the footnote noting that this works completely smoothly only if a number can be coerced to a degree-zero polynomial.

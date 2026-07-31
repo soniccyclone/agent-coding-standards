@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Distort the input to stay inside the domain you can compute in, when the consumer cancels the distortion"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [verifiability, hardware-affinity]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Distort the input to stay inside the domain you can compute in, when the consumer cancels the distortion
+
+**Lesson:** Euclid's algorithm computes greatest common divisors of polynomials as readily as of integers, and then in practice it does not, because the repeated divisions manufacture fractional coefficients from integer inputs. Depending on how the host arithmetic handles those, the result is either a valid divisor in a wider domain or numerical garbage. The fix is not to make the divisions exact or to widen the value type. It is to multiply the dividend by a chosen constant beforehand, so that every division in the run happens to come out whole. The algorithm never leaves the integers, and the answer it returns is off by a constant factor.
+
+The interesting reasoning is what licenses accepting that wrong answer. The result is not used as a greatest common divisor in general — it is used to divide both the numerator and the denominator of a fraction, and a constant factor applied to both of them cancels. The output is wrong in a dimension the only consumer is blind to. This is a specific and checkable form of correctness: not "the function computes the mathematical object," but "the function's deviation from the mathematical object is annihilated by the use." Establishing that is real work, and it is the step that turns a hack into a technique.
+
+Both halves of the move generalize. The first half — deform the input so the computation stays inside a domain where the operations are exact, cheap or total — is the same instinct behind scaling to fixed point instead of using floats, clearing denominators before solving, working with counts instead of proportions, and normalizing units at the boundary rather than converting mid-computation. The second half is the discipline that makes it safe: name precisely how the answer differs from the ideal, then prove the difference does not survive contact with the caller. Skip the second half and you have introduced an error that is invisible until someone reuses the function for a purpose that does not cancel it — which is exactly what will happen, since the function's name still claims to compute the real thing.
+
+The honest accounting continues past the trick. The authors note the resulting coefficients come out enormous, so a further pass divides them down by their common factor; and that the whole algorithm remains extremely slow, partly from the division count and partly from the size of those intermediates, with better methods an active research area. That is the right way to hold a technique like this: it bought exactness inside a fixed domain, it cost magnitude and speed, and it is the current best rather than the end of the story.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) - chapter 2 section 2.5.3's extended exercise on rational functions, which defines gcd-terms by analogy with the integer Euclid's algorithm, notes via Exercise 2.95 that the computation introduces noninteger operations and may fail to produce a valid divisor, then introduces multiplying the dividend by an integerizing factor derived from the leading coefficient and the difference of orders so that no fractions arise during division (pseudodivision and pseudoremainder), argues that the answer differing from the true gcd by an integer constant factor does not matter because the gcd divides both numerator and denominator so the factor cancels, adds a final pass removing the common integer factor from the enlarged coefficients, and closes by noting the algorithm is extremely slow because of the division count and the size of the intermediate coefficients.

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Move the contents to a position where the operation is easy"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, expressiveness]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Move the contents to a position where the operation is easy
+
+**Lesson:** Some operations are hard at a particular position not because the problem is hard but because the linkage cannot express the result. A structure where each place holds one outgoing connection cannot absorb the removal of a place that has two things depending on it, and a structure whose connections run one way cannot reach the predecessor of a given place. These are limits of the representation, and arguing with them directly produces the worst code in the program. The productive reaction is to notice that the difficulty attaches to the *position*, while what the caller cares about is the *contents*, and those are separable. Find a nearby position where the operation is trivial — one with at most one dependent, or one you can reach going forwards — and arrange for the contents to be where they need to be by moving them, letting the cheap position absorb the structural change.
+
+Choosing the substitute position is the part that carries the correctness argument, and it is always the same shape of argument: among the places whose structural removal is easy, which one can take over the vacated role without disturbing the property the whole structure maintains? For an ordered structure, that is the immediately adjacent element on either side, since replacing a value by its neighbour leaves every ordering relation intact; and adjacency in an ordered branching structure is reached by descending as far as possible in one direction, which conveniently lands on exactly the kind of position that is easy to remove. The two constraints — easy to remove, and safe to substitute — meet at one candidate, and that coincidence is what makes the technique work rather than luck.
+
+The cost is precise and easy to miss: the contents and the position have been decoupled, so anything outside that was holding a position now holds the wrong contents, or holds a position that no longer exists. Within a self-contained structure whose only entry point is the root, this is free. As soon as external references to internal positions are handed out, the technique becomes unsound, and the choice is to stop handing out those references or to stop using the technique. State which you chose. The general principle is worth carrying past linked structures entirely: when an operation is expensive at the location the specification names, look for a location where it is cheap and an equivalence that lets you do it there instead — most of the time the equivalence is a symmetry the specification already guarantees, sitting unused.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 4.4.4's treatment of deleting a node with two descendants, where the stated obstacle is that a single pointer cannot point in two directions, and the resolution replaces the deleted element by the rightmost element of its left subtree or the leftmost of its right subtree, both of which have at most one descendant, by copying that element's key and count into the node being deleted and then unlinking it; and section 4.3.1's parallel devices for a one-way chain, inserting before a designated element by inserting after it and interchanging the two values, and deleting a designated element by moving its successor's value forward, with the accompanying caution that this is only sound if no other variables point to the element that disappears.

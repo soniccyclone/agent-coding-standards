@@ -51,6 +51,7 @@ tags: [work]
 - [A constraint does not have to determine a unique implementation, only the properties the argument downstream actually consumes](../lessons/a-constraint-need-not-pin-down-one-model-only-the-properties-you-use.md)
 - [Declaring an equality is cheap; the obligation that every operation respects it is paid separately for each operation and each argument position](../lessons/equality-is-cheap-congruence-is-paid-per-operation-per-position.md)
 - [A rule that repeated expert attempts fail to state correctly is composite, not merely hard, and the right primitive decomposes it into pieces that are each obviously right](../lessons/a-rule-nobody-can-state-correctly-is-composite-not-difficult.md)
+- [A property you must assert separately at every site is a symptom of not being able to quantify over the sites; gain that power and the whole family collapses into a definition](../lessons/an-assertion-repeated-at-every-site-means-you-cannot-quantify-over-the-sites.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes._
 
