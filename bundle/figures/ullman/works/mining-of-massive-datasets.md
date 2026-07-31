@@ -164,6 +164,11 @@ tags: [work]
 - [Encoding categories as numbers asserts distances you did not mean](../lessons/encoding-categories-as-numbers-asserts-distances-you-did-not-mean.md)
 - [Your components' outputs are a new dataset — learn the combination](../lessons/your-components-outputs-are-a-new-dataset-learn-the-combination.md)
 
+<!-- Two lessons from earlier passes cited this work in their frontmatter but were
+     never linked here; relinked 2026-07-31. -->
+- [Count your free parameters against your observations](../lessons/count-your-free-parameters-against-your-observations.md)
+- [Posit a few hidden causes and fit them, so the model fills in what was never observed](../lessons/posit-few-hidden-causes-and-fit-them-to-fill-what-was-never-observed.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in
@@ -209,16 +214,15 @@ _Chapter 11 (dimensionality reduction, lines 20377-21937) was read in full on
 deflation, canonical forms, the two Gram matrices, truncation criteria, CUR and
 sparsity, importance sampling, the pseudoinverse)._
 
-_Chapter 12 (large-scale machine learning) is PARTIALLY read as of 2026-07-31.
-Sections 12.1 (the ML model), 12.2 (perceptrons, all subsections including the
-parallel implementation) and 12.3.1-12.3.3 (SVM mechanics, normalizing the
-hyperplane, the soft-margin objective through the start of the penalty
-discussion) were read in full, lines 21980-23193, yielding the twelve lessons in
-the block above. **Resume at line 23193**, mid-section 12.3.3, at the explanation
-of the penalty term in the SVM objective._
+_Chapter 12 (large-scale machine learning, lines 21980-24658) was read in full on
+2026-07-31, end to end — the ML model and architecture, perceptrons and Winnow,
+support-vector machines and gradient descent, nearest-neighbour learning and
+kernel regression, decision trees, forests, and the closing comparison of
+methods — yielding the twenty-three lessons in the block above._
 
-_Remaining: rest of ch12 from line 23193 (SVM gradient descent, k-nearest
-neighbours, decision trees, comparison of learning methods),
-ch13 neural nets (24693). Chapters 2-4 should also get a hand re-read at the same
-depth as chapter 1 before this work is attested. `extraction: complete`
-deliberately withheld._
+_**Remaining: chapter 13 only (neural nets and deep learning), lines 24659-27631
+— entirely unread.** Its contents are the introduction and extended example,
+dense feed-forward nets, backpropagation, convolutional nets, recurrent nets and
+LSTMs, and regularization. Resume at line **24693** (section 13.1). Chapters 2-4
+should also get a hand re-read at the same depth as chapter 1 before this work is
+attested. `extraction: complete` deliberately withheld._
