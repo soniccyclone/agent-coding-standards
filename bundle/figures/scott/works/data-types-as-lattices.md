@@ -33,3 +33,4 @@ tags: [work]
 - [A representation is abstract exactly when only distinguishability is required of it](../lessons/abstract-means-only-distinguishability-is-required.md)
 - [Choose an encoding by the law you need it to satisfy, not by which one looks natural](../lessons/choose-an-encoding-by-the-law-you-need-it-to-satisfy.md)
 - [Close the tower, so statements about your system become statements in it](../lessons/close-the-tower-so-theorems-about-the-system-become-formulas-in-it.md)
+- [The shape of a defining condition is a measurement of how it can be tested](../lessons/the-shape-of-a-defining-condition-measures-how-it-can-be-tested.md)

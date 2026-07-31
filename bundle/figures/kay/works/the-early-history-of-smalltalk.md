@@ -21,3 +21,6 @@ tags: [work]
 ## Lessons
 - [Read the previous generation as almost a new thing, take an extreme position to force the new one out, and be willing to burn what already works](../lessons/read-the-previous-generation-as-almost-a-new-thing.md)
 - [Never divide a system into kinds of thing weaker than the whole; make every part carry the whole system's power](../lessons/never-divide-a-system-into-things-weaker-than-itself.md)
+- [Make the hardest thing you need your one primitive, and judge a small basis by its slope rather than its size](../lessons/build-from-the-hardest-thing-and-judge-a-basis-by-its-slope.md)
+- [The exceptions to a system's central claim are where the next design lives, so invert the default instead of encoding around them](../lessons/the-exceptions-to-your-central-claim-are-the-design.md)
+- [Replace changing a component's state with asking it to achieve something, and measure a construct by the intent it carries](../lessons/replace-assignment-with-goals.md)

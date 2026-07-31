@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "The shape of a defining condition is a measurement of how it can be tested"
+figure: scott
+works: [data-types-as-lattices]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [formal-methods-and-verification, foundations-of-computation, programming-languages-and-semantics]
+tags: [lesson]
+---
+# The shape of a defining condition is a measurement of how it can be tested
+
+**Lesson:** Scott arrives at this from a very ordinary need. His recursively defined type of trees contains, besides the well-formed finite ones he wanted, infinite ones and degenerate ones, and he wants to sift out the good part. He writes a small recursive function whose value marks exactly the trees he means to keep, and then asks the question that turns the local trick into a theory: which subsets can be picked out by an equation at all? The answer is a graded correspondence in which each syntactic shape of defining condition matches exactly one structural class of subset. Requiring that a computed value contains a particular mark carves out precisely the properties confirmable from a finite part of the object. Requiring that a computed value be entirely undefined carves out their complements — the ones only ever refutable from a finite part. An equation between two computed values reaches a far richer class, and Scott singles it out as the interesting one for a practical reason rather than a mathematical one: equations between computed things are what actually turn up. Past that you need quantifiers, and he says so plainly — this is as far as equations go.
+
+The takeaway is that the form of the statement you need in order to say what a property is, is not a stylistic matter. It is a measurement of the property. Whether a condition can be established by observing finitely much, only refuted by observing finitely much, or neither, is readable off the shape of its definition, and that same fact is exactly what determines what kind of check the condition admits: a monitor that can raise an alarm but never certify, a certifier that can never raise an alarm, or nothing finite in either direction. Two properties that read as equally reasonable English sentences can sit on opposite sides of that line, and the way to find out which is to write each one down as precisely as you can and look at the form you were forced into.
+
+The corollary is a habit for when you catch yourself needing to add a quantifier — needing to say "for every" or "there exists" over something unbounded — to state a condition. That is not a longer sentence; it is a crossing. On one side lie conditions you can test by looking, on the other conditions that no amount of looking settles, and the cost is incurred at the moment of writing the definition, long before anyone tries to implement a check. It is worth asking at that moment whether the quantified condition is really the one you need, or whether a weaker equational condition would serve, because that substitution is the difference between a property your system can observe about itself and one it can only assume.
+
+**Source:** [Data Types as Lattices](../works/data-types-as-lattices.md) — Section 6, which opens by using a recursively defined function to sift the perfect finite trees out of the tree retract, generalizes to the question of which subsets can be characterized by equations, and then works through the sequence of characterization theorems matching each class of subset to the form of the defining equation; together with Scott's remark that the class defined by equating two continuous functions is the most interesting because such equations turn up all the time, and his statement that this is as far as equations go, more complicated sets requiring quantifiers.
