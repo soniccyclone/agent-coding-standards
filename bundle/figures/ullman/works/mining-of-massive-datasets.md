@@ -127,6 +127,10 @@ tags: [work]
 - [Deduplicating derivations is not deduplicating conclusions](../lessons/deduplicating-derivations-is-not-deduplicating-conclusions.md)
 - [Collapse the equivalence your question cannot distinguish](../lessons/collapse-the-equivalence-your-question-cannot-distinguish.md)
 - [A uniform probe finds the large groups first](../lessons/a-uniform-probe-finds-the-large-groups-first.md)
+- [An optimal algorithm with a long dependency chain is the wrong one at scale](../lessons/an-optimal-algorithm-with-a-long-dependency-chain-is-the-wrong-one-at-scale.md)
+- [Prefer a summary whose merge is idempotent](../lessons/prefer-a-summary-whose-merge-is-idempotent.md)
+
+- [A tolerance that is fine for a final answer is not fine for a recycled one](../lessons/a-tolerance-that-is-fine-for-a-final-answer-is-not-fine-for-a-recycled-one.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -162,7 +166,13 @@ and 9 (recommendation systems — long tail, content-based, collaborative filter
 UV decomposition) are both already covered by existing lessons. The genuinely
 unread span begins at line **16919**, the start of chapter 10._
 
-_Remaining: ch10 social-network graphs (16919), ch11 dimensionality reduction
-(20377), ch12 large-scale ML (21980), ch13 neural nets (24693). Chapters 2-4
-should also get a hand re-read at the same depth as chapter 1 before this work is
-attested. `extraction: complete` deliberately withheld._
+_Chapter 10 (mining social-network graphs, lines 16919-20376) was read in full on
+2026-07-31 (fourth agent pass), yielding the twenty-eight lessons in the block
+above — from the two-valued-distance critique through betweenness, complete
+bipartite subgraphs, spectral partitioning, affiliation models, Simrank, triangle
+counting, transitive closure, SCC collapse and ANF._
+
+_Remaining: ch11 dimensionality reduction (20377), ch12 large-scale ML (21980),
+ch13 neural nets (24693). Chapters 2-4 should also get a hand re-read at the same
+depth as chapter 1 before this work is attested. `extraction: complete`
+deliberately withheld._
