@@ -20,4 +20,4 @@ tags: [work]
 **Source:** https://worrydream.com/refs/Hoare_1981_-_The_Emperors_Old_Clothes.pdf — hosted in Bret Victor's personal reference archive (worrydream.com), a well-known curated collection of primary-source computing papers. Content verified directly: extracted text opens "The Emperor's Old Clothes / By C.A.R. Hoare / Communications of the ACM, 1981." The official ACM Digital Library copy (dl.acm.org) returned 403/paywalled during this check.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Comprehension is a project's real capacity limit: build nothing the accountable person cannot follow](../lessons/comprehension-is-the-real-capacity-limit-of-a-project.md)

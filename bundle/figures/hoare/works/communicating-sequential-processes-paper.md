@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 1
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -27,3 +28,4 @@ tags: [work]
 - [Define an unbounded facility as the limit of bounded ones, so no run needs semantics the bounded language lacks](../lessons/define-the-unbounded-case-as-the-limit-of-bounded-ones.md)
 - [Prove a construct is missing with a closure property, not with an appeal to symmetry](../lessons/prove-a-construct-is-missing-with-a-closure-property.md)
 - [Rate a convenience by what retreating from it would cost, and ship the restrictive version first](../lessons/rate-a-convenience-by-the-cost-of-retreating-from-it.md)
+- [Defer the packaging problem, but bind it in advance: whatever runs must be a readable program in the same language](../lessons/whatever-runs-must-be-a-readable-program-in-the-same-language.md)

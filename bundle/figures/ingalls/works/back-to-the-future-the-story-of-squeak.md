@@ -9,6 +9,7 @@ url: http://files.squeak.org/docs/OOPSLA.Squeak.html
 survey_text_layer: full
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -24,3 +25,4 @@ tags: [work]
 - [Treat the order of a bootstrap as a design artifact: make every stage observable, and deliberately under-build whatever that stage cannot stress](../lessons/sequence-a-bootstrap-and-underbuild-what-cannot-be-stressed-yet.md)
 - [Measure the cost your architecture exists to avoid — the avoidance machinery is often the more expensive half, and deleting it deletes a family of problems](../lessons/measure-the-cost-you-built-an-architecture-to-avoid.md)
 - [Design representations so the cheap conversion is the correct one, quantize the parameter you cannot afford exactly, and perform each operation in the space where its algebra actually holds](../lessons/make-representations-nest-and-operate-where-the-algebra-holds.md)
+- [Portability is a countable surface, and only a stranger can test it: concentrate the host-specific part, and refuse host facilities to keep behavior identical everywhere](../lessons/portability-is-a-countable-surface-tested-only-by-strangers.md)

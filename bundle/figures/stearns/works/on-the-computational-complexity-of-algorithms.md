@@ -22,4 +22,7 @@ tags: [work]
 **Host:** institutional — American Mathematical Society, publisher of record.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [An equivalence proved at one resolution licenses nothing at a finer one](../lessons/an-equivalence-at-one-resolution-licenses-nothing-finer.md)
+- [The invariance you demanded is what makes the question undecidable](../lessons/the-invariance-you-demanded-is-what-makes-it-undecidable.md)
+- [To prove something impossible, count what can be remembered against what must be distinguished](../lessons/count-what-can-be-remembered-against-what-must-be-distinguished.md)
+- [When you give up names, the whole emulation cost collapses into deciding identity](../lessons/emulation-cost-is-the-cost-of-deciding-identity.md)

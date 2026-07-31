@@ -23,3 +23,7 @@ tags: [work]
 ## Lessons
 - [Calibrate a critique to whether you failed to find something or proved it cannot exist](../lessons/calibrate-a-critique-to-whether-you-searched-or-proved.md)
 - [When the motivation for an approach collapses, its machinery is usually still the valuable part](../lessons/a-superseded-motivation-does-not-supersede-the-machinery.md)
+- [Keep the apparatus you reason with out of the domain you are modeling](../lessons/keep-the-apparatus-you-reason-with-out-of-the-domain-you-model.md)
+- [State what a data type must satisfy instead of defining it as one representation](../lessons/give-a-theory-of-a-data-type-not-a-definition-of-it.md)
+- [Read your proof rule off the construction, and do not settle for its convenient instances](../lessons/take-the-proof-rule-from-the-construction.md)
+- [A symmetric operator is a claim about the execution model, not just a truth table](../lessons/a-symmetric-operator-is-a-claim-about-the-execution-model.md)

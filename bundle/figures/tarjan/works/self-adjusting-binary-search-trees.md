@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 5
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -27,3 +28,4 @@ tags: [work]
 - [Specify in the form that proves easily, implement in the form that fuses the passes, and keep the equivalence explicit](../lessons/specify-in-the-form-that-proves-implement-in-the-form-that-fuses.md)
 - [An adaptive process that is cheap overall must pass through states worth keeping, so you can stop adapting and harvest one](../lessons/an-adaptive-process-worth-running-passes-through-states-worth-keeping.md)
 - [Trigger maintenance on the gap between predicted and observed cost, and reject any tuning rule that needs the answer up front](../lessons/trigger-maintenance-on-the-gap-between-predicted-and-observed-cost.md)
+- [State the claim you cannot prove precisely enough for someone else to attack it](../lessons/state-the-claim-you-cannot-prove-precisely-enough-to-be-attacked.md)
