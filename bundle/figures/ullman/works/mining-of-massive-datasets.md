@@ -200,6 +200,8 @@ tags: [work]
 - [Grouping erases where a value came from, so make origin part of the value](../lessons/grouping-erases-origin-so-carry-origin-as-data.md)
 - [When you push a global operation earlier, name the residue it cannot remove](../lessons/name-the-residue-a-local-pass-cannot-remove.md)
 - [Find the established algebra your problem is already in](../lessons/find-the-established-algebra-your-problem-is-already-in.md)
+- [Deferring execution is what turns a program into a plan](../lessons/deferring-execution-turns-a-program-into-a-plan.md)
+- [Returning a collection as one value hides your fan-out from the system](../lessons/returning-a-collection-hides-cardinality-from-the-scheduler.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

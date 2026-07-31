@@ -59,10 +59,13 @@ example onward, all of chapter 18 *Earley's Recognizer, opening of chapter 19),
 "Programs and Their Data"), and the 19071-19194 gap between the third session's
 recorded spans.
 
-**Current position: line 16636** — read 15402-16636 (end of chapter 17, all of
-chapter 18 *Earley's Recognizer through the Program section). This number is updated
-as the read advances, so whatever it says is the resume point.
-Position log: 341 -> 14254 (span complete) -> 15402 -> 16636.
+**Current position: line 17740** — span 15402-16835 read in full (balance of chapter
+17 from the class-construct example through "Limitations", all of chapter 18
+*Earley's Recognizer including Modifications, Summary and exercises, and the opening
+of chapter 19 Input/Output Statements through the start of its Proofs section).
+Moving to the next unread span, 17740-18189. This number is updated as the read
+advances, so whatever it says is the resume point.
+Position log: 341 -> 14254 (span complete) -> 15402 -> 16835 (span complete) -> 17740.
 
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)
@@ -124,3 +127,6 @@ Position log: 341 -> 14254 (span complete) -> 15402 -> 16636.
 - [The first design step is to restate the check as a construction, before any representation or ordering is chosen](../lessons/the-first-design-step-is-to-restate-the-check-as-a-construction.md)
 - [Bound an accumulating structure from both sides, and you have characterised a family of algorithms rather than checked one](../lessons/bound-a-structure-from-both-sides-to-characterise-a-family.md)
 - [Put a penultimate level between the abstraction and the machine: target shape, reasoning notation](../lessons/put-a-penultimate-level-between-the-abstraction-and-the-machine.md)
+- [Justify skipping work by showing what you skipped was empty, and prefer a filter that can only err toward doing it](../lessons/justify-a-skip-by-showing-the-skipped-work-was-empty.md)
+- [If the algorithm did not change, you simulated the description rather than implemented it](../lessons/if-the-algorithm-did-not-change-you-simulated-rather-than-refined.md)
+- [A change you anticipated is not evidence your design absorbs change](../lessons/a-change-you-anticipated-is-not-evidence-your-design-absorbs-change.md)

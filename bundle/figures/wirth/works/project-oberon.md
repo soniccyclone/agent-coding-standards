@@ -26,13 +26,13 @@ tags: [work]
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 16294 — third agent has read and mined chapter 12 through
-section 12.6 (code patterns 1-15; internal data structures Object/Item/Struct; the
-OCS/OCE/OCH interfaces; 12.4 the parser; 12.5 the scanner; 12.6 symbol table search and
-symbol files, through the worked Sample symbol-file listing and the byte-comparison
-paragraph). Lines 14830-15799 (module Compiler) and 15825-16108 (module OCS) are pure
-Oberon source, checked and confirmed to hold no prose. Now entering the module OCT
-listing at 16294; next prose section is 12.7 at line 16781.**
+**Current position: line 16957 — third agent has read and mined chapter 12 through
+section 12.7's prose (code patterns 1-15; Object/Item/Struct; the OCS/OCE/OCH interfaces;
+12.4 parser, 12.5 scanner, 12.6 symbol table and symbol files, 12.7 code selection
+including the mode-transition tables, the F-list/T-list scheme and the standard-procedure
+remarks). Lines 14830-15799 (module Compiler), 15825-16108 (module OCS) and 16294-16781
+(module OCT) are pure Oberon source, checked and confirmed to hold no prose. Now in the
+module OCE listing at 16957; next prose section is 12.8 at line 18475.**
 
 **Earlier: chapter 9 complete and mined (9.1-9.4, including the
 serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
@@ -187,4 +187,5 @@ section are where the extractable lessons are.
 - [Precompute only what you can also precompute the failure of](../lessons/precompute-only-what-you-can-also-precompute-the-failure-of.md)
 - [Thread the list of pending holes through the holes themselves](../lessons/thread-the-list-of-pending-holes-through-the-holes.md)
 - [Keep the description unmaterialized until a step cannot be absorbed](../lessons/keep-the-description-unmaterialized-until-a-step-cannot-be-absorbed.md)
+- [A subsumption rule must be checked once per position, not once](../lessons/a-subsumption-rule-must-be-checked-once-per-position-not-once.md)
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)
