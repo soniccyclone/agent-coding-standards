@@ -28,3 +28,6 @@ tags: [work]
 - [If safety demands a check at every use, redesign the notation so the fact is established once and carried by scope](../lessons/establish-a-fact-once-and-let-scope-carry-it.md)
 - [Carry provenance in the value, because an error of interpretation produces results outside your model entirely](../lessons/carry-provenance-in-the-value-not-in-the-readers-head.md)
 - [Sharing one copy is an optimization licensed only by immutability, and the licence must travel with the technique](../lessons/sharing-is-an-optimization-licensed-only-by-immutability.md)
+- [Get full machine efficiency without machine dependence by naming the machine's parameter and computing from it](../lessons/parameterize-on-the-machine-property-not-the-machine.md)
+- [Write the unaffordable version first and keep it: the abstract program is the frame the efficient one is built on](../lessons/keep-the-abstract-version-as-the-frame-of-the-concrete-one.md)
+- [Going from bounded to unbounded is a cliff, not a gradient: stay on the cheap side until the application forces you off](../lessons/the-finite-to-unbounded-step-is-a-cliff-not-a-gradient.md)

@@ -48,6 +48,7 @@ tags: [work]
 - [The order fixed in a normalization procedure exists to make the answer unique, not because it is the right order; when you have a target form, steer toward it](../lessons/a-canonical-order-is-a-tie-breaker-not-a-law.md)
 - [Two problems shown equivalent are equivalent only in the property the reduction actually carries, and the ones it drops are usually constructivity and cost](../lessons/equivalent-problems-are-equivalent-only-in-the-property-the-reduction-carries.md)
 - [Holding at every finite size is not holding in the limit, so an exhaustive check over all bounded cases can be complete and still prove the wrong thing](../lessons/holding-at-every-finite-size-is-not-holding-in-the-limit.md)
+- [A constraint does not have to determine a unique implementation, only the properties the argument downstream actually consumes](../lessons/a-constraint-need-not-pin-down-one-model-only-the-properties-you-use.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes._
 

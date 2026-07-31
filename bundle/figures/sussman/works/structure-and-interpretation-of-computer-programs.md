@@ -59,6 +59,7 @@ tags: [work]
 - [Consume the statistics into the structure so the runtime never needs them](../lessons/consume-the-statistics-into-the-structure.md)
 - [The argument for generic operations is organizational, not aesthetic: nobody can agree in advance](../lessons/the-case-for-genericity-is-that-agreement-is-impossible.md)
 - [Deferring a decision and turning it into data are different moves, and the second costs you self-evident meaning](../lessons/deferring-a-choice-and-turning-it-into-data-are-different-moves.md)
+- [Let the new part announce itself to the old part, never the reverse](../lessons/let-the-new-part-announce-itself-to-the-old-part.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Give a sub-unit the widest terms it can honour, never the terms its one caller happens to need"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [cognitive-load, expressiveness, verifiability]
+subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# Give a sub-unit the widest terms it can honour, never the terms its one caller happens to need
+
+**Lesson:** When you break a task into parts, you have to say what each part is for, and there is a lazy way to do it that passes every check and accomplishes nothing. The lazy way is to copy the enclosing task's terms downward: the part inherits the caller's assumptions as its assumptions and the caller's promise as its promise. This is trivially justifiable — of course the whole is achieved if a piece of it does everything the whole does — and it has moved no work. It has only renamed the problem and handed it to whoever develops the piece, who now faces the original difficulty plus the burden of understanding a description phrased entirely in terms of a context they cannot see.
+
+The discipline that fixes this is to write each part's terms with as little reference to its context as you can manage. Concretely, two moves. Give it the *weakest* assumption under which it could actually work, not the assumption that happens to hold at the one place you are calling it — pieces frequently function fine on a much wider class of inputs than the current caller will ever supply, and narrowing them to the caller is a pure loss. And state its promise in terms of its own inputs and outputs, not as a fragment of the caller's promise with the caller's variables threaded through it. A description that only makes sense in one context is a description nobody can develop against, review, or reuse, and its unintelligibility compounds as the system gets larger.
+
+The test for whether a decomposition step did any work is worth stating baldly, because it is easy to apply and people rarely apply it: read each part's description with the parent's description covered up. If a part is still comprehensible on its own terms, the step decomposed something. If it is not, the step was bookkeeping and the difficulty is still entirely ahead of you, now split across several places.
+
+One qualification, in the opposite direction, because the same instinct over-applied causes its own damage. Splitting is not free and should follow the seams of comprehension, not a rule about granularity. Some things genuinely make more sense together than apart — a set-up and the repetition it exists to prime being the standard case — and separating them yields two descriptions each of which is meaningless without the other, which is exactly the failure mode above arrived at from the other side. Take as much per step as you can reason about confidently, and keep together whatever has to be understood together.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 5's discussion of active decomposition: the guideline that specifications for units should separate them from their context rather than copying the specification of the context, illustrated by choosing the widest pre-condition under which a unit can function instead of inheriting the enclosing operation's; the worked demonstration of context-fitted post-conditions for the loop-body components, which are easy to prove correct but so special to their context that they may be unintelligible to whoever develops them next, so that the step only postpones work; the parallel absolute-value example in which copying the parent's post-condition into both arms of a conditional achieves nothing while remaining trivially provable; the accompanying advice, having decided what a sub-unit should do, to attempt to generalize its specification; and the immediately preceding warning against splitting units that properly make more sense together than apart, with loop initialization and loop body given as the case in point.

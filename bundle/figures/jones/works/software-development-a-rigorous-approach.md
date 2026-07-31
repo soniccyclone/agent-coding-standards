@@ -29,3 +29,5 @@ tags: [work]
 - [Guard the partial term rather than teaching every operator about failure](../lessons/guard-the-partial-term-rather-than-teaching-every-operator-about-failure.md)
 - [Minimize the basis you justify things against, then refuse to make anyone work in it](../lessons/minimize-the-basis-but-do-not-make-people-work-in-it.md)
 - [Into a description you may borrow anything that denotes, and nothing that sequences](../lessons/borrow-things-that-denote-never-things-that-sequence.md)
+- [Most obligations are vacuous, which is exactly what makes checking every one of them affordable](../lessons/most-obligations-are-vacuous-which-is-what-makes-checking-everything-affordable.md)
+- [Give a sub-unit the widest terms it can honour, never the terms its one caller happens to need](../lessons/give-a-sub-unit-the-widest-terms-it-can-honour-not-the-ones-its-caller-needs.md)

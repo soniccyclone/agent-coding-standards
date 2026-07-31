@@ -36,3 +36,5 @@ tags: [work]
 - [Sharing is only observable under update, which is exactly why it has to be sayable](../lessons/sharing-is-only-observable-under-update-so-make-it-sayable.md)
 - [Guarantee the answer exists, then ask where it was found](../lessons/guarantee-the-answer-exists-then-ask-where-it-was-found.md)
 - [A gain that grows with size is marking the structure's ceiling, not raising it](../lessons/a-gain-that-grows-with-size-is-marking-the-structures-ceiling.md)
+- [Represent each direction of a relation by the question asked of it, not by symmetry](../lessons/represent-each-direction-of-a-relation-by-the-question-asked-of-it.md)
+- [Let the progress counter be the precondition check, and know what it cannot tell you](../lessons/let-the-progress-counter-be-the-precondition-check.md)

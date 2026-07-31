@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Derive the cost formula first; it names the one coefficient worth attacking"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [hardware-affinity, verifiability]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Derive the cost formula first; it names the one coefficient worth attacking
+
+**Lesson:** The useful output of a cost analysis is not an order of magnitude. It is an expression with named coefficients in it, one per identifiable piece of the program, because that expression tells you which piece your effort will actually move. Get there in two stages. First bound the work of a single activation exclusive of what it delegates, which is easy when the activation contains no hidden iteration — you can read the linear-in-input bound straight off the loops that are visibly there. Then account for how activations multiply, by describing the shape of the call tree with a couple of local properties and deriving its global properties by induction on depth. Multiplying the per-activation bound by the tree totals gives a formula in which each coefficient is attached to a specific fragment of source.
+
+Now the formula does work that no amount of profiling intuition does. It says which coefficient multiplies the term that dominates at scale, and therefore which fragment of code is the only one where a constant-factor improvement changes anything. Equally valuable, it says which improvements are pointless: special-casing a small input size touches a coefficient that the dominant term does not carry, so the effort buys nothing however clever it is. It also exposes what the *shape* of the call tree is worth — since depth enters the formula directly, keeping the split balanced is not an aesthetic preference but the difference between two growth rates, and you can see exactly which line of the program is responsible for producing a balanced split.
+
+The last thing the derivation gives you is a boundary you cannot cross by coding better. Some of the cost belongs to the arrangement of the code and some belongs to the method you chose; the analysis separates them, and once you can see that a resource requirement is inherent in the method, you stop trying to tune it and start asking whether a different method is warranted. That is the honest form of the optimization decision — not "this feels slow," but "here is the term that dominates, here is the coefficient it carries, here is the code that coefficient names, and here is the part of the bill no rewrite will pay."
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 3.2.2's timing analysis of the merge-sorting procedure, which introduces the calling tree, states its two local properties, derives node count and summed sizes by induction on depth, bounds a single call by a linear function because the only iterations present are two visible loops, combines these into a closed form, then reads off that improvements for large arrays must target the bodies of those loops and that treating a two-element segment as a special case would not help; together with the accompanying argument that the formula shows why the split must be balanced, and the closing observation that the extra storage is inherent in the underlying method and is its most serious limitation against the alternatives.
