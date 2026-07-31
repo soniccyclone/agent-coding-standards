@@ -1,0 +1,22 @@
+---
+type: lesson
+title: "A rule can pin the answer down to exactly one thing and still give you no way to get it, so state whether a specification is a definition or a procedure"
+figure: church
+works: [introduction-to-mathematical-logic]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [formal-methods-and-verification, foundations-of-computation, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A rule can pin the answer down to exactly one thing and still give you no way to get it, so state whether a specification is a definition or a procedure
+
+Church needs to extend an arbitrary consistent collection of formulas to one that is maximal — consistent, but such that adding any formula outside it would break consistency. His construction reads like an algorithm. Fix an enumeration of all formulas. Walk it. At each step, ask whether the next formula is consistent with everything accumulated so far; if so, add it; if not, skip it. Take the union of all the stages. He proves the union is consistent and maximal, and he notes explicitly that the rule determines the result uniquely from the starting collection. Then he adds, in a parenthesis, that the rule provides in no sense an effective construction of the result.
+
+Both halves of that are true and the parenthesis is the important one. The description is completely deterministic: no choices are left open, the same input always yields the same output, the object is well defined and there is exactly one of it. And you cannot run it, because the test at each step — is this formula consistent with what I have — is not something any procedure decides. A description can fix its referent perfectly while offering nothing you could execute. Determinism is a property of the specification; effectiveness is a property you have to establish separately, by exhibiting a decision procedure for every test the specification performs.
+
+The conflation is easy to make because the two look identical on the page. A specification written as a loop with a conditional reads as executable regardless of what the conditional asks, and the tell is always in the predicate rather than in the control flow. Ask, for each test in a proposed construction, what decides it. If the answer is another undecidable or merely expensive question, you have written a definition and told yourself it was an implementation.
+
+This is the everyday failure mode of specifications that sound constructive. "Choose the smallest set of permissions that still lets every current workflow succeed" is deterministic if you fix a tie-break and hopeless to compute, since it asks whether an arbitrary workflow succeeds. "Merge these configuration layers, taking each override that does not conflict with the ones already applied" is fine until conflict means semantic conflict. "Retain the largest subset of these rules that stays consistent" is the same shape as Church's construction and has the same problem. "Pick the minimal set of tests that preserves coverage" defines something unique and computes nothing. In each case the specification is not wrong — it names a real object, and reasoning about that object is legitimate — but it must not be handed to someone as an implementation plan.
+
+So when you write a rule that determines a thing, say which of the two you have produced. If it is a definition, it can still do real work: you can prove properties of the object it names, use it as the correctness criterion for an approximation, and measure implementations against it. If it is meant to be run, then every predicate in it owes a decision procedure and every unbounded search owes a termination argument, and the honest move when one of them cannot be supplied is to weaken the specification — a decidable approximation you can actually compute, together with a stated gap between it and the object you really wanted, beats an exact characterization that nobody can evaluate.
+
+**Source:** [Introduction to Mathematical Logic](../works/introduction-to-mathematical-logic.md) — the lemma that every consistent class of formulas extends to a maximal consistent class, proved by fixing an enumeration of the formulas and defining a sequence of classes in which each successive formula is adjoined if it is consistent with what has been accumulated, with Church's parenthetical remark that although the rule uniquely determines the resulting class, it provides in no sense an effective construction of its members.

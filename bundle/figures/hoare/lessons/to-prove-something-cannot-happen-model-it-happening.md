@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "To prove something cannot happen, build a model in which it can"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, expressiveness, cognitive-load]
+subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# To prove something cannot happen, build a model in which it can
+
+**Lesson:** The comfortable model is the one in which the bad outcome simply does not appear — no state stands for it, no value denotes it, there is no way to write it down. That comfort is worthless, and the reason is precise: a proof carried out in such a model establishes that the outcome is inexpressible, not that it is impossible, and those are claims about two different objects. If you want a real assurance that a system cannot hang, thrash, or corrupt, then hung, thrashing and corrupt things have to be first-class inhabitants of your semantic account, so that the statement "this design is not one of those" has any content at all. The bad answer must be available for the answer "no" to mean something.
+
+That inverts the usual instinct in modelling, which is to keep the model tidy by leaving pathology out. The price of the tidy model is that every question about pathology becomes unaskable, and unaskable questions are experienced by a team as "we checked, it's fine". So budget for the ugliness up front: expect a substantial share of the machinery to exist purely to represent situations nobody wants, and expect that share to feel like waste — a large fraction of the definitions describing the very outcome the whole edifice was built to avoid. It is not waste; those definitions are what carry the proof obligation, and without them there is nothing to discharge. Note also where such pathologies typically come from. Not from the ideas, which could have excluded them, but from the requirement that the thing be efficiently implementable at all, which is exactly why they cannot be defined away.
+
+There is a structural pattern in how the worst case behaves once it is admitted, and recognizing it saves work. The wholly unconstrained object — the one that might do anything and might equally refuse everything — turns out to be absorbing for nearly every way of combining things: put it together with anything and the result is it again. That is not a quirk of the formalism; it is the mathematical form of the everyday fact that one entirely unreliable component ruins the assembly containing it. The exceptions are the instructive part. A composition that commits to an observable step *before* reaching the unreliable component is not absorbed, because that step still happens and can still be relied upon. So the only structural defence against an untrustworthy part is to place guaranteed, observable work in front of it, and the algebra is telling you that no other arrangement will do.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the divergence section of the nondeterminism chapter: the remark that it is a shame to devote so much attention to something always unwanted, that it nevertheless seems an inevitable consequence of any efficient or even computable method of implementation, that it can arise from concealment or unguarded recursion, that proving it will not occur is part of the designer's job, and that to prove something cannot happen one needs a theory in which it can; together with the laws establishing the chaotic process as a zero of nondeterministic choice, listing the operators that are strict in it, and noting that prefixing is the exception because the prefixed event can still be relied upon before everything becomes unreliable.

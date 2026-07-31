@@ -1,0 +1,22 @@
+---
+type: lesson
+title: "To walk an infinite product, order it by a size measure whose level sets are finite — and pick the measure so the bound your consumer needs falls out of the ordering"
+figure: church
+works: [introduction-to-mathematical-logic]
+axes: [parallelizability, cognitive-load, verifiability]
+subdomains: [algorithms-and-complexity, distributed-systems-and-concurrency, software-engineering-and-architecture]
+tags: [lesson]
+---
+# To walk an infinite product, order it by a size measure whose level sets are finite — and pick the measure so the bound your consumer needs falls out of the ordering
+
+At the heart of Church's proof of the completeness theorem sits a piece of bookkeeping that is easy to skip past. He needs to run through all the tuples of positive integers of a fixed length, one after another, in a single infinite sequence, so that every tuple eventually appears. The obvious order — vary the last coordinate through all its values, then advance the one before it — never gets past the first coordinate's initial value. His order instead groups tuples by the sum of their entries and breaks ties within a group lexicographically. Every group is finite, the groups are ordered, so every tuple has a definite finite position and none is starved.
+
+That much is the standard fix, and the standard statement of it is worth carrying: you cannot enumerate a product by nesting loops, because the outer loop never advances. What you can do is find a measure on the elements whose level sets are finite, sort by the measure, and break ties any way at all. Nothing about "sum of entries" is special; any measure with finite fibers works, and the tie-break is free. This is the same move behind breadth-first rather than depth-first exploration of an infinite tree, behind round-robin service across an unbounded set of queues, behind sweeping a parameter grid by total budget rather than by nested sweeps, and behind generating test inputs in order of size rather than exhausting one dimension first. In each case the failure it prevents is not slowness but starvation, and starvation from a nested loop over infinite ranges is undetectable by observation — the program is making steady progress the whole time it is failing to cover anything.
+
+The part that repays more attention is why Church picks this particular measure, because he immediately records a consequence of it: no entry of the k-th tuple exceeds k. That bound is not a curiosity. It is exactly what his later argument needs, because it lets him say that the finite object he builds at stage k mentions only symbols drawn from a bounded prefix, which is what makes the induction go through. He chose an ordering whose incidental arithmetic gave him the invariant he was going to need.
+
+That is the generalizable habit. An enumeration order is not merely a fairness device; it is a place to install guarantees for whoever consumes the sequence. If downstream code wants to allocate a buffer, choose an order under which the k-th item's size is bounded by a function of k. If it wants to checkpoint, choose an order under which a prefix is a self-contained unit. If it wants to parallelize, choose an order whose blocks are independent. Fair-but-arbitrary interleavings — hash-based shuffles, priority queues keyed on something incidental — deliver coverage and nothing else, and every property the consumer wants then has to be re-established by separate machinery.
+
+So when you are about to iterate over something unbounded in more than one dimension, spend the extra minute on the ordering. First ask what measure has finite level sets, which is what makes the walk possible at all. Then ask what the consumer will want to assume about item k, and see whether some choice of measure hands it over for free. The two questions have a joint answer surprisingly often, and taking the first available fair ordering discards it.
+
+**Source:** [Introduction to Mathematical Logic](../works/introduction-to-mathematical-logic.md) — the proof of Gödel's completeness theorem, where the m-tuples of positive integers are arranged in an infinite sequence ordered by increasing sum of entries with lexicographic tie-breaking, followed immediately by the observation that no positive integer occurring in the k-th tuple is greater than k, which is subsequently used to control which individual variables can occur in the finite quantifier-free formula built at stage k.

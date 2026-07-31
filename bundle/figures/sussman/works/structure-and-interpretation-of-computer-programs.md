@@ -136,6 +136,8 @@ tags: [work]
 - [Two independently safe conservative approximations can compose into an unbounded leak](../lessons/two-safe-conservative-approximations-compose-into-a-leak.md)
 - [A space guarantee in the implementation decides which constructs the language needs at all](../lessons/a-space-guarantee-decides-which-language-constructs-are-necessary.md)
 - [Error handling is a property of every value-producing path, which is why it cannot be added afterwards](../lessons/error-handling-is-a-property-of-every-path-not-a-feature-you-add.md)
+- [Give each unit a summary of what it needs and disturbs, and the combinator can optimize what no unit could see](../lessons/give-each-unit-a-summary-of-its-effects-and-the-combinator-can-optimize.md)
+- [An optimization written as a runtime test taxes every execution, so accumulating special cases eventually loses](../lessons/an-optimization-written-as-a-runtime-test-taxes-every-execution.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -216,7 +218,10 @@ gc-flip), 5.4 the explicit-control evaluator preamble, and 5.4.1 the core
 loop, apply-dispatch). Read 26790-27350 — the rest of 5.4.1, 5.4.2 sequence
 evaluation and tail recursion, 5.4.3 conditionals/assignments/definitions, and
 5.4.4 running and monitoring the evaluator including the error exercises.
-**Next unread line is 27350.** Currently
+Read 27350-27910 — 5.5 Compilation (interpretation versus compilation, the
+overview of the compiler), 5.5.1 structure of the compiler (targets, linkages,
+instruction sequences and the preserving combinator), and 5.5.2 through
+compiling conditionals. **Next unread line is 27910.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

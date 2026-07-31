@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 5810** — Chapter 1 read in full
-(1.5 through 1.10), Chapter 2 in full, Chapter 3 sections 3.1–3.7.
+pass died immediately. Current position: **line 6230** — Chapters 1 (from 1.5),
+2 and 3 read in full; starting Chapter 4 (Communication).
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -74,3 +74,5 @@ pass died immediately. Current position: **line 5810** — Chapter 1 read in ful
 - [Hidden internal activity that never finishes is indistinguishable from being hung, so hiding obliges you to bound it](../lessons/hidden-activity-that-never-finishes-is-indistinguishable-from-being-hung.md)
 - [If a property is inexpressible, enrich what you observe rather than reaching for a second logic](../lessons/if-a-property-is-inexpressible-enrich-what-you-observe.md)
 - [Pooling interchangeable units buys capacity and spends addressability, in one transaction](../lessons/pooling-buys-capacity-and-spends-addressability.md)
+- [To prove something cannot happen, build a model in which it can](../lessons/to-prove-something-cannot-happen-model-it-happening.md)
+- [Define "better" as "more predictable", and let implementation be a walk up that order](../lessons/define-better-as-more-predictable-and-implement-upward.md)
