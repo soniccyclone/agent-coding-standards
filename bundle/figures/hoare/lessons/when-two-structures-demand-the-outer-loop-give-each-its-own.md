@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When two structures each demand to be the outer loop, give each its own and connect them"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [expressiveness, cognitive-load, parallelizability]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# When two structures each demand to be the outer loop, give each its own and connect them
+
+**Lesson:** Some jobs have two natural rhythms that refuse to nest. Consuming fixed-size records while producing fixed-size lines is the standard case: the input has one natural unit, the output has a different one, and whichever you promote to the outer loop forces the other to be rebuilt by hand out of saved partial state, position counters and re-entry conditions. The result is hard to write, hard to check, and — the diagnostic symptom — disproportionately fragile against small changes to either side, because the subordinated structure has no independent existence to be edited. The underlying mistake is having serialized two control structures into one and then paid for the interleaving in bookkeeping.
+
+The way out is to stop choosing. Give each structure its own locus of control, write each in the shape its own data suggests, and connect them so that what one produces is what the other consumes. Neither loop needs to know the other exists or what unit it works in. The manual bookkeeping becomes the connection itself; the re-entry condition becomes simply the point at which one side waits. Notice that the two loops have not been eliminated — both are still present, and that is exactly the point. The program now contains precisely the structures the problem contains, one apiece, rather than one structure containing a laborious simulation of another.
+
+The dividend arrives on the second change rather than the first. A new requirement to transform items in passing is satisfied by inserting another stage, with neither neighbour touched. A requirement to let each side run ahead while the other is held up is satisfied by inserting a stage whose only job is to hold things. Both are edits to the composition, not to any component. That is the practical content of modularity as distinct from mere subdivision: pieces that can be interposed between existing pieces without their cooperation or knowledge. The prerequisite is a uniform connection convention — every stage takes from one side and gives to the other, and nothing inside a stage refers to which stage is on the far end — and that convention is cheap only if it is adopted before the first pair is written.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the pipes section of the communication chapter: the chaining operator joining two two-channel processes so that one's output channel becomes the other's input and the connecting channel is concealed, with the result again being such a process; the example combining an eighty-character card unpacker with a line packer, accompanied by the remark that this is hard to write with conventional structured programming because it is unclear whether the major loop should run once per input card or once per output line, that Michael Jackson calls this a structure clash, and that the solution's separate loop in each process matches the structure of the problem; and the following examples, which meet a changed requirement by inserting a substitution stage and a buffering stage into the chain, noting that this kind of modularity was introduced and exploited by operating system designers.

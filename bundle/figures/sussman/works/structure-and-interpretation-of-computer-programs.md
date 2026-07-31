@@ -140,6 +140,9 @@ tags: [work]
 - [An optimization written as a runtime test taxes every execution, so accumulating special cases eventually loses](../lessons/an-optimization-written-as-a-runtime-test-taxes-every-execution.md)
 - [Adjacency in the text is not adjacency in execution, and machinery that conflates them computes false summaries](../lessons/adjacency-in-the-text-is-not-adjacency-in-execution.md)
 - [The capability you can never have was usually foreclosed by a low-level choice made for an unrelated reason](../lessons/a-low-level-choice-made-for-local-reasons-forecloses-distant-capabilities.md)
+- [A static structural guarantee is what converts a runtime search into an offset](../lessons/a-static-scoping-rule-is-what-converts-a-runtime-search-into-an-offset.md)
+- [Specialize on the binding, never on the name, because a name is not an identity](../lessons/specialize-on-the-binding-not-on-the-name.md)
+- [A gap between two levels can be closed from either end, and the end you move decides whether execution stays legible or gets fast](../lessons/close-a-level-gap-from-either-end-and-you-choose-what-stays-visible.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

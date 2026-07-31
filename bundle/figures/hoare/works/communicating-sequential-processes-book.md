@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 7080** — Chapters 1 (from 1.5),
-2 and 3 read in full; Chapter 4 sections 4.1–4.3 read.
+pass died immediately. Current position: **line 7510** — Chapters 1 (from 1.5),
+2 and 3 read in full; Chapter 4 read through 4.4.4.
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -80,3 +80,5 @@ pass died immediately. Current position: **line 7080** — Chapters 1 (from 1.5)
 - [Specify a stream component as a relation between its channel histories, plus a bound on how far behind it may fall](../lessons/specify-a-stream-component-by-history-relation-plus-lag-bound.md)
 - [Coarsen the model to exactly the property you are proving, and structural certificates appear](../lessons/coarsen-the-model-to-the-property-you-are-proving.md)
 - [Let the rate budget fix how many components there are, and the formula's own shape fix how they are wired](../lessons/let-the-rate-budget-fix-the-component-count-and-the-formula-fix-the-wiring.md)
+- [When two structures each demand to be the outer loop, give each its own and connect them](../lessons/when-two-structures-demand-the-outer-loop-give-each-its-own.md)
+- [A restricted combinator earns its keep with a simpler law — and trades one hazard for another you must name](../lessons/a-restricted-combinator-earns-its-keep-with-a-simpler-law.md)
