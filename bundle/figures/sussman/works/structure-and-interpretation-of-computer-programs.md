@@ -86,6 +86,7 @@ tags: [work]
 - [Every synchronization scheme bottoms out in a primitive you were given, and the bottom has physical limits](../lessons/every-synchronization-scheme-bottoms-out-in-something-given.md)
 - [Shared state is not a thing that exists but an agreement communication produces, so questions about it between agreements can be meaningless](../lessons/shared-state-is-an-agreement-produced-by-communication.md)
 - [A changing quantity and a fixed history are two descriptions of one thing; choosing the second deletes state without deleting the phenomenon](../lessons/a-changing-quantity-and-a-fixed-history-are-the-same-thing.md)
+- [A thing may be defined in terms of itself whenever consumption provably lags production](../lessons/a-definition-may-use-itself-if-consumption-lags-production.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

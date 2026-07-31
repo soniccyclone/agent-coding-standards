@@ -98,8 +98,15 @@ yielding the eleven lessons below the second divider._
 
 _Chapter 6 (frequent itemsets, lines 10454-12231) was read in full on 2026-07-31._
 
-_Next unread line is **12232**, the start of chapter 7. Remaining:
-ch7 clustering, ch8 advertising, ch9 recommendation systems,
+_Correction (2026-07-31, second agent pass): the "next unread line 12232" note
+below was **stale**. Chapter 7 (clustering, lines 12232-14091) had in fact already
+been read — the lessons on centroids-vs-clustroids, the curse of dimensionality,
+hierarchical stopping rules, BFR, CURE, GRGPF and stream clustering all cite it by
+section. Verified by auditing every lesson's `**Source:**` line against the chapter
+map. Next genuinely unread line is **14092**, the start of chapter 8._
+
+_Next unread line was recorded as **12232**, the start of chapter 7. Remaining:
+ch8 advertising, ch9 recommendation systems,
 ch10 social-network graphs, ch11 dimensionality reduction, ch12 large-scale ML,
 ch13 neural nets. Chapters 2-4 should also get a hand re-read at the same depth as
 chapter 1 before this work is attested. `extraction: complete` deliberately

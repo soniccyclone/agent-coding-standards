@@ -61,3 +61,4 @@ tags: [work]
 - [A computed location is a hypothesis, not an answer](../lessons/a-computed-location-is-a-hypothesis-not-an-answer.md)
 - [A structure is defined by its selectors, not by the set of values it can hold](../lessons/a-structure-is-defined-by-its-selectors.md)
 - [Name the gap between the type and the reality, and say who is holding it](../lessons/name-the-gap-between-the-type-and-the-reality.md)
+- [A buffer absorbs variance, not a difference in rate](../lessons/a-buffer-absorbs-variance-not-a-difference-in-rate.md)

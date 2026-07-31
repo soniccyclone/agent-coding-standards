@@ -81,3 +81,5 @@ tags: [work]
 - [Package the operations so the invariant never breaks, then design the control forgetting the invariant exists](../lessons/make-the-invariant-continuous-then-forget-it.md)
 - [Enumerate the states of knowledge, and the control structure writes itself](../lessons/enumerate-the-states-of-knowledge-and-the-control-writes-itself.md)
 - [Leave a choice unmade when it cannot affect correctness, and require every resolution of it to work](../lessons/leave-the-choice-open-and-demand-every-resolution-be-correct.md)
+- [An operation that names two abstractions at once forces their representations to be chosen together](../lessons/an-operation-naming-two-abstractions-chains-their-representations.md)
+- [State that nothing reads is scaffolding, and the criterion for removing it is purely syntactic](../lessons/state-that-nothing-reads-is-scaffolding-you-can-delete.md)
