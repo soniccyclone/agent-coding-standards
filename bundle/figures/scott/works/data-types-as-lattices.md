@@ -31,3 +31,5 @@ tags: [work]
 - [Existence without uniqueness is a construction, not the abstraction you wanted](../lessons/existence-without-uniqueness-is-not-the-abstraction-you-wanted.md)
 - [Get existence from a general principle first, then find out what you built](../lessons/get-existence-from-a-general-principle-then-find-out-what-you-built.md)
 - [A representation is abstract exactly when only distinguishability is required of it](../lessons/abstract-means-only-distinguishability-is-required.md)
+- [Choose an encoding by the law you need it to satisfy, not by which one looks natural](../lessons/choose-an-encoding-by-the-law-you-need-it-to-satisfy.md)
+- [Close the tower, so statements about your system become statements in it](../lessons/close-the-tower-so-theorems-about-the-system-become-formulas-in-it.md)

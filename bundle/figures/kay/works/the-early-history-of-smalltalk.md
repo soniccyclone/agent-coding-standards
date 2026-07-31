@@ -19,4 +19,5 @@ tags: [work]
 **Reading copy:** full text is served as HTML, not PDF (~25,133 words). Fetch the URL and read the HTML directly; `pdftotext` on it returns nothing, which is what made earlier surveys record this as having no text layer.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Read the previous generation as almost a new thing, take an extreme position to force the new one out, and be willing to burn what already works](../lessons/read-the-previous-generation-as-almost-a-new-thing.md)
+- [Never divide a system into kinds of thing weaker than the whole; make every part carry the whole system's power](../lessons/never-divide-a-system-into-things-weaker-than-itself.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Close the tower, so statements about your system become statements in it"
+figure: scott
+works: [data-types-as-lattices]
+axes: [primitive-count, expressiveness, cognitive-load, verifiability]
+subdomains: [foundations-of-computation, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Close the tower, so statements about your system become statements in it
+
+**Lesson:** Any system with a notion of well-formedness tends to arrive in two layers: the objects at the bottom, and above them a separate vocabulary for saying which objects are well formed and how the well-formed ones combine. The upper layer is where the theorems live, written in prose or in a metalanguage, permanently out of reach of the system's own machinery. Scott collapses the two. He constructs the operation that turns any element into the nearest well-formed one, and then proves the thing that closes the tower: that operation is itself well formed by its own standard, and the elements it fixes are exactly the well-formed ones. So the assertion "this object is well formed" ceases to be a claim about the system and becomes an ordinary membership statement inside it, of the same kind as any other, applicable to the classifier as much as to what it classifies.
+
+The payoff is that theorems turn into formulas. Results he had previously stated as prose about the operators for building types — this one preserves well-formedness, that one is well behaved in each argument — can now be written as declarations in the system's own notation, saying that each operator maps well-formed things to well-formed things. Once the classifier is an object, everything you could previously only say about your constructions becomes something you can write down, check, and pass around, and the metalanguage stops accumulating obligations nobody can mechanize. That is the practical reason to want reflection: not the elegance of a system that describes itself, but the elimination of a layer whose content was previously trapped in commentary.
+
+The condition on all of this is that the closure has to be earned rather than assumed. Unrestricted self-membership is where the paradoxes come from, and Scott is careful about it — he notes that the arrangement looks circular, insists that it is nonetheless consistent, and attaches the qualification that makes it so: everything is carried out inside a single universal domain, so the classifier is not a new level bolted on above but an inhabitant of the same space as everything else, and its self-classification is a proved property rather than a stipulation. The design order matters. A system built as a stratified tower and later fitted with a reflection mechanism inherits the paradox risk at the seam; one built inside a single universe from the start can have the closure demonstrated. If you want a self-describing system, decide that at the beginning, because it is a property of where things live, not a feature you can add afterward.
+
+**Source:** [Data Types as Lattices](../works/data-types-as-lattices.md) — Section 5's universe theorem, which shows that the operation forming the least closure operation containing a given element is itself a closure operation whose fixed points are exactly the closure operations; Scott's accompanying remarks that membership can therefore be written in the system's own notation, that the universe classifies itself, that this seems circular but is consistent provided one works through retracts of the universal domain; and the following equations, where the earlier product, sum and function-space results are restated as typing formulas rather than theorems.

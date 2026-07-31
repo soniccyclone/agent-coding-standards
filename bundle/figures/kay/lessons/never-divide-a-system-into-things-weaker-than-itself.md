@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Never divide a system into kinds of thing weaker than the whole; make every part carry the whole system's power"
+figure: kay
+works: [the-early-history-of-smalltalk]
+axes: [primitive-count, expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Never divide a system into kinds of thing weaker than the whole; make every part carry the whole system's power
+
+**Lesson:** The default way to decompose a system is into several categories of part, each less capable than the system itself — inert holders of values here, active pieces of behavior there, and rules for how each may be combined with the others. The alternative is recursive: divide it into parts that each have the same power as the whole, so that a part is not a fragment of a computer but another instance of one. This is a real design choice with consequences that show up immediately. Under the first scheme, every capability you want to give something must be checked against which category it falls in, and the interesting capabilities keep turning out to be available only to the privileged category. Under the second, the question does not arise, and the vocabulary for combining parts is the same vocabulary you already use for the whole.
+
+Making the parts equal in power is what allows concrete representation to be deferred. If the only thing anyone outside a part can do is ask it for something, then nobody outside depends on how it holds what it holds, and you can go a very long way — through design, through early implementation, sometimes through several releases — caring only that the answers are right. Representation becomes a question you take up when the answers start arriving wrong or too slowly, which is late enough that you will be choosing on evidence. Under the divided scheme the representation is part of the interface from the first line, so it is chosen at the moment of least information and revised at the moment of most cost.
+
+Two disciplines keep the recursion from leaking. First, uniformity has to include the small and the fast. A design that makes the large, slow, expensive things full participants while quietly exempting integers and activation records has not achieved a uniform system; it has achieved a two-tier one, with all the special-case reasoning that implies, and the exemption will propagate upward into everything built on it. Second, whatever protection the scheme offers has to apply to every part rather than to a designated subset — a part that receives a request should be able to decline it, and decline it based on who is asking. Selective protection is the same failure as selective uniformity: it forces every user of the system to know which regime a given thing is under, which is precisely the knowledge the decomposition was supposed to remove.
+
+**Source:** [The Early History of Smalltalk](../works/the-early-history-of-smalltalk.md) — the introduction's statement that the design is a recursion on the notion of computer itself rather than a division of computing into weaker kinds of stuff, with the observation that concrete representation can be postponed almost indefinitely once only behavior is visible; the account of Barton's recursive-design principle prompting the question of why the machine should be divided into weaker things at all; the discussion of a capability-based operating system whose only defect was that smallness and speed disqualified something from being a first-class participant; and the later insistence that all parts be protected rather than some.
