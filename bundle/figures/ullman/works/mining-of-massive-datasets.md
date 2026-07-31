@@ -180,6 +180,10 @@ tags: [work]
 - [Give each operator a local rule and let the graph compose them](../lessons/give-each-operator-a-local-rule-and-let-the-graph-compose-them.md)
 - [Identical parts under an identical rule stay identical — diversity has to be seeded](../lessons/identical-parts-under-an-identical-rule-stay-identical.md)
 - [Check whether the richer shape is just an addressing scheme](../lessons/check-whether-the-richer-shape-is-just-an-addressing-scheme.md)
+- [Spend memory to reach the primitive your hardware is fastest at](../lessons/spend-memory-to-reach-the-primitive-your-hardware-is-fastest-at.md)
+- [Independent-looking knobs with an arithmetic relation are not independent](../lessons/independent-looking-knobs-with-an-arithmetic-relation-are-not-independent.md)
+- [A compact description says nothing about the cost of running it](../lessons/a-compact-description-says-nothing-about-the-cost-of-running-it.md)
+- [Insert a lossy step to declare what the answer must not depend on](../lessons/insert-a-lossy-step-to-declare-what-the-answer-must-not-depend-on.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -240,6 +244,6 @@ should also get a hand re-read at the same depth as chapter 1 before this work i
 attested. `extraction: complete` deliberately withheld._
 
 _**READ IN PROGRESS (2026-07-31, fifth agent pass).** Started chapter 13 at line
-**25908**, reading forward in sequential chunks toward line 27631. This line
+**26327**, reading forward in sequential chunks toward line 27631. This line
 number is updated in place as the read advances; if this note still says a line
 below 27631, the agent died there and that is the genuine resume point._

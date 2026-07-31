@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Composition intersects possibilities, so a stuck system need not contain a faulty part"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, parallelizability, cognitive-load]
+subdomains: [distributed-systems-and-concurrency, formal-methods-and-verification]
+tags: [lesson]
+---
+# Composition intersects possibilities, so a stuck system need not contain a faulty part
+
+**Lesson:** When participants must agree before anything shared can happen, the behaviours available to the assembly are the intersection of the behaviours each would permit on its own. Two consequences follow immediately and are hard to keep in view at the same time. Adding a participant is downward monotone — it can subtract possibilities and can never add one — and the intersection of two non-empty sets can be empty. Together these say that an assembly can be incapable of any further step while every component in it remains willing and able to proceed. Each one is offering alternatives; no alternative is offered by all. That is a defect belonging to no part: inspect any component alone and it is blameless, behaving exactly as specified, poised to continue. Looking for the broken piece is the wrong search, because the failure is a property of a relation between the pieces rather than of any piece.
+
+The consequence for method is a clean split, and it is worth applying to every requirement you hold. Anything of the form "this never happens" is preserved under intersection, so establishing it component by component genuinely carries to the assembly and stays valid when the assembly is extended. Anything of the form "this remains possible" is not preserved, and must be re-established for each assembly and re-established again whenever a participant is added or altered. So the instinct to certify parts once and thereafter trust their combinations is exactly right for half of what matters and worthless for the other half. Establishing which half a given requirement falls in should precede any argument about it. A related asymmetry: a component with no remaining options does not stay contained — composing anything with it yields an assembly with no options, so an inert part assimilates the system rather than being tolerated by it.
+
+Two design consequences. Since agreement is what shrinks the space, the number of points requiring agreement is a risk quantity, and the argument for narrow interfaces stops being aesthetic: every additional point on which parties must concur is another opportunity for their offers to fail to meet. And when a system does seize up, the diagnostic to run is not a hunt for the culprit but a comparison of what each side was willing to do at that moment. The repair is then a change to what one party is prepared to accept — widening one side's offers, or removing the requirement of agreement at that point altogether — rather than a correction to either party's internals, which are working as designed and will still be working as designed after you have stared at them.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the interaction section of the concurrency chapter: the worked example of a customer determined on a large biscuit meeting a machine unwilling to supply one for a small coin, with the accompanying observation that each component process is prepared to engage in some further action but the actions differ so nothing further can happen; the law making the stopped process absorbing under parallel composition while the always-willing process is its unit; and the trace law equating the traces of a composition with the intersection of the operands' traces when their alphabets coincide.

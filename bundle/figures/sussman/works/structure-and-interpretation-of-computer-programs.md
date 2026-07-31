@@ -111,6 +111,10 @@ tags: [work]
 - [You can only offer to rewind what you mediate, so the undo obligation lands on whoever owns the effect](../lessons/you-can-only-offer-to-rewind-what-you-mediate.md)
 - [Name a handle for what it does, not for the circumstance that first needed it](../lessons/naming-a-handle-after-its-first-caller-hides-its-other-uses.md)
 - [A declarative system does not remove method; it relocates the method into your choice among equivalent formulations](../lessons/declarative-does-not-remove-method-it-relocates-it-into-choosing-a-formulation.md)
+- [In a formalism built on names, sameness is free and difference must be asserted](../lessons/identity-is-free-in-a-naming-formalism-but-distinctness-must-be-asserted.md)
+- [A symmetric relation has no preferred side, so removing the duplicate requires an order the relation does not contain](../lessons/a-symmetric-relation-has-no-canonical-member-so-dedup-needs-an-outside-order.md)
+- [Conjunction becomes composition, not intersection, once every stage accepts a partial answer](../lessons/conjunction-is-composition-when-each-stage-accepts-a-partial-answer.md)
+- [Front an expensive test with a cheap one that is allowed to be wrong in only one direction](../lessons/front-an-expensive-test-with-a-cheap-one-that-can-only-be-wrong-one-way.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -155,8 +159,12 @@ examples of nondeterministic programs (logic puzzles, natural-language parsing,
 generation), and 4.3.3 implementing the amb evaluator through procedure
 applications. Read 21200-21750 — the rest of 4.3.3 (evaluating amb expressions,
 the driver loop and try-again), and the opening of 4.4 Logic Programming through
-the start of 4.4.1 simple queries and pattern matching. **Next unread line is
-21750.** Currently
+the start of 4.4.1 simple queries and pattern matching. Read 21750-22310 — the
+rest of 4.4.1 (compound queries and the logical connectives, rules and rule
+abstraction, recursive rules, logic as programs and the multi-directional append
+relation), and 4.4.2 through the compound-query stream diagrams (pattern
+matching, streams of frames, and/or as series and parallel combination).
+**Next unread line is 22310.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

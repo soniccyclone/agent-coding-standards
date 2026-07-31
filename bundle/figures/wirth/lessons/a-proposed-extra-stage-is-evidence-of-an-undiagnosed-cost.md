@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A proposed extra stage is evidence of an undiagnosed cost"
+figure: wirth
+works: [project-oberon]
+axes: [cognitive-load, hardware-affinity, primitive-count]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# A proposed extra stage is evidence of an undiagnosed cost
+
+**Lesson:** When a step in a pipeline is too slow, there are two responses and they are not equally examined. One is to make the step fast. The other is to hoist it out of the interactive path — run it ahead of time, store the result, and let the path that people wait on merely consume what was prepared. The second response is reached for far more often, because it is additive: nobody has to understand the slow step, and the fix can be built beside it. That additivity is exactly what makes it worth distrusting. It leaves the original cost in place, adds a tool and an intermediate artifact to the system permanently, and — the part that is usually not priced — it fixes the set of participants at the moment of preparation.
+
+The diagnostic question comes first and is often skipped: is this operation *intrinsically* expensive? Take the work it actually has to do and estimate it from first principles. If the work is a large number of small, simple computations over data you control the layout of, the operation has no business being slow, and an observed cost far above the estimate is evidence about the data organization rather than about the task. An operation whose predicted and observed costs diverge by a large factor is a bug report, not a design constraint, and treating it as a design constraint is how a whole extra stage gets built to route around a fixable inefficiency. Do the estimate before accepting the premise, because once the extra stage exists nobody will ever go back and make the underlying step fast — the pressure to do so has been removed, which was the point.
+
+The loss the extra stage causes is the part worth naming explicitly, because it is qualitative rather than a percentage. A prepared artifact is prepared against a known set of components. Anything that arrives afterwards cannot join it; it can only be given its own separately prepared artifact, which means shared parts are duplicated and, worse, that a system's ability to acquire new parts while running is gone. Whenever a design's headline property is extensibility, a precomputation stage that resolves cross-component references ahead of time is not a performance tactic, it is a repeal of the headline property. So the ordering of the analysis matters: establish what capability the system is for, then ask whether a proposed optimization is compatible with it, and only then argue about speed.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 6.1's discussion of linking, which observes that the address computations involved are simple and, given appropriately organized data, executable very swiftly, yet that in many operating systems linking takes longer than compilation; the assessment of the customary remedy of separating linking from loading into a pre-linking stage producing absolute-address object files as an unfortunate proposal, on the grounds that it is wiser to cure the ailment at its source by making linking fast than to add a processing stage and a tool; and the accompanying observation that a system's extensibility depends on being able to link further modules against those already loaded by a call from any module, which pre-linked files preclude while also causing multiple copies of the same code to be present.

@@ -95,3 +95,5 @@ section are where the extractable lessons are.
 - [Re-read a specialized notion as a pair, and discover the general case is already built](../lessons/reread-a-specialized-notion-as-a-pair-and-the-general-case-is-already-built.md)
 - [Test an extension point by rebuilding something already built in](../lessons/test-an-extension-point-by-rebuilding-something-already-built-in.md)
 - [Split a description where the cheap half answers most of the questions](../lessons/split-a-description-where-the-cheap-half-answers-most-questions.md)
+- [A proposed extra stage is evidence of an undiagnosed cost](../lessons/a-proposed-extra-stage-is-evidence-of-an-undiagnosed-cost.md)
+- [Indirect when references outnumber referents, and count before deciding](../lessons/indirect-when-references-outnumber-referents.md)
