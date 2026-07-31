@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A standing condition should be evaluated when its inputs change, along the changed path only, and you should know what that costs"
+figure: kay
+works: [the-reactive-engine]
+axes: [parallelizability, expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# A standing condition should be evaluated when its inputs change, along the changed path only, and you should know what that costs
+
+**Lesson:** Some conditions are not questions asked at a point in the program but standing statements about the world: whenever this becomes true, do that. Written naively they are implemented by asking repeatedly, which is wasteful when nothing has changed and late when something has. The correct inversion is to make the change do the work: index the condition by the things it depends on, so that whenever one of those is modified, the conditions watching it — and only those — are reconsidered. This turns a cost proportional to how often you look into a cost proportional to how often things actually change, which for most systems is a large win and, more importantly, removes the latency between the world changing and anyone noticing.
+
+The second half of the technique is that reconsidering a condition should not mean re-evaluating it. Hold the condition as a tree with the outcome of each subexpression recorded at its node, rather than as a linear sequence of instructions. When a leaf changes, only the nodes on the path from that leaf to the root need recomputing, because every other node's stored result is still valid — the same insight that makes an incremental tournament cheap after the first full pass. Reconsideration therefore costs the depth of the expression rather than its size, and the whole scheme becomes affordable enough to leave many such conditions standing at once. That is what makes the dependency style of computation, familiar from spreadsheets, work at all.
+
+Two honesty requirements come with this. First, the cost has moved, not vanished: writes get slower, sometimes by a lot, because every store now has to ask whether anything was watching. That is a deliberate trade, and it should be made with the ratio of reads to writes in view rather than adopted because reactivity is pleasant. Second, a standing condition needs an explicit answer for when it is in force. A condition that is always live in every context is nearly useless, since much of what you would write in it would be scaffolding to check whether the moment is right; the scope in which it applies should be established by the structure of the program, and its lifetime — including whether it survives its own context being suspended — is a design decision, not an implementation detail. Getting that wrong is what makes event-driven systems hard to reason about, and no amount of efficiency in the notification mechanism compensates.
+
+**Source:** [The Reactive Engine](../works/the-reactive-engine.md) — the treatment of the standing conditional in the elaboration chapter, which describes indexing watched variables so that a write finds the conditions depending on them, contrasts this with the overhead of periodic re-checking, and then adapts the incremental tournament-sort argument to hold the condition as a tree with intermediate results cached at the nodes so a change costs only the path to the root; together with the earlier account of the same construct in the machine's predecessor, where the difficulty singled out as beyond that design was controlling the contexts in which such a condition should be sensitive, and the handbook's later statement of its activation and lifetime rules including its survival across a suspension.

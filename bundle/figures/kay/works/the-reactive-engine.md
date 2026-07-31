@@ -19,4 +19,6 @@ tags: [work]
 **Reading copy:** full text is served as HTML, not PDF (~48,903 words). Fetch the URL and read the HTML directly; `pdftotext` on it returns nothing, which is what made earlier surveys record this as having no text layer.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Every convenient default is an absent designer's guess about you, so make the guess visible and replaceable at every scope](../lessons/every-convenient-default-is-an-absent-designers-guess.md)
+- [Relating one name to another is a spectrum of distinct commitments, not a single operation called assignment](../lessons/relating-two-names-is-a-spectrum-not-a-binary.md)
+- [Buy the common case with a cheap approximate mechanism and let the rare case be slow, rather than paying bookkeeping on every operation](../lessons/buy-the-common-case-cheaply-and-degrade-gracefully.md)

@@ -39,3 +39,6 @@ tags: [work]
 - [Every level of abstraction adds a quantifier to any guarantee you want about it](../lessons/every-level-of-abstraction-adds-a-quantifier-to-guarantees-about-it.md)
 - [A requirement that must hold for every interpretation pins down what testing against yours cannot](../lessons/a-requirement-quantified-over-all-interpretations-pins-down-what-testing-cannot.md)
 - [Condemning an approach obliges you to supply the alternative](../lessons/condemning-an-approach-obliges-you-to-supply-the-alternative.md)
+- [Judge an observation by what it reorganizes, not by whether it shortens the proof in front of you](../lessons/judge-an-observation-by-what-it-reorganizes-not-by-the-proof-in-front-of-you.md)
+- [A gap can persist because nobody holds both vocabularies, not because a piece is missing](../lessons/a-gap-can-persist-because-nobody-holds-both-vocabularies.md)
+- [A total repair always returns something; only good input comes back unchanged](../lessons/a-total-repair-always-returns-something-only-good-input-comes-back.md)

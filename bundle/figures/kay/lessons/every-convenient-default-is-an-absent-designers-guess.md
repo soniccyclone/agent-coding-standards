@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Every convenient default is an absent designer's guess about you, so make the guess visible and replaceable at every scope"
+figure: kay
+works: [the-reactive-engine]
+axes: [expressiveness, cognitive-load]
+subdomains: [programming-languages-and-semantics, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# Every convenient default is an absent designer's guess about you, so make the guess visible and replaceable at every scope
+
+**Lesson:** Languages and systems accumulate silent conventions that decide, on the user's behalf, what happens when nothing is said: whether an argument is evaluated before or after it is handed over, whether a name denotes a location or its contents, which of several plausible readings of an operator applies where. Each such convention was chosen by someone who was reasoning about typical use, is not present when you need it to be different, and is therefore near-certain to be wrong in the case you actually care about. The conventions are individually defensible and collectively a cage, and the cage is invisible precisely because it is what happens when you say nothing. Their real cost is not the awkward workaround; it is that a whole class of construction becomes unthinkable, because expressing it would require overriding something the notation does not admit exists.
+
+The response is not to guess better. If you genuinely do not know what your users will need — and for anything that will be used as a medium rather than as an appliance, you do not — then the correct posture is to keep every one of those decisions available for the user to make, both once for a whole context and locally at a single site. Defaults remain, because a system where nothing can be left unsaid is unusable; what changes is that each default is a stated position rather than a fact of the world, and there is a way to say the other thing. This costs generality in the implementation and pays it back in the range of ideas the system can host.
+
+There is a prior discipline that makes this posture reachable. Before choosing what to build for a group of people, try to find out what they are doing, and take seriously the likely answer that they cannot tell you and do not entirely know themselves. That finding usually causes a split: one response is to conclude that nothing useful can be built, the other is to conclude that the useful thing to build is precisely the material in which they can express whatever it turns out to be. The second response only produces anything if the material is available in the ordinary way an everyday instrument is, learnable without an audience, and behaves predictably enough that people will risk their real work on it — which are constraints on the whole system, not decorations added at the end.
+
+**Source:** [The Reactive Engine](../works/the-reactive-engine.md) — the discussion of coercion, which observes that rules for when and how operands are elaborated are settled by language designers and implementers who are long gone by the time anyone uses them and are nearly guaranteed to be other than what the user wants, and concludes that because ignorance of the user's needs is taken as a premise, an interpreter must leave both global and local control of all binding mechanisms with the user; together with the introduction's exercise of designing a system for researchers whose work cannot be discovered, which arrives at building a meta-system in which each specialist describes his own symbol system, subject to being as ordinarily available as a slide rule, learnable in private, and trustworthy in its transactions.
