@@ -101,3 +101,4 @@ section are where the extractable lessons are.
 - [Indirect when references outnumber referents, and count before deciding](../lessons/indirect-when-references-outnumber-referents.md)
 - [An interface should publish an ordinal, not a fact about the implementation](../lessons/an-interface-should-publish-an-ordinal-not-a-fact-about-the-implementation.md)
 - [Ship what the compiler knew, and let the transport carry it uninterpreted](../lessons/ship-what-the-compiler-knew-and-let-the-transport-carry-it-uninterpreted.md)
+- [A reference count counts only the references your mechanism can see](../lessons/a-reference-count-counts-only-the-references-your-mechanism-can-see.md)

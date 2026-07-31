@@ -186,6 +186,9 @@ tags: [work]
 - [Insert a lossy step to declare what the answer must not depend on](../lessons/insert-a-lossy-step-to-declare-what-the-answer-must-not-depend-on.md)
 - [Quantize variable size into a few classes, then pad within each](../lessons/quantize-variable-size-into-a-few-classes.md)
 - [A quantity carried through a product of stages has no stable middle](../lessons/a-quantity-carried-through-a-product-of-stages-has-no-stable-middle.md)
+- [Separate the proposal from the decision to admit it](../lessons/separate-the-proposal-from-the-decision-to-admit-it.md)
+- [Name the settings at which your generalization becomes the old thing](../lessons/name-the-settings-at-which-your-generalization-becomes-the-old-thing.md)
+- [An inverted name taxes every reader forever](../lessons/an-inverted-name-taxes-every-reader-forever.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -246,6 +249,6 @@ should also get a hand re-read at the same depth as chapter 1 before this work i
 attested. `extraction: complete` deliberately withheld._
 
 _**READ IN PROGRESS (2026-07-31, fifth agent pass).** Started chapter 13 at line
-**26327**, reading forward in sequential chunks toward line 27631. This line
+**26746**, reading forward in sequential chunks toward line 27631. This line
 number is updated in place as the read advances; if this note still says a line
 below 27631, the agent died there and that is the genuine resume point._

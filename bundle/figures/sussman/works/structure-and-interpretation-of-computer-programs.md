@@ -115,6 +115,11 @@ tags: [work]
 - [A symmetric relation has no preferred side, so removing the duplicate requires an order the relation does not contain](../lessons/a-symmetric-relation-has-no-canonical-member-so-dedup-needs-an-outside-order.md)
 - [Conjunction becomes composition, not intersection, once every stage accepts a partial answer](../lessons/conjunction-is-composition-when-each-stage-accepts-a-partial-answer.md)
 - [Front an expensive test with a cheap one that is allowed to be wrong in only one direction](../lessons/front-an-expensive-test-with-a-cheap-one-that-can-only-be-wrong-one-way.md)
+- [Any negative answer computed from a finite store is secretly a claim that the store is complete](../lessons/a-negative-answer-from-a-finite-store-is-a-claim-that-the-store-is-complete.md)
+- [An operator implemented by removal only means what you think once its subject is determined](../lessons/an-operator-that-removes-has-a-precondition-the-notation-does-not-show.md)
+- [A derivation engine hands you proofs, not facts, so anything you count over its output counts derivations](../lessons/a-derivation-engine-returns-proofs-not-facts-so-never-aggregate-its-output.md)
+- [Adding a true statement can break a system that reads statements procedurally](../lessons/adding-a-true-statement-can-break-a-system-that-reads-statements-procedurally.md)
+- [Design by choosing the weakest formalism that still says what you need, because weakness is what buys mechanical treatment](../lessons/choose-the-weakest-formalism-that-still-says-what-you-need.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -164,7 +169,12 @@ rest of 4.4.1 (compound queries and the logical connectives, rules and rule
 abstraction, recursive rules, logic as programs and the multi-directional append
 relation), and 4.4.2 through the compound-query stream diagrams (pattern
 matching, streams of frames, and/or as series and parallel combination).
-**Next unread line is 22310.** Currently
+Read 22310-22870 — the rest of 4.4.2 (negation and host-predicate filters,
+unification and its partial solutions, applying rules and the analogy to
+procedure application, the query evaluator and driver loop), all of 4.4.3 (is
+logic programming mathematical logic — infinite loops, problems with negation,
+the closed-world assumption), and the start of 4.4.4 implementation. **Next
+unread line is 22870.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

@@ -65,6 +65,7 @@ tags: [work]
 - [When minimality and naturalness both matter, build both formulations and a proved bridge, then prove on the small one and work in the large one](../lessons/keep-a-small-formulation-to-prove-in-and-a-natural-one-to-work-in.md)
 - [Non-interference is a theorem about which paths a result can travel, not a corollary of having kept the pieces separate](../lessons/non-interference-is-a-theorem-about-executions-not-a-corollary-of-separate-files.md)
 - [Refute a whole family of approximations at once by attacking the parameter they share, not the design of any one of them](../lessons/refute-a-whole-family-of-models-by-attacking-the-parameter-they-share.md)
+- [An operation that commutes with every step can be hoisted to the boundary and deleted from the middle, and checking whether it commutes is the whole design question](../lessons/an-operation-that-commutes-with-every-step-belongs-at-the-boundary.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes. Note that the substantive text ends at line ~25500 of the reading copy; everything after that is the Index of Definitions._
 

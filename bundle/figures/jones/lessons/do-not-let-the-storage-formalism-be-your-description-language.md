@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Do not let the formalism you must store things in be the vocabulary you describe them in"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [expressiveness, cognitive-load]
+subdomains: [databases-and-data-management, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Do not let the formalism you must store things in be the vocabulary you describe them in
+
+**Lesson:** Every data-management approach commits to one class of objects and then insists that all of reality be phrased in it — tables of tuples, nested hierarchies, documents, graphs. Each such class is a genuine abstraction and each is enormously better than talking about addresses and pointers. But no single class fits every subject matter, and when you are required to phrase everything in one of them, the misfit does not disappear. It shows up as a body of named difficulties that come to look like the fundamental problems of data modelling — decomposition rules to avoid update anomalies, extra constraints because the chosen object class is more permissive than the situation, the reshaping of natural structure to satisfy the formalism. Those difficulties are properties of the formalism, not of the problem, and mistaking the first for the second is the reason people believe modelling is intrinsically harder than it is.
+
+The move that dissolves this is to keep two vocabularies rather than one. Describe the subject matter using whatever structures actually fit it, chosen per situation — an unordered collection here, a keyed lookup there, a nested structure where the subject really is nested. Some of these will not correspond to anything your storage layer offers, and that is fine, because the description is not what will be stored. Then, as a separate and later step, refine that description into whatever the storage formalism does support, recording the correspondence. What was one problem — "model this in the paradigm" — becomes two easier ones: say what is true, and then say how it will be held.
+
+The gain is concrete rather than aesthetic. A description written in fitting vocabulary is short, and being short it can actually be read and argued about; the version bent into a universal object class is longer, and the extra length is entirely the bending. The two-step version also puts the misfit somewhere you can see it: it lives in the correspondence between description and representation, where you can inspect it, rather than being smeared through a description that has quietly absorbed it. And when the storage technology is replaced — which happens on a timescale much shorter than the subject matter changes — only the second step is discarded.
+
+The general form of this applies well beyond databases. Any framework, schema language, type system, or interchange format that you are obliged to express things in is a representation target, and it is a mistake to let a representation target become the language in which you think about the problem. Reach for it when you are deciding how the thing will be held. Do not reach for it when you are deciding what the thing is.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 12's "Use in Specifications" section, in the comparison of abstract data type description with database work following the bill-of-materials example: the observation that each database approach uses a particular class of objects to define reality (n-ary relations for one, something close to the mappings used here for another), that these are more abstract than addresses and pointers and so give shorter and clearer descriptions than implementations, that for each approach some problems fit less well than others and that this is what gives rise to discussions of normal forms and storage anomalies, that some approaches are too general so that the description must add its own constraints, and the conclusion that a specification should not be limited by one or another database approach but can afterwards be refined into a structure the database can represent.
