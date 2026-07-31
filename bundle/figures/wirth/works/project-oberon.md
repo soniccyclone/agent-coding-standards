@@ -128,3 +128,5 @@ section are where the extractable lessons are.
 - [Store how far you got, not whether you have been](../lessons/store-how-far-you-got-not-whether-you-have-been.md)
 - [Enforce a policy by what the tool cannot express](../lessons/enforce-a-policy-by-what-the-tool-cannot-express.md)
 - [Simultaneous claims cannot be encoded, so the population is bounded by the width](../lessons/simultaneous-claims-cannot-be-encoded-so-population-is-bounded-by-width.md)
+- [The escape must not travel the path it is escaping](../lessons/the-escape-must-not-travel-the-path-it-is-escaping.md)
+- [A delimiter drawn from the alphabet buys itself a transformation at both ends](../lessons/a-delimiter-drawn-from-the-alphabet-buys-a-transformation.md)

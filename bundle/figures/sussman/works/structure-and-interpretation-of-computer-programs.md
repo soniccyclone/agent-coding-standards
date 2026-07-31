@@ -227,8 +227,10 @@ compiling conditionals. Read 27910-28510 — the rest of 5.5.2 (conditionals,
 sequences, lambda expressions and bodies), 5.5.3 compiling combinations
 (argument-list construction, applying procedures, applying compiled procedures
 and the tail-call linkage), and 5.5.4 through the sequential combiner. **Next
-unread line is 28510.** Currently
-reading forward from there toward the index at ~29990. This line is updated as
+unread line is 28510.**
+
+**READ IN PROGRESS (bucket 310, second session):** resumed at line 28510,
+reading forward toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.
 `extraction: complete` withheld until all five chapters are read._
