@@ -151,6 +151,9 @@ tags: [work]
 - [Freeze the state, compute every delta against it, then combine](../lessons/freeze-the-state-compute-every-delta-against-it-then-combine.md)
 - [Ask for distance from the constraint, not satisfaction of it](../lessons/ask-for-distance-from-the-constraint-not-satisfaction-of-it.md)
 - [An objective with a symmetry has no optimum along it](../lessons/an-objective-with-a-symmetry-has-no-optimum-along-it.md)
+- [Let satisfied cases stop pulling](../lessons/let-satisfied-cases-stop-pulling.md)
+- [A surprising result is usually a faithful reading of your trade-off](../lessons/a-surprising-result-is-usually-a-faithful-reading-of-your-tradeoff.md)
+- [Name a technique's decision points so you can search the family](../lessons/name-a-techniques-decision-points-so-you-can-search-the-family.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
