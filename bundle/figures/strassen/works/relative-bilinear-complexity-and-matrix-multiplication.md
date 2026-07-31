@@ -40,3 +40,6 @@ This work needs the deterministic OCR batch.
 - [Keep several equivalent encodings of the same object, and switch to whichever exposes the structure you need](../lessons/keep-several-equivalent-encodings-and-switch-to-whichever-exposes-the-structure.md)
 - [Keep the plausible assumption out of the load path, even when everyone believes it](../lessons/keep-the-plausible-assumption-out-of-the-load-path.md)
 - [When the general relation is out of reach, restrict the allowed moves rather than relax the goal](../lessons/restrict-the-moves-instead-of-relaxing-the-goal.md)
+- [To discard the part of a structure you do not want, assign weights that make it strictly more expensive, then scale](../lessons/assign-weights-so-the-unwanted-terms-carry-a-cost-and-vanish.md)
+- [Require each part to belong to a class, not to be a copy of a fixed one](../lessons/require-each-part-to-be-in-a-class-not-to-be-a-copy.md)
+- [A property that only holds once you enrich the environment is a property of the environment](../lessons/a-property-that-needs-a-richer-environment-is-not-a-property-of-the-system.md)

@@ -29,3 +29,4 @@ tags: [work]
 - [An infinite conjunction is not a specification until you find its one-step equivalent](../lessons/replace-an-infinite-conjunction-with-a-one-step-condition.md)
 - [Tune behaviour by changing the structure, not by arguing about the laws — and know which laws the framework forces on you](../lessons/tune-behaviour-by-changing-the-structure-not-by-arguing-about-laws.md)
 - [To show a description is realizable, build the artifact out of the descriptions themselves](../lessons/to-show-a-description-is-realizable-build-the-thing-out-of-descriptions.md)
+- [Separate the predicate you reason with from the predicate a component can evaluate](../lessons/separate-the-predicate-you-reason-with-from-the-one-a-component-can-evaluate.md)

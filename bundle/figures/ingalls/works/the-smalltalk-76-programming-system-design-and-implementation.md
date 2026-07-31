@@ -20,4 +20,5 @@ tags: [work]
 **Source:** https://ia601501.us.archive.org/25/items/bitsavers_xeroxparctalk76ProgrammingSystemDesignandImplement_1637358/The_Smalltalk-76_Programming_System_Design_and_Implementation.pdf — scanned Xerox PARC technical report, rehosted on the Internet Archive's bitsavers preservation collection. Verified 200 OK, application/pdf, 16 pages. Also mirrored at smalltalkzoo.computerhistory.org (Computer History Museum, verified 200 OK) and worrydream.com.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Cheat in the implementation but stay undetectable: guard the frequent case and fall through to the general one](../lessons/cheat-in-the-implementation-but-never-be-detectable.md)
+- [When you control how names are handed out, put the information in the name instead of in the thing named](../lessons/put-the-information-in-the-name-not-the-thing-named.md)

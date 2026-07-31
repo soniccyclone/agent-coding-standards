@@ -22,3 +22,6 @@ tags: [work]
 ## Lessons
 - [Stop speculating about the shape of the search space and classify which objectives induce a navigable one](../lessons/ask-which-objectives-induce-a-navigable-space-not-what-spaces-look-like.md)
 - [An optimizer that sees only a scalar score is strictly weaker than one that sees the cases, and the gap is provable](../lessons/a-scalar-score-is-a-weaker-signal-than-labelled-cases-and-provably-so.md)
+- [Require convergence from any starting state, then close the back door that would let a single step fake a restart](../lessons/require-convergence-from-any-state-and-close-the-back-door-that-would-fake-it.md)
+- [Place a new model inside an established one, and push the containment as tight as it will go](../lessons/place-a-new-model-inside-an-old-one-and-make-the-containment-as-tight-as-you-can.md)
+- [Engineer progress to arrive in quanta bigger than your measurement error, and give the comparator a neutral band](../lessons/engineer-progress-into-quanta-larger-than-your-measurement-error.md)

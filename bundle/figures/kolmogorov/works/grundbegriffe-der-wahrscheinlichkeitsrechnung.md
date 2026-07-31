@@ -33,3 +33,4 @@ tags: [work]
 - [A "given that" answer is fixed by the family the condition came from, not by the condition](../lessons/a-conditional-answer-belongs-to-the-partition-not-the-condition.md)
 - [When an object is only defined up to an equivalence, restate every law about it at that coarseness](../lessons/restate-the-laws-at-the-coarseness-the-object-is-defined.md)
 - [If no bounded observation can move a belief, the matter is already settled and you are only ignorant](../lessons/if-no-finite-observation-moves-it-it-is-already-decided.md)
+- [An aggregate is predictable when no single input has much influence, not when it has many inputs](../lessons/small-per-input-influence-is-what-makes-an-aggregate-predictable.md)

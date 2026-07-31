@@ -23,3 +23,7 @@ tags: [work]
 ## Lessons
 - [Permission to store a function of your data is a different power from permission to store the data](../lessons/storing-a-function-of-your-data-is-a-different-power-than-storing-it.md)
 - [You cannot analyze an arbitrary implementation, so force it onto inputs where it must behave uniformly](../lessons/force-an-arbitrary-opponent-into-a-case-you-already-understand.md)
+- [Argue in the smallest model that makes the reasoning legible, then widen it until every rival design is inside](../lessons/prove-it-in-the-small-model-then-widen-until-the-rivals-are-inside.md)
+- [When both extremes of a parameter are easy for opposite reasons, the hard case is the middle](../lessons/when-both-extremes-are-easy-the-difficulty-lives-in-the-middle.md)
+- [A guarantee that only switches on past every real input is not an answer yet — invert it into a reach question](../lessons/a-guarantee-that-starts-past-every-real-input-is-not-yet-an-answer.md)
+- [In a construction that is already at the limit, the ugly exception is load-bearing — delete it and watch it fail](../lessons/in-an-extremal-construction-the-ugly-exception-is-load-bearing.md)

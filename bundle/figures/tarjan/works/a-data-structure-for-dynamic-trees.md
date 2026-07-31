@@ -26,3 +26,5 @@ tags: [work]
 - [Park a pending transformation at the top of the aggregate and resolve it on the way down](../lessons/park-a-pending-transformation-at-the-root-and-resolve-it-on-descent.md)
 - [Push what the outer layer knows about access frequency down into the inner structure](../lessons/push-the-access-distribution-down-into-the-lower-layer.md)
 - [Price each operation in your interface by what it forces on the implementation, and name the algebra you actually need](../lessons/price-each-operation-in-your-interface-by-what-it-forces-below.md)
+- [Funnel every mutation through one operation so the invariant bookkeeping has exactly one home](../lessons/funnel-every-mutation-through-one-operation-so-bookkeeping-has-one-home.md)
+- [To bound how often a step fires, find a quantity it increments and then audit everything that can decrement it](../lessons/to-bound-how-often-a-step-fires-find-what-it-increments.md)

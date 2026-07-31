@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Funnel every mutation through one operation so the invariant bookkeeping has exactly one home"
+figure: tarjan
+works: [a-data-structure-for-dynamic-trees]
+axes: [cognitive-load, verifiability]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Funnel every mutation through one operation so the invariant bookkeeping has exactly one home
+
+**Lesson:** Two of the tree operations in this structure have obvious direct implementations, and the authors reject them, saying so explicitly and deferring the reason to a later section. Instead, joining two trees and severing an edge are both routed through the same expensive preparatory operation that every other mutating operation already calls. The payoff arrives when the structure acquires derived per-node quantities that have to be kept true — a weight per vertex, later an auxiliary index of candidate pieces. Because nothing mutates the shape except through the one funnel, the authors can state flatly that no operation changes a node's weight outside that funnel, and every line of weight maintenance in the paper lives inside it. The augmentations that appear when the derived data is introduced are marked with arrows in two procedures and nowhere else.
+
+The general principle is that the cost of an invariant is not paid where the invariant is defined; it is paid once per code path that can violate it, and that count is a design variable you control. If seven operations can each disturb a property, you owe seven correctness arguments and you will forget one when the eighth operation is added a year later. If all seven are expressed as compositions ending in a single primitive, you owe one argument and it is automatically inherited. Accepting a slower or less direct implementation of an individual operation in exchange for collapsing that count is usually a good trade, and it is a trade that is invisible unless you are thinking about the whole operation set at once rather than optimizing each one locally. The direct implementation of a single operation is a local optimum that costs you globally in argument surface.
+
+The same reasoning shapes the harder version of the structure, where the invariant must hold after every operation rather than merely on average. There, each operation is written as the funnel followed by its inverse repair, again with no exceptions and no shortcuts, so the pairing is visible in the shape of every procedure. Two diagnostics tell you whether you have this discipline in your own systems. Can you name the single place where a given invariant is restored, or does the answer depend on which caller you ask? And when you add a derived field — a cached count, a denormalized total, a search index — does the diff touch one function or all of them? A representation whose maintenance is scattered will drift, not because anyone is careless but because the number of places to be careful exceeds what review can cover.
+
+**Source:** [A Data Structure for Dynamic Trees](../works/a-data-structure-for-dynamic-trees.md) — the remark that simpler implementations of the linking and cutting operations exist but were rejected for reasons appearing in the following section, the definitions of those operations as compositions ending in the exposure operation, the statement that no operation changes a node weight except inside exposure together with the weight-updating augmentations confined to exposure and its inner splicing step, the later addition of the auxiliary path-set maintenance in the same two places, and the worst-case version in which every tree operation is written as an exposure followed by the concealing repair.

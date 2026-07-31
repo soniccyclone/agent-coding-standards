@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Classifying by reduction throws away the one number you wanted, so track the size of the mapping"
+figure: stearns
+works: [its-time-to-reconsider-time]
+axes: [verifiability, cognitive-load, hardware-affinity]
+subdomains: [algorithms-and-complexity]
+tags: [lesson]
+---
+# Classifying by reduction throws away the one number you wanted, so track the size of the mapping
+
+**Lesson:** Establishing that one problem is at least as hard as another by translating instances of the second into instances of the first is a quantitative argument dressed as a qualitative one. What actually transfers is the original bound divided by the growth of the translation: a mapping whose output length rises as some power of its input degrades the inherited lower bound by exactly that power. So knowing only that a translation is polynomial conveys no information about magnitude whatsoever, because the degree is unconstrained. A completeness label therefore places a problem in an equivalence class defined by mutual translatability while discarding precisely the quantity anyone cared about, which is how much work the problem takes. The consequences are counterintuitive and real: problems carrying the same completeness label need not be equally costly, and a problem carrying a label taken as stronger evidence of hardness can be genuinely cheaper than one carrying a weaker label. The ordering of the labels reflects the strength of the argument, not the size of the cost.
+
+The label is coarse in a second, independent way. A term like exponential names a family of growth rates, not a function; a bound whose exponent is a small fractional power of the input length is entirely affordable, and at input sizes people actually encounter such a bound can amount to a few thousand operations. Membership in a class everyone treats as intractable is therefore compatible with routine solvability at every size you will ever meet. A classification is a statement about the limiting behaviour of an infinite family; the thing on your desk is one member at one size, and the limit has no vote.
+
+Both failures have the same repair, which is to recover the quantity the classification discarded. Record the growth of every translation you rely on rather than merely certifying that it is polynomial, and ask explicitly what bound would survive the trip. Then evaluate the resulting function at your real input size before letting the classification decide anything. Reductions merely known to exist are far weaker information than reductions whose size is known, which makes a search for smaller reductions a search for sharper knowledge rather than tidier proofs — and it also means an unexpectedly small translation between two problems is not a technicality but a substantive discovery about both. More generally: whenever a taxonomy is built by exhibiting transformations between things, the cost of the transformations is the information the taxonomy is silently spending, and it should be kept on the books.
+
+**Source:** [It's Time to Reconsider Time](../works/its-time-to-reconsider-time.md) — the time-based-perspective section, where reduction size is defined, the theorem relating transferred bounds to the degree of the reduction is stated, the satisfiability-to-clique reduction is used to show how much sharper a linear-size reduction would be, and the summary bullets deny that same-label problems are equally hard; together with the earlier passage distinguishing exponential-as-family from a single exponential and computing how modest such a bound can be at a concrete input size.
