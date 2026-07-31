@@ -39,7 +39,7 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 1540**.
+pass died immediately. Current position: **line 2010** (sections 1.5, 1.6, 1.7 read).
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -51,3 +51,5 @@ pass died immediately. Current position: **line 1540**.
 - [Pictures build intuition but cannot carry an argument, and they fail exactly where the system gets interesting](../lessons/pictures-build-intuition-but-cannot-carry-an-argument.md)
 - [Attack an intractable problem with a model too small to be fair to it, then add back only what proves necessary](../lessons/attack-an-intractable-problem-with-a-model-too-small-to-be-fair.md)
 - [Let breakdown show up as the absence of any continuation rather than as a distinguished event](../lessons/failure-shows-up-as-the-absence-of-a-continuation.md)
+- [Make an operation distribute over composition and you need only define it on the atoms](../lessons/make-an-operation-distribute-and-you-need-only-define-it-on-atoms.md)
+- [A new operator can silently invalidate the well-formedness test every other definition depends on](../lessons/a-new-operator-can-silently-invalidate-your-well-formedness-test.md)

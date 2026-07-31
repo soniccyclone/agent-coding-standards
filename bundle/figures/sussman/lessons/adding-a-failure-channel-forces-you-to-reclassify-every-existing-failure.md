@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Adding a second way to fail obliges you to reclassify every existing failure"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [verifiability, cognitive-load]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Adding a second way to fail obliges you to reclassify every existing failure
+
+**Lesson:** A system usually starts with one notion of things going wrong, and everything that goes wrong is routed into it. Then a mechanism arrives that needs its own notion — a search that must abandon a branch, a retry loop that must give up on an attempt, a speculative path that must be rolled back — and now there are two. The tempting reading is that the new one is a refinement of the old, so anything that used to be a failure can be treated as an instance of the new kind and handled by the new machinery. That reading is wrong and it is dangerous, because the two kinds differ in what they claim. One says this attempt did not work out and something else should be tried. The other says the program is defective and no other attempt will help.
+
+Conflating them destroys the property that made the search useful. Route a genuine defect into the retry channel and the machinery does exactly what it was built to do: it silently discards the branch, tries another, and either finds some other answer or reports that no solution exists. Either outcome is a lie. You get a wrong answer with no indication that anything went wrong, or you get "no solution" for a problem that has one, and in both cases the defect is not merely unreported, it has been actively consumed by a component whose whole purpose is to make dead ends invisible. Recoverable-failure machinery is a very effective mechanism for hiding bugs, and it hides them in proportion to how well it works.
+
+So the discipline when introducing the second channel is to go through every existing failure site and decide, explicitly, which channel it belongs to — and to expect that most of them belong to the old one. Reading an unbound name is a bug, not an alternative worth abandoning. A type error is a bug. Running out of memory is neither, and needs a third answer. The right shape of the finished design is a short, closed, enumerable list of the places that can initiate the recoverable kind, small enough to write down and check, with everything else left alone and still loud. If you cannot enumerate the entries on that list, you do not know what your system can silently swallow.
+
+The same obligation runs in the other direction and is more often neglected. Once the recoverable channel exists, code that predates it will be running underneath it, and any of it that reports trouble by the old means will punch straight through the search rather than pruning it. Introducing a control mechanism is therefore never a purely additive change, however it is packaged. Every failure in the system has just acquired a classification it did not previously need, and until each one has been assigned, the classification exists and is being decided by accident.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) — chapter 4 section 4.3.3 on implementing the nondeterministic evaluator, specifically the remark accompanying the variable-lookup execution procedure that looking up a variable always succeeds, that a lookup which cannot find the variable signals an error as usual, and that such a failure indicates a program bug in the form of a reference to an unbound variable rather than an indication that a different nondeterministic choice should be tried; together with the summary enumeration in the same section, which lists exactly two ways a failure can be initiated — the user program evaluating the empty choice expression, and the user requesting another answer at the driver loop — alongside separate lists of the three places failure continuations are constructed and the two situations in which they are called during the processing of an already-initiated failure.

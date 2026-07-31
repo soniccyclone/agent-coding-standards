@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A new operator can silently invalidate the well-formedness test every other definition depends on"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [verifiability, expressiveness, primitive-count]
+subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# A new operator can silently invalidate the well-formedness test every other definition depends on
+
+**Lesson:** Any system that allows things to be defined in terms of themselves rests on a side condition guaranteeing that each such definition picks out exactly one object — that something decreases, that progress is forced before the self-reference is reached, that the dependency graph has no cycle. That condition was designed against the operators that existed at the time, and it is usually checked syntactically. Introduce a new operator afterwards and the check can keep passing while ceasing to mean anything at all, because the new operator gives back exactly what the check was counting. The sharp case is an operator that inverts a constructor: if progress is measured by how many steps a definition commits to before recurring, and the new operator cancels one step, then a definition can display the required commitment and make no progress whatsoever. What looks like a definition now has a whole family of solutions, every one of them satisfying it, so it determines nothing while reading as impeccable.
+
+What makes this worth a standing habit is that the failure is completely silent. No error is raised, no tool complains, the shape of the text is correct. The damage lands elsewhere and later: every downstream move that assumed uniqueness — substituting a name for its body, proving a property by unfolding, computing the definition by iteration and trusting the limit — becomes unsound, and the wrong answer surfaces nowhere near the definition that caused it. So the obligation when admitting a new operator is larger than saying what it means. You have to ask whether it preserves the measure your well-formedness argument runs on. Anything that undoes an existing constructor should be assumed guilty until checked, since undoing a constructor undoes whatever guarantee that constructor was purchasing.
+
+The remedy is smaller than the instinct suggests, and its shape is the transferable part. The operator is not deleted, the check is not weakened, and no more sophisticated analysis is built to admit the awkward cases. Instead its use is forbidden in the one context where it does damage — inside self-referential definitions — and the reason is written down beside the prohibition. That is the right response whenever a construct is genuinely valuable in most positions and corrosive in one: a scoped ban costs a sentence, while a general theory that admits it costs a research programme and deleting it costs everyone who had a legitimate use. The one condition on the cheap remedy is that the justification has to travel with the rule, because a restriction whose rationale has been lost reads to the next maintainer as an obvious oversight, and gets lifted.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the traces chapter's treatment of the after operator, whose law makes it the inverse of prefixing, followed by the warning that using it inside a recursively defined process invalidates the guards and so admits multiple solutions, demonstrated on an equation solved by every process beginning with the given event, and closing with the decision never to use the operator in recursive definitions; read against the earlier requirement that recursive definitions be guarded in order to have a unique solution.

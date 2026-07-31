@@ -26,7 +26,7 @@ tags: [work]
 line 22864. Current position recorded below; if this file still says "in progress" the
 session died and the position line is the truth.**
 
-**Current position: line 3991 (resumed here).**
+**Current position: line 4400 (sections 5.2 tail and 5.3 head read and mined).**
 
 Read against `pdftotext -layout` output of the 2005 edition PDF (441 pages → 22864 lines
 of extracted text). Identity verified: title page and preface name N. Wirth and J.
@@ -85,3 +85,5 @@ section are where the extractable lessons are.
 - [Edit the description, not the contents](../lessons/edit-the-description-not-the-contents.md)
 - [An indirection relocates cost into demands on the layer below](../lessons/an-indirection-relocates-cost-into-demands-on-the-layer-below.md)
 - [Attach state to the level you want to have several of](../lessons/attach-state-to-the-level-you-want-several-of.md)
+- [Export the default and the parts it was assembled from](../lessons/export-the-default-and-the-parts-it-was-assembled-from.md)
+- [A requirement that lets later input revise earlier output costs you a whole pass](../lessons/a-requirement-that-lets-later-input-revise-earlier-output-costs-a-pass.md)

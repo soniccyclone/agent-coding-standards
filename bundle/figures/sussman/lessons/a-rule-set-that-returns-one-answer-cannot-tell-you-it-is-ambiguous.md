@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A rule set that returns one answer can never tell you it was ambiguous"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [verifiability, expressiveness]
+subdomains: [programming-languages-and-semantics, formal-methods-and-verification]
+tags: [lesson]
+---
+# A rule set that returns one answer can never tell you it was ambiguous
+
+**Lesson:** Write down a set of rules that says how legal structures may be composed, and you have written something whose meaning is a relation: for a given input, some set of structures satisfy the rules. That set may have zero members, one, or many, and which of those it has is a property of the rules that you did not choose and probably did not think about. Now implement the rules the ordinary way, as a procedure that walks the input and produces an answer. The implementation is not capable of representing more than one answer, so if the rules admit several it will return whichever one its traversal order reaches first, with no indication that the choice was made or that there was a choice to make.
+
+That is the entire mechanism by which ambiguity survives in specifications for years. It is not that the author considered the ambiguous cases and decided they did not matter; it is that the implementation was structurally incapable of raising the question, and the implementation is where everyone's attention goes. Precedence between overlapping rules, which of several matching handlers wins, which of several applicable overrides applies, which of several parses of a modifier is meant — in each case there is a real relation with multiple solutions, and a single-valued implementation that quietly picks one and thereby converts a defect of the specification into an undocumented behaviour of the code. The behaviour then becomes load-bearing, and correcting the specification breaks callers.
+
+The corrective is to run the rules, at least once, in a form that produces every solution rather than the first. This is cheap to do at design time even if the shipped implementation is single-valued, and what it buys is a census: for representative inputs, how many readings does the rule set actually admit? If the count is one everywhere you care about, you have learned that your specification is unambiguous, which is a genuine and otherwise unobtainable fact about it. If the count exceeds one, you have found the cases where you owe a decision, and you can look at the alternatives side by side and choose, rather than discovering years later which one your traversal happened to prefer.
+
+The general form of the point is that a formulation's arity is part of what it can tell you. A procedure that returns one thing cannot report that the answer was underdetermined, cannot report that it was overdetermined, and cannot distinguish either from a well-posed question — those distinctions are not lost in the implementation, they were never expressible in its type. Whenever a specification is a relation and the implementation is a function, the difference between them is exactly the information about ambiguity, and that information is worth deliberately recovering rather than treating the collapse as free.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) — chapter 4 section 4.3.2 on parsing natural language, where a grammar written as nondeterministic procedures is elaborated to allow prepositional phrases to attach recursively to both noun phrases and verb phrases, and the resulting analyzer is shown returning two structurally different but equally legal readings of the same input sentence, corresponding to two different attachments of the trailing phrase and hence two different meanings, with the second obtained only by asking the evaluator to try again; together with Exercise 4.45, which points out that a slightly longer sentence under the same grammar admits five distinct parses and asks the reader to give all five and explain the differences in meaning among them.

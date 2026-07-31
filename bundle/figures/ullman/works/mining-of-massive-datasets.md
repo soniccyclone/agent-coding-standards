@@ -172,6 +172,8 @@ tags: [work]
 <!-- Chapter 13 (neural nets and deep learning) -->
 - [Impose a known invariance as shared parameters, don't hope the fit rediscovers it](../lessons/impose-a-known-invariance-as-shared-parameters.md)
 - [The search method you commit to gets a veto over every component](../lessons/the-search-method-you-commit-to-vetoes-your-components.md)
+- [A region of exactly-zero response is a trap, not a floor](../lessons/a-region-of-exactly-zero-response-is-a-trap-not-a-floor.md)
+- [An exact identity leaves you a free parameter — spend it on staying in range](../lessons/an-exact-identity-leaves-you-a-free-parameter-spend-it-on-range.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

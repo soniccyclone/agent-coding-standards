@@ -99,3 +99,6 @@ tags: [work]
 - [When a chain of moves keeps rewriting the same slot, lift that slot's value out of the structure and put the exception in the invariant](../lessons/a-value-that-keeps-being-rewritten-belongs-outside-the-structure.md)
 - [Two things whose live regions grow and shrink in step can share one store, and the whole argument is a footprint check](../lessons/overlay-two-things-whose-live-extents-are-complementary.md)
 - [A design method cannot supply the invention, only the retrospective explanation — and that is still worth having](../lessons/a-method-buys-retrospective-explanation-not-invention.md)
+- [A guard that skips already-finished work makes the contract relative, so invent the relativized concept before attempting the proof](../lessons/a-guard-that-skips-finished-work-makes-the-contract-relative.md)
+- [When what you actually want is a quantity passing through, add a variable whose whole job is to keep it unmerged](../lessons/when-the-payload-is-the-trajectory-add-state-to-keep-it-unmerged.md)
+- [Analyse cost against the part refinement will not change, and the answer comes back as a budget the representation has to meet](../lessons/analyse-cost-against-what-refinement-cannot-change.md)
