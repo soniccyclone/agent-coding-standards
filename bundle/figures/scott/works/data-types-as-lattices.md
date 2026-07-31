@@ -28,3 +28,6 @@ tags: [work]
 - [A model validates laws your rule set cannot reach, and those are the rules you are missing](../lessons/a-model-validates-laws-your-rule-set-cannot-reach.md)
 - [Working on representations buys extra power only by breaking effectiveness or respect for meaning](../lessons/working-on-representations-buys-power-only-by-breaking-something.md)
 - [Audit afterward which part of a borrowed theory you actually used](../lessons/audit-afterward-which-part-of-the-borrowed-theory-you-actually-used.md)
+- [Existence without uniqueness is a construction, not the abstraction you wanted](../lessons/existence-without-uniqueness-is-not-the-abstraction-you-wanted.md)
+- [Get existence from a general principle first, then find out what you built](../lessons/get-existence-from-a-general-principle-then-find-out-what-you-built.md)
+- [A representation is abstract exactly when only distinguishability is required of it](../lessons/abstract-means-only-distinguishability-is-required.md)
