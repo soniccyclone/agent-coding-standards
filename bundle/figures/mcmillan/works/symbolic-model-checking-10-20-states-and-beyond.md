@@ -6,6 +6,7 @@ description: The paper that introduced symbolic model checking to the field, wri
 subdomains: [formal-methods-and-verification]
 year: 1990
 url: https://mcmil.net/pubs/LICS90.pdf
+extraction: complete
 survey_pages: 33
 survey_text_layer: ocr
 survey_fetch_mb: 0
@@ -57,3 +58,5 @@ argument were both already covered and are deliberately not restated here.
 - [A correct encoding is onto, not minimal](../lessons/a-correct-encoding-is-onto-not-minimal.md)
 - [An iteration costs what changes, not what it contains](../lessons/an-iteration-costs-what-changes-not-what-it-contains.md)
 - [A heuristic win obliges you to name the class — and its complement](../lessons/a-heuristic-win-obliges-you-to-name-the-class.md)
+- [When a condition touches every case, find the one object it factors through](../lessons/find-the-object-a-pervasive-condition-factors-through.md)
+- [Make the trigger a shape you can see, and defend the shape with a survey](../lessons/make-the-trigger-a-shape-you-can-see.md)
