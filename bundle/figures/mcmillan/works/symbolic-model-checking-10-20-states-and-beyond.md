@@ -42,10 +42,16 @@ advertises needs an API key (401). archive.org has a DTIC text derivative for th
 TCAD94 paper (`DTIC_ADA274375`) and for the thesis (`DTIC_ADA250924`) but nothing
 for this one.
 
-## Lessons
-_(empty — lesson extraction is Phase 4)_
-without rasterising. Blocked on the OCR batch, not on reading effort. Note when
-it lands: this paper is the direct precursor of
+**Read 2026-07-31 (Phase 4 bucket 210)** via the OCR reading copy above, all 33
+pages including the reference list. Identity verified against page 1: title,
+five-author list and abstract match. This paper is the direct precursor of
 [the thesis](symbolic-model-checking-an-approach-to-the-state-explosion-problem.md),
-which is already `extraction: complete` with seven lessons, so the marginal yield
-here is likely small and any lesson must be checked against that set first.
+so every candidate lesson was checked against that work's seven lessons and the
+four from TCAD94 first; the ideas that survived that filter are the ones below.
+The unification-of-methodologies move and the general cost-tracks-structure
+argument were both already covered and are deliberately not restated here.
+
+## Lessons
+- [A recursive definition does not pick its own meaning — you do](../lessons/a-recursive-definition-does-not-pick-its-own-meaning.md)
+- [What crosses each cut sets the size of your representation](../lessons/what-crosses-each-cut-sets-the-size-of-your-representation.md)
+- [A correct encoding is onto, not minimal](../lessons/a-correct-encoding-is-onto-not-minimal.md)
