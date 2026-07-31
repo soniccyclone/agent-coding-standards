@@ -27,3 +27,6 @@ tags: [work]
 - [Order the work so the items nest, and the bookkeeping collapses to a stack](../lessons/order-the-work-so-it-nests-and-a-stack-is-enough.md)
 - [Give a subcomputation its own view of shared mutable state with a boundary marker and a proof that the older entries cannot matter](../lessons/scope-shared-mutable-state-with-a-marker-and-an-irrelevance-proof.md)
 - [Extract the constraint graph, and a yes/no procedure starts producing the witness](../lessons/extract-the-constraint-graph-so-the-decision-yields-a-witness.md)
+- [Narrow the input in cheap front passes so the core algorithm may assume more, and the bound simplifies with it](../lessons/narrow-the-input-before-you-start-so-the-core-can-assume-more.md)
+- [Fit the measurement to the shape you claimed, and find out which resource actually binds](../lessons/fit-the-measurement-to-the-claimed-shape-and-find-which-resource-binds.md)
+- [Get the bound first, then spend a separate revision buying the simplicity back](../lessons/get-the-bound-first-then-spend-a-separate-revision-buying-simplicity.md)

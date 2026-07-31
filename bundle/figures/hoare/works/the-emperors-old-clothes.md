@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -26,3 +27,5 @@ tags: [work]
 - [A trap-laden substrate destroys compositional reasoning, which is why reliability is the one property money cannot buy](../lessons/a-trap-laden-substrate-destroys-compositional-reasoning.md)
 - [A process that can only add produces designs whose defects are invisible rather than absent](../lessons/a-process-that-can-only-add-hides-defects-rather-than-removing-them.md)
 - [A shared base is the intersection of its uses, not their union — if you forbid subsets you must make it small](../lessons/a-shared-base-is-the-intersection-of-its-uses-not-the-union.md)
+- [Clarity is not a downstream service function: an unclear specification is a symptom of a defective design](../lessons/clarity-is-not-a-downstream-service-function.md)
+- [Quality is a balance among incompatible criteria, and what a delivery crunch destroys is the balancing](../lessons/quality-is-a-balance-of-incompatible-criteria-and-the-balancing-is-what-crunch-destroys.md)

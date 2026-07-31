@@ -21,3 +21,7 @@ tags: [work]
 
 ## Lessons
 - [Characterize a class both by what its members do for you and by what they are made of](../lessons/characterize-a-class-both-by-what-it-does-and-by-what-it-is.md)
+- [When a construction stalls, try strengthening the maps rather than the objects](../lessons/when-a-construction-stalls-strengthen-the-maps-not-the-objects.md)
+- [Repairing a shared lemma is not done until every use of it has been rechecked individually](../lessons/repairing-a-shared-lemma-means-revisiting-every-use-of-it.md)
+- [Solving an equation by iteration does not name a unique answer; the starting point is part of the design](../lessons/an-equation-does-not-name-a-unique-solution-the-seed-does.md)
+- [Turn your subobjects into elements, and questions of existence become fixed-point equations](../lessons/make-your-subobjects-into-elements-so-existence-becomes-a-fixed-point.md)
