@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 1
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -28,3 +29,6 @@ tags: [work]
 - [Price each operation in your interface by what it forces on the implementation, and name the algebra you actually need](../lessons/price-each-operation-in-your-interface-by-what-it-forces-below.md)
 - [Funnel every mutation through one operation so the invariant bookkeeping has exactly one home](../lessons/funnel-every-mutation-through-one-operation-so-bookkeeping-has-one-home.md)
 - [To bound how often a step fires, find a quantity it increments and then audit everything that can decrement it](../lessons/to-bound-how-often-a-step-fires-find-what-it-increments.md)
+- [Speed an algorithm up by re-hosting its bookkeeping, not by rewriting its logic](../lessons/speed-up-an-algorithm-by-re-hosting-its-bookkeeping-not-rewriting-it.md)
+- [Interchangeable at the interface is not interchangeable at the guarantee: an amortized component cannot hold up a per-operation promise](../lessons/an-amortized-component-cannot-support-a-worst-case-promise.md)
+- [Measure the improvement against inputs that actually occur, and publish the result even when it goes against you](../lessons/measure-your-improvement-against-the-inputs-that-actually-occur.md)

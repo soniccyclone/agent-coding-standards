@@ -24,3 +24,4 @@ tags: [work]
 - [Give a construct a meaning, not another notation](../lessons/give-a-construct-a-meaning-not-another-notation.md)
 - [Order things by how much they tell you](../lessons/order-things-by-how-much-they-tell-you.md)
 - [Give undefinedness a value instead of a hole](../lessons/give-undefinedness-a-value-instead-of-a-hole.md)
+- [Judge a definition by what its explaining side need not know](../lessons/judge-a-definition-by-what-its-explaining-side-need-not-know.md)

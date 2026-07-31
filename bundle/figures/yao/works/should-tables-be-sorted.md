@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 0
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -27,3 +28,5 @@ tags: [work]
 - [When both extremes of a parameter are easy for opposite reasons, the hard case is the middle](../lessons/when-both-extremes-are-easy-the-difficulty-lives-in-the-middle.md)
 - [A guarantee that only switches on past every real input is not an answer yet — invert it into a reach question](../lessons/a-guarantee-that-starts-past-every-real-input-is-not-yet-an-answer.md)
 - [In a construction that is already at the limit, the ugly exception is load-bearing — delete it and watch it fail](../lessons/in-an-extremal-construction-the-ugly-exception-is-load-bearing.md)
+- [Say which question your fast path actually answers, because the cheap one and the useful one are rarely the same](../lessons/say-which-question-your-fast-path-actually-answers.md)
+- [To get a claim that outlives the hardware, let the machine-dependent quantity diverge instead of fixing a plausible value](../lessons/let-the-machine-dependent-quantity-diverge-instead-of-picking-a-plausible-value.md)

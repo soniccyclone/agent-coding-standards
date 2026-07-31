@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "No step may be justified by a later payoff, so complexity has to arrive as a ladder of targets each worth reaching on its own"
+figure: valiant
+works: [evolvability]
+axes: [cognitive-load, verifiability]
+subdomains: [software-engineering-and-architecture, algorithms-and-complexity]
+tags: [lesson]
+---
+# No step may be justified by a later payoff, so complexity has to arrive as a ladder of targets each worth reaching on its own
+
+**Lesson:** Some processes can spend now for a return later; others cannot, because the only thing that decides whether a step is kept is how the step scores at the moment it is taken. In the second kind of process, no argument of the form "this is worth doing because of what it enables three stages from now" has any force — the mechanism cannot represent that argument, let alone act on it. The consequence for anything complicated that such a process produces is severe: it cannot have been built toward a distant design. It must have been assembled as a sequence of targets, each one reachable from where the process already stood, and each one paying off immediately on arrival. Whatever the eventual structure looks like, every layer of it was locally worth having before the next layer existed.
+
+This changes what counts as an explanation. Showing that a complex end state is *representable*, or that a path to it exists in principle, explains nothing; the burden is to exhibit the intermediate targets, and to show each was worth reaching given only the vocabulary and the conditions in force at the time. Which targets are available is doubly contingent. It depends on what earlier stages happened to produce, since their outputs become the terms in which later targets are expressed, and it depends on the external conditions, since those determine which behaviors pay. A target unreachable today can be trivially reachable after an unrelated stage completes and after the environment shifts — and there is no guarantee that any such sequence exists for a given end state. Reachability is a property of the whole ladder, not of the top rung.
+
+For anyone building systems this is a sharp test to apply to your own plans. If the process that will actually carry the work forward — a team judged quarterly, an optimizer scored per iteration, an incremental migration that must keep the product shippable at every commit — cannot bank a loss against a future gain, then a plan whose early steps only make sense in light of the final architecture will not survive contact with it. The plan has to be re-cut into stages that each stand alone, and if no such re-cutting exists, that is not a communication problem, it is information that the end state is not reachable by this process. The reverse reading is just as useful: when you do find a decomposition where every stage pays immediately, you have found the thing that makes arbitrarily elaborate structure achievable by a mechanism that can only ever take one locally justified step.
+
+**Source:** [Evolvability](../works/evolvability.md) — the abstract and section 6's account of evolvable target pursuit, in which a series of stages each pursues a target that is evolvable in the technical sense, each target rendered reachable by the combination of the prevailing conditions and the outcome of previous stages, with the outputs of functions acquired in one stage becoming available as basic variables for the next, so that arbitrarily complex circuits can be built up provided each layer is beneficial on its own; together with the framing in section 3 that the model captures evolution toward a target under stable conditions and the introduction's contrast with evolutionary algorithms that may act on exponentially small performance increases.

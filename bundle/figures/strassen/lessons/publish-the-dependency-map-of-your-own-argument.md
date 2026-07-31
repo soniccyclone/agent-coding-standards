@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Publish the dependency map of your own argument, marking which parts are load-bearing for which conclusion"
+figure: strassen
+works: [relative-bilinear-complexity-and-matrix-multiplication]
+axes: [cognitive-load]
+subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# Publish the dependency map of your own argument, marking which parts are load-bearing for which conclusion
+
+**Lesson:** A substantial technical artifact usually has more than one purpose — it establishes a headline result, it lays groundwork for something that comes after, it doubles as an entry point for someone new to the area — and different readers arrive wanting different subsets of it. The author is the only person who knows which parts serve which purpose, and the default is to leave that knowledge unwritten, so every reader has to reconstruct it by reading everything. The fix costs a few sentences: state the purposes explicitly, then annotate the structure against them. Say which heavy prerequisite is used where, and say plainly that it is not needed for the main conclusion or for the follow-on work. Mark the result that is included for completeness and never used again. Say which background you are assuming and which you are deliberately spelling out, dimension by dimension, because a reader may be fluent in one of your two subject areas and a stranger to the other. Each annotation is a permission to skip, and a reader who trusts the annotations reads a fraction of the pages and still gets what they came for.
+
+The discipline pays the author more than the reader. You cannot annotate what depends on what until you know, and the exercise of writing it down routinely turns up a dependency that is decorative — a piece of machinery invoked out of habit that the argument does not actually need, or a section whose only consumer is itself. It also forces a decision you would otherwise defer forever: for each strand you developed, is this load-bearing, is it a convenience, or is it a dead end you should say out loud is a dead end. Recording the generalizations you looked at and declined, with the reason they did not help, is worth as much as recording the ones that worked, because it stops the next person from re-walking the same corridor.
+
+Read as a rule about artifacts generally, this is the case for shipping the dependency structure alongside the thing rather than leaving it implicit in the thing. A module that documents which of its imports are essential and which are conveniences can be ported; one that does not must be taken whole. A proof, a design document or a system whose author has stated the intended entry points and the optional parts is maintainable by someone else, because that person can tell which edits are local. The information is nearly free to write at the moment you finish, and it is expensive-to-impossible to recover later, which is exactly the profile of information that should be captured eagerly.
+
+**Source:** [Relative Bilinear Complexity and Matrix Multiplication](../works/relative-bilinear-complexity-and-matrix-multiplication.md) — the introduction and the notes on presentation: three purposes stated up front, a section-by-section map, an explicit statement of which background is assumed versus treated explicitly for each of the two intended audiences, a note that a particular deep criterion from invariant theory is used only in a few places and is essential neither for the headline bound nor as preparation for the sequel, a result presented with the remark that it is not needed later, and a closing note declining to state generalizations that do not currently improve the bound.

@@ -34,3 +34,5 @@ tags: [work]
 - [When an object is only defined up to an equivalence, restate every law about it at that coarseness](../lessons/restate-the-laws-at-the-coarseness-the-object-is-defined.md)
 - [If no bounded observation can move a belief, the matter is already settled and you are only ignorant](../lessons/if-no-finite-observation-moves-it-it-is-already-decided.md)
 - [An aggregate is predictable when no single input has much influence, not when it has many inputs](../lessons/small-per-input-influence-is-what-makes-an-aggregate-predictable.md)
+- [Judge a proposed generalization by which laws it keeps, not by how much more it covers](../lessons/a-generalization-that-drops-a-law-you-were-using-is-not-one.md)
+- [A sufficient condition is unfinished work until you have tried to weaken it and failed on purpose](../lessons/a-sufficient-condition-is-unfinished-until-you-try-to-weaken-it.md)

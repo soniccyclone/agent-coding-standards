@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Carry an inactive record alongside the active state, because which moves are reachable depends on what the state remembers"
+figure: valiant
+works: [evolvability]
+axes: [expressiveness, cognitive-load]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Carry an inactive record alongside the active state, because which moves are reachable depends on what the state remembers
+
+**Lesson:** Two representations that compute exactly the same thing are not interchangeable if the process that modifies them can only move to neighbors generated *from the representation*. Behavior is a function of the representation; the set of available next steps is also a function of the representation; and those two functions are independent. So the redundancy you would normally delete as duplication — several descriptions of one behavior — is the substrate on which reachability is built. Collapse the descriptions to a canonical form and you have preserved every observable output while silently shrinking the set of futures available from here.
+
+That observation licenses a specific and initially odd design: split the state into a part that determines what the system does and a part that determines what the system can become. The second part carries no behavioral weight. It is a record of configurations already passed through, or variants held in reserve, and its only job is to widen the neighborhood of the current state beyond what the active part alone could generate. Once the split exists, capabilities that looked impossible become routine — a process restricted to steps that never lose ground can still search over many candidates and keep the best, because the search bookkeeping lives in the inert half where changing it costs nothing behaviorally. The same structure scales up: a whole population of variants can be encoded as one state whose distinguished member is what runs and whose remainder is a pool that future steps may promote, which is how diversity gets its value — not by doing anything now, but by being available when conditions change.
+
+The transferable point is about how you evaluate representations. The usual criteria are size, clarity, and speed of evaluation, all measured against the current behavior. Add a third question: from this representation, what are the neighbors? A compact encoding with a barren neighborhood can be strictly worse than a bloated one whose extra structure suggests moves, and the difference will not show up in any test of present behavior. This is the honest argument for keeping history — migration trails, prior configurations, dead branches kept where the tooling can see them. Not sentiment, and not documentation: they enlarge the set of next states, and that set is the thing that determines whether you can get anywhere from here.
+
+**Source:** [Evolvability](../works/evolvability.md) — the simulation in the proof of Proposition 3.3, where a search for the best neighbor is emulated within the no-large-loss model by a state carrying an integer step counter, a component that generates mutations and a separate component holding the best performer found so far, explicitly noted as a redundant representation in which many descriptions denote the same function and whose power comes from storing the mutation-generating history; together with section 6's reading of biological redundancy as one near-identical copy controlling behavior while the other serves as a reservoir of history that expands future possibilities, and the encoding of a diverse population as a single state whose distinguished member determines performance while the rest form a reservoir.

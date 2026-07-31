@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "The improving path may have to run through states holding pieces that belong nowhere in the answer"
+figure: valiant
+works: [evolvability]
+axes: [cognitive-load, verifiability]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# The improving path may have to run through states holding pieces that belong nowhere in the answer
+
+**Lesson:** There is a tempting discipline for incremental construction: only ever add material that will appear in the finished thing, so that every intermediate state is a correct partial answer. It is attractive because it makes every state auditable and every step justifiable on its own terms. It is also, sometimes, provably fatal. If the measure driving your steps rewards a candidate for its overall agreement with the goal rather than for containing correct fragments, then adding something demonstrably absent from the goal can improve the measure — because it moves the candidate's behavior toward the goal's behavior on the cases that dominate — while every correct addition available at that moment improves it less, or is not yet reachable at all. Refuse those moves and the process sits at a local optimum with the goal still far away. Allow them and it advances.
+
+What makes this workable rather than chaotic is that the junk is removable later, and removable *by the same rule*. Once the candidate contains everything the goal requires, the arithmetic reverses: each superfluous piece now costs agreement, so deleting it is an improvement, and the process contracts to the exact answer without any external instruction to start cleaning up. The run therefore has two regimes driven by one criterion — an expansion phase where accumulating extra material is rewarded, and a contraction phase where shedding it is. Nobody schedules the transition; it happens when the last required piece lands. That is the shape to look for whenever you are designing a hill-climbing process: not a single monotone assembly, but a criterion whose gradient flips sign in exactly the right place, so that overshoot is self-correcting.
+
+Two cautions come with this, both of which matter more than the trick itself. The first is that the intermediates are genuinely wrong, so a run interrupted mid-way leaves something that is not a degraded version of the answer but a different thing that happens to score well, and any consumer of intermediate states has to be told that. The second is that the whole scheme is contingent on the goal's structure in a way that is easy to miss: the same construction, applied to a class that also admits negated terms, breaks — a state can score highly for a reason that has nothing to do with resembling the goal, and from there no local step reveals the way forward. So "add junk now, clean up later" is a real technique, not a general licence; it works when you can prove the gradient flips, and demanding proof of that is what separates it from wishful thinking.
+
+**Source:** [Evolvability](../works/evolvability.md) — the opening of the proof of Theorem 5.1, which observes that introducing a literal absent from the ideal conjunction can be an improvement and works through the case where the starting hypothesis is empty; the claim-by-claim case analysis showing that additions of required literals stay beneficial until all are present and that removals of superfluous ones become beneficial only afterwards, giving the two-phase expansion-then-contraction run; and the remark following the theorem that the same algorithm applied to conjunctions permitting negated variables can start from a high-performing state from which local search finds no improvement.

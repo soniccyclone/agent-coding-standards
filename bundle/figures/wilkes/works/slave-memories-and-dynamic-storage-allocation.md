@@ -26,3 +26,6 @@ tags: [work]
 - [When you index by a lossy function of a key, store the part you discarded so a hit can be told from a coincidence](../lessons/keep-the-bits-you-discarded-to-index-cheaply.md)
 - [What a transparent duplicate of state really costs is the set of freedoms you decline to withdraw from its clients](../lessons/the-freedom-you-decline-to-withdraw-prices-the-duplicate.md)
 - [Let claimants collide in one pool with an ownership tag rather than carving the resource up, because partitioning exports an allocation problem upward](../lessons/share-by-tagging-owners-not-by-partitioning.md)
+- [Hang deferred reconciliation on a transition the system already makes, and carry the smallest per-entry state that makes deferring safe](../lessons/reconcile-at-a-transition-the-system-already-makes.md)
+- [When a cheap check gates an expensive fallback, start both at once and abandon the loser — if abandoning leaves nothing behind](../lessons/issue-the-slow-path-alongside-the-check-if-you-can-abandon-it.md)
+- [Give one copy exclusive authority for a bounded interval instead of keeping two copies in step](../lessons/give-one-copy-exclusive-authority-instead-of-keeping-two-in-step.md)

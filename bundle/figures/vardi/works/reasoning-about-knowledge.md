@@ -30,3 +30,5 @@ tags: [work]
 - [Tune behaviour by changing the structure, not by arguing about the laws — and know which laws the framework forces on you](../lessons/tune-behaviour-by-changing-the-structure-not-by-arguing-about-laws.md)
 - [To show a description is realizable, build the artifact out of the descriptions themselves](../lessons/to-show-a-description-is-realizable-build-the-thing-out-of-descriptions.md)
 - [Separate the predicate you reason with from the predicate a component can evaluate](../lessons/separate-the-predicate-you-reason-with-from-the-one-a-component-can-evaluate.md)
+- [Model learning as cutting links in a fixed space, not as deleting candidates from it](../lessons/model-learning-as-cutting-links-not-as-deleting-candidates.md)
+- [A message's content is fixed by the messages it was chosen from, not by how much it narrows anyone's uncertainty](../lessons/a-messages-content-is-fixed-by-the-messages-it-was-chosen-from.md)

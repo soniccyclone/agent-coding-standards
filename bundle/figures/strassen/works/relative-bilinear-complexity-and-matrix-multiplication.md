@@ -11,6 +11,7 @@ survey_text_layer: ocr
 survey_fetch_mb: 4
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -43,3 +44,4 @@ This work needs the deterministic OCR batch.
 - [To discard the part of a structure you do not want, assign weights that make it strictly more expensive, then scale](../lessons/assign-weights-so-the-unwanted-terms-carry-a-cost-and-vanish.md)
 - [Require each part to belong to a class, not to be a copy of a fixed one](../lessons/require-each-part-to-be-in-a-class-not-to-be-a-copy.md)
 - [A property that only holds once you enrich the environment is a property of the environment](../lessons/a-property-that-needs-a-richer-environment-is-not-a-property-of-the-system.md)
+- [Publish the dependency map of your own argument, marking which parts are load-bearing for which conclusion](../lessons/publish-the-dependency-map-of-your-own-argument.md)

@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 1
 access: public
 host: third-party-rehost
+extraction: complete
 tags: [work]
 ---
 
@@ -22,3 +23,6 @@ tags: [work]
 ## Lessons
 - [Cheat in the implementation but stay undetectable: guard the frequent case and fall through to the general one](../lessons/cheat-in-the-implementation-but-never-be-detectable.md)
 - [When you control how names are handed out, put the information in the name instead of in the thing named](../lessons/put-the-information-in-the-name-not-the-thing-named.md)
+- [Judge an automatic mechanism by how its cost is distributed and how it behaves near exhaustion, then delegate the cases it cannot cover to whoever creates them](../lessons/judge-a-mechanism-by-its-timing-profile-and-delegate-its-gaps.md)
+- [Once the working set has to be swapped, density is speed — so encode by census and frequency, and keep the encoding invertible](../lessons/density-is-speed-once-the-working-set-swaps.md)
+- [A self-describing system needs a floor: make it a couple of operations, name where the discipline stops, and keep a readable model beside the fast one](../lessons/a-self-describing-system-needs-a-small-named-floor.md)

@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Model learning as cutting links in a fixed space, not as deleting candidates from it"
+figure: vardi
+works: [reasoning-about-knowledge]
+axes: [expressiveness, verifiability, cognitive-load]
+subdomains: [formal-methods-and-verification, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Model learning as cutting links in a fixed space, not as deleting candidates from it
+
+**Lesson:** The intuitive picture of gaining information is pruning: you had a bag of candidates, evidence arrives, you throw the refuted ones away. That picture is adequate for exactly one observer and breaks the moment there are two. Vardi's treatment of the puzzle is worth studying for how insistently it corrects itself on this point — each round of answers is first described as deleting a corner of the space, then immediately restated as leaving the corner in place and deleting the connections that led to it. The correction matters because a situation you have ruled out is still needed as a destination: your reasoning about what someone else might be entertaining runs through it, and if you delete it you have deleted the reason you were able to conclude anything.
+
+What this buys is the right definition of possibility. Being impossible is not a property a candidate has; it is a property a candidate has relative to a vantage point, and it is precisely failure to be reachable along the surviving links from there. Two observers looking at the same space at the same moment therefore disagree about which candidates are gone, and that disagreement is not noise to be reconciled — it is the content the model exists to represent. Once possibility is relative in this way, the update rule becomes uniform and local: when it becomes settled among the participants that some situation cannot obtain, the links pointing at it vanish from every vantage that could have reached it, and nothing else changes. Because links are only ever removed and never added, reachability shrinks monotonically, which is what makes the process terminate and makes rounds countable. A monotone measure on a fixed carrier is a far better thing to reason about than a set whose membership is being edited.
+
+The engineering version of this mistake is common and expensive. The instinct on learning that a record is invalid is to delete the record; the correct move is usually to sever the reference, because reachability differs by root and some other holder's view still depends on that node existing to be reasoned about. Revoking a capability is not destroying the resource. Invalidating a cache entry for one consumer is not evicting it. A state machine's unreachable states are unreachable per role, not absolutely, and the set of them changes as the protocol advances while the state space does not. Keeping the carrier immutable and putting all the dynamics in the edges also has a plain practical payoff: every intermediate stage of the process is a structure of the same type as the initial one, so one analysis applies at every step instead of a fresh argument per round.
+
+**Source:** [Reasoning About Knowledge](../works/reasoning-about-knowledge.md) — chapter two's step-by-step analysis of the puzzle, where each announcement is described as truncating the cube and then explicitly restated as the node remaining while its edges disappear; the general update rule given there, that once a situation becomes commonly settled as impossible the edge to it is removed from every node that reaches the current one; and the exercise on the card game that asks the reader to explain why it is essential to think of edges rather than nodes as disappearing.

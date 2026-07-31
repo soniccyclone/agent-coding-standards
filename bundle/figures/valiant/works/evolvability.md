@@ -25,3 +25,5 @@ tags: [work]
 - [Require convergence from any starting state, then close the back door that would let a single step fake a restart](../lessons/require-convergence-from-any-state-and-close-the-back-door-that-would-fake-it.md)
 - [Place a new model inside an established one, and push the containment as tight as it will go](../lessons/place-a-new-model-inside-an-old-one-and-make-the-containment-as-tight-as-you-can.md)
 - [Engineer progress to arrive in quanta bigger than your measurement error, and give the comparator a neutral band](../lessons/engineer-progress-into-quanta-larger-than-your-measurement-error.md)
+- [The improving path may have to run through states holding pieces that belong nowhere in the answer](../lessons/the-improving-path-may-run-through-states-that-contain-nothing-of-the-answer.md)
+- [Carry an inactive record alongside the active state, because which moves are reachable depends on what the state remembers](../lessons/carry-an-inactive-record-because-reachable-moves-depend-on-what-the-state-remembers.md)
