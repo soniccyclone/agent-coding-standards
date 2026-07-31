@@ -22,11 +22,11 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
-**READ IN PROGRESS (2026-07-31 session): resumed at line 3991, working forward toward
-line 22864. Current position recorded below; if this file still says "in progress" the
-session died and the position line is the truth.**
+**READ IN PROGRESS (2026-07-31 session, second agent): resumed at line 10480, working
+forward toward line 22864. Current position recorded below; if this file still says
+"in progress" the session died and the position line is the truth.**
 
-**Current position: line 8150 — chapter 5 prose complete through section 5.5 (text frames,
+**Current position: line 10480 — chapter 5 prose complete through section 5.5 (text frames,
 font machinery, edit toolbox) and the chapter-5 literature list; chapter 5's
 complete-implementations listing (lines ~4900-7049, modules Fonts, Texts, TextFrames,
 Edit) checked for prose and confirmed to be pure Oberon source with no explanatory
