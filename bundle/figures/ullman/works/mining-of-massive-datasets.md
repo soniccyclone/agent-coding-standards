@@ -50,6 +50,8 @@ tags: [work]
 - [Change what pays off instead of enumerating the shapes of the attack](../lessons/change-the-payoff-instead-of-enumerating-the-attack.md)
 - [Run the same computation under two assumptions and treat the gap as the measurement](../lessons/run-the-same-computation-under-two-assumptions-and-read-the-gap.md)
 - [Trust attaches to a channel, not to the entity that owns it](../lessons/trust-attaches-to-a-channel-not-to-an-entity.md)
+- [When one score conflates two kinds of value, define them by mutual reference](../lessons/split-a-conflated-score-into-mutually-defining-roles.md)
+- [Eliminating the intermediate can destroy the structure that made it cheap](../lessons/algebraic-simplification-can-destroy-the-structure-that-made-it-cheap.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -66,7 +68,10 @@ aggressive summarization was written and then deleted as a genuine duplicate of
 `compress-so-that-one-question-survives-exactly`, which makes the same claim from
 the min-hashing chapter._
 
-_Next unread line is **8703**, the start of chapter 5. Remaining: ch5 link analysis,
+_Chapter 5 (link analysis, lines 8703-10453) was read in full on 2026-07-31,
+yielding the eleven lessons below the second divider._
+
+_Next unread line is **10454**, the start of chapter 6. Remaining:
 ch6 frequent itemsets, ch7 clustering, ch8 advertising, ch9 recommendation systems,
 ch10 social-network graphs, ch11 dimensionality reduction, ch12 large-scale ML,
 ch13 neural nets. Chapters 2-4 should also get a hand re-read at the same depth as

@@ -31,3 +31,5 @@ tags: [work]
 - [Get full machine efficiency without machine dependence by naming the machine's parameter and computing from it](../lessons/parameterize-on-the-machine-property-not-the-machine.md)
 - [Write the unaffordable version first and keep it: the abstract program is the frame the efficient one is built on](../lessons/keep-the-abstract-version-as-the-frame-of-the-concrete-one.md)
 - [Going from bounded to unbounded is a cliff, not a gradient: stay on the cheap side until the application forces you off](../lessons/the-finite-to-unbounded-step-is-a-cliff-not-a-gradient.md)
+- [The shape of the data dictates the shape of the program: each way of composing data has exactly one matching control structure](../lessons/the-shape-of-the-data-dictates-the-shape-of-the-program.md)
+- [Buffering absorbs variance, never a rate deficit — past two or three, extra buffers only delay the diagnosis](../lessons/buffers-absorb-variance-not-a-rate-deficit.md)

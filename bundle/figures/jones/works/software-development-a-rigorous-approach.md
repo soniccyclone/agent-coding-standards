@@ -31,3 +31,4 @@ tags: [work]
 - [Into a description you may borrow anything that denotes, and nothing that sequences](../lessons/borrow-things-that-denote-never-things-that-sequence.md)
 - [Most obligations are vacuous, which is exactly what makes checking every one of them affordable](../lessons/most-obligations-are-vacuous-which-is-what-makes-checking-everything-affordable.md)
 - [Give a sub-unit the widest terms it can honour, never the terms its one caller happens to need](../lessons/give-a-sub-unit-the-widest-terms-it-can-honour-not-the-ones-its-caller-needs.md)
+- [Derive the invariant from the goal by putting the progress variable where the target value stands](../lessons/derive-the-invariant-from-the-goal-by-substituting-the-progress-variable.md)

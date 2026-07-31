@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Compute the distance to the ideal first; it is the entire budget for the fix"
+figure: wirth
+works: [algorithms-and-data-structures]
+axes: [cognitive-load, hardware-affinity, verifiability]
+subdomains: [algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Compute the distance to the ideal first; it is the entire budget for the fix
+
+**Lesson:** Before building machinery to make a structure behave better, work out how much better it could possibly behave. Compare what the unmanaged structure costs on a typical input against what the ideal arrangement would cost, and the gap between them is a hard ceiling on the value of every scheme you might invent to close it. Any maintenance work you add has to fit inside that gap or it loses money. This inverts the usual order of thinking. Instead of designing an improvement and then measuring whether it helped, you derive the maximum permitted cost of the improvement before deciding whether one is worth designing at all — and quite often the answer is that the gap is too narrow for anything but the cheapest intervention, which is knowledge you want before, not after, writing the intricate version.
+
+Getting the number right requires resisting the pull of the worst case. A structure whose degenerate arrangement is catastrophically bad may nevertheless be fine in practice if the degenerate arrangement is a vanishing fraction of the arrangements that actually occur — and the way to know is to average the cost over the whole space of input orders rather than to reason from the extreme. When that average turns out to grow at the same rate as the ideal, differing only by a constant factor, the situation is completely different from what the worst case suggested: the structure is not broken, it is slightly inefficient, and the appropriate response is proportionate. Do the averaging honestly, including the assumption that makes it valid, because the assumption is doing real work and is the thing most likely to be false in your setting.
+
+The budget is also not a single number, because it scales with the workload mix. Maintenance is paid on updates and repaid on queries, so the ratio between those two frequencies multiplies the gap into the actual permitted expenditure. A structure that is read far more often than it is written can justify elaborate reorganization; one that churns cannot justify any. Write that ratio down as an explicit input to the decision rather than assuming a read-heavy world by default. The habit worth extracting: whenever you are tempted to improve something, first bound the improvement and then divide by how often you must pay for it — two cheap calculations that between them decide whether the interesting engineering problem you were about to solve is worth solving.
+
+**Source:** [Algorithms and Data Structures](../works/algorithms-and-data-structures.md) — section 4.4.5's derivation of the average search path length of a tree built by naive insertion, averaged over all permutations of the keys, its recurrence and closed form in terms of the harmonic sum, and the resulting constant ratio of about 1.386 against the perfectly balanced tree; the accompanying observations that the worst case is a completely degenerate list of linear search cost while the expected path length still grows strictly logarithmically, that the 39% figure imposes a limit on the effort that may profitably be spent on any reorganization upon insertion, that the ratio between retrieval and update frequencies significantly influences that payoff limit, and that improvements therefore do not pay off unless both the node count and the access-to-insertion ratio are large.

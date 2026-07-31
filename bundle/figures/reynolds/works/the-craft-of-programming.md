@@ -56,3 +56,5 @@ tags: [work]
 - [A parameter you never do anything to can accept any phrase, and that is how control structures become library code](../lessons/an-unconstrained-position-generalizes-from-a-name-to-a-phrase.md)
 - [Whether a resource's lifetimes nest or pile up is decided by where the recursive call sits](../lessons/where-the-recursive-call-sits-decides-whether-lifetimes-overlap.md)
 - [Derive the cost formula first; it names the one coefficient worth attacking](../lessons/let-the-closed-form-cost-tell-you-which-coefficient-to-attack.md)
+- [The quantity you make shrink is a design choice, and changing it gives a different algorithm with the same shape](../lessons/the-measure-that-shrinks-is-a-design-variable.md)
+- [A rule you validated on closed code can be false the moment a name can be supplied from outside](../lessons/a-rule-valid-in-a-closed-program-can-fail-once-names-come-from-outside.md)

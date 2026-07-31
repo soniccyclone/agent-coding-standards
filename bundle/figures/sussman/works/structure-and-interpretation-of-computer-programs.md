@@ -60,16 +60,21 @@ tags: [work]
 - [The argument for generic operations is organizational, not aesthetic: nobody can agree in advance](../lessons/the-case-for-genericity-is-that-agreement-is-impossible.md)
 - [Deferring a decision and turning it into data are different moves, and the second costs you self-evident meaning](../lessons/deferring-a-choice-and-turning-it-into-data-are-different-moves.md)
 - [Let the new part announce itself to the old part, never the reverse](../lessons/let-the-new-part-announce-itself-to-the-old-part.md)
+- [An interaction between two modules has no natural owner, and that is the cost, not the code](../lessons/an-interaction-between-two-modules-has-no-natural-owner.md)
+- [Look for the part that depends on fewer things than the whole, and factor along that seam](../lessons/factor-out-the-part-that-depends-on-fewer-things.md)
+- [A hierarchy earns its keep by making one path unique, not by classifying things](../lessons/a-hierarchy-earns-its-keep-by-making-the-path-unique.md)
+- [Decide whether a value really belongs to the simpler type by round-tripping the lossy conversion](../lessons/decide-membership-by-round-tripping-the-lossy-conversion.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: all of chapter 1, plus chapter 2 through the end of 2.3.4 (lines
-784-8450)** - data abstraction, what data means, interval arithmetic, closure,
+**Read so far: all of chapter 1, plus chapter 2 through the start of 2.5.3 (lines
+784-10250)** - data abstraction, what data means, interval arithmetic, closure,
 sequences, hierarchical structures, sequences as conventional interfaces, the
 picture language with stratified design, symbolic data and quotation, symbolic
-differentiation, set representations, and Huffman encoding trees. Next unread line
-is **8451** (still inside 2.3.4, the Huffman tree construction code and exercises).
-Chapters 3, 4 and 5 are entirely unread. `extraction: complete` withheld until all
-five chapters are read._
+differentiation, set representations, Huffman encoding trees, multiple
+representations and type tags, data-directed programming and message passing,
+generic arithmetic, coercion, and type towers. Next unread line is **10251**
+(inside 2.5.3, symbolic algebra / polynomial arithmetic). Chapters 3, 4 and 5 are
+entirely unread. `extraction: complete` withheld until all five chapters are read._

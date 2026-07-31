@@ -38,3 +38,5 @@ tags: [work]
 - [A gain that grows with size is marking the structure's ceiling, not raising it](../lessons/a-gain-that-grows-with-size-is-marking-the-structures-ceiling.md)
 - [Represent each direction of a relation by the question asked of it, not by symmetry](../lessons/represent-each-direction-of-a-relation-by-the-question-asked-of-it.md)
 - [Let the progress counter be the precondition check, and know what it cannot tell you](../lessons/let-the-progress-counter-be-the-precondition-check.md)
+- [Competing notations are usually traversal orders of one structure](../lessons/competing-notations-are-usually-traversal-orders-of-one-structure.md)
+- [Decide whether an operation needs the value or the place, and let the interface say which](../lessons/decide-whether-the-operation-needs-the-value-or-the-place.md)

@@ -49,6 +49,8 @@ tags: [work]
 - [Two problems shown equivalent are equivalent only in the property the reduction actually carries, and the ones it drops are usually constructivity and cost](../lessons/equivalent-problems-are-equivalent-only-in-the-property-the-reduction-carries.md)
 - [Holding at every finite size is not holding in the limit, so an exhaustive check over all bounded cases can be complete and still prove the wrong thing](../lessons/holding-at-every-finite-size-is-not-holding-in-the-limit.md)
 - [A constraint does not have to determine a unique implementation, only the properties the argument downstream actually consumes](../lessons/a-constraint-need-not-pin-down-one-model-only-the-properties-you-use.md)
+- [Declaring an equality is cheap; the obligation that every operation respects it is paid separately for each operation and each argument position](../lessons/equality-is-cheap-congruence-is-paid-per-operation-per-position.md)
+- [A rule that repeated expert attempts fail to state correctly is composite, not merely hard, and the right primitive decomposes it into pieces that are each obviously right](../lessons/a-rule-nobody-can-state-correctly-is-composite-not-difficult.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes._
 
