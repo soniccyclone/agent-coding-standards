@@ -100,6 +100,8 @@ tags: [work]
 - [Working code is not evidence that you implemented the rule you meant](../lessons/working-code-is-not-evidence-that-you-implemented-the-rule-you-meant.md)
 - [Split a computation along the line where its inputs arrive at different times](../lessons/split-a-computation-by-when-its-inputs-arrive.md)
 - [Argue a design change by shipping something that runs it, not by describing it](../lessons/argue-a-design-by-shipping-something-that-runs-it.md)
+- [Structure can be computed without content, which is why constructors are the things worth making non-strict](../lessons/structure-can-be-computed-without-content-so-constructors-should-be-non-strict.md)
+- [A duplicated API is the symptom of a property missing one level down](../lessons/a-duplicated-api-is-the-symptom-of-a-property-missing-one-level-down.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -128,6 +130,13 @@ tableau, infinite streams of pairs, interleaving and weighted merge, streams as
 signals), 3.5.4 streams and delayed evaluation (feedback loops, the delayed
 integrand, normal-order evaluation), and 3.5.5 modularity of functional programs
 versus modularity of objects (stream Monte Carlo, the functional view of time, the
-joint-account merge problem). Next unread line is **17804** (start of chapter 4).
-Chapters 4 and 5 are entirely unread.
+joint-account merge problem). **Chapter 4 read through the start of 4.2.3 (lines
+17804-20100)** - the whole of 4.1 The Metacircular Evaluator (eval/apply core,
+representing expressions and abstract syntax, derived expressions, evaluator data
+structures and environments, running the evaluator, data as programs and the
+universal machine, internal definitions and simultaneous scope, separating
+syntactic analysis from execution), 4.2.1 normal versus applicative order, 4.2.2
+the lazy interpreter with thunks and memoization, and the opening of 4.2.3 streams
+as lazy lists. Next unread line is **20100**. Rest of chapter 4 and all of chapter 5
+are unread.
 `extraction: complete` withheld until all five chapters are read._

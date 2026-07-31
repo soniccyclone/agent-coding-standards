@@ -94,6 +94,8 @@ tags: [work]
 - [The properties you can compute from an artifact are not the ones that matter about it](../lessons/computable-properties-of-an-artifact-are-not-its-meaningful-ones.md)
 - [Test a candidate measure on a tiny case whose answer you already know](../lessons/test-a-candidate-measure-on-a-case-whose-answer-you-already-know.md)
 - [A nonnegative encoding cannot express disagreement — centre it before comparing](../lessons/a-nonnegative-encoding-cannot-express-disagreement.md)
+- [Compare on the side of the relation whose entities are not mixtures](../lessons/compare-on-the-side-of-the-relation-whose-entities-are-not-mixtures.md)
+- [When nothing co-occurs, manufacture overlap by lowering resolution a little on each side](../lessons/manufacture-overlap-by-lowering-resolution-a-little-on-both-sides.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
