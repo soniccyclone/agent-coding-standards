@@ -36,6 +36,11 @@ around line 2830 — locate chapter and section boundaries by grepping the runni
 heads and section numbers (e.g. `2   Concurrency`, `^2\.3`), since the PDF's own page
 numbers appear inline in those running heads.
 
+**READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
+the `pdftotext -layout` output (12215 lines total) and is working forward
+sequentially. This line is updated as the read advances; if it still says 1540 the
+pass died immediately. Current position: **line 1540**.
+
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
 - [Make the awkward question unaskable rather than answering it carefully: drop time, keep order](../lessons/make-the-question-unaskable-rather-than-answering-it-carefully.md)

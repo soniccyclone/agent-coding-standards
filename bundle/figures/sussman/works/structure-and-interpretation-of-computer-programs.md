@@ -139,4 +139,9 @@ syntactic analysis from execution), 4.2.1 normal versus applicative order, 4.2.2
 the lazy interpreter with thunks and memoization, and the opening of 4.2.3 streams
 as lazy lists. Next unread line is **20100**. Rest of chapter 4 and all of chapter 5
 are unread.
+
+**READ IN PROGRESS (bucket 310 session):** resumed at line **20100**; currently
+reading forward from there toward the index at ~29990. This line is updated as
+chunks are finished — if this note still says a line below 29990 and there is no
+`extraction: complete`, that number is the true resume point.
 `extraction: complete` withheld until all five chapters are read._

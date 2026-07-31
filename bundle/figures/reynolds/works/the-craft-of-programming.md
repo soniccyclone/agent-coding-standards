@@ -19,7 +19,7 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
-**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). The current pass resumes at line 13698 (Chapter 5, Data Representation Structuring). Sections read so far this pass: 5.1.1 through 5.2.4 (lines 13698-15977).
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result), then 3.1.6 through 4.2.8, end of Chapter 4 (lines 8101-13697). An earlier pass covered Chapter 5 from line 13698 through 15977 (5.1.1 through 5.2.4). **A read is in progress now, resuming at line 15978.** Sections read so far this pass: 5.3 through 5.3.3 (lines 15978-16397).
 
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
@@ -96,3 +96,4 @@ tags: [work]
 - [Restate a global invariant as a neighbour check plus a theorem, or you cannot repair anything incrementally](../lessons/restate-a-global-invariant-as-a-neighbour-check-plus-a-theorem.md)
 - [Give the violation a location, and repair becomes the act of moving it until it disappears](../lessons/give-the-violation-a-location-and-repair-becomes-moving-it.md)
 - [Spend leftover freedom to stay inside a cheaper encoding, and collect the structural guarantee it implies](../lessons/spend-leftover-freedom-to-stay-inside-a-cheaper-encoding.md)
+- [When a chain of moves keeps rewriting the same slot, lift that slot's value out of the structure and put the exception in the invariant](../lessons/a-value-that-keeps-being-rewritten-belongs-outside-the-structure.md)

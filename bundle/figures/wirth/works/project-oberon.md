@@ -22,9 +22,16 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
+**READ IN PROGRESS (2026-07-31 session): resumed at line 3991, working forward toward
+line 22864. Current position recorded below; if this file still says "in progress" the
+session died and the position line is the truth.**
+
+**Current position: line 3991 (resumed here).**
+
 Read against `pdftotext -layout` output of the 2005 edition PDF (441 pages → 22864 lines
 of extracted text). Identity verified: title page and preface name N. Wirth and J.
-Gutknecht, Project Oberon, ETH Zurich, February 1992.
+Gutknecht, Project Oberon, ETH Zurich, February 1992. Re-verified 2026-07-31 against
+`scratchpad/PO.txt` (22864 lines, matches).
 
 **Read and mined:** front matter and table of contents; chapter 5 sections 5.1 and 5.2
 (text as abstract data type; text management and the piece-chain representation, through

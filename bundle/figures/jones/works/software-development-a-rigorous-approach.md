@@ -43,6 +43,10 @@ and the glossary in full. The tail from line 19604 to the end of file (20771) wa
 structurally sampled and confirmed to be answers to selected exercises, the
 bibliography, the index and a colophon; none of it is lesson-bearing.
 
+**Third session (in progress).** Started reading at line 341 and is working forward
+sequentially through the unread spans below. **Current position: line 341** — this
+number is updated as the read advances, so whatever it says is the resume point.
+
 **Not read in either recorded session, resume here:** lines 341-14254 — chapters 1
 through 14 entire, i.e. Part A (Programs Which Manipulate Numbers) and Part B (Data
 Types in Program Development). Also unread this session: lines 15402-16782 (the

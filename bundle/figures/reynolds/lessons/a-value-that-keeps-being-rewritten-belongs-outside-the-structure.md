@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "When a chain of moves keeps rewriting the same slot, lift that slot's value out of the structure and put the exception in the invariant"
+figure: reynolds
+works: [the-craft-of-programming]
+axes: [hardware-affinity, verifiability, cognitive-load]
+subdomains: [algorithms-and-complexity, formal-methods-and-verification]
+tags: [lesson]
+---
+# When a chain of moves keeps rewriting the same slot, lift that slot's value out of the structure and put the exception in the invariant
+
+**Lesson:** A structure-shuffling loop that repeatedly exchanges one travelling item with its neighbour writes the travelling item into a cell and then, one iteration later, writes over that same cell again. Every intermediate write is dead. The tempting response is to attack the exchange operation — inline it, unroll it, special-case the first and last steps — and that response is wrong, because the redundancy is not in the operation. It is in the representation: the travelling value has no home of its own, so it is forced to squat in whichever cell it is passing through. Give it a home. Hold it in one scalar for the duration of the traversal and let the structure carry only the values that are staying put.
+
+The move only works if you are willing to say precisely what the structure now holds, because after the change the structure is *wrong* — it is missing the travelling value and holds a stale copy at the travelling position. So the invariant acquires an exception clause: the concrete structure agrees with the abstract one everywhere except at one distinguished index, whose true value is in the scalar. That index moves as the loop runs, which is the whole point; the clause is parameterised by the loop's own cursor. Writing the exception down is what converts a fragile hand optimization into something checkable, and it tells you exactly where the two boundary obligations live — one assignment on entry to load the scalar, one on exit to store it back. Those two assignments are the entire cost.
+
+What follows is worth watching, because it is the same collapse that any redundant-representation removal produces. Once the exception clause is stated, the reads of the old structure can be rewritten one at a time: reads at the travelling position become reads of the scalar, reads at any other position become reads of the concrete structure, justified case by case from the clause. When no read of the old structure survives, its writes are writing to something nobody consults, and the whole variable — plus, usually, the temporary inside the exchange, which by then is copying a value to itself — falls out. The exchange shrinks to a single assignment. You did not delete the redundant writes; you made them unreachable by argument and then swept them up, which is why nothing broke.
+
+**Source:** [The Craft of Programming](../works/the-craft-of-programming.md) — Section 5.3.3, which observes that in each sequence of swap calls during a heap sift the last assignment of every call but the final one sets an array element that the next call immediately resets; introduces a second array plus a scalar `z` local to the block declaring the position variable, with a general invariant stating that the original array equals the new array overridden at position `p` by `z`, held in place of the plain agreement invariant while the block runs; shows where that invariant is established and where the plain one is regained; then replaces each occurrence of the original array outside its own assignments, making it auxiliary, so that its declaration, its assignments, and the temporary inside swap all disappear and swap reduces to a single element copy.

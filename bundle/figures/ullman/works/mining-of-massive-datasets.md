@@ -226,3 +226,8 @@ dense feed-forward nets, backpropagation, convolutional nets, recurrent nets and
 LSTMs, and regularization. Resume at line **24693** (section 13.1). Chapters 2-4
 should also get a hand re-read at the same depth as chapter 1 before this work is
 attested. `extraction: complete` deliberately withheld._
+
+_**READ IN PROGRESS (2026-07-31, fifth agent pass).** Started chapter 13 at line
+**24693**, reading forward in sequential chunks toward line 27631. This line
+number is updated in place as the read advances; if this note still says a line
+below 27631, the agent died there and that is the genuine resume point._
