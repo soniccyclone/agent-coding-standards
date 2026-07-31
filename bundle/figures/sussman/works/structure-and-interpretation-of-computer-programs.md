@@ -143,6 +143,8 @@ tags: [work]
 - [A static structural guarantee is what converts a runtime search into an offset](../lessons/a-static-scoping-rule-is-what-converts-a-runtime-search-into-an-offset.md)
 - [Specialize on the binding, never on the name, because a name is not an identity](../lessons/specialize-on-the-binding-not-on-the-name.md)
 - [A gap between two levels can be closed from either end, and the end you move decides whether execution stays legible or gets fast](../lessons/close-a-level-gap-from-either-end-and-you-choose-what-stays-visible.md)
+- [Measure a port by the size of the part that cannot be written in the system's own language, and spend your design effort shrinking that part](../lessons/shrink-the-hand-written-kernel-by-writing-the-system-in-itself.md)
+- [With no reference answer available, test that two independent routes to the same artifact produce the same artifact](../lessons/with-no-oracle-test-that-two-routes-to-the-same-artifact-agree.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

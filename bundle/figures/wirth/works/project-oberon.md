@@ -132,3 +132,6 @@ section are where the extractable lessons are.
 - [A delimiter drawn from the alphabet buys itself a transformation at both ends](../lessons/a-delimiter-drawn-from-the-alphabet-buys-a-transformation.md)
 - [A deadline downstream forbids producing while you send](../lessons/a-deadline-downstream-forbids-producing-while-you-send.md)
 - [Reject at the lowest layer that can tell, and give it the one fact it needs](../lessons/reject-at-the-lowest-layer-that-can-tell.md)
+- [Break a retry tie with an identifier you already have](../lessons/break-a-retry-tie-with-an-identifier-you-already-have.md)
+- [Code that compensates for a defect below will look wrong, and should be labelled rather than beautified](../lessons/code-that-compensates-for-a-lower-layer-will-look-wrong.md)
+- [Do not hide a difference in kind behind a uniform interface](../lessons/do-not-hide-a-difference-in-cost-behind-a-uniform-interface.md)
