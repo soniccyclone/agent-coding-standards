@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Let the act of acquiring an anonymous instance bind the identity of the one you got"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [expressiveness, parallelizability, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, distributed-systems-and-concurrency]
+tags: [lesson]
+---
+# Let the act of acquiring an anonymous instance bind the identity of the one you got
+
+**Lesson:** A pool of interchangeable instances presents an apparent dilemma. Address a particular one and you have given up the pooling, waiting on a busy instance while its twin sits idle. Address the pool as a whole and you have given up the ability to conduct a multi-step interaction, since nothing ties your second message to whichever instance handled your first. The resolution is to make selection and naming a single act: offer to begin with any instance, and let whichever responds bind an identifier that every subsequent step of the interaction uses. Before the first step you are indifferent; from the first step onward you are precise. The two properties that looked mutually exclusive turn out to occupy different moments.
+
+This is worth recognizing as a general shape rather than a trick for resource pools, because the same structure appears wherever anonymous selection must be followed by a coherent conversation — a connection drawn from a pool, a worker claiming a task, a session established with any available server. In each case the mistake to avoid is treating the selection as a lookup that returns a name to be used later by convention. It must be the case that no interaction can begin without simultaneously establishing which party it is with, so that using the wrong one is not a discipline anybody could fail to observe but a sentence that cannot be written.
+
+Two engineering notes follow. If a whole conversation is the unit of exclusive use, the acquisition and the eventual release ought to be wrapped in one construct that introduces a local name for the duration, so that the technicalities of choosing an instance and giving it back disappear and the interaction reads exactly like use of a privately owned thing. That both removes the commonest failure — forgetting to release — and makes the shared and unshared versions of the code textually identical, which is what allows one to be swapped for the other. And the size of the pool should not be an arbitrary constant chosen to feel generous: either it reflects a real physical count, or it should be unbounded, with each instance serving a single interaction and retiring, since an arbitrary ceiling is a limit nobody can justify and everybody eventually hits.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the multiple resources section of the shared resources chapter: the re-entrant subroutine defined as an indexed array of concurrent instances, where a caller uses the general choice construct over all indices so that the selection is arbitrary but the bound index then carries through both the argument and the result communications; the note that an arbitrary bound on simultaneous activations can be avoided by an infinite array of instances each serving a single call and then stopping; the two-printer example where the initial acquire selects whichever instance is ready, waits if neither is, chooses nondeterministically if both are, and thereafter directs every communication to the same one; and the introduction of a subordination-style notation that binds a local name to the acquired instance for the duration, replacing the cumbersome explicit form and absorbing the technicalities of acquisition and release.

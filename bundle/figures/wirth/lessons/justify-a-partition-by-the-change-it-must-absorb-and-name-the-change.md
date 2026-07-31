@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Justify a partition by the change it must absorb, and name the change"
+figure: wirth
+works: [project-oberon]
+axes: [cognitive-load, primitive-count, verifiability]
+subdomains: [software-engineering-and-architecture, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Justify a partition by the change it must absorb, and name the change
+
+**Lesson:** A separation always looks disproportionate when measured against the operation it currently performs. A whole module, its own scheduling, its own connecting structure — for something that would fit in a dozen lines inside an existing component. Judged on present size the objection is correct, and if present size is the only argument available then the separation should not be made. But present size is the wrong measure, because the reason to separate is not the code you have, it is the code you are going to have to add, and specifically whether adding it will require editing what exists.
+
+This turns the question into one that can actually be settled. State the extension you expect, concretely: another source feeding the same function, another destination, a variant of the operation constrained by an external convention, the same service reached through a different medium. Then compare the two arrangements against that specific change. If the extension slots in as a new participant on either side of the boundary while everything already written stays untouched, the partition earns its keep. If the extension would require the same edits either way, it does not, and you are paying for a shape that buys nothing. The discipline is in the word *specific* — this reasoning is legitimate only against a named, plausible change with a reason to believe in it, and it becomes speculative construction the moment the justification degrades into a general feeling that flexibility is good.
+
+There is a second, quieter payoff worth expecting. The extensions that arrive tend to be far bigger than the operation they extend, because they usually involve conforming to conventions set elsewhere, and conformance work expands in ways the core function never does. When that happens inside a separate component, the growth is contained and the original operation remains as small and readable as it was. When it happens inside a component that was already doing something else, the two become inseparable and the small clear thing is gone. So the partition is worth making not only where you expect an addition but where you expect an addition of unpredictable size — and the honest test of the judgement afterwards is whether the growth actually landed where you predicted.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — the passage closing section 11.2, which anticipates the reader's objection that a separate mail server module, its own scheduled task, and the machinery of the mail queue are not warranted by the relative simplicity of the insertion operation and could have been incorporated into the network server alongside message extraction, and answers that the picture changes if handling of external mail is added and if mailboxes are to be reachable over other channels such as the serial line, that the modular structure facilitates such extensions without change of existing parts, that external mail routines inevitably have to cope with message formats imposed by standards whose transformation, encoding and decoding have inflated the mail server module to a surprising degree, and that the queuing machinery supports easy insertion of additional message sources while decoupling timing, particularly for low-speed media.
