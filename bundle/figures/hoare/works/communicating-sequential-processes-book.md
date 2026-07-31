@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 9660** — Chapters 1 (from 1.5),
-2, 3, 4 and 5 read in full; Chapter 6 read through 6.2.
+pass died immediately. Current position: **line 10100** — Chapters 1 (from 1.5),
+2, 3, 4 and 5 read in full; Chapter 6 read through 6.4 (mid).
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -94,3 +94,8 @@ pass died immediately. Current position: **line 9660** — Chapters 1 (from 1.5)
 - [Partial operations invalidate the laws you rewrite with, so carry a definedness condition rather than pretending undefined is a value](../lessons/partial-operations-invalidate-your-laws-so-guard-each-law-with-definedness.md)
 - [Derive a loop's termination precondition by parameterizing on "finishes within n" — the union over n is exactly the precondition](../lessons/derive-the-termination-precondition-rather-than-assuming-it.md)
 - [Check a general framework by what it degenerates to, and charge its extra notation only to the general case](../lessons/check-a-generalization-by-what-it-degenerates-to.md)
+- [Deadlock is a shape in the state space — a concavity in the forbidden region facing the start — and the cure is to enlarge the forbidden region](../lessons/deadlock-is-a-concavity-in-the-forbidden-region.md)
+- [Share purpose-built resources whose operations are already atomic, never general storage guarded by a convention](../lessons/share-purpose-built-resources-not-storage.md)
+- [Let the act of acquiring an anonymous instance bind the identity of the one you got](../lessons/let-acquisition-bind-the-identity-of-what-you-got.md)
+- [Enforce a discipline through an interface so pleasant that nobody wants an escape hatch](../lessons/enforce-discipline-through-an-interface-nobody-wants-to-bypass.md)
+- [Make the degree of concurrency a parameter that leaves the specification unchanged](../lessons/make-the-degree-of-concurrency-a-spec-preserving-parameter.md)
