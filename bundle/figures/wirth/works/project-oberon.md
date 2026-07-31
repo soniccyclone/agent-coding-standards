@@ -109,3 +109,4 @@ section are where the extractable lessons are.
 - [State the instruction budget for the frequent case before choosing a representation](../lessons/state-the-instruction-budget-for-the-frequent-case-before-choosing-a-representation.md)
 - [Place an operation by who may call it, not by what it touches](../lessons/place-an-operation-by-who-may-call-it-not-by-what-it-touches.md)
 - [An unwinnable argument about a constant means it should not be one constant](../lessons/an-unwinnable-argument-about-a-constant-means-it-should-not-be-one.md)
+- [A hint is a cache that owes nothing to coherence](../lessons/a-hint-is-a-cache-that-owes-nothing-to-coherence.md)

@@ -68,6 +68,7 @@ tags: [work]
 - [An operation that commutes with every step can be hoisted to the boundary and deleted from the middle, and checking whether it commutes is the whole design question](../lessons/an-operation-that-commutes-with-every-step-belongs-at-the-boundary.md)
 - [Two systems that behave identically today can respond differently to being extended, and the difference is invisible to every test of current behavior](../lessons/identical-behavior-today-does-not-mean-identical-response-to-extension.md)
 - [What a general system may assume is the intersection over everything it claims to support, so each configuration you add silently deletes leverage rather than breaking anything](../lessons/what-you-may-assume-is-the-intersection-over-everything-you-claim-to-support.md)
+- [Adding to a context is only free where no rule has a side condition on the context, and where one does, the repair is to rename before you widen](../lessons/weakening-is-free-only-where-no-rule-has-a-side-condition-on-the-context.md)
 
 _Coverage note: extraction is PARTIAL and `extraction: complete` is deliberately withheld. The Internet Archive text derivative for this volume runs ~1.16 MB (roughly 300k+ tokens), which exceeds a single agent's context, so the volume is being mined across passes. Note that the substantive text ends at line ~25500 of the reading copy; everything after that is the Index of Definitions._
 

@@ -39,8 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 4110** — Chapter 1 now read in
-full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.6.
+pass died immediately. Current position: **line 4540** — Chapter 1 now read in
+full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.8 (mid-2.8.3).
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -64,3 +64,4 @@ full (1.5 through 1.10), plus Chapter 2 sections 2.1–2.6.
 - [Where interaction is by name-matching, two copies of a thing are one thing until you rename them](../lessons/naming-is-wiring-so-instantiation-is-renaming.md)
 - [When state is a participant, reading it is a forced case analysis — and if reading requires acting, a repair obligation too](../lessons/reading-state-as-a-case-analysis-and-a-repair-obligation.md)
 - [When you know a generalization is coming, refuse to state the laws it will break](../lessons/dont-state-the-laws-your-planned-generalization-will-break.md)
+- [Existence and uniqueness of a solution are bought by different properties — know which one you actually need](../lessons/existence-and-uniqueness-are-bought-by-different-properties.md)

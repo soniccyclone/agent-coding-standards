@@ -125,6 +125,10 @@ tags: [work]
 - [Every joining operator has two dual implementations, and selectivity decides which one you want](../lessons/every-joining-operator-has-a-dual-implementation-and-selectivity-picks.md)
 - [When an operation's precondition is not met yet, attach it to the data as a pending obligation rather than running or failing](../lessons/turn-an-unsatisfiable-precondition-into-an-obligation-carried-by-the-data.md)
 
+- [A notation that resembles a more powerful one will be used as though it were that one](../lessons/a-borrowed-syntax-borrows-expectations-it-cannot-meet.md)
+- [Information arriving from outside your model can be squeezed into an ordinary value; effects leaving it cannot](../lessons/effects-that-leave-your-boundary-need-their-own-category.md)
+- [A dispatch whose arms grow with the number of callers means the caller should have passed the answer, not a token for it](../lessons/a-dispatch-that-grows-with-callers-means-the-caller-should-have-passed-the-answer.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
@@ -186,7 +190,10 @@ maintaining the data base. Read 23430-23990 — **all of chapter 4 is now
 complete** (4.4.4.5 through 4.4.4.8: the index, stream operations, query syntax
 procedures, frames and bindings, and the closing exercises) — plus the chapter 5
 preamble and the opening of 5.1 designing register machines. **Next unread line
-is 23990.** Currently
+Read 23990-24550 — 5.1 designing register machines (data paths and controller
+for the gcd machine), 5.1.1 the register-machine language and its two notations,
+actions, 5.1.2 abstraction in machine design, and 5.1.3 subroutines through the
+label-in-a-register solution. **Next unread line is 24550.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.
