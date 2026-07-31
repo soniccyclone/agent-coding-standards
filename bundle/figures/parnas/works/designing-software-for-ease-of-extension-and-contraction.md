@@ -25,3 +25,6 @@ tags: [work]
 - [When two parts seem to need each other, one of them is really two parts](../lessons/when-two-parts-need-each-other-one-of-them-is-two-parts.md)
 - [Generality and flexibility are two different purchases, paid for at different times](../lessons/generality-and-flexibility-are-bought-in-different-currencies.md)
 - [Permission to depend has to be earned in both directions](../lessons/permission-to-depend-must-be-earned-in-both-directions.md)
+- [A privileged core is the coarsest hierarchy you can build, and it freezes whatever you put inside](../lessons/a-privileged-core-is-the-coarsest-hierarchy-you-can-build.md)
+- [Climbing a hierarchy buys simplicity, never power — so say convenience and mean it](../lessons/climbing-a-hierarchy-buys-simplicity-never-power.md)
+- [Who is allowed to reuse what is a structural decision, not a local one](../lessons/who-may-reuse-what-is-not-a-local-decision.md)

@@ -29,3 +29,5 @@ tags: [work]
 - [Bookkeeping attached to an aggregate can never be finer than the aggregate, and its errors are silent because the answers stay right](../lessons/metadata-is-only-as-precise-as-the-unit-it-is-attached-to.md)
 - [Demand-driven evaluation silently assumes one producer and a final answer; drop either and pulling has no definition until interest itself becomes data](../lessons/demand-is-undefined-when-a-place-has-many-sources.md)
 - [Design an extension point backwards from the decisions the fixed part still has to make, not forwards from what the varying part computes](../lessons/design-an-extension-point-backwards-from-what-the-fixed-part-must-decide.md)
+- [Build the algorithm's smallest local element and let the known global algorithm emerge, so neither side has to represent the other's problem](../lessons/build-the-local-element-and-let-the-known-algorithm-emerge.md)
+- [Replace control flow with a topology and a base case becomes a starvation condition, so recursion has to be built as growth gated on arrival](../lessons/a-base-case-becomes-a-starvation-condition.md)

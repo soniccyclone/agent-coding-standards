@@ -7,7 +7,7 @@ subdomains: [formal-methods-and-verification]
 year: 1990
 url: https://mcmil.net/pubs/LICS90.pdf
 survey_pages: 33
-survey_text_layer: full
+survey_text_layer: none
 survey_fetch_mb: 0
 access: public
 host: self-archived
@@ -20,5 +20,32 @@ tags: [work]
 **Venue/year:** Proceedings of the Fifth Annual IEEE Symposium on Logic in Computer Science (LICS '90), Philadelphia, June 1990. An extended version appeared in Information and Computation, vol. 98, 1992.
 **Source:** https://mcmil.net/pubs/LICS90.pdf — self-archived PDF on McMillan's own site, live and directly downloadable (HTTP 200, title page confirmed: "Symbolic Model Checking: 10^20 States and Beyond," authors J. R. Burch, E. M. Clarke, K. L. McMillan, D. L. Dill, L. J. Hwang).
 
+**Frontmatter correction (2026-07-31, Phase 4 bucket 104).** This file carried
+`survey_text_layer: full`; that was wrong and cost an extraction attempt. The PDF
+downloads cleanly (HTTP 200, 368 KB, 33 pages) but its text layer is unusable in
+exactly the way McMillan's thesis PDF is: `pdfinfo` reports the producer as
+Aladdin Ghostscript 6.01 converting a DVI file, and `pdffonts` shows the body set
+entirely in ~35 embedded Type-3 bitmap fonts with custom encodings and no
+ToUnicode map. `pdftotext` in both `-layout` and `-raw` modes therefore returns a
+per-font substitution cipher, not text. The flag has been changed to `none` so
+future passes route this through the deterministic OCR batch instead of retrying
+the fetch.
+
+Alternate readable copies were searched and none is anonymously obtainable:
+`cs.cmu.edu/~emc` paths 404; `theory.stanford.edu/~dill` 403; ScienceDirect
+(the extended *Information and Computation* 98(2):142-170, 1992 version, which is
+what these 33 pages appear to be) 403 bot-gate on both curl and WebFetch;
+Unpaywall lists zero OA locations; Semantic Scholar reports only a BRONZE
+publisher link back to the gated DOI; the Elsevier text-mining endpoint Crossref
+advertises needs an API key (401). archive.org has a DTIC text derivative for the
+TCAD94 paper (`DTIC_ADA274375`) and for the thesis (`DTIC_ADA250924`) but nothing
+for this one.
+
 ## Lessons
 _(empty — lesson extraction is Phase 4)_
+_OCR-HOLD_ — 33 pages, Ghostscript/Type-3 bitmap fonts, no text recoverable
+without rasterising. Blocked on the OCR batch, not on reading effort. Note when
+it lands: this paper is the direct precursor of
+[the thesis](symbolic-model-checking-an-approach-to-the-state-explosion-problem.md),
+which is already `extraction: complete` with seven lessons, so the marginal yield
+here is likely small and any lesson must be checked against that set first.

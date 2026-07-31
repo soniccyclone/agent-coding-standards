@@ -37,3 +37,7 @@ This work needs the deterministic OCR batch.
 ## Lessons
 - [A family of checks is not a check until the family is bounded](../lessons/a-family-of-checks-is-not-a-check-until-the-family-is-bounded.md)
 - [What you cannot distinguish, you do not have to keep](../lessons/what-you-cannot-distinguish-you-do-not-have-to-keep.md)
+- [A reduction you cannot use is one that moves the thing you measure](../lessons/a-reduction-you-cannot-use-is-one-that-moves-the-thing-you-measure.md)
+- [Prove a part of the input cannot matter, and the problem may already be solved](../lessons/prove-a-part-of-the-input-cannot-matter-and-the-problem-may-already-be-solved.md)
+- [Pin down the shape of the answer before you can compute one](../lessons/pin-down-the-shape-of-the-answer-before-you-can-compute-one.md)
+- [A procedure exists when the conditions stop arriving](../lessons/a-procedure-exists-when-the-conditions-stop-arriving.md)

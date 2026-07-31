@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 1
 access: public
 host: institutional
+extraction: complete
 tags: [work]
 ---
 
@@ -22,3 +23,4 @@ tags: [work]
 ## Lessons
 - [Turn a which-is-better question into a game between the two answers, and read off the equivalence](../lessons/turn-a-which-is-better-question-into-a-game-between-the-two-answers.md)
 - [When the deployment shape changes, re-pick the resource you count before re-tuning anything](../lessons/measure-the-resource-that-became-scarce-not-the-one-you-inherited.md)
+- [Calibrate your standard for a good abstraction on a field that already has good ones](../lessons/calibrate-your-standard-for-a-theory-on-a-field-that-already-has-good-ones.md)

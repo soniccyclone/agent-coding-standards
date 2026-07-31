@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Give every kind of value the same expression shape, jump targets included"
+figure: naur
+works: [revised-report-on-the-algorithmic-language-algol-60]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [programming-languages-and-semantics]
+tags: [lesson]
+---
+# Give every kind of value the same expression shape, jump targets included
+
+**Lesson:** When a system computes several unrelated species of value, the temptation is to give each one whatever notation fits it. Resist. Design one layered shape — an atom, a tightening sequence of binding levels, a bracketing escape, and a conditional selector — and then instantiate that shape once per species, with only the operators changing. Say outright, at each instantiation, that the principles of evaluation are the same as the first one, and cross-reference rather than restating. The reader learns the shape once and thereafter only has to learn a table of operators; the implementer writes one recursive-descent skeleton and parameterises it. Precedence, parenthesisation and the meaning of the conditional get defined a single time and then apply everywhere by construction, which is what stops them from drifting apart under later edits.
+
+The move that makes this pay off is choosing the species boldly. Numbers and truth values are the obvious ones. The valuable one is treating *where control goes next* as a species of value with its own expression grammar: an atom is a label, and from labels you build conditional selections and indexed selections that evaluate, recursively, to a label. Once you have that, the unconditional transfer needs no cases at all — its operand is simply one of these expressions, so computed multi-way dispatch, a conditional jump, and a table-driven jump are not three constructs but one construct applied to three expressions. A dispatch table becomes a declaration listing such expressions, indexed by counting, and because the entries are expressions rather than constants they are re-evaluated on each reference, giving you late binding of control for free.
+
+The cost of this uniformity is that it drags in the obligations of the shape you reused, and you have to pay them explicitly rather than hoping nobody notices. If an index into a table is an ordinary arithmetic expression, then it can be out of range, and you owe a rule for that case. If a table entry is an expression mentioning names, then selecting it from a place where those names do not exist is possible, and you owe a rule for that too. The discipline is that each such obligation is discharged by pointing at machinery you already defined — index evaluation behaves like an assignment to an anonymous variable of integer type; name collisions are handled by the same systematic renaming used everywhere text is relocated — so uniformity of form buys uniformity of correction.
+
+**Source:** [Revised Report on the Algorithmic Language ALGOL 60](../works/revised-report-on-the-algorithmic-language-algol-60.md) — the parallel construction of sections 3.3, 3.4 and 3.5, where the Boolean and designational grammars mirror the arithmetic one and their semantics sections declare the evaluation principles analogous rather than re-deriving them; section 3.5.3's recursive evaluation of a designational expression through a switch designator; section 4.3's definition of the transfer statement as taking such an expression as its operand; section 5.3's switch declaration as a list of designational expressions selected by counting, with 5.3.4 requiring re-evaluation on each reference; and the range and scope obligations discharged in 3.5.4 and 5.3.5.

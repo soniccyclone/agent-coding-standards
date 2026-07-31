@@ -9,6 +9,7 @@ url: https://www.cs.princeton.edu/courses/archive/fall05/cos528/handouts/NP_is_a
 survey_pages: 10
 survey_text_layer: ocr
 survey_fetch_mb: 0
+extraction: complete
 access: public
 host: third-party-rehost
 tags: [work]
@@ -26,3 +27,4 @@ tags: [work]
 - [Narrowing a specification to well-behaved inputs buys nothing until you show the hard inputs cannot be smuggled in](../lessons/restricting-a-spec-to-well-behaved-inputs-need-not-make-it-easier.md)
 - [When failure is one-sided and checkable, an unknown parameter costs you retries rather than a redesign](../lessons/one-sided-failure-makes-blind-guessing-affordable.md)
 - [To manipulate a collection you cannot see, find an operation whose aggregate effect is the same on every collection](../lessons/act-on-a-hidden-set-through-an-operation-with-a-uniform-aggregate-effect.md)
+- [Argue about the quantity your operation moves structurally, not the one you happen to care about](../lessons/argue-about-the-quantity-your-operation-moves-structurally.md)
