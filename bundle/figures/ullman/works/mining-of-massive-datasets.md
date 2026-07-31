@@ -134,6 +134,8 @@ tags: [work]
 - [Turn a find-the-best solver into a find-them-all solver by subtraction](../lessons/turn-a-find-the-best-solver-into-a-find-them-all-solver-by-subtraction.md)
 - [Pin down the freedom a representation leaves you](../lessons/pin-down-the-freedom-a-representation-leaves-you.md)
 - [Compute from the smaller side when both sides share the answer](../lessons/compute-from-the-smaller-side-when-both-sides-share-the-answer.md)
+- [A greedy discard rule is optimal only against one error measure](../lessons/a-greedy-discard-rule-is-optimal-only-against-one-error-measure.md)
+- [An optimal transform that destroys sparsity is not a bargain](../lessons/an-optimal-transform-that-destroys-sparsity-is-not-a-bargain.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
