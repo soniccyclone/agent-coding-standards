@@ -31,12 +31,15 @@ tags: [work]
 - [A construct that looks essential may only be compensating for an implementation defect](../lessons/a-feature-that-looks-essential-may-be-compensating-for-a-defect.md)
 - [Choose a measure for what it refuses to distinguish, not for its accuracy](../lessons/a-crude-measure-is-useful-because-of-what-it-refuses-to-see.md)
 - [Distinguish a cost you incurred by transcribing the definition from a cost the problem actually has](../lessons/distinguish-naive-transcription-from-inherent-difficulty.md)
+- [Compare your algorithm's error rate against the machine's, not against zero](../lessons/compare-your-error-rate-against-the-substrate-not-against-zero.md)
+- [Repeating a test buys confidence only if you have proved the failures are independent](../lessons/repetition-buys-confidence-only-if-failures-are-independent.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: chapter 1 sections 1.1 and 1.2 through 1.2.4 (lines 784-2853)** —
-the elements of programming, black-box abstraction, block structure and lexical
-scoping; then linear recursion versus iteration, tree recursion, orders of growth
-and exponentiation. Next unread line is **2854** (rest of 1.2: GCD and primality). `extraction: complete` withheld until all five chapters are read._
+**Read so far: chapter 1 sections 1.1 and 1.2 complete (lines 784-3378)** — the
+elements of programming, black-box abstraction, block structure and lexical
+scoping; then linear recursion versus iteration, tree recursion, orders of growth,
+exponentiation, Euclid's algorithm and the primality tests. Next unread line is
+**3379** (section 1.3, Formulating Abstractions with Higher-Order Procedures). `extraction: complete` withheld until all five chapters are read._
