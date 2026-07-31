@@ -26,13 +26,14 @@ tags: [work]
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 16957 — third agent has read and mined chapter 12 through
-section 12.7's prose (code patterns 1-15; Object/Item/Struct; the OCS/OCE/OCH interfaces;
-12.4 parser, 12.5 scanner, 12.6 symbol table and symbol files, 12.7 code selection
-including the mode-transition tables, the F-list/T-list scheme and the standard-procedure
-remarks). Lines 14830-15799 (module Compiler), 15825-16108 (module OCS) and 16294-16781
-(module OCT) are pure Oberon source, checked and confirmed to hold no prose. Now in the
-module OCE listing at 16957; next prose section is 12.8 at line 18475.**
+**Current position: line 17959 — third agent has read and mined chapter 12 through the
+module OCH commentary at lines 17902-17958 (code patterns 1-15; Object/Item/Struct; the
+OCS/OCE/OCH interfaces; 12.4 parser, 12.5 scanner, 12.6 symbol table and symbol files,
+12.7 code selection including the mode-transition tables, the F-list/T-list scheme, the
+OCE standard-procedure remarks and the OCH statement/call/case commentary). Lines
+14830-15799 (module Compiler), 15825-16108 (module OCS), 16294-16781 (module OCT) and
+16957-17900 (module OCE) are pure Oberon source, checked and confirmed to hold no prose.
+Now in the module OCH listing at 17959; next prose section is 12.8 at line 18475.**
 
 **Earlier: chapter 9 complete and mined (9.1-9.4, including the
 serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
@@ -188,4 +189,6 @@ section are where the extractable lessons are.
 - [Thread the list of pending holes through the holes themselves](../lessons/thread-the-list-of-pending-holes-through-the-holes.md)
 - [Keep the description unmaterialized until a step cannot be absorbed](../lessons/keep-the-description-unmaterialized-until-a-step-cannot-be-absorbed.md)
 - [A subsumption rule must be checked once per position, not once](../lessons/a-subsumption-rule-must-be-checked-once-per-position-not-once.md)
+- [A name-based rule needs a fallback for whatever has no name](../lessons/a-name-based-rule-needs-a-fallback-for-whatever-has-no-name.md)
+- [Make the dispatch table total by giving its gaps the failure action](../lessons/make-the-dispatch-table-total-by-giving-gaps-the-failure-action.md)
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)

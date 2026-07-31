@@ -130,3 +130,4 @@ Position log: 341 -> 14254 (span complete) -> 15402 -> 16835 (span complete) -> 
 - [Justify skipping work by showing what you skipped was empty, and prefer a filter that can only err toward doing it](../lessons/justify-a-skip-by-showing-the-skipped-work-was-empty.md)
 - [If the algorithm did not change, you simulated the description rather than implemented it](../lessons/if-the-algorithm-did-not-change-you-simulated-rather-than-refined.md)
 - [A change you anticipated is not evidence your design absorbs change](../lessons/a-change-you-anticipated-is-not-evidence-your-design-absorbs-change.md)
+- [A first-entry flag is a resumption point in disguise, so name the thing it is imitating](../lessons/a-first-entry-flag-is-a-resumption-point-in-disguise.md)

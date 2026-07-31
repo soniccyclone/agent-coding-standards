@@ -202,6 +202,9 @@ tags: [work]
 - [Find the established algebra your problem is already in](../lessons/find-the-established-algebra-your-problem-is-already-in.md)
 - [Deferring execution is what turns a program into a plan](../lessons/deferring-execution-turns-a-program-into-a-plan.md)
 - [Returning a collection as one value hides your fan-out from the system](../lessons/returning-a-collection-hides-cardinality-from-the-scheduler.md)
+- [A synchronization barrier can be what pays for batching](../lessons/a-barrier-can-be-what-pays-for-batching.md)
+- [How precisely you recover is set by a ratio, not by principle](../lessons/recovery-precision-is-set-by-a-ratio-not-by-principle.md)
+- [Replicate each item along the axes its key leaves undetermined](../lessons/replicate-along-the-axes-your-key-leaves-free.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -281,5 +284,5 @@ until this re-read reaches line 7233._
 _**READ IN PROGRESS (2026-07-31, sixth agent pass).** Resuming the chapters 2-4
 hand re-read; the fifth pass left no evidence of advancing past its start line,
 so this pass restarts at line **1647** (chapter 2, MapReduce). Currently at line
-**2515**. This line is updated in place as the read advances; if it names a line
+**3374**. This line is updated in place as the read advances; if it names a line
 below 7233, the agent died there and that is the genuine resume point._

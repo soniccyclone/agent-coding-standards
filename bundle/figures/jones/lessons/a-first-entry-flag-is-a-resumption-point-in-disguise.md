@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A first-entry flag is a resumption point in disguise, so name the thing it is imitating"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [expressiveness, cognitive-load, verifiability]
+subdomains: [programming-languages-and-compilers, software-engineering-and-architecture, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# A first-entry flag is a resumption point in disguise, so name the thing it is imitating
+
+**Lesson:** A routine that hands you the next item each time you ask has an awkward shape: the first call must do things no later call does — acquire the resource, fill the buffer, establish the position — and the natural code for it is a persistent flag consulted on entry and cleared once. Everyone writes this and it works. What it is worth noticing is what it means. Call-and-return gives you exactly one entry point, and the situation genuinely requires two routines that alternate, each resuming where it last left off. The flag is not a solution to that; it is a hand-rolled encoding of a resumption point, using a variable to remember which part of the routine you are conceptually in.
+
+Recognising the encoding costs nothing and changes what you can say. The persistent variables stop being incidental clutter and become the routine's position in a conversation, which is a thing you can state a condition about: what must be true of them on every call after the first, what the first call establishes, what the caller may assume in return. Without that framing there is nothing to write down but a flag, and the invariant linking buffer index to buffer length gets discovered by whoever is debugging it. With it, the extra clause on the routine's promise is obvious and gets recorded.
+
+The general instruction is to treat every language-level workaround as an implementation of some abstract mechanism, and to identify the mechanism even when — especially when — the language will never offer it. Static flags standing in for resumption, hand-managed queues standing in for a rendezvous, a status field standing in for a protocol state: in each case the code is a lowering of something with a real name, and the argument that the code is right is far easier to make at the level of the named thing than at the level of the lowering. The mistake is not writing the workaround. The mistake is letting the workaround be the only description that exists, so that the thing it stands for is never stated and never checked.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 21's second development step for the telegram analysis problem, in which the word-fetching routine must deliver the next word on each call while performing special processing such as opening the input on the first: the observation that this is a simple case of a general need for two routines to cooperate, that procedure calls are a rather limited way of linking two collections of code, and that what is required is for the routine to execute from a different point on calls after the first; the reference to the coroutine as a language feature aimed at permitting this; the remark that the case at hand can be handled with a static first-entry switch but is easier to understand when seen as an implementation of some more abstract synchronizing device; and the accompanying note that the routine makes assumptions about its own internal variables which must hold on all calls other than the first, so its post-condition acquires an extra constraint relating the buffer position to the buffer length.
