@@ -52,6 +52,9 @@ tags: [work]
 - [Build levels so that each one offers a different kind of change](../lessons/build-levels-each-of-which-offers-a-different-kind-of-change.md)
 - [Embed a notation in a host language and it inherits the host abstraction machinery for free](../lessons/embed-your-notation-in-a-host-and-inherit-its-abstraction-for-free.md)
 
+- [The power to mention your own expressions costs you the right to substitute equals for equals](../lessons/the-power-to-mention-costs-you-substitution-of-equals.md)
+- [When the answers are correct but unusable, the fix belongs in the constructors, not the algorithm](../lessons/put-normalization-in-the-constructor-not-in-the-algorithm.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
