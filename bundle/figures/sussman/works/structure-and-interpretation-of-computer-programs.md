@@ -49,11 +49,15 @@ tags: [work]
 - [Two programs can share a deep structure that neither one exhibits](../lessons/the-shared-structure-may-be-real-and-still-absent-from-the-text.md)
 - [Modularity comes from agreeing on one interchange representation, not from splitting code into modules](../lessons/modularity-comes-from-agreeing-on-one-interchange-representation.md)
 
+- [Build levels so that each one offers a different kind of change](../lessons/build-levels-each-of-which-offers-a-different-kind-of-change.md)
+- [Embed a notation in a host language and it inherits the host abstraction machinery for free](../lessons/embed-your-notation-in-a-host-and-inherit-its-abstraction-for-free.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: all of chapter 1, plus chapter 2 through the end of 2.2.3 (lines
-784-6781)** — data abstraction, what data means, interval arithmetic, closure,
-sequences, hierarchical structures and sequences as conventional interfaces. Next
-unread line is **6782** (section 2.2.4, the picture language). `extraction: complete` withheld until all five chapters are read._
+**Read so far: all of chapter 1, plus chapter 2 through the end of 2.2.4 (lines
+784-7390)** - data abstraction, what data means, interval arithmetic, closure,
+sequences, hierarchical structures, sequences as conventional interfaces, and the
+picture language with stratified design. Next unread line is **7391** (section 2.3,
+Symbolic Data). Chapters 3, 4 and 5 are entirely unread. `extraction: complete` withheld until all five chapters are read._
