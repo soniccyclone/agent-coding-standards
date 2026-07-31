@@ -26,8 +26,8 @@ tags: [work]
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 13764 — third agent starting here, inside chapter 12
-(The Compiler) at section 12.2. Everything below this line describes what earlier
+**Current position: line 14570 — third agent has read and mined chapter 12 through
+section 12.3 (code patterns 1-15, then the internal data structures: Object, Item, Struct). Everything below this line describes what earlier
 agents banked.**
 
 **Earlier: chapter 9 complete and mined (9.1-9.4, including the
@@ -169,3 +169,5 @@ section are where the extractable lessons are.
 - [Tabulate the intended output before writing the thing that produces it](../lessons/tabulate-the-intended-output-before-writing-the-producer.md)
 - [Choose the equivalence rule that makes identity a token comparison](../lessons/choose-the-equivalence-rule-that-makes-identity-a-token-comparison.md)
 - [An extension mechanism is a bet that the variant set is still open](../lessons/an-extension-mechanism-is-a-bet-that-the-variant-set-is-open.md)
+- [A translator's case count is set by the destination's variety, not the source's](../lessons/a-translators-case-count-is-set-by-the-destinations-variety.md)
+- [Recoverability after a bad input is a property of the input language](../lessons/recoverability-after-a-bad-input-is-a-property-of-the-input-language.md)
