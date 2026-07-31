@@ -40,13 +40,18 @@ tags: [work]
 - [First-class status is a checklist you can audit, not a compliment](../lessons/first-class-is-a-checklist-not-a-compliment.md)
 - [Abstraction has an optimum, not a maximum](../lessons/abstraction-has-an-optimum-not-a-maximum.md)
 
+- [Name the interface you wish you had, build everything on it, and decide the representation last](../lessons/name-the-interface-you-wish-you-had-and-build-on-it-first.md)
+- [An interface without its laws is not a specification](../lessons/an-interface-without-its-laws-is-not-a-specification.md)
+- [Algebraically equivalent formulas stop being equivalent once the values carry uncertainty](../lessons/rearranging-a-formula-is-not-safe-when-values-carry-uncertainty.md)
+- [A means of combination that cannot consume its own output cannot build hierarchy](../lessons/a-combiner-that-cannot-consume-its-own-output-cannot-build-hierarchy.md)
+- [An abstraction that changes nothing about execution can still be the whole point](../lessons/an-abstraction-can-change-nothing-about-execution-and-still-be-the-point.md)
+
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
 offsets: ch1 784, ch2 4662, ch3 10939, ch4 17804, ch5 23936, index ~29990.
 
-**Read so far: ALL OF CHAPTER 1 (lines 784-4488)** — the elements of programming,
-black-box abstraction, block structure and lexical scoping; linear recursion versus
-iteration, tree recursion, orders of growth, exponentiation, Euclid's algorithm and
-the primality tests; and higher-order procedures, lambda, let, general methods and
-first-class status. Next unread line is **4489** (chapter 2, Building Abstractions
-with Data). `extraction: complete` withheld until all five chapters are read._
+**Read so far: all of chapter 1, plus chapter 2 sections 2.1 and 2.2 through the
+start of 2.2.3 (lines 784-6161)** — data abstraction, abstraction barriers, what
+data means, interval arithmetic; then closure, sequences, mapping and hierarchical
+structures. Next unread line is **6162** (rest of 2.2.3, Sequences as Conventional
+Interfaces). `extraction: complete` withheld until all five chapters are read._
