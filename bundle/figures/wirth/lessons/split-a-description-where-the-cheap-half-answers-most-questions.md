@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Split a description where the cheap half already answers most of the questions"
+figure: wirth
+works: [project-oberon]
+axes: [hardware-affinity, cognitive-load, expressiveness]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Split a description where the cheap half already answers most of the questions
+
+**Lesson:** Descriptions of concrete things tend to have a heavy part and a light part, and the useful observation is that the population of clients is not evenly distributed between them. Placement, measurement, fitting, hit-testing, and translation for some other device all need only extents and offsets — a handful of numbers. Only the operation that physically produces the thing needs the bulk. When those two are welded into a single indivisible description, every client pays the bulk, including the many that never look at it, and including clients on machines that could not use it if they did.
+
+The move is to declare the split as an explicit pair of levels of one abstraction rather than as an implementation detail, and then to carry the distinction all the way out to whatever form the description is stored or transmitted in — so a request can ask for the light level and receive only that, and a stored artifact can record which level it contains. That last step is what turns a conceptual tidiness into an operational saving: without it the split exists only inside the module and every consumer still receives everything. It also decouples production, which matters more than it looks. The light part is derivable mechanically; the heavy part may need a step that machines do badly and that is therefore done in advance and by hand. Keeping them separate lets the expensive step be a separate pipeline with its own schedule instead of something the system must attempt at the moment of use — which is a general reason to be suspicious of generating the heavy form on demand when quality at the target resolution matters.
+
+Notice too that the levels differ in *obligations*, not only in size. The operation at the light level is a pure computation over numbers and can be called from anywhere. The operation at the heavy level touches a shared physical resource and therefore carries a precondition — a lock held, a device claimed — that its signature does not show. Splitting the abstraction lets you say which operations carry that precondition and which do not, and that is worth having written down, since an unstated requirement to hold a lock is discovered only by observing corruption. Where clients divide by cost, they usually divide by required privilege too, and one boundary can carry both.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 5.4's statement that the character imaging model provides two levels of abstraction, the first treating a character as a black box given by an origin vector, a box width and height, and an advance to the next reference point, the second adding the digital pattern to be rendered into that box; its examples of which procedures operate at which level, with the position-locating and width-accumulating procedures and a formatter for a remote printer at the first level and the line-drawing procedure at the second; the remark in section 5.3 that possession of the screen lock is a tacit precondition for the second-level procedure and not for the others; the account of patterns being produced by outline digitization with hints plus a hand-tuning step for screen resolutions, which is given as the reason patterns are not generated on demand; and the font file grammar's leading abstraction byte distinguishing a file with raster bytes from one without.

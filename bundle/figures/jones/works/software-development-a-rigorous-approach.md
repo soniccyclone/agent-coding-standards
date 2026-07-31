@@ -46,7 +46,7 @@ bibliography, the index and a colophon; none of it is lesson-bearing.
 **Third session (in progress).** Started reading at line 341 and is working forward
 sequentially through the unread spans below. **Current position: line 341** — this
 number is updated as the read advances, so whatever it says is the resume point.
-Position log: 341 -> 5237.
+Position log: 341 -> 6635.
 
 **Not read in either recorded session, resume here:** lines 341-14254 — chapters 1
 through 14 entire, i.e. Part A (Programs Which Manipulate Numbers) and Part B (Data
@@ -109,3 +109,4 @@ then attested them, so exhaustion cannot be claimed for them.
 - [The cases your argument fails to reach are the inputs your code fails to return on](../lessons/the-cases-your-argument-misses-are-the-inputs-that-diverge.md)
 - [Deciding that a thing has state at all is a design step, and it should not be the first one](../lessons/deciding-that-there-is-state-at-all-is-its-own-step.md)
 - [Fold the awkward global property into what 'meets its description' locally means, and composition stops charging you for it](../lessons/fold-the-global-property-into-the-local-contract.md)
+- [A repetition can be described by what it has accomplished or by what it has left to do, and the code tells you which](../lessons/describe-a-repetition-by-progress-made-or-work-remaining.md)

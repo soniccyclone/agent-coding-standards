@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "A repetition can be described by what it has accomplished or by what it has left to do, and the code tells you which"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [cognitive-load, verifiability, expressiveness]
+subdomains: [formal-methods-and-verification, algorithms-and-complexity]
+tags: [lesson]
+---
+# A repetition can be described by what it has accomplished or by what it has left to do, and the code tells you which
+
+**Lesson:** There are exactly two honest ways to say what a loop is doing at an arbitrary moment, and they are duals. One looks backward: relate where you started to where you are now, and summarize how much of the answer has already been built. The other looks forward: relate where you are now to where you will end up, and summarize what the remaining passes will still contribute. Both are complete. Both support a full argument. They are not interchangeable in practice, because for any given loop one of them is a direct statement and the other is a statement you have to compute.
+
+Which one is direct depends on how the code carries progress. A loop that counts a fresh variable up toward a bound has an explicit record of how far it has come, and the backward-looking description reads straight off it. A loop that consumes its input by decrementing it toward a stopping value has no such record — the original value is gone — but it does hold, at every moment, exactly the work still outstanding, so the forward-looking description reads straight off *that*. Force the wrong one and nothing breaks; you simply find yourself writing the difference between the initial and current values wherever you wanted a single quantity, because you are reconstructing information the code chose not to keep. That reconstruction is the whole cost, and it compounds: every clause of the description now carries the subtraction, every step of the argument has to see through it.
+
+This gives a cheap and reliable diagnostic that generalizes well past loops. When a description of some ongoing process keeps needing a difference between the present state and a state that no longer exists, you have chosen the wrong direction to describe it from. Turn the description around and the difference disappears. The rule underneath is that a good description names quantities the artifact actually holds, and there is usually more than one candidate framing, so the framing is a choice worth making deliberately instead of defaulting to whichever you learned first.
+
+The corollary for anyone building the reasoning apparatus rather than using it: it is worth having both forms available, tailored, rather than one general form that covers everything. A single scheme that handles every case handles each of them slightly badly, and the cost lands on every person who ever uses it. Two schemes, each shaped to a common situation, cost the author once and pay every reader — and the same goes for the further split between a repetition that needs setting up first and one that does not. Specialization of this kind is not fragmentation; it is refusing to push the awkwardness of a general form onto everybody downstream.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 5's "*More on Iterative Statements" section: the presentation of a second, downward-counting rule set alongside the upward one, the pairing of the two auxiliary predicates that summarize the first several passes versus all remaining passes, the discussion of choosing between the sets according to whether the program uses a temporary variable counting up or decrements a given value toward zero, and the worked demonstration that using the wrong set does not defeat the proof but forces the auxiliary predicate to be expressed backwards in terms of the difference between initial and current values; together with the further tailoring of a rule set for uninitialized repetition rather than reading the initialized rules with an identity in place of the set-up.

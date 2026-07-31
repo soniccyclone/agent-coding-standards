@@ -26,7 +26,10 @@ tags: [work]
 line 22864. Current position recorded below; if this file still says "in progress" the
 session died and the position line is the truth.**
 
-**Current position: line 4400 (sections 5.2 tail and 5.3 head read and mined).**
+**Current position: line 4900 — chapter 5 prose complete through section 5.5 (text frames,
+font machinery, edit toolbox) and the chapter-5 literature list. Remaining below this
+line in chapter 5 is the complete-implementations listing (modules Fonts, Texts,
+TextFrames, Edit) which is source code.**
 
 Read against `pdftotext -layout` output of the 2005 edition PDF (441 pages → 22864 lines
 of extracted text). Identity verified: title page and preface name N. Wirth and J.
@@ -90,3 +93,5 @@ section are where the extractable lessons are.
 - [A cache is a question about its two neighbours, not about itself](../lessons/a-cache-is-a-question-about-its-two-neighbours.md)
 - [Privacy in the module graph is not privacy in time](../lessons/privacy-in-the-module-graph-is-not-privacy-in-time.md)
 - [Re-read a specialized notion as a pair, and discover the general case is already built](../lessons/reread-a-specialized-notion-as-a-pair-and-the-general-case-is-already-built.md)
+- [Test an extension point by rebuilding something already built in](../lessons/test-an-extension-point-by-rebuilding-something-already-built-in.md)
+- [Split a description where the cheap half answers most of the questions](../lessons/split-a-description-where-the-cheap-half-answers-most-questions.md)

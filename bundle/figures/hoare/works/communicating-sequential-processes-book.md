@@ -39,7 +39,8 @@ numbers appear inline in those running heads.
 **READ IN PROGRESS (2026-07-31):** a second Phase 4 pass has resumed at line 1540 of
 the `pdftotext -layout` output (12215 lines total) and is working forward
 sequentially. This line is updated as the read advances; if it still says 1540 the
-pass died immediately. Current position: **line 2350** (sections 1.5–1.8 read).
+pass died immediately. Current position: **line 2830** — Chapter 1 now read in
+full (1.5 through 1.10); starting Chapter 2 (Concurrency).
 
 ## Lessons
 - [What a thing could do is part of what it is: fix the vocabulary of possible interactions before describing behaviour](../lessons/declared-capability-is-part-of-identity.md)
@@ -54,3 +55,4 @@ pass died immediately. Current position: **line 2350** (sections 1.5–1.8 read)
 - [Make an operation distribute over composition and you need only define it on the atoms](../lessons/make-an-operation-distribute-and-you-need-only-define-it-on-atoms.md)
 - [A new operator can silently invalidate the well-formedness test every other definition depends on](../lessons/a-new-operator-can-silently-invalidate-your-well-formedness-test.md)
 - [Write down the closure conditions your observation-set satisfies; they may turn out to be the whole structure](../lessons/the-closure-conditions-on-your-observations-may-be-the-whole-structure.md)
+- [A specification made only of prohibitions is satisfied by doing nothing, and no amount of tightening fixes that](../lessons/a-specification-made-only-of-prohibitions-is-satisfied-by-doing-nothing.md)

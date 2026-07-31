@@ -109,6 +109,8 @@ tags: [work]
 - [A specification runs in both directions; the search order it inherits does not](../lessons/a-reversible-specification-carries-an-enumeration-order-that-is-not.md)
 - [Adding a second way to fail obliges you to reclassify every existing failure](../lessons/adding-a-failure-channel-forces-you-to-reclassify-every-existing-failure.md)
 - [You can only offer to rewind what you mediate, so the undo obligation lands on whoever owns the effect](../lessons/you-can-only-offer-to-rewind-what-you-mediate.md)
+- [Name a handle for what it does, not for the circumstance that first needed it](../lessons/naming-a-handle-after-its-first-caller-hides-its-other-uses.md)
+- [A declarative system does not remove method; it relocates the method into your choice among equivalent formulations](../lessons/declarative-does-not-remove-method-it-relocates-it-into-choosing-a-formulation.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -151,7 +153,10 @@ are unread.
 20100-21200 — the rest of 4.2.3 lazy lists, all of 4.3.1 amb and search, 4.3.2
 examples of nondeterministic programs (logic puzzles, natural-language parsing,
 generation), and 4.3.3 implementing the amb evaluator through procedure
-applications. **Next unread line is 21200.** Currently
+applications. Read 21200-21750 — the rest of 4.3.3 (evaluating amb expressions,
+the driver loop and try-again), and the opening of 4.4 Logic Programming through
+the start of 4.4.1 simple queries and pattern matching. **Next unread line is
+21750.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.
