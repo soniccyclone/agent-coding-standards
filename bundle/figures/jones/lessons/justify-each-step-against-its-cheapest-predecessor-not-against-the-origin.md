@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Justify a step against its nearest predecessor, and when several predecessors would do, pick whichever makes the argument shortest"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [verifiability, cognitive-load]
+subdomains: [software-engineering-and-architecture, formal-methods-and-verification]
+tags: [lesson]
+---
+# Justify a step against its nearest predecessor, and when several predecessors would do, pick whichever makes the argument shortest
+
+**Lesson:** A design that arrives at its final form through several successive changes of representation has a choice at every step about what it is answerable to. The instinct is to hold each version up against the original statement of the problem, since that is what ultimately matters, and it is the wrong instinct: the gap between the origin and a late version is the sum of every decision taken so far, so the argument you have to make grows with every step and the last one is unmanageable. Answering to the immediate predecessor instead keeps each argument the size of a single decision, no matter how deep in the chain you are. Correctness against the origin then comes for free by composition, and it is worth noticing that this is exactly the property you were buying when you agreed to work in steps at all. A method that lets the cost per step grow has quietly stopped being a method.
+
+The second half is the part people miss. Once there are several versions in existence, a new one usually has more than one honest predecessor to answer to — the sequence in which things happened to be written is not a constraint on which comparison you are allowed to make. A representation that reorganizes the data can be far easier to relate to an early, structurally simple version than to the fiddly intermediate one that immediately preceded it, and if so, relating it to the early one is not a shortcut or a cheat; it is a shorter valid argument for the same conclusion. The history of a design is a partial order of what-was-decided-when, not a line, and the freedom to choose your comparison point is one of the concrete returns on having kept the intermediate versions at all.
+
+What makes both moves work is that the relationships compose, which is a property you have to preserve deliberately rather than one you get automatically. It survives only as long as each link genuinely is a change of one thing — a representation swapped, a control structure introduced — related to its neighbour by an explicit statement of how to read one as the other. Bundle two changes into a link and the link's own argument becomes the unmanageable one, and you have reintroduced at a smaller scale precisely the problem the chain was built to avoid.
+
+The practical residue outside formal development: when reviewing a change, compare it against the state it was branched from rather than against the distant baseline, and when a chain of changes has accumulated, be willing to re-derive a late one directly from an early one if that comparison is the clearer story. What you are optimizing is not the number of comparisons but the size of the largest one.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 20's development of the Josephus ring problem: the succession of circle representations, from a list rearranged on each rotation, to a list with a separate position pointer, to a list carrying a parallel deletion mask, to a count tree carrying subtree totals, in which each new state is related by a retrieve function to the version immediately before it rather than to the original specification and its correctness argued only against that neighbour; together with the exercise observing that the count-tree step could equally have been shown correct with respect to the bit-mask realization by writing a different retrieve function, and the earlier statement of the chapter that a stage of development should not attempt an essential change of representation and a decomposition of operations at the same time.

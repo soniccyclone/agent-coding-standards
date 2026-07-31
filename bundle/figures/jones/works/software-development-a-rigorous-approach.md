@@ -64,3 +64,4 @@ tags: [work]
 - [A formal notation removes ambiguity but not incompleteness or self-contradiction, so bring a discipline that tells you when you have said enough](../lessons/formality-removes-ambiguity-not-incompleteness-or-contradiction.md)
 - [Run the over-specification check before there is an implementation to hide it, because the first builder never feels the cost and the second cannot avoid it](../lessons/run-the-over-specification-check-before-there-is-an-implementation-to-hide-it.md)
 - [A value invented to satisfy the machinery is indistinguishable from a requirement once it is written down](../lessons/a-value-invented-to-please-the-machinery-reads-as-a-requirement.md)
+- [Encoding a new kind of thing into machinery you already have costs you exactly the property that made it a new kind of thing](../lessons/encoding-a-new-thing-into-old-machinery-costs-you-the-property-that-made-it-new.md)

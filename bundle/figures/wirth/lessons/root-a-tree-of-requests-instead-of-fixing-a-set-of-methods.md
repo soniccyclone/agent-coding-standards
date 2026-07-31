@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Root a tree of requests instead of fixing a set of operations"
+figure: wirth
+works: [project-oberon]
+axes: [expressiveness, primitive-count]
+subdomains: [programming-environments-and-object-systems, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Root a tree of requests instead of fixing a set of operations
+
+**Lesson:** There are two ways to give a component a behavioural interface, and they differ in what has to change when somebody wants it to understand something new. The familiar way enumerates the operations: the interface is a list, and every participant knows the list, so adding to it is a change to a shared declaration that every implementation must be recompiled against and every other implementation must at least tolerate. The alternative gives the component a single entry point that accepts a request value, where the request type is the root of an open hierarchy: anyone may define a new kind of request by extending the root, and any component may choose to recognize it. The declared interface — one procedure taking one base type — never changes. Which requests a particular component understands becomes an implementation fact, not an interface fact.
+
+The consequence worth internalizing is where extension pressure lands. Under the enumerated scheme, extension pressure lands on the shared declaration, which is the most expensive place for it to land, because that declaration is the thing everybody depends on and the thing that must be agreed. Under the rooted scheme, extension pressure lands inside individual implementations, which is the cheapest place, because each one can be changed alone. This is what makes it possible for a subsystem added years later to send its own kinds of requests through machinery that predates it, and for components that do not know those requests to remain correct by ignoring them.
+
+Nothing about this is free, and the price should be stated rather than glossed. Dispatch moves from compile time to run time: the receiving component must inspect the request and decide, so the compiler can no longer check that a sent request will be understood, and an unrecognized request is a silent no-op rather than a compile error. That is a real loss of static guarantee and it is the whole cost. The trade is therefore legible: you are exchanging compile-time confirmation that every request is handled for the ability to add request kinds without touching what already exists. Take the trade where the set of possible requests is genuinely open-ended and the participants are independently authored; refuse it where the operation set is closed and known, because there you would be paying the runtime cost and the lost checking for an extensibility you will never use.
+
+A structural note that makes the pattern work in practice: the same design lets ignoring be the default and correct response. A component that receives a request it does not recognize has an obvious right answer — do nothing — and that is only safe because requests are values with a common base rather than calls that must be matched. Designs where the default is undefined behaviour rather than a harmless no-op do not get this property and should not be described as open.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 3.1.1's declaration of the viewer type with a handler procedure variable taking a base message type, its remark that a call passing a viewer and a message can be read as sending a message handled individually by the receiving viewer's method; and the same section's contrast between the standard object-oriented model, closed in the sense that only a fixed set of messages is understood by a given class, and the handler paradigm, open because it defines just the root of a potentially unlimited tree of extending message types, together with the observations that extending the set of message types an object handles is a mere implementation issue with no effect on the object's compile-time interface, and that the price of this flexibility is the obligation of explicit message dispatching at runtime.

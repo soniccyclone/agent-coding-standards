@@ -21,4 +21,7 @@ tags: [work]
 **Source:** https://people.inf.ethz.ch/wirth/ProjectOberon1992.pdf — live PDF, self-archived on Niklaus Wirth's ETH Zurich personal page.
 
 ## Lessons
-_(empty — lesson extraction is Phase 4)_
+- [Separate the unit of action from the unit of packaging](../lessons/separate-the-unit-of-action-from-the-unit-of-compilation.md)
+- [Pick the switching granularity first; the protection machinery follows from it](../lessons/pick-the-switching-granularity-first-the-protection-follows-from-it.md)
+- [Root a tree of requests instead of fixing a set of operations](../lessons/root-a-tree-of-requests-instead-of-fixing-a-set-of-methods.md)
+- [Prefer the state that is already visible as the interface between steps](../lessons/prefer-the-state-that-is-already-visible-as-the-interface.md)
