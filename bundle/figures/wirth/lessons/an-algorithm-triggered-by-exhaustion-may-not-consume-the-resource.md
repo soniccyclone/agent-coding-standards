@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "An algorithm triggered by exhaustion may not consume the resource it was called about"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, hardware-affinity, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, algorithms-and-complexity]
+tags: [lesson]
+---
+# An algorithm triggered by exhaustion may not consume the resource it was called about
+
+**Lesson:** There is a class of procedure whose invocation condition contradicts its ordinary implementation, and recognizing membership in that class is the whole of the insight. Anything that runs *because* a resource has run out cannot be written in the natural way, because the natural way — recursion, an explicit stack of pending work, a queue of things still to visit — needs an amount of that same resource proportional to the size of the problem, and the problem is largest exactly when the resource is scarcest. Worse, the failure is not graceful: it arrives at the moment the system was already in trouble, and the fallback for a failed recovery is usually nothing. So before writing such a procedure, state its precondition honestly and check the implementation against it. The requirement is not "use little"; it is "use none", and that is a qualitatively different specification.
+
+Meeting it requires giving up the idea that the bookkeeping needs somewhere new to live. The work is a traversal of a structure made of links, and a traversal's state is a path — which is to say, a sequence of links that already exist. So the return path can be recorded *in the structure being traversed*, by reversing links as they are followed so that each one temporarily points back the way you came, and restoring them on the way out. The structure is deliberately, transiently invalid during the operation, and the algorithm's correctness argument is that it is put back exactly as it was. Nothing is allocated; the storage for the traversal was borrowed from the thing being traversed and returned.
+
+Two general points come out of this beyond the technique itself. The first is that "no auxiliary storage" is often achievable by looking for storage that is already reachable and temporarily repurposable, rather than by trying to be frugal — the move is a change of kind, not of degree, and it is available surprisingly often when the data is linked. The second is the cost, which should be stated: for the duration, the structure is not in a valid state, so nothing else may look at it and nothing may interrupt the process partway and leave it that way. That is an acceptable price for an operation that already blocks everything, and an unacceptable one for anything concurrent — which is precisely why this trick belongs to stop-the-world procedures and why proposals to run such a procedure alongside ordinary work are far harder than they look.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 8.3's treatment of the mark phase of storage reclamation as a traversal of a forest rooted at all existing named pointer variables, and its statement of the essential problem as the storage consumed by the traversal algorithm itself: that retaining information about visited nodes, whether explicitly or implicitly through recursion, is plainly unacceptable because the amount required may be very large and because collection is typically initiated exactly when more storage is unavailable; and the resolution, described as seeming impossible before it is given, of inverting the pointers along the path traversed so as to keep the return path open, presented through a procedure that walks a binary tree marking every node while rotating the two branch fields and the back link at each step.

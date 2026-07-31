@@ -116,3 +116,6 @@ section are where the extractable lessons are.
 - [An optimization that holds durable state in volatile store is a correctness change](../lessons/an-optimization-that-holds-durable-state-in-volatile-store-is-a-correctness-change.md)
 - [Obtaining a handle to something external is a lookup, not an allocation](../lessons/obtaining-a-handle-to-something-external-is-a-lookup-not-an-allocation.md)
 - [Buy detection by representing a critical value sparsely](../lessons/buy-detection-by-representing-a-critical-value-sparsely.md)
+- [Two growing consumers of one resource need no boundary; three do](../lessons/two-consumers-of-one-resource-need-no-boundary-three-do.md)
+- [An algorithm triggered by exhaustion may not consume the resource it was called about](../lessons/an-algorithm-triggered-by-exhaustion-may-not-consume-the-resource.md)
+- [Re-audit a mechanism against the requirement that introduced it](../lessons/re-audit-a-mechanism-against-the-requirement-that-introduced-it.md)

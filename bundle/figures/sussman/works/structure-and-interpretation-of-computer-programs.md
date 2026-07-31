@@ -132,6 +132,8 @@ tags: [work]
 - [Derive a system's resource requirements from the system, and instrument it rather than reasoning about its cost](../lessons/derive-a-systems-requirements-from-the-system-rather-than-declaring-them.md)
 - [Identity can stand in for equality only if something guarantees canonicity at construction time](../lessons/identity-can-stand-in-for-equality-only-if-you-manufacture-canonicity.md)
 - [Replace an undecidable question about the future with a decidable question about the graph](../lessons/replace-an-undecidable-question-about-the-future-with-reachability-from-roots.md)
+- [Write the bookkeeping into the structure you are already touching, and the auxiliary structures disappear](../lessons/write-the-bookkeeping-into-the-structure-you-are-already-touching.md)
+- [Two independently safe conservative approximations can compose into an unbounded leak](../lessons/two-safe-conservative-approximations-compose-into-a-leak.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter
@@ -205,7 +207,11 @@ Read 25110-26230 — 5.2.2 the assembler, 5.2.3 generating execution procedures,
 5.2.4 monitoring machine performance, 5.3 storage allocation, 5.3.1 memory as
 vectors (typed pointers, interning, implementing the primitive list operations
 and the stack), and 5.3.2 through the introduction of stop-and-copy. **Next
-unread line is 26230.** Currently
+Read 26230-26790 — the rest of 5.3.2 (the stop-and-copy collector in
+register-machine code: broken hearts, forwarding addresses, the scan/free loop,
+gc-flip), 5.4 the explicit-control evaluator preamble, and 5.4.1 the core
+(eval-dispatch, simple expressions, the application and argument-evaluation
+loop, apply-dispatch). **Next unread line is 26790.** Currently
 reading forward from there toward the index at ~29990. This line is updated as
 chunks are finished — if this note still says a line below 29990 and there is no
 `extraction: complete`, that number is the true resume point.

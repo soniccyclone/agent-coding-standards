@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Two independently safe conservative approximations can compose into an unbounded leak"
+figure: sussman
+works: [structure-and-interpretation-of-computer-programs]
+axes: [verifiability, hardware-affinity]
+subdomains: [operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# Two independently safe conservative approximations can compose into an unbounded leak
+
+**Lesson:** A conservative approximation is one that errs in the harmless direction, and the whole appeal of such a design is that it is safe on its own terms regardless of how sloppy it is. Keeping a reference you might not need is safe. Treating anything referenced as still in use is safe. Each is unimpeachable in isolation. Put them together and the sloppiness of the first becomes the input to the second: every unnecessary reference is now a claim of liveness that the second mechanism is obliged to honour, and the memory behind it is retained not because anyone will use it but because somebody declined to decide. Neither component is wrong. The composition retains an unbounded amount of dead data, and there is no error to find, because both parties are doing exactly what they promised.
+
+The structural reason this is easy to miss is that the two mechanisms are usually at different levels and owned by different people. Whoever writes the conservative retention is thinking about correctness of control flow and regards keeping an extra reference as costing one slot. Whoever writes the reclamation is thinking about not destroying live data and regards a reference as authoritative evidence. The cost lands on neither of them: it is the transitive closure behind the extra reference, which can be arbitrarily large and bears no relation to the one slot the first party thought they were spending.
+
+So the lesson is that conservatism composes badly, and that the safe-direction argument has to be made about the system rather than about each part. When a mechanism holds a reference "just in case," the right accounting is not the size of the reference but the size of everything reachable through it, and that accounting has to happen where the two mechanisms meet, since neither one can see it alone. Practically, this means the discipline of retaining exactly what is live is worth more in a reclaiming system than in one that manages memory by hand, which is the opposite of the usual intuition that automatic reclamation makes precision about lifetimes unnecessary.
+
+The pattern recurs wherever an over-approximation feeds something that treats its input as a commitment: over-broad dependency declarations feeding a build that must rebuild everything named; over-broad capability grants feeding an audit that must treat every grant as exercised; over-broad cache keys feeding an invalidation that must clear everything matching; a retry that assumes failure feeding a system that treats every attempt as real. In each case the question to ask at the seam is what the downstream mechanism is contractually forced to do with the slack the upstream one left, because that, and not the slack itself, is the actual cost.
+
+**Source:** [Structure and Interpretation of Computer Programs](../works/structure-and-interpretation-of-computer-programs.md) — chapter 5 section 5.4.1, the footnote on register saving in the explicit-control evaluator, which contrasts saving only what is needed against a framed-stack discipline that saves every register before each recursive call, grants that the latter would work, notes it might save more registers than necessary and that this matters where stack operations are expensive, and then adds the further consequence that saving registers whose contents will not be needed later may hold onto useless data that could otherwise be garbage-collected and its space reused; read against section 5.3.2's reclamation criterion, under which anything reachable from the machine registers — and, since the stack is itself list structure reachable from a register, anything saved on the stack — is by definition retained.
