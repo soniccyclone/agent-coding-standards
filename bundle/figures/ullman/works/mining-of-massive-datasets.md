@@ -117,6 +117,9 @@ tags: [work]
 - [Find the support of a change and evaluate only that](../lessons/find-the-support-of-a-change-and-evaluate-only-that.md)
 - [When the equilibrium forgets the question, put the question into the dynamics](../lessons/when-the-equilibrium-forgets-the-question-put-the-question-in-the-dynamics.md)
 - [Keep an explicit account of what you have not yet processed](../lessons/keep-an-explicit-account-of-what-you-have-not-yet-processed.md)
+- [Hold some back to damp an oscillating propagation](../lessons/hold-some-back-to-damp-an-oscillating-propagation.md)
+- [An answer defined as a time average licenses any processing order](../lessons/an-answer-defined-as-a-time-average-licenses-any-order.md)
+- [Split the input where two opposite-cost strategies cross](../lessons/split-the-input-where-two-opposite-cost-strategies-cross.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
