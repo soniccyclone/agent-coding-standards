@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Inlining dependencies to stop a chain reaction requires a global identity"
+figure: wirth
+works: [project-oberon]
+axes: [cognitive-load, verifiability, hardware-affinity]
+subdomains: [software-engineering-and-architecture, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Inlining dependencies to stop a chain reaction requires a global identity
+
+**Lesson:** A published description of one component will mention things defined in components it depends on. If the description merely refers to them, then consuming it obliges the consumer to fetch those too, and each of those pulls in its own, and a request for one thing becomes a traversal of a graph whose size nobody controls. The fix is to make each description self-contained: copy into it the descriptions of everything it mentions, so that consuming one artifact never requires consuming another. This is a good trade — descriptions are small, the duplication is bounded by what is actually mentioned, and the consumer's cost becomes predictable instead of transitive.
+
+The trade has a second half that is easy to miss and expensive to discover late. Once the same definition can be copied into several artifacts, a consumer that reads two of them receives the same thing twice, and it must recognize the two copies as one thing rather than as two similar things. Everything downstream depends on getting this right: equality, substitutability, the correctness of any check that two values are compatible. So each copied definition has to carry an identity that is meaningful outside the artifact carrying it — where it originally came from, plus its name there — and not merely the local index the artifact uses to point at it internally. On reading, every incoming definition is checked against what is already known, and a match makes the new entry an alias for the existing one rather than a sibling.
+
+This is where an earlier definitional choice pays off again. If identity is decided by declaration site and name, then the copies are recognizable as the same thing by inspection, and the check is a name comparison. If identity were decided by structure, two copies of the same definition would be indistinguishable from two independently written definitions that happen to coincide, and the reconciliation would be both more expensive and semantically wrong. The general pattern: whenever you decide to duplicate a definition for the sake of self-containment, you have implicitly promised to be able to tell duplicates from distinct things, and you should check that the identity you carry is strong enough to keep that promise before you rely on the duplication.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 12.6's discussion of symbol files, which argues that requiring the import of one module to also read the symbol file of a module it imports would trigger an unacceptable chain reaction, that this is avoided by making symbol files self-contained through the inclusion of descriptions of entities stemming from other modules, and then works through the complication in which the same type reaches a compilation both directly and via an intermediate module and must be recognized as identical; together with the accompanying measures — giving every type element a module number referring to an emitted module anchor, emitting a named type element for types that stem from another module, and checking on import whether a module or type is already present and making the new entry refer to the existing one — and the observation that this is workable because the language specifies equivalence of types by name rather than by structure.

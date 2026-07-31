@@ -43,28 +43,26 @@ and the glossary in full. The tail from line 19604 to the end of file (20771) wa
 structurally sampled and confirmed to be answers to selected exercises, the
 bibliography, the index and a colophon; none of it is lesson-bearing.
 
-**Third session (in progress).** Reading forward sequentially through the spans left
-unread by the first two sessions.
+**Third session (complete).** Read lines 341-14254 in full and sequentially — the
+front matter and preface, chapter 1 (Introduction), all of Part A (chapters 2-6:
+Specifying Functions, Proofs About Functions, Specifying Programs, Proofs in Program
+Development, Other Issues) and all of Part B (chapters 7-14: On Data Types, Set
+Notation, List Notation, Data Type Invariants, Data Refinement, Mapping Notation,
+*Theories of Data Types, Abstract Syntax). This was the span the coverage note
+previously flagged as never read by anyone.
 
-**Done this session:** lines 341-14254 read in full and sequentially — the front
-matter and preface, chapter 1 (Introduction), all of Part A (chapters 2-6: Specifying
-Functions, Proofs About Functions, Specifying Programs, Proofs in Program Development,
-Other Issues) and all of Part B (chapters 7-14: On Data Types, Set Notation, List
-Notation, Data Type Invariants, Data Refinement, Mapping Notation, *Theories of Data
-Types, Abstract Syntax). This was the span the coverage note previously flagged as
-never read by anyone.
+**Fourth session (IN PROGRESS — read started, note written before reading).**
+Targeting the last spans nobody had read-and-attested: lines 1-340 (title pages and
+table of contents), 15402-16782 (balance of chapter 17 from the class-construct
+example onward, all of chapter 18 *Earley's Recognizer, opening of chapter 19),
+17740-18189 (balance of chapter 21 Telegram Analysis, opening of chapter 22 through
+"Programs and Their Data"), and the 19071-19194 gap between the third session's
+recorded spans.
 
-**Current position: line 15402** — moving to the next unread span. This number is
-updated as the read advances, so whatever it says is the resume point.
-Position log: 341 -> 14254 (span complete) -> resuming at 15402.
-
-**Still unread by anyone who then attested it:** lines 15402-16782 (the balance of
-chapter 17 from the class-construct example onward, all of chapter 18 *Earley's
-Recognizer, and the opening of chapter 19) and lines 17740-18189 (the balance of
-chapter 21 Telegram Analysis and the opening of chapter 22 through "Programs and
-Their Data"). Both spans are cited by lessons the first session wrote, so they were
-mined once; they have simply not been read by anyone who then attested them, so
-exhaustion cannot be claimed for them.
+**Current position: line 15402** — starting the fourth session's first substantive
+span here. This number is updated as the read advances, so whatever it says is the
+resume point.
+Position log: 341 -> 14254 (span complete) -> 15402 (fourth session start).
 
 ## Lessons
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)

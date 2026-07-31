@@ -268,3 +268,9 @@ Started at line **1647** (chapter 2). This line number is updated in place as
 the read advances; if this note names a line below 7233, the agent died there
 and that is the genuine resume point. `extraction: complete` stays withheld
 until this re-read reaches line 7233._
+
+_**READ IN PROGRESS (2026-07-31, sixth agent pass).** Resuming the chapters 2-4
+hand re-read; the fifth pass left no evidence of advancing past its start line,
+so this pass restarts at line **1647** (chapter 2, MapReduce). Currently at line
+**1647**. This line is updated in place as the read advances; if it names a line
+below 7233, the agent died there and that is the genuine resume point._

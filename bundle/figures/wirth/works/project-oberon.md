@@ -178,4 +178,7 @@ section are where the extractable lessons are.
 - [Enumerate your rule violations and grade them by what they constrain](../lessons/enumerate-your-rule-violations-and-grade-them-by-what-they-constrain.md)
 - [Accept the general form, then classify against a closed set](../lessons/accept-the-general-form-then-classify-against-a-closed-set.md)
 - [A tag that trails its payload forces the reader to buffer](../lessons/a-tag-that-trails-its-payload-forces-the-reader-to-buffer.md)
+- [Inlining dependencies to stop a chain reaction requires a global identity](../lessons/inlining-dependencies-to-stop-a-chain-reaction-requires-global-identity.md)
+- [Order a serialized form so the reader never has to back-patch](../lessons/order-a-serialized-form-so-the-reader-never-back-patches.md)
+- [Compare the artifact, not the meaning — and check which way the test errs](../lessons/compare-the-artifact-not-the-meaning-and-check-which-way-it-errs.md)
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)
