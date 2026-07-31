@@ -22,11 +22,15 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
-**READ IN PROGRESS (2026-07-31 session, second agent): resumed at line 10480, working
+**READ IN PROGRESS (2026-07-31 session, third agent): resumed at line 13764, working
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 11709 — chapter 9 complete and mined (9.1-9.4, including the
+**Current position: line 13764 — third agent starting here, inside chapter 12
+(The Compiler) at section 12.2. Everything below this line describes what earlier
+agents banked.**
+
+**Earlier: chapter 9 complete and mined (9.1-9.4, including the
 serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
 read and mined in full including the module Net listing (pure Oberon source, no prose);
 chapter 11 read and mined in full; chapter 12 read and mined through section 12.2's opening

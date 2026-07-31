@@ -102,3 +102,7 @@ pass died immediately. Current position: **line 10980** — Chapters 1 (from 1.5
 - [You cannot schedule what you cannot see waiting: split the atomic acquire into a request and a grant](../lessons/you-cannot-schedule-what-you-cannot-see-waiting.md)
 - [Measure modularity by listing prospective changes and counting the modules each touches — including the ones that come out badly](../lessons/measure-modularity-by-listing-changes-and-counting-modules.md)
 - [An access restriction is what turns polling into event-driven re-evaluation](../lessons/an-access-restriction-turns-polling-into-event-driven-reevaluation.md)
+- [Performance controls should be annotations that cannot change meaning, so they can be tuned by experiment](../lessons/performance-controls-must-not-be-able-to-change-meaning.md)
+- [The mark of a successful abstraction is that it admits several implementations, each efficient in different circumstances](../lessons/a-successful-abstraction-admits-several-implementations.md)
+- [In a cyclic network, buffer capacity is a semantic parameter, and behaviour can depend on it non-monotonically](../lessons/buffer-capacity-is-a-semantic-parameter-in-a-cyclic-network.md)
+- [If the replacement formalism turns out just as complicated, the complication belonged to the problem and not to the notation you rejected](../lessons/if-the-replacement-formalism-is-just-as-complicated-the-complication-was-real.md)
