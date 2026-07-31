@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Choose the equivalence rule that makes identity a token comparison"
+figure: wirth
+works: [project-oberon]
+axes: [hardware-affinity, verifiability, cognitive-load]
+subdomains: [programming-languages-and-semantics, operating-systems-and-systems-programming]
+tags: [lesson]
+---
+# Choose the equivalence rule that makes identity a token comparison
+
+**Lesson:** Any system that lets a value be described by one category while actually belonging to a narrower one eventually has to answer, at run time, "which category is this really?" The cost of answering looks like an implementation matter, but it was fixed much earlier, by the rule the description language uses to decide when two category descriptions denote the same category. If the rule is structural — two descriptions match when their contents match — then the run-time question is a comparison of structures, recursive in general, unbounded in cost, and impossible to precompute because a category has no identity apart from its shape. If instead the rule is that each declaration introduces a distinct category regardless of what it happens to contain, then every category can be handed a unique token at declaration time, and the run-time question collapses into comparing two tokens for equality. The obvious address of a per-category descriptor serves as the token for free.
+
+The saving is not merely the constant factor on the test. It is that the answer becomes representable at all. Once identity is a single word, it can be stored as a prefix on each instance and carried alongside a reference wherever one travels — and it must be carried explicitly on the paths where the compiler already knew the answer and the callee will not, which is why a reference to a possibly-extended value has to be a pair of address and token rather than an address alone. That obligation is the honest price and worth stating: the test got cheap, and in exchange every hand-off across a boundary that erases static knowledge grew a word.
+
+The same move works one level up, on the relation between categories rather than the categories themselves. "Is this a refinement of that?" is naively a walk up a chain of unknown length. Precompute each category's full ancestor list into its descriptor at the moment the descriptor is built, and the walk becomes an indexed fetch: the depth of a category is known when it is declared, so the answer to the whole family of ancestry questions can be laid out flat and read in one step. Fixing the table's length caps how deep the refinement hierarchy can go — a real limit, and one worth writing down rather than discovering. That is the recurring shape here: a definitional choice made for reasons of language design turns out to determine whether an entire class of run-time question is a comparison or a search, and it is far cheaper to make the choice deliberately than to optimize the search later.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 12.2's treatment of record extensions with pointers, which observes that a pointer bound to a base type may refer to an extension of it, that testing for the actual type therefore requires types to be identifiable during execution, that because the language defines name equivalence rather than structural equivalence a type may be identified by a number, and that the address of a unique type descriptor is used for the purpose so that a type test is a fast address comparison; together with the accompanying description of the descriptor holding a fixed-length table of the tags of all its base types, and the note that record-structured VAR-parameters must consist of address plus type tag because statically declared record variables carry no tag prefix.

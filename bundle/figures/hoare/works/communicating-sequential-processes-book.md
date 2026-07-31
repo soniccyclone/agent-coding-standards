@@ -106,3 +106,5 @@ pass died immediately. Current position: **line 10980** — Chapters 1 (from 1.5
 - [The mark of a successful abstraction is that it admits several implementations, each efficient in different circumstances](../lessons/a-successful-abstraction-admits-several-implementations.md)
 - [In a cyclic network, buffer capacity is a semantic parameter, and behaviour can depend on it non-monotonically](../lessons/buffer-capacity-is-a-semantic-parameter-in-a-cyclic-network.md)
 - [If the replacement formalism turns out just as complicated, the complication belonged to the problem and not to the notation you rejected](../lessons/if-the-replacement-formalism-is-just-as-complicated-the-complication-was-real.md)
+- [A timeout is an admission of unmodelled failure, and in a model without time it can only appear as pure nondeterminism](../lessons/a-timeout-is-an-admission-of-unmodelled-failure-and-reads-as-nondeterminism.md)
+- [A feature's real meaning is whatever the optimizer is permitted to assume about it, not what its syntax suggests](../lessons/a-features-meaning-is-what-the-optimizer-is-permitted-to-assume-about-it.md)

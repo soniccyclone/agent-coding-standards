@@ -167,3 +167,5 @@ section are where the extractable lessons are.
 - [A layer holds when the layer above never names the vocabulary below](../lessons/a-layer-holds-when-the-layer-above-cannot-name-what-is-below.md)
 - [Name the exact non-locality that forces a shared structure](../lessons/name-the-non-locality-that-forces-the-shared-structure.md)
 - [Tabulate the intended output before writing the thing that produces it](../lessons/tabulate-the-intended-output-before-writing-the-producer.md)
+- [Choose the equivalence rule that makes identity a token comparison](../lessons/choose-the-equivalence-rule-that-makes-identity-a-token-comparison.md)
+- [An extension mechanism is a bet that the variant set is still open](../lessons/an-extension-mechanism-is-a-bet-that-the-variant-set-is-open.md)
