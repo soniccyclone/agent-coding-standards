@@ -1,0 +1,22 @@
+---
+type: lesson
+title: "A special case only counts as solved if membership in the special case is itself decidable, or the hard problem has merely moved into the precondition"
+figure: church
+works: [introduction-to-mathematical-logic]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [formal-methods-and-verification, algorithms-and-complexity, programming-languages-and-semantics]
+tags: [lesson]
+---
+# A special case only counts as solved if membership in the special case is itself decidable, or the hard problem has merely moved into the precondition
+
+Having established that the general decision problem for first-order logic has no solution, Church turns to the special cases that do have one — and before presenting any of them, he stops to say precisely what a solution in a special case is required to be. It is not one procedure but two. There must be an effective procedure that decides, of an arbitrary formula, whether it belongs to the special class at all; and there must be an effective procedure that decides theoremhood for the members. He adds that in most cases the first of these is obvious, but he states it as a requirement anyway rather than leaving it as an understood courtesy, and the reason is structural. Without it, the claim to have solved anything is empty.
+
+The failure mode this rules out is worth seeing clearly. Suppose someone offers a decision procedure that works whenever the input has some property, and recognizing that property is as hard as the original problem. Nothing has been gained. The undecidability has been relocated from the body of the procedure to its guard, where it is less visible but exactly as fatal, because you cannot invoke a procedure you cannot determine to be applicable. A conditional result is only as effective as the weakest of its conditions, and the condition is the part nobody scrutinizes, since it is usually phrased as a restriction rather than as a computation. Church's habit is to treat the restriction as a computation and ask what it costs.
+
+He notes a second, softer requirement in the same breath: beyond deciding *that* a formula is a theorem, one seeks a procedure that actually produces a proof of it. He flags this as an additional thing sought rather than something the decision automatically supplies, which marks the gap between knowing an answer exists and holding it. A yes that arrives without the artifact leaves you with a fact you cannot use downstream and cannot independently check; the yes must be taken on the authority of the procedure that emitted it.
+
+Both points transfer directly. Fast paths in real systems are guarded: use the optimized routine when the data fits in cache, when the array is already sorted, when the query touches one shard, when the types are statically known. The optimization is real only if the guard is cheaper than the slow path it avoids, and guards routinely fail this test — a sortedness check on every call, a static analysis that must itself run a whole-program pass, a cache-residency test that costs the miss it was meant to skip. The same shape appears in policy: a rule that says "this simplified process applies to low-risk changes" is not a simplified process until "low-risk" is something a person or a script can determine faster than doing the full review. And the witness point is the difference between a checker that reports a violation and one that reports where; between a solver that reports satisfiable and one that hands you the assignment. The first tells you something is true. The second lets everything downstream proceed without trusting you.
+
+The habit worth taking is Church's: whenever you restrict a problem to make it tractable, write the restriction down as a decision procedure of its own and price it, rather than as an adjective in the surrounding prose. If it cannot be written that way, the restriction is not a restriction — it is a hope about the inputs.
+
+**Source:** [Introduction to Mathematical Logic](../works/introduction-to-mathematical-logic.md) — the opening of the section on the decision problem and its solution in special cases, where Church defines what constitutes a solution in a special case: an effective procedure determining whether an arbitrary formula belongs to the special class, together with an effective procedure determining theoremhood for formulas in that class, plus the further sought-after procedure yielding a proof of any formula so found to be a theorem.

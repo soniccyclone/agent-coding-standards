@@ -31,3 +31,6 @@ tags: [work]
 - [Let the shape of the definition decide recursion or iteration, and prove the depth is small](../lessons/let-the-shape-of-the-definition-decide-recursion-or-iteration.md)
 - [Put the degenerate case inside the operation, and postpone the optimization that moves it out](../lessons/put-the-degenerate-case-inside-the-operation.md)
 - [The more demanding specification can be the simpler program](../lessons/the-more-demanding-specification-can-be-the-simpler-program.md)
+- [An exhaustive search still has a preference, and it belongs to whoever drives the outer loop](../lessons/an-exhaustive-search-still-has-a-preference.md)
+- [Find the data counterpart of every control construct, then carry the discipline across with it](../lessons/find-the-data-counterpart-of-every-control-construct.md)
+- [Sharing is only observable under update, which is exactly why it has to be sayable](../lessons/sharing-is-only-observable-under-update-so-make-it-sayable.md)

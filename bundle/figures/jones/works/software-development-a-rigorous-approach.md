@@ -24,3 +24,5 @@ tags: [work]
 - [An argument cannot be retrofitted onto a finished artifact, so redevelop rather than reason backwards](../lessons/an-argument-cannot-be-retrofitted-onto-a-finished-artifact.md)
 - [A prohibition does not travel; a discipline that tells you what to do next does](../lessons/a-prohibition-does-not-travel-a-constructive-discipline-does.md)
 - [Borrow a notation that already has a discipline behind it, and treat it as shorthand rather than as ceremony](../lessons/borrow-a-notation-that-already-has-a-discipline-behind-it.md)
+- [Say what you want by naming the check the answer must pass, ideally using an operation you already have](../lessons/specify-with-the-inverse-you-already-have.md)
+- [Split cases at the point the branch appears, and expand whichever term occurs least](../lessons/split-the-cases-where-they-appear-and-expand-what-occurs-once.md)

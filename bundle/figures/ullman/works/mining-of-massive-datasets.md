@@ -42,6 +42,9 @@ tags: [work]
 
 - [A metric survives adversaries only if the measured party doesn't own its inputs](../lessons/measure-with-signals-the-measured-party-does-not-control.md)
 - [Peel away what violates your method's precondition, solve, then rebuild in reverse order](../lessons/delete-what-violates-the-precondition-then-rebuild-in-reverse.md)
+- [Give a feedback process an exit that ignores its own structure](../lessons/give-the-process-an-exit-that-ignores-its-own-structure.md)
+- [Store only what an invariant cannot recompute for you](../lessons/store-only-what-an-invariant-cannot-recompute.md)
+- [Partition so that both ends of an update stay resident, and resend the cheap side](../lessons/partition-so-both-ends-of-the-update-stay-resident.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.

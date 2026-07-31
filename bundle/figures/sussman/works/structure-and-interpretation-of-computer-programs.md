@@ -54,6 +54,9 @@ tags: [work]
 
 - [The power to mention your own expressions costs you the right to substitute equals for equals](../lessons/the-power-to-mention-costs-you-substitution-of-equals.md)
 - [When the answers are correct but unusable, the fix belongs in the constructors, not the algorithm](../lessons/put-normalization-in-the-constructor-not-in-the-algorithm.md)
+- [An invariant on the representation lets you conclude things about data you never looked at](../lessons/an-invariant-lets-you-conclude-things-about-data-you-never-looked-at.md)
+- [Design the encoding so boundaries are unambiguous, rather than marking them](../lessons/make-the-stream-self-delimiting-instead-of-adding-separators.md)
+- [Consume the statistics into the structure so the runtime never needs them](../lessons/consume-the-statistics-into-the-structure.md)
 
 _EXTRACTION IN PROGRESS — 883 pages, hand-read in the main loop. Source text:
 `scratchpad/sicp/sicp.txt` (30,343 lines). Body starts at line 784. Chapter

@@ -19,6 +19,8 @@ tags: [work]
 **Venue/year:** Prentice-Hall International Series in Computer Science, 1981.
 **Source:** https://www.cs.cmu.edu/afs/cs/user/jcr/ftp/craftprog.pdf — live PDF (HTTP 200, ~34MB scanned copy), self-archived by Reynolds in his own CMU FTP directory. His page https://www.cs.cmu.edu/~jcr/craftprog.html explains: "It is now out of print, and all rights have reverted to the author, who has decided to make it publicly available."
 
+**Coverage note (in progress).** Reading copy is `scratchpad/craft/craftL.txt` — `pdftotext -layout` over the 449-page scan (19,912 lines). The `-layout` flag matters: plain `pdftotext` on this file returns column-scrambled text that is unusable. Earlier passes covered the preface through Section 3.1.5 (call by value and result). This pass resumes at line 8101 (Section 3.1.6, Array Parameters). Sections read so far this pass: none yet.
+
 ## Lessons
 - [Comment the part of a program that holds still, because the code already shows you what moves](../lessons/document-what-holds-still-not-what-changes.md)
 - [To make a loop faster, loosen the relation it preserves so more of the state is free to move](../lessons/loosen-the-invariant-to-buy-freedom-of-movement.md)
@@ -49,3 +51,4 @@ tags: [work]
 - [To say anything about change, name the old value with something the program cannot touch](../lessons/name-the-old-value-with-something-the-program-cannot-touch.md)
 - [Keep "it finishes" and "it is right" as two separate arguments, because one can die while the other still stands](../lessons/keep-finishing-and-being-right-as-two-separate-arguments.md)
 - [Structure is a property of what a reader can see, not a record of the order you built it in](../lessons/structure-is-what-the-reader-can-see-not-how-you-built-it.md)
+- [Do not make everyone pay for a safety measure that only one kind of caller needs](../lessons/charge-the-caller-who-needs-the-workaround-not-everyone.md)

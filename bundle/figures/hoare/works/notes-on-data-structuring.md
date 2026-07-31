@@ -23,3 +23,5 @@ tags: [work]
 ## Lessons
 - [Keep the notation you design in deliberately unimplemented, so its expensive conveniences must be spent rather than tolerated](../lessons/keep-the-design-notation-deliberately-unimplemented.md)
 - [An operation belongs in the primitive set exactly when its efficiency depends on the representation](../lessons/an-operation-is-primitive-when-its-cost-depends-on-the-representation.md)
+- [Claim only the structure your problem actually has: unasserted properties are freedom the implementer gets to spend](../lessons/claim-only-the-structure-your-problem-has.md)
+- [Choose a modelling apparatus for the cost profile of the models it yields, then write down the fidelity gap](../lessons/choose-the-modelling-apparatus-for-its-cost-profile-not-its-fidelity.md)
