@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "A single commitment about resource allocation deletes several language constructs at once, and the restrictions should be presented as the one decision they are"
+figure: hoare
+works: [communicating-sequential-processes-book]
+axes: [hardware-affinity, primitive-count, expressiveness]
+subdomains: [programming-languages-and-semantics, operating-systems-and-systems-programming, software-engineering-and-architecture]
+tags: [lesson]
+---
+# A single commitment about resource allocation deletes several language constructs at once, and the restrictions should be presented as the one decision they are
+
+**Lesson:** Decide once that everything a program needs will be laid out before it runs, on a fixed set of processing units, and you have not merely chosen an implementation technique — you have determined which constructs the language can contain. The count of components in a replicated structure must be a constant, because a count computed at run time is a size that cannot be laid out in advance. Self-referential procedures are gone, because their storage requirement is not knowable from the text. Any structure whose extent depends on the data goes with them. These arrive looking like three separate restrictions in three separate places of a manual, and they are one decision seen from three angles.
+
+Presenting them that way is the difference between a language that feels arbitrary and one that feels designed. A reader told only that recursion is disallowed will experience it as an omission and go looking for a workaround. A reader told that the language is meant to be implemented by allocating everything statically onto a fixed number of processors, and that this is why the count must be constant and why procedures may not call themselves, has been given the generating rule — from which they can predict the rest of the restrictions before meeting them, and, more usefully, can tell whether their problem is one this language is for. The generalization is that a restriction traceable to a stated commitment is information, while the same restriction presented alone is an obstacle, and the design work of writing it down costs one sentence.
+
+The reason to state the commitment rather than just its consequences is that it is the thing that can be renegotiated. If a program genuinely needs a data-dependent number of participants, no clever use of the remaining constructs will help, because the obstruction is the allocation strategy and not the syntax; the real choices are to bound the requirement statically or to use a different substrate. Making the root commitment visible is what lets someone reach that conclusion in an afternoon rather than after building around the symptoms. And when you are on the other side — designing the thing — the same discipline is a useful check on your own restrictions: for each one you impose, name the single commitment it descends from. A restriction you cannot trace to one is usually either unnecessary or evidence that you have made a commitment without noticing.
+
+**Source:** [Communicating Sequential Processes](../works/communicating-sequential-processes-book.md) — the occam subsection of the discussion chapter's communication section, where after showing an iterative parallel construct building a chain of buffers over an array of channels, the text records that because occam is intended to be implemented with static storage allocation on a fixed number of processors, the chain length must be a constant, and that recursive procedures are disallowed for the same reason; read alongside the subsection's other machine-facing facilities for distributing processes across processors and binding channels to physical pins.

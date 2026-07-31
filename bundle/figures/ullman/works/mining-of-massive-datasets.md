@@ -194,6 +194,10 @@ tags: [work]
 - [Build under randomized loss so nothing can depend on any one part](../lessons/build-under-randomized-loss-so-nothing-can-depend-on-any-one-part.md)
 - [State domain knowledge as more evidence, not only as more structure](../lessons/state-domain-knowledge-as-more-evidence-not-only-as-more-structure.md)
 
+<!-- chapters 2-4 hand re-read, sixth pass -->
+- [A task that finished is not a result that survives](../lessons/a-finished-task-is-not-a-durable-result.md)
+- [Size work units between the overhead below and the variance above](../lessons/size-work-units-between-overhead-below-and-variance-above.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in

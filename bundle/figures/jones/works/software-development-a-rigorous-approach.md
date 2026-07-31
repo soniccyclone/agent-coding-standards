@@ -120,3 +120,5 @@ Position log: 341 -> 14254 (span complete) -> 15402 (fourth session start).
 - [Write down the consequence even though it already follows, because derivable is not the same as available](../lessons/write-down-the-consequence-even-though-it-follows.md)
 - [Do not let the formalism you must store things in be the vocabulary you describe them in](../lessons/do-not-let-the-storage-formalism-be-your-description-language.md)
 - [A housekeeping operation is exactly one that is the identity when viewed through the abstraction, and proving that buys you everything else](../lessons/a-housekeeping-operation-is-one-that-is-invisible-through-the-abstraction.md)
+- [A published algorithm arrives already partway down the development chain, so work out which step it is](../lessons/a-published-algorithm-arrives-partway-down-the-chain.md)
+- [The first design step is to restate the check as a construction, before any representation or ordering is chosen](../lessons/the-first-design-step-is-to-restate-the-check-as-a-construction.md)

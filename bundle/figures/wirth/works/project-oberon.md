@@ -26,12 +26,13 @@ tags: [work]
 forward toward line 22864. Current position recorded below; if this file still says
 "in progress" the session died and the position line is the truth.**
 
-**Current position: line 14970 — third agent has read and mined chapter 12 through
-section 12.4's prose (code patterns 1-15; internal data structures Object/Item/Struct;
-the OCS/OCE/OCH interfaces; the parser's design, error recovery, target-dependence,
-procedure variants, forward references and the with statement). Now in the module
-Compiler listing, which is Oberon source. Everything below this line describes what earlier
-agents banked.**
+**Current position: line 16294 — third agent has read and mined chapter 12 through
+section 12.6 (code patterns 1-15; internal data structures Object/Item/Struct; the
+OCS/OCE/OCH interfaces; 12.4 the parser; 12.5 the scanner; 12.6 symbol table search and
+symbol files, through the worked Sample symbol-file listing and the byte-comparison
+paragraph). Lines 14830-15799 (module Compiler) and 15825-16108 (module OCS) are pure
+Oberon source, checked and confirmed to hold no prose. Now entering the module OCT
+listing at 16294; next prose section is 12.7 at line 16781.**
 
 **Earlier: chapter 9 complete and mined (9.1-9.4, including the
 serial line, the network driver and its comment list, and the SCSI disk driver); chapter 10
@@ -181,4 +182,6 @@ section are where the extractable lessons are.
 - [Inlining dependencies to stop a chain reaction requires a global identity](../lessons/inlining-dependencies-to-stop-a-chain-reaction-requires-global-identity.md)
 - [Order a serialized form so the reader never has to back-patch](../lessons/order-a-serialized-form-so-the-reader-never-back-patches.md)
 - [Compare the artifact, not the meaning — and check which way the test errs](../lessons/compare-the-artifact-not-the-meaning-and-check-which-way-it-errs.md)
+- [Publish the obligation without publishing the name](../lessons/publish-the-obligation-without-publishing-the-name.md)
+- [A faster structure that cannot retire the old one is an addition, not a replacement](../lessons/a-faster-structure-that-cannot-retire-the-old-one-is-an-addition.md)
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)

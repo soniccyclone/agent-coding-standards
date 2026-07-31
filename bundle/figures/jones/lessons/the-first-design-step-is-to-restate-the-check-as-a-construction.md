@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "The first design step is to restate the check as a construction, before any representation or ordering is chosen"
+figure: jones
+works: [software-development-a-rigorous-approach]
+axes: [verifiability, cognitive-load, expressiveness]
+subdomains: [formal-methods-and-verification, algorithms-and-complexity, software-engineering-and-architecture]
+tags: [lesson]
+---
+# The first design step is to restate the check as a construction, before any representation or ordering is chosen
+
+**Lesson:** A good description of what is wanted is often written as a test the answer must pass rather than a recipe for producing it, and that is what makes it short enough to be trusted. It also makes it useless as a starting point for building anything: knowing how to recognize a correct answer says nothing about how to reach one. The gap between those two things is real work, and the mistake is to let it be done implicitly — someone reads the description, thinks for a while, and writes a program, and nobody can afterwards say which part of the program came from the description and which part came from the thinking.
+
+Make the gap a step of its own. Its entire content is the change from a recognizing formulation to a generating one, and it changes nothing else: no data structure is chosen, no order of operations is fixed, no efficiency question is opened. What comes out is typically a set of mutually recursive definitions, direct enough to be obviously about the same problem and slow enough that no one would run it. Its obligation is a single equivalence — that the thing it constructs is exactly the thing the check accepts — and because nothing else has moved, that argument is about one idea and can be made completely. Every later step then answers to the constructive version rather than the check, which is a much easier thing to answer to.
+
+Two things fall out of doing it separately that do not fall out of doing it in your head. First, the definedness questions surface here and get settled here: whether the recursion terminates, whether indices stay in range, whether the functions are total on their stated domains. Those are properties of the construction and not of the check, so this is the first moment they can be asked, and answering them now means the efficiency steps that follow never have to revisit them. Second, the constructive version is the artifact against which optimizations are justified. When you later prune work — skip a branch, add a lookahead, memoize — the claim you have to establish is stated in terms of the direct formulation, and the direct formulation is still around to state it in.
+
+**Source:** [Software Development: A Rigorous Approach](../works/software-development-a-rigorous-approach.md) — chapter 18's development of Earley's recognizer: the observation that the specification of parsing gives no clue as to how to construct a parsing algorithm; the opening of the first development step, which notes that the specification written via inverse production is short and in the spirit of the approach but is not much help as far as design goes, so a more constructive approach must be proposed and shown to match; the pair of mutually recursive recognition functions given there, presented with an example evaluation rather than as anything to run; the checks that follow it that the functions do not become undefined by indexing outside the string or using the grammar outside its domain, and the accompanying pre-conditions, index bounds and termination argument; and the correctness of the look-ahead optimization in the second development step being established from the property relating those functions to production.
