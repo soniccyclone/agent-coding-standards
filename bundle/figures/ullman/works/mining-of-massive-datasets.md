@@ -139,6 +139,11 @@ tags: [work]
 - [Bias the sample toward what matters, then undo the bias in the weights](../lessons/bias-the-sample-toward-what-matters-then-undo-the-bias-in-the-weights.md)
 - [Weaken the law only where it cannot hold](../lessons/weaken-the-law-only-where-it-cannot-hold.md)
 
+- [A measurement set is consumed the first time you act on it](../lessons/a-measurement-set-is-consumed-the-first-time-you-act-on-it.md)
+- [When the quantity you care about is unobservable, instrument the field](../lessons/when-the-quantity-you-care-about-is-unobservable-instrument-the-field.md)
+- [Spend the expensive oracle where you are least certain](../lessons/spend-the-expensive-oracle-where-you-are-least-certain.md)
+- [The inputs are a design choice — look outside the pipeline](../lessons/the-inputs-are-a-design-choice-look-outside-the-pipeline.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in
