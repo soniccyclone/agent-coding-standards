@@ -22,11 +22,20 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
-**READ IN PROGRESS (2026-07-31 session, ELEVENTH agent): resumed at line 20540, working
-forward toward line 22864 (the end). Current position recorded below; if this file still
-says "in progress" the session died and the position line is the truth.**
+**READ IN PROGRESS (2026-07-31 session, TWELFTH agent): resumed at line 22341 (start of
+chapter 14), working forward toward line 22864 (the end of the extracted text). Current
+position recorded below; if this file still says "in progress" the session died and the
+position line is the truth.**
 
-**Current position: line 22341 — eleventh agent. Chapter 13 is now COMPLETE. Read 13.8.2
+**Current position: line 22341 — twelfth agent, just started. Before reading anything, the
+twelfth agent audited the Source lines of every existing Oberon lesson and found that
+chapter 14 (sections 14.1, 14.2 and 14.3) has ALREADY been read and mined — six lessons
+cite it — by an agent that never advanced this position line. The only section of the book
+with no lesson citing it is appendix A ("Ten Years After: From Objects to Components").
+Remaining unread span is therefore appendix A only; chapter 14's prose will be re-checked
+in passing for anything the six existing lessons missed, but is not treated as unread.**
+
+**Eleventh agent's handoff. Chapter 13 is COMPLETE. Read 13.8.2
 prose (20568-20631) and its module GraphicFrames listing (20632-21164, pure Oberon source,
 confirmed no prose); 13.8.3's prose in full (21166-21293: the linked-list representation,
 the library/macro structures, the file format and its dictionaries, and the Move-vs-Copy
