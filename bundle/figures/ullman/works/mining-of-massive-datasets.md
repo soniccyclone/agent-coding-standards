@@ -208,6 +208,9 @@ tags: [work]
 - [Replicate each item along the axes its key leaves undetermined](../lessons/replicate-along-the-axes-your-key-leaves-free.md)
 - [Be correct for the possible inputs and sized for the actual ones](../lessons/be-correct-for-the-possible-and-sized-for-the-actual.md)
 
+<!-- chapters 2-3 hand re-read, eleventh pass -->
+- [One work unit per output means shipping each input once per output](../lessons/one-work-unit-per-output-ships-each-input-once-per-output.md)
+
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
 Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter offsets in
