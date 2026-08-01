@@ -198,3 +198,5 @@ section are where the extractable lessons are.
 - [Put the diagnostic map inside the artifact, in a region the consumer skips](../lessons/put-the-diagnostic-map-in-the-artifact-where-the-consumer-skips-it.md)
 - [An encoding's regularity decides whether its producer can be a pipeline](../lessons/an-encodings-regularity-decides-whether-its-producer-is-a-pipeline.md)
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)
+- [Read the whole gesture as one command, not each input as its own](../lessons/read-the-whole-gesture-as-one-command-not-each-input-as-its-own.md)
+- [Leave the origin unbound and one decoder serves every region that shares the layout](../lessons/leave-the-origin-unbound-and-one-decoder-serves-every-region.md)
