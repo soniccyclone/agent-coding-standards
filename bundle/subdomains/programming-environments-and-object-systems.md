@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-266 lessons from 35 figures.
+293 lessons from 35 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -138,7 +138,8 @@ No works or lessons tagged with this subdomain yet.
 - [Treat the order of a bootstrap as a design artifact: make every stage observable, and deliberately under-build whatever that stage cannot stress](../figures/ingalls/lessons/sequence-a-bootstrap-and-underbuild-what-cannot-be-stressed-yet.md)
 - [When you control how names are handed out, put the information in the name instead of in the thing named](../figures/ingalls/lessons/put-the-information-in-the-name-not-the-thing-named.md)
 
-**jones** (1)
+**jones** (2)
+- [A first-entry flag is a resumption point in disguise, so name the thing it is imitating](../figures/jones/lessons/a-first-entry-flag-is-a-resumption-point-in-disguise.md)
 - [Make the control state explicit data and the order of work becomes yours to choose](../figures/jones/lessons/make-the-implicit-control-state-explicit-and-order-becomes-free.md)
 
 **kay** (21)
@@ -341,16 +342,42 @@ No works or lessons tagged with this subdomain yet.
 **wilkes** (1)
 - [A user's overreaction to a demonstration is wrong about the solution and right about the need](../figures/wilkes/lessons/an-overreaction-still-carries-real-information.md)
 
-**wirth** (12)
+**wirth** (38)
+- [A decomposition that recurs across unrelated subsystems has found a seam](../figures/wirth/lessons/a-decomposition-that-recurs-across-unrelated-subsystems-has-found-a-seam.md)
 - [A self-inverse operation needs no saved copy and no precondition](../figures/wirth/lessons/a-self-inverse-operation-needs-no-saved-copy.md)
+- [A sound design can still be missing its root, and the symptom is a facility you cannot write once](../figures/wirth/lessons/a-sound-design-can-still-be-missing-its-root-type.md)
+- [Accepting members of unknown type obliges you in both directions](../figures/wirth/lessons/accepting-members-of-unknown-type-obliges-you-in-both-directions.md)
+- [Admitting sharing turns every traversal into a graph traversal, so give the traversal an identity](../figures/wirth/lessons/admitting-sharing-turns-every-traversal-into-a-graph-traversal.md)
+- [An action spread over many events needs a named in-progress state, and every intervening action owes it a reset](../figures/wirth/lessons/an-action-spread-over-many-events-needs-a-named-in-progress-state.md)
+- [An operation oddly harder than its sibling marks a semantic commitment](../figures/wirth/lessons/an-operation-oddly-harder-than-its-sibling-marks-a-semantic-commitment.md)
 - [Ask the population instead of maintaining a registry](../figures/wirth/lessons/ask-the-population-instead-of-maintaining-a-registry.md)
 - [Attach state to the level you want to have several of](../figures/wirth/lessons/attach-state-to-the-level-you-want-several-of.md)
 - [Choose the arrangement whose undo is simple, not the one whose forward move is free](../figures/wirth/lessons/choose-the-arrangement-whose-undo-is-simple.md)
+- [Display the active interpreter at the point of interaction](../figures/wirth/lessons/display-the-active-interpreter-at-the-point-of-interaction.md)
+- [Every attribute needs a composition rule before a group can be an element](../figures/wirth/lessons/every-attribute-needs-a-composition-rule-before-a-group-can-be-an-element.md)
 - [Export the default and the parts it was assembled from](../figures/wirth/lessons/export-the-default-and-the-parts-it-was-assembled-from.md)
+- [Filter with a uniform conservative summary, confirm with the member's own test](../figures/wirth/lessons/filter-with-a-uniform-conservative-summary-confirm-with-the-members-own-test.md)
+- [Give persistent data its own namespace, and let anonymity be the privacy mechanism](../figures/wirth/lessons/give-persistent-data-its-own-namespace-and-let-anonymity-be-the-privacy.md)
+- [Give the closed half of an interface a table and the open half a message](../figures/wirth/lessons/give-the-closed-half-of-an-interface-a-table-and-the-open-half-a-message.md)
+- [Hand the extension the raw input before you finish interpreting it](../figures/wirth/lessons/hand-the-extension-the-raw-input-before-you-finish-interpreting-it.md)
 - [Let each level transform requests for the level below it, and never reach past a child](../figures/wirth/lessons/let-each-level-transform-requests-for-the-level-below-it.md)
+- [Let the generic algorithm's own gaps define the extension interface](../figures/wirth/lessons/let-the-generic-algorithms-own-gaps-define-the-extension-interface.md)
 - [Make the container and the contained the same kind of thing, and global policy becomes a local default](../figures/wirth/lessons/make-the-container-and-the-contained-the-same-kind-of-thing.md)
+- [Make the identifier a path to its own implementation](../figures/wirth/lessons/make-the-identifier-a-path-to-its-own-implementation.md)
+- [Make the write a separate verb, and put the danger in the name](../figures/wirth/lessons/make-the-write-a-separate-verb-and-put-the-danger-in-the-name.md)
+- [Pass the transition when it is cheaper to realize than the state](../figures/wirth/lessons/pass-the-transition-when-it-is-cheaper-to-realize-than-the-state.md)
 - [Prefer the state that is already visible as the interface between steps](../figures/wirth/lessons/prefer-the-state-that-is-already-visible-as-the-interface.md)
 - [Price a metaphor by the actions it actually produces](../figures/wirth/lessons/price-a-metaphor-by-the-actions-it-actually-produces.md)
 - [Re-read a specialized notion as a pair, and discover the general case is already built](../figures/wirth/lessons/reread-a-specialized-notion-as-a-pair-and-the-general-case-is-already-built.md)
+- [Read the whole gesture as one command, not each input as its own](../figures/wirth/lessons/read-the-whole-gesture-as-one-command-not-each-input-as-its-own.md)
 - [Root a tree of requests instead of fixing a set of operations](../figures/wirth/lessons/root-a-tree-of-requests-instead-of-fixing-a-set-of-methods.md)
+- [Route a request through its context and the context arrives already computed](../figures/wirth/lessons/route-a-request-through-its-context-and-the-context-arrives-with-it.md)
+- [Shared conventions are owed where artifacts cross, not everywhere](../figures/wirth/lessons/shared-conventions-are-owed-where-artifacts-cross-not-everywhere.md)
+- [Size a new variant by the obligations it inherits, not by the concept it adds](../figures/wirth/lessons/size-a-new-variant-by-the-obligations-not-by-the-concept.md)
 - [Test an extension point by rebuilding something already built in](../figures/wirth/lessons/test-an-extension-point-by-rebuilding-something-already-built-in.md)
+- [The case your builder cannot reach is the argument for a notation](../figures/wirth/lessons/the-case-your-builder-cannot-reach-is-the-argument-for-a-notation.md)
+- [The entry-point layer must be a leaf in the dependency graph](../figures/wirth/lessons/the-entry-point-layer-must-be-a-leaf-in-the-dependency-graph.md)
+- [The operation that creates a thing cannot be reached through the thing](../figures/wirth/lessons/the-thing-that-creates-a-thing-cannot-be-reached-through-it.md)
+- [The relays, not the endpoints, decide whether a request must be a value](../figures/wirth/lessons/the-relays-not-the-endpoints-decide-whether-a-request-must-be-a-value.md)
+- [What you hide decides what must be built inside](../figures/wirth/lessons/what-you-hide-decides-what-must-be-built-inside.md)
+- [When no traversal order resolves the references, make naming its own pass](../figures/wirth/lessons/when-no-order-resolves-the-references-make-naming-its-own-pass.md)

@@ -19,7 +19,7 @@ corpus retains alongside it, not a rejected alternative.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-435 lessons from 48 figures.
+447 lessons from 48 figures.
 
 **abiteboul** (3)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -50,9 +50,10 @@ No works or lessons tagged with this subdomain yet.
 - [The size of the source is not the amount you said](../figures/chaitin/lessons/notation-you-enjoy-writing-is-not-a-measure-of-content.md)
 - [When every consequence needs a correction term, the definition is wrong](../figures/chaitin/lessons/awkward-consequences-indict-the-definition.md)
 
-**church** (34)
+**church** (37)
 - [A definition by recursion on structure is only a function if the structure decomposes exactly one way, so unique readability is a proof obligation and not a formatting concern](../figures/church/lessons/a-recursive-definition-is-only-a-function-if-the-decomposition-is-unique.md)
 - [A mapping that only preserves the answer is free by counting, so the content of an equivalence lives entirely in the structural conditions you also demand](../figures/church/lessons/a-mapping-that-only-preserves-the-answer-is-free-by-counting.md)
+- [A name nothing was assumed about turns one worked case into the general theorem, and the freshness check runs only over the premises you actually used](../figures/church/lessons/a-name-nothing-was-assumed-about-turns-one-run-into-the-general-theorem.md)
 - [A property you must assert separately at every site is a symptom of not being able to quantify over the sites; gain that power and the whole family collapses into a definition](../figures/church/lessons/an-assertion-repeated-at-every-site-means-you-cannot-quantify-over-the-sites.md)
 - [A restriction you can evade by restating the problem in the permitted form is not a restriction at all](../figures/church/lessons/a-restriction-you-can-restate-around-is-not-a-restriction.md)
 - [A rule can pin the answer down to exactly one thing and still give you no way to get it, so state whether a specification is a definition or a procedure](../figures/church/lessons/a-rule-that-determines-a-unique-answer-need-not-let-you-compute-it.md)
@@ -75,6 +76,7 @@ No works or lessons tagged with this subdomain yet.
 - [Minimizing a basis and factoring it by concern are opposite goals, and only the factored one lets you vary a part](../figures/church/lessons/minimize-the-basis-or-factor-it-but-know-which-you-chose.md)
 - [Names and binding are a convenience layer, not part of the computational content](../figures/church/lessons/names-are-a-layer-above-the-computation.md)
 - [Price an assumption by everything it rules out, not by whether it delivers what you wanted, and do not assume a weakest sufficient assumption exists](../figures/church/lessons/price-an-assumption-by-everything-it-excludes-and-expect-no-weakest-one.md)
+- [Put a restriction in one clause, so that generalizing later is a deletion instead of a rewrite](../figures/church/lessons/localize-a-restriction-so-lifting-it-later-is-a-deletion.md)
 - [Reduction bottoms out at the act of combining, and a regress that reappears one level up is a floor rather than a step](../figures/church/lessons/reduction-bottoms-out-at-the-act-of-combining.md)
 - [Refute a whole family of approximations at once by attacking the parameter they share, not the design of any one of them](../figures/church/lessons/refute-a-whole-family-of-models-by-attacking-the-parameter-they-share.md)
 - [Track which assumption buys which capability, and prove one is needed by exhibiting the world where it fails](../figures/church/lessons/know-which-assumption-buys-which-capability.md)
@@ -84,6 +86,7 @@ No works or lessons tagged with this subdomain yet.
 - [When a construction repeats at every level, make the pattern the artifact and let instantiation cover the infinite family](../figures/church/lessons/prove-the-pattern-not-the-instances.md)
 - [When a guarantee is provably unreachable, widening what counts as success is a legitimate move and an illegitimate one, and the difference is whether the wider target was what you wanted](../figures/church/lessons/when-the-goal-is-unreachable-widening-the-target-is-legitimate-only-if-you-say-so.md)
 - [When a second theory would duplicate the first step for step, collapse the two concepts — then state the law the collapse breaks](../figures/church/lessons/collapse-the-duplicate-concept-then-name-what-the-collapse-costs.md)
+- [When you must exhibit something satisfying a description, try building it out of the description's own bookkeeping](../figures/church/lessons/build-the-witness-out-of-the-specification-itself.md)
 - [You can dissolve a bad case by declining to assume it means anything, instead of forbidding anyone to write it](../figures/church/lessons/refuse-to-assume-every-expression-means-something.md)
 
 **clarke** (1)
@@ -199,7 +202,13 @@ No works or lessons tagged with this subdomain yet.
 - [Turn the reasoning itself into an inspectable object, and questions about the system become questions about data](../figures/hilbert/lessons/make-the-derivation-itself-an-object-of-computation.md)
 - [When something resists being built, go prove it cannot be built under the assumptions you made](../figures/hilbert/lessons/an-impossibility-proof-is-a-result.md)
 
-**hoare** (2)
+**hoare** (8)
+- [A foundation meant to host many theories must distinguish as much as possible; a tool meant to be used must identify as much as possible](../figures/hoare/lessons/a-substrate-for-many-theories-must-identify-as-little-as-possible.md)
+- [Any comparison inflates differences, because agreement gives you nothing to write; end it by stating what both sides share](../figures/hoare/lessons/a-comparison-inflates-differences-because-agreement-is-not-writable.md)
+- [Building the formal model is how you find the design questions you never realized you had left open](../figures/hoare/lessons/a-semantics-exposes-the-design-questions-you-never-knew-you-left-open.md)
+- [Give a construct its meaning by mechanical expansion into something simpler, then make sure nobody ever has to read the expansion](../figures/hoare/lessons/define-by-mechanical-expansion-but-never-make-anyone-read-the-expansion.md)
+- [Give each operator exactly one concept, and treat the simplicity of its laws as the evidence that the concepts really were separate](../figures/hoare/lessons/one-concept-per-operator-and-simple-laws-are-the-evidence-of-separation.md)
+- [Having to quantify over every possible context is a symptom that your primitive observation is too weak; strengthen the instrument instead](../figures/hoare/lessons/quantifying-over-all-contexts-is-a-symptom-of-a-weak-primitive-observation.md)
 - [Run independent constraint-checkers side by side and you enforce conjunctions no single traversal can](../figures/hoare/lessons/run-independent-checkers-side-by-side-to-enforce-conjunctions.md)
 - [Where a notation forces you to commit is what determines the class of things it can recognize](../figures/hoare/lessons/where-a-notation-forces-you-to-commit-determines-what-it-can-recognize.md)
 
@@ -488,7 +497,7 @@ No works or lessons tagged with this subdomain yet.
 - [When a requirement is stated in words nobody can check, replace it with a test that has an outcome](../figures/turing/lessons/swap-an-undecidable-requirement-for-an-observable-test.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (8)
+**ullman** (11)
 - [An exact identity leaves you a free parameter — spend it on staying in range](../figures/ullman/lessons/an-exact-identity-leaves-you-a-free-parameter-spend-it-on-range.md)
 - [Check that your measure still discriminates at the scale you will use it](../figures/ullman/lessons/check-that-your-measure-still-discriminates-at-your-scale.md)
 - [Don't reject a measure for lacking a property your problem has no use for](../figures/ullman/lessons/dont-demand-a-property-your-problem-has-no-use-for.md)
@@ -496,6 +505,9 @@ No works or lessons tagged with this subdomain yet.
 - [Find the closure property that turns exhaustive search into frontier expansion](../figures/ullman/lessons/find-the-closure-property-that-turns-search-into-frontier-expansion.md)
 - [Learn to recognize your algorithm being performed without a computer](../figures/ullman/lessons/learn-to-see-your-algorithm-being-performed-without-a-computer.md)
 - [Name the settings at which your generalization becomes the old thing](../figures/ullman/lessons/name-the-settings-at-which-your-generalization-becomes-the-old-thing.md)
+- [Normalize away the encodings that could hide what you count](../figures/ullman/lessons/normalize-away-the-encodings-that-could-hide-what-you-count.md)
+- [Truncation does not cure a divergence](../figures/ullman/lessons/truncation-does-not-cure-a-divergence.md)
+- [Two states are equivalent only if no future can separate them](../figures/ullman/lessons/two-states-are-equivalent-only-if-no-future-can-separate-them.md)
 - [When the exact question is provably unaffordable, change the question](../figures/ullman/lessons/when-the-exact-question-is-unaffordable-change-the-question.md)
 
 **valiant** (13)
