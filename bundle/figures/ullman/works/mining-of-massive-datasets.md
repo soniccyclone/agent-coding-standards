@@ -316,3 +316,12 @@ recorded no advance. Resuming the chapters 2-3 hand re-read at line **3374**
 to line 7233 (start of chapter 4, already read). Currently at line **3374**.
 Updated in place as the read advances; a number below 7233 means the agent died
 there and that is the genuine resume point._
+
+_**READ IN PROGRESS (2026-08-01, eleventh agent pass — subagent, bucket 360).**
+Passes five through ten all recorded the same start line with no advance, so the
+span from **3374** to **7233** (rest of chapter 2 — communication-cost model and
+complexity theory for MapReduce — plus all of chapter 3, finding similar items /
+LSH) is still genuinely unread at hand-read depth. Starting at line **3374**.
+Currently at line **3374**. This number is updated in place as the read advances;
+if it names anything below 7233, the agent died there and that is the genuine
+resume point. `extraction: complete` stays withheld until it reaches 7233._
