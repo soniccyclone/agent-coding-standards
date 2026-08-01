@@ -210,3 +210,6 @@ section are where the extractable lessons are.
 - [Ask whether the arrangement already determines the attribute](../lessons/ask-whether-the-arrangement-already-determines-the-attribute.md)
 - [Pass the transition when it is cheaper to realize than the state](../lessons/pass-the-transition-when-it-is-cheaper-to-realize-than-the-state.md)
 - [A decomposition that recurs across unrelated subsystems has found a seam](../lessons/a-decomposition-that-recurs-across-unrelated-subsystems-has-found-a-seam.md)
+- [The operation that creates a thing cannot be reached through the thing](../lessons/the-thing-that-creates-a-thing-cannot-be-reached-through-it.md)
+- [Every attribute needs a composition rule before a group can be an element](../lessons/every-attribute-needs-a-composition-rule-before-a-group-can-be-an-element.md)
+- [Shared conventions are owed where artifacts cross, not everywhere](../lessons/shared-conventions-are-owed-where-artifacts-cross-not-everywhere.md)

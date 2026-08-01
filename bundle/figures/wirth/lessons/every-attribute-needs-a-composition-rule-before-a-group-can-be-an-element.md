@@ -1,0 +1,18 @@
+---
+type: lesson
+title: "Every attribute needs a composition rule before a group can be an element"
+figure: wirth
+works: [project-oberon]
+axes: [expressiveness, primitive-count, cognitive-load]
+subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
+tags: [lesson]
+---
+# Every attribute needs a composition rule before a group can be an element
+
+**Lesson:** The single most productive move available in a design that manipulates collections of things is to let a named group of those things be usable wherever one thing is usable. It is the same move as naming a sequence of statements and calling it a procedure, and it has the same payoff: the vocabulary of the domain stops being fixed by the implementor and starts being extensible by the user, who assembles the elements a particular field of work actually needs. The construct becomes recursive — a group may contain groups — and operations over it become recursive traversals. This is cheap to represent: the group is an element that additionally holds the head of a list of elements, plus whatever the group needs to identify itself.
+
+What is not cheap, and what decides whether the result is coherent, is that every attribute an element carries now needs a stated rule for how the group's value of that attribute combines with the member's. There are only a few possible rules and choosing among them is the actual design work: the attribute may compose (the group's position is added to each member's, so members' coordinates become offsets), it may override (the group's colour replaces the members', so a group is uniform in colour), or it may be ignored. Each choice has a visible consequence for the user, and picking "override" for an attribute means accepting a limitation — one that should be written down as a property of the system rather than discovered as a defect report. Nothing in the recursive structure forces any particular answer, which is exactly why leaving the answers implicit produces a facility that behaves inconsistently across attributes.
+
+The second-order benefit is worth designing toward once the composition rules exist. If groups are built from the base element type rather than from a fixed list of kinds, then groups automatically accommodate kinds invented later, and the group facility never needs revisiting when the element vocabulary grows. And once groups are named and collected, they behave like an alphabet for a specialized domain — the standard symbols of a technical notation, say — meaning the general facility has absorbed what would otherwise be a domain-specific feature. That is the test worth applying to a proposed feature: can it be expressed as a group of things the system already has, given the composition rules? If so, the feature is already built.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — section 13.6 on macros: a named subgraph usable as an object, explicitly compared to the procedure as a named sequence of statements, making the notion of graphic object recursive and incorporated into the base module as a third class; the representation as an object holding the head of its element list plus a head node carrying name and covering rectangle; the recursive display procedure in which the macro's coordinates are added to each element's as offsets while the macro's colour overrides its elements', with the stated consequence that macros always appear monochrome; the use of macros as circuit components forming an alphabet of standardized symbols; and the note in section 13.7 that the macro and library facilities also integrate objects of classes not present in their own declarations.
