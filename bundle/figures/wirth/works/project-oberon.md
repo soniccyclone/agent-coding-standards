@@ -203,3 +203,6 @@ section are where the extractable lessons are.
 - [Read the whole gesture as one command, not each input as its own](../lessons/read-the-whole-gesture-as-one-command-not-each-input-as-its-own.md)
 - [Leave the origin unbound and one decoder serves every region that shares the layout](../lessons/leave-the-origin-unbound-and-one-decoder-serves-every-region.md)
 - [Give the failure handler disjoint resources, and name the one it still shares](../lessons/give-the-failure-handler-disjoint-resources-and-name-the-one-it-still-shares.md)
+- [Give the closed half of an interface a table and the open half a message](../lessons/give-the-closed-half-of-an-interface-a-table-and-the-open-half-a-message.md)
+- [Filter with a uniform conservative summary, confirm with the member's own test](../lessons/filter-with-a-uniform-conservative-summary-confirm-with-the-members-own-test.md)
+- [Ask whether the arrangement already determines the attribute](../lessons/ask-whether-the-arrangement-already-determines-the-attribute.md)
