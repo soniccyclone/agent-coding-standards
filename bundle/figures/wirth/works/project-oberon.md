@@ -261,3 +261,4 @@ section are where the extractable lessons are.
 - [Make the write a separate verb, and put the danger in the name](../lessons/make-the-write-a-separate-verb-and-put-the-danger-in-the-name.md)
 - [Store in each unit what a scan would need to rebuild the index](../lessons/store-in-each-unit-what-a-scan-would-need-to-rebuild-the-index.md)
 - [Quarantine a resource by giving it an owner, not an exception list](../lessons/quarantine-a-resource-by-giving-it-an-owner-not-an-exception-list.md)
+- [A sound design can still be missing its root, and the symptom is a facility you cannot write once](../lessons/a-sound-design-can-still-be-missing-its-root-type.md)
