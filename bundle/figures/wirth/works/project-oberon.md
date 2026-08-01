@@ -26,11 +26,13 @@ tags: [work]
 forward toward line 22864 (the end). Current position recorded below; if this file still
 says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 19646 — eighth agent. Read so far this session: the module OCC
+**Current position: line 20095 — eighth agent. Read so far this session: the module OCC
 listing (18598-19180, pure Oberon source, confirmed no prose), section 12.9 in full (the
 symbolic debugger — reference part syntax, `Locals`, `Trap`, `State`), and chapter 13
-sections 13.1-13.2.7 (history and the Draw user's guide). Three lessons written. Next:
-13.3 onward, then ch. 14 at 22341, appendix A.**
+sections 13.1 through 13.4 (history, the Draw user's guide, the core data structure and
+dispatch design, the module hierarchy, and the display/frame model). Seven lessons written.
+Next: 13.5 (the user interface) at 20091, onward through ch. 13, then ch. 14 at 22341,
+appendix A.**
 
 **Third agent's handoff: had read and mined chapter 12 through
 section 12.8's prose (code patterns 1-15; Object/Item/Struct; the OCS/OCE/OCH interfaces;
@@ -206,3 +208,5 @@ section are where the extractable lessons are.
 - [Give the closed half of an interface a table and the open half a message](../lessons/give-the-closed-half-of-an-interface-a-table-and-the-open-half-a-message.md)
 - [Filter with a uniform conservative summary, confirm with the member's own test](../lessons/filter-with-a-uniform-conservative-summary-confirm-with-the-members-own-test.md)
 - [Ask whether the arrangement already determines the attribute](../lessons/ask-whether-the-arrangement-already-determines-the-attribute.md)
+- [Pass the transition when it is cheaper to realize than the state](../lessons/pass-the-transition-when-it-is-cheaper-to-realize-than-the-state.md)
+- [A decomposition that recurs across unrelated subsystems has found a seam](../lessons/a-decomposition-that-recurs-across-unrelated-subsystems-has-found-a-seam.md)
