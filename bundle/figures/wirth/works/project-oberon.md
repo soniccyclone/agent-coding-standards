@@ -215,3 +215,7 @@ section are where the extractable lessons are.
 - [Every attribute needs a composition rule before a group can be an element](../lessons/every-attribute-needs-a-composition-rule-before-a-group-can-be-an-element.md)
 - [Shared conventions are owed where artifacts cross, not everywhere](../lessons/shared-conventions-are-owed-where-artifacts-cross-not-everywhere.md)
 - [The entry-point layer must be a leaf in the dependency graph](../lessons/the-entry-point-layer-must-be-a-leaf-in-the-dependency-graph.md)
+- [An operation oddly harder than its sibling marks a semantic commitment](../lessons/an-operation-oddly-harder-than-its-sibling-marks-a-semantic-commitment.md)
+- [Prefix what a reader may not understand with its length](../lessons/prefix-what-a-reader-may-not-understand-with-its-length.md)
+- [What you hide decides what must be built inside](../lessons/what-you-hide-decides-what-must-be-built-inside.md)
+- [Display the active interpreter at the point of interaction](../lessons/display-the-active-interpreter-at-the-point-of-interaction.md)
