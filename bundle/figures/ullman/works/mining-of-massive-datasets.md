@@ -210,6 +210,8 @@ tags: [work]
 
 <!-- chapters 2-3 hand re-read, eleventh pass -->
 - [One work unit per output means shipping each input once per output](../lessons/one-work-unit-per-output-ships-each-input-once-per-output.md)
+- [An optimality proof is scoped to the shape you quantified over](../lessons/an-optimality-proof-is-scoped-to-the-shape-you-quantified-over.md)
+- [Shrink the space of designs by simulation before you try to bound it](../lessons/shrink-the-design-space-by-simulation-before-you-bound-it.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -325,6 +327,6 @@ Passes five through ten all recorded the same start line with no advance, so the
 span from **3374** to **7233** (rest of chapter 2 — communication-cost model and
 complexity theory for MapReduce — plus all of chapter 3, finding similar items /
 LSH) is still genuinely unread at hand-read depth. Starting at line **3374**.
-Currently at line **3374**. This number is updated in place as the read advances;
+Currently at line **4324** (chapter 2 finished; chapter 3 begins here). This number is updated in place as the read advances;
 if it names anything below 7233, the agent died there and that is the genuine
 resume point. `extraction: complete` stays withheld until it reaches 7233._
