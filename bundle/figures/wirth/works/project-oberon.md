@@ -286,3 +286,5 @@ section are where the extractable lessons are.
 - [Admitting sharing turns every traversal into a graph traversal, so give the traversal an identity](../lessons/admitting-sharing-turns-every-traversal-into-a-graph-traversal.md)
 - [The relays, not the endpoints, decide whether a request must be a value](../lessons/the-relays-not-the-endpoints-decide-whether-a-request-must-be-a-value.md)
 - [Accepting members of unknown type obliges you in both directions](../lessons/accepting-members-of-unknown-type-obliges-you-in-both-directions.md)
+- [The case your builder cannot reach is the argument for a notation](../lessons/the-case-your-builder-cannot-reach-is-the-argument-for-a-notation.md)
+- [Give persistent data its own namespace, and let anonymity be the privacy mechanism](../lessons/give-persistent-data-its-own-namespace-and-let-anonymity-be-the-privacy.md)

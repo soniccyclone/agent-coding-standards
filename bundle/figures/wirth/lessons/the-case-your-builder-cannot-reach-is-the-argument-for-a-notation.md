@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "The case your builder cannot reach is the argument for a notation"
+figure: wirth
+works: [project-oberon]
+axes: [expressiveness, cognitive-load, primitive-count]
+subdomains: [programming-environments-and-object-systems, programming-languages-and-semantics]
+tags: [lesson]
+---
+# The case your builder cannot reach is the argument for a notation
+
+**Lesson:** A tool for assembling things by direct manipulation feels like the complete answer to construction, because for the cases it covers it is faster and more obvious than anything else. The signal that it is not complete arrives as a particular kind of case rather than as general dissatisfaction: something that must be assembled while the system is running, whose shape depends on a subject not known until then, so there is nobody present to do the manipulating. No amount of improving the tool reaches that case, because the tool's premise is a person. It has to be built by a program instead — and that is the moment to notice that "built by a program" is a requirement about the *interface to construction*, not about who is holding the mouse.
+
+The tempting response is to expose the construction API the tool itself calls and let programs call it too. It works, and it is the wrong shape, because it makes the two routes to a constructed thing structurally different: one produces a data structure by direct manipulation, the other produces the same structure by an imperative sequence, and now the artifact has no single form that both can produce, inspect, store, or diff. The better move is to introduce a description notation and an interpreter for it, and to treat the notation as the actual product of construction. The interactive tool then emits the notation, the program emits the notation, and everything downstream — storage, versioning, comparison, transformation, generation from a template — has exactly one thing to deal with. The notation is the common denominator that a procedural API can never be, because a procedure call happens and is gone whereas a description persists and can be reread.
+
+The reason this ordering is easy to get wrong is that the interactive tool is usually built first and is usually enough for a long time, so the notation looks like a redundant second front end when it is finally proposed. It is worth stating the criterion in advance, before the sunk cost accumulates: if any legitimate instance of the thing you are building must be produced without a human in the loop, you need a form both a human's tool and a program can emit, and you will need it eventually whether or not you plan for it. Building the description first and making the interactive tool a generator of descriptions costs a little more at the start and removes the divergence permanently.
+
+The corollary is that a notation introduced for this reason should be judged by whether it can express everything the interactive tool can, and nothing else — its purpose is to be the same construction by another route, not a second, richer system. A description language that outgrows its tool has quietly become the primary interface, which may be fine, but is a different decision and should be made knowingly.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — appendix A.4's account of interactive construction of interface objects, in which the composition tool is itself one of the objects it builds and offers lists of predefined elements plus alignment and view-model connection support, contrasted with cases such as adaptive attribute forms — themselves created programmatically rather than interactively — where the interactive method is inapplicable or inappropriate and a descriptive approach would be preferable; together with the judgement that construction by programming is possible but not particularly convenient and that a much better solution consists of a suitable layout scripting language with a corresponding interpreter, followed by an example of a scripted composition written in functional style.
