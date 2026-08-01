@@ -22,11 +22,13 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
-**READ IN PROGRESS (2026-07-31 session, eighth agent): resumed at line 18598, working
+**READ IN PROGRESS (2026-07-31 session, NINTH agent): resumed at line 20540, working
 forward toward line 22864 (the end). Current position recorded below; if this file still
 says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 20540 — eighth agent. Read so far this session: the module OCC
+**Current position: line 20540 — ninth agent, just started, nothing new read yet.**
+
+**Eighth agent's handoff — reached line 20540. Read that session: the module OCC
 listing (18598-19180, pure Oberon source, confirmed no prose), section 12.9 in full (the
 symbolic debugger — reference part syntax, `Locals`, `Trap`, `State`), and chapter 13
 sections 13.1 through 13.8.1 (history, the Draw user's guide, the core data structure and
