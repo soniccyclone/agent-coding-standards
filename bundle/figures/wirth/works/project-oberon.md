@@ -224,3 +224,5 @@ section are where the extractable lessons are.
 - [Prefix what a reader may not understand with its length](../lessons/prefix-what-a-reader-may-not-understand-with-its-length.md)
 - [What you hide decides what must be built inside](../lessons/what-you-hide-decides-what-must-be-built-inside.md)
 - [Display the active interpreter at the point of interaction](../lessons/display-the-active-interpreter-at-the-point-of-interaction.md)
+- [An action spread over many events needs a named in-progress state, and every intervening action owes it a reset](../lessons/an-action-spread-over-many-events-needs-a-named-in-progress-state.md)
+- [Let the stream carry its own dictionary, and discard it when the pass ends](../lessons/let-the-stream-carry-its-own-dictionary-and-discard-it-at-the-end.md)
