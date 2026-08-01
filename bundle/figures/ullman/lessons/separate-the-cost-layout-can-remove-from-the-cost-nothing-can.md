@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "Separate the cost that layout can remove from the cost nothing can"
+figure: ullman
+works: [mining-of-massive-datasets]
+axes: [hardware-affinity, cognitive-load]
+subdomains: [operating-systems-and-systems-programming, algorithms-and-complexity]
+tags: [lesson]
+---
+# Separate the cost that layout can remove from the cost nothing can
+
+**Lesson:** The time to get data off a storage device decomposes into two terms that behave completely differently under optimization, and conflating them is why so much layout work produces disappointing numbers. One term is per-access: the mechanical or protocol overhead paid once each time you go and fetch something, independent of how much you fetch. That term is enormous relative to computation, and it is the one that clustering, batching, prefetching, and larger request sizes attack — arrange related data so it arrives together and you amortize a fixed charge across more useful bytes. The other term is per-byte: the sustained rate at which the device can hand data over. No arrangement of the data changes it. It is a property of the medium and the channel, and it stands as a floor under every clever thing you might do above it.
+
+Knowing which term dominates your workload tells you what the ceiling on your effort is before you spend the effort. If you are fetching scattered small items, you are paying the per-access term almost exclusively, and reorganization can win back several orders of magnitude. If you are streaming a large dataset end to end, you are already paying the per-byte term and nothing else, and the best possible layout is worth a few percent. Teams routinely invest in the second case as if they were in the first, because the techniques are the same techniques and the difference between the cases is not visible in the code.
+
+The dominance of the per-byte term also inverts the usual economics of computation. When moving a block costs far more than doing something simple to every byte in it, per-byte work is effectively free, and you should spend it aggressively to reduce bytes: compress, filter at the source, encode more densely, compute a summary at the point the data already is rather than shipping the data somewhere to be summarized. That is a straight trade of the abundant resource for the scarce one, and it is the only lever left once you are bandwidth-bound, because you cannot make the channel faster and you cannot make the data arrive out of order any cheaper than in order.
+
+The last thing this decomposition gives you is a sense of when a size becomes a different problem rather than a bigger one. Multiply your dataset size by the per-byte floor and you get a lower bound on any single pass over it, independent of algorithm. At small sizes that number is invisible and the algorithm is what you tune. At large enough sizes that number alone exceeds what the operation is allowed to take, which means every algorithm that touches everything is disqualified at once and the design question changes from how to compute the answer to how to avoid reading the input — indexes, incremental maintenance, precomputed summaries, sampling. The transition is not gradual in its implications even though the arithmetic is. Compute the floor early; it tells you which class of design you are permitted to be in.
+
+**Source:** [Mining of Massive Datasets](../works/mining-of-massive-datasets.md) — chapter 1's section on secondary storage, which prices a block access at roughly ten milliseconds against a main-memory word read five orders of magnitude faster, observes that moving a block dwarfs the time to do something simple to every byte in it, credits cylinder-level organization with reducing per-block time well below that figure, and then states flatly that a disk cannot exceed roughly a hundred million bytes per second regardless of how the data is organized — with the closing note that this is invisible at a megabyte and a problem at a hundred gigabytes before anything useful has been done at all.
