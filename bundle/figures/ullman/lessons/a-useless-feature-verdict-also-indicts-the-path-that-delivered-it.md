@@ -1,13 +1,13 @@
 ---
 type: lesson
-title: "A \"this feature didn't help\" verdict also indicts the path that delivered it"
+title: "A feature that did not help also indicts the path that delivered it"
 figure: ullman
 works: [mining-of-massive-datasets]
 axes: [verifiability, cognitive-load]
 subdomains: [databases-and-data-management, software-engineering-and-architecture]
 tags: [lesson]
 ---
-# A "this feature didn't help" verdict also indicts the path that delivered it
+# A feature that did not help also indicts the path that delivered it
 
 **Lesson:** When an added signal fails to improve a system, the natural conclusion is that the signal carries no information. That conclusion is unsupported, because what was actually tested is the composition of the signal with everything that had to happen to get it into the model. If the signal lived in a separate dataset, something had to match its records against yours, and that matching is a fallible process with its own error rate. A weak matcher delivers a feature that is correct on some rows and scrambled on others, and a scrambled feature is indistinguishable from an uninformative one in the final score. The experiment you ran measured the product of two things and you are attributing the result to one of them.
 
