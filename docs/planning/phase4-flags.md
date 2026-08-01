@@ -630,3 +630,58 @@ duplicates under new names. The open item: those two existing lessons arguably
 should cite `the-reactive-engine` in their `works:` arrays, which the agent could
 not do because editing existing lesson files was forbidden. A human should decide.
 
+
+### H.10 A fourth confidence tier: works attested across passes, not read end to end
+
+Raised by the church extraction agent on 2026-07-31, unprompted, about its own
+attestation. It should not stay buried in a workflow result.
+
+Closing out `church/introduction-to-mathematical-logic`, the agent wrote
+`extraction: complete` and then said plainly that it had personally read only two
+short spans; the rest of the exhaustion claim rested on coverage notes left by
+three earlier passes. It verified those notes' internal consistency — spot-checking
+five line spans the notes never explicitly listed, confirming each fell inside a
+section a prior pass recorded as read — then posed the question directly: **if
+`extraction: complete` asserts that one agent read the work end to end, this file
+does not meet that bar; under the coverage-note convention, it does.**
+
+That ambiguity is not confined to church. The books finished in these waves were
+each read across several agent sessions, stitched together by resume notes:
+
+| work | pass markers |
+|---|---|
+| `jones/software-development-a-rigorous-approach` | 14 |
+| `sussman/structure-and-interpretation-of-computer-programs` | 8 |
+| `church/introduction-to-mathematical-logic` | 4 |
+| `hoare/communicating-sequential-processes-book` | 4 |
+
+So H.8's tiers need a fourth entry, and it is *not* strictly weaker than Tier 2 —
+it is a different kind of claim:
+
+- Tier 1 — one agent read the source and attested in the same pass.
+- Tier 2 — bulk-stamped at `443703b`, unverified.
+- Tier 3 — backlink adopted from lesson frontmatter after the writing agent died.
+- **Tier 4 — attested on the union of several passes' coverage notes. No single
+  reader saw the whole work. The claim is only as good as the notes, and the notes
+  are written by agents that then die.**
+
+Two findings argue for watching Tier 4 rather than trusting it. The church agent
+found that file's coverage note *contradicting itself* — one paragraph recording
+spans as complete while the next still listed those same sections as unread,
+because prior passes advanced the resume line without revising the gap list. And
+the hoare agent found its note's line number was a **floor rather than a fact**:
+lesson Source lines proved the previous pass had read ~400 lines further than its
+own note claimed. Both errors ran in the safe direction; nothing guarantees that.
+
+**Recommendation, not applied.** Either re-scope `extraction: complete` to mean
+"the union of recorded passes covers this work" and say so in the technical plan,
+or keep the stronger meaning and re-read the four works above end to end. The cheap
+middle option is a mechanical audit: for each Tier 4 work, check that the union of
+line spans claimed across its coverage note is contiguous from 1 to EOF with no
+gaps. Checkable in seconds, and it would have caught the church contradiction.
+
+**Note-format rule earned here:** a coverage note must carry exactly one
+authoritative statement of coverage — a position log — never a progress line plus a
+separately maintained gap list. Two records of the same fact drift, and the drift
+is invisible because each looks plausible alone.
+
