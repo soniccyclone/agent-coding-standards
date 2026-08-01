@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 3
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -434,3 +435,33 @@ resume point. `extraction: complete` stays withheld until it reaches 7233._
 - [Settle a contested proposal on feasibility before anyone argues its merits](../lessons/settle-a-contested-proposal-on-feasibility-before-arguing-its-merits.md)
 - [Settle expressibility by hand before you ask a search to find the answer](../lessons/settle-expressibility-before-you-ask-a-search-to-find-the-answer.md)
 - [Tell the reader what is load-bearing and what is only provenance](../lessons/tell-the-reader-what-is-load-bearing-and-what-is-provenance.md)
+
+_EXTRACTION RECORD — closed 2026-08-01. All thirteen chapters of the 603-page 3rd
+edition are covered, across roughly a dozen agent passes plus two hand passes in
+the main loop. Source text: `scratchpad/ullman/mmds.txt` (27,631 lines); chapter
+offsets in `scratchpad/ullman/CHAPTERS.md`._
+
+_The final push was a per-chapter fan-out: ten agents, one per chapter range,
+writing lesson files only and forbidden from editing this file — their `works:`
+frontmatter was the linking mechanism, wired centrally afterwards by
+`integrity.py --repair`. That is what made parallelism safe on a single work.
+It produced 98 lessons in two waves; a single agent working the same book
+sequentially had been managing a fraction of that._
+
+_Coverage was verified independently of the coverage notes, by auditing every
+lesson's `**Source:**` line against the chapter map — the method three separate
+agents had to invent by hand when they found the notes' position lines stale. Every
+chapter 1 through 13 is cited by between 7 and 34 lessons; no chapter has zero.
+That audit, not the position line, is why this work is attested._
+
+_Two honest limits on this attestation. It is Tier 4 in the sense of
+`phase4-flags.md` H.10: no single reader saw the whole book end to end, and the
+claim rests on the union of many passes plus the Source-line audit above. And the
+book's index (lines ~26998-27631) was deliberately not read — it carries no
+extractable prose._
+
+_The deep re-read was worth doing and is worth recording as evidence about method:
+chapters already marked "read in full" yielded 98 further lessons on a second
+careful pass, because the first pass took the algorithmic spine and walked past the
+footnotes, sidebars and one-sentence justifications where the transferable
+judgements actually live._
