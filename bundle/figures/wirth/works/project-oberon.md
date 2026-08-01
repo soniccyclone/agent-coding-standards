@@ -282,3 +282,7 @@ section are where the extractable lessons are.
 - [A sound design can still be missing its root, and the symptom is a facility you cannot write once](../lessons/a-sound-design-can-still-be-missing-its-root-type.md)
 - [When no traversal order resolves the references, make naming its own pass](../lessons/when-no-order-resolves-the-references-make-naming-its-own-pass.md)
 - [Let the generic algorithm's own gaps define the extension interface](../lessons/let-the-generic-algorithms-own-gaps-define-the-extension-interface.md)
+- [Route a request through its context and the context arrives already computed](../lessons/route-a-request-through-its-context-and-the-context-arrives-with-it.md)
+- [Admitting sharing turns every traversal into a graph traversal, so give the traversal an identity](../lessons/admitting-sharing-turns-every-traversal-into-a-graph-traversal.md)
+- [The relays, not the endpoints, decide whether a request must be a value](../lessons/the-relays-not-the-endpoints-decide-whether-a-request-must-be-a-value.md)
+- [Accepting members of unknown type obliges you in both directions](../lessons/accepting-members-of-unknown-type-obliges-you-in-both-directions.md)
