@@ -27,7 +27,11 @@ chapter 14), working forward toward line 22864 (the end of the extracted text). 
 position recorded below; if this file still says "in progress" the session died and the
 position line is the truth.**
 
-**Current position: line 22341 — twelfth agent, just started. Before reading anything, the
+**Current position: line 22865 — END OF TEXT. The twelfth agent has now read chapter 14
+(22341-22601) and appendix A (22604-22864) to the last line of the extracted text. Lessons
+are being written out one at a time; if this note still says "in progress" the session died
+during lesson-writing, and the remaining candidates are listed at the bottom of this note.
+Before reading anything, the
 twelfth agent audited the Source lines of every existing Oberon lesson and found that
 chapter 14 (sections 14.1, 14.2 and 14.3) has ALREADY been read and mined — six lessons
 cite it — by an agent that never advanced this position line. The only section of the book
@@ -48,6 +52,20 @@ and `what-you-hide-decides-what-must-be-built-inside` were already present and c
 and 13.8.3, i.e. an earlier agent read past 20540 and wrote lessons without advancing the
 position line. Duplicates were checked for and avoided, but the position line has been
 under-reported at least once.**
+
+**Remaining lesson candidates from appendix A, in case this session dies mid-writing:
+(a) routing a request down the containment path lets each hop contribute its share of the
+context, so the target receives accumulated coordinates and masks rather than querying
+upward [A.2]; (b) relaxing a containment tree into a graph via views-of-views breaks
+once-per-node delivery, and the fix is an identity carried on the travelling message with
+each node remembering the last one it saw, so nothing needs resetting between traversals
+[A.2]; (c) it is the uninvolved relays on a request's path, not its endpoints, that force
+the request to be an open self-describing value rather than a call [A.2]; (d) a type that
+admits members of unknown type owes a protocol in both directions — propagation down and
+feedback requests up — which is why container variants cost an order of magnitude more than
+atomic ones [A.4]; (e) the cases a direct-manipulation builder cannot reach, above all
+"this must be constructed by a program rather than a person", are what demand a description
+notation with an interpreter rather than a construction API [A.4].**
 
 **Tenth agent left no handoff beyond the position line it wrote (20540, "just started"),
 so it appears to have died before reading anything; the eleventh agent resumes from the
@@ -262,3 +280,5 @@ section are where the extractable lessons are.
 - [Store in each unit what a scan would need to rebuild the index](../lessons/store-in-each-unit-what-a-scan-would-need-to-rebuild-the-index.md)
 - [Quarantine a resource by giving it an owner, not an exception list](../lessons/quarantine-a-resource-by-giving-it-an-owner-not-an-exception-list.md)
 - [A sound design can still be missing its root, and the symptom is a facility you cannot write once](../lessons/a-sound-design-can-still-be-missing-its-root-type.md)
+- [When no traversal order resolves the references, make naming its own pass](../lessons/when-no-order-resolves-the-references-make-naming-its-own-pass.md)
+- [Let the generic algorithm's own gaps define the extension interface](../lessons/let-the-generic-algorithms-own-gaps-define-the-extension-interface.md)

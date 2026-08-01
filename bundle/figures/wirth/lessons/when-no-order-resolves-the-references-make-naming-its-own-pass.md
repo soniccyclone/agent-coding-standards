@@ -1,0 +1,20 @@
+---
+type: lesson
+title: "When no traversal order resolves the references, make naming its own pass"
+figure: wirth
+works: [project-oberon]
+axes: [verifiability, cognitive-load, primitive-count]
+subdomains: [software-engineering-and-architecture, programming-environments-and-object-systems]
+tags: [lesson]
+---
+# When no traversal order resolves the references, make naming its own pass
+
+**Lesson:** Flattening a linked structure into a sequence is easy when the structure is a tree, because you can always emit a node before anything that refers to it and the reader never has to wait. Once the structure is a general graph — nodes shared between parents, cycles admitted — no emission order has that property, and the usual reflex is to keep the single pass and add repair machinery for the references that came out backwards. That reflex scales badly, because the repair machinery grows with the amount of sharing and hides the cost inside a mechanism that is always running. The alternative is to stop trying to make the order do the work and give the naming its own pass: walk the whole structure once for the sole purpose of assigning every reachable node an identifier, and only then walk it again to write content, substituting each identifier wherever a reference stood. The first pass produces no output at all. That is what makes it feel wasteful and why it gets skipped.
+
+The reason the split works is that the two passes have different information requirements, and mixing them is what created the problem. Writing a node's content requires knowing the names of nodes it points at, which may not yet have been reached; assigning a name requires knowing nothing except that the node exists. Separating them means every name is available before any content is written, so the writer never encounters an unresolved reference and needs no state to remember one. The recursive shape of the naming pass matters too: name the components before naming the node, and check whether a node already has a name before assigning one, which is what makes sharing collapse to a single identifier instead of duplicating a shared component once per parent.
+
+Reading is the same argument in mirror image, and it wants the same two passes for the same reason. A node cannot be filled in until the nodes it points at exist as objects, so the reader creates every node first — from whatever minimal information suffices to bring an empty one into being — and links them in a second sweep that turns identifiers back into references. Trying to do both at once puts you back where you started, holding pending references and patching them later. Note also that identifiers may reach out of the collection being read into another one, so the second sweep can trigger loading elsewhere; a naming scheme that is only unique locally has to be qualified by which collection it belongs to, or the recursion resolves the wrong node.
+
+The transferable form: when an operation on a structure keeps needing something that has not happened yet, check whether the missing thing can be manufactured in a cheap prior sweep that does nothing else. A pass whose whole product is identity is often the smallest way to buy an ordering that the data itself refuses to provide.
+
+**Source:** [Project Oberon](../works/project-oberon.md) — appendix A.1's generic externalization algorithm, a two-pass process in which a recursive binding phase visits every component of an object and assigns an index to any object still unbound, followed by a storing phase that writes each indexed object with its pointers replaced by indexes; the corresponding two-pass internalization, in which every main node is first generated from its stored generator and only then loaded with indexes replaced by pointers; the requirement that these algorithms be generic enough to handle an arbitrary dynamically linked heterogeneous graph of nodes; and the note that indexes in object nodes may refer to other libraries and hence lead to a recursive loading process.
