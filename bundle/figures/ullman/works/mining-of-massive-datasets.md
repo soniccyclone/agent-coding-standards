@@ -212,6 +212,8 @@ tags: [work]
 - [One work unit per output means shipping each input once per output](../lessons/one-work-unit-per-output-ships-each-input-once-per-output.md)
 - [An optimality proof is scoped to the shape you quantified over](../lessons/an-optimality-proof-is-scoped-to-the-shape-you-quantified-over.md)
 - [Shrink the space of designs by simulation before you try to bound it](../lessons/shrink-the-design-space-by-simulation-before-you-bound-it.md)
+- [Hash a large sparse space rather than shrink the feature to fit](../lessons/hash-a-large-sparse-space-instead-of-shrinking-the-feature.md)
+- [Anchor features on whatever marks payload apart from packaging](../lessons/anchor-features-on-the-marker-that-separates-payload-from-packaging.md)
 
 _EXTRACTION IN PROGRESS — this 603-page book is being hand-read in the main loop,
 not by a subagent, because the enormous books need the top-level orchestrator.
@@ -330,3 +332,5 @@ LSH) is still genuinely unread at hand-read depth. Starting at line **3374**.
 Currently at line **4324** (chapter 2 finished; chapter 3 begins here). This number is updated in place as the read advances;
 if it names anything below 7233, the agent died there and that is the genuine
 resume point. `extraction: complete` stays withheld until it reaches 7233._
+- [Anchor features on whatever marks payload apart from packaging](../lessons/anchor-features-on-the-marker-that-separates-payload-from-packaging.md)
+- [Hash a large sparse space rather than shrink the feature to fit](../lessons/hash-a-large-sparse-space-instead-of-shrinking-the-feature.md)
