@@ -26,7 +26,16 @@ tags: [work]
 forward toward line 22864 (the end). Current position recorded below; if this file still
 says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 20540 — eleventh agent, just started, nothing new read yet.**
+**Current position: line 21338 — eleventh agent. Read 13.8.2 prose (20568-20631) and its
+module GraphicFrames listing (20632-21164, pure Oberon source, confirmed no prose), plus
+13.8.3's prose in full (21166-21293: the linked-list representation, the library/macro
+structures, the file format and its dictionaries, and the Move-vs-Copy remark). Now inside
+the module Graphics listing at 21294. Three new lessons written this session so far.
+NOTE (data defect for a human): the lessons `display-the-active-interpreter-at-the-point-of-interaction`
+and `what-you-hide-decides-what-must-be-built-inside` were already present and cite 13.8.2
+and 13.8.3, i.e. an earlier agent read past 20540 and wrote lessons without advancing the
+position line. Duplicates were checked for and avoided, but the position line has been
+under-reported at least once.**
 
 **Tenth agent left no handoff beyond the position line it wrote (20540, "just started"),
 so it appears to have died before reading anything; the eleventh agent resumes from the
@@ -226,3 +235,4 @@ section are where the extractable lessons are.
 - [Display the active interpreter at the point of interaction](../lessons/display-the-active-interpreter-at-the-point-of-interaction.md)
 - [An action spread over many events needs a named in-progress state, and every intervening action owes it a reset](../lessons/an-action-spread-over-many-events-needs-a-named-in-progress-state.md)
 - [Let the stream carry its own dictionary, and discard it when the pass ends](../lessons/let-the-stream-carry-its-own-dictionary-and-discard-it-at-the-end.md)
+- [Make the identifier a path to its own implementation](../lessons/make-the-identifier-a-path-to-its-own-implementation.md)
