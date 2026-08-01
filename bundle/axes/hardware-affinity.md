@@ -21,7 +21,7 @@ programming, but the axis that scores the compilation step itself.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-659 lessons from 84 figures.
+661 lessons from 84 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -271,15 +271,17 @@ No lessons scored on this axis yet.
 - [Portability is a countable surface, and only a stranger can test it: concentrate the host-specific part, and refuse host facilities to keep behavior identical everywhere](../figures/ingalls/lessons/portability-is-a-countable-surface-tested-only-by-strangers.md)
 - [When you control how names are handed out, put the information in the name instead of in the thing named](../figures/ingalls/lessons/put-the-information-in-the-name-not-the-thing-named.md)
 
-**jones** (19)
+**jones** (21)
 - [A correspondence established operation by operation never has to be executed](../figures/jones/lessons/a-correspondence-proved-per-operation-is-never-executed.md)
 - [A housekeeping operation is exactly one that is the identity when viewed through the abstraction, and proving that buys you everything else](../figures/jones/lessons/a-housekeeping-operation-is-one-that-is-invisible-through-the-abstraction.md)
 - [A language cannot pick your representation for you, because it cannot see how the operations will be used](../figures/jones/lessons/a-language-cannot-pick-the-representation-because-it-cannot-see-the-profile.md)
 - [A proof covers your reasoning, not the substrate underneath it, so keep a cheap check at run time](../figures/jones/lessons/a-proof-covers-your-reasoning-not-your-substrate.md)
+- [A published algorithm arrives already partway down the development chain, so work out which step it is](../figures/jones/lessons/a-published-algorithm-arrives-partway-down-the-chain.md)
 - [Admit a range of acceptable outcomes deliberately, because that is how a decision gets deferred to whoever should make it](../figures/jones/lessons/describe-a-range-of-outcomes-to-defer-the-decision.md)
 - [An unenforced boundary still pays, so pick the strength of enforcement you can actually afford](../figures/jones/lessons/an-unenforced-boundary-still-pays-so-pick-the-enforcement-you-can-afford.md)
 - [If the algorithm did not change, you simulated the description rather than implemented it](../figures/jones/lessons/if-the-algorithm-did-not-change-you-simulated-rather-than-refined.md)
 - [Impose an arbitrary order on the elements and cycles stop being something you check for](../figures/jones/lessons/impose-an-arbitrary-order-to-make-cycles-impossible.md)
+- [Justify skipping work by showing what you skipped was empty, and prefer a filter that can only err toward doing it](../figures/jones/lessons/justify-a-skip-by-showing-the-skipped-work-was-empty.md)
 - [Make the control state explicit data and the order of work becomes yours to choose](../figures/jones/lessons/make-the-implicit-control-state-explicit-and-order-becomes-free.md)
 - [Narrow the boundary to a system you do not control, even when it costs you capability](../figures/jones/lessons/narrow-the-boundary-to-a-foreign-system-even-at-the-cost-of-capability.md)
 - [Put a penultimate level between the abstraction and the machine: target shape, reasoning notation](../figures/jones/lessons/put-a-penultimate-level-between-the-abstraction-and-the-machine.md)

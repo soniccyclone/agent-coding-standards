@@ -17,7 +17,7 @@ single-machine formalisms don't have to account for.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-486 lessons from 66 figures.
+487 lessons from 66 figures.
 
 **abiteboul** (4)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -603,10 +603,11 @@ No works or lessons tagged with this subdomain yet.
 - [When a cheap check gates an expensive fallback, start both at once and abandon the loser — if abandoning leaves nothing behind](../figures/wilkes/lessons/issue-the-slow-path-alongside-the-check-if-you-can-abandon-it.md)
 - [Whoever saves your state holds your secrets, so look for leaks in the suspend mechanism and not in the interface](../figures/wilkes/lessons/whoever-saves-your-state-holds-your-secrets.md)
 
-**wirth** (20)
+**wirth** (21)
 - [A buffer absorbs variance, not a difference in rate](../figures/wirth/lessons/a-buffer-absorbs-variance-not-a-difference-in-rate.md)
 - [A deadline downstream forbids producing while you send](../figures/wirth/lessons/a-deadline-downstream-forbids-producing-while-you-send.md)
 - [A participant that can fail should be removed before it runs, not after](../figures/wirth/lessons/a-repeatedly-failing-participant-should-eject-itself.md)
+- [A tag that trails its payload forces the reader to buffer](../figures/wirth/lessons/a-tag-that-trails-its-payload-forces-the-reader-to-buffer.md)
 - [An idle participant that polls is competing with the one making progress](../figures/wirth/lessons/an-idle-participant-that-polls-is-competing-with-the-one-making-progress.md)
 - [Break a retry tie with an identifier you already have](../figures/wirth/lessons/break-a-retry-tie-with-an-identifier-you-already-have.md)
 - [Cut a long job where its resource demand changes, and let each piece name its successor](../figures/wirth/lessons/cut-a-long-job-where-its-resource-demand-changes.md)

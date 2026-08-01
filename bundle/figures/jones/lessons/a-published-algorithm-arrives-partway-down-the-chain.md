@@ -3,7 +3,7 @@ type: lesson
 title: "A published algorithm arrives already partway down the development chain, so work out which step it is"
 figure: jones
 works: [software-development-a-rigorous-approach]
-axes: [cognitive-load, verifiability, performance]
+axes: [cognitive-load, verifiability, hardware-affinity]
 subdomains: [algorithms-and-complexity, software-engineering-and-architecture, formal-methods-and-verification]
 tags: [lesson]
 ---

@@ -4,7 +4,7 @@ title: "A first-entry flag is a resumption point in disguise, so name the thing 
 figure: jones
 works: [software-development-a-rigorous-approach]
 axes: [expressiveness, cognitive-load, verifiability]
-subdomains: [programming-languages-and-compilers, software-engineering-and-architecture, programming-environments-and-object-systems]
+subdomains: [programming-languages-and-semantics, software-engineering-and-architecture, programming-environments-and-object-systems]
 tags: [lesson]
 ---
 # A first-entry flag is a resumption point in disguise, so name the thing it is imitating

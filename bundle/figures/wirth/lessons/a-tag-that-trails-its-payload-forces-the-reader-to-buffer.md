@@ -4,7 +4,7 @@ title: "A tag that trails its payload forces the reader to buffer"
 figure: wirth
 works: [project-oberon]
 axes: [hardware-affinity, cognitive-load, expressiveness]
-subdomains: [programming-languages-and-semantics, distributed-systems-and-networking]
+subdomains: [programming-languages-and-semantics, distributed-systems-and-concurrency]
 tags: [lesson]
 ---
 # A tag that trails its payload forces the reader to buffer

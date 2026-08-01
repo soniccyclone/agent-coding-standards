@@ -17,7 +17,7 @@ primarily here.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-1019 lessons from 75 figures.
+1020 lessons from 75 figures.
 
 **abiteboul** (4)
 - [Declarative and procedural is not a dichotomy; ask instead where the control lives](../figures/abiteboul/lessons/declarative-is-a-question-of-where-control-lives.md)
@@ -400,7 +400,8 @@ No works or lessons tagged with this subdomain yet.
 - [Treat a dispatch as one degree of type-uncertainty removed, and chain as many as the problem has variable terms](../figures/ingalls/lessons/each-dispatch-removes-one-degree-of-polymorphism.md)
 - [Treat human cognition as the fixed constraint and the machine as the adjustable side, then design to the whole span between them](../figures/ingalls/lessons/treat-the-human-side-as-the-fixed-point.md)
 
-**jones** (30)
+**jones** (31)
+- [A first-entry flag is a resumption point in disguise, so name the thing it is imitating](../figures/jones/lessons/a-first-entry-flag-is-a-resumption-point-in-disguise.md)
 - [A language cannot pick your representation for you, because it cannot see how the operations will be used](../figures/jones/lessons/a-language-cannot-pick-the-representation-because-it-cannot-see-the-profile.md)
 - [A property names a thing only when it pins the thing down, so find out which parts of the structure it leaves free](../figures/jones/lessons/a-property-names-a-thing-only-when-it-pins-it-down.md)
 - [A value invented to satisfy the machinery is indistinguishable from a requirement once it is written down](../figures/jones/lessons/a-value-invented-to-please-the-machinery-reads-as-a-requirement.md)

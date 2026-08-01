@@ -3,7 +3,7 @@ type: lesson
 title: "Justify skipping work by showing what you skipped was empty, and prefer a filter that can only err toward doing it"
 figure: jones
 works: [software-development-a-rigorous-approach]
-axes: [performance, verifiability, cognitive-load]
+axes: [hardware-affinity, verifiability, cognitive-load]
 subdomains: [algorithms-and-complexity, formal-methods-and-verification, software-engineering-and-architecture]
 tags: [lesson]
 ---

@@ -3,7 +3,7 @@ type: lesson
 title: "If the algorithm did not change, you simulated the description rather than implemented it"
 figure: jones
 works: [software-development-a-rigorous-approach]
-axes: [performance, cognitive-load, hardware-affinity]
+axes: [hardware-affinity, cognitive-load]
 subdomains: [software-engineering-and-architecture, algorithms-and-complexity, formal-methods-and-verification]
 tags: [lesson]
 ---
