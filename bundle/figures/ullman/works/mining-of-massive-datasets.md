@@ -309,3 +309,10 @@ for MapReduce) and running to line 7233 (start of chapter 4, already read).
 Currently at line **3374**. This number is updated in place as the read advances;
 if it names anything below 7233, the agent died there and that is the genuine
 resume point._
+
+_**READ IN PROGRESS (2026-07-31, tenth agent pass).** The ninth pass again
+recorded no advance. Resuming the chapters 2-3 hand re-read at line **3374**
+(chapter 2, communication-cost model / complexity theory for MapReduce), running
+to line 7233 (start of chapter 4, already read). Currently at line **3374**.
+Updated in place as the read advances; a number below 7233 means the agent died
+there and that is the genuine resume point._
