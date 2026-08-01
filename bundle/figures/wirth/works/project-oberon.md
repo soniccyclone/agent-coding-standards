@@ -26,9 +26,11 @@ tags: [work]
 forward toward line 22864 (the end). Current position recorded below; if this file still
 says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 18598 — eighth agent starting here. Plan: module OCC listing
-(source, scan for prose) to 19181, then 12.9 onward, ch. 13 (graphics editor), ch. 14 at
-22341, appendix A.**
+**Current position: line 19646 — eighth agent. Read so far this session: the module OCC
+listing (18598-19180, pure Oberon source, confirmed no prose), section 12.9 in full (the
+symbolic debugger — reference part syntax, `Locals`, `Trap`, `State`), and chapter 13
+sections 13.1-13.2.7 (history and the Draw user's guide). Three lessons written. Next:
+13.3 onward, then ch. 14 at 22341, appendix A.**
 
 **Third agent's handoff: had read and mined chapter 12 through
 section 12.8's prose (code patterns 1-15; Object/Item/Struct; the OCS/OCE/OCH interfaces;
@@ -200,3 +202,4 @@ section are where the extractable lessons are.
 - [Either the parties agree on a rate or they acknowledge each unit](../lessons/either-the-parties-agree-on-a-rate-or-they-acknowledge-each-unit.md)
 - [Read the whole gesture as one command, not each input as its own](../lessons/read-the-whole-gesture-as-one-command-not-each-input-as-its-own.md)
 - [Leave the origin unbound and one decoder serves every region that shares the layout](../lessons/leave-the-origin-unbound-and-one-decoder-serves-every-region.md)
+- [Give the failure handler disjoint resources, and name the one it still shares](../lessons/give-the-failure-handler-disjoint-resources-and-name-the-one-it-still-shares.md)
