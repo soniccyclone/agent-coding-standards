@@ -11,6 +11,7 @@ survey_text_layer: full
 survey_fetch_mb: 4
 access: public
 host: self-archived
+extraction: complete
 tags: [work]
 ---
 
@@ -20,24 +21,42 @@ tags: [work]
 **Venue/year:** Addison-Wesley / ACM Press, 1992.
 **Source:** https://people.inf.ethz.ch/wirth/ProjectOberon1992.pdf — live PDF, self-archived on Niklaus Wirth's ETH Zurich personal page.
 
-## Coverage note (partial extraction — NOT exhausted)
+## Coverage note (COMPLETE — read to the end, 2026-07-31, twelfth agent)
 
-**READ IN PROGRESS (2026-07-31 session, TWELFTH agent): resumed at line 22341 (start of
-chapter 14), working forward toward line 22864 (the end of the extracted text). Current
-position recorded below; if this file still says "in progress" the session died and the
-position line is the truth.**
+**READ COMPLETE. Position: line 22865 — end of the extracted text. The book has now been
+read from front matter to the last line of appendix A across twelve sessions, and
+`extraction: complete` is set in the frontmatter above.**
 
-**Current position: line 22865 — END OF TEXT. The twelfth agent has now read chapter 14
-(22341-22601) and appendix A (22604-22864) to the last line of the extracted text. Lessons
-are being written out one at a time; if this note still says "in progress" the session died
-during lesson-writing, and the remaining candidates are listed at the bottom of this note.
-Before reading anything, the
-twelfth agent audited the Source lines of every existing Oberon lesson and found that
-chapter 14 (sections 14.1, 14.2 and 14.3) has ALREADY been read and mined — six lessons
-cite it — by an agent that never advanced this position line. The only section of the book
-with no lesson citing it is appendix A ("Ten Years After: From Objects to Components").
-Remaining unread span is therefore appendix A only; chapter 14's prose will be re-checked
-in passing for anything the six existing lessons missed, but is not treated as unread.**
+**Twelfth agent's session.** Before reading anything, audited the `**Source:**` line of
+every existing lesson citing this work and tabulated which numbered sections were already
+represented. That audit showed chapter 14 (14.1, 14.2, 14.3) had ALREADY been read and
+mined — six lessons cite it — by an agent that never advanced the position line, which then
+stood at 22341. The only span of the book with no lesson citing it was appendix A ("Ten
+Years After: From Objects to Components"). This session therefore read 22341-22601
+(chapter 14, as a re-check of the already-mined prose) and 22604-22864 (appendix A, the
+genuinely unread span) to the end of the file. Eight lessons written: seven from appendix A
+(the missing abstract root; two-pass naming for graph serialization; deriving an extension
+interface from the generic algorithm's own gaps; routing as context accumulation; sharing
+turning traversals into graph traversals; relays rather than endpoints forcing an open
+request form; container-vs-leaf bidirectional obligation; the case a direct-manipulation
+builder cannot reach as the argument for a notation; the dual data namespace with anonymity
+as privacy), and one from the chapter 14 re-check that the six existing chapter-14 lessons
+had missed — section 14.2's rejection of the network as an alternative boot source, which
+yielded the fallback-dependency-ranking lesson.
+
+**DATA DEFECT FOR A HUMAN (recurring, worth a look):** the position line in this file has
+been under-reported at least twice. The eleventh agent recorded that
+`display-the-active-interpreter-at-the-point-of-interaction` and
+`what-you-hide-decides-what-must-be-built-inside` cite 13.8.2/13.8.3 while the position line
+still read 20540. This session found the same pattern again at a larger scale: all of
+chapter 14 was mined while the position line read 22341. In both cases the coverage note was
+the thing that lagged, not the lessons. If a coverage-integrity check is ever automated for
+this corpus, the reliable signal is the set of sections cited by lesson `**Source:**` lines,
+not the position line — the position line is written by hand and is the first thing an agent
+skips. No lesson content is known to be wrong or duplicated as a result; duplicate checks
+were run against the existing lessons directory in both sessions.
+
+### Historical handoffs (retained; all superseded by the completion above)
 
 **Eleventh agent's handoff. Chapter 13 is COMPLETE. Read 13.8.2
 prose (20568-20631) and its module GraphicFrames listing (20632-21164, pure Oberon source,
@@ -52,20 +71,6 @@ and `what-you-hide-decides-what-must-be-built-inside` were already present and c
 and 13.8.3, i.e. an earlier agent read past 20540 and wrote lessons without advancing the
 position line. Duplicates were checked for and avoided, but the position line has been
 under-reported at least once.**
-
-**Remaining lesson candidates from appendix A, in case this session dies mid-writing:
-(a) routing a request down the containment path lets each hop contribute its share of the
-context, so the target receives accumulated coordinates and masks rather than querying
-upward [A.2]; (b) relaxing a containment tree into a graph via views-of-views breaks
-once-per-node delivery, and the fix is an identity carried on the travelling message with
-each node remembering the last one it saw, so nothing needs resetting between traversals
-[A.2]; (c) it is the uninvolved relays on a request's path, not its endpoints, that force
-the request to be an open self-describing value rather than a call [A.2]; (d) a type that
-admits members of unknown type owes a protocol in both directions — propagation down and
-feedback requests up — which is why container variants cost an order of magnitude more than
-atomic ones [A.4]; (e) the cases a direct-manipulation builder cannot reach, above all
-"this must be constructed by a program rather than a person", are what demand a description
-notation with an interpreter rather than a construction API [A.4].**
 
 **Tenth agent left no handoff beyond the position line it wrote (20540, "just started"),
 so it appears to have died before reading anything; the eleventh agent resumes from the
@@ -124,7 +129,11 @@ management including viewer management, menu viewers and cursor management, rast
 operations, standard display configurations). Extraction stops mid-way through the
 literature list at the end of chapter 4.
 
-**Not read:** the remainder of chapter 5 from line 3991 on — the rest of the piece-chain
+**Not read (STALE — this paragraph and the "Resume at line 3991" line below describe the
+state after the second session and were never cleared as later sessions consumed them.
+Everything listed here has since been read. Retained only so the historical record reads in
+order; the authoritative statement is the completion note at the top of this section.)**
+the remainder of chapter 5 from line 3991 on — the rest of the piece-chain
 implementation, section 5.3 (text frames), 5.4 (the font machinery), 5.5 (the edit
 toolbox) — and everything after it: chapter 6 (The Module
 Loader); chapter 7 (The File System); chapter 8 (Storage Layout and Management); chapter 9
@@ -288,3 +297,4 @@ section are where the extractable lessons are.
 - [Accepting members of unknown type obliges you in both directions](../lessons/accepting-members-of-unknown-type-obliges-you-in-both-directions.md)
 - [The case your builder cannot reach is the argument for a notation](../lessons/the-case-your-builder-cannot-reach-is-the-argument-for-a-notation.md)
 - [Give persistent data its own namespace, and let anonymity be the privacy mechanism](../lessons/give-persistent-data-its-own-namespace-and-let-anonymity-be-the-privacy.md)
+- [Rank a fallback by what it requires, not by what it can do](../lessons/rank-a-fallback-by-what-it-requires-not-by-what-it-can-do.md)
