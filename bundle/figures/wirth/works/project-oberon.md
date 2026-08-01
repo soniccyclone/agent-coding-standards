@@ -22,15 +22,13 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
-**READ IN PROGRESS (2026-07-31 session, seventh agent): resumed at line 18598, working
+**READ IN PROGRESS (2026-07-31 session, eighth agent): resumed at line 18598, working
 forward toward line 22864 (the end). Current position recorded below; if this file still
 says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 18598 — seventh agent starting here. Identity re-verified against
-`scratchpad/PO.txt` (22864 lines, title page names Wirth and Gutknecht). Sixth agent left
-no new lessons and no position advance beyond 18598. Plan: module OCC listing (source, scan
-for prose) to 19181, then 12.9 onward, ch. 13 (graphics editor), ch. 14 at 22341,
-appendix A.**
+**Current position: line 18598 — eighth agent starting here. Plan: module OCC listing
+(source, scan for prose) to 19181, then 12.9 onward, ch. 13 (graphics editor), ch. 14 at
+22341, appendix A.**
 
 **Third agent's handoff: had read and mined chapter 12 through
 section 12.8's prose (code patterns 1-15; Object/Item/Struct; the OCS/OCE/OCH interfaces;
