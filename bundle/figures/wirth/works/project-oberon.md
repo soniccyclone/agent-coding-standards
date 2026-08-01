@@ -22,13 +22,15 @@ tags: [work]
 
 ## Coverage note (partial extraction — NOT exhausted)
 
-**READ IN PROGRESS (2026-07-31 session, TENTH agent): resumed at line 20540, working
+**READ IN PROGRESS (2026-07-31 session, ELEVENTH agent): resumed at line 20540, working
 forward toward line 22864 (the end). Current position recorded below; if this file still
 says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 20540 — tenth agent, just started, nothing new read yet.**
+**Current position: line 20540 — eleventh agent, just started, nothing new read yet.**
 
-**Ninth agent left no separate handoff beyond the position line above; treat 20540 as the
+**Tenth agent left no handoff beyond the position line it wrote (20540, "just started"),
+so it appears to have died before reading anything; the eleventh agent resumes from the
+same point. Ninth agent left no separate handoff beyond the position line above; treat 20540 as the
 resume point. Eighth agent's handoff — reached line 20540. Read that session: the module OCC
 listing (18598-19180, pure Oberon source, confirmed no prose), section 12.9 in full (the
 symbolic debugger — reference part syntax, `Locals`, `Trap`, `State`), and chapter 13
