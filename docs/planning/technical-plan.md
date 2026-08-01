@@ -520,6 +520,67 @@ than a corpus problem.
 Placeholder. Nathan has more ideas beyond 8.1; they get numbered here as they
 arrive so the backlog stays one list rather than scattering across the doc.
 
+### Phase 9 — Cleanup (known-gap backlog, opened 2026-08-01)
+
+**Fan-out unit:** per item; most are one targeted agent each.
+**Do:** work the list of *known, specific* defects and deferred decisions that
+accumulated while Phases 3-5 ran. This is deliberately not a lint pass — Phase 6
+finds problems mechanically, Phase 9 holds problems already found and named, each
+with the evidence that found it.
+**Output:** corrections to bundle content, plus decisions recorded in the ledger.
+**Depends on:** nothing; can run at any time. Does not gate Phase 7.
+
+Open items, newest first. Each names how it was found, because that is usually
+what tells you how to fix it.
+
+1. **Cox's rebuttal of the essence/accident split was never extracted.**
+   `cox/what-if-theres-a-silver-bullet` carries `extraction: complete` and three
+   lessons, none of which is his direct answer to Brooks — that every item on the
+   essential-difficulty list is a surmountable obstacle, plus the two he says
+   Brooks omitted. Found by a Phase 5 spotting agent, which correctly refused to
+   open a Cox-vs-Brooks tension file against a lesson that does not exist. Brooks's
+   side *is* in the corpus (`complexity-that-is-the-subject-cannot-be-abstracted-away`
+   among others). Fix: one targeted extraction pass at that argument, then re-run
+   the tension check. **Do not write the tension first and back-fill the lesson.**
+
+2. **`reynolds/definitional-interpreters-for-higher-order-programming-languages`
+   contradicts its own attestation.** It carries `extraction: complete` while its
+   body records that the separately published *Definitional Interpreters Revisited*
+   retrospective "remains unmined". Found by a reynolds extraction agent. Fix is a
+   scoping call: either the retrospective is a distinct work needing its own entry,
+   or the attestation is overstated. Leaning toward the former.
+
+3. **Tier 4 attestations are unaudited.** See flags H.10. Four books
+   (`jones/software-development`, `sussman/SICP`, `church/introduction-to-mathematical-logic`,
+   `hoare/CSP`) are attested on the union of several passes' coverage notes, with no
+   single reader having seen the whole work. Cheap mechanical audit available:
+   check that the union of line spans claimed across each coverage note is
+   contiguous from 1 to EOF. Would have caught the church note that recorded spans
+   as both complete and unread.
+
+4. **Tier 3 backlinks are unverified.** See flags H.8. 92 lessons across 7 figures
+   had their work-file links reconstructed from their own frontmatter after the
+   writing agent died. Nothing is known to be wrong; spot-checking a sample against
+   the named sources is cheap and has never been done.
+
+5. **Four works have no obtainable source.** See flags H.7 — two Kolmogorov papers
+   behind abstract-only pages, Turing's *Computability and lambda-definability*,
+   and a Valiant entry whose URL is a recorded talk. Decide per work: source it,
+   substitute it, or drop it from the figure's list. Until then 446/450 is the
+   attestation ceiling and 95/95 figures is correct only because these are marked
+   `SOURCE-UNOBTAINABLE`.
+
+6. **Chapter-offset records disagree.** `ullman/mining-of-massive-datasets`'s
+   coverage note and `scratchpad/ullman/CHAPTERS.md` differ by ~30 lines on where
+   chapters 6 and 7 begin. Harmless today, but resume points are read off these.
+
+7. **The 11 single-lesson works were never spot-checked.** See flags section G.
+   A work yielding exactly one lesson is either genuinely thin or a died-early
+   extraction; the two are indistinguishable without opening the source.
+
+8. **Standing questions from earlier phases:** Péter and Kleene lesson grounding,
+   and the self-reported chapter gaps in Goldberg.
+
 ## Open before Phase 3 can start
 Nothing — Phase 2 closed 2026-07-24, all 95 figures accepted and
 layer-placed. Phase 3's per-figure fan-out is unblocked for the whole roster
