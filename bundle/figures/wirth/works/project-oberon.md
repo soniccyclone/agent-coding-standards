@@ -26,13 +26,14 @@ tags: [work]
 forward toward line 22864 (the end). Current position recorded below; if this file still
 says "in progress" the session died and the position line is the truth.**
 
-**Current position: line 20095 — eighth agent. Read so far this session: the module OCC
+**Current position: line 20540 — eighth agent. Read so far this session: the module OCC
 listing (18598-19180, pure Oberon source, confirmed no prose), section 12.9 in full (the
 symbolic debugger — reference part syntax, `Locals`, `Trap`, `State`), and chapter 13
-sections 13.1 through 13.4 (history, the Draw user's guide, the core data structure and
-dispatch design, the module hierarchy, and the display/frame model). Seven lessons written.
-Next: 13.5 (the user interface) at 20091, onward through ch. 13, then ch. 14 at 22341,
-appendix A.**
+sections 13.1 through 13.8.1 (history, the Draw user's guide, the core data structure and
+dispatch design, the module hierarchy, the display/frame model, the user interface, macros,
+object classes, and the opening of the implementation with module Draw). Eleven lessons
+written. Next: continue the module Draw listing (mostly source) and 13.8.2 onward, then
+ch. 14 at 22341, appendix A.**
 
 **Third agent's handoff: had read and mined chapter 12 through
 section 12.8's prose (code patterns 1-15; Object/Item/Struct; the OCS/OCE/OCH interfaces;
@@ -213,3 +214,4 @@ section are where the extractable lessons are.
 - [The operation that creates a thing cannot be reached through the thing](../lessons/the-thing-that-creates-a-thing-cannot-be-reached-through-it.md)
 - [Every attribute needs a composition rule before a group can be an element](../lessons/every-attribute-needs-a-composition-rule-before-a-group-can-be-an-element.md)
 - [Shared conventions are owed where artifacts cross, not everywhere](../lessons/shared-conventions-are-owed-where-artifacts-cross-not-everywhere.md)
+- [The entry-point layer must be a leaf in the dependency graph](../lessons/the-entry-point-layer-must-be-a-leaf-in-the-dependency-graph.md)
