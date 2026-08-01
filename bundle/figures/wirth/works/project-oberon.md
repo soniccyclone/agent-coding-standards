@@ -236,3 +236,5 @@ section are where the extractable lessons are.
 - [An action spread over many events needs a named in-progress state, and every intervening action owes it a reset](../lessons/an-action-spread-over-many-events-needs-a-named-in-progress-state.md)
 - [Let the stream carry its own dictionary, and discard it when the pass ends](../lessons/let-the-stream-carry-its-own-dictionary-and-discard-it-at-the-end.md)
 - [Make the identifier a path to its own implementation](../lessons/make-the-identifier-a-path-to-its-own-implementation.md)
+- [Size a new variant by the obligations it inherits, not by the concept it adds](../lessons/size-a-new-variant-by-the-obligations-not-by-the-concept.md)
+- [Hand the extension the raw input before you finish interpreting it](../lessons/hand-the-extension-the-raw-input-before-you-finish-interpreting-it.md)
