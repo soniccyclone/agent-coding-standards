@@ -248,3 +248,7 @@ section are where the extractable lessons are.
 - [Rebuild the allocation map from the authority at startup](../lessons/rebuild-the-allocation-map-from-the-authority-at-startup.md)
 - [An offline tool is often the online mechanism with a different sink](../lessons/an-offline-tool-is-often-the-online-mechanism-with-a-different-sink.md)
 - [The apparatus that built the system is the apparatus that repairs it](../lessons/the-apparatus-that-built-the-system-is-the-apparatus-that-repairs-it.md)
+- [A repair tool cannot reuse code that assumes the broken invariant](../lessons/a-repair-tool-cannot-reuse-code-that-assumes-the-broken-invariant.md)
+- [Make the write a separate verb, and put the danger in the name](../lessons/make-the-write-a-separate-verb-and-put-the-danger-in-the-name.md)
+- [Store in each unit what a scan would need to rebuild the index](../lessons/store-in-each-unit-what-a-scan-would-need-to-rebuild-the-index.md)
+- [Quarantine a resource by giving it an owner, not an exception list](../lessons/quarantine-a-resource-by-giving-it-an-owner-not-an-exception-list.md)
