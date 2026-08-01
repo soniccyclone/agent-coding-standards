@@ -18,7 +18,7 @@ the implementation-mapping layer.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-296 lessons from 32 figures.
+302 lessons from 32 figures.
 
 **abiteboul** (12)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -241,10 +241,12 @@ No works or lessons tagged with this subdomain yet.
 - [Make meaning independent of layout, and layout becomes a free variable you can spend entirely on the machine](../figures/torvalds/lessons/make-meaning-independent-of-layout.md)
 - [Name a thing by its content, and identity, integrity, and sharing stop being three separate problems](../figures/torvalds/lessons/name-things-by-what-they-are.md)
 
-**ullman** (88)
+**ullman** (94)
 - [A bookkeeping field becomes a proxy once you state the license](../figures/ullman/lessons/a-bookkeeping-field-becomes-a-proxy-once-you-state-the-license.md)
 - [A contiguous slice of stored data samples whoever wrote it](../figures/ullman/lessons/a-contiguous-slice-of-stored-data-samples-whoever-wrote-it.md)
+- [A derived key cannot address more slots than its own range spans](../figures/ullman/lessons/a-derived-key-cannot-address-more-slots-than-its-own-range-spans.md)
 - [A feature that did not help also indicts the path that delivered it](../figures/ullman/lessons/a-useless-feature-verdict-also-indicts-the-path-that-delivered-it.md)
+- [A fit expires where its prediction falls below the quantum of the thing measured](../figures/ullman/lessons/a-fit-expires-where-its-prediction-falls-below-the-quantum-of-the-thing.md)
 - [A later probe may assume every earlier probe missed](../figures/ullman/lessons/a-later-probe-may-assume-every-earlier-probe-missed.md)
 - [A metric survives adversaries only if the measured party doesn't own its inputs](../figures/ullman/lessons/measure-with-signals-the-measured-party-does-not-control.md)
 - [A model you reason in need not be a model you can build](../figures/ullman/lessons/a-model-you-reason-in-need-not-be-a-model-you-can-build.md)
@@ -254,6 +256,7 @@ No works or lessons tagged with this subdomain yet.
 - [A sample of a growing population must be re-earned at every step](../figures/ullman/lessons/a-sample-of-a-growing-population-must-be-re-earned-each-step.md)
 - [A scheme that runs on donated effort has to clear a volume bar, not a cleverness bar](../figures/ullman/lessons/a-donated-effort-scheme-has-to-clear-a-volume-bar.md)
 - [A seed set injects all of its properties, not just the one you chose it for](../figures/ullman/lessons/a-seed-set-injects-all-of-its-properties-not-just-the-chosen-one.md)
+- [A shape that turns up everywhere is weak evidence for your mechanism](../figures/ullman/lessons/a-shape-that-turns-up-everywhere-is-weak-evidence-for-your-mechanism.md)
 - [A summary of constant size is the price of admission to existing structures](../figures/ullman/lessons/a-summary-of-constant-size-is-the-price-of-admission-to-existing-structures.md)
 - [A theory can earn its keep by licensing a crude method](../figures/ullman/lessons/a-theory-can-earn-its-keep-by-licensing-a-crude-method.md)
 - [Absence is not a value — keep 'unknown' distinct from 'lowest'](../figures/ullman/lessons/absence-is-not-a-value-keep-unknown-distinct-from-zero.md)
@@ -296,6 +299,8 @@ No works or lessons tagged with this subdomain yet.
 - [Let the decisions you will face decide what the summary keeps](../figures/ullman/lessons/let-the-decisions-you-will-face-decide-what-the-summary-keeps.md)
 - [Make dimensions commensurable before you combine them, and set the threshold in meaningful units](../figures/ullman/lessons/make-dimensions-commensurable-before-you-combine-them.md)
 - [Make membership a threshold on a stable rank so your samples nest](../figures/ullman/lessons/make-membership-a-threshold-on-a-stable-rank-so-samples-nest.md)
+- [Measure a wrong belief by what acting on it costs](../figures/ullman/lessons/measure-a-wrong-belief-by-what-acting-on-it-costs.md)
+- [Normalize against an extremum, then go defend the denominator](../figures/ullman/lessons/normalize-against-an-extremum-then-defend-the-denominator.md)
 - [One new construct can turn meaning from a fact into a choice you must justify](../figures/ullman/lessons/one-new-construct-can-turn-meaning-into-a-choice.md)
 - [Only unknown questions justify paying for a query language](../figures/ullman/lessons/unknown-questions-are-what-justify-a-query-language.md)
 - [Partition the sample so its errors are forced to cancel](../figures/ullman/lessons/partition-the-sample-so-its-errors-must-cancel.md)
@@ -309,6 +314,7 @@ No works or lessons tagged with this subdomain yet.
 - [Replicate each item along the axes its key leaves undetermined](../figures/ullman/lessons/replicate-along-the-axes-your-key-leaves-free.md)
 - [Sample ground truth from the range the corruption cannot reach](../figures/ullman/lessons/sample-ground-truth-where-the-corruption-cannot-reach.md)
 - [Sample the entity your question quantifies over, not the records in front of you](../figures/ullman/lessons/sample-the-entity-your-question-is-about.md)
+- [Settle a contested proposal on feasibility before anyone argues its merits](../figures/ullman/lessons/settle-a-contested-proposal-on-feasibility-before-arguing-its-merits.md)
 - [Size alone does not qualify a problem for a scale technology](../figures/ullman/lessons/size-alone-does-not-qualify-a-problem-for-a-scale-technology.md)
 - [Spend a free ordering on selectivity](../figures/ullman/lessons/spend-a-free-ordering-on-selectivity.md)
 - [Split the input where two opposite-cost strategies cross](../figures/ullman/lessons/split-the-input-where-two-opposite-cost-strategies-cross.md)

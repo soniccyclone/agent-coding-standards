@@ -19,7 +19,7 @@ built-in vocabulary while staying easy to write against.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-1356 lessons from 92 figures.
+1360 lessons from 92 figures.
 
 **abiteboul** (9)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -1252,10 +1252,11 @@ No lessons scored on this axis yet.
 - [Uniform rules cannot produce non-uniform output; build an instability that selects among the noise instead](../figures/turing/lessons/get-variety-from-an-instability-that-selects-among-noise.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (105)
+**ullman** (109)
 - [A bookkeeping field becomes a proxy once you state the license](../figures/ullman/lessons/a-bookkeeping-field-becomes-a-proxy-once-you-state-the-license.md)
 - [A capability you have to avoid using is not a capability](../figures/ullman/lessons/a-capability-you-must-not-use-is-not-a-capability.md)
 - [A degenerate optimum means your objective is missing a term, not a filter](../figures/ullman/lessons/a-degenerate-optimum-means-your-objective-is-missing-a-term.md)
+- [A difference a free parameter can absorb is not a difference](../figures/ullman/lessons/a-difference-a-free-parameter-can-absorb-is-not-a-difference.md)
 - [A model you reason in need not be a model you can build](../figures/ullman/lessons/a-model-you-reason-in-need-not-be-a-model-you-can-build.md)
 - [A nonnegative encoding cannot express disagreement — centre it before comparing](../figures/ullman/lessons/a-nonnegative-encoding-cannot-express-disagreement.md)
 - [A quantity carried through a product of stages has no stable middle](../figures/ullman/lessons/a-quantity-carried-through-a-product-of-stages-has-no-stable-middle.md)
@@ -1291,6 +1292,7 @@ No lessons scored on this axis yet.
 - [Everyone in your data chose to be in it](../figures/ullman/lessons/everyone-in-your-data-chose-to-be-in-it.md)
 - [Find the established algebra your problem is already in](../figures/ullman/lessons/find-the-established-algebra-your-problem-is-already-in.md)
 - [Give both sides the same closed vocabulary and the matching problem dissolves](../figures/ullman/lessons/give-both-sides-the-same-closed-vocabulary.md)
+- [Give each level the capacity its vocabulary needs, not an equal share](../figures/ullman/lessons/give-each-level-the-capacity-its-vocabulary-needs.md)
 - [Grouping erases where a value came from, so make origin part of the value](../figures/ullman/lessons/grouping-erases-origin-so-carry-origin-as-data.md)
 - [Hash a large sparse space rather than shrink the feature to fit](../figures/ullman/lessons/hash-a-large-sparse-space-instead-of-shrinking-the-feature.md)
 - [How fast the penalty grows decides who controls the answer](../figures/ullman/lessons/how-fast-the-penalty-grows-decides-who-controls-the-answer.md)
@@ -1308,6 +1310,7 @@ No lessons scored on this axis yet.
 - [Make dimensions commensurable before you combine them, and set the threshold in meaningful units](../figures/ullman/lessons/make-dimensions-commensurable-before-you-combine-them.md)
 - [Make the mechanism replaceable and the invariant not](../figures/ullman/lessons/make-the-mechanism-replaceable-and-the-invariant-not.md)
 - [Match the update's arithmetic to the parameter's geometry](../figures/ullman/lessons/match-the-updates-arithmetic-to-the-parameters-geometry.md)
+- [Measure a wrong belief by what acting on it costs](../figures/ullman/lessons/measure-a-wrong-belief-by-what-acting-on-it-costs.md)
 - [Model independently sufficient causes by the chance that none of them fired](../figures/ullman/lessons/model-independently-sufficient-causes-by-the-chance-that-none-fired.md)
 - [Name a technique's decision points so you can search the family](../figures/ullman/lessons/name-a-techniques-decision-points-so-you-can-search-the-family.md)
 - [Never let one unexplained observation annihilate a score](../figures/ullman/lessons/never-let-one-unexplained-observation-annihilate-a-score.md)
@@ -1328,6 +1331,7 @@ No lessons scored on this axis yet.
 - [Returning a collection as one value hides your fan-out from the system](../figures/ullman/lessons/returning-a-collection-hides-cardinality-from-the-scheduler.md)
 - [Score the connection by the traffic it must carry, not by its endpoints](../figures/ullman/lessons/score-the-connection-by-the-traffic-it-must-carry.md)
 - [Separate the proposal from the decision to admit it](../figures/ullman/lessons/separate-the-proposal-from-the-decision-to-admit-it.md)
+- [Settle expressibility by hand before you ask a search to find the answer](../figures/ullman/lessons/settle-expressibility-before-you-ask-a-search-to-find-the-answer.md)
 - [State domain knowledge as more evidence, not only as more structure](../figures/ullman/lessons/state-domain-knowledge-as-more-evidence-not-only-as-more-structure.md)
 - [State the weakest output that would satisfy the use, then choose the method](../figures/ullman/lessons/state-the-weakest-output-that-would-satisfy-the-use.md)
 - [Store the form that composes, and derive the form you report](../figures/ullman/lessons/store-the-form-that-composes-not-the-form-you-report.md)

@@ -17,7 +17,7 @@ primarily here.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-1020 lessons from 75 figures.
+1021 lessons from 75 figures.
 
 **abiteboul** (4)
 - [Declarative and procedural is not a dichotomy; ask instead where the control lives](../figures/abiteboul/lessons/declarative-is-a-question-of-where-control-lives.md)
@@ -1025,7 +1025,7 @@ No works or lessons tagged with this subdomain yet.
 - [Power drawn from how a thing is described costs you the right to treat equal things as interchangeable](../figures/turing/lessons/power-drawn-from-the-description-costs-you-representation-independence.md)
 - [Put the description of the behaviour into the same medium as the data, and one artifact replaces an infinite family](../figures/turing/lessons/a-program-is-just-more-data-on-the-same-tape.md)
 
-**ullman** (26)
+**ullman** (27)
 - [A capability you have to avoid using is not a capability](../figures/ullman/lessons/a-capability-you-must-not-use-is-not-a-capability.md)
 - [A weighted score cannot express a veto](../figures/ullman/lessons/a-weighted-score-cannot-express-a-veto.md)
 - [A word borrowed from an ideal case carries relationships that do not survive](../figures/ullman/lessons/a-word-borrowed-from-an-ideal-case-carries-relationships-that-do-not-survive.md)
@@ -1040,6 +1040,7 @@ No works or lessons tagged with this subdomain yet.
 - [Deferring execution is what turns a program into a plan](../figures/ullman/lessons/deferring-execution-turns-a-program-into-a-plan.md)
 - [Eliminating the intermediate can destroy the structure that made it cheap](../figures/ullman/lessons/algebraic-simplification-can-destroy-the-structure-that-made-it-cheap.md)
 - [Give both sides the same closed vocabulary and the matching problem dissolves](../figures/ullman/lessons/give-both-sides-the-same-closed-vocabulary.md)
+- [Give each level the capacity its vocabulary needs, not an equal share](../figures/ullman/lessons/give-each-level-the-capacity-its-vocabulary-needs.md)
 - [Give each operator a local rule and let the graph compose them](../figures/ullman/lessons/give-each-operator-a-local-rule-and-let-the-graph-compose-them.md)
 - [Keep the per-step choice tiny and recover power by composition](../figures/ullman/lessons/keep-the-per-step-choice-tiny-and-recover-power-by-composition.md)
 - [One new construct can turn meaning from a fact into a choice you must justify](../figures/ullman/lessons/one-new-construct-can-turn-meaning-into-a-choice.md)

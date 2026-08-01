@@ -17,7 +17,7 @@ compiled-and-run.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-293 lessons from 35 figures.
+294 lessons from 35 figures.
 
 **abrial** (2)
 - [Asking a question should not reveal whether the answer is stored, computed, or remembered](../figures/abrial/lessons/asking-must-not-reveal-how-the-answer-is-produced.md)
@@ -314,10 +314,11 @@ No works or lessons tagged with this subdomain yet.
 **torvalds** (1)
 - [Ship a small set of composable primitives, and let every convenience be visibly a composition of them](../figures/torvalds/lessons/ship-primitives-and-let-conveniences-be-compositions.md)
 
-**ullman** (4)
+**ullman** (5)
 - [A capability you have to avoid using is not a capability](../figures/ullman/lessons/a-capability-you-must-not-use-is-not-a-capability.md)
 - [An optimizer can only exploit the laws you hand it in advance](../figures/ullman/lessons/an-optimizer-can-only-use-laws-you-hand-it.md)
 - [How you group data is a search strategy in disguise](../figures/ullman/lessons/how-you-group-data-is-an-access-plan-in-disguise.md)
+- [Tell the reader what is load-bearing and what is only provenance](../figures/ullman/lessons/tell-the-reader-what-is-load-bearing-and-what-is-provenance.md)
 - [What you decide counts as 'the same thing' sets the size of your state space](../figures/ullman/lessons/identity-criteria-set-the-size-of-your-state-space.md)
 
 **ungar** (14)

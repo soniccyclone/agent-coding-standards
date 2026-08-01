@@ -21,7 +21,7 @@ programming, but the axis that scores the compilation step itself.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-661 lessons from 84 figures.
+663 lessons from 84 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -634,11 +634,12 @@ No lessons scored on this axis yet.
 - [State an interface as classes separated by a margin, and error stops accumulating across the boundary](../figures/turing/lessons/state-the-contract-as-classes-far-enough-apart-to-restore.md)
 - [The rate at which you cross a threshold changes the outcome, not just the time it takes to get there](../figures/turing/lessons/how-fast-you-cross-a-threshold-changes-the-result.md)
 
-**ullman** (75)
+**ullman** (77)
 - [A cascading merge rule is an increment: read off its radix](../figures/ullman/lessons/a-cascading-merge-rule-is-an-increment-read-off-its-radix.md)
 - [A compact description says nothing about the cost of running it](../figures/ullman/lessons/a-compact-description-says-nothing-about-the-cost-of-running-it.md)
 - [A contiguous slice of stored data samples whoever wrote it](../figures/ullman/lessons/a-contiguous-slice-of-stored-data-samples-whoever-wrote-it.md)
 - [A cost model is a claim about which resource runs out first](../figures/ullman/lessons/a-cost-model-is-a-claim-about-what-runs-out-first.md)
+- [A derived key cannot address more slots than its own range spans](../figures/ullman/lessons/a-derived-key-cannot-address-more-slots-than-its-own-range-spans.md)
 - [A per-instance cost is the wrong unit when instances multiply](../figures/ullman/lessons/a-per-instance-cost-is-the-wrong-unit-when-instances-multiply.md)
 - [A randomizing function is only random relative to the input population you actually feed it](../figures/ullman/lessons/a-randomizing-function-is-only-random-against-the-inputs-you-feed-it.md)
 - [A routing hierarchy makes its most committing choice on its worst information](../figures/ullman/lessons/a-routing-hierarchy-makes-its-most-committing-choice-on-its-worst-information.md)
@@ -696,6 +697,7 @@ No lessons scored on this axis yet.
 - [Quantize variable size into a few classes, then pad within each](../figures/ullman/lessons/quantize-variable-size-into-a-few-classes.md)
 - [Rank the head of the distribution and lump the tail into one class](../figures/ullman/lessons/rank-the-head-of-the-distribution-and-lump-the-tail.md)
 - [Replicate each item along the axes its key leaves undetermined](../figures/ullman/lessons/replicate-along-the-axes-your-key-leaves-free.md)
+- [Separate the cost that layout can remove from the cost nothing can](../figures/ullman/lessons/separate-the-cost-layout-can-remove-from-the-cost-nothing-can.md)
 - [Size alone does not qualify a problem for a scale technology](../figures/ullman/lessons/size-alone-does-not-qualify-a-problem-for-a-scale-technology.md)
 - [Size work units between the overhead below and the variance above](../figures/ullman/lessons/size-work-units-between-overhead-below-and-variance-above.md)
 - [Spend a free ordering on selectivity](../figures/ullman/lessons/spend-a-free-ordering-on-selectivity.md)

@@ -22,7 +22,7 @@ stylistic preference.
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-883 lessons from 94 figures.
+885 lessons from 94 figures.
 
 **abiteboul** (2)
 - [The class of computations is the real object; notations and semantics are viewpoints on it](../figures/abiteboul/lessons/the-computation-class-is-the-object-syntaxes-are-viewpoints.md)
@@ -903,7 +903,7 @@ No lessons scored on this axis yet.
 - [The count of interacting parts caps which behaviours are reachable at all, whatever you tune](../figures/turing/lessons/the-number-of-interacting-parts-bounds-the-behaviours-available.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (47)
+**ullman** (49)
 - [A capability you have to avoid using is not a capability](../figures/ullman/lessons/a-capability-you-must-not-use-is-not-a-capability.md)
 - [A later probe may assume every earlier probe missed](../figures/ullman/lessons/a-later-probe-may-assume-every-earlier-probe-missed.md)
 - [A mixed discrete/continuous search costs you an outer loop — buy it out](../figures/ullman/lessons/a-mixed-discrete-continuous-search-costs-you-an-outer-loop.md)
@@ -927,6 +927,7 @@ No lessons scored on this axis yet.
 - [Find the established algebra your problem is already in](../figures/ullman/lessons/find-the-established-algebra-your-problem-is-already-in.md)
 - [Find which half of the problem is hard, because the deployed part is often trivial](../figures/ullman/lessons/find-where-the-difficulty-lives-before-choosing-what-to-build.md)
 - [Give a feedback process an exit that ignores its own structure](../figures/ullman/lessons/give-the-process-an-exit-that-ignores-its-own-structure.md)
+- [Give each level the capacity its vocabulary needs, not an equal share](../figures/ullman/lessons/give-each-level-the-capacity-its-vocabulary-needs.md)
 - [Give each operator a local rule and let the graph compose them](../figures/ullman/lessons/give-each-operator-a-local-rule-and-let-the-graph-compose-them.md)
 - [Grouping erases where a value came from, so make origin part of the value](../figures/ullman/lessons/grouping-erases-origin-so-carry-origin-as-data.md)
 - [If you must scan everything, shrink what you scan](../figures/ullman/lessons/if-you-must-scan-everything-shrink-what-you-scan.md)
@@ -941,6 +942,7 @@ No lessons scored on this axis yet.
 - [Peel away what violates your method's precondition, solve, then rebuild in reverse order](../figures/ullman/lessons/delete-what-violates-the-precondition-then-rebuild-in-reverse.md)
 - [Posit a few hidden causes and fit them, so the model fills in what was never observed](../figures/ullman/lessons/posit-few-hidden-causes-and-fit-them-to-fill-what-was-never-observed.md)
 - [Returning a collection as one value hides your fan-out from the system](../figures/ullman/lessons/returning-a-collection-hides-cardinality-from-the-scheduler.md)
+- [Say which decisions have a procedure and which have only taste](../figures/ullman/lessons/say-which-decisions-have-a-procedure-and-which-have-only-taste.md)
 - [Spend memory to reach the primitive your hardware is fastest at](../figures/ullman/lessons/spend-memory-to-reach-the-primitive-your-hardware-is-fastest-at.md)
 - [Store only what an invariant cannot recompute for you](../figures/ullman/lessons/store-only-what-an-invariant-cannot-recompute.md)
 - [Store the form that composes, and derive the form you report](../figures/ullman/lessons/store-the-form-that-composes-not-the-form-you-report.md)

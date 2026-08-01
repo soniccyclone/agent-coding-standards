@@ -18,7 +18,7 @@ mechanisms rather than deriving new primitives.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-1487 lessons from 90 figures.
+1496 lessons from 90 figures.
 
 **abiteboul** (5)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -1345,12 +1345,14 @@ No works or lessons tagged with this subdomain yet.
 - [When a requirement is stated in words nobody can check, replace it with a test that has an outcome](../figures/turing/lessons/swap-an-undecidable-requirement-for-an-observable-test.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (103)
+**ullman** (112)
 - [A bookkeeping field becomes a proxy once you state the license](../figures/ullman/lessons/a-bookkeeping-field-becomes-a-proxy-once-you-state-the-license.md)
 - [A boundary metric exiles the members who span the boundary](../figures/ullman/lessons/a-boundary-metric-exiles-the-members-who-span-the-boundary.md)
 - [A capability you have to avoid using is not a capability](../figures/ullman/lessons/a-capability-you-must-not-use-is-not-a-capability.md)
 - [A degenerate optimum means your objective is missing a term, not a filter](../figures/ullman/lessons/a-degenerate-optimum-means-your-objective-is-missing-a-term.md)
+- [A difference a free parameter can absorb is not a difference](../figures/ullman/lessons/a-difference-a-free-parameter-can-absorb-is-not-a-difference.md)
 - [A feature that did not help also indicts the path that delivered it](../figures/ullman/lessons/a-useless-feature-verdict-also-indicts-the-path-that-delivered-it.md)
+- [A knob with opposite requirements early and late is a schedule, not a value](../figures/ullman/lessons/a-knob-with-opposite-requirements-early-and-late-is-a-schedule.md)
 - [A later stage's statistic only describes what earlier stages let through](../figures/ullman/lessons/a-later-stages-statistic-only-describes-what-earlier-stages-let-through.md)
 - [A measurement set is consumed the first time you act on it](../figures/ullman/lessons/a-measurement-set-is-consumed-the-first-time-you-act-on-it.md)
 - [A metric survives adversaries only if the measured party doesn't own its inputs](../figures/ullman/lessons/measure-with-signals-the-measured-party-does-not-control.md)
@@ -1359,6 +1361,7 @@ No works or lessons tagged with this subdomain yet.
 - [A rule that rewards newness is only as strong as your notion of new](../figures/ullman/lessons/a-rule-that-rewards-newness-is-only-as-strong-as-your-notion-of-new.md)
 - [A scheme that runs on donated effort has to clear a volume bar, not a cleverness bar](../figures/ullman/lessons/a-donated-effort-scheme-has-to-clear-a-volume-bar.md)
 - [A seed set injects all of its properties, not just the one you chose it for](../figures/ullman/lessons/a-seed-set-injects-all-of-its-properties-not-just-the-chosen-one.md)
+- [A shape that turns up everywhere is weak evidence for your mechanism](../figures/ullman/lessons/a-shape-that-turns-up-everywhere-is-weak-evidence-for-your-mechanism.md)
 - [A single-point summary smuggles in an assumption about shape](../figures/ullman/lessons/a-single-point-summary-smuggles-in-a-shape-assumption.md)
 - [A surprising result is usually a faithful reading of your trade-off](../figures/ullman/lessons/a-surprising-result-is-usually-a-faithful-reading-of-your-tradeoff.md)
 - [A test's guarantee covers only what the test actually examined](../figures/ullman/lessons/a-tests-guarantee-covers-only-what-the-test-examined.md)
@@ -1392,6 +1395,7 @@ No works or lessons tagged with this subdomain yet.
 - [Find which half of the problem is hard, because the deployed part is often trivial](../figures/ullman/lessons/find-where-the-difficulty-lives-before-choosing-what-to-build.md)
 - [For coverage, greedily maximize the minimum — not the total](../figures/ullman/lessons/for-coverage-maximize-the-minimum-not-the-total.md)
 - [Fuse the two stages whose distortions cancel](../figures/ullman/lessons/fuse-the-two-stages-whose-distortions-cancel.md)
+- [Give each level the capacity its vocabulary needs, not an equal share](../figures/ullman/lessons/give-each-level-the-capacity-its-vocabulary-needs.md)
 - [Give each operator a local rule and let the graph compose them](../figures/ullman/lessons/give-each-operator-a-local-rule-and-let-the-graph-compose-them.md)
 - [Give observations tiers of commitment instead of forcing one decision](../figures/ullman/lessons/give-observations-tiers-of-commitment-instead-of-one-decision.md)
 - [Give the system a quality knob it can loosen when a resource runs out](../figures/ullman/lessons/give-the-system-a-quality-knob-it-can-loosen-when-a-resource-runs-out.md)
@@ -1409,6 +1413,7 @@ No works or lessons tagged with this subdomain yet.
 - [Let the decisions you will face decide what the summary keeps](../figures/ullman/lessons/let-the-decisions-you-will-face-decide-what-the-summary-keeps.md)
 - [Make the cheap stage err in the direction the expensive stage can repair](../figures/ullman/lessons/make-the-cheap-stage-err-in-the-direction-the-expensive-stage-can-fix.md)
 - [Make the mechanism replaceable and the invariant not](../figures/ullman/lessons/make-the-mechanism-replaceable-and-the-invariant-not.md)
+- [Measure a wrong belief by what acting on it costs](../figures/ullman/lessons/measure-a-wrong-belief-by-what-acting-on-it-costs.md)
 - [Name a technique's decision points so you can search the family](../figures/ullman/lessons/name-a-techniques-decision-points-so-you-can-search-the-family.md)
 - [Name the settings at which your generalization becomes the old thing](../figures/ullman/lessons/name-the-settings-at-which-your-generalization-becomes-the-old-thing.md)
 - [One pass against the settled state erases the order things arrived in](../figures/ullman/lessons/one-pass-against-the-settled-state-erases-the-order-things-arrived-in.md)
@@ -1422,9 +1427,12 @@ No works or lessons tagged with this subdomain yet.
 - [Restartability is a shape you keep, not a feature you add](../figures/ullman/lessons/restartability-is-a-shape-not-a-feature.md)
 - [Run the same computation under two assumptions and treat the gap as the measurement](../figures/ullman/lessons/run-the-same-computation-under-two-assumptions-and-read-the-gap.md)
 - [Sample ground truth from the range the corruption cannot reach](../figures/ullman/lessons/sample-ground-truth-where-the-corruption-cannot-reach.md)
+- [Say which decisions have a procedure and which have only taste](../figures/ullman/lessons/say-which-decisions-have-a-procedure-and-which-have-only-taste.md)
 - [Score the connection by the traffic it must carry, not by its endpoints](../figures/ullman/lessons/score-the-connection-by-the-traffic-it-must-carry.md)
 - [Separate the proposal from the decision to admit it](../figures/ullman/lessons/separate-the-proposal-from-the-decision-to-admit-it.md)
 - [Set the explainability requirement from who bears the decision and can contest it](../figures/ullman/lessons/set-the-explainability-requirement-from-who-can-contest-the-decision.md)
+- [Settle a contested proposal on feasibility before anyone argues its merits](../figures/ullman/lessons/settle-a-contested-proposal-on-feasibility-before-arguing-its-merits.md)
+- [Settle expressibility by hand before you ask a search to find the answer](../figures/ullman/lessons/settle-expressibility-before-you-ask-a-search-to-find-the-answer.md)
 - [Size alone does not qualify a problem for a scale technology](../figures/ullman/lessons/size-alone-does-not-qualify-a-problem-for-a-scale-technology.md)
 - [Spend the expensive oracle where you are least certain](../figures/ullman/lessons/spend-the-expensive-oracle-where-you-are-least-certain.md)
 - [Start the search from the point where the trivial answer already holds](../figures/ullman/lessons/start-the-search-where-the-trivial-answer-already-is.md)
@@ -1432,6 +1440,7 @@ No works or lessons tagged with this subdomain yet.
 - [State the recovery requirement as a ratio, not as a granularity](../figures/ullman/lessons/state-the-recovery-requirement-as-a-ratio-not-a-granularity.md)
 - [State the weakest output that would satisfy the use, then choose the method](../figures/ullman/lessons/state-the-weakest-output-that-would-satisfy-the-use.md)
 - [Stop on the quantity you want, not on the loop's own convergence](../figures/ullman/lessons/stop-on-the-quantity-you-want-not-on-the-loops-own-convergence.md)
+- [Tell the reader what is load-bearing and what is only provenance](../figures/ullman/lessons/tell-the-reader-what-is-load-bearing-and-what-is-provenance.md)
 - [The constant you hardcoded is usually where the whole family of algorithms lives](../figures/ullman/lessons/the-constant-you-hardcoded-is-where-the-family-lives.md)
 - [The example you can follow is below the scale that needs the method](../figures/ullman/lessons/the-example-you-can-follow-is-below-the-scale-that-needs-the-method.md)
 - [The inputs are a design choice — look outside the pipeline](../figures/ullman/lessons/the-inputs-are-a-design-choice-look-outside-the-pipeline.md)

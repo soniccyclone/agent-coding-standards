@@ -19,7 +19,7 @@ corpus retains alongside it, not a rejected alternative.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-447 lessons from 48 figures.
+450 lessons from 48 figures.
 
 **abiteboul** (3)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -497,15 +497,18 @@ No works or lessons tagged with this subdomain yet.
 - [When a requirement is stated in words nobody can check, replace it with a test that has an outcome](../figures/turing/lessons/swap-an-undecidable-requirement-for-an-observable-test.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (11)
+**ullman** (14)
+- [A difference a free parameter can absorb is not a difference](../figures/ullman/lessons/a-difference-a-free-parameter-can-absorb-is-not-a-difference.md)
 - [An exact identity leaves you a free parameter — spend it on staying in range](../figures/ullman/lessons/an-exact-identity-leaves-you-a-free-parameter-spend-it-on-range.md)
 - [Check that your measure still discriminates at the scale you will use it](../figures/ullman/lessons/check-that-your-measure-still-discriminates-at-your-scale.md)
 - [Don't reject a measure for lacking a property your problem has no use for](../figures/ullman/lessons/dont-demand-a-property-your-problem-has-no-use-for.md)
 - [Double until you overshoot, then bisect — searching for an unbounded unknown](../figures/ullman/lessons/double-until-you-overshoot-then-bisect.md)
 - [Find the closure property that turns exhaustive search into frontier expansion](../figures/ullman/lessons/find-the-closure-property-that-turns-search-into-frontier-expansion.md)
 - [Learn to recognize your algorithm being performed without a computer](../figures/ullman/lessons/learn-to-see-your-algorithm-being-performed-without-a-computer.md)
+- [Move the evaluation point instead of improving the expansion](../figures/ullman/lessons/move-the-evaluation-point-instead-of-improving-the-expansion.md)
 - [Name the settings at which your generalization becomes the old thing](../figures/ullman/lessons/name-the-settings-at-which-your-generalization-becomes-the-old-thing.md)
 - [Normalize away the encodings that could hide what you count](../figures/ullman/lessons/normalize-away-the-encodings-that-could-hide-what-you-count.md)
+- [Settle expressibility by hand before you ask a search to find the answer](../figures/ullman/lessons/settle-expressibility-before-you-ask-a-search-to-find-the-answer.md)
 - [Truncation does not cure a divergence](../figures/ullman/lessons/truncation-does-not-cure-a-divergence.md)
 - [Two states are equivalent only if no future can separate them](../figures/ullman/lessons/two-states-are-equivalent-only-if-no-future-can-separate-them.md)
 - [When the exact question is provably unaffordable, change the question](../figures/ullman/lessons/when-the-exact-question-is-unaffordable-change-the-question.md)

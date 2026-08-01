@@ -17,7 +17,7 @@ single-machine formalisms don't have to account for.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-487 lessons from 66 figures.
+488 lessons from 66 figures.
 
 **abiteboul** (4)
 - [A process specification is a constraint on possible histories, whatever paradigm it arrives in](../figures/abiteboul/lessons/a-process-specification-is-a-constraint-on-possible-histories.md)
@@ -511,9 +511,10 @@ No works or lessons tagged with this subdomain yet.
 - [The count of interacting parts caps which behaviours are reachable at all, whatever you tune](../figures/turing/lessons/the-number-of-interacting-parts-bounds-the-behaviours-available.md)
 - [Uniform rules cannot produce non-uniform output; build an instability that selects among the noise instead](../figures/turing/lessons/get-variety-from-an-instability-that-selects-among-noise.md)
 
-**ullman** (66)
+**ullman** (67)
 - [A contiguous slice of stored data samples whoever wrote it](../figures/ullman/lessons/a-contiguous-slice-of-stored-data-samples-whoever-wrote-it.md)
 - [A cost model is a claim about which resource runs out first](../figures/ullman/lessons/a-cost-model-is-a-claim-about-what-runs-out-first.md)
+- [A knob with opposite requirements early and late is a schedule, not a value](../figures/ullman/lessons/a-knob-with-opposite-requirements-early-and-late-is-a-schedule.md)
 - [A per-instance cost is the wrong unit when instances multiply](../figures/ullman/lessons/a-per-instance-cost-is-the-wrong-unit-when-instances-multiply.md)
 - [A quantity carried through a product of stages has no stable middle](../figures/ullman/lessons/a-quantity-carried-through-a-product-of-stages-has-no-stable-middle.md)
 - [A routing hierarchy makes its most committing choice on its worst information](../figures/ullman/lessons/a-routing-hierarchy-makes-its-most-committing-choice-on-its-worst-information.md)

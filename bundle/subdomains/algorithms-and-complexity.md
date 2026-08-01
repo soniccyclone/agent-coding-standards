@@ -16,7 +16,7 @@ its correctness or expressiveness.
 No works or lessons tagged with this subdomain yet.
 
 ## Tagged works & lessons
-719 lessons from 57 figures.
+730 lessons from 57 figures.
 
 **abiteboul** (1)
 - [Every detail you refuse to expose is expressive power you have spent](../figures/abiteboul/lessons/every-detail-you-refuse-to-expose-is-power-you-spend.md)
@@ -504,14 +504,18 @@ No works or lessons tagged with this subdomain yet.
 - [Postulate the capability you lack as a primitive, then re-run your impossibility argument against the enlarged machine](../figures/turing/lessons/postulate-the-missing-capability-as-a-primitive-and-re-run-the-limit-argument.md)
 - [Put a cheap approximate filter in front of the expensive procedure, and size its accuracy by the cost it saves](../figures/turing/lessons/size-the-cheap-screening-pass-by-the-cost-of-the-expensive-one.md)
 
-**ullman** (193)
+**ullman** (204)
 - [A bound and an accurate estimate are not interchangeable](../figures/ullman/lessons/a-bound-and-an-accurate-estimate-are-not-interchangeable.md)
 - [A boundary metric exiles the members who span the boundary](../figures/ullman/lessons/a-boundary-metric-exiles-the-members-who-span-the-boundary.md)
 - [A cascading merge rule is an increment: read off its radix](../figures/ullman/lessons/a-cascading-merge-rule-is-an-increment-read-off-its-radix.md)
 - [A compact description says nothing about the cost of running it](../figures/ullman/lessons/a-compact-description-says-nothing-about-the-cost-of-running-it.md)
 - [A cost model is a claim about which resource runs out first](../figures/ullman/lessons/a-cost-model-is-a-claim-about-what-runs-out-first.md)
 - [A degenerate optimum means your objective is missing a term, not a filter](../figures/ullman/lessons/a-degenerate-optimum-means-your-objective-is-missing-a-term.md)
+- [A derived key cannot address more slots than its own range spans](../figures/ullman/lessons/a-derived-key-cannot-address-more-slots-than-its-own-range-spans.md)
+- [A difference a free parameter can absorb is not a difference](../figures/ullman/lessons/a-difference-a-free-parameter-can-absorb-is-not-a-difference.md)
+- [A fit expires where its prediction falls below the quantum of the thing measured](../figures/ullman/lessons/a-fit-expires-where-its-prediction-falls-below-the-quantum-of-the-thing.md)
 - [A greedy discard rule is optimal only against one error measure](../figures/ullman/lessons/a-greedy-discard-rule-is-optimal-only-against-one-error-measure.md)
+- [A knob with opposite requirements early and late is a schedule, not a value](../figures/ullman/lessons/a-knob-with-opposite-requirements-early-and-late-is-a-schedule.md)
 - [A later probe may assume every earlier probe missed](../figures/ullman/lessons/a-later-probe-may-assume-every-earlier-probe-missed.md)
 - [A later stage's statistic only describes what earlier stages let through](../figures/ullman/lessons/a-later-stages-statistic-only-describes-what-earlier-stages-let-through.md)
 - [A lower bound from one extreme instance must be stretched across the range](../figures/ullman/lessons/a-lower-bound-from-one-extreme-instance-must-be-stretched-across-the-range.md)
@@ -596,6 +600,7 @@ No works or lessons tagged with this subdomain yet.
 - [Freeze the state, compute every delta against it, then combine](../figures/ullman/lessons/freeze-the-state-compute-every-delta-against-it-then-combine.md)
 - [Fuse the two stages whose distortions cancel](../figures/ullman/lessons/fuse-the-two-stages-whose-distortions-cancel.md)
 - [Give a feedback process an exit that ignores its own structure](../figures/ullman/lessons/give-the-process-an-exit-that-ignores-its-own-structure.md)
+- [Give each level the capacity its vocabulary needs, not an equal share](../figures/ullman/lessons/give-each-level-the-capacity-its-vocabulary-needs.md)
 - [Grade a procedure that must decide now against what hindsight could have done](../figures/ullman/lessons/grade-irreversible-decisions-against-hindsight.md)
 - [Half of an indivisible dependency is worth nothing at all](../figures/ullman/lessons/a-fraction-of-an-indivisible-dependency-is-pure-waste.md)
 - [Hash a large sparse space rather than shrink the feature to fit](../figures/ullman/lessons/hash-a-large-sparse-space-instead-of-shrinking-the-feature.md)
@@ -622,10 +627,13 @@ No works or lessons tagged with this subdomain yet.
 - [Make dimensions commensurable before you combine them, and set the threshold in meaningful units](../figures/ullman/lessons/make-dimensions-commensurable-before-you-combine-them.md)
 - [Make the cheap stage err in the direction the expensive stage can repair](../figures/ullman/lessons/make-the-cheap-stage-err-in-the-direction-the-expensive-stage-can-fix.md)
 - [Match the update's arithmetic to the parameter's geometry](../figures/ullman/lessons/match-the-updates-arithmetic-to-the-parameters-geometry.md)
+- [Measure a wrong belief by what acting on it costs](../figures/ullman/lessons/measure-a-wrong-belief-by-what-acting-on-it-costs.md)
 - [Model independently sufficient causes by the chance that none of them fired](../figures/ullman/lessons/model-independently-sufficient-causes-by-the-chance-that-none-fired.md)
+- [Move the evaluation point instead of improving the expansion](../figures/ullman/lessons/move-the-evaluation-point-instead-of-improving-the-expansion.md)
 - [Name a technique's decision points so you can search the family](../figures/ullman/lessons/name-a-techniques-decision-points-so-you-can-search-the-family.md)
 - [Name the two quantities whose ratio decides it, then stop enumerating cases](../figures/ullman/lessons/name-the-two-quantities-whose-ratio-decides-it-then-stop-enumerating-cases.md)
 - [Never let one unexplained observation annihilate a score](../figures/ullman/lessons/never-let-one-unexplained-observation-annihilate-a-score.md)
+- [Normalize against an extremum, then go defend the denominator](../figures/ullman/lessons/normalize-against-an-extremum-then-defend-the-denominator.md)
 - [Normalize away the encodings that could hide what you count](../figures/ullman/lessons/normalize-away-the-encodings-that-could-hide-what-you-count.md)
 - [One pass against the settled state erases the order things arrived in](../figures/ullman/lessons/one-pass-against-the-settled-state-erases-the-order-things-arrived-in.md)
 - [One word, two relations: push the meaning into a parameter](../figures/ullman/lessons/one-word-two-relations-push-the-meaning-into-a-parameter.md)
@@ -651,8 +659,11 @@ No works or lessons tagged with this subdomain yet.
 - [Rewrite a global objective as a sum of local terms to see what it rewards](../figures/ullman/lessons/rewrite-a-global-objective-as-a-sum-of-local-terms.md)
 - [Run the same computation under two assumptions and treat the gap as the measurement](../figures/ullman/lessons/run-the-same-computation-under-two-assumptions-and-read-the-gap.md)
 - [Sample the entity your question quantifies over, not the records in front of you](../figures/ullman/lessons/sample-the-entity-your-question-is-about.md)
+- [Say which decisions have a procedure and which have only taste](../figures/ullman/lessons/say-which-decisions-have-a-procedure-and-which-have-only-taste.md)
 - [Score the connection by the traffic it must carry, not by its endpoints](../figures/ullman/lessons/score-the-connection-by-the-traffic-it-must-carry.md)
+- [Separate the cost that layout can remove from the cost nothing can](../figures/ullman/lessons/separate-the-cost-layout-can-remove-from-the-cost-nothing-can.md)
 - [Set the explainability requirement from who bears the decision and can contest it](../figures/ullman/lessons/set-the-explainability-requirement-from-who-can-contest-the-decision.md)
+- [Settle expressibility by hand before you ask a search to find the answer](../figures/ullman/lessons/settle-expressibility-before-you-ask-a-search-to-find-the-answer.md)
 - [Shrink the input space with moves that only hurt you](../figures/ullman/lessons/shrink-the-input-space-with-moves-that-only-hurt-you.md)
 - [Shrink the space of designs by simulation before you try to bound it](../figures/ullman/lessons/shrink-the-design-space-by-simulation-before-you-bound-it.md)
 - [Size work units between the overhead below and the variance above](../figures/ullman/lessons/size-work-units-between-overhead-below-and-variance-above.md)

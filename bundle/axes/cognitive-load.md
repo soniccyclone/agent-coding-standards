@@ -19,7 +19,7 @@ implicitly through many call sites).
 No lessons scored on this axis yet.
 
 ## Lessons scored here
-2182 lessons from 94 figures.
+2194 lessons from 94 figures.
 
 **abiteboul** (7)
 - [An abstraction is real only when an invariance law forbids reaching past it](../figures/abiteboul/lessons/an-abstraction-is-real-only-when-invariance-enforces-it.md)
@@ -1842,7 +1842,7 @@ No lessons scored on this axis yet.
 - [When a requirement is stated in words nobody can check, replace it with a test that has an outcome](../figures/turing/lessons/swap-an-undecidable-requirement-for-an-observable-test.md)
 - [When the artifact is too large to author, specify a small seed plus the process that grows it](../figures/turing/lessons/when-the-artifact-is-too-large-to-author-specify-a-seed-and-a-process.md)
 
-**ullman** (192)
+**ullman** (204)
 - [A bound and an accurate estimate are not interchangeable](../figures/ullman/lessons/a-bound-and-an-accurate-estimate-are-not-interchangeable.md)
 - [A boundary metric exiles the members who span the boundary](../figures/ullman/lessons/a-boundary-metric-exiles-the-members-who-span-the-boundary.md)
 - [A capability you have to avoid using is not a capability](../figures/ullman/lessons/a-capability-you-must-not-use-is-not-a-capability.md)
@@ -1850,8 +1850,11 @@ No lessons scored on this axis yet.
 - [A compact description says nothing about the cost of running it](../figures/ullman/lessons/a-compact-description-says-nothing-about-the-cost-of-running-it.md)
 - [A contiguous slice of stored data samples whoever wrote it](../figures/ullman/lessons/a-contiguous-slice-of-stored-data-samples-whoever-wrote-it.md)
 - [A cost model is a claim about which resource runs out first](../figures/ullman/lessons/a-cost-model-is-a-claim-about-what-runs-out-first.md)
+- [A difference a free parameter can absorb is not a difference](../figures/ullman/lessons/a-difference-a-free-parameter-can-absorb-is-not-a-difference.md)
 - [A feature that did not help also indicts the path that delivered it](../figures/ullman/lessons/a-useless-feature-verdict-also-indicts-the-path-that-delivered-it.md)
+- [A fit expires where its prediction falls below the quantum of the thing measured](../figures/ullman/lessons/a-fit-expires-where-its-prediction-falls-below-the-quantum-of-the-thing.md)
 - [A greedy discard rule is optimal only against one error measure](../figures/ullman/lessons/a-greedy-discard-rule-is-optimal-only-against-one-error-measure.md)
+- [A knob with opposite requirements early and late is a schedule, not a value](../figures/ullman/lessons/a-knob-with-opposite-requirements-early-and-late-is-a-schedule.md)
 - [A later probe may assume every earlier probe missed](../figures/ullman/lessons/a-later-probe-may-assume-every-earlier-probe-missed.md)
 - [A later stage's statistic only describes what earlier stages let through](../figures/ullman/lessons/a-later-stages-statistic-only-describes-what-earlier-stages-let-through.md)
 - [A metric survives adversaries only if the measured party doesn't own its inputs](../figures/ullman/lessons/measure-with-signals-the-measured-party-does-not-control.md)
@@ -1864,6 +1867,7 @@ No lessons scored on this axis yet.
 - [A sample of a growing population must be re-earned at every step](../figures/ullman/lessons/a-sample-of-a-growing-population-must-be-re-earned-each-step.md)
 - [A scheme that runs on donated effort has to clear a volume bar, not a cleverness bar](../figures/ullman/lessons/a-donated-effort-scheme-has-to-clear-a-volume-bar.md)
 - [A series of mutually exclusive solutions degrades by construction](../figures/ullman/lessons/a-series-of-mutually-exclusive-solutions-degrades-by-construction.md)
+- [A shape that turns up everywhere is weak evidence for your mechanism](../figures/ullman/lessons/a-shape-that-turns-up-everywhere-is-weak-evidence-for-your-mechanism.md)
 - [A single-point summary smuggles in an assumption about shape](../figures/ullman/lessons/a-single-point-summary-smuggles-in-a-shape-assumption.md)
 - [A summary of constant size is the price of admission to existing structures](../figures/ullman/lessons/a-summary-of-constant-size-is-the-price-of-admission-to-existing-structures.md)
 - [A surprising result is usually a faithful reading of your trade-off](../figures/ullman/lessons/a-surprising-result-is-usually-a-faithful-reading-of-your-tradeoff.md)
@@ -1931,6 +1935,7 @@ No lessons scored on this axis yet.
 - [Fuse the two stages whose distortions cancel](../figures/ullman/lessons/fuse-the-two-stages-whose-distortions-cancel.md)
 - [Give a feedback process an exit that ignores its own structure](../figures/ullman/lessons/give-the-process-an-exit-that-ignores-its-own-structure.md)
 - [Give both sides the same closed vocabulary and the matching problem dissolves](../figures/ullman/lessons/give-both-sides-the-same-closed-vocabulary.md)
+- [Give each level the capacity its vocabulary needs, not an equal share](../figures/ullman/lessons/give-each-level-the-capacity-its-vocabulary-needs.md)
 - [Give each operator a local rule and let the graph compose them](../figures/ullman/lessons/give-each-operator-a-local-rule-and-let-the-graph-compose-them.md)
 - [Give observations tiers of commitment instead of forcing one decision](../figures/ullman/lessons/give-observations-tiers-of-commitment-instead-of-one-decision.md)
 - [Give the system a quality knob it can loosen when a resource runs out](../figures/ullman/lessons/give-the-system-a-quality-knob-it-can-loosen-when-a-resource-runs-out.md)
@@ -1958,9 +1963,11 @@ No lessons scored on this axis yet.
 - [Make membership a threshold on a stable rank so your samples nest](../figures/ullman/lessons/make-membership-a-threshold-on-a-stable-rank-so-samples-nest.md)
 - [Make the cheap stage err in the direction the expensive stage can repair](../figures/ullman/lessons/make-the-cheap-stage-err-in-the-direction-the-expensive-stage-can-fix.md)
 - [Make the mechanism replaceable and the invariant not](../figures/ullman/lessons/make-the-mechanism-replaceable-and-the-invariant-not.md)
+- [Move the evaluation point instead of improving the expansion](../figures/ullman/lessons/move-the-evaluation-point-instead-of-improving-the-expansion.md)
 - [Name a technique's decision points so you can search the family](../figures/ullman/lessons/name-a-techniques-decision-points-so-you-can-search-the-family.md)
 - [Name the settings at which your generalization becomes the old thing](../figures/ullman/lessons/name-the-settings-at-which-your-generalization-becomes-the-old-thing.md)
 - [Name the two quantities whose ratio decides it, then stop enumerating cases](../figures/ullman/lessons/name-the-two-quantities-whose-ratio-decides-it-then-stop-enumerating-cases.md)
+- [Normalize against an extremum, then go defend the denominator](../figures/ullman/lessons/normalize-against-an-extremum-then-defend-the-denominator.md)
 - [One new construct can turn meaning from a fact into a choice you must justify](../figures/ullman/lessons/one-new-construct-can-turn-meaning-into-a-choice.md)
 - [One pass against the settled state erases the order things arrived in](../figures/ullman/lessons/one-pass-against-the-settled-state-erases-the-order-things-arrived-in.md)
 - [One word, two relations: push the meaning into a parameter](../figures/ullman/lessons/one-word-two-relations-push-the-meaning-into-a-parameter.md)
@@ -1986,8 +1993,12 @@ No lessons scored on this axis yet.
 - [Run the same computation under two assumptions and treat the gap as the measurement](../figures/ullman/lessons/run-the-same-computation-under-two-assumptions-and-read-the-gap.md)
 - [Sample ground truth from the range the corruption cannot reach](../figures/ullman/lessons/sample-ground-truth-where-the-corruption-cannot-reach.md)
 - [Sample the entity your question quantifies over, not the records in front of you](../figures/ullman/lessons/sample-the-entity-your-question-is-about.md)
+- [Say which decisions have a procedure and which have only taste](../figures/ullman/lessons/say-which-decisions-have-a-procedure-and-which-have-only-taste.md)
 - [Score the connection by the traffic it must carry, not by its endpoints](../figures/ullman/lessons/score-the-connection-by-the-traffic-it-must-carry.md)
+- [Separate the cost that layout can remove from the cost nothing can](../figures/ullman/lessons/separate-the-cost-layout-can-remove-from-the-cost-nothing-can.md)
 - [Set the explainability requirement from who bears the decision and can contest it](../figures/ullman/lessons/set-the-explainability-requirement-from-who-can-contest-the-decision.md)
+- [Settle a contested proposal on feasibility before anyone argues its merits](../figures/ullman/lessons/settle-a-contested-proposal-on-feasibility-before-arguing-its-merits.md)
+- [Settle expressibility by hand before you ask a search to find the answer](../figures/ullman/lessons/settle-expressibility-before-you-ask-a-search-to-find-the-answer.md)
 - [Shrink the input space with moves that only hurt you](../figures/ullman/lessons/shrink-the-input-space-with-moves-that-only-hurt-you.md)
 - [Shrink the space of designs by simulation before you try to bound it](../figures/ullman/lessons/shrink-the-design-space-by-simulation-before-you-bound-it.md)
 - [Size alone does not qualify a problem for a scale technology](../figures/ullman/lessons/size-alone-does-not-qualify-a-problem-for-a-scale-technology.md)
@@ -2004,6 +2015,7 @@ No lessons scored on this axis yet.
 - [State the weakest output that would satisfy the use, then choose the method](../figures/ullman/lessons/state-the-weakest-output-that-would-satisfy-the-use.md)
 - [Stop on the quantity you want, not on the loop's own convergence](../figures/ullman/lessons/stop-on-the-quantity-you-want-not-on-the-loops-own-convergence.md)
 - [Store only what an invariant cannot recompute for you](../figures/ullman/lessons/store-only-what-an-invariant-cannot-recompute.md)
+- [Tell the reader what is load-bearing and what is only provenance](../figures/ullman/lessons/tell-the-reader-what-is-load-bearing-and-what-is-provenance.md)
 - [Test a candidate measure on a tiny case whose answer you already know](../figures/ullman/lessons/test-a-candidate-measure-on-a-case-whose-answer-you-already-know.md)
 - [The constant you hardcoded is usually where the whole family of algorithms lives](../figures/ullman/lessons/the-constant-you-hardcoded-is-where-the-family-lives.md)
 - [The example you can follow is below the scale that needs the method](../figures/ullman/lessons/the-example-you-can-follow-is-below-the-scale-that-needs-the-method.md)
