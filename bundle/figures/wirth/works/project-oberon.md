@@ -243,3 +243,8 @@ section are where the extractable lessons are.
 - [Hand the extension the raw input before you finish interpreting it](../lessons/hand-the-extension-the-raw-input-before-you-finish-interpreting-it.md)
 - [Move the computation into the arithmetic the machine is good at](../lessons/move-the-computation-into-the-arithmetic-the-machine-is-good-at.md)
 - [The startup sequence is the construction sequence](../lessons/the-startup-sequence-is-the-construction-sequence.md)
+- [Give the unchangeable reader the dumbest possible format](../lessons/give-the-unchangeable-reader-the-dumbest-possible-format.md)
+- [You choose the root; the dependency graph chooses the privileged set](../lessons/you-choose-the-root-the-dependency-graph-chooses-the-privileged-set.md)
+- [Rebuild the allocation map from the authority at startup](../lessons/rebuild-the-allocation-map-from-the-authority-at-startup.md)
+- [An offline tool is often the online mechanism with a different sink](../lessons/an-offline-tool-is-often-the-online-mechanism-with-a-different-sink.md)
+- [The apparatus that built the system is the apparatus that repairs it](../lessons/the-apparatus-that-built-the-system-is-the-apparatus-that-repairs-it.md)
