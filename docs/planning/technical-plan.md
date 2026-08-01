@@ -162,8 +162,8 @@ than the last because it's synthesizing syntheses, not raw lessons:
 
 1. **`figures/<figure>/index.md`** — synthesized from that figure's own lessons.
 2. **`subdomains/<subdomain>.md`** — synthesized from lessons tagged with that subdomain, wherever they live.
-3. **`axes/<axis>.md`** — synthesized from lessons scored on that axis, orthogonal to subdomain.
-4. **`index.md`** (root) — synthesized from the nine subdomain rollups.
+9. **`axes/<axis>.md`** — synthesized from lessons scored on that axis, orthogonal to subdomain.
+10. **`index.md`** (root) — synthesized from the nine subdomain rollups.
 
 Root-level rollup is effectively a running draft of Phase 7's distillation
 target the whole time, not something built from scratch only at the end.
@@ -433,6 +433,30 @@ was in service of.
 **Depends on:** Phases 3-6 substantially complete, at least for the first
 distillation pass; can re-run distillation as the bundle grows.
 
+**Decided 2026-08-01, before writing:**
+- **Audience is other people's CLAUDE.md files, not Nathan's.** The artifact ships
+  standalone into codebases it has never seen. No reference to this project, this
+  bundle, or anyone's personal preferences. Nathan's own CLAUDE.md is the thing
+  this is meant to beat, not a constraint to fit inside — an earlier draft of this
+  spec had that backwards.
+- **Length: 1,200-1,500 words.** Not a token-cost argument; 6k tokens is noise
+  against a 200k window. The binding constraint is that instruction-following
+  degrades with instruction count, and this lands on top of whatever project
+  instructions the user already has. Being a bad citizen of their budget is how a
+  doc gets deleted.
+- **Inclusion test, which is what actually sets the length.** A claim earns a slot
+  only if it would change a decision AND an agent would not already make that
+  decision by default. The second half does the cutting: "prefer simplicity",
+  "write tests", "avoid premature abstraction" are model defaults, and spending
+  words on them costs attention while buying nothing. What survives is the
+  counterintuitive material.
+- **Claims carry attribution.** "Name the invariant each operation protects
+  (Liskov)" rather than the bare imperative. Roughly 15% word overhead. Two
+  reasons: it makes every claim traceable back through the bundle, which is why
+  this corpus exists rather than being a list of opinions; and per Nathan, a named
+  figure activates knowledge the reading model already has, so the attribution
+  does work even for a model that has never seen this bundle.
+
 ### Phase 8 — Ingestion quality of life (idea backlog, nothing implemented)
 
 **Status: ideas only. Nothing in this phase has been built, and no file outside
@@ -543,14 +567,28 @@ what tells you how to fix it.
    among others). Fix: one targeted extraction pass at that argument, then re-run
    the tension check. **Do not write the tension first and back-fill the lesson.**
 
-2. **`reynolds/definitional-interpreters-for-higher-order-programming-languages`
+2. **Knuth's side of the goto argument was never ingested.** The oldest tension
+   flagged in this project — Dijkstra's *Go To Statement Considered Harmful* vs.
+   Knuth's *Structured Programming with go to Statements* (1974) — cannot be
+   written, because that Knuth paper is not among his five ingested works and
+   TAOCP is excluded as paywalled. Dijkstra's side is richly represented. The
+   paper is freely available and was simply never queued; sourcing it is the whole
+   fix. Same failure mode as item 1.
+
+3. **Russell is not in the figure set.** The McCarthy → Russell row has said so
+   since it was written. No action needed unless the tension is wanted as a file —
+   the pattern itself is already doing its job as the corpus's standing
+   dissolution template (project-state.md §2), and it shaped several Phase 5
+   resolutions. Listed only so nobody re-discovers it as a defect.
+
+4. **`reynolds/definitional-interpreters-for-higher-order-programming-languages`
    contradicts its own attestation.** It carries `extraction: complete` while its
    body records that the separately published *Definitional Interpreters Revisited*
    retrospective "remains unmined". Found by a reynolds extraction agent. Fix is a
    scoping call: either the retrospective is a distinct work needing its own entry,
    or the attestation is overstated. Leaning toward the former.
 
-3. **Tier 4 attestations are unaudited.** See flags H.10. Four books
+5. **Tier 4 attestations are unaudited.** See flags H.10. Four books
    (`jones/software-development`, `sussman/SICP`, `church/introduction-to-mathematical-logic`,
    `hoare/CSP`) are attested on the union of several passes' coverage notes, with no
    single reader having seen the whole work. Cheap mechanical audit available:
@@ -558,27 +596,27 @@ what tells you how to fix it.
    contiguous from 1 to EOF. Would have caught the church note that recorded spans
    as both complete and unread.
 
-4. **Tier 3 backlinks are unverified.** See flags H.8. 92 lessons across 7 figures
+6. **Tier 3 backlinks are unverified.** See flags H.8. 92 lessons across 7 figures
    had their work-file links reconstructed from their own frontmatter after the
    writing agent died. Nothing is known to be wrong; spot-checking a sample against
    the named sources is cheap and has never been done.
 
-5. **Four works have no obtainable source.** See flags H.7 — two Kolmogorov papers
+7. **Four works have no obtainable source.** See flags H.7 — two Kolmogorov papers
    behind abstract-only pages, Turing's *Computability and lambda-definability*,
    and a Valiant entry whose URL is a recorded talk. Decide per work: source it,
    substitute it, or drop it from the figure's list. Until then 446/450 is the
    attestation ceiling and 95/95 figures is correct only because these are marked
    `SOURCE-UNOBTAINABLE`.
 
-6. **Chapter-offset records disagree.** `ullman/mining-of-massive-datasets`'s
+8. **Chapter-offset records disagree.** `ullman/mining-of-massive-datasets`'s
    coverage note and `scratchpad/ullman/CHAPTERS.md` differ by ~30 lines on where
    chapters 6 and 7 begin. Harmless today, but resume points are read off these.
 
-7. **The 11 single-lesson works were never spot-checked.** See flags section G.
+9. **The 11 single-lesson works were never spot-checked.** See flags section G.
    A work yielding exactly one lesson is either genuinely thin or a died-early
    extraction; the two are indistinguishable without opening the source.
 
-8. **Standing questions from earlier phases:** Péter and Kleene lesson grounding,
+10. **Standing questions from earlier phases:** Péter and Kleene lesson grounding,
    and the self-reported chapter gaps in Goldberg.
 
 ## Open before Phase 3 can start

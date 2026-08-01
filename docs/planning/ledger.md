@@ -208,22 +208,64 @@ informed the layer-placement reasoning even though every member was accepted:
 - **Knuth** — TAOCP itself excluded from ingestion per §3 (paywalled/DRM'd); only his freely available papers are usable sources, a real constraint on what a Knuth lesson file could actually cite.
 
 ## Tension index
-Lightweight status table only — full reasoning lives in each `tension` file in
-the bundle once Phase 5 runs. This table is for quick scanning, not a
-duplicate of the content.
+Status table only — full reasoning lives in each `tension` file in
+`bundle/tensions/`. Phase 5 closed 2026-08-01: 51 candidates examined across six
+thematic slices, 21 judged real and resolved, 30 dissolved (recorded with
+their reasoning in `phase5-dissolved.md`).
 
-| tension | figures | status | bundle file |
-|---|---|---|---|
-| McCarthy → Russell | McCarthy, Russell (Russell not yet in figure set — add to queue) | open | not yet created |
-| goto considered harmful, or not | Dijkstra, Knuth | open | not yet created |
+Every resolution is marked `resolved-by-llm` — an agent judgement, not Nathan's.
+Each file names the decision, the reasoning, and the strongest counter-argument
+against itself, so any of them can be overturned on review.
 
-Second row newly flagged at Phase 2 close (2026-07-24), now that both figures
-are accepted — pre-cited as an expected case in project-state.md thread 4.
-Dijkstra's "Go To Statement Considered Harmful" vs. Knuth's "Structured
-Programming with go to Statements" (1974), which argues goto has legitimate
-uses the pure-structured-programming line overstates. Full resolution is
-Phase 5's job; flagging here per Phase 2's "note any immediately visible
-tension" duty.
+| tension | figures | status |
+|---|---|---|
+| [Handing off a system: fund the written design or fund the overlap with the people who hold it](../../bundle/tensions/can-a-written-record-carry-the-theory.md) | naur, parnas | resolved-by-llm |
+| [What establishes that a system too large to hold in one head is correct](../../bundle/tensions/confidence-in-a-large-system.md) | dijkstra, chaitin | resolved-by-llm |
+| [Whether one facility may have two costs: cost models against uniform generality](../../bundle/tensions/cost-model-vs-uniform-generality.md) | wirth, kay, ingalls | resolved-by-llm |
+| [Should the notation you design in be made to run](../../bundle/tensions/executable-design-notation.md) | hoare, kay | resolved-by-llm |
+| [Whether the first artifact of a project is allowed to run](../../bundle/tensions/first-artifact-runnable-or-not.md) | brooks, abrial, chaitin | resolved-by-llm |
+| [Whether expected access is a legitimate input to the structure of stored data](../../bundle/tensions/invariants-or-access-paths-shape-stored-structure.md) | codd, bachman, ullman | resolved-by-llm |
+| [When a subsystem runs to tens of thousands of lines, is that a measurement of the problem or of the attempt](../../bundle/tensions/is-current-size-evidence-of-intrinsic-difficulty.md) | brooks, kay | resolved-by-llm |
+| [Does every operation in a replicated service pass through one agreed order, or does each operation declare the order it needs](../../bundle/tensions/one-agreed-log-vs-per-operation-ordering.md) | lamport, liskov | resolved-by-llm |
+| [One name over two realizations: proof of a good abstraction or a false claim of equivalence](../../bundle/tensions/one-interface-over-two-cost-profiles.md) | hoare, wirth | resolved-by-llm |
+| [Whether a type can be a part of one universal domain, or must be a rule about what may be said](../../bundle/tensions/one-universal-domain-vs-type-as-a-restriction-on-what-may-be-said.md) | scott, reynolds | resolved-by-llm |
+| [Whether to buy a construct by weakening a reasoning principle or to decline the construct](../../bundle/tensions/pay-the-reasoning-principle-vs-refuse-the-feature.md) | reynolds | resolved-by-llm |
+| [Where in the workflow the correctness argument attaches](../../bundle/tensions/proof-that-leads-construction-vs-analysis-that-consumes-the-artifact.md) | sifakis, dijkstra, milner | resolved-by-llm |
+| [A question with no principled answer: delete the vocabulary or publish a menu of answers](../../bundle/tensions/remove-the-question-vs-answer-it-from-a-menu.md) | hoare | resolved-by-llm |
+| [When a construct is provably redundant, is that a reason to reject it or a reason to ship it?](../../bundle/tensions/simulability-kills-a-construct-vs-simulability-proves-nothing.md) | stonebraker, abiteboul | resolved-by-llm |
+| [When a partition makes an invariant uncheckable, does the node withhold the answer or emit it and repair afterwards](../../bundle/tensions/stall-or-compensate-under-partition.md) | brewer, lamport, lynch | resolved-by-llm |
+| [When a program commits to what a thing is: enforced declaration against deferred binding](../../bundle/tensions/static-declaration-vs-late-binding.md) | wirth, kay | resolved-by-llm |
+| [Whether the substrate's cost is a specification or a temporary obstacle](../../bundle/tensions/substrate-cost-as-given-or-as-revisable.md) | kay, wirth, lampson, hoare | resolved-by-llm |
+| [What standard of acceptance a component boundary is entitled to demand](../../bundle/tensions/tolerance-vs-demonstrated-correctness-at-a-boundary.md) | cox, abrial, dijkstra | resolved-by-llm |
+| [Whether to delete a distinction today's operations cannot observe](../../bundle/tensions/unobservable-distinctions-banned-vs-deliberately-kept.md) | jones | resolved-by-llm |
+| [What evidence promotes a slow composition into a fast primitive](../../bundle/tensions/what-evidence-promotes-a-slow-composition-into-a-fast-primitive.md) | ritchie, lampson | resolved-by-llm |
+| [Who owns the efficiency budget an abstraction spends](../../bundle/tensions/who-owns-the-efficiency-budget.md) | wilkes, hoare | resolved-by-llm |
+
+### The two rows that were here before Phase 5, and why neither became a file
+
+Both predate extraction, and both turn out to be unwritable against the corpus
+as built. They are kept rather than deleted because the reasoning is the point.
+
+**McCarthy → Russell** — Russell was never added to the figure set; the row said
+so when it was written. No tension file is possible. This one lost nothing by
+being unwritable: it survives as the corpus's *resolution pattern* rather than as
+a tension, cited in the frozen project-state.md §2 and used as the first
+dissolution to try throughout Phase 5. It dissolved the Backus Section D flag and
+shaped several of the 21 resolutions. A methodological reference, not an entry.
+
+**goto considered harmful, or not** — Knuth's *Structured Programming with go to
+Statements* (1974) is not among his five ingested works, and TAOCP is excluded as
+paywalled per §3. Dijkstra's side is richly represented; Knuth's side cannot be
+cited at all, so the file would be a tension against a lesson that does not
+exist. Tracked as Phase 9 cleanup, and the fix is sourcing the 1974 paper, which
+is freely available and was simply never queued.
+
+Both are the same failure mode a spotting agent independently hit on Cox vs.
+Brooks and named **NOT IN THE CORPUS**: these tensions were flagged from general
+knowledge of the figures, before extraction, and a flag written that way does not
+survive contact with what was actually ingested. Worth remembering the next time
+a tension is flagged early — the flag records a hypothesis about the corpus, not
+a fact about it.
 
 ## Two tiers of extraction confidence — read this before trusting `extraction: complete`
 
