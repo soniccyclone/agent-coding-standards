@@ -1,19 +1,19 @@
 ---
 type: record
 title: Phase 7 Selection Record
-description: How the 80 candidate claims for DISTILLED.md were selected, and the 57 that were struck. The kill list is the more useful half. Run 2026-08-02.
+description: How the 80 candidate claims for DISTILLED.md were selected, and the 54 that were struck. The kill list is the more useful half. Run 2026-08-02.
 tags: [phase7, distillation, okf]
 ---
 
 # Phase 7 — Selection Record
 
-DISTILLED.md holds 23 claims. They were chosen from 80 candidates by a
-process built to keep my own reading bias out of it, because the obvious failure
-mode was writing the document from whatever I happened to have read most recently.
+DISTILLED.md holds 26 claims, chosen from 80 candidates by a process built to
+keep my own reading bias out of it — the obvious failure mode being to write the
+document from whatever I happened to have read most recently.
 
 **Nomination.** Ten agents, one per subdomain plus one harvesting the 21 resolved
 tensions, each capped at 8 candidates and told they were competing for ~20 slots.
-Working per-subdomain rather than by recall means no region of the corpus goes
+Working per-subdomain rather than from recall means no region of the corpus goes
 unread. The tension harvester was told to discard the tension framing and keep
 only the switching conditions, since a rule with a stated condition changes
 behaviour where a bare imperative gets skimmed past.
@@ -24,8 +24,33 @@ behave differently?* Nominators' own arguments for why their claim was not a
 default were passed along explicitly marked as advocacy rather than evidence.
 Survival required 2 of 3 keep votes.
 
-**Result: 57 struck or merged, 23 kept (71%% killed).** 15 were unanimous.
-A pass that killed little would have meant the reviewers were not working.
+**Result: 54 struck or merged, 26 kept (67% killed).** 16 were unanimous. A pass
+that killed little would have meant the reviewers were not working.
+
+## Independent convergence, which is the strongest quality signal here
+
+All three reviewers independently reported heavy duplication *across* slices.
+Lampson's one-authoritative-representation rule was nominated three times, the
+Torvalds stability boundary twice, buffer-absorbs-variance two to three times, and
+timeout-is-not-evidence three times — each by agents working different subdomains
+who could not see each other's nominations.
+
+That convergence is worth more than any single nominator's argument. A claim that
+surfaces independently from distributed systems, from operating systems, and from
+databases is load-bearing rather than an artifact of one slice's reading. The
+duplicates were merged, so the count understates how much of the corpus points at
+those particular claims.
+
+## What got struck, in the reviewers' own words
+
+The recurring strike categories were consistent across all three: restatements of
+"make illegal states unrepresentable", "parse don't validate", "validate at
+boundaries", exhaustive matching, and avoiding reflection — all judged things a
+competent agent already does. The second category was specialist material that
+only bites in contexts most codebases never enter: query optimizer internals,
+amortized-bound analysis, CAP-per-invariant reasoning. One reviewer noted that
+several nominators "padded abstractions with vivid examples", which is worth
+watching for on any re-run.
 
 ## Why the kill list is the useful half
 
@@ -34,6 +59,16 @@ it was contributing something non-obvious. Most were struck as things a competen
 coding agent already does. That makes this a record of what turns out to be
 commonplace, which is exactly the material that would quietly bloat this document
 on any future re-run.
+
+## A correction worth recording
+
+The first version of DISTILLED.md was built on a stale tally. I read the three
+verdict files while the workflow was still running, treated them as final, and
+published 23 survivors. Reviewer 3 subsequently rewrote its file, and the correct
+tally is 26 survivors — six claims added, three removed. The standing rule on this
+project is to diagnose from disk rather than from a workflow's return value, and
+the corollary I missed is that disk is only authoritative once the writer has
+finished. A completion signal was available and I did not wait for it.
 
 ---
 
@@ -52,8 +87,8 @@ on any future re-run.
     - wrapper sits relative to the call it wraps.
     - merge: Merges into 42: both say an interposition point is worthless
     - while a path around it survives.
-    - strike: Narrow instance; verifying a decorator actually sits on the path
-    - you care about is ordinary code reading.
+    - strike: Narrow language trivia; in the common case the decorated name
+    - already captures recursive calls, and agents trace call paths anyway.
 
 **[2] tarjan** (0/3 keep)
 
@@ -67,8 +102,8 @@ on any future re-run.
     - most codebases never enter.
     - strike: Only bites under hard deadlines or strict tail-latency budgets;
     - most codebases never enter that context.
-    - strike: Amortized-vs-worst-case only bites under hard deadlines or p99
-    - SLOs, a specialist context most codebases never enter.
+    - strike: Only bites under hard-deadline or p99 obligations most codebases
+    - never state; specialist context.
 
 **[3] tarjan** (0/3 keep)
 
@@ -83,8 +118,8 @@ on any future re-run.
     - cannot re-derive.
     - merge: Merges into 35: same behaviour change, do not tidy code whose odd
     - shape encodes a reason you cannot see.
-    - merge: Merges into 58: do not rewrite code whose reason you have not
-    - reconstructed.
+    - merge: Merges into 35: same instruction, leave oddly-shaped code with a
+    - reason alone and record the reason.
 
 **[4] denning/corbato** (0/3 keep)
 
@@ -98,8 +133,8 @@ on any future re-run.
     - for a capacity problem.
     - merge: Merges into 36: both stop the reflex of enlarging the knob
     - instead of fixing the mismatch.
-    - merge: Merges into 36: same decision, refusing to raise the knob instead
-    - of fixing the mismatch.
+    - merge: Merges into 22: raising the knob does not fix a structural rate
+    - or policy mismatch.
 
 **[5] sussman** (1/3 keep)
 
@@ -113,8 +148,8 @@ on any future re-run.
     - argument before adding attempts changes real code.
     - merge: Merges into 39: both constrain reflexive retry by demanding a
     - bound and an argument before more attempts.
-    - strike: Separating transient from permanent failures before retrying is
-    - standard retry practice a competent agent already applies.
+    - merge: Merges into 18: retry and timeout discipline belongs in one claim
+    - about what repetition and expiry buy.
 
 **[6] karp/edmonds** (0/3 keep)
 
@@ -128,8 +163,8 @@ on any future re-run.
     - already default practice for competent agents.
     - strike: Agents already sort explicitly when order matters; pinning every
     - tie-break rarely changes a diff.
-    - strike: Too abstract; 'pin the selection rule and note what it buys'
-    - rarely changes any concrete edit.
+    - strike: Too abstract to act on; agents already pin sort keys and tie-
+    - breaks when output determinism matters.
 
 **[7] church/sussman** (0/3 keep)
 
@@ -144,35 +179,8 @@ on any future re-run.
     - before adding a fast path.
     - strike: Agents do not add speculative fast paths; avoiding premature
     - optimisation is already the default.
-    - strike: Micro-optimization guidance; agents already measure before
-    - adding fast paths and rarely add speculative ones.
-
-**[10] liskov** (1/3 keep)
-
-  An effect must not become visible before it becomes durable: make the
-  readable point and the durable point the same point, and treat any window
-  where a reader can observe something a crash would erase as a defect no
-  matter how narrow (Liskov).
-
-    - merge: Merges into 9: same decision about when an effect is allowed to
-    - escape the atomic unit.
-    - keep: Agents ack before the write is stable by default; this forbids
-    - visible-before-durable and stops double-paying durability.
-    - merge: Merges into 9: same ordering decision between commit point and
-    - externally visible effect.
-
-**[11] codd/fagin** (1/3 keep)
-
-  Shape stored data from what determines what — the time-invariant
-  dependencies of the domain — not from today's access patterns, and split
-  exactly where a dependency forces it and no further (Codd, Fagin).
-
-    - keep: Inverts the prevailing 'design the schema around your queries'
-    - default that agents follow unprompted.
-    - merge: Merges into 61: the actionable core is that derived and
-    - denormalised data must stay recomputable from one authority.
-    - strike: Normalize by dependencies and do not denormalize prematurely is
-    - already the default schema instinct.
+    - strike: Covered by the default measure-before-optimizing habit; agents
+    - already benchmark a guard against the real workload.
 
 **[12] ullman** (0/3 keep)
 
@@ -185,7 +193,8 @@ on any future re-run.
     - derived-state obligation.
     - merge: Merges into 61: scheduled reconciliation is the rebuild path 61
     - already demands ship with derived state.
-    - merge: Merges into 61: derived state ships with its rebuild path.
+    - merge: Merges into 61: derived state ships with a rebuild path; the
+    - scheduled sweep is that rule applied.
 
 **[13] ullman** (0/3 keep)
 
@@ -197,8 +206,8 @@ on any future re-run.
     - codebases.
     - strike: Query-optimizer trivia; only bites when writing UDFs against an
     - engine that could otherwise rewrite.
-    - strike: Query-engine trivia; UDFs blocking optimization is domain
-    - knowledge, not transferable thinking.
+    - strike: Query-engine trivia; barely transfers outside planners and
+    - rarely decides anything in ordinary application code.
 
 **[14] vardi** (0/3 keep)
 
@@ -211,8 +220,8 @@ on any future re-run.
     - ranks invariants.
     - strike: Automatic conflict repair is a specialist context, and ranking
     - invariants is too abstract to apply unprompted.
-    - strike: Automatic conflict repair with a priority ladder is a specialist
-    - context most codebases never enter.
+    - strike: Abstract and rarely live; most merge and ON CONFLICT paths have
+    - no ladder worth declaring.
 
 **[15] fagin** (0/3 keep)
 
@@ -225,8 +234,8 @@ on any future re-run.
     - shipping guidance around a permissive one.
     - strike: Restates 'make illegal states unrepresentable', a maxim agents
     - already reach for by default.
-    - merge: Merges into 77: make the illegal case unconstructible rather than
-    - documented against.
+    - strike: Design APIs that are hard to misuse is already a default agent
+    - principle, phrasing aside.
 
 **[16] wirth** (0/3 keep)
 
@@ -239,8 +248,8 @@ on any future re-run.
     - derived-state-needs-a-rebuild-path case.
     - merge: Merges into 10: same rule that durability of state may not be
     - traded for speed silently.
-    - merge: Merges into 9: durability boundary versus volatile speedup is the
-    - same commit-ordering judgement.
+    - merge: Merges into 10: both govern the gap between what is durable and
+    - what the system exposes or trusts.
 
 **[20] lampson** (1/3 keep)
 
@@ -253,8 +262,8 @@ on any future re-run.
     - different, more survivable design.
     - strike: TTL-plus-renewal is already the agent default for caches;
     - invalidation registries are the rarer choice.
-    - merge: Merges into 61: a lease is the discardable-derived-copy rule
-    - applied to cached facts.
+    - merge: Merges into 61: leases are the disposable-derived-state rule
+    - applied to cache coherence.
 
 **[21] jones/sussman** (0/3 keep)
 
@@ -268,35 +277,8 @@ on any future re-run.
     - reformulation for the advice to help.
     - strike: Too abstract to apply without already knowing the monotone
     - formulation; append-only is a common suggestion anyway.
-    - strike: Monotonic/CRDT framing is specialist; most shared state has
-    - genuine retractions and cannot be reformulated as addition.
-
-**[22] hoare** (1/3 keep)
-
-  Multiplexing independent work onto one queue couples it, and a bigger buffer
-  only delays the diagnosis (Hoare): buffering absorbs variance, never a rate
-  deficit, so when a shared pipeline stalls give each stream its own
-  backpressure path rather than more capacity.
-
-    - keep: Blocks the near-universal 'raise the queue size or worker count'
-    - response to a backlog.
-    - merge: Merges into 36: near-verbatim restatement of the buffer-absorbs-
-    - variance claim.
-    - merge: Merges into 36: identical Hoare buffer-versus-rate-deficit claim.
-
-**[23] liskov** (1/3 keep)
-
-  Your data representation sets the concurrency ceiling, not your concurrency
-  constructs (Liskov): if independent items share one container, every touch
-  contends for the whole thing, and no amount of finer locking or extra
-  threads recovers what the type gave away.
-
-    - keep: Redirects the scaling answer from more locks/threads to changing
-    - the granularity of the data itself.
-    - merge: Merges into 57: contention is a representation problem, which is
-    - 57's general and more concrete instruction.
-    - merge: Merges into 57: the concurrency instance of changing the
-    - representation instead of the control flow.
+    - merge: Merges into 23: answer contention by changing the data shape, not
+    - by adding synchronization.
 
 **[24] lamport** (1/3 keep)
 
@@ -310,8 +292,8 @@ on any future re-run.
     - concrete rule about the observable window.
     - keep: Replaces the plausible three-case interleaving walkthrough agents
     - actually produce with a per-variable invariant check.
-    - merge: Merges into 80, which states the same invariant discipline as a
-    - checkable rule about the window.
+    - merge: Merges into 80, which states the same discipline as a concrete
+    - rule about yield points inside the invariant window.
 
 **[25] godel/rabin** (0/3 keep)
 
@@ -325,8 +307,8 @@ on any future re-run.
     - search' is unanswerable in practice.
     - strike: Decidability-at-feature-interaction only bites in DSL and
     - config-language design; too abstract elsewhere.
-    - merge: Merges into 45: both decide whether an extension point gets added
-    - to a format or tool at all.
+    - strike: Specialist DSL and language-design concern; most codebases never
+    - make the decision it governs.
 
 **[26] turing/schonfinkel** (0/3 keep)
 
@@ -339,10 +321,10 @@ on any future re-run.
     - as the problem.
     - strike: Too abstract; no concrete decision flips that 61's rebuild-path
     - rule does not already cover.
-    - strike: Too abstract to apply; pricing a precondition requires already
-    - knowing which guarantee is tractable.
+    - strike: Too abstract to apply without already knowing whether the
+    - precondition is hard; supplies no test.
 
-**[27] curry/kleene/scott** (1/3 keep)
+**[27] curry/kleene/scott** (0/3 keep)
 
   Separate the layer that builds things from the layer that approves them
   (Curry): make representations total and validity a queryable predicate,
@@ -354,8 +336,8 @@ on any future re-run.
     - validation errors when it matters.
     - strike: Collecting all parse or validation errors rather than raising on
     - the first is already standard practice.
-    - keep: Total parse returning error nodes plus witnesses changes every
-    - loader and diagnostic; agents throw on the first bad element.
+    - merge: Merges into 79: widen the result type and carry the defect
+    - instead of throwing at the first bad element.
 
 **[28] church** (0/3 keep)
 
@@ -369,8 +351,8 @@ on any future re-run.
     - no concrete test.
     - strike: Support-matrix accounting is unactionable in a coding session;
     - the cost never lands in any diff.
-    - strike: Adding or dropping a supported platform is a rare decision and
-    - the assumption accounting is too abstract to run.
+    - strike: Unfalsifiable in the moment; naming the lost assumption rarely
+    - changes whether a supported backend is accepted.
 
 **[29] church** (0/3 keep)
 
@@ -383,8 +365,8 @@ on any future re-run.
     - already default.
     - strike: Naming a shared assumption once instead of inlining it forty
     - times is default DRY behaviour.
-    - strike: Naming an assumption once instead of inlining it forty times is
-    - plain DRY, already default.
+    - strike: Extracting a named constant or single clause instead of inlining
+    - an assumption is already default DRY practice.
 
 **[30] sussman/turing** (0/3 keep)
 
@@ -398,8 +380,8 @@ on any future re-run.
     - renaming is already default.
     - strike: Agents already prefer explicit registries and enums over getattr
     - or class-name string dispatch.
-    - strike: Narrow: string-keyed registries and reflection are a small
-    - corner, and rename-safety there is standard care.
+    - strike: Preferring explicit tokens over reflection and class-name
+    - dispatch is already default agent advice.
 
 **[32] vardi/fagin** (0/3 keep)
 
@@ -412,8 +394,8 @@ on any future re-run.
     - error worth rejecting.
     - strike: Narrow to resolvers and matchers, and rejecting ambiguity is
     - frequently the right call anyway.
-    - strike: Multiple-valid-answers modelling is specialist; most resolvers
-    - legitimately treat ambiguity as caller error.
+    - merge: Merges into 79: several acceptable answers is another case for a
+    - wider return type rather than an exception.
 
 **[33] lampson/torvalds/wirth** (0/3 keep)
 
@@ -426,8 +408,8 @@ on any future re-run.
     - rebuild-function action.
     - merge: Merges into 61: same Lampson claim, and 61 states the concrete
     - rebuild-in-the-same-change action.
-    - merge: Merges into 61, the identical Lampson claim stated with the
-    - rebuild function.
+    - merge: Merges into 61, the same Lampson claim stated with the concrete
+    - rebuild-function requirement.
 
 **[34] torvalds/cutler** (0/3 keep)
 
@@ -439,7 +421,21 @@ on any future re-run.
     - same call-site action.
     - merge: Merges into 64: duplicate claim, and 64 names the concrete
     - commit-shape action.
-    - merge: Merges into 64, the identical Torvalds stability-boundary claim.
+    - merge: Merges into 64, the same Torvalds claim stated with the concrete
+    - no-shim call-site rule.
+
+**[36] hoare/wirth** (1/3 keep)
+
+  A buffer or queue absorbs variance, never a rate deficit; one that keeps
+  needing to be enlarged is a measurement telling you the two sides do not
+  match, and the fix is on one of the sides (Hoare, Wirth).
+
+    - merge: Merges into 22, which states the same buffer claim plus the per-
+    - stream backpressure remedy.
+    - keep: Blocks the universal reflex of raising queue depth or worker count
+    - instead of matching rates or shedding load.
+    - merge: Merges into 22, which carries the same buffer claim plus the per-
+    - stream backpressure remedy.
 
 **[37] torvalds** (0/3 keep)
 
@@ -451,8 +447,21 @@ on any future re-run.
     - fast, wrong general advice for application code.
     - strike: Context-dependent and contrarian; moving checks to compile time
     - is default, and limp-versus-abort is a product judgement.
-    - merge: Merges into 77: move the check into construction so the condition
-    - is unrepresentable.
+    - strike: Half is the default move-checks-earlier habit; the limp-instead-
+    - of-abort half is kernel-specific and contradicts fail-fast.
+
+**[38] brooks/hoare** (1/3 keep)
+
+  State what you do not guarantee as precisely as what you do, and make the
+  code reject it, because a running system always answers and whatever it
+  answers becomes the contract (Brooks, Hoare).
+
+    - merge: Merges into 51: both stop accidental behaviour from becoming a
+    - contract.
+    - keep: Agents coerce and fall back by default; rejecting inputs the spec
+    - is silent about is a real behaviour flip.
+    - strike: Validate at boundaries and reject undefined input is a stated
+    - default; agents already refuse malformed input.
 
 **[39] hoare** (1/3 keep)
 
@@ -464,8 +473,8 @@ on any future re-run.
     - the progress signal is marginal.
     - keep: Forces a bound on hidden retry or background work plus a progress
     - signal, instead of opaque exponential backoff.
-    - strike: Bounding background work and exposing progress is ordinary API
-    - hygiene for long operations.
+    - merge: Merges into 52: hidden retries and background work are cost and
+    - failure the interface must not conceal.
 
 **[40] liskov/dijkstra** (0/3 keep)
 
@@ -477,7 +486,8 @@ on any future re-run.
     - not-evidence rule.
     - merge: Merges into 18: same timeout-is-not-evidence claim, stated less
     - concretely.
-    - merge: Merges into 18: what a timeout may be trusted to establish.
+    - merge: Merges into 18, the same timing-versus-safety claim with the
+    - stronger fencing and evidence requirement.
 
 **[41] reenskaug** (0/3 keep)
 
@@ -490,8 +500,8 @@ on any future re-run.
     - rather than summarizing class trees.
     - strike: Agents already orient by grepping call sites and tracing entry
     - points, not by reading class hierarchies.
-    - strike: Tracing call paths from a real entry point is already how a
-    - competent agent orients in an unfamiliar repo.
+    - strike: Agents already orient by grepping entry points and tracing call
+    - paths, not by summarizing class hierarchies.
 
 **[42] ungar** (1/3 keep)
 
@@ -504,8 +514,8 @@ on any future re-run.
     - same change.
     - keep: Converts additive non-breaking habit into migrate-or-do-not-
     - introduce; agents ship the accessor and leave direct access alive.
-    - merge: Merges into 64: migrate every caller in the same change rather
-    - than leaving the old route alive.
+    - merge: Merges into 64: do not leave the old path alive when you
+    - introduce the new one.
 
 **[44] sussman** (0/3 keep)
 
@@ -518,8 +528,8 @@ on any future re-run.
     - before it is introduced.
     - strike: The state-clustering test needs the answer before it can be
     - applied; preferring functions to stateful classes is already advised.
-    - merge: Merges into 31: whether the abstraction is earned at all,
-    - measured rather than assumed.
+    - strike: Preferring functions over a stateful class for uncoupled state
+    - is already a default agent inclination.
 
 **[46] reenskaug** (0/3 keep)
 
@@ -533,8 +543,8 @@ on any future re-run.
     - default practice in typed code.
     - strike: Type checkers already enforce exhaustive matches, and agents
     - write per-field code rather than catch-alls.
-    - strike: Exhaustive matches and completeness checks are already default
-    - in typed codebases and enforced by linters.
+    - strike: Exhaustive matches and lint-enforced case coverage are already
+    - default; agents reach for them unprompted.
 
 **[47] sutherland/ingalls** (0/3 keep)
 
@@ -547,10 +557,10 @@ on any future re-run.
     - work for a niche class of solvers.
     - strike: Agents already implement the general case first; analyzable-
     - subset-only solvers are rare in ordinary code.
-    - strike: Fast-path build order for solvers, optimizers, and parsers is a
-    - specialist context most codebases never enter.
+    - strike: Build-order rule that bites mainly in solvers, planners and
+    - optimizers, a context most codebases never enter.
 
-**[48] chuck-moore/sutherland** (1/3 keep)
+**[48] chuck-moore/sutherland** (0/3 keep)
 
   Before writing code that recovers information a format threw away — parsers,
   normalizers, intent heuristics — check whether you control the format, and
@@ -561,8 +571,8 @@ on any future re-run.
     - procedure that copes with it.
     - merge: Merges into 57: both say fix the representation rather than build
     - machinery around it.
-    - keep: Deleting the parser by fixing the upstream representation is a
-    - move agents never propose; they write the adapter.
+    - merge: Merges into 57: fix the representation rather than writing more
+    - code to cope with it.
 
 **[50] steele** (0/3 keep)
 
@@ -575,8 +585,8 @@ on any future re-run.
     - codebases barely have.
     - strike: Documentation-budget guidance; reallocating prose changes no
     - code and most codebases have few unchecked paths.
-    - strike: Reallocating comment budget barely changes code; documenting
-    - dangerous paths more heavily is already default.
+    - strike: Affects only documentation prose; document dangerous code
+    - carefully is close enough to a default to change nothing.
 
 **[53] hoare/liskov** (0/3 keep)
 
@@ -588,8 +598,8 @@ on any future re-run.
     - decision.
     - strike: Low-stakes placement question; keeping helpers out of classes
     - unless they need internals is close to default.
-    - strike: Method-versus-free-function placement is style-level; the
-    - asymptotic test rarely changes behaviour.
+    - strike: Free function versus method is low-stakes style; agents already
+    - resist bolting helpers onto unrelated classes.
 
 **[54] sussman/landin** (0/3 keep)
 
@@ -601,7 +611,8 @@ on any future re-run.
     - practical code.
     - strike: Equivalence-widening from a new accessor or hash is a specialist
     - concern that rarely bites in practice.
-    - merge: Merges into 51: do not make observable more than callers need.
+    - strike: Subtle observability-of-equivalence concern that almost never
+    - decides a real change; too specialist for twenty slots.
 
 **[55] jones/hoare** (0/3 keep)
 
@@ -614,10 +625,10 @@ on any future re-run.
     - refactors.
     - merge: Merges into 80: both forbid moving reads or writes across a point
     - where another party can observe or interfere.
-    - merge: Merges into 80: the adversarial-gap reading is that rule's
-    - justification.
+    - merge: Merges into 80: both forbid treating a window in shared-state
+    - code as if nothing else can run.
 
-**[56] sussman** (0/3 keep)
+**[56] sussman** (1/3 keep)
 
   If a conditional's arms grow with the number of call sites rather than with
   the problem, the caller should be handing over the behavior itself instead
@@ -627,8 +638,8 @@ on any future re-run.
     - textbook default advice.
     - strike: Replace-conditional-with-strategy is a textbook refactoring
     - agents already know and apply.
-    - strike: Replacing a growing enum dispatch with passed-in behaviour is
-    - textbook open/closed and conflicts with keeping control flow visible.
+    - keep: Growth-rate diagnostic is concrete and non-default; agents append
+    - another enum arm without noticing the inverted dependency.
 
 **[59] parnas/liskov** (0/3 keep)
 
@@ -641,8 +652,8 @@ on any future re-run.
     - assertion consequence.
     - merge: Merges into 51: same do-not-promise-incidental-facts claim, and
     - 51 also covers the test suite.
-    - merge: Merges into 51, the more concrete statement of the same do-not-
-    - promise-incidentals rule.
+    - merge: Merges into 51, the same do-not-promise-incidentals rule with a
+    - concrete test-suite consequence.
 
 **[60] torvalds** (1/3 keep)
 
@@ -654,8 +665,8 @@ on any future re-run.
     - rest is style.
     - keep: Blocks the exception-swallowing decorator or context manager
     - agents produce when asked to DRY error handling.
-    - merge: Merges into 52: the same rule about what an abstraction may not
-    - hide.
+    - merge: Merges into 52: a decorator that swallows an exception is hiding
+    - failure, which 52 already forbids.
 
 **[65] brooks/kay** (0/3 keep)
 
@@ -671,8 +682,8 @@ on any future re-run.
     - already need to have.
     - strike: Rewrite-scope estimation is a rare decision and the conformity
     - fraction is unmeasurable in practice.
-    - strike: Rewrite-versus-confine on an 8k module is a rare call and the
-    - external-format fraction is not estimable in practice.
+    - strike: Estimating a conformity fraction is unfalsifiable in practice
+    - and rarely the decision actually in front of the agent.
 
 **[66] codd/bachman/ullman** (0/3 keep)
 
@@ -689,8 +700,8 @@ on any future re-run.
     - stated rebuild path.
     - merge: Merges into 61: same recomputable-derived-data rule with extra
     - database-specific detail.
-    - merge: Merges into 61, the same derived-data rule stated more
-    - concretely.
+    - merge: Merges into 61, which carries the same recomputable-and-
+    - discardable rule for derived state.
 
 **[67] wirth/kay** (0/3 keep)
 
@@ -707,8 +718,8 @@ on any future re-run.
     - trusting casts is already default.
     - strike: Validating parse at deserialization boundaries is already
     - default; agents reach for schema validators unprompted.
-    - strike: Validating data at trust boundaries instead of trusting a cast
-    - is an explicit default.
+    - strike: Validating parse at deserialization boundaries is the stated
+    - default; agents already distrust external data.
 
 **[68] jones** (0/3 keep)
 
@@ -724,8 +735,8 @@ on any future re-run.
     - change a deletion decision.
     - strike: Requires already knowing the domain answer to apply, and mostly
     - licenses keeping unused state.
-    - strike: Too abstract, and biases toward retaining unobservable state,
-    - which contradicts the deletion default it would have to beat.
+    - strike: Too abstract to apply without already knowing the domain model;
+    - rarely the live decision in a simplification pass.
 
 **[69] hoare/wirth** (0/3 keep)
 
@@ -741,8 +752,8 @@ on any future re-run.
     - hides the cost.
     - merge: Merges into 52: same rule that a call hiding a network or cost
     - difference needs its own name.
-    - merge: Merges into 52: local versus remote must not share one name that
-    - hides the cost.
+    - merge: Merges into 52: a name that hides whether the call crosses the
+    - network is hiding cost.
 
 **[70] hoare** (1/3 keep)
 
@@ -758,7 +769,8 @@ on any future re-run.
     - distinction as the first move rather than a new flag.
     - merge: Merges into 45: both refuse the new config knob and attack the
     - underlying need first.
-    - merge: Merges into 45: try deletion before adding the option or hook.
+    - merge: Merges into 45: try deleting the distinction before adding a
+    - knob, hook or option.
 
 **[71] ritchie/lampson** (0/3 keep)
 
@@ -774,8 +786,8 @@ on any future re-run.
     - adjudicable from the rule as stated.
     - strike: Applies only to platform or library work, and it pushes an agent
     - toward adding foundation primitives.
-    - strike: Noticing five hand-rolled copies and responding is already
-    - default; the substrate-pricing twist is unactionable.
+    - merge: Merges into 45: repeated workarounds and extension requests are
+    - the same evidence that a primitive is priced wrong.
 
 **[72] brewer/lamport/lynch** (0/3 keep)
 
@@ -791,8 +803,8 @@ on any future re-run.
     - strike: Specialist partition-design content most codebases never touch.
     - strike: Per-invariant partition analysis is specialist distributed-
     - systems work; the safety core is already in 18.
-    - strike: Per-invariant partition behaviour only bites in multi-region
-    - replicated systems, a specialist context.
+    - strike: Per-invariant partition analysis only bites for teams writing
+    - replication; most codebases never enter that context.
 
 **[73] dijkstra/lamport/jones** (0/3 keep)
 
@@ -804,8 +816,8 @@ on any future re-run.
     - concrete window rule.
     - strike: Formal loop-invariant derivation is ritual for ordinary code;
     - agents already state intent and tests before writing.
-    - strike: Loop invariants before loop bodies is ceremony for the ordinary
-    - loops that make up most code.
+    - strike: Rigor exhortation about construction order, hard to verify it
+    - happened, and largely subsumed by 74 and 80.
 
 **[75] lamport/lynch/liskov/hoare** (0/3 keep)
 
@@ -819,21 +831,22 @@ on any future re-run.
     - with the fencing mechanism.
     - merge: Merges into 18: the timing-buys-progress-not-safety asymmetry is
     - 18's core, stated there more concretely.
-    - merge: Merges into 18: timing assumptions buy progress, never safety.
+    - merge: Merges into 18, the same safety-versus-liveness asymmetry with
+    - concrete fencing and evidence requirements.
 
-**[76] lampson/church/post** (1/3 keep)
+**[77] hoare/sifakis/church/corbato** (1/3 keep)
 
-  Split any expensive or heuristic step into an untrusted search and a small
-  terminating checker — Lampson's rule that only the checker is trusted and
-  Church's that recognizing an answer must be decidable even when finding one
-  is not — and make every failure of the untrusted half bias toward refusal.
+  When a question keeps producing arbitrary answers, remove the ability to ask
+  it rather than answering it carefully — Hoare drops wall-clock time and
+  keeps only event order — and turn any property you keep re-checking into a
+  rule about how parts may be combined (Sifakis).
 
-    - merge: Merges into 77: both require the result to carry a checkable
-    - verdict rather than a bare value.
-    - keep: Splitting an expensive step into untrusted search plus a small
-    - trusted checker is an architecture agents do not choose.
-    - merge: Merges into 61: verify the derived or untrusted result before
-    - anything irreversible depends on it.
+    - keep: Truncated scans returned as clean results is a real silent bug; a
+    - third outcome plus witness is a type-level fix.
+    - strike: Restates 'make illegal states unrepresentable', which agents
+    - already invoke by default.
+    - strike: Make illegal states unrepresentable is already a default agent
+    - move; the deletion half lives in 45 and 70.
 
 **[78] church/steele/mcmillan** (0/3 keep)
 
@@ -847,21 +860,8 @@ on any future re-run.
     - replacement-construct action.
     - merge: Merges into 49: identical Church claim, and 49 adds the ship-the-
     - better-construct half.
-    - merge: Merges into 49, the more concrete statement of discipline-plus-
-    - escape-hatch.
-
-**[79] sifakis/clarke/emerson** (1/3 keep)
-
-  Give any procedure that can stop on a resource limit a third answer distinct
-  from pass and fail — Sifakis's 'I ran out of budget' — and make every
-  negative verdict hand back the witness that produced it (Clarke, Emerson).
-
-    - strike: 'Make illegal states unrepresentable' is a default agents
-    - already parrot and apply.
-    - keep: Widens the return type so truncation and budget exhaustion cannot
-    - be laundered into a clean verdict.
-    - merge: Merges into 27: failures hand back the witness instead of a bare
-    - false.
+    - merge: Merges into 49, which states the same dominated-middle claim plus
+    - the replacement-construct half.
 
 
 ---
@@ -905,6 +905,12 @@ on any future re-run.
   general mechanism plus its call sites is no smaller than writing out the
   cases, the generality is decorative and the honest move is to write out the
   cases.
+
+**[35] wirth** (3/3)
+
+  Code that compensates for a defect in a layer you do not control has no
+  clean form — confine it, label what is being worked around and what would
+  let you delete it, and do not refactor it into elegance (Wirth).
 
 **[49] church/steele/pike/hoare** (3/3)
 
@@ -980,23 +986,32 @@ on any future re-run.
   implementations with byte-identical output can differ by orders of magnitude
   in whether they run at all.
 
-**[35] wirth** (2/3)
+**[10] liskov** (2/3)
 
-  Code that compensates for a defect in a layer you do not control has no
-  clean form — confine it, label what is being worked around and what would
-  let you delete it, and do not refactor it into elegance (Wirth).
+  An effect must not become visible before it becomes durable: make the
+  readable point and the durable point the same point, and treat any window
+  where a reader can observe something a crash would erase as a defect no
+  matter how narrow (Liskov).
 
-**[36] hoare/wirth** (2/3)
+**[11] codd/fagin** (2/3)
 
-  A buffer or queue absorbs variance, never a rate deficit; one that keeps
-  needing to be enlarged is a measurement telling you the two sides do not
-  match, and the fix is on one of the sides (Hoare, Wirth).
+  Shape stored data from what determines what — the time-invariant
+  dependencies of the domain — not from today's access patterns, and split
+  exactly where a dependency forces it and no further (Codd, Fagin).
 
-**[38] brooks/hoare** (2/3)
+**[22] hoare** (2/3)
 
-  State what you do not guarantee as precisely as what you do, and make the
-  code reject it, because a running system always answers and whatever it
-  answers becomes the contract (Brooks, Hoare).
+  Multiplexing independent work onto one queue couples it, and a bigger buffer
+  only delays the diagnosis (Hoare): buffering absorbs variance, never a rate
+  deficit, so when a shared pipeline stalls give each stream its own
+  backpressure path rather than more capacity.
+
+**[23] liskov** (2/3)
+
+  Your data representation sets the concurrency ceiling, not your concurrency
+  constructs (Liskov): if independent items share one container, every touch
+  contends for the whole thing, and no amount of finer locking or extra
+  threads recovers what the type gave away.
 
 **[43] reenskaug** (2/3)
 
@@ -1018,9 +1033,15 @@ on any future re-run.
   for its permanent presence, and prefer the change that retires a mechanism
   over the one that adds a parallel path.
 
-**[77] hoare/sifakis/church/corbato** (2/3)
+**[76] lampson/church/post** (2/3)
 
-  When a question keeps producing arbitrary answers, remove the ability to ask
-  it rather than answering it carefully — Hoare drops wall-clock time and
-  keeps only event order — and turn any property you keep re-checking into a
-  rule about how parts may be combined (Sifakis).
+  Split any expensive or heuristic step into an untrusted search and a small
+  terminating checker — Lampson's rule that only the checker is trusted and
+  Church's that recognizing an answer must be decidable even when finding one
+  is not — and make every failure of the untrusted half bias toward refusal.
+
+**[79] sifakis/clarke/emerson** (2/3)
+
+  Give any procedure that can stop on a resource limit a third answer distinct
+  from pass and fail — Sifakis's 'I ran out of budget' — and make every
+  negative verdict hand back the witness that produced it (Clarke, Emerson).

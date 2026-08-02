@@ -27,10 +27,6 @@ timing, float formatting, and call counts are liabilities until you deliberately
 guarantee them (Steele, Hoare). Refuse to assert them in tests — a test that pins
 an incidental property converts it into a contract you never meant to sign.
 
-State what you do not guarantee as precisely as what you do, and make the code
-reject it. A running system always answers, and whatever it answers becomes the
-contract regardless of what the documentation says (Brooks, Hoare).
-
 Hide mechanism and location; never hide the possibility of failure or the cost.
 An operation that can fail, or that crosses a network, must not read like a cheap
 local one (Liskov, Dahl). The abstraction that makes a remote call look local is
@@ -46,12 +42,28 @@ partial guarantee gets read as a total one, so a check placed below the layer th
 knows what "correct" means may be sold as a performance improvement but never as a
 guarantee.
 
+Give any procedure that can stop on a resource limit a third answer, distinct from
+pass and fail — Sifakis's "I ran out of budget". A truncated scan returned as a
+clean result is a silent bug. Make every negative verdict hand back the witness
+that produced it (Clarke, Emerson), because a failure you cannot reproduce is a
+rumour.
+
+Split expensive or heuristic work into an untrusted search and a small terminating
+checker. Only the checker is trusted (Lampson); recognizing a good answer stays
+decidable even where finding one is not (Church). Every failure of the untrusted
+half should bias toward refusal.
+
 ## State
 
 Designate exactly one representation as authoritative, and optimize it for being
 checkable rather than fast (Lampson). Every index, cache, and denormalized field
 is then a guess you are allowed to delete and rebuild at any moment. Two things
 that both claim to be the truth is the bug you will spend a week on.
+
+Shape stored data from what determines what — the time-invariant dependencies of
+the domain — rather than from today's access patterns, and split exactly where a
+dependency forces it and no further (Codd, Fagin). Access patterns change on a
+quarterly cycle; dependencies do not.
 
 Ask of every field on a long-lived type what it holds when no operation is in
 progress. A field with no honest answer is scratch space for one operation, and
@@ -64,10 +76,19 @@ the window or the audience, not by elaborating the predicate.
 
 ## Concurrency and failure
 
+Your data representation sets the concurrency ceiling, not your concurrency
+constructs (Liskov). If independent items share one container, every touch
+contends for the whole thing, and no amount of finer-grained locking or extra
+threads recovers what the type already gave away.
+
 Atomicity belongs to the transaction, not the object (Sussman, Herlihy). A class
 that locks its own methods is correct only for operations touching it alone. Put
 the lock at the caller's transaction boundary instead, and never do both, or the
 composite ends up waiting on itself.
+
+An effect must not become visible before it becomes durable (Liskov). Make the
+readable point and the durable point the same point, and treat any window where a
+reader can observe something a crash would erase as a defect, however narrow.
 
 Let timing assumptions buy progress and never safety. A timeout cannot distinguish
 a slow participant from a dead one (Fischer, Liskov, Lynch), so no irreversible
@@ -77,8 +98,7 @@ It needs evidence actually received, or a lease the loser can be fenced by.
 Force determinism before you replicate, retry, or replay. A component whose
 behaviour is not a function of its input history cannot be made redundant
 (Lampson, Schneider), so hoist wall-clock reads, random draws, generated IDs, hash
-iteration order, and ambient config out of the core and pass them in as ordinary
-inputs.
+iteration order, and ambient config out of the core and pass them in as inputs.
 
 Size a transaction by what you can actually undo. Before setting the boundary,
 list the irreversible acts inside it — external API calls, emails, payments, files
@@ -101,11 +121,6 @@ friction in the underlying primitives (Pike). Find the specific interaction
 painful enough to prompt the request, fix that, and check whether the request
 survives. Usually it does not.
 
-When a question keeps producing arbitrary answers, remove the ability to ask it
-rather than answering it more carefully. Hoare drops wall-clock time and keeps
-only event order. Any property you find yourself re-checking wants to become a
-rule about how parts may be combined (Sifakis).
-
 An iteration that did not make the system smaller is one nobody has finished
 thinking about (Wirth). Price every addition twice, once for building it and once
 for its permanent presence, and prefer the change that retires a mechanism over
@@ -123,9 +138,11 @@ Code that compensates for a defect in a layer you do not control has no clean fo
 delete it, and do not refactor it into elegance — elegance hides that it is
 temporary.
 
-A buffer or queue absorbs variance, never a rate deficit. One that keeps needing
-to be enlarged is a measurement telling you the two sides do not match, and the
-fix is on one of the sides (Hoare, Wirth).
+Multiplexing independent work onto one queue couples it, and a bigger buffer only
+delays the diagnosis (Hoare). Buffering absorbs variance, never a rate deficit, so
+a queue that keeps needing to be enlarged is a measurement telling you the two
+sides do not match. Give each stream its own backpressure path rather than more
+capacity.
 
 A pipeline costs what its worst moment costs, not what its output costs
 (McMillan). Two implementations with byte-identical output can differ by orders of
