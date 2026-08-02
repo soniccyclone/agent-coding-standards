@@ -58,7 +58,14 @@ half should bias toward refusal.
 Designate exactly one representation as authoritative, and optimize it for being
 checkable rather than fast (Lampson). Every index, cache, and denormalized field
 is then a guess you are allowed to delete and rebuild at any moment. Two things
-that both claim to be the truth is the bug you will spend a week on.
+that both claim to be the truth is the bug you will spend a week on. Any derived
+state that cannot detect its own staleness needs a named periodic recomputation
+rather than invalidation alone (Ullman) — ask what would have to be true for you
+to notice it had gone wrong, and if there is no answer, invalidation is a hope.
+
+Moving durable state into volatile storage is a correctness change, not an
+optimization (Wirth). Score it by what the persistent structure looks like if
+power is lost at an arbitrary instant, not by the benchmark that motivated it.
 
 Shape stored data from what determines what — the time-invariant dependencies of
 the domain — rather than from today's access patterns, and split exactly where a
@@ -72,7 +79,10 @@ belongs in something whose lifetime matches it (Reenskaug).
 Treat an invariant as a promise at the entry and exit of an operation, not at
 every instant. Jones's framing is that the right question is never "does this
 hold" but "who can be looking, and when" — so strengthen an invariant by shrinking
-the window or the audience, not by elaborating the predicate.
+the window or the audience, not by elaborating the predicate. The same question
+governs refactoring: same-input-same-output justifies nothing if anything else can
+write the same state, so read the fragment with an adversarial write spliced into
+every gap, including before its first line (Jones, Hoare).
 
 ## Concurrency and failure
 
@@ -93,7 +103,16 @@ reader can observe something a crash would erase as a defect, however narrow.
 Let timing assumptions buy progress and never safety. A timeout cannot distinguish
 a slow participant from a dead one (Fischer, Liskov, Lynch), so no irreversible
 step — failover, takeover, deletion, marking-dead — may rest on an expiry alone.
-It needs evidence actually received, or a lease the loser can be fenced by.
+It needs evidence actually received, or a lease the loser can be fenced by. A
+timeout is a hint that something may be wrong, never evidence that it is, so any
+action taken on one must be survivable if it turns out to have been taken wrongly
+(Liskov, Dijkstra).
+
+Repetition buys confidence only against independent failures (Sussman). Before
+choosing a retry count, a resample, or a redundant check, say what rules out the
+case where every attempt fails the same way — correlated failure is usually a
+property of the input, which makes it invisible in every trial you run. Without
+that argument, more attempts buy latency and nothing else.
 
 Force determinism before you replicate, retry, or replay. A component whose
 behaviour is not a function of its input history cannot be made redundant
@@ -131,12 +150,20 @@ the one that adds a parallel path.
 Spend all your stability at one boundary. Freeze what outsiders can observe,
 rebuild freely behind it, and when you change an internal interface, fix every
 caller in the same change instead of leaving a compatibility shim (Torvalds,
-Wirth). Shims are how one boundary silently becomes five.
+Wirth). Shims are how one boundary silently becomes five. The same rule applies
+downward: when you add an accessor, wrapper, cache layer, or handle, remove the
+direct path in the same change, because an abstraction is worth exactly its
+weakest bypass (Ungar).
 
 Code that compensates for a defect in a layer you do not control has no clean form
 (Wirth). Confine it, label what is being worked around and what would let you
 delete it, and do not refactor it into elegance — elegance hides that it is
-temporary.
+temporary. Related, and easier to violate by accident: do not simplify a rule that
+was tuned against an accounting argument (Tarjan). Eviction policies, backoff
+schedules, rebalancing triggers and retry heuristics are places where two nearly
+identical rules differ by an order of magnitude, and the sequences that separate a
+good rule from a fatal one are adversarial and will not be in your benchmark.
+Re-derive the bound or leave the rule alone.
 
 Multiplexing independent work onto one queue couples it, and a bigger buffer only
 delays the diagnosis (Hoare). Buffering absorbs variance, never a rate deficit, so

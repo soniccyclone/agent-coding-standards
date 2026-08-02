@@ -581,14 +581,36 @@ what tells you how to fix it.
    dissolution template (project-state.md §2), and it shaped several Phase 5
    resolutions. Listed only so nobody re-discovers it as a defect.
 
-4. **`reynolds/definitional-interpreters-for-higher-order-programming-languages`
+4. **The Lisp tradition is thin in DISTILLED.md, and McCarthy is absent entirely.**
+   McCarthy has 29 lessons across 7 works and was nominated **zero times** by any
+   of the ten Phase 7 selection agents. Sussman was the second-most-nominated
+   figure in the corpus (9 candidates, behind only Hoare's 14) but went 1-for-9 at
+   the strike pass; Steele went 2-for-4. Found when Nathan asked whether Lispers
+   were represented at all. Two distinct causes worth separating before fixing:
+   the per-subdomain nomination cap of 8 means a figure competes only against his
+   own slice and can be crowded out by it, and several Sussman strikes were
+   arguably correct on the merits ("replace a growing conditional with
+   polymorphism" really is textbook). Fix is a targeted nomination pass over
+   mccarthy, sussman, steele and kay, judged by the same adversarial strike bar so
+   nothing gets waved in on grounds of representation. Do not hand-add claims to
+   the document to balance the roster — that defeats the selection process.
+
+5. **Merge verdicts were treated as strikes in the Phase 7 tally.** A reviewer
+   voting `merge` means the claim is valid but redundant with another; my tally
+   scored it as not-kept and dropped the content, assuming the named target
+   absorbed it. Seven claims were lost that way and have since been folded back
+   in by hand. The mechanical check now exists (compare each merge-killed claim's
+   distinctive vocabulary against the finished document) and should run on any
+   re-distillation before the document is considered done.
+
+6. **`reynolds/definitional-interpreters-for-higher-order-programming-languages`
    contradicts its own attestation.** It carries `extraction: complete` while its
    body records that the separately published *Definitional Interpreters Revisited*
    retrospective "remains unmined". Found by a reynolds extraction agent. Fix is a
    scoping call: either the retrospective is a distinct work needing its own entry,
    or the attestation is overstated. Leaning toward the former.
 
-5. **Tier 4 attestations are unaudited.** See flags H.10. Four books
+7. **Tier 4 attestations are unaudited.** See flags H.10. Four books
    (`jones/software-development`, `sussman/SICP`, `church/introduction-to-mathematical-logic`,
    `hoare/CSP`) are attested on the union of several passes' coverage notes, with no
    single reader having seen the whole work. Cheap mechanical audit available:
@@ -596,27 +618,27 @@ what tells you how to fix it.
    contiguous from 1 to EOF. Would have caught the church note that recorded spans
    as both complete and unread.
 
-6. **Tier 3 backlinks are unverified.** See flags H.8. 92 lessons across 7 figures
+8. **Tier 3 backlinks are unverified.** See flags H.8. 92 lessons across 7 figures
    had their work-file links reconstructed from their own frontmatter after the
    writing agent died. Nothing is known to be wrong; spot-checking a sample against
    the named sources is cheap and has never been done.
 
-7. **Four works have no obtainable source.** See flags H.7 — two Kolmogorov papers
+9. **Four works have no obtainable source.** See flags H.7 — two Kolmogorov papers
    behind abstract-only pages, Turing's *Computability and lambda-definability*,
    and a Valiant entry whose URL is a recorded talk. Decide per work: source it,
    substitute it, or drop it from the figure's list. Until then 446/450 is the
    attestation ceiling and 95/95 figures is correct only because these are marked
    `SOURCE-UNOBTAINABLE`.
 
-8. **Chapter-offset records disagree.** `ullman/mining-of-massive-datasets`'s
+10. **Chapter-offset records disagree.** `ullman/mining-of-massive-datasets`'s
    coverage note and `scratchpad/ullman/CHAPTERS.md` differ by ~30 lines on where
    chapters 6 and 7 begin. Harmless today, but resume points are read off these.
 
-9. **The 11 single-lesson works were never spot-checked.** See flags section G.
+11. **The 11 single-lesson works were never spot-checked.** See flags section G.
    A work yielding exactly one lesson is either genuinely thin or a died-early
    extraction; the two are indistinguishable without opening the source.
 
-10. **Standing questions from earlier phases:** Péter and Kleene lesson grounding,
+12. **Standing questions from earlier phases:** Péter and Kleene lesson grounding,
    and the self-reported chapter gaps in Goldberg.
 
 ## Open before Phase 3 can start
