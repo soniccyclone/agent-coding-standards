@@ -1141,3 +1141,52 @@ path is pre-paid. Conversely Lampson would not defend a quadratic inner loop
 as 'rare failure'. The collision exists only at the level of the slogan.
 
 ---
+
+---
+
+## `hooks-as-friction-vs-you-are-designing-a-language`
+
+**Figures:** pike, steele
+
+- A: `pike/treat-a-request-for-extensibility-as-a-measurement-of-friction`
+- B: `steele/you-are-designing-a-language-whether-or-not-you-admit-it`
+
+**The apparent conflict.**
+Found 2026-08-03 by the agent writing DISTILLED-LISP.md, which had to hold both
+claims at once. Pike says treat a request for hooks, plugins, config knobs or a
+DSL as a measurement of friction in the underlying primitives: find the specific
+interaction painful enough to prompt it, fix that, and check whether the request
+survives. Steele says anyone writing a large program is already constructing a
+language on top of the one they started in, and should review that vocabulary as a
+designed artifact rather than pretend it is not happening. Read flatly, one says
+treat a demand for new notation as a symptom and Steele says notation is the work.
+
+**Why it dissolves.**
+DIFFERENT LAYERS, and this is the McCarthy-to-Russell pattern in its cleanest
+form. Pike speaks at the level of a particular codebase's primitives as they
+currently stand: a hook request there is evidence about *those* primitives, and
+his prescription is to go fix them. Steele speaks at the level of what computing
+permits you to do to a notation at all, where growing the vocabulary is not a
+concession to friction but the normal activity. Both are true at once and neither
+weakens the other.
+
+The sharper statement of the seam, which is what makes it actionable: Pike's
+target is the **parallel mechanism** — a config layer, plugin registry or DSL
+bolted *beside* the code, reached differently from everything else. Steele's is
+the **vocabulary you are already writing in**, extended so the new term is used
+exactly as every existing term is. Fix the primitive rather than bolting a
+mechanism next to it (Pike), and expect the fix to take the form of a new term in
+your own notation (Steele).
+
+Nathan's framing, and the reason this is worth recording rather than just
+resolving: Pike himself plainly understands all of this. The conflict is an
+artifact of *reading* Pike without holding the abstraction of computing itself in
+mind, at which point he sounds like he is warning against building languages,
+which he is not. That failure mode belongs to the reader, not the source — which
+makes this a caution about how the corpus gets consumed, not about what is in it.
+
+DISTILLED-LISP.md handles it inline with a guard paragraph rather than routing
+around it. Recorded here as dissolved rather than opened as a tension file.
+
+---
+
