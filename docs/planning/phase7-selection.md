@@ -52,6 +52,42 @@ amortized-bound analysis, CAP-per-invariant reasoning. One reviewer noted that
 several nominators "padded abstractions with vivid examples", which is worth
 watching for on any re-run.
 
+## A criterion that should never have existed
+
+The strike prompt listed, among grounds for killing a claim:
+
+> *It only bites in a specialist context most codebases never enter.*
+
+That is self-defeating for this project. The corpus exists because most code is
+bad; "most codebases never do this" is therefore evidence FOR a claim, not against
+it. Worse, it compounds with the primary test into a pincer — strike what agents
+already do (redundant) AND strike what codebases mostly don't do (specialist) —
+which only admits claims in a narrow band around current median practice. That is
+precisely the band the whole project was built to escape.
+
+Measured damage: of 54 killed candidates, 17 carry at least one prevalence-based
+strike and in 11 it was decisive. The figures it hit are the tell — Sussman three
+times, Vardi twice, then Gödel, Rabin, Curry, Kleene, Scott, Church, Tarjan, Karp,
+Edmonds, Ullman. A filter calibrated on median practice selectively eats the
+foundational material, which is the opposite of what this corpus is for.
+
+**The criterion is deleted. It must not appear in any future strike prompt.**
+
+The distinction that survives, and the one to use instead, is TRANSFERABILITY
+rather than PREVALENCE. A claim must be applicable outside its home domain — it
+must survive translation into an ordinary service in a mainstream language. It does
+not have to be something people currently do. Gödel on the limits of what can be
+decided automatically transfers perfectly well despite almost nobody reasoning that
+way; "amortized bounds matter for p99" transfers; "here is how a query planner
+represents a join tree" does not, and that is a claim about applicability, not
+popularity.
+
+The primary test — would a competent agent already do this by default — survives,
+because a document that tells an agent to do what it already does changes nothing.
+It is a claim about the reader's behaviour rather than about what is fashionable.
+
+Nathan caught this. It is the most consequential process error in Phase 7.
+
 ## Why the kill list is the useful half
 
 Everything below was nominated by an agent that had read the source and believed
