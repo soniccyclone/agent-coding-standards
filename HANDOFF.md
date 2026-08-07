@@ -40,7 +40,7 @@ hilbert, hartmanis. The brief that produced the other six is reproduced in
 `docs/planning/phase7-lisp.md` in substance; the shape is:
 
 > One agent, holding the whole tradition, no chunking and no subagents. Read
-> `DISTILLED.md` and `DISTILLED-LISP.md` first and do not duplicate them — LISP is
+> `bundle/DISTILLED.md` and `bundle/DISTILLED-LISP.md` first and do not duplicate them — LISP is
 > the model for register and for turning a stance into tests a reader can run.
 > Read the `## Lessons` rollup in `bundle/figures/<name>/index.md` for every figure,
 > then scan lesson titles and read the decision-changing ones in full. Target
@@ -135,7 +135,7 @@ longer exists. Only `tools/lint.py` was in the repo and survived.
 
 ## Open decisions for Nathan, not for you
 
-- **Whether to regenerate `DISTILLED.md`.** The argument against merging the
+- **Whether to regenerate `bundle/DISTILLED.md`.** The argument against merging the
   tradition documents back into one: merging re-applies majority pressure, and
   majority pressure is exactly what flattened the traditions the first time. The
   proposed alternative is a lean cross-tradition core plus the flavored
