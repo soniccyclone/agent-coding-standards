@@ -26,7 +26,7 @@ open with 12 items.
 - 446/450 works carry `extraction: complete`; the other 4 have no obtainable
   source and are marked `SOURCE-UNOBTAINABLE`
 - `python3 tools/lint.py` reports CLEAN
-- Seven distilled documents exist: the general `DISTILLED.md` plus flavored
+- Seven distilled documents exist: the general `bundle/DISTILLED.md` plus flavored
   companions for LISP, TYPES, VERIFICATION, UNIX, MODULARITY, COMPLEXITY
 
 ## The one outstanding work item
