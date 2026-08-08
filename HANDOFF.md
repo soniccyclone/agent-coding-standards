@@ -58,6 +58,11 @@ reproduced in substance in `docs/planning/phase7-lisp.md`:
 > of bolded phrases. Write incrementally — agents die constantly and only what is
 > on disk survives.
 
+One correction if you reuse this brief: **drop the word target.** It is quoted
+above as history. Nathan retired it on 2026-08-08 after every document but three
+overran it and compression passes turned out to be buying words off the claims
+rather than off the prose. Write the number of claims the tradition carries.
+
 FOUNDATIONS (turing, godel, post, kolmogorov, church, chaitin, rabin, kleene,
 peter, hilbert, hartmanis) was the one that kept failing: three agents died to
 connection errors without producing a file. It was eventually written inline by
@@ -74,7 +79,12 @@ properties stay establishable rather than a list of things you cannot have.
 
 1. **Never `git commit --amend`.** History rewriting is his call. Corrections go
    in a new commit or in the planning docs. This is a standing preference.
-2. **Commit freely, but do not push unless asked.** He asks when he wants it.
+2. **Commit and push freely.** Nathan is the maintainer of
+   `soniccyclone/agent-coding-standards` and authorized pushing on 2026-08-08.
+   `beads.role` is set to `maintainer` accordingly. This supersedes the earlier
+   "do not push unless asked" instruction, which applied before he said so.
+   Still never force-push, and still fetch before pushing rather than assuming a
+   fast-forward. Note the repo is **public**.
 3. **Do not start Phase 8.** Ideas backlog only.
 4. **Read the whole source.** No page budgets, no sampling the important parts —
    guessing which parts matter introduces bias drift.
@@ -156,13 +166,15 @@ longer exists. Only `tools/lint.py` was in the repo and survived.
   majority pressure is exactly what flattened the traditions the first time. The
   proposed alternative is a lean cross-tradition core plus the flavored
   companions. Not yet decided.
-- **Document lengths run over target.** DISTILLED 1,683, COMPLEXITY 2,137, UNIX
-  1,840, FOUNDATIONS 1,841, MODULARITY 1,675 against a stated 1,200–1,500. Only
-  LISP, TYPES and VERIFICATION land inside it. Flagged rather than trimmed
-  unilaterally. FOUNDATIONS had two deliberate compression passes that bought
-  134 words between them, which suggests the target is wrong for a document
-  carrying seven attributed claims rather than that the prose is padded; getting
-  to 1,500 means deleting a claim.
+- **~~Document lengths run over target.~~ Resolved 2026-08-08: the target was
+  wrong, not the documents.** Nathan's call. The old 1,200–1,500 figure is
+  retired and no document should be trimmed to hit it. Current lengths:
+  COMPLEXITY 2,137, FOUNDATIONS 1,841, UNIX 1,840, DISTILLED 1,683, MODULARITY
+  1,675, LISP 1,538, TYPES 1,512, VERIFICATION 1,506. The evidence that decided
+  it: FOUNDATIONS took two deliberate compression passes that bought 134 words
+  between them, so the remaining gap was a claim rather than padding. Length is
+  set by how many attributed claims the tradition carries. Do not reintroduce a
+  word budget into future briefs.
 - **Benchmarking.** He plans to judge outputs himself by feeding different
   documents as `CLAUDE.md` and comparing. Use `CLAUDE_CONFIG_DIR` pointed at a
   scratch dir to suppress the global `CLAUDE.md` while keeping LSP alive — note
