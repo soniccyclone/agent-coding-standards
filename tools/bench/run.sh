@@ -18,7 +18,10 @@ ARM="${1:?usage: run.sh <control|incumbent|general|flavored>}"
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 ROUNDS="$REPO/tools/bench/rounds"
 
-BENCH_ROOT="${BENCH_ROOT:?set BENCH_ROOT to a scratch directory}"
+# Set by the Makefile to bench-runs/<timestamp>/. Deliberately not /tmp: the
+# generated code is the artifact worth reading, and it has to still be there
+# tomorrow.
+BENCH_ROOT="${BENCH_ROOT:?set BENCH_ROOT, or run via 'make bench'}"
 FLAVORED="${FLAVORED:-DISTILLED-FOUNDATIONS.md}"
 MODEL="${MODEL:-claude-opus-5}"
 

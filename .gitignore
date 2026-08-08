@@ -12,3 +12,7 @@
 *.pbm
 *.tif
 *.tiff
+
+# Benchmark output: durable and reviewable, but not committed.
+bench-runs/
+.venv/
