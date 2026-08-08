@@ -17,27 +17,37 @@ pastes into their own `CLAUDE.md` to make their coding agent work better. They a
 written for **other people**, not for Nathan — his own `CLAUDE.md` is the thing
 this project is trying to beat, not a constraint to fit inside.
 
-## State as of 2026-08-07
+## State as of 2026-08-08
 
-Phases 1 through 7 are closed. Phase 8 is untouched by instruction. Phase 9 is
-open with 12 items.
+Phases 1 through 7 are closed, in bd as well as on disk. Phase 8 is untouched by
+instruction. Phase 9 is open with 12 items.
 
 - 95 figures, 450 works, 2,950 lessons, 21 resolved tensions
 - 446/450 works carry `extraction: complete`; the other 4 have no obtainable
   source and are marked `SOURCE-UNOBTAINABLE`
 - `python3 tools/lint.py` reports CLEAN
-- Seven distilled documents exist: the general `bundle/DISTILLED.md` plus flavored
-  companions for LISP, TYPES, VERIFICATION, UNIX, MODULARITY, COMPLEXITY
+- Eight distilled documents exist: the general `bundle/DISTILLED.md` plus flavored
+  companions for LISP, TYPES, VERIFICATION, UNIX, MODULARITY, COMPLEXITY,
+  FOUNDATIONS
 
-## The one outstanding work item
+The tradition series is complete. There is no queued work item outside Phase 9.
 
-**`bundle/DISTILLED-FOUNDATIONS.md` was never written.** Its agent died three
-times to connection errors without producing a file. Everything else in the
-tradition series landed.
+## On the bd tracker
 
-Figures: turing, godel, post, kolmogorov, church, chaitin, rabin, kleene, peter,
-hilbert, hartmanis. The brief that produced the other six is reproduced in
-`docs/planning/phase7-lisp.md` in substance; the shape is:
+Through Phase 7 the work ran ahead of the tracker: phases 3 to 7 were finished in
+git while their issues sat open, so `bd ready` pointed at Phase 3 and the
+dependency chain made the rest look blocked. Reconciled 2026-08-08. Two things
+worth knowing. Closures live in the embedded Dolt database and do **not** reach
+the tracked `.beads/issues.jsonl` on their own, so run `bd export -o
+.beads/issues.jsonl` before committing or the state will not survive to another
+machine. And Phase 9's twelve items live in `docs/planning/technical-plan.md`
+only; they were never entered as issues, so an empty `bd ready` does not mean
+there is no work.
+
+## How the tradition documents were produced
+
+Kept because it is the shape that worked, and the one that failed. The brief is
+reproduced in substance in `docs/planning/phase7-lisp.md`:
 
 > One agent, holding the whole tradition, no chunking and no subagents. Read
 > `bundle/DISTILLED.md` and `bundle/DISTILLED-LISP.md` first and do not duplicate them — LISP is
@@ -48,11 +58,17 @@ hilbert, hartmanis. The brief that produced the other six is reproduced in
 > of bolded phrases. Write incrementally — agents die constantly and only what is
 > on disk survives.
 
-The stance to hand it, as a starting hypothesis it should feel free to reject:
-some questions have no procedure that answers them, some objects are irreducibly
-complex, and knowing which is which changes what you attempt. Resist writing a
-theory lecture; every claim must cash out in a decision an ordinary service
-developer could make.
+FOUNDATIONS (turing, godel, post, kolmogorov, church, chaitin, rabin, kleene,
+peter, hilbert, hartmanis) was the one that kept failing: three agents died to
+connection errors without producing a file. It was eventually written inline by
+the main session rather than by a spawned agent, which is worth remembering as
+the cheaper move when a single unit of work is left.
+
+The starting hypothesis it was handed — some questions have no procedure that
+answers them, some objects are irreducibly complex — survived, but narrowed. The
+document argues that analyzability is purchased and spent rather than discovered,
+which turns the impossibility results into a method for deciding in advance which
+properties stay establishable rather than a list of things you cannot have.
 
 ## Standing instructions from Nathan — these do not change
 
@@ -141,8 +157,12 @@ longer exists. Only `tools/lint.py` was in the repo and survived.
   proposed alternative is a lean cross-tradition core plus the flavored
   companions. Not yet decided.
 - **Document lengths run over target.** DISTILLED 1,683, COMPLEXITY 2,137, UNIX
-  1,840, MODULARITY 1,675 against a stated 1,200–1,500. Flagged rather than
-  trimmed unilaterally.
+  1,840, FOUNDATIONS 1,841, MODULARITY 1,675 against a stated 1,200–1,500. Only
+  LISP, TYPES and VERIFICATION land inside it. Flagged rather than trimmed
+  unilaterally. FOUNDATIONS had two deliberate compression passes that bought
+  134 words between them, which suggests the target is wrong for a document
+  carrying seven attributed claims rather than that the prose is padded; getting
+  to 1,500 means deleting a claim.
 - **Benchmarking.** He plans to judge outputs himself by feeding different
   documents as `CLAUDE.md` and comparing. Use `CLAUDE_CONFIG_DIR` pointed at a
   scratch dir to suppress the global `CLAUDE.md` while keeping LSP alive — note
